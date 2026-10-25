@@ -1,5 +1,9 @@
 # Localer bağlantısı
 
+Kullanıcının sağladığı `LOCALER-MIMARI.md` belgesine göre Localer, Qt/C++ arayüzünün yönettiği EasyTier/Wintun üzerinden gerçek sanal IPv4 ağı sağlar. Oyun trafiğine özel SDK/API veya otomatik port paylaşımı yoktur. Bu projede doğrudan TCP kullanacağız; istemci köprüsü yalnız mevcut Qt exe'sinin localhost adreslerini uyarlamak içindir, Localer'in yerini almaz.
+
+Oda ağı `10.64.0.0`–`10.127.255.255` aralığından türetilen bir `/24` ağdır; cihaz IP'leri DHCP ile verilir. Belgede görülen `10.113.47.2` ve `10.113.47.1` o oturuma aittir, sabitlenmemelidir. Odayı oluşturan cihaz otomatik oyun sunucusu olmaz; oyun sunucusu rolü ayrıca seçilir. Localer'in “bağlandı”/gecikme göstergesi oyun portunun açıldığını veya uçtan uca oyun gecikmesini kanıtlamaz.
+
 Sunucu tek bir bilgisayarda çalışır. Arkadaşın kaynak kodu veya istemci paketini indirir; PostgreSQL/Redis'i kendi bilgisayarına kurmaz. Her oyuncunun kendi `localhost` adresi farklıdır.
 
 - **Dinleme adresi:** sunucunun Localer sanal IPv4 adresi veya `0.0.0.0`.
@@ -11,7 +15,7 @@ Yeni .NET geliştirme hostu `DARKORBIT_NATIVE_SCHEMA` ile açıldığında varsa
 
 ```powershell
 cd DarkOrbit/multiplayer-server
-./tools/start-native-localer.ps1 -VirtualIP 10.42.0.1
+./tools/start-native-localer.ps1 -VirtualIP 10.113.47.2
 ```
 
 Bu adres örnektir; Localer'in bu bilgisayara verdiği gerçek IP olmalıdır. Script IP'nin bilgisayarda bulunduğunu doğrular. `-BindAny` verilirse bind0.0.0.0 olur; istemciye bildirilen IP yine sanal IP'dir.
@@ -19,7 +23,7 @@ Bu adres örnektir; Localer'in bu bilgisayara verdiği gerçek IP olmalıdır. S
 Güvenlik duvarı gerekiyorsa ayrı ve açık adım, yönetici PowerShell ile:
 
 ```powershell
-./tools/start-native-localer.ps1 -VirtualIP 10.42.0.1 -ApplyFirewall -LocalerSubnet 10.42.0.0/24
+./tools/start-native-localer.ps1 -VirtualIP 10.113.47.2 -ApplyFirewall -LocalerSubnet 10.113.47.0/24
 ```
 
 Kural yalnız sanal yerel IP'ye, belirtilen uzak Localer aralığına ve geliştirme TCP18095/18096 portlarına izin verir. Global güvenlik duvarını kapatmaz; PostgreSQL5432/55432 ve Redis56379 açılmaz. Bu script bu geliştirme sırasında çalıştırılmadı; gerçek Localer IP/aralığı henüz verilmedi.
@@ -31,5 +35,7 @@ Qt içindeki web sayfası ve API, bağlantı köprüsü üzerinden aynı origin'
 `portalUrl` HTTPS olabilir: köprü sunucu sertifikasını normal biçimde doğrular, doğrulamayı kapatmaz. .NET sunucuya dış HTTPS sonlandırması eklenecekse sertifika ve proxy güven ayarları kontrollü yapılmalı; kendiliğinden imzasız bir sertifikaya genel güven yüklenmez. Localer ağının şifreleme/kimlik modeli henüz kesinleşmediği için internet üzerinden düz HTTP yayını yapılandırılmadı.
 
 ## Hazır olma durumu
+
+Gerçek iki bilgisayarlı son kontrolde: aynı Localer odası, sunucunun güncel sanal IP'si, `Test-NetConnection <sunucu-IP> -Port 18095` ve18096, web oturumu, gerçek native giriş, karşılıklı görünürlük/hareket ve bağlantı kopup gelmesi birlikte doğrulanacak. Şu ana kadarki beş istemci testi aynı bilgisayarda gerçek soketlerle yapıldı; Localer üzerinden iki fiziksel bilgisayarın oyun protokolü testi yapılmadı.
 
 Yeni geliştirme portları **18095/18096**, mevcut oyunun portları **8095/8096**. Yeni sunucunun `/ready` yanıtı hâlâ503; paylaşılmış NPC/savaş ve portal taşıması bitmeden uzak oyuna giriş yapılmaz. `requireMultiplayerReady` kontrolünü aşarak eksik sunucuyu arkadaşına açma. Son geçişte portlar/sertifika/adres manifesti birlikte güncellenecek.

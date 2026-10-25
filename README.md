@@ -19,14 +19,14 @@ Bu paket **şimdilik kendi bilgisayarında çalışan yerel önizlemedir**. Orta
 ```json
 {
   "mode": "remote",
-  "portalUrl": "http://10.42.0.1:8095",
-  "gameHost": "10.42.0.1",
+  "portalUrl": "http://10.113.47.2:8095",
+  "gameHost": "10.113.47.2",
   "gamePort": 8096,
   "requireMultiplayerReady": true
 }
 ```
 
-Buradaki adres örnektir; ağ uygulamasının sağladığı gerçek adresle değiştirilir. Proxy kullanılıyorsa web ve TCP için farklı adres/port verilebilir. Bağlantı katmanı localhost8095/8096 üzerinden mevcut Qt istemcisini değiştirmeden yönlendirir. Parola/oturum veya oyun paketleri kaydedilmez. Sunucunun `/ready` yanıtı `200 {"ready":true}` olmadan uzak oyun açılmaz. PostgreSQL ve Redis oyuncuların bilgisayarında çalışmaz ve sanal ağa açılmaz.
+Buradaki adres örnektir; Localer odasının sunucu bilgisayarına verdiği güncel adresle değiştirilir. Localer gerçek sanal IPv4 ağı sağlar; özel oyun SDK'sı gerekmez. Oda kurucusu otomatik oyun sunucusu değildir. Proxy kullanılıyorsa web ve TCP için farklı adres/port verilebilir. Bağlantı katmanı localhost8095/8096 üzerinden mevcut Qt istemcisini değiştirmeden yönlendirir. Parola/oturum veya oyun paketleri kaydedilmez. Sunucunun `/ready` yanıtı `200 {"ready":true}` olmadan uzak oyun açılmaz. PostgreSQL ve Redis oyuncuların bilgisayarında çalışmaz ve sanal ağa açılmaz. [Localer kurulum ve test yönergesi](distribution/NETWORK.md).
 
 ## Kaynak kodla geliştirme
 
