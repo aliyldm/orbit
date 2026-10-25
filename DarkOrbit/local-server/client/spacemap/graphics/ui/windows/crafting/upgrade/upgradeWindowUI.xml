@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="module_equipment_lib"/>
+        <library id="gameclientCommonUI"/>
+    </libraries>
+
+    <textstyle
+            name="settings_window_info_textstyle_single_line"
+            textColor="0x999898"
+            type="dynamic"
+            fontSize="10"
+            autoSize="left"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana" />
+
+    <textstyle name="bulk_upgrade_cost" textColor="0xE9E2C0" type="dynamic" fontSize="9" wordWrap="true" multiline="true" embedFonts="false" fontName="Verdana" align="left"/>
+
+    <!-- TEMPLATES -->
+    <template name="upgrade_build">
+
+        <container name="build"
+                   width="150"
+                   height="91">
+
+            <spinbox name="spinBox"
+                     alignX="right"
+                     alignY="top"
+                     marginTop="4"
+                     marginRight="25"
+                     type="horizontal"
+                     width="90"
+                     height="16"
+                     inputEnabled="true"
+                     templateName="commonui.spinbox.horizontal.mathsymbols"/>
+
+            <label name="label"
+                   width="150"
+                   alignY="top"
+                   marginTop="24"
+                   registeredTextStyleName="crafting_timer"/>
+
+            <button name="btn"
+                    width="140"
+                    height="25"
+                    alignX="right"
+                    alignY="bottom"
+                    textMarginY="1"
+                    text="localize:crafting_upgrade_button_ready"
+                    registeredSkinName="commonui_scale9_button_blue"/>
+
+        </container>
+
+    </template>
+    <template name="upgrade_collect">
+
+        <container name="collect"
+                   width="150"
+                   height="91">
+
+            <progressbar name="progressbar"
+                         marginLeft="10"
+                         marginRight="10"
+                         alignY="top"
+                         height="9"
+                         autoSizeWidth="true"
+                         registeredSkinName="crafting_window_progressbar_building_skin"/>
+
+            <label name="time"
+                   width="150"
+                   alignY="top"
+                   marginTop="24"
+                   registeredTextStyleName="crafting_timer"/>
+
+            <button name="btn"
+                    width="140"
+                    height="25"
+                    alignX="right"
+                    alignY="bottom"
+                    textMarginY="1"
+                    text="localize:assembly_button_collect"
+                    registeredSkinName="commonui_scale9_button_green"/>
+        </container>
+
+    </template>
+    <template name="upgrade_building">
+
+        <container name="building"
+                   width="150"
+                   height="91">
+
+            <progressbar name="progressbar"
+                         marginLeft="10"
+                         marginRight="10"
+                         alignY="top"
+                         height="9"
+                         autoSizeWidth="true"
+                         registeredSkinName="crafting_window_progressbar_building_skin"/>
+
+            <label name="time"
+                   width="150"
+                   alignY="top"
+                   marginTop="24"
+                   registeredTextStyleName="crafting_timer"/>
+
+            <button name="btn"
+                    width="140"
+                    height="25"
+                    alignX="right"
+                    alignY="bottom"
+                    textMarginY="1"
+                    text="localize:crafting_upgrade_button_skip"
+                    registeredSkinName="commonui_scale9_button_blue"/>
+        </container>
+    </template>
+    <template name="upgrade_not_possible">
+        <container name="not_possible"
+                   width="150"
+                   height="100">
+
+            <coreponent registeredSkinName="crafting_not_possible"
+                        name="img"
+                        alignY="center"
+                        alignX="center"/>
+
+            <label name="label"
+                   alignY="center"
+                   alignX="center"
+                   autoSizeTextHeight="true"
+                   width="150"
+                   registeredTextStyleName="crafting_default"/>
+
+        </container>
+    </template>
+
+    <!-- CONTENT -->
+    <container name="globalContainer"
+               width="530"
+               height="450">
+
+        <container name="contentContainer"
+                   mouseEnabled="false"
+                   width="530"
+                   height="450">
+
+            <container name="filterComboboxContainer"
+                       width="140"
+                       height="21"
+                       mouseEnabled="false">
+
+                <ComboBox name="combobox.filters"
+                          width="98"
+                          height="17"
+                          alignX="right"
+                          alignY="bottom"
+                          marginRight="20"
+                          marginBottom="1"
+                          registeredSkinName="crafting_combobox_filter"
+                          popupTemplate="crafting_template_inventory_filter_popup"/>
+
+                <label name="label.combobox.filters"
+                       alignY="bottom"
+                       alignX="right"
+                       width="98"
+                       height="17"
+                       marginBottom="2"
+                       marginRight="18"
+                       registeredTextStyleName="assembly_label_filter"
+                       text="localize:assembly_label_filter"/>
+
+                <container name="arrowContainer"
+                           alignY="bottom"
+                           alignX="right"
+                           width="10"
+                           height="10"
+                           marginBottom="0"
+                           marginRight="26"
+                           rotation="180">
+
+                    <container name="arrowRotationContainer"
+                               rotation="180">
+
+                        <bitmap x="-5" y="-5" library="module_equipment_lib" libraryID="equipment_arrow_down_active"/>
+                        <bitmap x="-5" y="-5" library="module_equipment_lib" libraryID="equipment_arrow_down_hover"/>
+                        <bitmap x="-5" y="-5" library="module_equipment_lib" libraryID="equipment_arrow_down_normal"/>
+
+                    </container>
+                </container>
+            </container>
+
+            <container name="bulkUpgrade" width="510" height="52" mouseEnabled="false">
+                <button name="weapons" marginLeft="150" width="130" height="21" text="[ ] Tüm silahlar" registeredSkinName="commonui_smallbutton_blue"/>
+                <button name="shields" marginLeft="285" width="130" height="21" text="[ ] Tüm kalkanlar" registeredSkinName="commonui_smallbutton_blue"/>
+                <button name="refresh" marginLeft="420" width="70" height="21" text="Yenile" registeredSkinName="commonui_smallbutton_blue"/>
+                <label name="cost" marginLeft="20" marginTop="25" width="315" height="32" wordWrap="true" multiline="true" text="Maliyet için eşya seç." registeredTextStyleName="bulk_upgrade_cost"/>
+                <button name="build" marginLeft="345" marginTop="27" width="145" height="25" enabled="false" text="Maksimuma başlat" registeredSkinName="commonui_scale9_button_green"/>
+            </container>
+
+            <container name="filterEmptyItemsContainer"
+                       visible="false"
+                       mouseEnabled="false"
+                       width="530"
+                       height="400">
+
+                <coreponent name="img"
+                            alignY="center"
+                            alignX="center"
+                            registeredSkinName="crafting_not_possible"/>
+
+                <label name="label"
+                       alignY="center"
+                       alignX="center"
+                       width="530"
+                       autoSizeTextHeight="true"
+                       text="localize:crafting_filter_no_items"
+                       registeredTextStyleName="assembly_warning"/>
+
+            </container>
+
+            <container name="standardViewContainer"
+                       visible="true"
+                       layout="vertical"
+                       gap="0"
+                       marginTop="69"
+                       width="530"
+                       height="381">
+
+                <coreponent registeredSkinName="crafting_divider"
+                            marginTop="2"
+                            marginLeft="20"
+                            width="468"
+                            height="2"/>
+
+                <container name="itemListContainer"
+                           mouseEnabled="false"
+                           marginLeft="18"
+                           width="469"
+                           height="43">
+
+                    <coreponent registeredSkinName="crafting_recipe_list_skin"
+                                width="434"
+                                height="39"
+                                marginTop="3"
+                                marginLeft="15"/>
+
+                    <itemlist name="upgradeTargetTypeList"
+                              width="430"
+                              itemGap="0"
+                              height="35"
+                              marginLeft="18"
+                              marginTop="6"
+                              mouseChildren="true"
+                              mouseEnabled="true"
+                              autoSizeWidth="false"
+                              layout="horizontal"
+                              cacheSkinMaskAsBitmap="false"
+                              registeredSkinName="commonui_list_mask">
+
+                        <itemrenderer width="33"
+                                      height="35"
+                                      autoSizeWidth="false"
+                                      mouseEnabled="true"
+                                      mouseChildren="true">
+
+                            <coreponent name="hitlayer"
+                                        registeredSkinName="commonui_hitlayer"
+                                        mouseEnabled="true"
+                                        mouseChildren="true"
+                                        autoSizeWidth="true"
+                                        autoSizeHeight="true"
+                                        alpha="0"
+                                        tooltipTemplateID="commonui_tooltip_simple"/>
+
+                            <coreponent name="pic"
+                                        width="31"
+                                        height="31"
+                                        alignX="center"
+                                        alignY="center"/>
+
+                            <container name="craftableTypeItemContainer"
+                                       width="31"
+                                       height="31"
+                                       visible="false"
+                                       alignX="center"
+                                       alignY="center">
+
+                                <coreponent name="craftableTypeImage"
+                                            width="31"
+                                            height="31"
+                                            alignX="center"
+                                            alignY="center"
+                                            registeredSkinName="crafting_itemlist_crafable"/>
+
+                                <coreponent name="craftableTypeOutline"
+                                            width="31"
+                                            height="31"
+                                            alignX="center"
+                                            alignY="center"
+                                            registeredSkinName="crafing_item_finished_outline"/>
+                            </container>
+
+                            <button name="hover"
+                                    width="30"
+                                    height="30"
+                                    alignX="center"
+                                    alignY="center"
+                                    registeredSkinName="crafting_itemlist_green"/>
+
+                        </itemrenderer>
+
+                    </itemlist>
+
+                    <button name="left"
+                            width="13"
+                            height="24"
+                            alignY="top"
+                            alignX="left"
+                            marginTop="11"
+                            marginLeft="1"
+                            registeredSkinName="commonui_arrow_button_left"/>
+
+                    <button name="right"
+                            width="13"
+                            height="24"
+                            alignY="top"
+                            alignX="right"
+                            marginTop="11"
+                            marginRight="6"
+                            registeredSkinName="commonui_arrow_button_right"/>
+
+                </container>
+
+                <coreponent registeredSkinName="crafting_divider"
+                            marginLeft="20"
+                            width="468"
+                            height="2"/>
+
+                <container name="itemGridContainer"
+                           mouseEnabled="false"
+                           marginLeft="20"
+                           marginTop="5"
+                           height="146"
+                           autoSizeHeight="false"
+                           width="469">
+
+                    <coreponent name="upgradeGridBg"
+                                width="466"
+                                height="146"
+                                registeredSkinName="upgrade_grid_bg"/>
+
+                    <Grid name="upgradeItemsGrid"
+                          marginLeft="18"
+                          marginTop="25"
+                          itemGapX="6"
+                          itemGapY="3"
+                          width="430"
+                          height="120"
+                          autoSizeHeight="false"
+                          autoSizeWidth="false"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask">
+
+                        <itemrenderer width="37"
+                                      height="37"
+                                      itemGap="0"
+                                      autoSizeWidth="false"
+                                      mouseEnabled="true"
+                                      mouseChildren="true">
+
+                            <coreponent name="hitlayer"
+                                        registeredSkinName="commonui_hitlayer"
+                                        mouseEnabled="true"
+                                        mouseChildren="true"
+                                        autoSizeWidth="true"
+                                        autoSizeHeight="true"
+                                        alpha="0"
+                                        tooltipTemplateID="commonui_tooltip_simple"/>
+
+                            <coreponent name="pic"
+                                        width="30"
+                                        height="30"
+                                        alignX="center"
+                                        alignY="top"/>
+
+                            <coreponent name="pic_finished"
+                                        width="26"
+                                        height="23"
+                                        visible="false"
+                                        alignX="center"
+                                        alignY="top"
+                                        marginTop="2"
+                                        registeredSkinName="crafing_itemlist_collect"/>
+
+                            <container name="craftableItemContainer"
+                                       visible="false"
+                                       width="30"
+                                       height="30"
+                                       alignX="center"
+                                       alignY="top">
+                                <coreponent name="craftableImage"
+                                            width="30"
+                                            height="30"
+                                            alignX="center"
+                                            alignY="top"
+                                            registeredSkinName="crafting_itemlist_crafable"/>
+                            </container>
+
+                            <progressbar name="progress"
+                                         visible="false"
+                                         height="5"
+                                         width="28"
+                                         alignY="bottom"
+                                         alignX="center"
+                                         marginBottom="8"
+                                         registeredSkinName="crafting_timed_progressbar_skin"/>
+
+                            <button name="hover"
+                                    width="30"
+                                    height="30"
+                                    alignX="center"
+                                    alignY="top"
+                                    registeredSkinName="crafting_itemlist_green"/>
+
+                            <coreponent name="equipped"
+                                        width="31"
+                                        height="31"
+                                        alignX="center"
+                                        alignY="top"
+                                        registeredSkinName="crafing_item_equipped"/>
+
+                            <label name="itemUpgradeLevel"
+                                   text="0"
+                                   alignX="left"
+                                   alignY="bottom"
+                                   marginLeft="10"
+                                   marginBottom="38"
+                                   registeredTextStyleName="upgrade_grid_item"/>
+
+                            <label name="xpLevel"
+                                   text="0"
+                                   alignX="right"
+                                   alignY="bottom"
+                                   with="10"
+                                   marginRight="11"
+                                   marginBottom="18"
+                                   registeredTextStyleName="upgrade_grid_xpLevel"/>
+
+                        </itemrenderer>
+
+                    </Grid>
+
+                    <scrollbar name="item_grid"
+                               height="111"
+                               width="6"
+                               autoSizeWidth="false"
+                               direction="vertical"
+                               alignX="right"
+                               marginRight="12"
+                               marginTop="24"
+                               registeredSkinName="commonui_scrollbar_bgnd_dark">
+
+                        <button name="buttonSlider"
+                                width="4"
+                                alignX="center"
+                                registeredSkinName="commonui_scrollbar_slider"/>
+
+                    </scrollbar>
+
+                    <bind source="item_grid"
+                          target="upgradeItemsGrid"
+                          type="scrollcontainer"/>
+
+                    <Button name="collect_all_btn"
+                            height="17"
+                            width="100"
+                            alignY="top"
+                            alignX="left"
+                            marginLeft="35"
+                            marginTop="-4"
+                            text="localize:crafting_upgrade_collect_all_btn"
+                            registeredSkinName="commonui_smallbutton_blue"/>
+
+                </container>
+
+                <container name="upgradeContainer"
+                           marginTop="12"
+                           marginLeft="18"
+                           mouseEnabled="false"
+                           height="128"
+                           width="500">
+
+                    <container name="skipUpgradeContainer"
+                               width="155"
+                               height="20">
+
+                        <label name="skipUpgradeInfoLabel"
+                               visible="false"
+                               width="155"
+                               height="20"
+                               text="localize:crafting_skip_upgrade_level_info"
+                               registeredSkinName="crafting_label_truncate"
+                               registeredTextStyleName="crafting_skip_item_upgrade"/>
+
+                    </container>
+
+                    <container name="upgradeOptionsContainer"
+                               height="20"
+                               width="310"
+                               layout="horizontal">
+
+                        <container name="selectedItemInfoContainer"
+                                   layout="horizontal"
+                                   width="300"
+                                   height="20">
+
+                            <label name="selectedItemInfoLabel"
+                                   width="120"
+                                   height="20"
+                                   marginLeft="1"
+                                   text="localize:crafting_upgrade_level_info"
+                                   registeredSkinName="crafting_label_truncate"
+                                   registeredTextStyleName="crafting_selected_grid_item"/>
+
+                            <label name="selectedItemLevel"
+                                   width="25"
+                                   height="20"
+                                   text="13"
+                                   registeredSkinName="crafting_label_truncate"
+                                   registeredTextStyleName="crafting_selected_grid_item_level"/>
+
+                            <container name="recipeDataContainer"
+                                       marginLeft="2"
+                                       width="155"
+                                       height="20">
+
+                                <container name="recipeCraftingInfo"
+                                           marginLeft="2"
+                                           width="155"
+                                           height="20">
+
+                                    <label name="skipCraftingInfo"
+                                           width="155"
+                                           height="20"
+                                           text="localize:crafting_skip_label_info"
+                                           registeredSkinName="crafting_label_truncate"
+                                           registeredTextStyleName="crafting_selected_grid_item"/>
+
+                                    <label name="oneRecipeCraftingInfo"
+                                           width="155"
+                                           height="20"
+                                           text="localize:crafting_one_recipe_label_info"
+                                           registeredSkinName="crafting_label_truncate"
+                                           registeredTextStyleName="crafting_selected_grid_item"/>
+
+                                </container>
+
+                                <container name="recipesDropDownContainer"
+                                           marginLeft="2"
+                                           height="20"
+                                           width="155">
+
+                                    <dropdownlist name="selectedItemRecipes"
+                                                  width="150"
+                                                  height="20"
+                                                  mouseEnabled="true"
+                                                  registeredSkinName="commonui_hitlayer_invisible">
+
+                                        <itemrenderer height="20"
+                                                      width="150"
+                                                      autoSizeHeight="false"
+                                                      autoSizeWidth="false"
+                                                      mouseEnabled="true"
+                                                      mouseChildren="true">
+
+                                            <button height="20"
+                                                    width="150"
+                                                    name="btn"
+                                                    registeredSkinName="crafting_combobox_filter"/>
+
+                                            <label name="label"
+                                                   mouseEnabled="false"
+                                                   mouseChildren="false"
+                                                   marginLeft="3"
+                                                   marginTop="1"
+                                                   height="20"
+                                                   width="150"
+                                                   text="?"
+                                                   registeredSkinName="crafting_label_truncate"
+                                                   registeredTextStyleName="assembly_label_filter"/>
+
+                                            <container name="arrowContainer"
+                                                       alignY="center"
+                                                       alignX="right"
+                                                       width="10"
+                                                       height="10"
+                                                       marginRight="5">
+
+                                                <coreponent name="arrow"
+                                                            width="10"
+                                                            height="10"
+                                                            registeredSkinName="commonui_arrow_state_skin"/>
+
+                                            </container>
+
+                                        </itemrenderer>
+
+                                        <itemlist layout="vertical"
+                                                  width="150"
+                                                  gap="0"
+                                                  y="19"
+                                                  autoSizeHeight="true"
+                                                  autoHeightMode="children">
+
+                                            <itemrenderer height="19"
+                                                          width="150"
+                                                          autoSizeHeight="false"
+                                                          autoSizeWidth="false"
+                                                          mouseEnabled="true"
+                                                          mouseChildren="true">
+
+                                                <button name="btn"
+                                                        height="20"
+                                                        width="146"
+                                                        marginLeft="2"
+                                                        registeredSkinName="commonui_dropdown_itemlist_button_skin"/>
+
+                                                <label name="label"
+                                                       mouseEnabled="false"
+                                                       mouseChildren="false"
+                                                       height="20"
+                                                       width="140"
+                                                       marginLeft="3"
+                                                       marginTop="1"
+                                                       text="?"
+                                                       registeredSkinName="crafting_label_truncate"
+                                                       registeredTextStyleName="settings_window_info_textstyle_single_line"/>
+
+                                            </itemrenderer>
+                                        </itemlist>
+
+                                    </dropdownlist>
+
+                                </container>
+
+                            </container>
+
+                        </container>
+
+                    </container>
+
+                    <container name="skipIngredientsListContainer"
+                               width="160"
+                               height="94"
+                               marginTop="24"
+                               marginLeft="162">
+
+                        <itemlist name="skipIngredientList"
+                                  width="160"
+                                  height="94"
+                                  itemGap="5"
+                                  autoSizeHeight="false"
+                                  cacheSkinMaskAsBitmap="false"
+                                  mouseEnabled="false"
+                                  registeredSkinName="commonui_list_mask">
+
+                            <itemrenderer height="42"
+                                          autoSizeWidth="true"
+                                          autoSizeHeight="false"
+                                          mouseEnabled="true"
+                                          mouseChildren="true">
+
+                                <container name="content"
+                                           mouseEnabled="false"
+                                           height="42"
+                                           alignY="center"
+                                           width="160">
+
+                                    <coreponent name="ingredientListBg"
+                                                width="148"
+                                                height="42"
+                                                registeredSkinName="crafting_vertical_list_bg_skin"/>
+
+                                    <coreponent name="img"
+                                                marginTop="6"
+                                                marginLeft="6"
+                                                width="32"
+                                                height="32"
+                                                alignX="left"/>
+
+                                    <coreponent registeredSkinName="crafting_ingridient_outline"
+                                                width="31"
+                                                height="31"
+                                                marginTop="5"
+                                                marginLeft="5"
+                                                alignX="left"/>
+
+                                    <label height="10"
+                                           name="item_name"
+                                           alignX="left"
+                                           alignY="top"
+                                           marginTop="1"
+                                           marginLeft="43"
+                                           registeredTextStyleName="crafting_ingredients_item_name"/>
+
+                                    <label height="15"
+                                           name="owned_amount"
+                                           alignX="left"
+                                           alignY="bottom"
+                                           width="170"
+                                           marginBottom="14"
+                                           marginLeft="43"
+                                           useHTML="true"
+                                           registeredSkinName="crafting_label_truncate"
+                                           registeredTextStyleName="crafting_ingredients"/>
+
+                                    <label height="15"
+                                           name="amount"
+                                           alignX="left"
+                                           alignY="bottom"
+                                           width="170"
+                                           marginBottom="2"
+                                           marginLeft="43"
+                                           registeredSkinName="crafting_label_truncate"
+                                           registeredTextStyleName="crafting_ingredients"/>
+
+                                    <button name="upgradeInfo"
+                                            alignX="right"
+                                            marginRight="15"
+                                            marginTop="11"
+                                            tooltipTemplateID="commonui_tooltip_html_text"
+                                            registeredSkinName="commonui_info_button"/>
+
+                                </container>
+
+                            </itemrenderer>
+
+                        </itemlist>
+
+                        <scrollbar name="skip_ingredients_bar"
+                                   width="6"
+                                   height="88"
+                                   x="150"
+                                   alignY="top"
+                                   marginRight="8"
+                                   registeredSkinName="commonui_scrollbar_bgnd_dark">
+
+                            <button name="buttonSlider"
+                                    width="4"
+                                    height="6"
+                                    alignX="center"
+                                    registeredSkinName="commonui_scrollbar_slider"/>
+
+                        </scrollbar>
+
+                        <bind source="skip_ingredients_bar"
+                              target="skipIngredientList"
+                              type="scrollcontainer"/>
+
+                    </container>
+
+                    <container name="buffListContainer"
+                               width="160"
+                               height="94"
+                               marginTop="24"
+                               marginLeft="3">
+
+                        <itemlist name="buffList"
+                                  width="160"
+                                  height="94"
+                                  itemGap="5"
+                                  mouseEnabled="true"
+                                  autoSizeHeight="false"
+                                  cacheSkinMaskAsBitmap="false"
+                                  registeredSkinName="commonui_list_mask">
+
+                            <itemrenderer height="42"
+                                          autoSizeWidth="true"
+                                          autoSizeHeight="false"
+                                          mouseEnabled="true"
+                                          mouseChildren="true">
+
+                                <container name="content"
+                                           mouseEnabled="true"
+                                           height="42"
+                                           alignY="center"
+                                           width="160">
+
+                                    <coreponent name="buffListBg"
+                                                width="148"
+                                                height="42"
+                                                registeredSkinName="crafting_vertical_list_bg_skin"/>
+
+                                    <coreponent name="img"
+                                                width="32"
+                                                height="32"
+                                                marginTop="6"
+                                                marginLeft="6"
+                                                alignX="left"/>
+
+                                    <coreponent registeredSkinName="crafting_ingridient_outline"
+                                                width="31"
+                                                height="31"
+                                                marginTop="5"
+                                                marginLeft="5"
+                                                alignX="left"/>
+
+                                    <label height="15"
+                                           name="currentPercentage"
+                                           alignX="left"
+                                           alignY="top"
+                                           width="45"
+                                           marginTop="13"
+                                           marginLeft="32"
+                                           registeredSkinName="crafting_label_truncate"
+                                           registeredTextStyleName="crafting_buff_current"/>
+
+                                    <label height="15"
+                                           name="currentPercentage"
+                                           alignX="left"
+                                           alignY="top"
+                                           width="5"
+                                           marginTop="13"
+                                           marginLeft="85"
+                                           text="|"
+                                           registeredSkinName="crafting_label_truncate"
+                                           registeredTextStyleName="crafting_ingredients"/>
+
+                                    <label height="15"
+                                           name="newPercentage"
+                                           alignX="right"
+                                           alignY="top"
+                                           width="55"
+                                           marginTop="13"
+                                           marginRight="15"
+                                           registeredSkinName="crafting_label_truncate"
+                                           registeredTextStyleName="crafting_buff_current"/>
+
+                                </container>
+
+                            </itemrenderer>
+
+                        </itemlist>
+
+                        <scrollbar name="buff_bar"
+                                   width="6"
+                                   height="88"
+                                   x="150"
+                                   alignY="top"
+                                   marginRight="8"
+                                   registeredSkinName="commonui_scrollbar_bgnd_dark">
+
+                            <button name="buttonSlider"
+                                    width="4"
+                                    height="6"
+                                    alignX="center"
+                                    registeredSkinName="commonui_scrollbar_slider"/>
+
+                        </scrollbar>
+
+                        <bind source="buff_bar"
+                              target="buffList"
+                              type="scrollcontainer"/>
+
+                    </container>
+
+                    <container name="ingredientListContainer"
+                               width="160"
+                               height="94"
+                               marginTop="24"
+                               marginLeft="162">
+
+                        <itemlist name="ingredientList"
+                                  width="160"
+                                  height="94"
+                                  itemGap="5"
+                                  autoSizeHeight="false"
+                                  cacheSkinMaskAsBitmap="false"
+                                  mouseEnabled="false"
+                                  registeredSkinName="commonui_list_mask">
+
+                            <itemrenderer height="42"
+                                          autoSizeWidth="true"
+                                          autoSizeHeight="false"
+                                          mouseEnabled="true"
+                                          mouseChildren="true">
+
+                                <container name="content"
+                                           mouseEnabled="false"
+                                           height="42"
+                                           alignY="center"
+                                           width="160">
+
+                                    <coreponent name="ingredientListBg"
+                                                width="148"
+                                                height="42"
+                                                registeredSkinName="crafting_vertical_list_bg_skin"/>
+
+                                    <coreponent name="img"
+                                                marginTop="6"
+                                                marginLeft="6"
+                                                width="32"
+                                                height="32"/>
+
+                                    <coreponent registeredSkinName="crafting_ingridient_outline"
+                                                width="31"
+                                                height="31"
+                                                marginTop="5"
+                                                marginLeft="5"
+                                                alignX="left"/>
+
+                                    <label height="10"
+                                           name="item_name"
+                                           alignX="left"
+                                           alignY="top"
+                                           marginTop="1"
+                                           marginLeft="43"
+                                           registeredTextStyleName="crafting_ingredients_item_name"/>
+
+                                    <label height="15"
+                                           name="owned_amount"
+                                           alignX="left"
+                                           alignY="bottom"
+                                           width="170"
+                                           marginBottom="14"
+                                           marginLeft="43"
+                                           useHTML="true"
+                                           registeredSkinName="crafting_label_truncate"
+                                           registeredTextStyleName="crafting_ingredients"/>
+
+                                    <label height="15"
+                                           name="amount"
+                                           alignX="left"
+                                           alignY="bottom"
+                                           width="170"
+                                           marginBottom="2"
+                                           marginLeft="43"
+                                           registeredSkinName="crafting_label_truncate"
+                                           registeredTextStyleName="crafting_ingredients"/>
+
+                                    <button name="help"
+                                            alignX="right"
+                                            alignY="top"
+                                            marginTop="11"
+                                            marginRight="14"
+                                            tooltipTemplateID="commonui_tooltip_html_text"
+                                            registeredSkinName="commonui_info_button"/>
+
+                                    <button name="shop"
+                                            visible="false"
+                                            alignX="right"
+                                            alignY="top"
+                                            marginTop="7"
+                                            marginRight="2"
+                                            registeredSkinName="crafting_shop"
+                                            tooltipData="localize:assembly_item_tooltip_shop"/>
+
+                                </container>
+
+                            </itemrenderer>
+
+                        </itemlist>
+
+                        <scrollbar name="ingredients_bar"
+                                   width="6"
+                                   height="88"
+                                   x="150"
+                                   alignY="top"
+                                   marginRight="8"
+                                   registeredSkinName="commonui_scrollbar_bgnd_dark">
+
+                            <button name="buttonSlider"
+                                    width="4"
+                                    height="6"
+                                    alignX="center"
+                                    registeredSkinName="commonui_scrollbar_slider"/>
+
+                        </scrollbar>
+
+                        <bind source="ingredients_bar"
+                              target="ingredientList"
+                              type="scrollcontainer"/>
+
+                    </container>
+
+                    <container name="actions"
+                               mouseEnabled="true"
+                               height="100"
+                               width="150"
+                               marginTop="22"
+                               marginRight="30"
+                               alignX="right">
+
+                        <reference name="build" template="upgrade_build"/>
+                        <reference name="collect" template="upgrade_collect"/>
+                        <reference name="building" template="upgrade_building"/>
+                        <reference name="not_possible" template="upgrade_not_possible"/>
+
+                    </container>
+
+                </container>
+
+            </container>
+
+        </container>
+
+    </container>
+
+</root>

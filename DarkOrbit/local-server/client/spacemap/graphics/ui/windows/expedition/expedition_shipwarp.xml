@@ -1,0 +1,166 @@
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="module_equipment_lib"/>
+    </libraries>
+    <textstyle name="ship_name_style" 
+    textColor="0xBFBFBF" type="dynamic" fontSize="10" 
+    embedFonts="false" fontName="Verdana" align="center"
+    multiline="true" wordWrap="true"/>
+
+    <textstyle name="ship_hangar_style"
+               textColor="0xF1FBEC"
+               fontSize="14" type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               multiline="true"
+               wordWrap="true"
+               autoSize="left"/>
+    <textstyle name="destroyed_style"
+               textColor="0xFF0000" fontSize="20"
+               type="dynamic" fontName="EurostileHeaFl"
+               embedFonts="true" autoSize="center"
+               glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>
+
+
+    <skin name="ship_select" classname="BasicSkin" library="module_equipment_lib">
+        <layer classname="BitmapLayer" libraryID="equipment_itemslot_selected_30x30" scale9grid="3,4,4,5">normal</layer>
+    </skin>
+
+    <skin name="commonui_ship_bg" library="gameclientCommonUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="input_background_blue" scale9grid="4,4,6,5">normal</layer>
+    </skin>
+
+    <!-- TEXT STYLE HERE -->
+
+
+    <template name="ship_warp">
+        <container name="body" width="735" height="315">
+            <coreponent name="light_darklayer"
+                        width="735" height="215"
+                        alignX="left"
+                        alignY="top"
+                        marginLeft="10"
+                        marginTop="15"
+                        registeredSkinName="commonui_light_darklayer"/>
+
+            <label name="info_label1" text="localize:window_dse_choose_ship_info"
+                   registeredSkinName="commonui_default_label" marginTop="240" marginLeft="18"
+                   alignX="left" width="475" autoSizeTextHeight="true"
+                   registeredTextStyleName="ship_hangar_style"/>
+
+            <button name="confirmBtn"
+                    text="" buttonMode="true"
+                    textMarginY="1"
+                    width="180" height="35"
+                    autoSizeWidth="false" autoSizeHeight="false"
+                    alignX="center" alignY="top"
+                    marginLeft="0" marginTop="262"
+                    registeredSkinName="commonui_scale9_button_green" visible="true"/>
+
+            <container name="ship_container"
+                       width="735" height="250"
+                       alignX="left"
+                       alignY="top"
+                       marginLeft="10"
+                       marginTop="15">
+
+                <itemlist name="ships"
+                          itemGap="8"
+                          height="250"
+                          width="735"
+                          marginLeft="0"
+                          marginTop="0"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          autoSizeWidth="false"
+                          layout="horizontal"
+                          buttonMode="true"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask">
+
+                    <itemrenderer autoSizeWidth="false"
+                                  width="139"
+                                  height="225"
+                                  marginLeft="8"
+                                  marginTop="10"
+                                  alignX="left"
+                                  alignY="top"
+                                  mouseEnabled="true"
+                                  mouseChildren="true">
+
+                        <coreponent name="ship_blue_bg"
+                                    width="131"
+                                    height="190"
+                                    marginLeft="0"
+                                    marginTop="0"
+                                    alignX="left"
+                                    alignY="top"
+                                    registeredSkinName="commonui_ship_bg"/>
+
+                        <label name="ship_name_label" text="ship name ship name"
+                               registeredSkinName="commonui_default_label"
+                               alignX="left" alignY="top"
+                               marginLeft="0" marginTop="10"
+                               width="131"
+                               autoSizeTextHeight="true"
+                               registeredTextStyleName="ship_name_style"/>
+
+                        <coreponent name="ship_bg"
+                                    width="129"
+                                    height="100"
+                                    marginLeft="1"
+                                    marginTop="41"
+                                    alignX="left"
+                                    alignY="top"
+                                    registeredSkinName="commonui_darklayer"/>
+
+                        <coreponent name="ship_icon"
+                                    width="129"
+                                    height="100"
+                                    marginLeft="1"
+                                    marginTop="41"
+                                    alignX="left"
+                                    alignY="top"/>
+
+                        <coreponent name="ship_select_bg"
+                                    width="131"
+                                    height="190"
+                                    marginLeft="0"
+                                    marginTop="0"
+                                    alignX="left"
+                                    alignY="top"
+                                    visible="false"
+                                    registeredSkinName="ship_select"/>
+
+                        <coreponent name="darkLayer"
+                                    width="131"
+                                    height="190"
+                                    marginLeft="0"
+                                    marginTop="0"
+                                    alignX="left"
+                                    alignY="top"
+                                    visible="false"
+                                    registeredSkinName="commonui_darklayer"/>
+
+                        <label name="ship_destroyed_label" text="localize:window_dse_ship_damage"
+                               registeredSkinName="commonui_default_label"
+                               alignX="left" alignY="top"
+                               marginLeft="0" marginTop="110"
+                               width="131" autoSizeTextHeight="true"
+                               visible="false"
+                               registeredTextStyleName="destroyed_style"/>
+                    </itemrenderer>
+
+                </itemlist>
+
+            </container>
+        </container>
+
+
+    </template>
+    <container name="root" width="485" height="315" autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="false"
+               mouseChildren="true">
+        <reference template="ship_warp"/>
+    </container>
+</root>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<battlePass>
+    <!-- objective Panel -->
+    <objectiveList>
+
+        <!-- Dispute -->
+        <objective questId="500316">
+            <questReward lootid="ammunition_laser_ucb-100" amount="1000"/>
+            <bpReward lootid="ammunition_laser_rsb-75" amount="2000"/>
+        </objective>
+
+        <!-- Clash -->
+        <objective questId="500320">
+            <questReward lootid="resource_collectable_scrapium" amount="25"/>
+            <bpReward lootid="resource_extra-energy" amount="30"/>
+        </objective>
+
+        <!-- Impulse -->
+        <objective questId="500324">
+            <questReward lootid="resource_collectable_scrapium" amount="20"/>
+            <bpReward lootid="ammunition_laser_idb-125" amount="1500"/>
+        </objective>
+
+        <!-- Hide -->
+        <objective questId="500327">
+            <questReward lootid="ammunition_laser_rsb-75" amount="500"/>
+            <bpReward packageid="package_battlepass_bpReward-500327" packageItemIds="resource_extra-energy,ammunition_specialammo_spray_fist-bump" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500327"/>
+        </objective>
+
+        <!-- Barely Hit -->
+        <objective questId="500330">
+            <questReward lootid="ammunition_laser_idb-125" amount="1000"/>
+            <bpReward lootid="resource_collectable_scrapium" amount="50"/>
+        </objective>
+
+        <!-- In the Heat -->
+        <objective questId="500333">
+            <questReward packageid="package_battlepass_questReward-500333" packageItemIds="ammunition_laser_ucb-100,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500333"/>
+            <bpReward lootid="ammunition_laser_ucb-100" amount="1000"/>
+        </objective>
+
+        <!-- Battle Champion -->
+        <objective questId="500336">
+            <questReward packageid="package_battlepass_questReward-500336" packageItemIds="equipment_shipupgrade_spc-vp01,ammunition_specialammo_spray_hand-shake" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500336"/>
+            <bpReward lootid="ship_retiarus" amount="1"/>
+        </objective>
+
+        <!-- Full Brawl -->
+        <objective questId="500317">
+            <questReward lootid="ammunition_laser_rsb-75" amount="3000"/>
+            <bpReward packageid="package_battlepass_bpReward-500317" packageItemIds="booster_shd-dlb,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500317"/>
+        </objective>
+
+        <!-- Bang Up -->
+        <objective questId="500321">
+            <questReward packageid="package_battlepass_questReward-500321" packageItemIds="resource_extra-energy,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500321"/>
+            <bpReward packageid="package_battlepass_bpReward-500321" packageItemIds="ammunition_laser_ucb-100,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500321"/>
+        </objective>
+
+        <!-- Short Circuit -->
+        <objective questId="500325">
+            <questReward packageid="package_battlepass_questReward-500325" packageItemIds="ammunition_laser_ucb-100,ammunition_specialammo_emote_alien-smirk" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500325"/>
+            <bpReward packageid="package_battlepass_bpReward-500325" packageItemIds="resource_booty-key,ammunition_specialammo_emote_alien-roger" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500325"/>
+        </objective>
+
+        <!-- Out of Sight -->
+        <objective questId="500328">
+            <questReward lootid="ammunition_laser_ucb-100" amount="3000"/>
+            <bpReward lootid="tech_burning-trail" amount="1"/>
+        </objective>
+
+        <!-- Scratched -->
+        <objective questId="500331">
+            <questReward lootid="ammunition_rocketlauncher_hstrm-01" amount="500"/>
+            <bpReward lootid="ammunition_rocketlauncher_ubr-100" amount="600"/>
+        </objective>
+
+        <!-- Prove Your Mettle -->
+        <objective questId="500334">
+            <questReward lootid="ammunition_laser_idb-125" amount="1000"/>
+            <bpReward lootid="equipment_shipupgrade_dmg-kd01" amount="1"/>
+        </objective>
+
+        <!-- Shoot to Kill -->
+        <objective questId="500318">
+            <questReward packageid="package_battlepass_questReward-500318" packageItemIds="ammunition_laser_rsb-75,ammunition_specialammo_emote_alien-flyingkiss" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500318"/>
+            <bpReward packageid="package_battlepass_bpReward-500318" packageItemIds="ammunition_specialammo_sr-5,tech_shield-backup2" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500318"/>
+        </objective>
+
+        <!-- Skirmish -->
+        <objective questId="500322">
+            <questReward lootid="equipment_shipupgrade_dmg-st01" amount="1"/>
+            <bpReward lootid="ammunition_specialammo_sp-100x" amount="150"/>
+        </objective>
+
+        <!-- Disruption -->
+        <objective questId="500326">
+            <questReward packageid="package_battlepass_questReward-500326" packageItemIds="ammunition_laser_rsb-75,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500326"/>
+            <bpReward lootid="tech_shield-backup2" amount="1"/>
+        </objective>
+
+        <!-- Out of Mind -->
+        <objective questId="500329">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="10"/>
+            <bpReward packageid="package_battlepass_bpReward-500329" packageItemIds="ammunition_laser_idb-125,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500329"/>
+        </objective>
+
+        <!-- Fresh Wound -->
+        <objective questId="500332">
+            <questReward lootid="tech_shield-backup2" amount="1"/>
+            <bpReward packageid="package_battlepass_bpReward-500332" packageItemIds="ammunition_specialammo_dcr-250,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500332"/>
+        </objective>
+
+        <!-- Rise to the Occasion -->
+        <objective questId="500335">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="25"/>
+            <bpReward packageid="package_battlepass_bpReward-500335" packageItemIds="ammunition_rocketlauncher_cbr,ammunition_specialammo_spray_crown" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500335"/>
+        </objective>
+
+        <!-- Battle Royale -->
+        <objective questId="500319">
+            <questReward lootid="tech_burning-trail" amount="1"/>
+            <bpReward packageid="package_battlepass_bpReward-500319" packageItemIds="booster_dmg-dlb,tech_battle-repair-bot2" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500319"/>
+        </objective>
+
+        <!-- Free for All -->
+        <objective questId="500323">
+            <questReward packageid="package_battlepass_questReward-500323" packageItemIds="ammunition_laser_idb-125,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500323"/>
+            <bpReward packageid="package_battlepass_bpReward-500323" packageItemIds="resource_collectable_indoctrineoil,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500323"/>
+        </objective>
+
+        <!-- Rampage -->
+        <objective questId="500337">
+            <questReward packageid="package_battlepass_questReward-500337" packageItemIds="tech_burning-trail,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500337"/>
+            <bpReward lootid="ammunition_rocketlauncher_hstrm-01" amount="50000"/>
+        </objective>
+
+        <!-- Mincemeat -->
+        <objective questId="500338">
+            <questReward lootid="tech_explosive-charging-blob" amount="5"/>
+            <bpReward packageid="package_battlepass_bpReward-500338" packageItemIds="ammunition_laser_ucb-100,resource_collectable_indoctrineoil" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500338"/>
+        </objective>
+
+        <!-- Annihilate -->
+        <objective questId="500339">
+            <questReward lootid="tech_battle-repair-bot2" amount="5"/>
+            <bpReward packageid="package_battlepass_bpReward-500339" packageItemIds="ammunition_rocket_plt-3030,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500339"/>
+        </objective>
+
+        <!-- Dinged -->
+        <objective questId="500340">
+            <questReward lootid="tech_shield-backup2" amount="5"/>
+            <bpReward packageid="package_battlepass_bpReward-500340" packageItemIds="ammunition_laser_rsb-75,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500340"/>
+        </objective>
+
+        <!-- Perseverance -->
+        <objective questId="500341">
+            <questReward packageid="package_battlepass_questReward-500341" packageItemIds="tech_battle-repair-bot2,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500341"/>
+            <bpReward lootid="resource_ore_seprom" amount="25000"/>
+        </objective>
+
+    </objectiveList>
+
+    <flvDisplayLootId>ship_retiarus</flvDisplayLootId>
+
+    <titleKeyBeforePurchase>window_objectives_bp_title</titleKeyBeforePurchase>
+    <descriptionKeyBeforePurchase>window_objectives_bp_promo_desc</descriptionKeyBeforePurchase>
+
+    <descriptionKeyCollect>window_objectives_bp_collect_desc</descriptionKeyCollect>
+
+    <titleKeyAfterPurchase>window_objectives_bp_highlight_title</titleKeyAfterPurchase>
+    <descriptionKeyAfterPurchase>window_objectives_bp_highlight_desc</descriptionKeyAfterPurchase>
+</battlePass>

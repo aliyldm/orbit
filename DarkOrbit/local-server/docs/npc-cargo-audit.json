@@ -1,0 +1,3476 @@
+{
+  "date": "2026-10-24",
+  "total": 108,
+  "sourced": 103,
+  "explicitNoOre": 7,
+  "unverified": [
+    "streuner-soldier",
+    "streuner-specialist",
+    "streuner-turret",
+    "streuner-emperor",
+    "streuner-rocketeer"
+  ],
+  "scaledGateVariants": [
+    {
+      "key": "streuner",
+      "name": "Streuner",
+      "status": "unverified",
+      "ores": null,
+      "scale": 2,
+      "gateIds": [
+        2,
+        4
+      ]
+    },
+    {
+      "key": "lordakia",
+      "name": "Lordakia",
+      "status": "unverified",
+      "ores": null,
+      "scale": 2,
+      "gateIds": [
+        2,
+        4
+      ]
+    },
+    {
+      "key": "mordon",
+      "name": "Mordon",
+      "status": "unverified",
+      "ores": null,
+      "scale": 2,
+      "gateIds": [
+        2,
+        4
+      ]
+    },
+    {
+      "key": "saimon",
+      "name": "Saimon",
+      "status": "unverified",
+      "ores": null,
+      "scale": 2,
+      "gateIds": [
+        2,
+        4
+      ]
+    },
+    {
+      "key": "devolarium",
+      "name": "Devolarium",
+      "status": "unverified",
+      "ores": null,
+      "scale": 2,
+      "gateIds": [
+        2
+      ]
+    },
+    {
+      "key": "kristallin",
+      "name": "Kristallin",
+      "status": "unverified",
+      "ores": null,
+      "scale": 2,
+      "gateIds": [
+        2,
+        4
+      ]
+    },
+    {
+      "key": "sibelon",
+      "name": "Sibelon",
+      "status": "unverified",
+      "ores": null,
+      "scale": 2,
+      "gateIds": [
+        2
+      ]
+    },
+    {
+      "key": "sibelonit",
+      "name": "Sibelonit",
+      "status": "unverified",
+      "ores": null,
+      "scale": 2,
+      "gateIds": [
+        2,
+        4
+      ]
+    },
+    {
+      "key": "kristallon",
+      "name": "Kristallon",
+      "status": "unverified",
+      "ores": null,
+      "scale": 2,
+      "gateIds": [
+        2,
+        4
+      ]
+    },
+    {
+      "key": "protegit",
+      "name": "Protegit",
+      "status": "unverified",
+      "ores": null,
+      "scale": 2,
+      "gateIds": [
+        2,
+        4
+      ]
+    },
+    {
+      "key": "streuner",
+      "name": "Streuner",
+      "status": "unverified",
+      "ores": null,
+      "scale": 3,
+      "gateIds": [
+        3
+      ]
+    },
+    {
+      "key": "lordakia",
+      "name": "Lordakia",
+      "status": "unverified",
+      "ores": null,
+      "scale": 3,
+      "gateIds": [
+        3
+      ]
+    },
+    {
+      "key": "mordon",
+      "name": "Mordon",
+      "status": "unverified",
+      "ores": null,
+      "scale": 3,
+      "gateIds": [
+        3
+      ]
+    },
+    {
+      "key": "saimon",
+      "name": "Saimon",
+      "status": "unverified",
+      "ores": null,
+      "scale": 3,
+      "gateIds": [
+        3
+      ]
+    },
+    {
+      "key": "devolarium",
+      "name": "Devolarium",
+      "status": "unverified",
+      "ores": null,
+      "scale": 3,
+      "gateIds": [
+        3
+      ]
+    },
+    {
+      "key": "kristallin",
+      "name": "Kristallin",
+      "status": "unverified",
+      "ores": null,
+      "scale": 3,
+      "gateIds": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "sibelon",
+      "name": "Sibelon",
+      "status": "unverified",
+      "ores": null,
+      "scale": 3,
+      "gateIds": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "sibelonit",
+      "name": "Sibelonit",
+      "status": "unverified",
+      "ores": null,
+      "scale": 3,
+      "gateIds": [
+        3
+      ]
+    },
+    {
+      "key": "kristallon",
+      "name": "Kristallon",
+      "status": "unverified",
+      "ores": null,
+      "scale": 3,
+      "gateIds": [
+        3
+      ]
+    },
+    {
+      "key": "protegit",
+      "name": "Protegit",
+      "status": "unverified",
+      "ores": null,
+      "scale": 3,
+      "gateIds": [
+        3
+      ]
+    },
+    {
+      "key": "streuner-upper",
+      "name": "StreuneR",
+      "status": "unverified",
+      "ores": null,
+      "scale": 4,
+      "gateIds": [
+        4
+      ]
+    },
+    {
+      "key": "lordakia",
+      "name": "Lordakia",
+      "status": "unverified",
+      "ores": null,
+      "scale": 4,
+      "gateIds": [
+        4
+      ]
+    },
+    {
+      "key": "lordakium",
+      "name": "Lordakium",
+      "status": "unverified",
+      "ores": null,
+      "scale": 2,
+      "gateIds": [
+        4
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "name": "npc-de",
+      "url": "https://board-de.darkorbit.com/threads/faq-npc-daten-mit-bildern.2812/",
+      "fetchedAt": "2026-10-20T06:21:01.966Z",
+      "sha256": "4052db3ed638a857fe1675d42cc7cd6fd4acbb8608dc1452ed7b8d9d23a11c1e",
+      "textSha256": "4f7dd59d6e9c43e054304edc4f558790d6a38a581fe37a607ab0ea947a27a41f"
+    },
+    {
+      "name": "npc-de-page2",
+      "url": "https://board-de.darkorbit.com/threads/faq-npc-daten-mit-bildern.2812/page-2",
+      "fetchedAt": "2026-10-20T06:21:02.089Z",
+      "sha256": "7e4a1440ff91ab41801c46504bb8b11c046e737324ad54692ad9668c1bbe775a",
+      "textSha256": "af5e5ba404f764298fdd5dbaaf023599cab9beab957b6fbd91ec34d1a69f1495"
+    },
+    {
+      "name": "npc-es",
+      "url": "https://board-es.darkorbit.com/threads/faqs-aliens.135697/",
+      "fetchedAt": "2026-10-20T06:22:13.984Z",
+      "sha256": "76656761ac2f84f41812ec599a90ab30a0f6d28f9dc8ce8cfcfb99ed6a93878d",
+      "textSha256": "c08e1bc162ed88911549f76110ce517ce1c63f397e40e7d1a84a2cd32664a4ad"
+    },
+    {
+      "name": "npc-standard-en",
+      "url": "https://board-en.darkorbit.com/threads/npc-standard-aliens.1005/",
+      "fetchedAt": "2026-10-20T06:21:00.828Z",
+      "sha256": "b2dda913f287ebca1f75f5ad168cde9c7198f05b3fe6e12c80bcd9d786018058",
+      "textSha256": "e028660a24d00f5d4ee5278af472c768e58947968aedf9434adba193509ec865"
+    },
+    {
+      "name": "epsilon-en",
+      "url": "https://board-en.darkorbit.com/threads/epsilon-gate-faq.829/",
+      "fetchedAt": "2026-10-20T06:33:20.030Z",
+      "sha256": "20df904e3173392c0d7d200255ce2b5bd45b2894148eefd2a423c4c06acc8676",
+      "textSha256": "0466ca0730bcecb79913ab7d3fc70b04d1408839d0e8b05b599bbee536d3ed56"
+    },
+    {
+      "name": "zeta-en",
+      "url": "https://board-en.darkorbit.com/threads/zeta-gate-faq.852/",
+      "fetchedAt": "2026-10-20T06:21:02.247Z",
+      "sha256": "20a0cc102ce828aad219395243525676707ab4f0392c7aef56fed2ed22fdc571",
+      "textSha256": "609a471b1a18d654b638acc7bf61746d1c208aee6256167e5723048b7d1e63cf"
+    }
+  ],
+  "rows": [
+    {
+      "key": "streuner",
+      "name": "Streuner",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 10
+        },
+        {
+          "type": 1,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "key": "lordakia",
+      "name": "Lordakia",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 20
+        },
+        {
+          "type": 1,
+          "amount": 20
+        },
+        {
+          "type": 2,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "key": "saimon",
+      "name": "Saimon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 40
+        },
+        {
+          "type": 1,
+          "amount": 40
+        },
+        {
+          "type": 2,
+          "amount": 40
+        },
+        {
+          "type": 4,
+          "amount": 2
+        },
+        {
+          "type": 5,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "key": "mordon",
+      "name": "Mordon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 80
+        },
+        {
+          "type": 1,
+          "amount": 80
+        },
+        {
+          "type": 2,
+          "amount": 80
+        },
+        {
+          "type": 4,
+          "amount": 8
+        },
+        {
+          "type": 5,
+          "amount": 8
+        },
+        {
+          "type": 6,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "key": "devolarium",
+      "name": "Devolarium",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 16
+        },
+        {
+          "type": 5,
+          "amount": 16
+        },
+        {
+          "type": 6,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "key": "sibelon",
+      "name": "Sibelon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 200
+        },
+        {
+          "type": 1,
+          "amount": 200
+        },
+        {
+          "type": 2,
+          "amount": 200
+        },
+        {
+          "type": 4,
+          "amount": 32
+        },
+        {
+          "type": 5,
+          "amount": 32
+        },
+        {
+          "type": 6,
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "key": "sibelonit",
+      "name": "Sibelonit",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 8
+        },
+        {
+          "type": 5,
+          "amount": 8
+        },
+        {
+          "type": 6,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "key": "lordakium",
+      "name": "Lordakium",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 300
+        },
+        {
+          "type": 1,
+          "amount": 300
+        },
+        {
+          "type": 2,
+          "amount": 300
+        },
+        {
+          "type": 4,
+          "amount": 64
+        },
+        {
+          "type": 5,
+          "amount": 64
+        },
+        {
+          "type": 6,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "kristallin",
+      "name": "Kristallin",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 16
+        },
+        {
+          "type": 5,
+          "amount": 16
+        },
+        {
+          "type": 6,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "key": "kristallon",
+      "name": "Kristallon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 300
+        },
+        {
+          "type": 1,
+          "amount": 300
+        },
+        {
+          "type": 2,
+          "amount": 300
+        },
+        {
+          "type": 4,
+          "amount": 128
+        },
+        {
+          "type": 5,
+          "amount": 128
+        },
+        {
+          "type": 6,
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "key": "protegit",
+      "name": "Protegit",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 16
+        },
+        {
+          "type": 5,
+          "amount": 16
+        },
+        {
+          "type": 6,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "key": "cubikon",
+      "name": "Cubikon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1200
+        },
+        {
+          "type": 1,
+          "amount": 1200
+        },
+        {
+          "type": 2,
+          "amount": 1200
+        },
+        {
+          "type": 3,
+          "amount": 64
+        },
+        {
+          "type": 4,
+          "amount": 512
+        },
+        {
+          "type": 5,
+          "amount": 512
+        },
+        {
+          "type": 6,
+          "amount": 64
+        }
+      ]
+    },
+    {
+      "key": "streuner-upper",
+      "name": "StreuneR",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 160
+        },
+        {
+          "type": 1,
+          "amount": 160
+        },
+        {
+          "type": 2,
+          "amount": 160
+        },
+        {
+          "type": 3,
+          "amount": 4
+        },
+        {
+          "type": 4,
+          "amount": 15
+        },
+        {
+          "type": 5,
+          "amount": 15
+        },
+        {
+          "type": 6,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "key": "boss-streuner",
+      "name": "Boss Streuner",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 40
+        },
+        {
+          "type": 1,
+          "amount": 40
+        },
+        {
+          "type": 2,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "key": "boss-lordakia",
+      "name": "Boss Lordakia",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 80
+        },
+        {
+          "type": 1,
+          "amount": 80
+        },
+        {
+          "type": 2,
+          "amount": 80
+        },
+        {
+          "type": 3,
+          "amount": 1
+        },
+        {
+          "type": 4,
+          "amount": 10
+        },
+        {
+          "type": 6,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "key": "boss-saimon",
+      "name": "Boss Saimon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 160
+        },
+        {
+          "type": 1,
+          "amount": 160
+        },
+        {
+          "type": 2,
+          "amount": 160
+        },
+        {
+          "type": 3,
+          "amount": 2
+        },
+        {
+          "type": 4,
+          "amount": 8
+        },
+        {
+          "type": 5,
+          "amount": 8
+        },
+        {
+          "type": 6,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "key": "boss-mordon",
+      "name": "Boss Mordon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 320
+        },
+        {
+          "type": 1,
+          "amount": 320
+        },
+        {
+          "type": 2,
+          "amount": 320
+        },
+        {
+          "type": 3,
+          "amount": 4
+        },
+        {
+          "type": 4,
+          "amount": 32
+        },
+        {
+          "type": 5,
+          "amount": 32
+        },
+        {
+          "type": 6,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "boss-devolarium",
+      "name": "Boss Devolarium",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 400
+        },
+        {
+          "type": 1,
+          "amount": 400
+        },
+        {
+          "type": 2,
+          "amount": 400
+        },
+        {
+          "type": 3,
+          "amount": 8
+        },
+        {
+          "type": 4,
+          "amount": 64
+        },
+        {
+          "type": 5,
+          "amount": 64
+        },
+        {
+          "type": 6,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "boss-sibelon",
+      "name": "Boss Sibelon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 800
+        },
+        {
+          "type": 1,
+          "amount": 800
+        },
+        {
+          "type": 2,
+          "amount": 800
+        },
+        {
+          "type": 3,
+          "amount": 16
+        },
+        {
+          "type": 4,
+          "amount": 128
+        },
+        {
+          "type": 5,
+          "amount": 128
+        },
+        {
+          "type": 6,
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "key": "boss-sibelonit",
+      "name": "Boss Sibelonit",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 400
+        },
+        {
+          "type": 1,
+          "amount": 400
+        },
+        {
+          "type": 2,
+          "amount": 400
+        },
+        {
+          "type": 3,
+          "amount": 8
+        },
+        {
+          "type": 4,
+          "amount": 32
+        },
+        {
+          "type": 5,
+          "amount": 32
+        },
+        {
+          "type": 6,
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "key": "boss-lordakium",
+      "name": "Boss Lordakium",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1200
+        },
+        {
+          "type": 1,
+          "amount": 1200
+        },
+        {
+          "type": 2,
+          "amount": 1200
+        },
+        {
+          "type": 3,
+          "amount": 32
+        },
+        {
+          "type": 4,
+          "amount": 256
+        },
+        {
+          "type": 5,
+          "amount": 256
+        },
+        {
+          "type": 6,
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "key": "boss-kristallin",
+      "name": "Boss Kristallin",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 400
+        },
+        {
+          "type": 1,
+          "amount": 400
+        },
+        {
+          "type": 2,
+          "amount": 400
+        },
+        {
+          "type": 3,
+          "amount": 8
+        },
+        {
+          "type": 4,
+          "amount": 64
+        },
+        {
+          "type": 5,
+          "amount": 64
+        },
+        {
+          "type": 6,
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "key": "boss-kristallon",
+      "name": "Boss Kristallon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1200
+        },
+        {
+          "type": 1,
+          "amount": 1200
+        },
+        {
+          "type": 2,
+          "amount": 1200
+        },
+        {
+          "type": 3,
+          "amount": 64
+        },
+        {
+          "type": 4,
+          "amount": 512
+        },
+        {
+          "type": 5,
+          "amount": 512
+        },
+        {
+          "type": 6,
+          "amount": 64
+        }
+      ]
+    },
+    {
+      "key": "boss-streuner-upper",
+      "name": "Boss StreuneR",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 320
+        },
+        {
+          "type": 1,
+          "amount": 320
+        },
+        {
+          "type": 2,
+          "amount": 320
+        },
+        {
+          "type": 3,
+          "amount": 4
+        },
+        {
+          "type": 4,
+          "amount": 32
+        },
+        {
+          "type": 5,
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "key": "uber-streuner",
+      "name": "Uber Streuner",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 80
+        },
+        {
+          "type": 1,
+          "amount": 80
+        },
+        {
+          "type": 2,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "key": "uber-lordakia",
+      "name": "Uber Lordakia",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 160
+        },
+        {
+          "type": 1,
+          "amount": 160
+        },
+        {
+          "type": 2,
+          "amount": 160
+        },
+        {
+          "type": 3,
+          "amount": 2
+        },
+        {
+          "type": 4,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "key": "uber-saimon",
+      "name": "Uber Saimon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 320
+        },
+        {
+          "type": 1,
+          "amount": 320
+        },
+        {
+          "type": 2,
+          "amount": 320
+        },
+        {
+          "type": 3,
+          "amount": 4
+        },
+        {
+          "type": 4,
+          "amount": 16
+        },
+        {
+          "type": 5,
+          "amount": 16
+        },
+        {
+          "type": 6,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "key": "uber-mordon",
+      "name": "Uber Mordon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 640
+        },
+        {
+          "type": 1,
+          "amount": 640
+        },
+        {
+          "type": 2,
+          "amount": 640
+        },
+        {
+          "type": 3,
+          "amount": 8
+        },
+        {
+          "type": 4,
+          "amount": 64
+        },
+        {
+          "type": 5,
+          "amount": 64
+        },
+        {
+          "type": 6,
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "key": "uber-devolarium",
+      "name": "Uber Devolarium",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 800
+        },
+        {
+          "type": 1,
+          "amount": 800
+        },
+        {
+          "type": 2,
+          "amount": 800
+        },
+        {
+          "type": 3,
+          "amount": 16
+        },
+        {
+          "type": 4,
+          "amount": 128
+        },
+        {
+          "type": 5,
+          "amount": 128
+        },
+        {
+          "type": 6,
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "key": "uber-sibelon",
+      "name": "Uber Sibelon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1600
+        },
+        {
+          "type": 1,
+          "amount": 1600
+        },
+        {
+          "type": 2,
+          "amount": 1600
+        },
+        {
+          "type": 3,
+          "amount": 32
+        },
+        {
+          "type": 4,
+          "amount": 256
+        },
+        {
+          "type": 5,
+          "amount": 256
+        },
+        {
+          "type": 6,
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "key": "uber-sibelonit",
+      "name": "Uber Sibelonit",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 800
+        },
+        {
+          "type": 1,
+          "amount": 800
+        },
+        {
+          "type": 2,
+          "amount": 800
+        },
+        {
+          "type": 3,
+          "amount": 16
+        },
+        {
+          "type": 4,
+          "amount": 64
+        },
+        {
+          "type": 5,
+          "amount": 64
+        },
+        {
+          "type": 6,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "uber-lordakium",
+      "name": "Uber Lordakium",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 2400
+        },
+        {
+          "type": 1,
+          "amount": 2400
+        },
+        {
+          "type": 2,
+          "amount": 2400
+        },
+        {
+          "type": 3,
+          "amount": 64
+        },
+        {
+          "type": 4,
+          "amount": 512
+        },
+        {
+          "type": 5,
+          "amount": 512
+        },
+        {
+          "type": 6,
+          "amount": 64
+        }
+      ]
+    },
+    {
+      "key": "uber-kristallin",
+      "name": "Uber Kristallin",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 800
+        },
+        {
+          "type": 1,
+          "amount": 800
+        },
+        {
+          "type": 2,
+          "amount": 800
+        },
+        {
+          "type": 3,
+          "amount": 16
+        },
+        {
+          "type": 4,
+          "amount": 128
+        },
+        {
+          "type": 5,
+          "amount": 128
+        },
+        {
+          "type": 6,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "uber-kristallon",
+      "name": "Uber Kristallon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 2400
+        },
+        {
+          "type": 1,
+          "amount": 2400
+        },
+        {
+          "type": 2,
+          "amount": 2400
+        },
+        {
+          "type": 3,
+          "amount": 128
+        },
+        {
+          "type": 4,
+          "amount": 1024
+        },
+        {
+          "type": 5,
+          "amount": 1024
+        },
+        {
+          "type": 6,
+          "amount": 128
+        }
+      ]
+    },
+    {
+      "key": "uber-streuner-upper",
+      "name": "Uber StreuneR",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1200
+        },
+        {
+          "type": 1,
+          "amount": 1200
+        },
+        {
+          "type": 2,
+          "amount": 1200
+        },
+        {
+          "type": 3,
+          "amount": 16
+        },
+        {
+          "type": 4,
+          "amount": 120
+        },
+        {
+          "type": 5,
+          "amount": 120
+        }
+      ]
+    },
+    {
+      "key": "infernal",
+      "name": "Infernal",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 16
+        },
+        {
+          "type": 5,
+          "amount": 16
+        },
+        {
+          "type": 6,
+          "amount": 2
+        },
+        {
+          "type": 7,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "key": "scorcher",
+      "name": "Scorcher",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 200
+        },
+        {
+          "type": 1,
+          "amount": 200
+        },
+        {
+          "type": 2,
+          "amount": 200
+        },
+        {
+          "type": 4,
+          "amount": 32
+        },
+        {
+          "type": 5,
+          "amount": 32
+        },
+        {
+          "type": 6,
+          "amount": 4
+        },
+        {
+          "type": 7,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "key": "melter",
+      "name": "Melter",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 300
+        },
+        {
+          "type": 1,
+          "amount": 300
+        },
+        {
+          "type": 2,
+          "amount": 300
+        },
+        {
+          "type": 4,
+          "amount": 128
+        },
+        {
+          "type": 5,
+          "amount": 128
+        },
+        {
+          "type": 6,
+          "amount": 16
+        },
+        {
+          "type": 7,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "devourer",
+      "name": "Devourer",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1600
+        },
+        {
+          "type": 1,
+          "amount": 1600
+        },
+        {
+          "type": 2,
+          "amount": 1600
+        },
+        {
+          "type": 3,
+          "amount": 64
+        },
+        {
+          "type": 4,
+          "amount": 256
+        },
+        {
+          "type": 5,
+          "amount": 256
+        },
+        {
+          "type": 6,
+          "amount": 32
+        },
+        {
+          "type": 7,
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "key": "vagrant",
+      "name": "Vagrant",
+      "status": "explicit-no-ore",
+      "ores": []
+    },
+    {
+      "key": "marauder",
+      "name": "Marauder",
+      "status": "explicit-no-ore",
+      "ores": []
+    },
+    {
+      "key": "outcast",
+      "name": "Outcast",
+      "status": "explicit-no-ore",
+      "ores": []
+    },
+    {
+      "key": "hooligan",
+      "name": "Hooligan",
+      "status": "explicit-no-ore",
+      "ores": []
+    },
+    {
+      "key": "ravager",
+      "name": "Ravager",
+      "status": "explicit-no-ore",
+      "ores": []
+    },
+    {
+      "key": "corsair",
+      "name": "Corsair",
+      "status": "explicit-no-ore",
+      "ores": []
+    },
+    {
+      "key": "convict",
+      "name": "Convict",
+      "status": "explicit-no-ore",
+      "ores": []
+    },
+    {
+      "key": "epsilon-vagrant",
+      "name": "Vagrant",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 50
+        },
+        {
+          "type": 1,
+          "amount": 50
+        },
+        {
+          "type": 2,
+          "amount": 50
+        },
+        {
+          "type": 3,
+          "amount": 1
+        },
+        {
+          "type": 4,
+          "amount": 4
+        },
+        {
+          "type": 5,
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "key": "epsilon-marauder",
+      "name": "Marauder",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 75
+        },
+        {
+          "type": 1,
+          "amount": 75
+        },
+        {
+          "type": 2,
+          "amount": 75
+        },
+        {
+          "type": 3,
+          "amount": 2
+        },
+        {
+          "type": 4,
+          "amount": 8
+        },
+        {
+          "type": 5,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "epsilon-outcast",
+      "name": "Outcast",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 3,
+          "amount": 4
+        },
+        {
+          "type": 4,
+          "amount": 16
+        },
+        {
+          "type": 5,
+          "amount": 16
+        },
+        {
+          "type": 6,
+          "amount": 1
+        },
+        {
+          "type": 7,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "key": "epsilon-corsair",
+      "name": "Corsair",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 3,
+          "amount": 8
+        },
+        {
+          "type": 4,
+          "amount": 25
+        },
+        {
+          "type": 5,
+          "amount": 25
+        },
+        {
+          "type": 6,
+          "amount": 2
+        },
+        {
+          "type": 7,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "key": "epsilon-hooligan",
+      "name": "Hooligan",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 200
+        },
+        {
+          "type": 1,
+          "amount": 200
+        },
+        {
+          "type": 2,
+          "amount": 200
+        },
+        {
+          "type": 3,
+          "amount": 12
+        },
+        {
+          "type": 4,
+          "amount": 32
+        },
+        {
+          "type": 5,
+          "amount": 32
+        },
+        {
+          "type": 6,
+          "amount": 4
+        },
+        {
+          "type": 7,
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "key": "epsilon-ravager",
+      "name": "Ravager",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 300
+        },
+        {
+          "type": 1,
+          "amount": 300
+        },
+        {
+          "type": 2,
+          "amount": 300
+        },
+        {
+          "type": 3,
+          "amount": 16
+        },
+        {
+          "type": 4,
+          "amount": 50
+        },
+        {
+          "type": 5,
+          "amount": 50
+        },
+        {
+          "type": 6,
+          "amount": 8
+        },
+        {
+          "type": 7,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "epsilon-convict",
+      "name": "Convict",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 400
+        },
+        {
+          "type": 1,
+          "amount": 400
+        },
+        {
+          "type": 2,
+          "amount": 400
+        },
+        {
+          "type": 3,
+          "amount": 24
+        },
+        {
+          "type": 4,
+          "amount": 64
+        },
+        {
+          "type": 5,
+          "amount": 64
+        },
+        {
+          "type": 6,
+          "amount": 16
+        },
+        {
+          "type": 7,
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "key": "century-falcon",
+      "name": "Century Falcon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "amount": 1
+        },
+        {
+          "type": 2,
+          "amount": 1
+        },
+        {
+          "type": 3,
+          "amount": 1
+        },
+        {
+          "type": 4,
+          "amount": 1
+        },
+        {
+          "type": 5,
+          "amount": 1
+        },
+        {
+          "type": 6,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "key": "demaner",
+      "name": "DemaNeR",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 300
+        },
+        {
+          "type": 1,
+          "amount": 300
+        },
+        {
+          "type": 2,
+          "amount": 300
+        },
+        {
+          "type": 3,
+          "amount": 22
+        },
+        {
+          "type": 4,
+          "amount": 128
+        },
+        {
+          "type": 5,
+          "amount": 128
+        },
+        {
+          "type": 6,
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "key": "kucurbium",
+      "name": "Kucurbium",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1200
+        },
+        {
+          "type": 1,
+          "amount": 1200
+        },
+        {
+          "type": 2,
+          "amount": 1200
+        },
+        {
+          "type": 3,
+          "amount": 256
+        },
+        {
+          "type": 4,
+          "amount": 512
+        },
+        {
+          "type": 5,
+          "amount": 512
+        },
+        {
+          "type": 6,
+          "amount": 64
+        }
+      ]
+    },
+    {
+      "key": "boss-kucurbium",
+      "name": "Boss Kucurbium",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 4800
+        },
+        {
+          "type": 1,
+          "amount": 4800
+        },
+        {
+          "type": 2,
+          "amount": 4800
+        },
+        {
+          "type": 3,
+          "amount": 1024
+        },
+        {
+          "type": 4,
+          "amount": 2048
+        },
+        {
+          "type": 5,
+          "amount": 2048
+        },
+        {
+          "type": 6,
+          "amount": 256
+        }
+      ]
+    },
+    {
+      "key": "kappa-kucurbium",
+      "name": "Kucurbium",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1200
+        },
+        {
+          "type": 1,
+          "amount": 1200
+        },
+        {
+          "type": 2,
+          "amount": 1200
+        },
+        {
+          "type": 3,
+          "amount": 256
+        },
+        {
+          "type": 4,
+          "amount": 512
+        },
+        {
+          "type": 5,
+          "amount": 512
+        },
+        {
+          "type": 6,
+          "amount": 64
+        }
+      ]
+    },
+    {
+      "key": "kappa-boss-kucurbium",
+      "name": "Boss Kucurbium",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 4800
+        },
+        {
+          "type": 1,
+          "amount": 4800
+        },
+        {
+          "type": 2,
+          "amount": 4800
+        },
+        {
+          "type": 3,
+          "amount": 1024
+        },
+        {
+          "type": 4,
+          "amount": 2048
+        },
+        {
+          "type": 5,
+          "amount": 2048
+        },
+        {
+          "type": 6,
+          "amount": 256
+        }
+      ]
+    },
+    {
+      "key": "kappa-century-falcon",
+      "name": "Century Falcon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1
+        },
+        {
+          "type": 1,
+          "amount": 1
+        },
+        {
+          "type": 2,
+          "amount": 1
+        },
+        {
+          "type": 3,
+          "amount": 1
+        },
+        {
+          "type": 4,
+          "amount": 1
+        },
+        {
+          "type": 5,
+          "amount": 1
+        },
+        {
+          "type": 6,
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "key": "kappa-demaner",
+      "name": "DemaNeR",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 300
+        },
+        {
+          "type": 1,
+          "amount": 300
+        },
+        {
+          "type": 2,
+          "amount": 300
+        },
+        {
+          "type": 3,
+          "amount": 32
+        },
+        {
+          "type": 4,
+          "amount": 128
+        },
+        {
+          "type": 5,
+          "amount": 128
+        },
+        {
+          "type": 6,
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "key": "icy",
+      "name": "Icy",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 16
+        },
+        {
+          "type": 5,
+          "amount": 16
+        },
+        {
+          "type": 6,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "key": "interceptor",
+      "name": "Interceptor",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 18
+        },
+        {
+          "type": 5,
+          "amount": 18
+        }
+      ]
+    },
+    {
+      "key": "barracuda",
+      "name": "Barracuda",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 200
+        },
+        {
+          "type": 1,
+          "amount": 200
+        },
+        {
+          "type": 2,
+          "amount": 200
+        },
+        {
+          "type": 4,
+          "amount": 24
+        },
+        {
+          "type": 5,
+          "amount": 24
+        },
+        {
+          "type": 6,
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "key": "saboteur",
+      "name": "Saboteur",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 200
+        },
+        {
+          "type": 1,
+          "amount": 200
+        },
+        {
+          "type": 2,
+          "amount": 200
+        },
+        {
+          "type": 4,
+          "amount": 32
+        },
+        {
+          "type": 5,
+          "amount": 32
+        },
+        {
+          "type": 6,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "annihilator",
+      "name": "Annihilator",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 300
+        },
+        {
+          "type": 1,
+          "amount": 300
+        },
+        {
+          "type": 2,
+          "amount": 300
+        },
+        {
+          "type": 3,
+          "amount": 2
+        },
+        {
+          "type": 4,
+          "amount": 48
+        },
+        {
+          "type": 5,
+          "amount": 48
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "battleray",
+      "name": "Battleray",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 400
+        },
+        {
+          "type": 1,
+          "amount": 400
+        },
+        {
+          "type": 2,
+          "amount": 400
+        },
+        {
+          "type": 3,
+          "amount": 4
+        },
+        {
+          "type": 4,
+          "amount": 64
+        },
+        {
+          "type": 5,
+          "amount": 64
+        },
+        {
+          "type": 6,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "key": "uber-interceptor",
+      "name": "Uber Interceptor",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 800
+        },
+        {
+          "type": 1,
+          "amount": 800
+        },
+        {
+          "type": 2,
+          "amount": 800
+        },
+        {
+          "type": 4,
+          "amount": 72
+        },
+        {
+          "type": 5,
+          "amount": 72
+        },
+        {
+          "type": 6,
+          "amount": 16
+        },
+        {
+          "type": 8,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "key": "uber-barracuda",
+      "name": "Uber Barracuda",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1000
+        },
+        {
+          "type": 1,
+          "amount": 1000
+        },
+        {
+          "type": 2,
+          "amount": 1000
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 100
+        },
+        {
+          "type": 8,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "key": "uber-annihilator",
+      "name": "Uber Annihilator",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1200
+        },
+        {
+          "type": 1,
+          "amount": 1200
+        },
+        {
+          "type": 2,
+          "amount": 1200
+        },
+        {
+          "type": 3,
+          "amount": 8
+        },
+        {
+          "type": 4,
+          "amount": 200
+        },
+        {
+          "type": 5,
+          "amount": 200
+        },
+        {
+          "type": 6,
+          "amount": 48
+        },
+        {
+          "type": 8,
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "key": "uber-saboteur",
+      "name": "Uber Saboteur",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1500
+        },
+        {
+          "type": 1,
+          "amount": 1500
+        },
+        {
+          "type": 2,
+          "amount": 1500
+        },
+        {
+          "type": 4,
+          "amount": 120
+        },
+        {
+          "type": 5,
+          "amount": 120
+        },
+        {
+          "type": 6,
+          "amount": 32
+        },
+        {
+          "type": 8,
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "key": "uber-battleray",
+      "name": "Uber Battleray",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1400
+        },
+        {
+          "type": 1,
+          "amount": 1400
+        },
+        {
+          "type": 2,
+          "amount": 1400
+        },
+        {
+          "type": 3,
+          "amount": 8
+        },
+        {
+          "type": 4,
+          "amount": 250
+        },
+        {
+          "type": 5,
+          "amount": 250
+        },
+        {
+          "type": 6,
+          "amount": 80
+        },
+        {
+          "type": 8,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "emperor-sibelon",
+      "name": "Emperor Sibelon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 1600
+        },
+        {
+          "type": 1,
+          "amount": 1600
+        },
+        {
+          "type": 2,
+          "amount": 1600
+        },
+        {
+          "type": 3,
+          "amount": 64
+        },
+        {
+          "type": 4,
+          "amount": 256
+        },
+        {
+          "type": 5,
+          "amount": 256
+        },
+        {
+          "type": 6,
+          "amount": 32
+        }
+      ]
+    },
+    {
+      "key": "emperor-lordakium",
+      "name": "Emperor Lordakium",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 2560
+        },
+        {
+          "type": 1,
+          "amount": 2560
+        },
+        {
+          "type": 2,
+          "amount": 2560
+        },
+        {
+          "type": 3,
+          "amount": 64
+        },
+        {
+          "type": 4,
+          "amount": 512
+        },
+        {
+          "type": 5,
+          "amount": 512
+        },
+        {
+          "type": 6,
+          "amount": 64
+        }
+      ]
+    },
+    {
+      "key": "emperor-kristallon",
+      "name": "Emperor Kristallon",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 2560
+        },
+        {
+          "type": 1,
+          "amount": 2560
+        },
+        {
+          "type": 2,
+          "amount": 2560
+        },
+        {
+          "type": 3,
+          "amount": 128
+        },
+        {
+          "type": 4,
+          "amount": 1024
+        },
+        {
+          "type": 5,
+          "amount": 1024
+        },
+        {
+          "type": 6,
+          "amount": 128
+        }
+      ]
+    },
+    {
+      "key": "streuner-soldier",
+      "name": "Streuner Soldier",
+      "status": "unverified",
+      "ores": null
+    },
+    {
+      "key": "streuner-specialist",
+      "name": "Streuner Specialist",
+      "status": "unverified",
+      "ores": null
+    },
+    {
+      "key": "streuner-turret",
+      "name": "Streuner Guard Turret",
+      "status": "unverified",
+      "ores": null
+    },
+    {
+      "key": "streuner-emperor",
+      "name": "Emperor Streuner",
+      "status": "unverified",
+      "ores": null
+    },
+    {
+      "key": "streuner-rocketeer",
+      "name": "Streuner Rocketeer",
+      "status": "unverified",
+      "ores": null
+    },
+    {
+      "key": "kronos-phoenix",
+      "name": "Saturn Phoenix",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 25
+        },
+        {
+          "type": 1,
+          "amount": 25
+        },
+        {
+          "type": 2,
+          "amount": 25
+        },
+        {
+          "type": 4,
+          "amount": 10
+        },
+        {
+          "type": 5,
+          "amount": 10
+        }
+      ]
+    },
+    {
+      "key": "kronos-yamato",
+      "name": "Saturn Yamato",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 45
+        },
+        {
+          "type": 1,
+          "amount": 45
+        },
+        {
+          "type": 2,
+          "amount": 45
+        },
+        {
+          "type": 4,
+          "amount": 20
+        },
+        {
+          "type": 5,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "key": "kronos-defcom",
+      "name": "Saturn Defcom",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 75
+        },
+        {
+          "type": 1,
+          "amount": 75
+        },
+        {
+          "type": 2,
+          "amount": 75
+        },
+        {
+          "type": 4,
+          "amount": 50
+        },
+        {
+          "type": 5,
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "key": "kronos-liberator",
+      "name": "Saturn Liberator",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 75
+        },
+        {
+          "type": 1,
+          "amount": 75
+        },
+        {
+          "type": 2,
+          "amount": 75
+        },
+        {
+          "type": 4,
+          "amount": 50
+        },
+        {
+          "type": 5,
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "key": "kronos-nostromo",
+      "name": "Saturn Nostromo",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 75
+        },
+        {
+          "type": 1,
+          "amount": 75
+        },
+        {
+          "type": 2,
+          "amount": 75
+        },
+        {
+          "type": 4,
+          "amount": 50
+        },
+        {
+          "type": 5,
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "key": "kronos-piranha",
+      "name": "Saturn Piranha",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 75
+        },
+        {
+          "type": 1,
+          "amount": 75
+        },
+        {
+          "type": 2,
+          "amount": 75
+        },
+        {
+          "type": 4,
+          "amount": 50
+        },
+        {
+          "type": 5,
+          "amount": 50
+        }
+      ]
+    },
+    {
+      "key": "kronos-bigboy",
+      "name": "Saturn Bigboy",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-vengeance",
+      "name": "Saturn Vengeance",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 75
+        },
+        {
+          "type": 5,
+          "amount": 75
+        },
+        {
+          "type": 6,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "kronos-goliath",
+      "name": "Saturn Goliath",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-leonov",
+      "name": "Saturn Leonov",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 75
+        },
+        {
+          "type": 5,
+          "amount": 75
+        },
+        {
+          "type": 6,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "kronos-venom",
+      "name": "Saturn Venom",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-sentinel",
+      "name": "Saturn Sentinel",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-spectrum",
+      "name": "Saturn Spectrum",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-diminisher",
+      "name": "Saturn Diminisher",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-solace",
+      "name": "Saturn Solace",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-revenge",
+      "name": "Saturn Revenge",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 75
+        },
+        {
+          "type": 5,
+          "amount": 75
+        }
+      ]
+    },
+    {
+      "key": "kronos-enforcer",
+      "name": "Saturn Enforcer",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-lightning",
+      "name": "Saturn Lightning",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 75
+        },
+        {
+          "type": 5,
+          "amount": 75
+        },
+        {
+          "type": 6,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "kronos-avenger",
+      "name": "Saturn Avenger",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 75
+        },
+        {
+          "type": 5,
+          "amount": 75
+        },
+        {
+          "type": 6,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "kronos-bastion",
+      "name": "Saturn Bastion",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-spearhead",
+      "name": "Saturn Spearhead",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 75
+        },
+        {
+          "type": 5,
+          "amount": 75
+        },
+        {
+          "type": 6,
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "key": "kronos-citadel",
+      "name": "Saturn Citadel",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 300
+        },
+        {
+          "type": 1,
+          "amount": 300
+        },
+        {
+          "type": 2,
+          "amount": 300
+        },
+        {
+          "type": 4,
+          "amount": 200
+        },
+        {
+          "type": 5,
+          "amount": 200
+        },
+        {
+          "type": 6,
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "key": "kronos-aegis",
+      "name": "Saturn Aegis",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-crimson",
+      "name": "Saturn Crimson",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-jade",
+      "name": "Saturn Jade",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-sapphire",
+      "name": "Saturn Sapphire",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 150
+        },
+        {
+          "type": 1,
+          "amount": 150
+        },
+        {
+          "type": 2,
+          "amount": 150
+        },
+        {
+          "type": 4,
+          "amount": 100
+        },
+        {
+          "type": 5,
+          "amount": 100
+        },
+        {
+          "type": 6,
+          "amount": 12
+        }
+      ]
+    },
+    {
+      "key": "kronos-evil",
+      "name": "Evil You",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 400
+        },
+        {
+          "type": 1,
+          "amount": 400
+        },
+        {
+          "type": 2,
+          "amount": 300
+        },
+        {
+          "type": 4,
+          "amount": 200
+        },
+        {
+          "type": 5,
+          "amount": 200
+        },
+        {
+          "type": 6,
+          "amount": 25
+        }
+      ]
+    },
+    {
+      "key": "kronos-evil-iris",
+      "name": "Evil Iris",
+      "status": "sourced-ore",
+      "ores": [
+        {
+          "type": 0,
+          "amount": 100
+        },
+        {
+          "type": 1,
+          "amount": 100
+        },
+        {
+          "type": 2,
+          "amount": 100
+        },
+        {
+          "type": 4,
+          "amount": 16
+        },
+        {
+          "type": 5,
+          "amount": 16
+        },
+        {
+          "type": 6,
+          "amount": 2
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Ore base contents only; bonuses apply when collecting.",
+    "Scaled gate combat/reward multipliers do not by themselves establish ore quantities.",
+    "Missing source ore lines are unknown, not proof of zero.",
+    "Old saved gate snapshots and unkeyed custom database NPCs are not canonical catalogue facts.",
+    "Conditional assembly-material drop odds and multiplayer ownership are not established by these tables."
+  ]
+}

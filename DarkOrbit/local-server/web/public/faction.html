@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>DarkOrbit Local · Şirket seçimi</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #05070d; color: #cfd8e3; font-family: Segoe UI, sans-serif; }
+    .wrap { display: flex; flex-direction: column; height: 100%; align-items: center; justify-content: center; gap: 24px; }
+    h1 { font-size: 22px; margin: 0; }
+    p { margin: 0; color: #6d7d96; }
+    form { display: flex; gap: 16px; }
+    button { width: 200px; padding: 24px 16px; background: #0d1320; color: inherit; border: 1px solid #23324d; cursor: pointer; font: inherit; text-align: left; }
+    button:hover { border-color: #4a6aa5; }
+    button b { display: block; font-size: 20px; margin-bottom: 6px; }
+    .mmo b { color: #e0473c; } .eic b { color: #3c8de0; } .vru b { color: #4cc35a; }
+  </style>
+</head>
+<body>
+  <!-- Geçici sayfa; Aşama 2'de canlı portal tasarımıyla değiştirilecek. -->
+  <div class="wrap">
+    <h1>Şirketini seç</h1>
+    <p>Başlangıç haritan seçtiğin şirkete göre belirlenir. Bu seçim sonradan değişmez.</p>
+    <form method="post" action="/faction">
+      <button class="mmo" name="faction" value="1"><b>MMO</b>Mars Mining Operations · 1-1</button>
+      <button class="eic" name="faction" value="2"><b>EIC</b>Earth Industries Corp. · 2-1</button>
+      <button class="vru" name="faction" value="3"><b>VRU</b>Venus Resources Unlimited · 3-1</button>
+    </form>
+  </div>
+</body>
+</html>

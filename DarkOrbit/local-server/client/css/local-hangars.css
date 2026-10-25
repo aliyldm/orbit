@@ -1,0 +1,8 @@
+/* Reuse the original header sprite/buttons; only expanded overflow and its
+   attached ship chooser need layout beyond the captured single-slot header. */
+#header_hangar_slots.local_hangars_expanded { width:350px; height:auto; max-height:170px; overflow-y:auto; padding:0 12px 5px; margin-left:123px; background:#07151e; border:1px solid #275169; }
+.local_hangar_panel { position:absolute; z-index:30; top:46px; left:132px; width:330px; padding:12px; color:#b8d5e2; background:#07151e; border:1px solid #347293; font:11px Arial,sans-serif; box-shadow:0 2px 7px #000; }
+.local_hangar_panel p { margin:7px 0; }
+.local_hangar_panel label { display:block; margin:6px 0; }
+.local_hangar_panel select { width:100%; background:#122835; color:#d4e9f1; border:1px solid #347293; }
+.local_hangar_panel button,.local_hangar_panel a { display:inline-block; margin:10px 10px 0 0; padding:5px 10px; color:#b8d5e2; background:#142b38; border:1px solid #347293; cursor:pointer; }

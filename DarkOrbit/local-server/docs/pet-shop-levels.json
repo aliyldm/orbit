@@ -1,0 +1,355 @@
+{
+  "source": "web/portal/pages/internalDock~internalDockPetGear.html + internalDock~internalDockPetProtocols.html",
+  "items": {
+    "equipment_petgear_csr-02": {
+      "name": "Kombo Gemi Tamir Modülü",
+      "category": "petGear",
+      "levels": {
+        "1": {
+          "price": 20000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 30000,
+          "currency": "real"
+        },
+        "3": {
+          "price": 55000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_petgear_cgm-02": {
+      "name": "Kombo Koruma Modu Modülü",
+      "category": "petGear",
+      "levels": {
+        "1": {
+          "price": 20000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 30000,
+          "currency": "real"
+        },
+        "3": {
+          "price": 55000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_petgear_g-al1": {
+      "name": "Oto Yağma",
+      "category": "petGear",
+      "levels": {
+        "1": {
+          "price": 7500,
+          "currency": "real"
+        },
+        "2": {
+          "price": 17500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 37500,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_petgear_g-ar1": {
+      "name": "Oto ham madde Toplama",
+      "category": "petGear",
+      "levels": {
+        "1": {
+          "price": 2500,
+          "currency": "real"
+        },
+        "2": {
+          "price": 6000,
+          "currency": "real"
+        },
+        "3": {
+          "price": 17500,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_petgear_g-el1": {
+      "name": "Düşman Bulucu",
+      "category": "petGear",
+      "levels": {
+        "1": {
+          "price": 6000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 12500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 37500,
+          "currency": "real"
+        },
+        "3X": {
+          "price": 50000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_petgear_g-rl1": {
+      "name": "Ham madde Bulucu",
+      "category": "petGear",
+      "levels": {
+        "1": {
+          "price": 2500,
+          "currency": "real"
+        },
+        "2": {
+          "price": 6000,
+          "currency": "real"
+        },
+        "3": {
+          "price": 17500,
+          "currency": "real"
+        },
+        "3X": {
+          "price": 25000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_petgear_g-tra1": {
+      "name": "Ticaret Modülü",
+      "category": "petGear",
+      "levels": {
+        "1": {
+          "price": 6000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 12500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 37500,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_petgear_g-rep1": {
+      "name": "Tamir Modülü",
+      "category": "petGear",
+      "levels": {
+        "1": {
+          "price": 2500,
+          "currency": "real"
+        },
+        "2": {
+          "price": 6000,
+          "currency": "real"
+        },
+        "3": {
+          "price": 12500,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_petgear_g-kk1": {
+      "name": "Kamikaze Modülü",
+      "category": "petGear",
+      "levels": {
+        "1": {
+          "price": 7500,
+          "currency": "real"
+        },
+        "2": {
+          "price": 17500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 50000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_aiprotocol_ai-cr1": {
+      "name": "Kargo Protokolü",
+      "category": "pet_protocol",
+      "levels": {
+        "1": {
+          "price": 3000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 7500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 25000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_aiprotocol_ai-r1": {
+      "name": "Radar Protokolü X",
+      "category": "pet_protocol",
+      "levels": {
+        "1": {
+          "price": 3000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 7500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 25000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_aiprotocol_ai-s1": {
+      "name": "Kurtarılan Mal Protokolü X",
+      "category": "pet_protocol",
+      "levels": {
+        "1": {
+          "price": 5000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 12500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 45000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_aiprotocol_ai-sm1": {
+      "name": "Kalkan Yönlendirme Protokolü X",
+      "category": "pet_protocol",
+      "levels": {
+        "1": {
+          "price": 5000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 12500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 45000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_aiprotocol_ai-lm1": {
+      "name": "Lazer Silahı Protokolü",
+      "category": "pet_protocol",
+      "levels": {
+        "1": {
+          "price": 5000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 12500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 45000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_aiprotocol_ai-aim1": {
+      "name": "İsabet Protokolü X",
+      "category": "pet_protocol",
+      "levels": {
+        "1": {
+          "price": 3000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 7500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 25000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_aiprotocol_ai-e1": {
+      "name": "Kaçınma Protokolü X",
+      "category": "pet_protocol",
+      "levels": {
+        "1": {
+          "price": 5000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 12500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 45000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_aiprotocol_ai-hp1": {
+      "name": "Darbe Puanı Protokolü X",
+      "category": "pet_protocol",
+      "levels": {
+        "1": {
+          "price": 5000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 12500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 45000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_aiprotocol_ai-al1": {
+      "name": "Anti Uzaylı Protokolü X",
+      "category": "pet_protocol",
+      "levels": {
+        "1": {
+          "price": 3000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 7500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 25000,
+          "currency": "real"
+        }
+      }
+    },
+    "equipment_aiprotocol_ai-eco1": {
+      "name": "Yakıt Protokolü X",
+      "category": "pet_protocol",
+      "levels": {
+        "1": {
+          "price": 5000,
+          "currency": "real"
+        },
+        "2": {
+          "price": 12500,
+          "currency": "real"
+        },
+        "3": {
+          "price": 45000,
+          "currency": "real"
+        }
+      }
+    }
+  }
+}

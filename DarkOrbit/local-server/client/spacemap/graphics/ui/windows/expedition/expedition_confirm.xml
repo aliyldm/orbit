@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="settingsWindowFUI" />
+    </libraries>
+    <!-- TEXT STYLES -->
+    <textstyle name="confirm_info_style"
+               textColor="0xF1FBEC"
+               fontSize="14" type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               multiline="true"
+               wordWrap="true"
+               autoSize="left"/>
+    <textstyle name="confirm_item_num_style"
+               textColor="0xBFBFBF" background="false"
+               type="dynamic" selectable="false"
+               fontName="Verdana" embedFonts="false" bold="true"
+               fontSize="11"/>
+    <skin name="reward_background_skin" library="gameclientCommonUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="input_background_blue" scale9grid="4,4,6,5">normal</layer>
+    </skin>
+    <skin name="popup_label_button_green" classname="FadableButtonSkin" library="settingsWindowFUI" >
+        <layer classname="BitmapLayer" libraryID="btn_green_normal" >normal</layer>
+        <layer classname="BitmapLayer" libraryID="btn_green_hover" >over</layer>
+        <layer classname="BitmapLayer" libraryID="btn_inactive" >disabled</layer>
+    </skin>
+    <skin name="popup_label_button_red" classname="FadableButtonSkin" library="settingsWindowFUI" >
+        <layer classname="BitmapLayer" libraryID="btn_red_normal" >normal</layer>
+        <layer classname="BitmapLayer" libraryID="btn_red_hover" >over</layer>
+        <layer classname="BitmapLayer" libraryID="btn_inactive" >disabled</layer>
+    </skin>
+    <skin name="settings_label_button_blue" classname="FadableButtonSkin" library="settingsWindowFUI">
+        <layer classname="BitmapLayer" libraryID="btn_blue_normal" scale9grid="16,9,144,19" >normal</layer>
+        <layer classname="BitmapLayer" libraryID="btn_blue_hover"  scale9grid="16,9,144,19">over</layer>
+        <layer classname="BitmapLayer" libraryID="btn_inactive"  scale9grid="16,9,144,19">disabled</layer>
+    </skin>
+    <!-- CONTENT -->
+    <container name="content"
+               mouseEnabled="false"
+               width="400"
+               height="250">
+
+        <label name="info_label"
+               alignX="left" alignY="top"
+               marginTop="20"
+               marginLeft="20"
+               marginRight="20"
+               autoSizeWidth="true"
+               useHTML="true"
+               height="18"
+               registeredSkinName="commonui_default_label"
+               registeredTextStyleName="confirm_info_style"/>
+
+        <container name="cost_background" width="90" height="40"
+                   alignX="left" alignY="bottom"
+                   marginLeft="80" marginBottom="65" mouseEnabled="true">
+
+            <coreponent name="cost_item_icon"
+                        width="30" height="30"
+                        autoSizeWidth="false"
+                        autoSizeHeight="false"
+                        alignX="left" alignY="bottom"
+                        marginLeft="1" marginBottom="1"
+                        mouseEnabled="true" mouseChildren="true"
+                        registeredSkinName="reward_background_skin" />
+
+            <label name="cost_item_num_label" text="x1"
+                   registeredSkinName="commonui_default_label"
+                   alignX="left" alignY="bottom"
+                   marginLeft="35"
+                   marginBottom="6"
+                   width="35" autoSizeTextHeight="true"
+                   registeredTextStyleName="confirm_item_num_style"/>
+        </container>
+        <button name="okButton"
+                width="110" height="30"
+                alignX="left"
+                alignY="bottom"
+                marginLeft="50"
+                marginBottom="30"
+                text="localize:btn_ok"
+                buttonMode="true"
+                registeredSkinName="commonui_scale9_button_blue"
+                registeredTextStyleName="commonui_button_whitetxt_16pt"/>
+
+        <button name="cancelButton"
+                width="110" height="30"
+                alignX="right"
+                alignY="bottom"
+                marginRight="50"
+                marginBottom="30"
+                text="localize:btn_cancel"
+                buttonMode="true"
+                registeredSkinName="commonui_scale9_button_blue"
+                registeredTextStyleName="commonui_button_whitetxt_16pt"/>
+    </container>
+    <!-- CONTENT -->
+</root>

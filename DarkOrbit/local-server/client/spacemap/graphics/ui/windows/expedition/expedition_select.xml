@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+    </libraries>
+    <!-- TEXT STYLES -->
+    <textstyle name="select_info_style"
+               textColor="0xF1FBEC"
+               fontSize="12" type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               multiline="true"
+               wordWrap="true"
+               autoSize="left"/>
+
+    <textstyle name="cost_item_num_style"
+               textColor="0xBFBFBF" background="false"
+               type="dynamic" selectable="false"
+               fontName="Verdana" embedFonts="false" bold="false"
+               fontSize="11"/>
+
+    <!-- CONTENT -->
+    <container name="content"
+               mouseEnabled="false"
+               width="300"
+               height="160">
+
+        <label name="info_label"
+               alignX="left" alignY="top"
+               marginLeft="20"
+               marginTop="17"
+               marginRight="20"
+               autoSizeWidth="true"
+               useHTML="true"
+               height="18"
+               registeredSkinName="commonui_default_label"
+               registeredTextStyleName="select_info_style"/>
+
+
+
+
+        <coreponent name="cost_item_icon"
+                    width="30" height="30"
+                    autoSizeWidth="false"
+                    autoSizeHeight="false"
+                    alignX="left" alignY="top"
+                    marginLeft="130" marginTop="57"
+                    mouseEnabled="true" mouseChildren="true"
+                    />
+
+        <label name="cost_item_num_label" text="9999998888888/999999"
+               registeredSkinName="commonui_default_label"
+               alignX="left" alignY="top"
+               marginLeft="163"
+               marginTop="65"
+               width="147" autoSizeTextHeight="true"
+               registeredTextStyleName="cost_item_num_style"/>
+
+        <button name="jumpButton"
+                width="110" height="30"
+                alignX="center"  alignY="bottom"
+                marginLeft="0"
+                marginBottom="20"
+                text="localize:ttip_jump"
+                registeredSkinName="commonui_scale9_button_blue"/>
+
+        <coreponent name="select_container1" alignX="left" alignY="top" marginLeft="20" marginTop="65" width="100"
+                    height="150" visible="true">
+            <coreponent name="select_container2" visible="true">
+                <dropdownbox name="select_box" width="100" height="30" alignX="left" alignY="top" marginLeft="0"
+                             marginTop="0" registeredSkinName="settings_window_dropdownbox"/>
+            </coreponent>
+        </coreponent>
+
+
+    </container>
+    <!-- CONTENT -->
+</root>

@@ -1,0 +1,896 @@
+{
+  "date": "2026-10-23",
+  "scope": "source/CLI; no rendered Flash end-to-end verification",
+  "totalUniqueCapturedItems": 95,
+  "retainedIds": [
+    "user",
+    "ship",
+    "minimap",
+    "spacemap",
+    "quests",
+    "refinement",
+    "assembly",
+    "log",
+    "pet",
+    "booster",
+    "ggBuilder",
+    "hangar",
+    "hangarCannons",
+    "pilotSheet",
+    "skylab",
+    "new_shop",
+    "seasonPass",
+    "command_center",
+    "shop",
+    "settings",
+    "help",
+    "logout",
+    "fullscreen"
+  ],
+  "hiddenIds": [
+    "vipMerchantExchange",
+    "mileageMarket",
+    "cli",
+    "ship_warp",
+    "chat",
+    "group",
+    "contacts",
+    "dispatch",
+    "trinityTrials",
+    "expedition",
+    "strikeAndExit",
+    "rankings",
+    "eternal_blacklight",
+    "spaceball",
+    "invasion",
+    "ctb",
+    "tdm",
+    "ranked_hunt",
+    "highscoregate",
+    "scoreevent",
+    "infiltration",
+    "word_puzzle",
+    "sectorcontrol",
+    "jackpot_status_ui",
+    "curcubitor",
+    "influence",
+    "plutus",
+    "chrominEvent",
+    "pvp_summer",
+    "tiered_arena",
+    "battle_pass",
+    "curcubitor2019",
+    "frozen_labyrinth",
+    "npc_event",
+    "payload_escort",
+    "eternal_gate",
+    "agatus_event",
+    "rogue_lite",
+    "preBlackFridaySales",
+    "ship_boost_event",
+    "traininggrounds",
+    "spaceplague",
+    "domination",
+    "rzone",
+    "eventProgress",
+    "wargame_event",
+    "wargame_lobby",
+    "diminish_quests",
+    "worldBoss",
+    "titleFrenzy",
+    "publicWorldBoss",
+    "voyagers",
+    "space_search",
+    "birthday_2025",
+    "clan",
+    "auction",
+    "nova",
+    "vouchers",
+    "message",
+    "logbook",
+    "armoryUnlock",
+    "unity_client_reward",
+    "a_new_hope",
+    "return_of_hero",
+    "synthesis",
+    "update_engine",
+    "returnee_login",
+    "monthly_deluxe",
+    "miniclient_reward",
+    "uridium_bank",
+    "assistant",
+    "stellar_pathfinder"
+  ],
+  "newlyHiddenIds": [
+    "ship_warp",
+    "chat",
+    "group",
+    "contacts",
+    "dispatch",
+    "trinityTrials",
+    "expedition",
+    "rankings",
+    "battle_pass",
+    "npc_event",
+    "rogue_lite",
+    "voyagers",
+    "clan",
+    "auction",
+    "nova",
+    "vouchers",
+    "message",
+    "logbook",
+    "armoryUnlock",
+    "unity_client_reward",
+    "synthesis",
+    "update_engine",
+    "monthly_deluxe",
+    "miniclient_reward",
+    "uridium_bank",
+    "assistant",
+    "stellar_pathfinder"
+  ],
+  "registeredCommandCount": 93,
+  "registeredCommands": [
+    "ActivationRequest",
+    "AssemblyBuildRequest",
+    "AssemblyCollectAllRequest",
+    "AssemblyCollectRequest",
+    "AssemblyRecipeSelectRequest",
+    "AssemblySetFilterRequest",
+    "AssemblySkipRequest",
+    "AttackAbortLaserRequest",
+    "AttackLaserRequest",
+    "AttackRocketRequest",
+    "AudioSettingsRequest",
+    "CollectBoxRequest",
+    "CommandCenterGetDontShowRequest",
+    "CommandCenterNewsClickedRequest",
+    "CommandCenterNewsInfoRequest",
+    "CommandCenterUpdateDontShowRequest",
+    "ConfigChangeRequest",
+    "ConvertResearchPointsRequest",
+    "DisassemblyRequest",
+    "DisplaySettingsRequest",
+    "GalaxyGateBuilderBuyLifeRequest",
+    "GalaxyGateBuilderGetGatePartsRequest",
+    "GalaxyGateBuilderInfoRequest",
+    "GalaxyGateBuilderMultiEnergyRequest",
+    "GalaxyGateBuilderSaveSpinAmountRequest",
+    "GalaxyGateBuilderSetupGateRequest",
+    "GameplaySettingsRequest",
+    "HangarListRequest",
+    "HangarShipChangeShipModelRequest",
+    "HangarShipClearConfigRequest",
+    "HangarShipDetailRequest",
+    "HangarShipEquipmentRequest",
+    "HangarShipFavouriteRequest",
+    "HangarShipImportConfigRequest",
+    "HangarShipLoadConfigRequest",
+    "HangarShipMoveItemsRequest",
+    "HangarShipRenamePetRequest",
+    "HangarShipRepairDroneRequest",
+    "HangarShipSaveConfigRequest",
+    "HangarShipSellDroneRequest",
+    "HarvestRequest",
+    "HintWindowClosedRequest",
+    "InstantRepairRequest",
+    "JumpCPUSelectRequest",
+    "JumpCPUUpdateRequest",
+    "JumpRequest",
+    "KeepAlive",
+    "KillScreenRepairRequest",
+    "LabRefinementRequest",
+    "LabUpdateItemRequest",
+    "LabUpdateRequest",
+    "LegacyModule",
+    "LoginRequest",
+    "LogoutCancelRequest",
+    "MapAssetActivationRequest",
+    "MenuActionRequest",
+    "MoveRequest",
+    "PetGearActivationRequest",
+    "PetRequest",
+    "QualitySettingsRequest",
+    "QuantumFluidCoreRequest",
+    "QuestAcceptRequest",
+    "QuestCancelRequest",
+    "QuestGiverApproachedRequest",
+    "QuestGiverWindowClosedRequest",
+    "QuestInfoRequest",
+    "QuestListRequest",
+    "QuestSettingsRequest",
+    "ReadyRequest",
+    "ResetSettingsRequest",
+    "ResetSkillTreeRequest",
+    "ReturneeLoginHideUIItemRequest",
+    "SeasonPassLevelPurchaseRequest",
+    "SeasonPassRewardClaimAllRequest",
+    "SeasonPassRewardClaimRequest",
+    "ShipSelectRequest",
+    "ShopItemBuyRequest",
+    "ShopItemListRequest",
+    "SkillTreeListRequest",
+    "SlotBarConfigSetRequest",
+    "TrackVariableRequest",
+    "TradeRequest",
+    "TradeSellOreRequest",
+    "UIButtonTriggerRequest",
+    "UIWindowSettingsRequest",
+    "UIWindowUpdateRequest",
+    "UnstableModuleRecycleRequest",
+    "UnstableModuleRerollRequest",
+    "UnstableModuleRestabiliseRequest",
+    "UpLevelSkillTreeRequest",
+    "UserKeyBindingsUpdate",
+    "VersionRequest",
+    "WindowSettingsRequest"
+  ],
+  "windows": [
+    {
+      "id": "vipMerchantExchange",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "mileageMarket",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "cli",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "Debug console is not a player feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "user",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Native account attributes",
+      "resultVisible": true
+    },
+    {
+      "id": "ship",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Native ship attributes",
+      "resultVisible": true
+    },
+    {
+      "id": "ship_warp",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "ShipWarpRequest has no local handler; portal ship activation is a separate workflow.",
+      "resultVisible": false
+    },
+    {
+      "id": "chat",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "Multiplayer/chat is outside the current solo scope.",
+      "resultVisible": false
+    },
+    {
+      "id": "group",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "Multiplayer/group is outside the current solo scope.",
+      "resultVisible": false
+    },
+    {
+      "id": "minimap",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Native map display and navigation",
+      "resultVisible": true
+    },
+    {
+      "id": "spacemap",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Native star map; AJP target panel requires equipped AJP-01",
+      "resultVisible": true
+    },
+    {
+      "id": "quests",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Quest list/info/accept/cancel and station availability",
+      "resultVisible": true
+    },
+    {
+      "id": "refinement",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Lab refine and equipment enrichment",
+      "resultVisible": true
+    },
+    {
+      "id": "assembly",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Craft/upgrade/disassembly; restabilize and hyperforge remain explicitly unavailable",
+      "resultVisible": true
+    },
+    {
+      "id": "log",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Native standard messages",
+      "resultVisible": true
+    },
+    {
+      "id": "pet",
+      "sourceVisible": false,
+      "supported": true,
+      "reason": "Native PET controls and equipped gear",
+      "resultVisible": false
+    },
+    {
+      "id": "contacts",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "Contacts are outside the current solo scope.",
+      "resultVisible": false
+    },
+    {
+      "id": "booster",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Owned booster timers and stat bonuses",
+      "resultVisible": true
+    },
+    {
+      "id": "dispatch",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "Dispatch request family has no local handlers.",
+      "resultVisible": false
+    },
+    {
+      "id": "ggBuilder",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Owned parts, random spins, multipliers and setup",
+      "resultVisible": true
+    },
+    {
+      "id": "trinityTrials",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "Original native Trinity UI/map is not implemented; local reward ledger remains available at internalPaymentEvents.",
+      "resultVisible": false
+    },
+    {
+      "id": "expedition",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "strikeAndExit",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "rankings",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "eternal_blacklight",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "spaceball",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "invasion",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "ctb",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "tdm",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "ranked_hunt",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "highscoregate",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "scoreevent",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "infiltration",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "word_puzzle",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "sectorcontrol",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "jackpot_status_ui",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "curcubitor",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "influence",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "plutus",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "chrominEvent",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "pvp_summer",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "tiered_arena",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "battle_pass",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "Original native Battle Pass UI is not implemented; local mission/battle reward ledger remains available at internalPaymentEvents.",
+      "resultVisible": false
+    },
+    {
+      "id": "curcubitor2019",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "frozen_labyrinth",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "npc_event",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "payload_escort",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "eternal_gate",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "agatus_event",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "rogue_lite",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "preBlackFridaySales",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "ship_boost_event",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "traininggrounds",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "spaceplague",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "domination",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "rzone",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "eventProgress",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "wargame_event",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "wargame_lobby",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "diminish_quests",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "worldBoss",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "titleFrenzy",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "publicWorldBoss",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "voyagers",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "Original native Voyagers UI/map is not implemented; local reward ledger remains available at internalPaymentEvents.",
+      "resultVisible": false
+    },
+    {
+      "id": "space_search",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "birthday_2025",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "hangar",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Original portal inventory redirect",
+      "resultVisible": true
+    },
+    {
+      "id": "hangarCannons",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Native owned hangar list and equipment controls",
+      "resultVisible": true
+    },
+    {
+      "id": "pilotSheet",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Original portal skill tree and account profile",
+      "resultVisible": true
+    },
+    {
+      "id": "skylab",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Existing local Skylab portal; optional",
+      "resultVisible": true
+    },
+    {
+      "id": "clan",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "Clans are outside the current solo scope.",
+      "resultVisible": false
+    },
+    {
+      "id": "auction",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "Auction economy is outside the current solo scope.",
+      "resultVisible": false
+    },
+    {
+      "id": "nova",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "NOVA/captain request family has no local handlers.",
+      "resultVisible": false
+    },
+    {
+      "id": "vouchers",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "message",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "new_shop",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Native shop shortcut",
+      "resultVisible": true
+    },
+    {
+      "id": "logbook",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "armoryUnlock",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "unity_client_reward",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "a_new_hope",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "return_of_hero",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "synthesis",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "SynthesisInventoryRequest and synthesis actions have no local handlers.",
+      "resultVisible": false
+    },
+    {
+      "id": "update_engine",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "returnee_login",
+      "sourceVisible": false,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "monthly_deluxe",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "miniclient_reward",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "uridium_bank",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    },
+    {
+      "id": "seasonPass",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Native local season status, rewards, claim and level purchase",
+      "resultVisible": true
+    },
+    {
+      "id": "command_center",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Inspection/news-click preference persistence; no local news feed",
+      "resultVisible": true
+    },
+    {
+      "id": "shop",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Native shop",
+      "resultVisible": true
+    },
+    {
+      "id": "assistant",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "Assistant/NOVA runtime is not implemented.",
+      "resultVisible": false
+    },
+    {
+      "id": "settings",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Native settings and saved layout",
+      "resultVisible": true
+    },
+    {
+      "id": "help",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Native help",
+      "resultVisible": true
+    },
+    {
+      "id": "logout",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Native logout timer/cancel",
+      "resultVisible": true
+    },
+    {
+      "id": "fullscreen",
+      "sourceVisible": true,
+      "supported": true,
+      "reason": "Client-only fullscreen toggle",
+      "resultVisible": true
+    },
+    {
+      "id": "stellar_pathfinder",
+      "sourceVisible": true,
+      "supported": false,
+      "reason": "No implemented local workflow is registered for this captured toolbar feature.",
+      "resultVisible": false
+    }
+  ]
+}

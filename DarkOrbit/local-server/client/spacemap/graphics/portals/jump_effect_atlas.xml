@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<TextureAtlas imagePath="jump_effect_texture.png">
+	<SubTexture name="jump_01.png" x="0" y="0" width="410" height="410"/>
+	<SubTexture name="jump_02.png" x="410" y="0" width="410" height="410"/>
+	<SubTexture name="jump_03.png" x="820" y="0" width="410" height="410"/>
+	<SubTexture name="jump_04.png" x="1230" y="0" width="410" height="410"/>
+	<SubTexture name="jump_05.png" x="0" y="410" width="410" height="410"/>
+	<SubTexture name="jump_06.png" x="410" y="410" width="410" height="410"/>
+	<SubTexture name="jump_07.png" x="820" y="410" width="410" height="410"/>
+	<SubTexture name="jump_08.png" x="1230" y="410" width="410" height="410"/>
+	<SubTexture name="jump_09.png" x="0" y="820" width="410" height="410"/>
+	<SubTexture name="jump_10.png" x="410" y="820" width="410" height="410"/>
+</TextureAtlas>

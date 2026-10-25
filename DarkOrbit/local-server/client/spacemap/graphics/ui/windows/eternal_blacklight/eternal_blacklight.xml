@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="chatWindowUIAssets"/>
+        <library id="eternalBlacklight"/>
+        <library id="traininggroundsUI"/>
+    </libraries>
+
+    <textstyle
+            name="eternal_blacklight_status_message"
+            textColor="0xffe103"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"/>
+
+    <textstyle
+            name="eternal_blacklight_status_right"
+            textColor="0xffe103"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="right"/>
+
+    <textstyle
+            name="eternal_blacklight_message_left"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"/>
+
+    <textstyle
+            name="eternal_blacklight_message_center"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="center"/>
+
+    <textstyle
+            name="eternal_blacklight_message_right"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="right"/>
+
+    <textstyle
+            name="eternal_blacklight_booster_default"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="10"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"/>
+
+    <textstyle
+            name="eternal_blacklight_booster_default_disabled"
+            textColor="0x767676"
+            type="dynamic"
+            fontSize="10"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="none"
+            align="center"/>
+
+    <textstyle
+            name="eternal_blacklight_ranking_headline"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="left"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="true"
+            align="right"/>
+
+    <textstyle
+            name="eternal_blacklight_rank_message"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="left"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"/>
+
+    <skin name="eternal_blacklight_scrollbar_bgnd" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+    </skin>
+
+    <skin name="eternal_blacklight_item_outline" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" lineColor="0x00ccff" fillAlpha="0" lineAlpha="1">normal</layer>
+    </skin>
+
+    <skin name="eternal_blacklight_ttip_frame" library="traininggroundsUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" scale9grid="1,1,2,2" libraryID="ttip_frame">normal</layer>
+    </skin>
+
+    <skin name="booster_item_state_overlay" classname="BasicStateSkin">
+        <layer classname="FilledBoxLayer" lineColor="0x0888a9" lineAlpha="1" fillAlpha="0">owned</layer>
+        <layer classname="FilledBoxLayer" lineColor="0x767676" lineAlpha="0" fillAlpha="0.3">notOwned</layer>
+    </skin>
+
+    <skin name="booster_bg" classname="FadableButtonSkin" library="eternalBlacklight">
+        <layer classname="BitmapLayer" libraryID="boosterbg_normal">normal</layer>
+        <layer classname="BitmapLayer" libraryID="boosterbg_hover">over</layer>
+        <layer classname="BitmapLayer" libraryID="boosterbg_active">clicked</layer>
+        <layer classname="BitmapLayer" libraryID="boosterbg_grey">disabled</layer>
+    </skin>
+
+    <skin name="eternal_blacklight_label_truncate" classname="LabelSkin" truncateText="true" />
+
+    <!-- [DARKORBIT-37183] missing skin from training ground UI. -->
+    <skin name="traininggrounds_label" classname="LabelSkin" library="gameclientCommonUI"/>
+
+
+    <template name="RANK_BAR_EBG">
+        <container name="rank_info" width="390" alignX="center">
+            <label name="rank" text="1" registeredSkinName="commonui_default_label" marginTop="9"
+                   alignX="left" y="-2" width="40" registeredTextStyleName="eternal_blacklight_message_center"/>
+            <label name="name" text="John Doe" registeredSkinName="eternal_blacklight_label_truncate" marginTop="9" marginLeft="45"
+                   alignX="left" y="-2" width="195" registeredTextStyleName="eternal_blacklight_rank_message"/>
+            <label name="time" text="18/11 23:09" registeredSkinName="commonui_default_label" marginTop="9" marginLeft="250"
+                   alignX="left" y="-2" width="100" registeredTextStyleName="eternal_blacklight_message_left"/>
+            <label name="waves" text="4" registeredSkinName="commonui_default_label" marginTop="9" marginLeft="350"
+                   alignX="left" y="-2" width="40" registeredTextStyleName="eternal_blacklight_message_center"/>
+        </container>
+    </template>
+
+
+    <template name="ETERNAL_BLACKLIGHT_TABBAR">
+        <container name="tabbarContainer" height="20" width="460" marginTop="0" marginLeft="0"
+                   marginRight="0" pixelSnapping="true">
+            <itemlist name="tabsItemlist" registeredSkinName="commonui_list_mask" layout="horizontal" alignX="right"
+                      width="404" itemGap="0" height="20" mouseEnabled="true" mouseChildren="true"
+                      cacheSkinMaskAsBitmap="false">
+                <itemrenderer height="15" width="101" autoSizeWidth="false" mouseEnabled="true" mouseChildren="true">
+                    <button name="tab" registeredSkinName="commonui_tabbarbutton" mouseEnabled="true"
+                            autoSizeWidth="true" autoSizeHeight="true" mouseChildren="true"/>
+                    <button name="tab_selected" registeredSkinName="commonui_tabbarbutton" mouseEnabled="true"
+                            autoSizeWidth="true" visible="false" autoSizeHeight="true" mouseChildren="true"/>
+                    <label y="-1" name="tabLabel" registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="commonui_tabbar_center" mouseEnabled="false"
+                           mouseChildren="false" autoSizeWidth="true" text="?"/>
+                </itemrenderer>
+            </itemlist>
+        </container>
+    </template>
+
+    <template name="ETERNAL_BLACKLIGHT_OVERVIEW">
+        <container name="overview" width="420" marginLeft="20" marginRight="20" marginTop="36" height="230" alignX="left">
+            <container name="top" width="420" marginLeft="0" marginRight="0" marginTop="0"
+                       registeredSkinName="commonui_darklayer" height="115" alignX="center">
+                <container name="eternal_blacklight_status_msg" width="390" marginLeft="15" height="10" marginRight="15" alignX="left">
+                    <label name="eternal_blacklight_status_message" text="localize:eternal_blacklight_tab_overview_current_wave"
+                           registeredTextStyleName="eternal_blacklight_status_message"
+                           marginTop="15" registeredSkinName="commonui_default_label" width="270" autoSizeTextHeight="true"/>
+                    <label name="eternal_blacklight_wave_count" text="testRight" registeredTextStyleName="eternal_blacklight_status_right" marginTop="15"
+                           registeredSkinName="commonui_default_label" autoSizeWidth="true" alignX="right" marginRight="20"/>
+                    <button name="milestone_btn" tooltipData="localize:eternal_blacklight_tab_overview_current_wave_ttip"
+                            marginRight="-5" marginTop="14" alignX="right" registeredSkinName="commonui_info_button"/>
+                </container>
+
+                <coreponent registeredSkinName="commonui_horizontal_divider" height="4" width="420" marginTop="40"/>
+                <container name="eternal_blacklight_furthest" width="390" marginLeft="15" height="10" marginRight="15" alignX="left" marginTop="40">
+                    <label name="eternal_blacklight_furthest_message" text="localize:eternal_blacklight_tab_overview_furthest_wave"
+                           registeredTextStyleName="eternal_blacklight_message_left"
+                           marginTop="10" registeredSkinName="commonui_default_label" autoSizeWidth="true"/>
+                    <label name="eternal_blacklight_furthest_wave_count" text="0" registeredTextStyleName="eternal_blacklight_message_right" marginTop="10"
+                           registeredSkinName="commonui_default_label" autoSizeWidth="true" alignX="right"/>
+                </container>
+                <container name="eternal_blacklight_key_info" width="390" marginLeft="15" height="30" marginTop="77" marginRight="15" alignX="left">
+                    <coreponent name="eternal_blacklight_key_img" width="30" height="30" marginLeft="5" marginTop="-6"/>
+                    <label name="eternal_blacklight_key_message" text="localize:eternal_blacklight_tab_overview_cpus"
+                           registeredTextStyleName="eternal_blacklight_message_left" marginLeft="40"
+                           registeredSkinName="commonui_default_label" autoSizeWidth="true"/>
+                    <label name="eternal_blacklight_key_amount" text="9999" registeredTextStyleName="eternal_blacklight_message_right"
+                           registeredSkinName="commonui_default_label" autoSizeWidth="true" alignX="right" marginRight="20"/>
+                    <button name="keys_info" marginRight="-5" marginTop="-1" alignX="right" registeredSkinName="commonui_info_button"
+                            tooltipData="localize:eternal_blacklight_tab_overview_cpus_ttip"/>
+                </container>
+            </container>
+            <container name="bottom" width="420" marginLeft="0" marginRight="0" marginTop="125"
+                       height="90" alignX="center">
+                <button marginLeft="10" alignX="left" registeredSkinName="commonui_info_button" alignY="top"/>
+                <label text="localize:eternal_blacklight_tab_overview_desc"
+                       registeredTextStyleName="eternal_blacklight_message_left" alignX="left" alignY="top" marginLeft="35"
+                       registeredSkinName="commonui_default_label" width="390" autoSizeTextHeight="true"/>
+            </container>
+        </container>
+    </template>
+
+    <template name="ETERNAL_BLACKLIGHT_BOOSTERS">
+        <container name="boosters" visible="false" width="420" marginLeft="20" marginRight="20" marginTop="36"
+                   height="230"
+                   alignX="left">
+            <container name="top" width="420" marginLeft="0" marginRight="0" marginTop="-5"
+                       registeredSkinName="commonui_darklayer" height="70" alignX="center">
+                <button name="active_boosters_info" marginLeft="15" marginTop="4" alignX="left" registeredSkinName="commonui_info_button"
+                        tooltipData="localize:eternal_blacklight_tab_boosters_active_ttip"/>
+                <label text="localize:eternal_blacklight_tab_boosters_active" registeredTextStyleName="eternal_blacklight_status_message"
+                       registeredSkinName="commonui_default_label" autoSizeWidth="true" alignX="left" marginTop="5" marginLeft="40"/>
+
+                <itemlist name="active_boosters"
+                          width="350"
+                          itemGap="4"
+                          height="45"
+                          marginLeft="37"
+                          marginTop="23"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          autoSizeWidth="false"
+                          layout="horizontal"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask">
+
+                    <itemrenderer width="40"
+                                  autoSizeWidth="false"
+                                  height="45"
+                                  mouseEnabled="true"
+                                  mouseChildren="true">
+
+                        <coreponent name="hitlayer"
+                                    alpha="0"
+                                    registeredSkinName="commonui_hitlayer"
+                                    mouseEnabled="true"
+                                    mouseChildren="true"
+                                    autoSizeWidth="true"
+                                    autoSizeHeight="true"
+                                    tooltipTemplateID="commonui_tooltip_simple"/>
+
+                        <coreponent name="pic"
+                                    width="30"
+                                    height="30"
+                                    alignX="center"
+                                    alignY="top"/>
+
+                        <label name="value" registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="eternal_blacklight_booster_default" alightX="center" alignY="bottom"
+                               height="15" width="40"/>
+
+                        <coreponent name="state" width="30" height="30" alignX="center" alignY="top"
+                                    registeredSkinName="booster_item_state_overlay"/>
+
+                    </itemrenderer>
+                </itemlist>
+            </container>
+            <coreponent registeredSkinName="commonui_horizontal_divider" height="4" width="420" marginTop="65"/>
+            <container name="bottom_in_session" width="420" marginLeft="0" marginRight="0" marginTop="69"
+                       registeredSkinName="commonui_darklayer" height="145" alignX="center">
+                <button name="booster_points_info" marginLeft="15" marginTop="1" alignX="left" registeredSkinName="commonui_info_button"
+                        tooltipData="localize:eternal_blacklight_tab_boosters_booster_points_ttip"/>
+                <label name="booster_points" text="localize:eternal_blacklight_tab_boosters_booster_points" registeredTextStyleName="eternal_blacklight_message_left"
+                       registeredSkinName="commonui_default_label" autoSizeWidth="true" alignX="left" marginLeft="40" marginTop="2"/>
+                <itemlist name="boosters_selection"
+                          width="285"
+                          itemGap="42"
+                          height="120"
+                          alignX="center"
+                          marginTop="25"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          autoSizeWidth="false"
+                          layout="horizontal"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask">
+
+                    <itemrenderer width="66"
+                                  autoSizeWidth="false"
+                                  height="120"
+                                  mouseEnabled="true"
+                                  mouseChildren="true">
+
+                        <coreponent name="hitlayer"
+                                    alpha="0"
+                                    registeredSkinName="commonui_hitlayer"
+                                    mouseEnabled="true"
+                                    mouseChildren="true"
+                                    autoSizeWidth="true"
+                                    autoSizeHeight="true"
+                                    tooltipTemplateID="commonui_tooltip_simple"/>
+
+                        <button name="bg" registeredSkinName="booster_bg" width="76" height="120" alignX="center" alignY="center"/>
+
+                        <coreponent name="pic" width ="50" height ="50" alignX="center" marginTop="20"/>
+
+                        <label name="value" registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="eternal_blacklight_booster_default" alightX="center" marginTop="70"
+                               width="66" autoSizeTextHeight="true"/>
+                    </itemrenderer>
+                </itemlist>
+            </container>
+        </container>
+    </template>
+
+    <template name="ETERNAL_BLACKLIGHT_REWARDS">
+        <container name="rewards" width="420" marginLeft="20" marginRight="20" marginTop="36" height="200"
+                   alignX="left" registeredSkinName="commonui_darklayer"  visible="false">
+            <coreponent registeredSkinName="commonui_horizontal_divider" height="3" width="420" marginTop="33"/>
+            <container width="380" marginTop="8" alignX="center">
+                <label text="localize:plutus_tab_rewards_headline"
+                       registeredSkinName="commonui_default_label"
+                       autoSizeWidth="true" registeredTextStyleName="eternal_blacklight_ranking_headline"/>
+
+            </container>
+            <container name="body" width="420" marginTop="34" height="165" marginLeft="0">
+                <itemlist name="eternal_blacklight_rewardlist" width="420"
+                          autoSizeHeight="true"
+                          autoSizeWidth="true"
+                          itemGap="0"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          layout="vertical"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask">
+
+
+                    <itemrenderer width="420" autoSizeWidth="false" height="30" mouseEnabled="true"
+                                  mouseChildren="true">
+                        <container name="left" width="420" marginLeft="0" height="30" alignX="left">
+                            <coreponent name="bg" width="420" height="30" registeredSkinName="commonui_darklayer"/>
+                            <label name="place" text="test" registeredSkinName="commonui_default_label" marginTop="10"
+                                   alignX="left" y="-2" x="20" width="100" registeredTextStyleName="eternal_blacklight_message_left"/>
+                            <button name="btn" registeredSkinName="commonui_info_button" marginRight="8" alignX="right"
+                                    alignY="center"/>
+                        </container>
+
+                    </itemrenderer>
+
+
+                </itemlist>
+                <scrollbar name="eternal_blacklight_rewardlist_scrollBar" width="5" autoSizeHeight="true" direction="vertical"
+                           marginTop="0"
+                           marginBottom="0"
+                           marginRight="0"
+                           alignX="right"
+                           registeredSkinName="eternal_blacklight_scrollbar_bgnd">
+                    <button name="buttonSlider" alignX="center" width="5" height="10"
+                            registeredSkinName="commonui_scrollbar_slider"/>
+                </scrollbar>
+                <bind source="eternal_blacklight_rewardlist_scrollBar" target="eternal_blacklight_rewardlist"/>
+            </container>
+        </container>
+    </template>
+
+    <template name="ETERNAL_BLACKLIGHT_RANK">
+        <container name="rank" width="420" marginLeft="20" marginRight="20" marginTop="36" height="200"
+                   alignX="left" registeredSkinName="commonui_darklayer"  visible="false">
+            <coreponent registeredSkinName="commonui_horizontal_divider" height="3" width="420" marginTop="33"/>
+            <container width="390" marginTop="8" alignX="center">
+                <label text="localize:eternal_blacklight_tab_rank_header_rank"
+                       registeredSkinName="commonui_default_label"
+                       autoSizeWidth="true" registeredTextStyleName="eternal_blacklight_ranking_headline"/>
+                <label text="localize:eternal_blacklight_tab_rank_header_name"
+                       registeredSkinName="commonui_default_label" marginLeft="45"
+                       autoSizeWidth="true" registeredTextStyleName="eternal_blacklight_ranking_headline"/>
+                <label text="localize:eternal_blacklight_tab_rank_header_time"
+                       registeredSkinName="commonui_default_label" marginLeft="250"
+                       autoSizeWidth="true" registeredTextStyleName="eternal_blacklight_ranking_headline"/>
+                <label text="localize:eternal_blacklight_tab_rank_header_wave"
+                       registeredSkinName="commonui_default_label" marginLeft="350"
+                       autoSizeWidth="true" registeredTextStyleName="eternal_blacklight_ranking_headline"/>
+
+            </container>
+            <container name="body" width="420" marginTop="34" height="135" marginLeft="0">
+                <itemlist name="eternal_blacklight_rankinglist" width="420"
+                          autoSizeHeight="true"
+                          autoSizeWidth="true"
+                          itemGap="0"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          layout="vertical"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask">
+
+
+                    <itemrenderer width="420" autoSizeWidth="false" height="30" mouseEnabled="true"
+                                  mouseChildren="true">
+                        <container name="ranking" width="420" marginLeft="0" height="30" alignX="left" registeredSkinName="commonui_darklayer">
+                            <reference template="RANK_BAR_EBG"/>
+                        </container>
+
+                    </itemrenderer>
+
+
+                </itemlist>
+                <scrollbar name="eternal_blacklight_rankinglist_scrollBar" width="5" autoSizeHeight="true" direction="vertical"
+                           marginTop="0"
+                           marginBottom="0"
+                           marginRight="0"
+                           alignX="right"
+                           registeredSkinName="eternal_blacklight_scrollbar_bgnd">
+                    <button name="buttonSlider" alignX="center" width="5" height="50"
+                            registeredSkinName="commonui_scrollbar_slider"/>
+                </scrollbar>
+                <bind source="eternal_blacklight_rankinglist_scrollBar" target="eternal_blacklight_rankinglist"/>
+            </container>
+            <coreponent registeredSkinName="commonui_horizontal_divider" height="3" width="420" marginTop="170"/>
+            <container name="my_rank" width="420" height="30" marginTop="172" alignX="left" registeredSkinName="commonui_darklayer">
+                <reference template="RANK_BAR_EBG"/>
+            </container>
+        </container>
+    </template>
+
+    <template name="ETERNAL_BLACKLIGHT_REWARDS_INACTIVE">
+        <container name="rewards_inactive" width="420" marginLeft="20" marginRight="20" marginTop="36" height="100" alignX="left">
+            <container name="center" width="420" marginLeft="0" marginRight="0" marginTop="10"
+                       height="90" alignX="center">
+                <button marginLeft="10" alignX="left" registeredSkinName="commonui_info_button" alignY="top"/>
+                <label text="localize:eternal_blacklight_tab_rewards_inactive"
+                       registeredTextStyleName="eternal_blacklight_message_left" alignX="left" alignY="top" marginLeft="35"
+                       registeredSkinName="commonui_default_label" width="390" autoSizeTextHeight="true"/>
+            </container>
+        </container>
+    </template>
+
+    <template name="ETERNAL_BLACKLIGHT_RANK_INACTIVE">
+        <container name="rank_inactive" width="420" marginLeft="20" marginRight="20" marginTop="36" height="100" alignX="left">
+            <container name="center" width="420" marginLeft="0" marginRight="0" marginTop="10"
+                       height="90" alignX="center">
+                <button marginLeft="10" alignX="left" registeredSkinName="commonui_info_button" alignY="top"/>
+                <label text="localize:eternal_blacklight_tab_rank_inactive"
+                       registeredTextStyleName="eternal_blacklight_message_left" alignX="left" alignY="top" marginLeft="35"
+                       registeredSkinName="commonui_default_label" width="390" autoSizeTextHeight="true"/>
+            </container>
+        </container>
+    </template>
+
+    <template name="eternalBlacklightRewardToolTip">
+        <container name="container" width="250" autoSizeHeight="true" autoHeightMode="children">
+            <container name="wrapper" width="250" registeredSkinName="eternal_blacklight_ttip_frame" autoSizeHeight="true" marginTop="20"
+                       autoHeightMode="children">
+                <itemlist layout="vertical" width="250" gap="0" name="list" autoSizeHeight="true" marginBottom="10"
+                          autoHeightMode="children">
+                    <itemrenderer height="40" marginTop="0" marginBottom="0">
+                        <coreponent name="img" registeredSkinName="eternal_blacklight_item_outline" width="30" height="30" marginTop="10" marginLeft="10"/>
+                        <coreponent registeredSkinName="eternal_blacklight_item_outline" width="31" height="31" marginTop="9" marginLeft="9"/>
+                        <label name="label" width="200" alignX="left" marginLeft="50" marginTop="11"
+                               height="29"
+                               registeredSkinName="traininggrounds_label"
+                               registeredTextStyleName="eternal_blacklight_message_left"/>
+                    </itemrenderer>
+                </itemlist>
+            </container>
+        </container>
+    </template>
+
+    <container name="root" width="460" height="272" mouseEnabled="false" mouseChildren="true">
+        <reference template="ETERNAL_BLACKLIGHT_OVERVIEW"/>
+        <reference template="ETERNAL_BLACKLIGHT_BOOSTERS"/>
+        <reference template="ETERNAL_BLACKLIGHT_REWARDS"/>
+        <reference template="ETERNAL_BLACKLIGHT_RANK"/>
+        <reference template="ETERNAL_BLACKLIGHT_TABBAR"/>
+        <reference template="ETERNAL_BLACKLIGHT_REWARDS_INACTIVE"/>
+        <reference template="ETERNAL_BLACKLIGHT_RANK_INACTIVE"/>
+    </container>
+</root>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<libraries>
+		<library id="gameclientCommonUI"/>
+	</libraries>
+
+	<template name="RETURNEE_LOGIN_TABBAR">
+		<container name="tabbarContainer" height="20" width="570" marginTop="0" marginLeft="0"
+				   marginRight="0" pixelSnapping="true">
+			<itemlist name="tabsItemlist" registeredSkinName="commonui_list_mask" layout="horizontal" alignX="right"
+					  width="303" itemGap="0" height="20" mouseEnabled="true" mouseChildren="true"
+					  cacheSkinMaskAsBitmap="false">
+				<itemrenderer height="15" width="101" autoSizeWidth="false" mouseEnabled="true" mouseChildren="true">
+					<button name="tab" registeredSkinName="commonui_tabbarbutton" mouseEnabled="true"
+							autoSizeWidth="true" autoSizeHeight="true" mouseChildren="true"/>
+					<button name="tab_selected" registeredSkinName="commonui_tabbarbutton" mouseEnabled="true"
+							autoSizeWidth="true" visible="false" autoSizeHeight="true" mouseChildren="true"/>
+					<label y="-1" name="tabLabel" registeredSkinName="commonui_default_label"
+						   registeredTextStyleName="commonui_tabbar_center" mouseEnabled="false"
+						   mouseChildren="false" autoSizeWidth="true" text="?"/>
+				</itemrenderer>
+			</itemlist>
+		</container>
+	</template>
+
+	<container name="root" width="570" height="430" autoSizeWidth="false" autoSizeHeight="false"
+			   marginTop="0" marginLeft="5"
+			   mouseEnabled="false" mouseChilderen="true">
+		<reference template="RETURNEE_LOGIN_TABBAR"/>
+	</container>
+</root>

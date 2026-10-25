@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+
+<TextureAtlas imagePath="portal_306_idle_texture.png">
+	<SubTexture name="portal_306_00000" x="0" y="0" width="256" height="256"/>
+	<SubTexture name="portal_306_00001" x="256" y="0" width="256" height="256"/>
+	<SubTexture name="portal_306_00002" x="512" y="0" width="256" height="256"/>
+	<SubTexture name="portal_306_00003" x="768" y="0" width="256" height="256"/>
+	<SubTexture name="portal_306_00004" x="0" y="256" width="256" height="256"/>
+	<SubTexture name="portal_306_00005" x="256" y="256" width="256" height="256"/>
+	<SubTexture name="portal_306_00006" x="512" y="256" width="256" height="256"/>
+	<SubTexture name="portal_306_00007" x="768" y="256" width="256" height="256"/>
+	<SubTexture name="portal_306_00008" x="0" y="512" width="256" height="256"/>
+	<SubTexture name="portal_306_00009" x="256" y="512" width="256" height="256"/>
+	<SubTexture name="portal_306_00010" x="512" y="512" width="256" height="256"/>
+	<SubTexture name="portal_306_00011" x="768" y="512" width="256" height="256"/>
+	<SubTexture name="portal_306_00012" x="0" y="768" width="256" height="256"/>
+	<SubTexture name="portal_306_00013" x="256" y="768" width="256" height="256"/>
+	<SubTexture name="portal_306_00014" x="512" y="768" width="256" height="256"/>
+	<SubTexture name="portal_306_00015" x="768" y="768" width="256" height="256"/>
+	<SubTexture name="portal_306_00016" x="0" y="1024" width="256" height="256"/>
+	<SubTexture name="portal_306_00017" x="256" y="1024" width="256" height="256"/>
+	<SubTexture name="portal_306_00018" x="512" y="1024" width="256" height="256"/>
+	<SubTexture name="portal_306_00019" x="768" y="1024" width="256" height="256"/>
+	<SubTexture name="portal_306_00020" x="0" y="1280" width="256" height="256"/>
+	<SubTexture name="portal_306_00021" x="256" y="1280" width="256" height="256"/>
+	<SubTexture name="portal_306_00022" x="512" y="1280" width="256" height="256"/>
+	<SubTexture name="portal_306_00023" x="768" y="1280" width="256" height="256"/>
+	<SubTexture name="portal_306_00024" x="0" y="1536" width="256" height="256"/>
+	<SubTexture name="portal_306_00025" x="256" y="1536" width="256" height="256"/>
+	<SubTexture name="portal_306_00026" x="512" y="1536" width="256" height="256"/>
+	<SubTexture name="portal_306_00027" x="768" y="1536" width="256" height="256"/>
+	<SubTexture name="portal_306_00028" x="0" y="1792" width="256" height="256"/>
+	<SubTexture name="portal_306_00029" x="256" y="1792" width="256" height="256"/>
+</TextureAtlas>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+    </libraries>
+
+    <!-- TEXT STYLES -->
+    <textstyle  name="preblackfriday_description"
+                textColor="0xffffff"
+                type="dynamic"
+                fontSize="12"
+                autoSize="right"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                align="left"/>
+
+    <textstyle  name="preblackfriday_pack"
+                textColor="0xff9900"
+                type="dynamic"
+                fontSize="12"
+                autoSize="left"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                align="left"/>
+
+    <textstyle  name="preblackfriday_discount_header"
+                textColor="0xffffff"
+                type="dynamic"
+                fontSize="12"
+                autoSize="right"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="left"/>
+
+    <textstyle  name="preblackfriday_discount_count_grey"
+                textColor="0x999999"
+                type="dynamic"
+                fontSize="10"
+                autoSize="left"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                align="left"/>
+
+    <textstyle  name="preblackfriday_discount_count_white"
+                textColor="0xffffff"
+                type="dynamic"
+                fontSize="10"
+                autoSize="left"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="left"/>
+
+    <textstyle  name="preblackfriday_discount_percent_grey"
+                textColor="0x999999"
+                type="dynamic"
+                fontSize="10"
+                autoSize="right"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                align="right"/>
+
+    <textstyle  name="preblackfriday_discount_percent_white"
+                textColor="0xffffff"
+                type="dynamic"
+                fontSize="10"
+                autoSize="right"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="right"/>
+
+    <template name="PRE_BLACKFRIDAY_SALES">
+        <container name="overview"
+                   width="350" height="380" autoSizeWidth="false" autoSizeHeight="false"
+                   alignX="center" marginTop="10">
+
+            <container name="packs"
+                       width="350" height="150" autoSizeWidth="false" autoSizeHeight="false">
+
+                <label name="description" text=""
+                       width="350"  height="40" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left"
+                       registeredTextStyleName="preblackfriday_description" registeredSkinName="commonui_default_label"/>
+
+                <label name="pack01" text=""
+                       width="350"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" marginTop="50"
+                       registeredTextStyleName="preblackfriday_pack" registeredSkinName="commonui_default_label"/>
+
+                <label name="pack02" text=""
+                       width="350"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" marginTop="70"
+                       registeredTextStyleName="preblackfriday_pack" registeredSkinName="commonui_default_label"/>
+
+                <label name="pack03" text=""
+                       width="350"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" marginTop="90"
+                       registeredTextStyleName="preblackfriday_pack" registeredSkinName="commonui_default_label"/>
+
+                <label name="pack04" text=""
+                       width="350"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" marginTop="110"
+                       registeredTextStyleName="preblackfriday_pack" registeredSkinName="commonui_default_label"/>
+
+                <label name="pack05" text=""
+                       width="350"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" marginTop="130"
+                       registeredTextStyleName="preblackfriday_pack" registeredSkinName="commonui_default_label"/>
+            </container>
+
+            <coreponent autoSizeWidth="true" height="5" marginTop="170" registeredSkinName="commonui_horizontal_divider"/>
+
+            <container name="discount"
+                       width="350" height="200" autoSizeWidth="false" autoSizeHeight="false"
+                       marginTop="190">
+
+                <label name="header" text=""
+                       width="350"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left"
+                       registeredTextStyleName="preblackfriday_discount_header" registeredSkinName="commonui_default_label"/>
+
+                <label name="discount01_count" text=""
+                       width="100"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" marginTop="30"
+                       registeredTextStyleName="preblackfriday_discount_count_grey" registeredSkinName="commonui_default_label"/>
+
+                <label name="discount01_percent" text=""
+                       width="150"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="right" marginTop="30"
+                       registeredTextStyleName="preblackfriday_discount_percent_grey" registeredSkinName="commonui_default_label"/>
+
+                <label name="discount02_count" text=""
+                       width="100"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" marginTop="60"
+                       registeredTextStyleName="preblackfriday_discount_count_grey" registeredSkinName="commonui_default_label"/>
+
+                <label name="discount02_percent" text=""
+                       width="150"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="right" marginTop="60"
+                       registeredTextStyleName="preblackfriday_discount_percent_grey" registeredSkinName="commonui_default_label"/>
+
+                <label name="discount03_count" text=""
+                       width="100"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" marginTop="90"
+                       registeredTextStyleName="preblackfriday_discount_count_grey" registeredSkinName="commonui_default_label"/>
+
+                <label name="discount03_percent" text=""
+                       width="150"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="right" marginTop="90"
+                       registeredTextStyleName="preblackfriday_discount_percent_grey" registeredSkinName="commonui_default_label"/>
+
+                <label name="discount04_count" text=""
+                       width="100"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" marginTop="120"
+                       registeredTextStyleName="preblackfriday_discount_count_grey" registeredSkinName="commonui_default_label"/>
+
+                <label name="discount04_percent" text=""
+                       width="150"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="right" marginTop="120"
+                       registeredTextStyleName="preblackfriday_discount_percent_grey" registeredSkinName="commonui_default_label"/>
+
+                <label name="discount05_count" text=""
+                       width="100"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" marginTop="150"
+                       registeredTextStyleName="preblackfriday_discount_count_grey" registeredSkinName="commonui_default_label"/>
+
+                <label name="discount05_percent" text=""
+                       width="150"  height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="right" marginTop="150"
+                       registeredTextStyleName="preblackfriday_discount_percent_grey" registeredSkinName="commonui_default_label"/>
+            </container>
+        </container>
+    </template>
+
+    <container name="root" width="360" height="400" mouseEnabled="false" mouseChildren="true">
+        <reference template="PRE_BLACKFRIDAY_SALES"/>
+    </container>
+</root>

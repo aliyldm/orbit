@@ -1,0 +1,89 @@
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+    </libraries>
+
+    <textstyle name="expedition_style4"
+               textColor="0xb3ab00"
+               fontSize="16"
+               type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               multiline="true"
+               wordWrap="true"
+               autoSize="left"/>
+
+    <template name="expeditionTab2">
+        <container name="tab2"
+                   autoSizeWidth="true" autoSizeHeight="true">
+
+            <coreponent name="view_bg" width="833" height="430"
+                        autoSizeWidth="false" autoSizeHeight="false"
+                        alignX="left" alignY="top"
+                        marginLeft="10" marginTop="40" mouseEnabled="false"
+                        registeredSkinName="commonui_darklayer"/>
+
+
+            <container name="reward_container" alignX="left" alignY="top" marginLeft="20" marginTop="40">
+
+                <itemlist name="list" width="810" height="420" autoSizeWidth="false" autoSizeHeight="false"
+                          layout="vertical" itemGap="0" mouseEnabled="true" mouseChildren="true"
+                          cacheSkinMaskAsBitmap="false">
+
+                    <itemrenderer width="810" height="140" autoSizeWidth="false"
+                                  autoSizeHeight="false" itemGap="0"
+                                  mouseEnabled="true" mouseChildren="true">
+
+                        <coreponent name="item_list_bg"
+                                    width="810" height="100"
+                                    alignX="left" alignY="top"
+                                    marginLeft="0" marginTop="30"
+                                    registeredSkinName="commonui_darklayer"/>
+
+                        <label name="reward_name_label" registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="expedition_style4"
+                               alignX="left" alignY="top"
+                               marginLeft="25" marginTop="5"
+                               width="300"
+                               autoSizeTextHeight="true"
+                               text="Obtain with low probability"/>
+
+
+
+
+                        <itemlist name="item_list" width="360" height="75" autoSizeWidth="false" autoSizeHeight="false"
+                                  layout="horizontal" itemGap="30" mouseEnabled="true" mouseChildren="true"
+                                  cacheSkinMaskAsBitmap="false"
+                                  alignX="left" alignY="top"
+                                  marginLeft="30" marginTop="45">
+
+                            <itemrenderer width="72" height="72" autoSizeWidth="false"
+                                          autoSizeHeight="false" itemGap="0"
+                                          mouseEnabled="true" mouseChildren="true">
+
+                                <coreponent name="reward_icon_bg"
+                                            width="72" height="72"
+                                            autoSizeWidth="false" autoSizeHeight="false"
+                                            alignX="left" alignY="top"
+                                            marginLeft="0" marginTop="0"
+                                            registeredSkinName="reward_slot_bg"/>
+
+                                <coreponent name="reward_item_icon" width="70" height="70"
+                                            autoSizeWidth="false" autoSizeHeight="false"
+                                            alignX="left" alignY="top"
+                                            marginLeft="1" marginTop="1" mouseEnabled="true"/>
+                            </itemrenderer>
+                        </itemlist>
+                    </itemrenderer>
+                </itemlist>
+            </container>
+        </container>
+
+
+    </template>
+    <container name="root"
+               width="800" height="500" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChildren="true">
+        <reference template="expeditionTab2"/>
+    </container>
+</root>

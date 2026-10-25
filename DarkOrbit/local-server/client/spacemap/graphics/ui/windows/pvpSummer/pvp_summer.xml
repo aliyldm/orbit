@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="chatWindowUIAssets"/>
+		<library id="traininggroundsUI"/>
+	</libraries>
+
+	<textstyle name="pvpsummer_textstyle_score"
+			   background="false"
+			   textColor="0xFFFFFF"
+			   type="dynamic"
+			   selectable="false"
+			   fontName="EurostileFl"
+			   wordWrap="true"
+			   align="center"
+			   embedFonts="true"
+			   fontSize="16"
+	/>
+
+	<textstyle  name        = "pvpsummer_confirmationbutton_blue_normal"
+				textColor   = "0xF1FBEC"
+				fontSize    = "16"
+				type        = "dynamic"
+				fontName    = "EurostileHeaFl"
+				embedFonts  = "true"
+				autoSize    = "center"
+	/>
+
+
+	<textstyle name="pvpsummer_info"
+			   textColor="0x999898"
+			   type="dynamic"
+			   fontSize="9"
+			   autoSize="left"
+			   wordWrap="true"
+			   multiline="true"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   align="left"/>
+
+	<textstyle
+			name="pvpsummer_tab_center_modern_textstyle"
+			textColor="0x6FB2CB"
+			type="dynamic"
+			fontSize="9"
+			autoSize="center"
+			wordWrap="true"
+			multiline="true"
+			embedFonts="false"
+			fontName="Verdana"
+			align="center"/>
+
+	<textstyle
+			name="pvpsummer_overview_left"
+			textColor="0xfefefe"
+			type="dynamic"
+			fontSize="9"
+			autoSize="right"
+			wordWrap="true"
+			multiline="true"
+			embedFonts="false"
+			fontName="Verdana"
+			align="left"/>
+
+	<textstyle
+			name="pvpsummer_overview_yellow_left"
+			textColor="0xffe102"
+			type="dynamic"
+			fontSize="9"
+			autoSize="right"
+			wordWrap="true"
+			multiline="true"
+			embedFonts="false"
+			fontName="Verdana"
+			align="left"/>
+
+	<textstyle
+			name="pvpsummer_overview_right"
+			textColor="0xfefefe"
+			type="dynamic"
+			fontSize="9"
+			autoSize="left"
+			wordWrap="true"
+			multiline="true"
+			embedFonts="false"
+			fontName="Verdana"
+			align="right"/>
+
+	<textstyle
+			name="pvpsummer_overview_yellow_right"
+			textColor="0xffe102"
+			type="dynamic"
+			fontSize="9"
+			autoSize="left"
+			wordWrap="true"
+			multiline="true"
+			embedFonts="false"
+			fontName="Verdana"
+			align="right"/>
+
+	<textstyle
+			name="pvpsummer_rewards_headline"
+			textColor="0xfefefe"
+			type="dynamic"
+			fontSize="10"
+			autoSize="left"
+			wordWrap="false"
+			multiline="false"
+			embedFonts="false"
+			fontName="Verdana"
+			bold="true"
+			align="right"/>
+
+	<textstyle
+			name="pvpsummer_overview_ttip_title"
+			textColor="0xfefefe"
+			type="dynamic"
+			fontSize="10"
+			autoSize="right"
+			wordWrap="true"
+			multiline="true"
+			embedFonts="false"
+			fontName="Verdana"
+			align="left"
+			bold="true"/>
+
+	<textstyle
+			name="pvpsummer_overview_ttip_content"
+			textColor="0xfefefe"
+			type="dynamic"
+			fontSize="10"
+			autoSize="right"
+			wordWrap="true"
+			multiline="true"
+			embedFonts="false"
+			fontName="Verdana"
+			align="left"
+			bold="false"/>
+
+	<skin name="pvpsummer_scrollbar_bgnd" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+	</skin>
+
+	<skin name="pvpsummer_item_outline" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" lineColor="0x00ccff" fillAlpha="0" lineAlpha="1">normal</layer>
+	</skin>
+
+	<skin name="pvpsummer_ttip_frame" library="traininggroundsUI" classname="BasicSkin">
+		<layer classname="BitmapLayer" scale9grid="1,1,2,2" libraryID="ttip_frame">normal</layer>
+	</skin>
+
+
+	<template name="PVPSUMMER_TABBAR">
+		<container name="tabbarContainer" height="20" width="370" marginTop="0" marginLeft="0"
+				   marginRight="0" pixelSnapping="true">
+			<itemlist name="tabsItemlist" registeredSkinName="commonui_list_mask" layout="horizontal" alignX="right"
+					  width="228" itemGap="0" height="20" mouseEnabled="true" mouseChildren="true"
+					  cacheSkinMaskAsBitmap="false">
+				<itemrenderer height="15" width="113" autoSizeWidth="false" mouseEnabled="true" mouseChildren="true">
+					<button name="tab" registeredSkinName="commonui_tabbarbutton" mouseEnabled="true"
+							autoSizeWidth="true" autoSizeHeight="true" mouseChildren="true"/>
+					<button name="tab_selected" registeredSkinName="commonui_tabbarbutton" mouseEnabled="true"
+							autoSizeWidth="true" visible="false" autoSizeHeight="true" mouseChildren="true"/>
+					<label y="-1" name="tabLabel" registeredSkinName="commonui_default_label"
+						   registeredTextStyleName="pvpsummer_tab_center_modern_textstyle" mouseEnabled="false"
+						   mouseChildren="false" autoSizeWidth="true" text="?"/>
+				</itemrenderer>
+			</itemlist>
+		</container>
+	</template>
+
+	<template name="PVPSUMMER_OVERVIEW">
+		<container name="overview" visible="false" width="330" marginLeft="20" marginRight="20" marginTop="36"
+				   height="225"
+				   alignX="left">
+			<container name="top" width="330" marginLeft="0" marginRight="0" marginTop="0"
+					   registeredSkinName="commonui_darklayer" height="140" alignX="center">
+				<coreponent registeredSkinName="commonui_horizontal_divider" height="3" width="330" marginTop="91"/>
+				<container name="left" width="250" height="145" marginLeft="20">
+					<label text="localize:window_galactic-strife_overviewtab-time-left" registeredSkinName="commonui_default_label"
+						   marginTop="15" autoSizeWidth="true"
+						   registeredTextStyleName="pvpsummer_overview_left"/>
+					<label text="localize:galacticStrife_tab_overview_reputation" registeredSkinName="commonui_default_label"
+						   marginTop="39" autoSizeWidth="true"
+						   registeredTextStyleName="pvpsummer_overview_left"/>
+					<label text="localize:galacticStrife_tab_overview_repPerKill"
+						   registeredSkinName="commonui_default_label"
+						   autoSizeWidth="true" registeredTextStyleName="pvpsummer_overview_left" marginTop="63"/>
+					<label text="localize:galacticStrife_tab_overview_nextMilestone" registeredSkinName="commonui_default_label"
+						   autoSizeWidth="true" registeredTextStyleName="pvpsummer_overview_yellow_left" marginTop="105"/>
+				</container>
+				<container name="right" width="200" height="145" marginRight="20" alignX="right">
+					<label name="countdown" autoSizeWidth="true" registeredSkinName="commonui_default_label" text="0"
+						   registeredTextStyleName="pvpsummer_overview_right" marginTop="15"/>
+					<label name="rep" autoSizeWidth="true" registeredSkinName="commonui_default_label" text="0"
+						   registeredTextStyleName="pvpsummer_overview_right" marginTop="39"/>
+					<label name="rep_per_kill" autoSizeWidth="true" registeredSkinName="commonui_default_label" text="0"
+						   registeredTextStyleName="pvpsummer_overview_right" marginTop="63"/>
+					<label name="next_rep_milestone" autoSizeWidth="true" registeredSkinName="commonui_default_label" text="0"
+						   registeredTextStyleName="pvpsummer_overview_yellow_right" marginRight="20" marginTop="105"/>
+					<button name="milestone_btn" registeredSkinName="commonui_info_button" alignX="right"
+							marginTop="103" marginRight="-5"/>
+				</container>
+			</container>
+			<container name="bottom" width="300" marginLeft="0" marginRight="0" marginTop="155"
+					   height="80" alignX="center">
+				<button registeredSkinName="commonui_info_button" marginLeft="0" alignX="left" alignY="top"
+						tooltipData = "localize:galacticStrife_tab_overview_desc_ttip"/>
+				<label text="localize:galacticStrife_tab_overview_description" registeredTextStyleName="pvpsummer_info"
+					   alignX="left" alignY="top" marginLeft="30"
+					   registeredSkinName="commonui_default_label" width="260" autoSizeHeight="true"/>
+			</container>
+		</container>
+	</template>
+
+
+	<template name="PVPSUMMER_REWARDS">
+		<container name="rewards" width="330" marginLeft="20" marginRight="20" marginTop="36" height="200"
+				   alignX="left" registeredSkinName="commonui_darklayer">
+			<coreponent registeredSkinName="commonui_horizontal_divider" height="3" width="330" marginTop="33"/>
+			<container width="290" marginTop="8" alignX="center">
+				<label text="localize:galacticStrife_tab_rewards_headline_rep"
+					   registeredSkinName="commonui_default_label"
+					   autoSizeWidth="true" registeredTextStyleName="pvpsummer_rewards_headline"/>
+				<label text="localize:galacticStrife_tab_rewards_headline_repPerKill"
+					   registeredSkinName="commonui_default_label" marginLeft="160"
+					   autoSizeWidth="true" registeredTextStyleName="pvpsummer_rewards_headline"/>
+
+			</container>
+			<container name="body" width="330" marginTop="34" height="165" marginLeft="0">
+				<itemlist name="pvpsummer_rewardlist" width="330"
+						  autoSizeHeight="true"
+						  autoSizeWidth="true"
+						  itemGap="0"
+						  mouseChildren="true"
+						  mouseEnabled="true"
+						  layout="vertical"
+						  cacheSkinMaskAsBitmap="false"
+						  registeredSkinName="commonui_list_mask">
+
+
+					<itemrenderer width="330" autoSizeWidth="false" height="30" mouseEnabled="true"
+								  mouseChildren="true">
+						<container name="left" width="160" marginLeft="0" height="30" alignX="left">
+							<coreponent name="bg" width="160" height="30" registeredSkinName="commonui_darklayer"/>
+							<label name="place" text="test" registeredSkinName="commonui_default_label" marginTop="10"
+								   alignX="left" y="-2" x="20" width="100" registeredTextStyleName="pvpsummer_overview_left"/>
+							<button name="btn" registeredSkinName="commonui_info_button" marginRight="8" alignX="right"
+									alignY="center"/>
+						</container>
+
+						<container name="right" width="160" marginRight="5" height="30" alignX="right">
+							<coreponent name="bg" width="160" height="30" registeredSkinName="commonui_darklayer"/>
+							<label name="place" text="test" registeredSkinName="commonui_default_label" marginTop="10"
+								   alignX="left" y="-2" x="20" width="100" registeredTextStyleName="pvpsummer_overview_left"/>
+							<button name="btn" registeredSkinName="commonui_info_button" marginRight="8" alignX="right"
+									alignY="center"/>
+						</container>
+
+					</itemrenderer>
+
+
+				</itemlist>
+				<scrollbar name="pvpsummer_rewardlist_scrollBar" width="5" autoSizeHeight="true" direction="vertical"
+						   marginTop="0"
+						   marginBottom="0"
+						   marginRight="0"
+						   alignX="right"
+						   registeredSkinName="pvpsummer_scrollbar_bgnd">
+					<button name="buttonSlider" alignX="center" width="5" height="10"
+							registeredSkinName="commonui_scrollbar_slider"/>
+				</scrollbar>
+				<bind source="pvpsummer_rewardlist_scrollBar" target="pvpsummer_rewardlist"/>
+			</container>
+		</container>
+	</template>
+
+
+	<template name="pvpsummerRewardToolTip">
+		<container name="container" width="250" autoSizeHeight="true" autoHeightMode="children">
+			<container name="wrapper" width="250" registeredSkinName="pvpsummer_ttip_frame" autoSizeHeight="true" marginTop="20"
+					   autoHeightMode="children">
+				<itemlist layout="vertical" width="250" gap="0" name="list" autoSizeHeight="true" marginBottom="10"
+						  autoHeightMode="children">
+					<itemrenderer height="40" marginTop="0" marginBottom="0">
+						<coreponent name="img" registeredSkinName="pvpsummer_item_outline" width="30" height="30" marginTop="10" marginLeft="10"/>
+						<coreponent registeredSkinName="pvpsummer_item_outline" width="31" height="31" marginTop="9" marginLeft="9"/>
+						<label name="label" width="200" alignX="left" marginLeft="50" marginTop="11"
+							   height="29"
+							   registeredTextStyleName="pvpsummer_overview_left"/>
+					</itemrenderer>
+				</itemlist>
+			</container>
+		</container>
+	</template>
+
+	<template name="pvpsummerOverviewToolTip">
+		<container name="container" width="250" autoSizeHeight="true" autoHeightMode="children">
+			<container name="wrapper" width="250" registeredSkinName="pvpsummer_ttip_frame" autoSizeHeight="true" marginTop="20"
+					   autoHeightMode="children" layout="vertical">
+				<label name="pvpsummer_overview_ttip_title" width="250" height="20" autoHeightMode="children" alignX="left" registeredTextStyleName="pvpsummer_overview_ttip_title" text="localize:galacticStrife_tab_overview_milestoneRewards_title"/>
+				<itemlist layout="vertical" width="250" gap="0" name="list" autoSizeHeight="true" marginBottom="10"
+						  autoHeightMode="children">
+					<itemrenderer height="40" marginTop="0" marginBottom="0">
+						<coreponent name="img" registeredSkinName="pvpsummer_item_outline" width="30" height="30" marginTop="10" marginLeft="10"/>
+						<coreponent registeredSkinName="pvpsummer_item_outline" width="31" height="31" marginTop="9" marginLeft="9"/>
+						<label name="label" width="200" alignX="left" marginLeft="50" marginTop="11"
+							   height="29"
+							   registeredTextStyleName="pvpsummer_overview_ttip_content"/>
+					</itemrenderer>
+				</itemlist>
+			</container>
+		</container>
+	</template>
+
+	<container name="root" width="370" height="272" mouseEnabled="false" mouseChildren="true">
+		<reference template="PVPSUMMER_OVERVIEW"/>
+		<reference template="PVPSUMMER_REWARDS"/>
+		<reference template="PVPSUMMER_TABBAR"/>
+	</container>
+</root>

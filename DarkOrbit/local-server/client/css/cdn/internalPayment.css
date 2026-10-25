@@ -1,0 +1,767 @@
+@charset "utf-8";
+
+.contentFrame {
+    min-height: 200px;
+}
+
+#paymentFrame {
+
+    background-image:  url(/do_img/global/payment/banking/bg_payment_planet_01.jpg?__cv=0cdb40f1e607a942f0cf422fd3603f00) ;
+    background-position : center top ;
+    background-repeat   : no-repeat ;
+
+    width               : 776px ;
+    margin              : -4px 14px 0 0 ;
+}
+
+#paymentFrame.balancePageBG {
+    background-image:  url(/do_img/global/payment/balance/bg_payment_metal_01.jpg?__cv=81748b89d554ed0ad3ddc5ca96d7d100) ;
+}
+
+#wrapper {
+    float               : left ;
+    width               : 638px ;
+}
+
+/* used in internalPayment.tpl */
+
+#wrapper .payment_box {
+    margin              : 10px ;
+    overflow            : hidden ;
+}
+
+#wrapper .multiplier_box, #wrapper .info_text {
+    width               : 460px;
+
+    position            : relative ;
+    left                : 50% ;
+    margin-left         : -250px ;
+
+    padding             : 10px 20px ;
+}
+
+#wrapper .multiplier_box {
+    width               : 456px ;
+    height              : 71px ;
+    margin-left         : -248px ;
+
+    background-image:  url(/do_img/global/payment/banking/banking_banner_496x91.png?__cv=d6851df4678dc7ebac77773476cff500) ;
+    background-position : top left ;
+    background-repeat   : no-repeat ;
+}
+
+#wrapper .multiplier_box .headline {
+    font-size           : 16px ;
+    font-weight         : bold ;
+
+    margin-bottom       : 10px ;
+
+    display:block;
+}
+
+#wrapper .multiplier_box .text {
+    width               : 355px ;
+    font-size           : 10px;
+
+    display             : inline-block ;
+}
+
+#wrapper .multiplier_box .logo {
+    width               : 124px;
+    height              : 64px;
+
+    background-position : left top;
+    background-repeat   : no-repeat;
+
+    position            : absolute ;
+    right               : 0;
+    top                 : 25px;
+
+    display             :none;
+}
+
+#wrapper .multiplier_box .logo.x2,
+#wrapper .multiplier_box .logo.x3,
+#wrapper .multiplier_box .logo.x4,
+#wrapper .multiplier_box .logo.package1,
+#wrapper .multiplier_box .logo.package2,
+#wrapper .multiplier_box .logo.package3 {display:block;}
+
+#wrapper .multiplier_box .logo.x2 {background-image:  url(/do_img/global/payment/banking/banking_banner-x2.png?__cv=71454936c42e780e96488d74342b9500);}
+#wrapper .multiplier_box .logo.x3 {background-image:  url(/do_img/global/payment/banking/banking_banner-x3.png?__cv=763f922d626e2526a72afe74a4f08400);}
+#wrapper .multiplier_box .logo.x4 {background-image:  url(/do_img/global/payment/banking/banking_banner-x4.png?__cv=784e9ed2bedcd1d69618148892395b00);}
+
+#wrapper .multiplier_box .logo.package1 {background-image:  url(/do_img/global/payment/banking/banking_banner-box1.png?__cv=98435f0ba8fab18b12c0c2373083ac00);}
+#wrapper .multiplier_box .logo.package2 {background-image:  url(/do_img/global/payment/banking/banking_banner-box2.png?__cv=e87c37f3aee8f345748282efb324bc00);}
+#wrapper .multiplier_box .logo.package3 {background-image:  url(/do_img/global/payment/banking/banking_banner-box3.png?__cv=6a39902b7440c537a7a5d109e4264d00);}
+
+#wrapper .info_text {
+    border              : 0;
+    padding             : 5px 20px ;
+    font-size           : 8px ;
+}
+
+#wrapper .headline, #wrapper .text {
+    display             : inline-block ;
+    color               : #FFCC00 ;
+}
+
+#wrapper .headline {
+    font-weight         : bold ;
+}
+
+#wrapper .text {
+    color               : #FFFFFF ;
+}
+
+#wrapper .packages {
+    padding             : 0 9px 0 16px ;
+}
+
+#wrapper .package {
+    float               : left ;
+    height              : 180px ;
+    text-align          : center ;
+    width               : 200px ;
+
+    margin: 0 1px;
+
+    background-image:  url(/do_img/global/payment/banking/banking_column_frame.png?__cv=4c632079f0aa7ebfd26d05a869084b00) ;
+    background-position : top left ;
+    background-repeat   : no-repeat ;
+}
+
+#wrapper .package .headline {
+    font-size           : 14px ;
+    margin              : 20px 5px 10px 5px ;
+    text-align          : center ;
+
+    height: 30px ;
+    display: block ;
+
+    background-image:  url(/do_img/global/payment/banking/banking_ui_header-line.png?__cv=2b4bafd90d9f97bac8e62cbe99201b00) ;
+    background-position : center 20px ;
+    background-repeat   : no-repeat ;
+}
+
+#wrapper .package .text {
+    padding             : 0 20px ;
+    font-size           : 12px ;
+}
+
+#wrapper .package a {
+    display:block;
+    height: 180px;
+    margin: -4px 0 0;
+    padding: 8px 0 0;
+}
+
+#wrapper .package a:hover {
+    background-image:  url(/do_img/global/payment/banking/banking_column_highlight.png?__cv=622629b6cc083633fb39927bd7da2600) ;
+    background-position : center left ;
+    background-repeat   : no-repeat ;
+}
+
+#wrapper .get_uridium {text-align : center;}
+#wrapper .get_uridium a {
+    font-size           : 16px ;
+    font-weight         : bold ;
+
+    color               : #E8E8E8 ;
+
+    display             : inline-block ;
+
+    width               : 603px ;
+    height              : 20px ;
+    padding             : 22px 0 18px;
+
+    background-image:  url(/do_img/global/payment/banking/button_get-uridium_606x60.png?__cv=6eddb68932fa73c9b0e921524b7c6700) ;
+    background-position : top center ;
+    background-repeat   : no-repeat ;
+
+    text-transform: uppercase;
+}
+
+#wrapper .get_uridium a:hover {background-position : center center;}
+
+#wrapper .earn_uridium {text-align: right;}
+#wrapper .earn_uridium a {
+    font-size           : 12px ;
+    font-weight         : bold ;
+    color               : #030303;
+    text-align          : center;
+
+    display             : inline-block ;
+
+    width               : 177px ;
+    height              : 14px ;
+    padding             : 8px 0 3px ;
+    margin              : 15px 0 0 0 ;
+
+    background-image:  url(/do_img/global/payment/banking/button_earn-uridium_177x84.png?__cv=a545e65ebf3c17be4acbb08623123f00) ;
+    background-position : top center ;
+    background-repeat   : no-repeat ;
+
+    text-transform: uppercase;
+}
+
+#wrapper .earn_uridium a:hover {background-position : center center ;}
+
+/* used in internalBalance.tpl */
+
+#wrapper.balancePage {
+    background-image:  url(/do_img/global/payment/balance/balance_list-frame.png?__cv=600b9cb3ca814ca1a41afb549601af00);
+    background-position: left 5px;
+    background-repeat: no-repeat;
+}
+
+#wrapper.balancePage .headline {
+    font-size: 14px;
+    padding: 25px 15px 20px 15px;
+}
+
+#wrapper.balancePage .pagination {
+    text-align: center;
+    padding:12px 0 0 0;
+}
+
+#wrapper ul.balance_items {
+    display             : block ;
+    color               : #FFFFFF;
+}
+
+#wrapper ul li.balance_item {
+    display             : block ;
+}
+
+#wrapper ul li.balance_item.empty {padding:7px 10px;}
+
+#wrapper ul li.balance_item.even {
+    background-image:  url(/do_img/global/payment/balance/list_line_normal.png?__cv=ee4021449be1e78130255a7f10a88400);
+    background-position: top left;
+    background-repeat: repeat;
+}
+
+#wrapper ul li.balance_item .date,
+#wrapper ul li.balance_item .description {
+    background-image:  url(/do_img/global/payment/balance/splitter_line.jpg?__cv=1f16ccc2ed4311827a087b94ea969c00);
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+#wrapper ul li.balance_item .description:last-child {
+    background-image: none;
+}
+
+#wrapper ul li.balance_item .date,
+#wrapper ul li.balance_item .description,
+#wrapper ul li.balance_item .amount{
+    display             : inline-block ;
+    padding             : 5px 15px ;
+}
+
+#wrapper ul li.balance_item .date {width: 130px;}
+#wrapper ul li.balance_item .description {width: 250px;}
+#wrapper ul li.balance_item .amount {width: 125px;}
+
+#wrapper ul li.balance_item a {
+
+    color:#EEEEEE;
+
+}
+
+/* used in internalPaymentUridiumPlus.tpl */
+
+#paymentFrame.upsell-packgage {
+    background-image:  url(/do_img/global/payment/uridium-plus/bg_payment_planet_02.jpg?__cv=115ec14ac3b61e4485ee8fc24cf73a00);
+    background-position: right center;
+}
+
+.upsell-packgage #navigationFrame {height:391px;} /* workarround for realy creepy css / html definition in this page */
+
+.upsell-packgage #wrapper .header,
+.upsell-packgage #wrapper .body,
+.upsell-packgage #wrapper .footer {
+    padding:0 31px;
+}
+
+.upsell-packgage #wrapper .body .payment_link {
+    height: 65px;
+    width : 412px;
+    margin: 0 auto;
+    background-image:  url(/do_img/global/payment/uridium-plus/button_sprite.png?__cv=339f7a681cd58f0504fe59bbedd83e00);
+    background-position: left top;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.upsell-packgage #wrapper .body .payment_link:hover {
+    background-position: left bottom;
+}
+
+/* used in internalEvoucher.tpl */
+
+#paymentFrame.evoucher {height:391px;} /* workarround for realy creepy css / html definition in this page */
+.evoucher #navigationFrame {height:391px;} /* workarround for realy creepy css / html definition in this page */
+
+.evoucher #wrapper .header {
+    margin: 29px 0 0 76px;
+    text-align: center;
+    width: 496px;
+}
+.evoucher #wrapper {
+    background-image:  url(/do_img/global/eVoucher/bg_evoucher_box2.png?__cv=9d9918ec028b7682cdfef3071b52c200);
+    background-position: left 5px;
+    background-repeat: no-repeat;
+
+    padding: 5px;
+    width: 628px;
+    height: 381px;
+}
+
+.evoucher #wrapper .infotext {
+    color: #FFFFFF;
+    /*height: 60px;*/
+    margin: 40px 100px 2px;
+    text-align: center;
+}
+
+.evoucher #wrapper #footer {
+    position: absolute;
+    top: 250px;
+    left: 331px;
+}
+.evoucher #wrapper #recaptcha_widget_div {
+    margin-top: 27px;
+}
+.evoucher #wrapper #recaptcha_area {
+    margin: auto;
+}
+.evoucher #wrapper #recaptcha_response_field {
+    margin-left: 10px;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+#exchange_headline {
+    height:37px;
+    line-height: 37px;
+    text-align: center;
+}
+#exchange_text {
+    position: relative;
+    width:445px;
+    text-align: center;
+    margin: 30px auto 30px auto;
+}
+#exchange_bg_frame {
+    position: relative;
+    width:445px;
+    height:47px;
+    margin: auto;
+    background-image:  url(/do_img/global/payment/bg_exchange.png?__cv=a47ca2c06daa8475cf27ddf2cbc26f00);
+}
+.exchange_bg_textbox {
+    position: absolute;
+    width: 178px;
+    height: 29px;
+    background-image:  url(/do_img/global/payment/bg_exchange_textbox.png?__cv=2d41a289c88a6b8e316427c304c97300);
+}
+#exchange_div_amount {
+    top:10px;
+    left:20px;
+}
+#exchange_div_value {
+    top:10px;
+    left:250px;
+}
+
+.exchange_bg_textbox input[type="text"] {
+    background:none repeat scroll 0 0 transparent;
+    border:medium none;
+    height:23px;
+    padding:3px 0px 0px 10px;
+    text-align:center;
+    width:158px;
+    color: #f1c83a;
+    font-size: 13px;
+    font-weight: bold;
+}
+#exchange_button {
+    margin: 30px auto;
+}
+#exchange_button a {
+    display: block;
+}
+.but_standard, .but_standard:hover {
+    cursor: pointer;
+}
+.but_standard {
+    width: 213px;
+    height:40px;
+    line-height:30px;
+    text-align: center;
+    background-image:  url(/do_img/global/but_standard.png?__cv=567bd07b42575329c1187b12c910f700);
+    background-position: 0px 0px;
+}
+.but_standard:hover {
+    background-position: 0px 40px;
+}
+.but_standard:active {
+    background-position: 0px 80px;
+}
+
+#exchange_label {
+    position: relative;
+    width:445px;
+    margin: auto;
+}
+#exchange_label_uridium, #exchange_label_credits {
+    float:left;
+    width:50%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Upsell Packages */
+.fliess15px-gelb {
+    font-size:15px;
+    font-family: Verdana, Arial, sans-serif;
+    color: #F1C839;
+    text-align: center;
+}
+
+
+.fliess14px-weiss {
+    font-size:14px;
+    font-family: Verdana, Arial, sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.fliess11px-cyan {
+    font-size:11px;
+    font-family: Verdana, Arial, sans-serif;
+    color: #9DD2FA;
+/*    font-weight: bold;*/
+}
+
+
+.fliess10px-grey {
+    font-size:10px;
+    font-family: Verdana, Arial, sans-serif;
+    color:#434A52
+}
+
+#inner-cont {
+    margin: 25px 0 0 75px;
+    position: relative;
+    width: 580px;
+}
+#inner-cont-upsell {
+    left: -40px;
+}
+
+#deal_header{
+    width: 540px;
+    height: 116px;
+    left: 0px;
+}
+
+.deal_text{
+
+}
+
+.showArrow{
+    width: 566px;
+    height: 79px;
+    text-align: center;
+    margin-left: -25px;
+    background-image:  url(/do_img/global/payment/uridium-plus/text_bg.png?__cv=e33d6d8e45ef9dae2f0658582f58d500);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+.showArrowBig{
+    width: 615px;
+    height: 119px;
+    text-align: center;
+    margin-left: -25px;
+    background-image:  url(/do_img/global/payment/uridium-plus/text_bg_big.png?__cv=c29e9fbd28a2d89e15e249d130436500);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+
+.showArrow1{
+    width: 566px;
+    height: 76px;
+    text-align: center;
+    margin-left: -25px;
+    background-image:  url(/do_img/global/payment/uridium-plus/text_bg.png?__cv=e33d6d8e45ef9dae2f0658582f58d500);
+    background-repeat: no-repeat;
+    padding-top: 30px;
+}
+
+
+.hideArrow{}
+
+#gratis_on_top{
+    margin-top: 29px;
+}
+#gratis_on_top_big{
+    margin-top: 9px;
+    line-height: 14px;
+}
+
+#gratis_on_top span{
+    position: relative;
+    top: 25px;
+}
+
+#deal_body{
+    width: 575px;
+    height: 120px;
+
+}
+
+.callUp{
+    top: 110px;
+}
+
+.callDown{
+    font-size: 13px;
+    top: 150px;
+}
+
+
+.callFontUp{
+    font-size: 11px;
+}
+
+.callFontDown{
+    font-size: 13px;
+    width: 450px;
+    margin-top: 15px;
+    left: 60px;
+}
+
+.highlight_uridium_plus{
+    color: #FFFFFF;
+}
+
+
+#payment_link{
+
+}
+
+
+#payment_link:hover{
+    background-position: 0 -65px;
+}
+#payment_link:active{
+    background-position: 0 -130px;
+}
+
+.linkUp{
+    top: 240px;
+}
+
+.linkDown{
+    top: 275px;
+}
+
+#get_it_graphic{
+    position: relative;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.distanceTop_4 {
+    padding-top: 10px;
+}
+.distanceTop_5 {
+    padding-top: 25px;
+}
+.distanceTop_6 {
+    padding-top: 15px;
+}
+.distanceTop_7 {
+    padding-top: 10px;
+}
+.callHint {
+    color: #d9efff;
+}
+
+
+#deal_text_hint, .callHint {
+    line-height: 12px;
+}
+
+/* content payment */
+
+#contentPayment{
+    background-color: transparent;
+    width: 840px;
+    position:absolute;
+    height: 482px;
+    margin: 0 auto;
+    z-index: 100;
+    overflow: hidden;
+    border: 1px solid #000;
+    display: none;
+    margin-top: -35px;
+    margin-left:58px;
+    left:0px;
+    top: 0px;
+}
+
+#paymentLoadingAnimation{
+
+    width: 750px;
+    position:absolute;
+    height: 482px;
+    margin: 0 auto;
+    z-index: 110;
+    overflow: hidden;
+    border: none;
+    display: none;
+    margin-top: -35px;
+    margin-left: 58px;
+    left:0px;
+    background:  url(/do_img/global/payment/loadingAnimation.gif?__cv=742c828b59f24a779f6fb79f0806fc00) no-repeat center;
+    background-color: transparent;
+}
+
+#internalPaymentCloseButton{
+    z-index: 110;
+    cursor:pointer;
+    position:absolute;
+    float:right;
+    display:none;
+    width: 25px;
+    height: 25px;
+    background:  url(/do_img/global/payment/close_button_sprite.png?__cv=da12240a4c4c0c82ad9728ad4f72ab00) no-repeat 0 0;
+    left:901px;
+    top:-37px;
+}
+
+#internalPaymentCloseButton.mouseOver{
+    background-position: 0 -24px;
+}
+
+#internalPaymentCloseButton.mouseDown{
+    background-position: 0 -48px;
+}
+
+/* section partner voucher*/
+#paymentFrame_evoucherPartner {
+
+    background-image:  url(/do_img/global/payment/banking/bg_promo_pepsi.jpg?__cv=bb249e55dc8d73ba359323902ba15600) ;
+    background-position : 0 top ;
+    background-repeat   : no-repeat ;
+
+    width               : 776px ;
+    margin              : -4px 14px 0 0 ;
+}
+.evoucher_partner {
+    height: 391px;
+}
+#promo_pepsi_contentBox {
+    position: absolute;
+    top: 154px;
+    left: 345px;
+    width: 340px;
+    height: 170px;
+}
+.promo_pepsi_codeContainer {
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+.promo_pepsi_arrow, .promo_pepsi_inputField, .promo_pepsi_icon {
+    float: left;
+    margin-right: 3px;
+}
+.promo_pepsi_arrow {
+    width: 22px;
+    height: 22px;
+    margin-left: 5px;
+    background-image:  url(/do_img/global/eVoucher/arrow_element_20x22.png?__cv=a1a50ede9757acfc14027af1c7f48300);
+    background-repeat: no-repeat;
+}
+.promo_pepsi_inputField {
+    height: 22px;
+    font-size: 11px;
+    padding-left: 7px;
+    background-image:  url(/do_img/global/eVoucher/textfield_237x22.png?__cv=93aa86a23f847ffd61778ad1874ce600);
+    background-repeat: no-repeat;
+    border: 0px;
+    width: 230px;
+}
+#pepsiPromoCode {
+    border: none;
+    width: 233px;
+    margin-left: -5px;
+    background: none;
+    color: white;
+    font-weight: bold;
+}
+.promo_pepsi_icon, .promo_pepsi_icon_success, .promo_pepsi_icon_error {
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 22px;
+}
+.promo_pepsi_icon {
+    background-image:  url(/do_img/global/eVoucher/checkbox_21x22.png?__cv=73a3d18e6e79b2a7cf760b6fd0081800);
+}
+.promo_pepsi_icon_success {
+    background-image:  url(/do_img/global/eVoucher/status_icon_sprite_21x22.png?__cv=02c9490cfa70452bb9d54cdf39f57e00);
+    background-position: 0 0;
+}
+.promo_pepsi_icon_error {
+    background-image:  url(/do_img/global/eVoucher/status_icon_sprite_21x22.png?__cv=02c9490cfa70452bb9d54cdf39f57e00);
+    background-position: 0 -22px;
+}
+.promo_pepsi_font_success {
+    color: #3CE800;
+}
+.promo_pepsi_font_error {
+    color: #bfbfbf;
+}
+
+.promo_pepsi_top, .promo_pepsi_bottom {
+    position: absolute;
+    left: 0;
+    padding: 0 20px 0 30px;
+}
+.promo_pepsi_top {
+    top: 30px;
+}
+.promo_pepsi_bottom {
+    top: 110px;
+}
+
+.promo_pepsi_button {
+    position: absolute;
+    top: 324px;
+    left: 310px;
+    width: 399px;
+    height: 95px;
+    background-image:  url(/do_img/tr/payment/pepsi_bt_sprite_399x95.png?__cv=5cdcf853941475a3ee7f80ccbb10b100);
+    background-position: 0 0;
+    cursor: pointer;
+}
+.promo_pepsi_button:hover {
+    background-position: 0 95px;
+}
+.promo_pepsi_button:active {
+    background-position: 0 190px;
+}
+/* section partner voucher*/
+
+/* content payment */

@@ -1,0 +1,120 @@
+/* InfoPopup */
+#infoLayer.confirmInfoLayer {
+    position:absolute;
+    top:0;
+    left:250.5px;
+    width:359px;
+    display:none;
+    z-index:10;
+}
+
+#infoLayerConfirm, #infoLayerInfo {
+    display: none;
+}
+
+#infoLayer .popup_shop_headcontainer {
+    width:359px;
+    height:39px;
+    text-align: center;
+    background-image:  url(/do_img/global/popups/hangar/popup_header.png?__cv=4a95096f94601def535b79234863e900);
+    color: #ffcc04;
+    font-size: 11px;
+    margin-top: 7px;
+}
+
+#infoLayer .popup_shop_head_title {
+    color: #ffcc04;
+    font-size: 11px;
+    margin-top: 7px;
+}
+
+#infoLayer .popup_shop_contentcontainer {
+    width:359px;
+    text-align: center;
+    background-image:  url(/do_img/global/popups/hangar/popup_middle.png?__cv=77aac20931e5eb34223493db10a0c200);
+}
+
+#infoLayer .popup_shop_footcontainer {
+    width:359px;
+    height:49px;
+    background-image:  url(/do_img/global/popups/hangar/popup_footer.png?__cv=f2fc8c7668be86294f993ac3cd06b100);
+    margin-top: 20px;
+}
+
+#infoLayer a.popup_shop_close {
+    width:24px;
+    height:24px;
+    float: right;
+    margin-top: 7px;
+    margin-right: 7px;
+    background-image:  url(/do_img/global/popups/hangar/close_button_sprite.png?__cv=77d34530ac7455b4f92f94077a21ca00);
+}
+
+#infoLayer a.popup_shop_close:hover {
+    background-position: 0px 48px;
+}
+
+#infoLayer .popup_shop_close_button {
+    width:150px;
+    height:32px;
+    background-image:  url(/do_img/global/popups/hangar/button_sprite_150x32px.png?__cv=fbcf0aaece403f73beead33d582e9f00);
+    background-position: 0 -96px;
+    margin: auto;
+}
+
+#infoLayer .popup_shop_close_button:hover {
+    background-position: 0 -128px;
+    cursor: pointer;
+}
+
+#infoLayer .popup_shop_confirm_button {
+    width:150px;
+    height:32px;
+    background-image:  url(/do_img/global/popups/hangar/button_sprite_150x32px.png?__cv=fbcf0aaece403f73beead33d582e9f00);
+    background-position: 0 -96px;
+    float: left;
+    margin-left: 20px;
+}
+
+#infoLayer .popup_shop_confirm_button:hover {
+    background-position: 0 -128px;
+    cursor: pointer;
+}
+
+#infoLayer .popup_shop_abort_button {
+    width:150px;
+    height:32px;
+    background-image:  url(/do_img/global/popups/hangar/button_sprite_150x32px.png?__cv=fbcf0aaece403f73beead33d582e9f00);
+    background-position: 0 0;
+    float: right;
+    margin-right: 20px;
+}
+
+#infoLayer .popup_shop_abort_button:hover {
+    background-position: 0 -32px;
+    cursor: pointer;
+}
+
+#infoLayer .popup_shop_question {
+
+}
+#infoLayer .question {
+    padding-top: 60px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+#infoLayer .icon_success, #infoLayer .icon_error, #infoLayer .icon_question {
+    background-repeat: no-repeat;
+    background-position: center -3px;
+}
+#infoLayer .icon_success    { background-image:  url(/do_img/global/popups/icon_success.png?__cv=7c926d0871431070e5d9961c61a5f000);}
+#infoLayer .icon_error      { background-image:  url(/do_img/global/popups/icon_error.png?__cv=f4a606d86be7b1a6e33b811e47a2b900);}
+#infoLayer .icon_question   { background-image:  url(/do_img/global/popups/icon_question.png?__cv=45867e74f49feb3a77e008cd5dfb3800);}
+
+#infoLayer .popup_shop_confirm_text, #infoLayer .popup_shop_abort_text, #infoLayer .popup_shop_close_text {
+    background-repeat: no-repeat;
+    background-position: center 7px;
+    height: 32px;
+    cursor: pointer;
+}

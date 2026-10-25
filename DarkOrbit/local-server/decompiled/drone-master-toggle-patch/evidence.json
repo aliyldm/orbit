@@ -1,0 +1,21 @@
+{
+  "className": "net.bigpoint.darkorbit.mvc.settingsFUI.model.SettingsWindowFUIProxy",
+  "beforeSha256": "3fb99f161dbf70f7a49f2b898f4d0cde16cb320f652bdeda40afbf1f071ce113",
+  "afterSha256": "e445a0d6a05f56d5ec0de9766b29278b564c1ebb731ac4d074a3aa36179e3eb3",
+  "unchangedNonAbcTags": 256,
+  "nonAbcIdentical": true,
+  "changes": [
+    {
+      "index": 254,
+      "before": {
+        "tag": 82,
+        "sha256": "72267cde6feac0f4037f619b6c51f940dbcc539ca78899dc7392907ee1b8bdbd"
+      },
+      "after": {
+        "tag": 82,
+        "sha256": "234a87b3c7a8cb91c705d7eaa9a213094b7bf0db1d5c77dcaa736cf7dafcb531"
+      }
+    }
+  ],
+  "scope": "Only changed master drone checkbox synchronizes own-drone model and bindable setting; independent own checkbox remains."
+}

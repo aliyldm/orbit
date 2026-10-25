@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource>
+  <item name="btn_label_start"><![CDATA[BAŞLA]]></item>
+  <item name="btn_label_claim"><![CDATA[BAŞLA]]></item>
+  <item name="btn_label_loading"><![CDATA[YÜKLENİYOR]]></item>
+  <item name="btn_label_loadstarsystem"><![CDATA[YILDIZ SİSTEMİNİ YÜKLE]]></item>
+  <item name="login_bonus_panel_title"><![CDATA[GÜNLÜK GİRİŞ BONUSU]]></item>
+  <item name="login_bonus_item_headline"><![CDATA[Gün %VALUE%]]></item>
+  <item name="login_bonus_button_get_premium"><![CDATA[PREMIUM Al]]></item>
+  <item name="login_bonus_item_headline_premium"><![CDATA[PREMIUM ile şunlara sahip olacaksın:]]></item>
+  <item name="login_bonus_item_premium_buybutton"><![CDATA[Hemen PREMIUM al]]></item>
+  <item name="login_bonus_calendar_expires"><![CDATA[Takvim %VALUE% içerisinde sıfırlanacak.]]></item>
+  <item name="login_bonus_tooltip_info_premiumitem"><![CDATA[Premium 25. Gün ödülünü talep etmek için standart 25. gün ödülünü kabul etmeden önce aktif PREMIUM Üyeliğe sahip OLMALISIN.]]></item>
+  <item name="login_bonus_tooltip_info_items"><![CDATA[Günlük ödülünü al. Merak etme: Bir günü kaçırsan bile, takvim sıfırlanıncaya kadar ilerlemelerini kaybetmeyeceksin.]]></item>
+  <item name="login_bonus_tooltip_info_premiumitem_deactivated"><![CDATA[Ödülü alablimek için aktif PREMIUM üyeliğe sahip olmalısın.]]></item>
+  <item name="login_booster_time_info"><![CDATA[h]]></item>
+  <item name="login_reward_amount_info"><![CDATA[X%VALUE%]]></item>
+  <item name="login_time_day_short"><![CDATA[g]]></item>
+  <item name="login_time_hour_short"><![CDATA[s]]></item>
+  <item name="login_time_minute_short"><![CDATA[d]]></item>
+</resource>

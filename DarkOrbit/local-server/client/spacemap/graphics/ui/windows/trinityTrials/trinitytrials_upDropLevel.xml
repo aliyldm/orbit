@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+<template name="trinitytrials_upDropLevel">
+    <container name="upDropLevel" width="728" height="460" autoSizeWidth="false" autoSizeHeight="false"
+                mouseEnabled="false" mouseChilderen="true">
+        <Label name="title_info_label" 
+            width="657" 
+            height="60" 
+            alignX="center" 
+            alignY="top" 
+            marginTop="20" 
+            autoSizeWidth="false" 
+            autoSizeHeight="false" 
+            registeredSkinName="commonui_default_label" 
+            registeredTextStyleName="trinitutrials_rewards_info_text"
+            text="localize:trinitytrials_upgrade_info"/>
+        <coreponent name="list_group" width="454" height="218" autoSizeWidth="false" autoSizeHeight="false" alignY="top" marginTop="80" alignX="center">
+            
+            <coreponent name="item_list_bg_max" width="302" height="218" alignX="left" alignY="top" registeredSkinName="trinitutrials_up_level_bg_max"/>
+            <coreponent name="item_list_bg" width="454" height="218" alignX="left" alignY="top" registeredSkinName="trinitutrials_up_level_bg"/>
+            
+            <Label name="current_level" width="148" height="24" text="localize:trinitytrials_upgrade_current_level" alignX="left" alignY="top" marginLeft="150" marginTop="2" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_list_title_label"/>
+            <Label name="next_level" width="148" height="24" text="localize:trinitytrials_upgrade_next_level" alignX="left" alignY="top"  marginLeft="302" marginTop="2" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_list_title_label"/>
+            
+            
+            <coreponent name="up_arrow" width="16" height="12" alignX="left" alignY="top" marginLeft="296" marginTop="8" registeredSkinName="trinitutrials_up_level_arrow"/>
+                   
+            <itemlist name="current_level_info_list" 
+                      itemGap="3"
+                      width="302"
+                      height="218"
+                      alignX="left"
+                      alignY="top"
+                      marginTop="30"
+                      mouseChildren="true"
+                      mouseEnabled="true"
+                      autoSizeWidth="false"
+                      layout="vertical"
+                      cacheSkinMaskAsBitmap="false"
+                      itemAlignX="center"
+                      registeredSkinName="commonui_list_mask">
+                <itemrenderer width="302" height="24" autoSizeWidth="false" autoSizeHeight="false" 
+                                                  mouseEnabled="true" mouseChildren="true">
+                    <Label name="level_info" width="148" height="24"  alignX="left" alignY="top" marginTop="0" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_drop_label"/>
+                    <coreponent name="current_level" width="148" height="24" autoSizeWidth="false" autoSizeHeight="false"  alignY="center" alignX="right">
+                        <!-- <coreponent name="bg" width="148" height="24" autoSizeWidth="false" autoSizeHeight="false" registeredSkinName="trinitutrials_drop_info_item_bg_level_1"/> -->
+                        <Label name="current_level_desc" width="148" height="24" alignY="top" marginTop="0" alignX="left" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_drop_info_label"/>
+                    </coreponent>                
+                </itemrenderer>
+            </itemlist>
+            <itemlist name="next_level_info_list"
+                      itemGap="3"
+                      width="148"
+                      height="218"
+                      alignX="right"
+                      marginRight="-1"
+                      alignY="top"
+                      marginTop="30"
+                      mouseChildren="true"
+                      mouseEnabled="true"
+                      autoSizeWidth="false"
+                      layout="vertical"
+                      cacheSkinMaskAsBitmap="false"
+                      itemAlignX="center"
+                      registeredSkinName="commonui_list_mask" >
+                <itemrenderer width="148" height="24" autoSizeWidth="false" autoSizeHeight="false" 
+                                                  mouseEnabled="true" mouseChildren="true">
+                    <coreponent name="current_level" width="148" height="24" autoSizeWidth="false" autoSizeHeight="false"  alignY="center" alignX="left">
+                        <!-- <coreponent name="bg" width="148" height="24" autoSizeWidth="false" autoSizeHeight="false" registeredSkinName="trinitutrials_drop_info_item_bg_level_1"/> -->
+                        <Label name="current_level_desc" width="148" height="24" alignY="top" alignX="left" marginTop="0" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_drop_info_label"/>
+                    </coreponent>                
+                </itemrenderer>
+            </itemlist>
+        </coreponent>    
+        
+        <coreponent name="upLevelCostGroup" width="402" height="90" alignX="center" alignY="bottom" marginBottom="60" autoSizeWidth="false" autoSizeHeight="false" visible="true" >
+                <Label name="cost_title_label" text="localize:crafting_skip_label_info" width="160" height="25" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_cost_title_label" alignX="left" marginLeft="0" alignY="top" marginTop="0"/>
+                    
+                <coreponent name="item_group" width="195" height="50" autoSizeWidth="false" autoSizeHeight="false" alignX="left" alignY="top" marginTop="25">
+                    <coreponent name="bg" width="195" height="50" registeredSkinName="trinitutrials_cost_item_bg" alignX="center" alignY="center" alpha="0.6"/>
+                    <coreponent name="icon_bg" registeredSkinName="trinitutrials_cost_item_icon_bg" alignX="left" marginLeft="2" alignY="top" marginTop="9"/>
+                    <coreponent name="icon" width="28" height="28" alignX="left" alignY="top" marginLeft="3" marginTop="10"/>
+                    <Label name="cost_item_name" width="160" height="25" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_cost_info_label" alignX="left" marginLeft="34" alignY="top" marginTop="3"/>
+                    <Label name="cost_num_label" width="160" height="25"  registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_cost_info_label" alignX="left" marginLeft="34" alignY="top" marginTop="28"/>
+                    <button name="tip_info" registeredSkinName="commonui_info_button" alignX="right" alignY="bottom" mouseEnabled="true" mouseChildren="true"/>
+                
+                </coreponent>
+                <button name="build_button" width="165" height="30" registeredSkinName="commonui_scale9_button_blue" text="localize:trinitytrials_upgrade_btn_upgrade" alignX="right" alignY="top" marginTop="33" mouseEnabled="true" mouseChildren="true"/>
+                           
+        </coreponent>
+        <coreponent name="skipUpLevelCostGroup" width="402" height="90" alignX="center" alignY="bottom" marginBottom="60" autoSizeWidth="false" autoSizeHeight="false" visible="true">
+                        <container name="progress"
+                               width="235" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="children"
+                               marginTop="5" marginLeft="5" alignX="center" alignY="top">
+
+                        <container name="progress_bar"
+                                   width="180" height="2" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="left" alignY="bottom" marginLeft="20" marginBottom="10">
+
+                            <progressbar name="bar"
+                                         autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true"
+                                         autoHeightMode="parent"
+                                         registeredSkinName="trinitutrials_progressbar">
+                            </progressbar>
+
+                            <label name="label_current" text="00:00"
+                                   autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false"
+                                   alignY="bottom" marginBottom="0" 
+                                   registeredTextStyleName="trinitutrials_progress_current"
+                                   registeredSkinName="commonui_default_label"/>
+                        </container>
+                    </container>
+
+                <Label name="cost_title_label" text="localize:crafting_skip_label_info" width="160" height="25" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_cost_title_label" alignX="left" marginLeft="0" alignY="top" marginTop="0"/>
+                
+                <coreponent name="item_group" width="195" height="50" autoSizeWidth="false" autoSizeHeight="false" alignX="left" alignY="top" marginTop="25">
+                    <coreponent name="bg" width="195" height="50" registeredSkinName="trinitutrials_cost_item_bg" alignX="center" alignY="center" alpha="0.6"/>
+                    <coreponent name="icon_bg" registeredSkinName="trinitutrials_cost_item_icon_bg" alignX="left" marginLeft="2" alignY="top" marginTop="9"/>
+                    <coreponent name="icon" width="28" height="28" alignX="left" alignY="top" marginLeft="3" marginTop="10"/>
+                    <Label name="cost_item_name" width="160" height="25" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_cost_info_label" alignX="left" marginLeft="34" alignY="top" marginTop="3"/>
+                    <Label name="cost_num_label" width="160" height="25"  registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_cost_info_label" alignX="left" marginLeft="34" alignY="top" marginTop="28"/>
+                    <button name="tip_info" registeredSkinName="commonui_info_button" alignX="right" alignY="bottom" mouseEnabled="true" mouseChildren="true"/>
+                    
+                </coreponent>
+                <button name="skip_button" width="165" height="30" registeredSkinName="commonui_scale9_button_blue" text="localize:trinitytrials_upgrade_btn_skip" alignX="right" alignY="top" marginTop="33" mouseEnabled="true" mouseChildren="true"/>
+                             
+        </coreponent>
+    </container>
+</template>
+
+    <container name="root"
+               width="728" height="460" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChilderen="true">
+        <reference template="trinitytrials_upDropLevel"/>
+    </container>
+</root>

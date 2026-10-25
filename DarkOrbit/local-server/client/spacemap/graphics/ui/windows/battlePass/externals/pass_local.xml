@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<battlePass><objectiveList>
+<objective questId="930001"><questReward lootid="resource_season-pass-point" amount="50"/><bpReward lootid="resource_battle-pass-key" amount="1"/></objective>
+<objective questId="930002"><questReward lootid="resource_season-pass-point" amount="40"/><bpReward lootid="resource_battle-pass-key" amount="1"/></objective>
+<objective questId="930003"><questReward lootid="resource_season-pass-point" amount="200"/><bpReward lootid="resource_battle-pass-key" amount="2"/></objective>
+<objective questId="930004"><questReward lootid="resource_season-pass-point" amount="300"/><bpReward lootid="resource_battle-pass-key" amount="2"/></objective>
+<objective questId="930005"><questReward lootid="resource_season-pass-point" amount="1500"/><bpReward lootid="resource_battle-pass-key" amount="5"/></objective>
+<objective questId="930006"><questReward lootid="resource_season-pass-point" amount="2000"/><bpReward lootid="resource_battle-pass-key" amount="5"/></objective>
+</objectiveList><flvDisplayLootId>ship_goliath</flvDisplayLootId><titleKeyBeforePurchase>window_objectives_bp_title</titleKeyBeforePurchase><descriptionKeyBeforePurchase>window_objectives_bp_promo_desc</descriptionKeyBeforePurchase><descriptionKeyCollect>window_objectives_bp_collect_desc</descriptionKeyCollect><titleKeyAfterPurchase>window_objectives_bp_highlight_title</titleKeyAfterPurchase><descriptionKeyAfterPurchase>window_objectives_bp_highlight_desc</descriptionKeyAfterPurchase></battlePass>

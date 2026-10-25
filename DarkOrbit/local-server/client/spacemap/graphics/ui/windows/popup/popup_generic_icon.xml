@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI" />
+		<library id="settingsWindowFUI" />
+		<library id="popup_asset" />
+	</libraries>
+
+	<!-- TEXT STYLES -->
+	<textstyle  name="popup_generic_icon_center"
+				textColor="0xABABAB"
+				type="dynamic"
+				fontSize="11"
+				autoSize="center"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="center"/>
+
+	<textstyle  name="popup_generic_icon_save_textstyle"
+				textColor="0x999898"
+				type="dynamic"
+				fontSize="8"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="left"/>
+
+	<!-- SKIN -->
+	<skin name="popup_generic_icon_label_skin" classname="LabelSkin" />
+
+	<skin name="popup_generic_icon_button_green" classname="FadableButtonSkin" library="settingsWindowFUI" >
+		<layer classname="BitmapLayer" libraryID="btn_green_normal">normal</layer>
+		<layer classname="BitmapLayer" libraryID="btn_green_hover">over</layer>
+		<layer classname="BitmapLayer" libraryID="btn_inactive">disabled</layer>
+	</skin>
+
+	<skin name="popup_generic_icon_button_red" classname="FadableButtonSkin" library="settingsWindowFUI" >
+		<layer classname="BitmapLayer" libraryID="btn_red_normal">normal</layer>
+		<layer classname="BitmapLayer" libraryID="btn_red_hover">over</layer>
+		<layer classname="BitmapLayer" libraryID="btn_inactive">disabled</layer>
+	</skin>
+
+	<skin name="popup_generic_icon_question" classname="BasicSkin" library="popup_asset">
+		<layer classname="BitmapLayer" libraryID="icon_question">normal</layer>
+	</skin>
+
+	<!-- CONTENT -->
+	<container name="root" width="337" height="186"
+			   mouseEnabled="false" mouseChildren="true">
+		<container name="contentContainer" width="337" height="186" marginLeft="12">
+
+			<coreponent name="icon" width="57" height="53" marginTop="10" alignX="center"/>
+
+			<label name="label" autoSizeWidth="true" height="16"
+				   marginTop="73" alignX="center"
+				   registeredSkinName="popup_generic_icon_label_skin"
+				   registeredTextStyleName="popup_generic_icon_center"/>
+
+			<button name="okButton" text="localize:btn_ok" width="150" height="32"
+					marginTop="109" marginLeft="10" alignX="left"
+					registeredSkinName="popup_generic_icon_button_green"
+					registeredTextStyleName="commonui_button_whitetxt_16pt"/>
+
+			<button name="cancelButton" text="localize:btn_cancel" width="150" height="32"
+					marginTop="109" marginRight="10" alignX="right"
+					registeredSkinName="popup_generic_icon_button_red"
+					registeredTextStyleName="commonui_button_whitetxt_16pt"/>
+		</container>
+	</container>
+</root>

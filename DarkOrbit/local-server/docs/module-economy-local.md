@@ -1,0 +1,27 @@
+# Yerel Upgrade / Convert Module ekonomisi
+
+22 Ekim 2026, kullanıcı talebi. Bu kurallar orijinal DarkOrbit tarif fiyatı iddiası değildir.
+
+Dükkân → Ekstralar: **Upgrade Module 10.000 U.**, **Convert Module 10.000 U.**; özgün miktar seçicisiyle çoklu alınır. Convert için aynı birim fiyatı varsayımı kullanıcıya çalışma başında bildirildi. Yeni loot kimlikleri `resource_upgrade-module` ve `resource_convert-module`; eski maden/kupon stoklarına dokunulmaz. İki modül de gerçek ayrı yığınlar olarak saklanır; stok sınırı bir milyardır.
+
+Geliştirme için tüm uygun lazer/kalkan/roketatar/diroit tarifleri yalnız Upgrade Module tüketir. Kademe: başlangıç sınıfı 1, LF3 sınıfı 2, LF4/Iris sınıfı 3; ileri sınıflar artar. Tek adım maliyeti `kaliteKademesi × ceil(hedefDBSeviyesi / 3)`. Görünen seviye DB seviyesinden bir fazladır. Birden fazla seviye seçilince aradaki adımlar toplanır. Örneğin ilk LF3 geliştirmesi 2, LF4/Iris 3 modül; sonraki her üç hedef seviyede adet artar. Süre atlama da yalnız Upgrade Module ister.
+
+Normal Birleştir tariflerinin eski malzeme, temel eşya ve para girişleri yalnız Convert Module ile değiştirilir. Üretilen ekipman/gemi türü, gücü veya miktarı maliyeti belirler. Örnekler: LF3 3, LF4 6, Iris 4, Goliath Plus 100 modül. Cephane paketlerinin miktarı hesaba katılır. Kalkanlar gerçek `output` özelliğiyle sınıflandırılır. Aynı çıktı aynı sabit kalite kuralını kullanır; eski ardışık üretim maliyet çarpanı kaldırıldı.
+
+Özgün çıktı, üretim süresi, uygun hedefler, seviye/plan/kullanım sınırları korunur. CPU veya cephaneye sahte geliştirme eklenmez. Önceden ödenmiş üretimler sonuç ve bitiş tarihini korur; yeni süre atlama isteği güncel modülle ücretlenir. Söküm ayrı işlemdir; özgün iade tarifleri korunur. Stabilize/Hiper Ocak hâlâ uygulanmış değildir.
+
+Tek maliyet kaynağı `game/module-policy.js`. Sunucu bunun tariflerini kullanır; `tools/patch-assembly-modules.js` aynı 662 maliyet tanımını gerçek MAIN içine derler. Türkçe isimler ve görsel manifesti `tools/install-assembly-module-assets.js` ile kurulur; mevcut teknik parça çizimleri yeniden kullanılır. Politika değişirse istemci tekrar derlenmelidir.
+
+Portalın tüm ürün sayfaları ve native dükkân listeleri birim fiyatın sayısal değerine göre artan sıralıdır. Kredi/Uridyum için uydurma kur kullanılmaz. Diroit alımından sonra değişen fiyat ve sıralama canlı yenilenir. Native 127 kayıt sınırı için kampanya aliasları listede birleştirilir; sıradan eski Specials ürünleri native Ekstralar'da bulunur.
+
+Doğrulama: `logs/module-full-suite.log` **741/741**, `logs/module-network.log` gerçek HTTP/TCP **16.540 komut** PASS; iki modül gerçek shop uç noktasından alınarak hem HTTP hem native üretimde/geliştirmede tüketildi ve sonuç teslim edildi. `logs/module-client.log` istemci kimlikleri geçerli. `logs/module-db.log`: 2 hesap/oyuncu, 7 gemi, 41 sahiplik tablosu korundu; online yedek `backups/darkorbit-before-2026-10-22T19-17-41-448Z.db`.
+
+**Açılış sorununun gerçek nedeni ve düzeltmesi:** ilk üç koruma sonrasında kullanıcı yeni MAIN'de hâlâ çark gördü. Gerçek Qt/Flash oturumuna sınırlı yerel tanılama eklendi; 19:30:07–08 HTTP kayıtlarında hem envanter paketi hem UI callback'i `AssemblyInventoryIndex.updateItem` içindeki `TypeError #1009` ile kesildi. Hesapta bulunan gerçek `resource_gold-pass` kaydının `ItemTraits=null` tanımı bu çağrıyı bozuyordu. `tools/patch-assembly-null-traits.js` null trait'i geliştirilemeyen normal malzeme olarak değerlendirir; adetleri, takılı eşya ve devam eden geliştirme kilitlerini korur. Son MAIN SHA256 `3fb99f161dbf70f7a49f2b898f4d0cde16cb320f652bdeda40afbf1f071ce113` kuruldu. Gerçek decompile edilmiş fonksiyonla eski hata yeniden üretilip düzeltme test edildi.
+
+Son otomatik kontrol **750/750 test**, **262 JS dosyası / 0 sözdizimi hatası** (`logs/module-rings-final-suite.log`, `logs/module-rings-final-syntax.log`). Native düzeltmenin son görsel kontrolü sırasında kullanıcı fiziksel Escape ile Computer Use'u durdurdu; başka ekran girdisi gönderilmedi. Son yamayla pencerenin görsel açılışı henüz doğrulanmış değildir. Kullanıcının oyunu tamamen kapatıp tekrar açması gerekir. Bu sınır otomatik test sonucu ile karıştırılmamalıdır.
+
+Birleşik son gerçek HTTP/TCP kontrolü de PASS: **16.534 çözülen komut**, `logs/module-rings-final-network.log`. Önceki 16.540 çalışma ayrı başarılı koşudur; zamanlayıcıdan dolayı komut toplamı değişebilir. En son online yedek `backups/darkorbit-before-2026-10-22T19-33-02-119Z.db`; bütün 41 sahiplik/ilerleme tablosu korundu. Kapı simgesi alanı artık gerçek geçmişten türetilmiş maske olarak ayrıca doğrulanır.
+
+22 Ekim kullanıcı isteğiyle `asd` hesabına ayrıca 1.000.000.000 U. eklendi. İşlem önce 1.940.300 U., sonra 1.001.940.300 U.; canlı bellek ve DB aynı anda güncellendi. Tekrar emniyet anahtarı `admin_wallet_user-20261022-billion-01`, `settings` içinde makbuzla saklanır; sonraki oyun harcamaları bu bakiyeyi değiştirir.
+
+Son kullanıcı girişi, gerçek runtime'da artık `inventory-ready=true` ve altı UI kurulum callback'inin bitmesini doğruladı; 19:35:09 sonrasındaki kayıtlar `logs/before-drone-final-20261022-224035-console.log` içinde. Ekrana giriş yapılmadan salt log okundu; Escape sonrası ek Computer Use yapılmadı. Sonraki diroit anahtarı yamasıyla kurulu MAIN `e445a0d6a05f56d5ec0de9766b29278b564c1ebb731ac4d074a3aa36179e3eb3`; bütün yama zinciri test edilir. Güncel doğrulama 754/754, 264 JS/0 hata (`logs/local-final-suite.log`, `logs/local-final-syntax.log`); sunucu PID21648 ve sağlık ok.

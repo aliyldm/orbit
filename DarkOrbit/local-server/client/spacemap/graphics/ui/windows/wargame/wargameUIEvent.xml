@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="wargameUIAssets"/>
+    </libraries>
+
+
+    <textstyle
+            name="wargame_score_left"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="left"
+            embedFonts="false"
+            fontName="Verdana"/>
+
+    <textstyle
+            name="wargame_score_right"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            embedFonts="false"
+            fontName="Verdana"/>
+
+    <textstyle
+            name="wargame_lower_section_white"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="12"
+            autoSize="left"
+            embedFonts="false"
+            fontName="Verdana"/>
+
+    <textstyle
+            name="wargame_lower_section_yellow"
+            textColor="0xffcc00"
+            type="dynamic"
+            fontSize="12"
+            autoSize="left"
+            embedFonts="false"
+            fontName="Verdana"/>
+
+    <textstyle
+            name="wargame_headline_blue"
+            textColor="0x00ccff"
+            type="dynamic"
+            fontSize="24"
+            autoSize="center"
+            embedFonts="false"
+            fontName="Verdana"/>
+
+    <textstyle
+            name="wargame_headline_red"
+            textColor="0xff3300"
+            type="dynamic"
+            fontSize="24"
+            autoSize="center"
+            embedFonts="false"
+            fontName="Verdana"/>
+
+
+
+    <skin
+            name="wargame_progress_bar_blue"
+            library="gameclientCommonUI"
+            tweenTime="1"
+            classname="ProgressBarSkin">
+        <layer classname="FilledBoxLayer" fillColor="0xff3300" fillAlpha="1">normal
+        </layer>
+        <layer classname="FilledBoxLayer" fillColor="0x00ccff" fillAlpha="1">bar
+        </layer>
+    </skin>
+
+    <skin
+            name="wargame_progress_bar_red"
+            library="gameclientCommonUI"
+            tweenTime="1"
+            classname="ProgressBarSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x00ccff" fillAlpha="1">normal
+        </layer>
+        <layer classname="FilledBoxLayer" fillColor="0xff3300" fillAlpha="1">bar
+        </layer>
+    </skin>
+
+    <skin name="wargame_progress_bar_overlay" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" fillAlpha="0" lineAlpha="1" lineColor="0xfefefe">normal</layer>
+    </skin>
+
+
+    <skin name="wargame_icon_watch" library="wargameUIAssets" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="icon_stropwatch">normal</layer>
+    </skin>
+    <skin name="wargame_icon_timer" library="wargameUIAssets" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="icon_timer">normal</layer>
+    </skin>
+    <skin name="wargame_icon_player" library="wargameUIAssets" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="icon_player">normal</layer>
+    </skin>
+    <skin name="wargame_icon_lives" library="wargameUIAssets" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="icon_life">normal</layer>
+    </skin>
+    <skin name="wargame_icon_waves" library="wargameUIAssets" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="icon_waves">normal</layer>
+    </skin>
+
+    <container name="root" mouseEnabled="false" height="400" width="300">
+        <container name="event_container" x="6" width="265" height="185">
+            <label width="265" height="30" alignX="center" name="header" text="" y="0"
+                   registeredTextStyleName="wargame_headline_red"/>
+            <container y="35" name="score" width="265" height="60">
+                <label width="240" alignX="left" text="localize:plutus_tab_overview_playerpoints" registeredTextStyleName="wargame_score_left"/>
+                <label width="240" alignX="right" name="score" text="0"
+                       registeredTextStyleName="wargame_score_right"/>
+
+                <label width="240" name="team_label_left" y="20" alignX="left" text="Red Team"
+                       registeredTextStyleName="wargame_score_left"/>
+                <label width="240" name="team_label_right" y="20" alignX="right" text="Blue Team"
+                       registeredTextStyleName="wargame_score_right"/>
+                <container y="35" name="bar_container" width="260" height="11" alignX="center">
+                    <progressbar y="2" x="2" name="bar" width="257" height="7"
+                                 registeredSkinName="wargame_progress_bar_red"></progressbar>
+                    <coreponent registeredSkinName="wargame_progress_bar_overlay" y="0" width="260" height="10"/>
+                </container>
+
+                <label width="240" y="45" alignX="left" name="score_left" text="-"
+                       registeredTextStyleName="wargame_score_left"/>
+                <label width="240" y="45" alignX="right" name="score_right" text="-"
+                       registeredTextStyleName="wargame_score_right"/>
+            </container>
+            <container y="105" name="game_info" width="265">
+                <coreponent registeredSkinName="wargame_icon_timer" y="0" x="0" mouseEnabled="true"
+                            tooltipData="localize:event_wargame_time_tooltip"/>
+                <label name="timer" x="35" y="7" useHTML="true" width="240"
+                       registeredTextStyleName="wargame_lower_section_white" text="--:--:--"/>
+
+                <coreponent registeredSkinName="wargame_icon_lives" y="0" x="150" mouseEnabled="true"
+                            tooltipData="localize:event_wargame_lives_tooltip"/>
+                <label name="lives" x="185" y="7" useHTML="true" width="240"
+                       registeredTextStyleName="wargame_lower_section_white" text="3/5"/>
+
+                <coreponent registeredSkinName="wargame_icon_waves" y="35" x="0" mouseEnabled="true"
+                            tooltipData="localize:event_wargame_waves_tooltip"/>
+                <label name="waves" x="35" y="42" useHTML="true" width="240"
+                       registeredTextStyleName="wargame_lower_section_white" text="123"/>
+
+                <coreponent registeredSkinName="wargame_icon_watch" y="35" x="150" mouseEnabled="true" name="invasion_icon"
+                            tooltipData="localize:event_wargame_invasion_countdown_tooltip"/>
+                <label name="invasion_timer" x="185" y="42" useHTML="true" width="240"
+                       registeredTextStyleName="wargame_lower_section_yellow" text="--:--:--"/>
+            </container>
+        </container>
+
+    </container>
+</root>
+
+
+
+
+

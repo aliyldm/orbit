@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="uridiumBank"/>
+        <library id="chatWindowUIAssets"/>
+
+    </libraries>
+
+    <textstyle
+            name="uridium_bank_description"
+            textColor="0xFEFEFE"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"/>
+
+    <textstyle
+            name="uridium_bank_timer"
+            textColor="0xffe103"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="center"/>
+
+    <textstyle
+            name="uridium_bank_value"
+            textColor="0xFEFEFE"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="center"/>
+
+
+    <textstyle  name        = "uridium_bank_button"
+                textColor   = "0xFEFEFE"
+                fontSize    = "16"
+                type        = "dynamic"
+                fontName    = "EurostileHeaFl"
+                embedFonts  = "true"
+                autoSize    = "center"
+    />
+
+    <skin name="uridium_bank_progress_bar" tweenTime="0" classname="ProgressBarSkin"
+          library="uridiumBank">
+        <layer classname="BitmapLayer" libraryID="barFrameScale9_blue_inner" scale9grid="3,3,6,6">bar</layer>
+        <layer classname="BitmapLayer" libraryID="barFrameScale9_blue" scale9grid="3,3,6,6">normal</layer>
+    </skin>
+
+    <skin name="uridium_bank_banner" classname="BasicSkin" library="uridiumBank">
+        <layer classname="BitmapLayer" libraryID="banner">normal</layer>
+    </skin>
+
+    <skin name="uriBank-bonusAmmo" classname="BasicSkin" library="uridiumBank">
+        <layer classname="BitmapLayer" libraryID="uriBank-bonusAmmo">normal</layer>
+    </skin>
+
+    <skin name="uriBank-bonusBooster" classname="BasicSkin" library="uridiumBank">
+        <layer classname="BitmapLayer" libraryID="uriBank-bonusBooster">normal</layer>
+    </skin>
+
+    <skin name="uriBank-bonusLevelBooster" classname="BasicSkin" library="uridiumBank">
+        <layer classname="BitmapLayer" libraryID="uriBank-bonusLevelBooster">normal</layer>
+    </skin>
+
+    <skin name="uriBank-bonusLogfiles" classname="BasicSkin" library="uridiumBank">
+        <layer classname="BitmapLayer" libraryID="uriBank-bonusLogfiles">normal</layer>
+    </skin>
+
+    <container marginLeft="4" name="root" width="220" height="300" mouseEnabled="false" mouseChildren="true">
+        <container name="main" visible="true" width="200" marginLeft="10" marginRight="10" marginTop="10"
+                   height="265"
+                   alignX="center">
+
+            <container name="top" width="200" alignY="top" height="100" alignX="center" >
+                <coreponent registeredSkinName="uridium_bank_banner" name="banner" width="200"
+                            height="100"
+                            alignX="center" alignY="top"/>
+
+
+            </container>
+
+            <container name="top_description" width="200" alignY="top" height="70" alignX="center" marginTop="110" >
+                <label name="description" text="localize:uridium_bank_description" registeredSkinName="commonui_default_label"
+                       autoSizeWidth="true" autoSizeTextHeight="true" alignY="center" registeredTextStyleName="uridium_bank_description" />
+            </container>
+
+            <container name="middle" width="200" height="40" alignX="center" marginTop="185">
+
+                <label name="uridium_value" text="0/0" alignX="center" marginTop="4" width="200" height="10" registeredTextStyleName="uridium_bank_value" registeredSkinName="commonui_default_label"/>
+                <progressbar
+                        name="progressbar"
+                        marginLeft="0"
+                        marginRight="0"
+                        marginTop="20"
+                        registeredSkinName="uridium_bank_progress_bar"
+                        height="13"
+                        autoSizeWidth="true">
+                </progressbar>
+
+
+            </container>
+
+            <container name="bottom" width="200" height="40" alignX="center" marginTop="215">
+                <button name="purchase_btn" text="localize:uridium_bank_price" width="146" alignY="bottom"
+                        alignX="center" height="27" registeredSkinName="commonui_scale9_button_green" textMarginY="1"/>
+
+
+            </container>
+            <container name="footer" width="200" height="10" alignX="center" marginTop="255">
+                <label name="timer" width="200" height="10" alignX="center" registeredSkinName="commonui_default_label" text="0"
+                       registeredTextStyleName="uridium_bank_timer" marginTop="6"/>
+
+            </container>
+
+        </container>
+    </container>
+</root>

@@ -1,0 +1,28 @@
+{
+  "beforeSha256": "47a0a55587987d5918ccb41e3e8fa9f3da2c13a8514b01e1e5be0f296894e585",
+  "afterSha256": "ffd878c5462c1ed5e0afbb065eaf970c0cb3fc383e18a550478b13d9c98d04fc",
+  "classes": [
+    "net.bigpoint.darkorbit.map.common.LaserEmissionSchedule",
+    "net.bigpoint.darkorbit.map.view2D.effects.combat.laser.LaserSalvo2D",
+    "net.bigpoint.darkorbit.map.view3D.effects.combat.laser.LaserSalvo3D"
+  ],
+  "nonAbcIdentical": true,
+  "unchangedNonAbcTags": 256,
+  "changes": [
+    {
+      "index": 254,
+      "before": {
+        "tag": 82,
+        "sha256": "4d277e7b786b0567d21fffca26e62bec809b71723642f10a3620d4ffc3daedc4"
+      },
+      "after": {
+        "tag": 82,
+        "sha256": "ac5629621c96bfe63c38fbad31b2bca9023d60b1340cf5e381a98c045de31564"
+      }
+    }
+  ],
+  "scope": "Remove custom 1-second audio gate; captured native 2D/3D sound sites. Visual sub-salvos220ms/RSB200ms retained; damage/ammo unchanged.",
+  "limitations": [
+    "No live original-server timing capture or audible Qt verification."
+  ]
+}

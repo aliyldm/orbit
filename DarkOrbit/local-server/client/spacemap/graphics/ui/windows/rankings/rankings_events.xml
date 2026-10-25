@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="commandCenterWindow"/>
+		<library id="rankings_asset"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+	<textstyle  name="rankings_events_min_left"
+				textColor="0xFFFFFF"
+				type="dynamic"
+				fontSize="8"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="bold"
+				align="left"/>
+
+	<textstyle  name="rankings_events_headline"
+				textColor="0xffbf13"
+				type="dynamic"
+				fontSize="10"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="rankings_events_info_header_left"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="9"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="left"/>
+
+	<textstyle  name="rankings_events_info_header_center"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="9"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="rankings_events_info_row_left"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="9"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="left"/>
+
+	<textstyle  name="rankings_events_info_row_center"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="9"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="center"/>
+
+	<textstyle  name="rankings_events_inactive"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="left"/>
+
+	<!-- SKINS -->
+	<skin name="rankings_info_image" classname="BasicSkin" library="gameclientCommonUI">
+		<layer classname="BitmapLayer" libraryID="icon_info_grey">normal</layer>
+	</skin>
+
+	<skin name="rankings_events_filled_box" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x00ff00" fillAlpha="0.5">normal</layer>
+	</skin>
+
+	<skin name="rankings_events_bg" library="rankings_asset" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="events_bg">normal</layer>
+	</skin>
+
+	<skin name="rankings_events_btn_radio" library="commandCenterWindow" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="btn_radio_off">normal</layer>
+		<layer classname="BitmapLayer" libraryID="btn_radio_on">over</layer>
+		<layer classname="BitmapLayer" libraryID="btn_radio_on">disabled</layer>
+	</skin>
+
+	<skin name="rankings_events_scrollbar_bg" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+	</skin>
+
+	<skin name="rankings_events_bg_mine" classname="BasicSkin">
+		<layer classname="FilledBoxLayer"  fillColor="0x16262f" fillAlpha="0.5">normal</layer>
+	</skin>
+
+	<!-- TEMPLATES -->
+
+	<!-- CONTENT -->
+	<container name="root"
+			   width="670" height="395" autoSizeWidth="false" autoSizeHeight="false"
+			   mouseEnabled="false" mouseChilderen="true">
+		<container  name="events"
+		            autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent">
+			<container  name="body"
+						width="640" height="345" autoSizeWidth="false" autoSizeHeight="false"
+						marginTop="30" marginLeft="15"
+						registeredSkinName="rankings_events_bg">
+				<container name="share"
+						   width="640" height="30" autoSizeWidth="false" autoSizeHeight="false">
+					<dropdownbox name="filterBox"
+								 width="130" marginTop="-10"
+								 registeredSkinName="settings_window_dropdownbox" />
+					<label  name="title"
+							width="270" height="10" autoSizeWidth="false" autoSizeHeight="false"
+							alignX="center" alignY="center"
+							registeredTextStyleName="rankings_events_headline" registeredSkinName="commonui_default_label"/>
+				</container>
+
+				<container  name="rankings"
+							width="635" height="315" autoSizeWidth="false" autoSizeHeight="false"
+							marginTop="30" alignX="center">
+					<!-- ranking views to be added here dynamically -->
+				</container>
+			</container>
+		</container>
+	</container>
+</root>

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+
+<TextureAtlas imagePath="starUp_ui_texture.png">
+	<SubTexture name="item_start_100x100" x="0" y="0" width="30" height="28"/>
+	<SubTexture name="item_start_30x30" x="30" y="0" width="9" height="8"/>
+	<SubTexture name="item_start_58x58" x="39" y="0" width="17" height="16"/>
+</TextureAtlas>

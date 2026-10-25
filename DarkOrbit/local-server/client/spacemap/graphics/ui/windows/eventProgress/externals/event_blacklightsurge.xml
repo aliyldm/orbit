@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  ROOT ELEMENT
+	The name of the root element need allways the CollectorEvent. Further need this CollectorEvent file 
+	allways stored in this folder, where this file are. Files where not stored in this folder, will not be 
+	useable for the EventProgressLayer Event. 
+ -->
+<CollectorEvent xmlns="http://www.darkorbit.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.darkorbit.com eventProgress.xsd">
+
+	<!--  REQUIRED. Section with the base information of the event -->
+	<attributes>
+		
+		<!-- REQUIRED. The Localization Key for the Eventtitle who will be shown by the flash client. -->
+    	<titleKey>window_event_blsurge_title</titleKey>
+    	
+    	<!-- REQUIRED. The Localization Key for the Event Description who will be shown by the flash client -->
+    	<descriptionKey>window_event_blsurge_label_description</descriptionKey>
+
+		<!-- REQUIRED. The Localization Key for Event Point Mechanics (how to earn points) -->
+        <sourceKey>window_event_blsurge_source</sourceKey>
+    	<!-- REQUIRED.
+    		The Amount of selected Currency the user need to reset the ProgressLayer.
+    		Currently Available CurrencyTypes are Uridium and Credits (or both of them)
+    		You can use:
+    		uridium="xxx" and/or credits="xxx"
+    	 -->
+
+         <!-- There should not be any reset. -->
+		<resetPrice uridium="0" />
+	    
+    </attributes>
+
+	<!--  REQUIRED. 
+		This Section stores all Rewards we want to distribute to the users. This Section
+		need to be store min. 1 Reward. The End of the Amount of Rewards are open. Each
+		Line of an Reward is a Stage inside the Game.
+		The class Attribute is also Required and needed for Java. So Please add this allways to the
+		reward section     
+	-->
+    <rewards class="java.util.ArrayList">
+    
+    	<!--  REQUIRED are lootid, amount and unlockRequirement
+    		lootid 				= unique lootif of a item
+   			amount				= the amount the user get
+    		unlockRequirement 	= the amount of EventProgressPoints the user need to disable the stage (reward). 
+    	 -->
+        <reward lootid="ammunition_specialammo_sr-5" amount="100" unlockRequirement="3250"/>
+        
+        <reward lootid="resource_ore_seprom" amount="35000" unlockRequirement="6700"/>
+
+        <!-- 5 days DMG-DLB and SHD-DLB -->
+        <reward packageid="package_event_progress-blsurge01" packageItemIds="booster_dmg-dlb,booster_shd-dlb" itemShowTimeInSec="3" amount="1" unlockRequirement="33000"  tooltipkey="window_event_progress_tooltip_package01_blsurge"/>
+
+        <reward lootid="ammunition_laser_idb-125" amount="30000" unlockRequirement="135000"/>
+
+        <!-- 20k RSB-75 and 15k seprom -->
+        <reward packageid="package_event_progress-blsurge02" packageItemIds="ship_centurion_design_centurion-tyrannos,resource_premium-weeks-2" itemShowTimeInSec="3" amount="1" unlockRequirement="295000"  tooltipkey="window_event_progress_tooltip_package02_blsurge"/>
+    </rewards>
+    
+    <!--  Required, but only relevant for Java --> 
+	<triggers class="java.util.ArrayList" />   
+
+</CollectorEvent>

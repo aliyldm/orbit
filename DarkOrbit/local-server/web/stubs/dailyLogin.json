@@ -1,0 +1,242 @@
+{
+ "theme": "{cdn}do_img/global/loadingscreen/default.jpg",
+ "rewards": [
+  [
+   {
+    "lootId": "booster_ep-dlb",
+    "lootImage": "{cdn}do_img/global/items/booster/ep-dlb_100x100.png",
+    "amount": 3,
+    "special": false,
+    "premium": false,
+    "booked": true
+   }
+  ],
+  [
+   {
+    "lootId": "ammunition_specialammo_wiz-x",
+    "lootImage": "{cdn}do_img/global/items/ammunition/specialammo/wiz-x_100x100.png",
+    "amount": 20,
+    "special": false,
+    "premium": false,
+    "booked": true
+   }
+  ],
+  [
+   {
+    "lootId": "resource_extra-energy",
+    "lootImage": "{cdn}do_img/global/items/resource/extra-energy_100x100.png",
+    "amount": 15,
+    "special": false,
+    "premium": false,
+    "booked": true
+   }
+  ],
+  [
+   {
+    "lootId": "booster_hp-dlb",
+    "lootImage": "{cdn}do_img/global/items/booster/hp-dlb_100x100.png",
+    "amount": 4,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "ammunition_mine_acm-01",
+    "lootImage": "{cdn}do_img/global/items/ammunition/mine/acm-01_100x100.png",
+    "amount": 30,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_nano-case",
+    "lootImage": "{cdn}do_img/global/items/resource/nano-case_100x100.png",
+    "amount": 1,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_extra-energy",
+    "lootImage": "{cdn}do_img/global/items/resource/extra-energy_100x100.png",
+    "amount": 20,
+    "special": true,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_collectable_axion-beam-regulator",
+    "lootImage": "{cdn}do_img/global/items/resource/collectable/axion-beam-regulator_100x100.png",
+    "amount": 50,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "equipment_generator_shield_fs-03",
+    "lootImage": "{cdn}do_img/global/items/equipment/generator/shield/fs-03_100x100.png",
+    "amount": 1,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_collectable_eternal-fragment",
+    "lootImage": "{cdn}do_img/global/items/resource/collectable/eternal-fragment_100x100.png",
+    "amount": 200,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_collectable_kyhalon",
+    "lootImage": "{cdn}do_img/global/items/resource/collectable/kyhalon_100x100.png",
+    "amount": 12,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_collectable_schism",
+    "lootImage": "{cdn}do_img/global/items/resource/collectable/schism_100x100.png",
+    "amount": 25,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_collectable_indoctrineoil",
+    "lootImage": "{cdn}do_img/global/items/resource/collectable/indoctrineoil_100x100.png",
+    "amount": 15,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_collectable_blacklight-shard",
+    "lootImage": "{cdn}do_img/global/items/resource/collectable/blacklight-shard_100x100.png",
+    "amount": 500,
+    "special": true,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_collectable_rinusk",
+    "lootImage": "{cdn}do_img/global/items/resource/collectable/rinusk_100x100.png",
+    "amount": 500,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_collectable_permit",
+    "lootImage": "{cdn}do_img/global/items/resource/collectable/permit_100x100.png",
+    "amount": 3,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "booster_npc-b01",
+    "lootImage": "{cdn}do_img/global/items/booster/npc-b01_100x100.png",
+    "amount": 10,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_collectable_blacklight-trace",
+    "lootImage": "{cdn}do_img/global/items/resource/collectable/blacklight-trace_100x100.png",
+    "amount": 450,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "ammunition_laser_ucb-100",
+    "lootImage": "{cdn}do_img/global/items/ammunition/laser/ucb-100_100x100.png",
+    "amount": 2000,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_extra-energy",
+    "lootImage": "{cdn}do_img/global/items/resource/extra-energy_100x100.png",
+    "amount": 50,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_collectable_indoctrine-accelerator",
+    "lootImage": "{cdn}do_img/global/items/resource/collectable/indoctrine-accelerator_100x100.png",
+    "amount": 10,
+    "special": true,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_collectable_kyhalon",
+    "lootImage": "{cdn}do_img/global/items/resource/collectable/kyhalon_100x100.png",
+    "amount": 40,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "drone_designs_bat-red",
+    "lootImage": "{cdn}do_img/global/items/drone/designs/bat-red_100x100.png",
+    "amount": 5,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "resource_collectable_diametrion",
+    "lootImage": "{cdn}do_img/global/items/resource/collectable/diametrion_100x100.png",
+    "amount": 15,
+    "special": false,
+    "premium": false
+   }
+  ],
+  [
+   {
+    "lootId": "equipment_generator_shield_sg3n-p01",
+    "lootImage": "{cdn}do_img/global/items/equipment/generator/shield/sg3n-p01_329x163.png",
+    "amount": 1,
+    "special": false,
+    "premium": false
+   },
+   {
+    "lootId": "resource_shop-discount-week-1",
+    "lootImage": "{cdn}do_img/global/items/resource/shop-discount-week-1_180x163.png",
+    "amount": 1,
+    "special": false,
+    "premium": true
+   }
+  ]
+ ],
+ "remainingSeconds": 1212337,
+ "isPremium": false
+}

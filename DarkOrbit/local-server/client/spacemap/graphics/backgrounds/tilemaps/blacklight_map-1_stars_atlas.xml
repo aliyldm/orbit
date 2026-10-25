@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas >
+	<!-- Created with Adobe Animate version 15.2.1.95 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="1" x="0" y="0" width="50" height="50" pivotX="0" pivotY="0"/>
+	<SubTexture name="2" x="0" y="150" width="50" height="50" pivotX="0" pivotY="0"/>
+	<SubTexture name="3" x="0" y="50" width="50" height="50" pivotX="0" pivotY="0"/>
+	<SubTexture name="4" x="50" y="50" width="50" height="50" pivotX="0" pivotY="0"/>
+	<SubTexture name="5" x="150" y="0" width="50" height="50" pivotX="0" pivotY="0"/>
+	<SubTexture name="6" x="50" y="150" width="50" height="50" pivotX="0" pivotY="0"/>
+	<SubTexture name="7" x="100" y="0" width="50" height="50" pivotX="0" pivotY="0"/>
+	<SubTexture name="8" x="0" y="100" width="50" height="50" pivotX="0" pivotY="0"/>
+	<SubTexture name="9" x="50" y="100" width="50" height="50" pivotX="0" pivotY="0"/>
+	<SubTexture name="10" x="50" y="0" width="50" height="50" pivotX="0" pivotY="0"/>
+</TextureAtlas>

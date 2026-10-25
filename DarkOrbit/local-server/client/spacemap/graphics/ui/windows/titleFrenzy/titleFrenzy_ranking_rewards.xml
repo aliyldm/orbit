@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="traininggroundsUI"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+	<textstyle  name="title_frenzy_ranking_rewards_min_left"
+				textColor="0xFFFFFF"
+				type="dynamic"
+				fontSize="8"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="left"/>
+
+	<textstyle  name="title_frenzy_ranking_rewards_item"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="left"
+				bold="true"/>
+
+	<textstyle  name="title_frenzy_ranking_rewards_headline"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="left"
+				bold="true"/>
+
+	<!-- SKINS -->
+	<skin name="title_frenzy_ranking_rewards_filled_box" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0xff0000" fillAlpha="0.5">normal</layer>
+	</skin>
+
+	<skin name="title_frenzy_ranking_rewards_ttip_frame" library="traininggroundsUI" classname="BasicSkin">
+		<layer classname="BitmapLayer" scale9grid="1,1,2,2" libraryID="ttip_frame">normal</layer>
+	</skin>
+
+	<skin name="title_frenzy_ranking_rewards_item_outline" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" lineColor="0x00ccff" fillAlpha="0" lineAlpha="1">normal</layer>
+	</skin>
+
+	<skin name="title_frenzy_ranking_rewards_scrollbar_bg" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+	</skin>
+
+	<!-- TEMPLATES -->
+	<template name="TITLE_FRENZY_RANKING_REWARDS">
+		<container  name="ranking_rewards"
+					autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent">
+			<container  name="main"
+						width="515" height="330" autoSizeWidth="false" autoSizeHeight="false"
+						marginTop="30" alignX="center">
+
+				<container  name="rank"
+							autoSizeWidth="true" autoWidthMode="parent" height="330" autoSizeHeight="false"
+							registeredSkinName="commonui_darklayer">
+
+					<container  autoSizeWidth="true" autoWidthMode="parent"  height="40" autoSizeHeight="false"
+								registeredSkinName="commonui_darklayer">
+						<label  text="localize:label_TAS_Rank"
+								autoSizeWidth="true" autoWidthMode="parent"  height="15" autoSizeHeight="false"
+								alignY="center" marginLeft="20"
+						        registeredTextStyleName="title_frenzy_ranking_rewards_headline" registeredSkinName="commonui_default_label" />
+					</container>
+
+					<coreponent autoSizeWidth="true" height="2" marginTop="40"
+								registeredSkinName="commonui_horizontal_divider"/>
+
+					<container  name="placement"
+								autoSizeWidth="true" autoWidthMode="parent" height="250" autoSizeHeight="false"
+								marginTop="40">
+						<itemlist   name="list"
+									width="510" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+									layout="vertical" alignX="left"
+									mouseEnabled="true" mouseChildren="true"
+									cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+							<itemrenderer autoSizeWidth="true" autoWidthMode="parent" height="50" autoSizeHeight="false"
+										  mouseEnabled="true" mouseChildren="true">
+								<coreponent name="bg"
+											autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+											registeredSkinName="commonui_darklayer"/>
+								<label  name="placing" text="888888888888888"
+										width="150" autoSizeWidth="false" height="15" autoSizeHeight="false"
+										alignY="center" marginLeft="20"
+										registeredTextStyleName="title_frenzy_ranking_rewards_item" registeredSkinName="commonui_default_label"/>
+								<button name="infoBtn"
+										alignY="center" alignX="right" marginRight="20" y="3"
+										registeredSkinName="commonui_info_button"/>
+							</itemrenderer>
+						</itemlist>
+						<scrollbar  name="scroll_bar"
+									width="5" autoSizeHeight="true" direction="vertical"
+									marginTop="0" marginBottom="0" marginRight="0" alignX="right"
+									registeredSkinName="title_frenzy_ranking_rewards_scrollbar_bg">
+							<button name="buttonSlider"
+									width="5" height="10" alignX="center"
+									registeredSkinName="commonui_scrollbar_slider"/>
+						</scrollbar>
+						<bind source="scroll_bar"
+							  target="list"
+							  type="scrollcontainer"/>
+					</container>
+				</container>
+			</container>
+		</container>
+	</template>
+
+	<template name="TITLE_FRENZY_RANKING_REWARDS_TOOLTIP">
+		<container name="container" width="260" autoSizeHeight="true" autoHeightMode="children">
+			<container  name="wrapper"
+						width="260" autoSizeHeight="true" autoHeightMode="children" marginTop="20"
+						registeredSkinName="title_frenzy_ranking_rewards_ttip_frame" >
+				<itemlist   name="list"
+							width="260" autoSizeHeight="true" autoHeightMode="children"
+							marginBottom="10" gap="0" layout="vertical">
+					<itemrenderer height="40" marginTop="0" marginBottom="0">
+						<coreponent name="img"
+									width="30" height="30" marginTop="10" marginLeft="10"
+									registeredSkinName="title_frenzy_ranking_rewards_item_outline"/>
+						<coreponent width="31" height="31" marginTop="9" marginLeft="9"
+									registeredSkinName="title_frenzy_ranking_rewards_item_outline"/>
+						<label  name="label"
+								width="200" height="29"
+								alignX="left" marginLeft="50" marginTop="15"
+								registeredTextStyleName="title_frenzy_ranking_rewards_item" registeredSkinName="commonui_default_label"/>
+					</itemrenderer>
+				</itemlist>
+			</container>
+		</container>
+	</template>
+
+	<!-- CONTENT -->
+	<container name="root"
+			   width="545" height="390" autoSizeWidth="false" autoSizeHeight="false"
+			   mouseEnabled="false" mouseChilderen="true">
+		<reference template="TITLE_FRENZY_RANKING_REWARDS"/>
+	</container>
+</root>

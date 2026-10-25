@@ -1,0 +1,426 @@
+#subNavTop ul {
+    width:130px;
+    margin-top:20px;
+    margin-left:45px;
+    /* wech damit! mgeweke 2009-02-24 background-color:#45484d; */
+}
+#subNavTop ul li {
+    width:100px;
+    height:33px;
+    text-align:left;
+    line-height:35px;
+    margin-bottom:3px;
+    display: none;
+}
+
+#subNavTop ul li a:hover {
+    background-image:  url(/do_img/global/hangar/subnav_button_408x34.png?__cv=b9bc68782a1c18cd02eba2cac8e96c00);
+    background-repeat: no-repeat;
+    background-position: -134px 0px;
+}
+
+#subNavTopi a {
+    display:block;
+    background-image:  url(/do_img/global/hangar/subnav_button_408x34.png?__cv=b9bc68782a1c18cd02eba2cac8e96c00);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    padding-left: 30px;
+    width:100px;
+}
+
+#subNavTop {
+    background-image:  url(/do_img/global/hangar/subnav_background_new_140x399.png?__cv=fa38d2bf970971bf884409f111c9bb00);
+    background-repeat: no-repeat;
+    float: left;
+    height: 397px;
+    margin-left: -3px;
+    margin-top: -4px;
+    width: 140px;
+}
+
+.subNavButtonActive {
+    background-image:  url(/do_img/global/hangar/subnav_button_408x34.png?__cv=b9bc68782a1c18cd02eba2cac8e96c00);
+    background-repeat: no-repeat;
+    background-position: -267px 0px;
+    width:119px;
+    margin-left: -3px;
+    cursor: pointer;
+}
+
+.subNavButtonRollover {
+    background-image:  url(/do_img/global/hangar/subnav_button_408x34.png?__cv=b9bc68782a1c18cd02eba2cac8e96c00);
+    background-repeat: no-repeat;
+    background-position: -134px 0px;
+    width:113px;
+    margin-left: -0px;
+    cursor: pointer;
+}
+
+.subNavButtonInactive {
+    background-image:  url(/do_img/global/hangar/subnav_button_408x34.png?__cv=b9bc68782a1c18cd02eba2cac8e96c00);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width:111px;
+    margin-left: -0px;
+    cursor: pointer;
+}
+
+.subNavButtonShip {
+    display:block;
+    height:34px;
+    margin-top: 9px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.subNavTextInactiveShip {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavTextActiveShip {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavButtonDrone {
+    display:block;
+    height:34px;
+    margin-top: -2px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.subNavTextInactiveDrone {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavTextActiveDrone {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavButtonWeapons {
+    display:block;
+    height:34px;
+    margin-top: 5px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.subNavTextInactiveWeapons {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavTextActiveWeapons {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavButtonAmmo {
+    display:block;
+    height:34px;
+    margin-top: -2px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.subNavTextInactiveAmmo {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavTextActiveAmmo {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavButtonGenerators {
+    display:block;
+    height:34px;
+    margin-top: 5px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.subNavTextInactiveGenerators {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavTextActiveGenerators {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavButtonExtras {
+    display:block;
+    height:34px;
+    margin-top: -2px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.subNavTextInactiveExtras {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavTextActiveExtras {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavButtonBoosters {
+    display:block;
+    height:34px;
+    margin-top: 5px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.subNavTextInactiveBoosters {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavTextActiveBoosters {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavButtonDesigns {
+    display:block;
+    height:34px;
+    margin-top: -2px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.subNavTextInactiveDesigns {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavTextActiveDesigns {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavButtonPetGears {
+    display:block;
+    height:34px;
+    margin-top: 5px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.subNavTextInactivePetGears {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavTextActivePetGears {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavButtonPetProtocols {
+    display:block;
+    height:34px;
+    margin-top: -2px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.subNavTextInactivePetProtocols {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavTextActivePetProtocols {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavButtonCustomization {
+    display:block;
+    height:34px;
+    margin-top: -2px;
+    padding-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.subNavTextInactiveCustomization {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.subNavTextActiveCustomization {
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.autoupdate {
+    margin-left:41px;
+}
+
+.fliessSubNav           { font-size: 11px; font-weight:bold; color: #FFFFFF; }
+.fliessSubNav a         { color: #FFFFFF; text-decoration: none;}
+.fliessSubNav a:link    { color: #FFFFFF; }
+.fliessSubNav a:visited { color: #FFFFFF; }
+.fliessSubNav a:hover   { color: #FFFFFF; }
+
+
+.subNavEventIcon {
+    background-image:  url(/do_img/global/limited_logo_18x18_index.png?__cv=738ef66d1909211935b9b116fd194400);
+    width: 18px;
+    height: 18px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.subNavExclusiveIcon {
+    background-image:  url(/do_img/global/header/buttons/icon_server_exclusive.png?__cv=1d5f7f7dc44d989a72bc5b2ffe9a9400);
+    background-size: 18px, 17px;
+    width: 18px;
+    height: 17px;
+    float: right;
+    margin-top: 8px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.subnav_icon_sale {
+    position: relative;
+    left: 81px;
+    top: -2px;
+    width: 38px;
+    height: 42px;
+    background-image:  url(/do_img/global/header/buttons/icon_sale.png?__cv=5f7e136cac245ef3d2d1940d8e1f7100)
+}

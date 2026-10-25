@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+
+<TextureAtlas imagePath="chat_emoji_texture.png">
+	<SubTexture name="ammunition_specialammo_emote_alien-angry" x="0" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-cheers" x="38" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-cool" x="76" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-cry" x="114" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-dizzy" x="152" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-flyingkiss" x="190" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-horror" x="228" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-laughcry" x="266" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-mask-up" x="304" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-party" x="342" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-roger" x="380" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-sick" x="418" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-sleepy" x="456" y="0" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-smile" x="0" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-smirk" x="38" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-sorry" x="76" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-starryeyes" x="114" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_alien-wink" x="152" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_bunny-confused" x="190" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_bunny-cool" x="228" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_bunny-sad" x="266" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_bunny-sleepy" x="304" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_bunny-stare" x="342" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_eat-turkey" x="380" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_injection" x="418" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_like-turkey" x="456" y="38" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_pumpkin-alien" x="0" y="76" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_pumpkin-smile" x="38" y="76" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_snowman-brr" x="76" y="76" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_snowman-rolleyes" x="114" y="76" width="38" height="38"/>
+	<SubTexture name="ammunition_specialammo_emote_snowman-thinking" x="152" y="76" width="38" height="38"/>
+</TextureAtlas>

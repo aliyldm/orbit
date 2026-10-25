@@ -1,0 +1,156 @@
+<root>
+    <skin name="trinitytrials_btn" library="gameclientCommonUI" classname="FadableButtonSkin">
+        <layer classname="BitmapLayer" libraryID="confirmation_button_green_normal" scale9grid="22,24,140,40"
+               registeredTextStyleName="trinitytrials_btn_style_normal">normal
+        </layer>
+        <layer classname="BitmapLayer" libraryID="confirmation_button_green_over" scale9grid="22,24,140,40"
+               registeredTextStyleName="trinitytrials_btn_style_over">over
+        </layer>
+        <layer classname="BitmapLayer" libraryID="confirmation_button_green_clicked" scale9grid="22,24,140,40"
+               registeredTextStyleName="trinitytrials_btn_style_clicked">clicked
+        </layer>
+        <layer classname="BitmapLayer" libraryID="confirmation_button_disabled" scale9grid="22,24,140,40"
+               registeredTextStyleName="trinitytrials_btn_style_normal">disabled
+        </layer>
+    </skin>
+
+    <textstyle name="trinitytrials_btn_style_normal" textColor="0xF1FBEC" fontSize="20" type="dynamic"
+               fontName="EurostileHeaFl" embedFonts="true" autoSize="center"/>
+    <textstyle name="trinitytrials_btn_style_over" textColor="0xF1FFEC" fontSize="20" type="dynamic"
+               fontName="EurostileHeaFl" embedFonts="true" autoSize="center"/>
+    <textstyle name="trinitytrials_btn_style_clicked" textColor="0xF9FBFC" fontSize="20" type="dynamic"
+               fontName="EurostileHeaFl" embedFonts="true" autoSize="center"/>
+    <!-- TEXT STYLE HERE -->
+    <textstyle name="trinitytrials_style1"
+               textColor="0xF1FBEC"
+               fontSize="12"
+               type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               multiline="true"
+               wordWrap="true"
+               autoSize="false"
+               align="center"/>
+
+    <textstyle name="trinitytrials_style2"
+               textColor="0xF1FBEC"
+               fontSize="14"
+               type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               autoSize="false"
+               align="right"/>
+
+    <textstyle name="trinitytrials_style3"
+               textColor="0xF1FBEC"
+               fontSize="12"
+               type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               autoSize="false"
+               align="left"/>
+
+
+    <template name="difficultySelection">
+        <container name="body" autoSizeWidth="true" autoSizeHeight="true" autoWidthMode="parent"
+                   autoHeightMode="parent">
+
+            <label name="info_label" text="localize:trinitytrials_gate_open"
+                   registeredSkinName="commonui_default_label" marginTop="12" marginLeft="8"
+                   alignX="left" width="595" autoSizeTextHeight="true"
+                   registeredTextStyleName="trinitytrials_style1"/>
+            <coreponent name="map_icon"
+                        alignX="center" alignY="top"
+                        marginTop="44"
+                        width="326" height="120" visible="true"
+                        registeredSkinName="commonui_darklayer"/>
+
+            <label name="gate_select" text="localize:trinitytrials_gate_select"
+                   registeredSkinName="commonui_default_label"
+                   marginLeft="0" marginTop="190"
+                   alignX="left" width="270"
+                   autoSizeTextHeight="true"
+                   registeredTextStyleName="trinitytrials_style2"/>
+
+            <label name="difficulty_select" text="localize:trinitytrials_gate_difficulty_select"
+                   registeredSkinName="commonui_default_label"
+                   marginLeft="0" marginTop="230"
+                   alignX="left" width="270"
+                   autoSizeTextHeight="true"
+                   registeredTextStyleName="trinitytrials_style2"/>
+
+            <coreponent name="dropdownbox_container1"
+                        alignX="left" alignY="top"
+                        marginLeft="280" marginTop="190"
+                        width="150" height="130" visible="true">
+                <dropdownbox name="dropdownbox_gate"
+                             width="150" height="25"
+                             alignX="left" alignY="top"
+                             marginLeft="0" marginTop="0"
+                             buttonMode="true"
+                             registeredSkinName="settings_window_dropdownbox"/>
+
+            </coreponent>
+
+            <coreponent name="dropdownbox_container2"
+                        alignX="left" alignY="top"
+                        marginLeft="280" marginTop="230"
+                        width="150" height="130" visible="true">
+                <dropdownbox name="dropdownbox_select"
+                             width="150" height="25"
+                             alignX="left" alignY="top"
+                             marginLeft="0" marginTop="0"
+                             buttonMode="true"
+                             registeredSkinName="settings_window_dropdownbox"/>
+
+            </coreponent>
+
+
+            <container name="cost_container"
+                       width="75" height="40"
+                       alignX="center" alignY="bottom"
+                       marginLeft="0" marginBottom="78"
+                       mouseEnabled="false" mouseChildren="true">
+
+                <coreponent name="icon_bg"
+                            width="30" height="30"
+                            alignX="left" alignY="bottom"
+                            marginLeft="0" marginBottom="0"
+                            registeredSkinName="commonui_darklayer"/>
+
+
+                <coreponent name="icon"
+                            width="30" height="30"
+                            alignX="left" alignY="bottom"
+                            marginLeft="0" marginBottom="0"
+                            buttonMode="true"
+                            mouseChildren="true" mouseEnabled="true"/>
+
+
+                <label name="cost_num_label" text="x1"
+                       registeredSkinName="commonui_default_label"
+                       alignX="left" alignY="bottom"
+                       marginLeft="35" marginBottom="5"
+                       autoSizeTextHeight="true" autoSize="true" width="30"
+                       registeredTextStyleName="trinitytrials_style3"/>
+
+            </container>
+
+
+            <button name="button_go"
+                    text="localize:trinitytrials_gate_enter_btn"
+                    textMarginY="1"
+                    width="230" height="62"
+                    autoSizeWidth="false" autoSizeHeight="false"
+                    alignX="center" alignY="bottom"
+                    marginLeft="0" marginBottom="20"
+                    registeredSkinName="trinitytrials_btn"
+                    buttonMode="true"
+                    visible="true"/>
+        </container>
+    </template>
+    <container name="root" width="612" height="370" autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="false"
+               mouseChildren="true">
+        <reference template="difficultySelection"/>
+    </container>
+</root>

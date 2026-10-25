@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+
+    <!-- LIBS -->
+    <libraries>
+        <library id="spaceMapWindow"/>
+        <library id="gameclientCommonUI"/>
+        <library id="commandCenterWindow"/>
+    </libraries>
+
+    <textstyle name="space_map_mapTextStyle"
+               background="false"
+               textColor="0xFFFFFF"
+               fontSize="10"
+               bold="true"
+               type="dynamic"
+               marginLeft="1"
+               marginRight="1"
+               fontName="Verdana"
+               embedFonts="false"
+               autoSize="center"
+               glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>
+
+    <textstyle name="space_map_systemMapLabel"
+               background="false"
+               textColor="0xFFFFFF"
+               type="dynamic"
+               align="left"
+               selectable="false"
+               fontName="Verdana"
+               embedFonts="false"
+               fontSize="10"/>
+
+    <textstyle name="space_map_mapIdLabel"
+               background="false"
+               textColor="0xFFFFFF"
+               type="dynamic"
+               align="center"
+               selectable="false"
+               fontName="Verdana"
+               embedFonts="false"
+               fontSize="10"/>
+
+    <textstyle name="space_map_not_enough_vouchers_info"
+               background="false"
+               textColor="0xFFFFFF"
+               type="dynamic"
+               align="right"
+               selectable="false"
+               fontName="Verdana"
+               embedFonts="false"
+               fontSize="10"/>
+
+    <textstyle name="space_map_enough_vouchers_info"
+               background="false"
+               textColor="0xFFCC00"
+               type="dynamic"
+               align="right"
+               selectable="false"
+               fontName="Verdana"
+               embedFonts="false"
+               fontSize="10"/>
+
+    <textstyle name="space_map_notEnoughVouchers"
+               background="false"
+               textColor="0xFFFFFF"
+               type="dynamic"
+               align="left"
+               selectable="false"
+               fontName="Verdana"
+               embedFonts="false"
+               fontSize="10"/>
+
+    <textstyle name="space_map_enoughVouchers"
+               background="false"
+               textColor="0xFFCC00"
+               type="dynamic"
+               align="left"
+               selectable="false"
+               fontName="Verdana"
+               embedFonts="false"
+               fontSize="10"/>
+
+    <textstyle name="space_map_jumpPriceLabel"
+               background="false"
+               textColor="0x00CCFF"
+               bold="true"
+               type="dynamic"
+               align="center"
+               selectable="false"
+               fontName="Verdana"
+               embedFonts="false"
+               wordWrap="true"
+               multiline="true"
+               fontSize="10"/>
+
+    <textstyle name="space_map_mapLockedInfoText"
+               background="false"
+               textColor="0xFFFFFF"
+               bold="true"
+               type="dynamic"
+               align="center"
+               selectable="false"
+               fontName="Verdana"
+               embedFonts="false"
+               wordWrap="true"
+               multiline="true"
+               fontSize="10"/>
+
+    <textstyle name="space_map_toolTipText"
+               background="false"
+               textColor="0xFFFFFF"
+               bold="true"
+               type="dynamic"
+               align="left"
+               selectable="false"
+               fontName="Verdana"
+               embedFonts="false"
+               fontSize="10"/>
+
+    <textstyle name="space_map_toolTipInfo"
+               background="false"
+               textColor="0xFFFFFF"
+               bold="true"
+               type="dynamic"
+               align="left"
+               selectable="false"
+               fontName="Verdana"
+               embedFonts="false"
+               wordWrap="true"
+               multiline="true"
+               fontSize="10"/>
+
+    <textstyle name="space_map_button_default_normal"
+               textColor="0xFFFFFF"
+               type="dynamic"
+               fontSize="12"
+               align="justify"
+               embedFonts="true"
+               fontName="EurostileTHea"
+               marginTop="2"
+               autoSize="center"/>
+
+    <textstyle name="space_map_button_default_disabled"
+               textColor="0xCDCDCD"
+               type="dynamic"
+               fontSize="12"
+               align="justify"
+               embedFonts="true"
+               fontName="EurostileTHea"
+               marginTop="2"
+               autoSize="center"/>
+
+    <textstyle name="space_map_button_default_over"
+               textColor="0xEEEEEE"
+               type="dynamic"
+               fontSize="12"
+               embedFonts="true"
+               fontName="EurostileTHea"
+               align="justify"
+               autoSize="center"/>
+
+    <textstyle name="space_map_button_default_clicked"
+               textColor="0xDDDDDD"
+               type="dynamic"
+               fontSize="12"
+               bold="true"
+               embedFonts="true"
+               fontName="EurostileTHea"
+               align="justify"
+               autoSize="center"/>
+
+    <skin name="space_map_mapsBG" classname="BasicSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" libraryID="mapsBG">normal</layer>
+    </skin>
+
+    <skin name="space_map_mapLines" classname="BasicSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" libraryID="mapLines">normal</layer>
+    </skin>
+
+    <skin name="space_map_controlsBG" classname="BasicSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" libraryID="controlsBG">normal</layer>
+    </skin>
+
+    <skin name="space_map_map_1" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_1">normal</layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_1_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_2" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_2">normal</layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_2_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_3" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_3">normal</layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_3_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_4" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_4">normal</layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_4_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_21" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_21">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_21_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_22" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_22">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_22_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_23" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_23">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_23_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_24" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_24">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_24_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_5" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_5">normal</layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_5_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_6" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_6">normal</layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_6_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_7" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_7">normal</layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_7_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_8" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_8">normal</layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_8_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_9" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_9">normal</layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_9_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_25" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_25">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_25_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_26" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_26">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_26_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_27" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_27">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_27_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_28" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_28">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_28_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_29" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_29">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_29_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_10" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_11">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_11_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_11" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_11">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_11_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_12" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_12">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_12_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_29" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_29">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_29_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_91" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_91">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_91_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_92" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_92">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_92_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_93" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_93">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_93_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_13" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_13">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_13_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_14" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_14">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_14_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_15" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_15">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_15_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_16" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_16">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_16_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_17" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_17">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_17_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_18" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_18">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_18_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_19" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_19">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_19_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_20" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_20">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_20_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_306" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_306">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_306_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_307" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_307">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_307_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_map_308" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_308">normal
+        </layer>
+        <layer classname="BitmapLayer" registeredTextStyleName="space_map_mapTextStyle" libraryID="map_308_over">over
+        </layer>
+    </skin>
+
+    <skin name="space_map_blinker_small" classname="BasicSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" libraryID="loc_mark_small">normal</layer>
+    </skin>
+
+    <skin name="space_map_blinker_big" classname="BasicSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" libraryID="loc_mark_big">normal</layer>
+    </skin>
+
+    <skin name="space_map_jump_locator" classname="FadableButtonSkin" library="spaceMapWindow">
+        <layer classname="BitmapLayer" smoothing="true" libraryID="jump_locator">normal</layer>
+    </skin>
+
+    <skin name="space_map_jumpPriceInfoBackground" library="gameclientCommonUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="input_background_blue" scale9grid="4,4,6,5">normal</layer>
+    </skin>
+
+    <skin name="space_map_toolTipBackground" library="gameclientCommonUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="input_background_black_transparent" scale9grid="4,4,6,5">normal
+        </layer>
+    </skin>
+
+    <skin name="space_map_tooltip_map_image_bg" library="gameclientCommonUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="input_background_dark_cyan_transparent" scale9grid="4,4,6,5">normal
+        </layer>
+    </skin>
+
+    <skin name="space_map_tooltip_npc_label" classname="LabelSkin" library="gameclientCommonUI"/>
+
+</root>

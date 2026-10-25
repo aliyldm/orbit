@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="worldBoss_asset"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+	<textstyle  name="world_boss_rewards_min_left"
+				textColor="0xFFFFFF"
+				type="dynamic"
+				fontSize="8"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="left"/>
+
+	<textstyle  name="world_boss_rewards_tier_left"
+				textColor="0xffbf13"
+				type="dynamic"
+				fontSize="11"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="left"/>
+
+	<textstyle  name="world_boss_rewards_tier_right"
+				textColor="0xffbf13"
+				type="dynamic"
+				fontSize="11"
+				autoSize="right"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="right"/>
+
+	<textstyle  name="world_boss_rewards_completion_headline"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="left"
+				bold="true"/>
+
+	<textstyle  name="world_boss_rewards_completion_headline_center"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="10"
+				autoSize="center"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="center"
+				bold="true"/>
+
+	<textstyle  name="world_boss_rewards_completion_percent"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="left"
+				bold="true"/>
+
+	<textstyle  name="world_boss_rewards_completion_item"
+				textColor="0x3587a2"
+				type="dynamic"
+				fontSize="9"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="left"
+				bold="true"
+				glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>
+
+	<textstyle  name="world_boss_rewards_info"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="left"/>
+
+	<!-- SKINS -->
+	<skin name="world_boss_rewards_filled_box" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0xffa500" fillAlpha="0.5">normal</layer>
+	</skin>
+
+	<skin name="world_boss_rewards_item_bg" classname="BasicSkin">
+		<layer classname="FilledBoxLayer"  fillColor="0x2b2e31" fillAlpha="1">normal</layer>
+	</skin>
+
+	<skin name="world_boss_rewards_info_image" classname="BasicSkin" library="gameclientCommonUI">
+		<layer classname="BitmapLayer" libraryID="icon_info_grey">normal</layer>
+	</skin>
+
+	<skin name="world_boss_rewards_scrollbar_bg" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+	</skin>
+
+	<!-- TEMPLATES -->
+	<template name="WORLD_BOSS_REWARDS">
+		<container  name="rewards"
+					autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent">
+			<container  name="main"
+						width="475" height="435" autoSizeWidth="false" autoSizeHeight="false"
+						marginTop="30" alignX="center">
+
+				<container  name="tier"
+							autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false">
+					<label  text="localize:worldBoss_overview_current_tier"
+							autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+							marginLeft="20"
+							registeredTextStyleName="world_boss_rewards_tier_left" registeredSkinName="commonui_default_label" />
+					<label  name="amount" text="88"
+							autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+							alignX="right" marginRight="20"
+							registeredTextStyleName="world_boss_rewards_tier_right" registeredSkinName="commonui_default_label" />
+				</container>
+
+				<container  name="completion"
+							autoSizeWidth="true" autoWidthMode="parent" height="320" autoSizeHeight="false"
+							marginTop="30"
+							registeredSkinName="commonui_darklayer">
+
+					<container  autoSizeWidth="true" autoWidthMode="parent"  height="40" autoSizeHeight="false"
+					            registeredSkinName="commonui_darklayer">
+						<label  text="localize:worldboss_header_tier"
+								width="210" autoSizeWidth="false" height="15" autoSizeHeight="false"
+								alignY="center" marginLeft="20"
+								registeredTextStyleName="world_boss_rewards_completion_headline" registeredSkinName="commonui_default_label" />
+
+						<label  text="localize:worldboss_header_reward"
+								width="100" autoSizeWidth="false" height="15" autoSizeHeight="false"
+								alignY="center" alignX="right" marginRight="195"
+								registeredTextStyleName="world_boss_rewards_completion_headline_center" registeredSkinName="commonui_default_label" />
+
+						<!-- <label  text="localize:worldBoss_header_normal"
+								width="100" autoSizeWidth="false" height="15" autoSizeHeight="false"
+								alignY="center" alignX="right"
+								registeredTextStyleName="world_boss_rewards_completion_headline_center" registeredSkinName="commonui_default_label" /> -->
+					</container>
+
+					<coreponent autoSizeWidth="true" height="2" marginTop="40"
+								registeredSkinName="commonui_horizontal_divider"/>
+
+					<container  name="placement"
+								autoSizeWidth="true" autoWidthMode="parent" height="280" autoSizeHeight="false"
+								marginTop="40">
+						<itemlist   name="list"
+									width="475" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+									layout="vertical" alignX="left"
+									mouseEnabled="true" mouseChildren="true"
+									cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+							<itemrenderer autoSizeWidth="true" autoWidthMode="parent" height="70" autoSizeHeight="false"
+										  mouseEnabled="true" mouseChildren="true">
+								<coreponent name="bg"
+											autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+											registeredSkinName="commonui_darklayer"/>
+								<label  name="completion" text="completion"
+										width="100" autoSizeWidth="false" height="15" autoSizeHeight="false"
+										marginLeft="20" alignY="center"
+										registeredTextStyleName="world_boss_rewards_completion_percent" registeredSkinName="commonui_default_label"/>
+
+								<container  name="rewardItems"
+											width="250" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+											alignX="right" marginRight="20">
+									<container  name="centerA"
+												width="50" autoSizeWidth="false" height="50" autoSizeHeight="false"
+												alignY="center" registeredSkinName="world_boss_rewards_item_bg">
+										<button name="icon" width="50" autoSizeHeight="true" autoHeightMode="parent"/>
+										<label  name="amount" text="a"
+												autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false"
+												alignY="bottom"
+												registeredTextStyleName="world_boss_rewards_completion_item" registeredSkinName="commonui_default_label"/>
+									</container>
+									<container  name="centerB" marginLeft="60"
+												width="50" autoSizeWidth="false" height="50" autoSizeHeight="false"
+												alignY="center" registeredSkinName="world_boss_rewards_item_bg">
+										<button name="icon" width="50" autoSizeHeight="true" autoHeightMode="parent"/>
+										<label  name="amount" text="b"
+												autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false"
+												alignY="bottom"
+												registeredTextStyleName="world_boss_rewards_completion_item" registeredSkinName="commonui_default_label"/>
+									</container>
+									<container  name="centerC" marginLeft="120" 
+												width="50" autoSizeWidth="false" height="50" autoSizeHeight="false"
+												alignY="center" registeredSkinName="world_boss_rewards_item_bg">
+										<button name="icon" width="50" autoSizeHeight="true" autoHeightMode="parent"/>
+										<label  name="amount" text="c"
+												autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false"
+												alignY="bottom"
+												registeredTextStyleName="world_boss_rewards_completion_item" registeredSkinName="commonui_default_label"/>
+									</container>
+									<container  name="centerT" marginLeft="180" 
+												width="50" autoSizeWidth="false" height="50" autoSizeHeight="false"
+												alignY="center" registeredSkinName="world_boss_rewards_item_bg">
+										<button name="icon" width="50" autoSizeHeight="true" autoHeightMode="parent"/>
+									</container>
+								</container>
+							</itemrenderer>
+						</itemlist>
+						<scrollbar name="worldboss_reward_scrollbar" width="5" autoSizeHeight="true" direction="vertical"
+                           marginTop="1"
+                           marginBottom="1"
+                           marginRight="1"
+                           alignX="right"
+                           registeredSkinName="commonui_scrollbar_bgnd_dark">
+							<button name="buttonSlider" alignX="center" width="5" height="10"
+								registeredSkinName="commonui_scrollbar_slider"/>
+						</scrollbar>
+						<bind source="worldboss_reward_scrollbar" target="list"/>
+					</container>
+				</container>
+
+				<container  name="info"
+							autoSizeWidth="true" autoWidthMode="parent" height="70" autoSizeHeight="false"
+							alignY="bottom" marginLeft="20">
+					<coreponent  alignX="left" registeredSkinName="world_boss_rewards_info_image" marginTop="-2"/>
+
+					<label  name="description"
+							width="400" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+							marginLeft="30"
+							registeredTextStyleName="world_boss_rewards_info" registeredSkinName="commonui_default_label"/>
+				</container>
+			</container>
+		</container>
+	</template>
+
+	<!-- CONTENT -->
+	<container name="root"
+			   width="535" height="500" autoSizeWidth="false" autoSizeHeight="false"
+			   mouseEnabled="false" mouseChilderen="true">
+		<reference template="WORLD_BOSS_REWARDS"/>
+	</container>
+</root>

@@ -1,0 +1,307 @@
+{
+  "source": "web/portal/pages/internalSkylab.html",
+  "upgrades": {
+    "baseModule": {
+      "Uridium": {
+        "instant": "1,487",
+        "normal": "0"
+      },
+      "Credits": {
+        "instant": "16,352",
+        "normal": "16,352"
+      },
+      "Zaman": {
+        "instant": "0:00",
+        "normal": "2:18"
+      },
+      "Prometium": {
+        "instant": "707",
+        "normal": "707"
+      },
+      "Endurium": {
+        "instant": "707",
+        "normal": "707"
+      },
+      "Terbium": {
+        "instant": "707",
+        "normal": "707"
+      }
+    },
+    "solarModule": {
+      "Uridium": {
+        "instant": "1,487",
+        "normal": "0"
+      },
+      "Credits": {
+        "instant": "16,352",
+        "normal": "16,352"
+      },
+      "Zaman": {
+        "instant": "0:00",
+        "normal": "2:18"
+      },
+      "Prometium": {
+        "instant": "707",
+        "normal": "707"
+      },
+      "Endurium": {
+        "instant": "707",
+        "normal": "707"
+      },
+      "Terbium": {
+        "instant": "707",
+        "normal": "707"
+      }
+    },
+    "storageModule": {
+      "Uridium": {
+        "instant": "1,487",
+        "normal": "0"
+      },
+      "Credits": {
+        "instant": "16,352",
+        "normal": "16,352"
+      },
+      "Zaman": {
+        "instant": "0:00",
+        "normal": "2:18"
+      },
+      "Prometium": {
+        "instant": "707",
+        "normal": "707"
+      },
+      "Endurium": {
+        "instant": "707",
+        "normal": "707"
+      },
+      "Terbium": {
+        "instant": "707",
+        "normal": "707"
+      }
+    },
+    "transportModule": {},
+    "xenoModule": {
+      "Uridium": {
+        "instant": "750",
+        "normal": "0"
+      },
+      "Credits": {
+        "instant": "8,250",
+        "normal": "8,250"
+      },
+      "Zaman": {
+        "instant": "0:00",
+        "normal": "1:0"
+      },
+      "Prometium": {
+        "instant": "75",
+        "normal": "75"
+      },
+      "Endurium": {
+        "instant": "75",
+        "normal": "75"
+      },
+      "Terbium": {
+        "instant": "75",
+        "normal": "75"
+      }
+    },
+    "prometiumCollector": {
+      "Uridium": {
+        "instant": "1,189",
+        "normal": "0"
+      },
+      "Credits": {
+        "instant": "13,081",
+        "normal": "13,081"
+      },
+      "Zaman": {
+        "instant": "0:00",
+        "normal": "2:18"
+      },
+      "Prometium": {
+        "instant": "566",
+        "normal": "566"
+      },
+      "Endurium": {
+        "instant": "566",
+        "normal": "566"
+      },
+      "Terbium": {
+        "instant": "566",
+        "normal": "566"
+      }
+    },
+    "enduriumCollector": {
+      "Uridium": {
+        "instant": "1,189",
+        "normal": "0"
+      },
+      "Credits": {
+        "instant": "13,081",
+        "normal": "13,081"
+      },
+      "Zaman": {
+        "instant": "0:00",
+        "normal": "2:18"
+      },
+      "Prometium": {
+        "instant": "566",
+        "normal": "566"
+      },
+      "Endurium": {
+        "instant": "566",
+        "normal": "566"
+      },
+      "Terbium": {
+        "instant": "566",
+        "normal": "566"
+      }
+    },
+    "terbiumCollector": {
+      "Uridium": {
+        "instant": "1,189",
+        "normal": "0"
+      },
+      "Credits": {
+        "instant": "13,081",
+        "normal": "13,081"
+      },
+      "Zaman": {
+        "instant": "0:00",
+        "normal": "2:18"
+      },
+      "Prometium": {
+        "instant": "566",
+        "normal": "566"
+      },
+      "Endurium": {
+        "instant": "566",
+        "normal": "566"
+      },
+      "Terbium": {
+        "instant": "566",
+        "normal": "566"
+      }
+    },
+    "prometidRefinery": {
+      "Uridium": {
+        "instant": "750",
+        "normal": "0"
+      },
+      "Credits": {
+        "instant": "8,250",
+        "normal": "8,250"
+      },
+      "Zaman": {
+        "instant": "0:00",
+        "normal": "1:40"
+      },
+      "Prometium": {
+        "instant": "75",
+        "normal": "75"
+      },
+      "Endurium": {
+        "instant": "75",
+        "normal": "75"
+      },
+      "Terbium": {
+        "instant": "75",
+        "normal": "75"
+      }
+    },
+    "duraniumRefinery": {
+      "Uridium": {
+        "instant": "750",
+        "normal": "0"
+      },
+      "Credits": {
+        "instant": "8,250",
+        "normal": "8,250"
+      },
+      "Zaman": {
+        "instant": "0:00",
+        "normal": "1:40"
+      },
+      "Prometium": {
+        "instant": "75",
+        "normal": "75"
+      },
+      "Endurium": {
+        "instant": "75",
+        "normal": "75"
+      },
+      "Terbium": {
+        "instant": "75",
+        "normal": "75"
+      }
+    },
+    "promeriumRefinery": {
+      "Uridium": {
+        "instant": "1,250",
+        "normal": "0"
+      },
+      "Credits": {
+        "instant": "13,750",
+        "normal": "13,750"
+      },
+      "Zaman": {
+        "instant": "0:00",
+        "normal": "3:0"
+      },
+      "Prometium": {
+        "instant": "125",
+        "normal": "125"
+      },
+      "Endurium": {
+        "instant": "125",
+        "normal": "125"
+      },
+      "Terbium": {
+        "instant": "125",
+        "normal": "125"
+      }
+    },
+    "sepromRefinery": {
+      "Uridium": {
+        "instant": "2,500",
+        "normal": "0"
+      },
+      "Credits": {
+        "instant": "27,500",
+        "normal": "27,500"
+      },
+      "Zaman": {
+        "instant": "0:00",
+        "normal": "6:0"
+      },
+      "Prometium": {
+        "instant": "250",
+        "normal": "250"
+      },
+      "Endurium": {
+        "instant": "250",
+        "normal": "250"
+      },
+      "Terbium": {
+        "instant": "250",
+        "normal": "250"
+      }
+    }
+  },
+  "recipes": {
+    "4": {
+      "0": 20,
+      "1": 10
+    },
+    "5": {
+      "1": 10,
+      "2": 20
+    },
+    "6": {
+      "3": 1,
+      "4": 10,
+      "5": 10
+    }
+  }
+}

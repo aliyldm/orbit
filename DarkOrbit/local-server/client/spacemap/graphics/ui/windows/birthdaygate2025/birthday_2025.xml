@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="seasonPass_asset"/>
+        <library id="miniClientReward"/>
+        <library id="craftingWindow"/>
+    </libraries>
+    <skin name="19th_reward_content_bg" classname="BasicSkin" library="seasonPass_asset">
+        <layer classname="BitmapLayer" libraryID="bg_content">normal</layer>
+    </skin>
+    
+    <skin name="19th_reward_claim_button" classname="FadableButtonSkin" library="gameclientCommonUI">
+        <layer classname="BitmapLayer" libraryID="button_small_blue_116x16_normal"
+               registeredTextStyleName="seasonpass_rewards_paging">normal
+        </layer>
+        <layer classname="BitmapLayer" libraryID="button_small_blue_116x16_over"
+               registeredTextStyleName="seasonpass_rewards_paging">over
+        </layer>
+        <layer classname="BitmapLayer" libraryID="button_small_blue_116x16_clicked"
+               registeredTextStyleName="seasonpass_rewards_paging">clicked
+        </layer>
+        <layer classname="BitmapLayer" libraryID="_button_small_grey_116x16_disabled"
+               registeredTextStyleName="seasonpass_rewards_paging">disabled
+        </layer>
+    </skin>
+    <skin name="19th_reward_page_button" classname="FadableButtonSkin" library="seasonPass_asset">
+        <layer classname="BitmapLayer" libraryID="btn_arrow_normal"
+               registeredTextStyleName="seasonpass_rewards_paging">normal
+        </layer>
+        <layer classname="BitmapLayer" libraryID="btn_arrow_hover"
+               registeredTextStyleName="seasonpass_rewards_paging">over
+        </layer>
+        <layer classname="BitmapLayer" libraryID="btn_arrow_select"
+               registeredTextStyleName="seasonpass_rewards_paging">clicked
+        </layer>
+        <layer classname="BitmapLayer" libraryID="btn_arrow_disabled"
+               registeredTextStyleName="seasonpass_rewards_paging">disabled
+        </layer>
+    </skin>
+    <skin name="reward_checkmark" classname="FadableButtonSkin" library="miniClientReward">
+        <layer classname="BitmapLayer" libraryID="reward_checkmark">normal</layer>
+    </skin>
+    <skin name="reward_bg" classname="FadableButtonSkin" library="miniClientReward">
+        <layer classname="BitmapLayer" libraryID="rewardbg_blue">normal</layer>
+        <layer classname="BitmapLayer" libraryID="rewardbg_yellow">over</layer>
+        <layer classname="BitmapLayer" libraryID="rewardbg_large">clicked</layer>
+    </skin>
+
+    <skin name="season_pass_bg_level" classname="BasicSkin" library="seasonPass_asset">
+        <layer classname="BitmapLayer" libraryID="bg_level">normal</layer>
+    </skin>
+
+    <skin name="season_pass_icon_points" classname="BasicSkin" library="seasonPass_asset">
+        <layer classname="BitmapLayer" libraryID="icon_points_exp">normal</layer>
+    </skin>
+
+
+    <skin name="season_pass_progressbar" tweenTime="1" classname="ProgressBarSkin" library="craftingWindow">
+        <layer classname="BitmapLayer" libraryID="progress_bar_fill_scale9" scale9grid="3,4,4,5">bar</layer>
+        <layer classname="BitmapLayer" libraryID="progress_bar_base_scale9" scale9grid="5,4,6,5">normal</layer>
+    </skin>
+
+    <skin name="season_pass_item_highlight" classname="BasicSkin" library="seasonPass_asset">
+        <layer classname="BitmapLayer" libraryID="list_highlight">normal</layer>
+    </skin>
+    <skin name="reward_last_bg" classname="FadableButtonSkin" library="miniClientReward">
+        <layer classname="BitmapLayer" libraryID="rewardbg_yellow">normal</layer>
+    </skin>
+    <textstyle
+            name="win_title_label_style"
+            textColor="0xB1D4E1"
+            type="dynamic"
+            fontSize="8"
+            autoSize="center"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="false"
+            align="center"/>
+    <textstyle
+            name="birthday_2025_progress_current"
+            textColor="0xffffff"
+            type="dynamic"
+            fontSize="10"
+            autoSize="center"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="false"
+            align="center"
+            glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>
+    <textstyle
+            name="rewards_info_title"
+            textColor="0xffcc86"
+            type="dynamic"
+            fontSize="30"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"
+            glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>
+    <textstyle
+            name="rewards_info_text"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="12"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"
+            glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>
+    <textstyle
+            name="rewards_index_text_default"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="10"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"/>
+    <textstyle name="19th_reward_page_text"
+               textColor="0xededed"
+               type="dynamic"
+               fontSize="10"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="false"
+               align="center"
+               autoSize="center"/>
+    <textstyle
+            name="19th_rewards_amount_text_default"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="10"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"/>
+    <textstyle  name="19th_progress_next_level"
+                textColor="0xffffff"
+                type="dynamic"
+                fontSize="11"
+                autoSize="center"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="center"/>
+
+
+    <template name="birthday_2025">
+        <container name="main_view" width="840" height="420">
+            <coreponent name="left_view" width="300" height="420" autoSizeWidth="false" autoSizeHeight="false"
+                        alignX="left" alignY="top" marginLeft="9">
+                <coreponent name="effect_group" width="300" height="380" autoSizeWidth="false" autoSizeHeight="false"
+                            alignX="center" alignY="top" marginTop="15"/>
+            </coreponent>
+            <coreponent name="right_view" width="520" height="420" autoSizeWidth="false" autoSizeHeight="false"
+                        alignX="right" alignY="top" marginRight="1">
+                <Label name="title_label" height="30" autoSizeWidth="true" autoSizeHeight="false" alignX="left"
+                       alignY="top" marginTop="5" marginLeft="5" registeredTextStyleName="rewards_info_title" text="localize:bday2025_overview_title"/>
+                <coreponent name="title_label_line" autoSizeWidth="false" autoSizeHeight="false" alignX="left"
+                            alignY="top" marginTop="45"/>
+                <coreponent name="info_label_bg" autoSizeWidth="false" autoSizeHeight="false" alignX="left"
+                            marginLeft="12" y="60"/>
+                <Label name="info_label" width="485" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" y="65" marginLeft="20" registeredTextStyleName="rewards_info_text"
+                       text="localize:bday2025_overview_info"/>
+
+
+                <container name="content" width="520" height="210" autoSizeWidth="false" autoSizeHeight="false"
+                           alignY="bottom" alignX="left" marginBottom="25">
+                    <!-- <coreponent name="bg" width="520" height="210" y="0" autoSizeWidth="false" autoSizeHeight="false" registeredSkinName="19th_reward_content_bg"/> -->
+                    <container name="progress"
+                               width="235" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="children"
+                               marginTop="5" marginLeft="5" alignX="left" alignY="top">
+
+                        <container name="progress_bar"
+                                   width="180" height="20" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="left" alignY="bottom" marginLeft="20" marginBottom="2">
+
+                            <progressbar name="bar"
+                                         autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true"
+                                         autoHeightMode="parent"
+                                         registeredSkinName="season_pass_progressbar">
+                            </progressbar>
+
+                            <label name="label_current" text="8888/8888"
+                                   autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false"
+                                   alignY="center"
+                                   registeredTextStyleName="birthday_2025_progress_current"
+                                   registeredSkinName="commonui_default_label"/>
+                        </container>
+
+                        <coreponent name="icon_pts"
+                                    width="45" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                    alignX="left" alignY="bottom"
+                                    registeredSkinName="season_pass_icon_points"/>
+
+                        <container name="index_group"
+                                   width="30" height="25" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="right" alignY="bottom" marginRight="12">
+                            <coreponent name="bg"
+                                        autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true"
+                                        autoHeightMode="parent"
+                                        registeredSkinName="season_pass_bg_level"/>
+                            <label name="label_next" text="188"
+                                   autoSizeWidth="true" autoWidthMode="parent" height="20" autoSizeHeight="false"
+                                   alignY="center"
+                                   registeredTextStyleName="19th_progress_next_level"
+                                   registeredSkinName="commonui_default_label"/>
+                        </container>
+                    </container>
+
+
+                    <button name="claim_all" text="localize:bday2025_overview_claim"
+                            width="100" height="29" autoSizeWidth="false" autoSizeHeight="false"
+                            marginTop="10" marginRight="10" alignX="right"
+                            registeredSkinName="commonui_scale9_button_blue" buttonMode="true"/>
+                    <container name="list_bg" width="505" height="140" autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="center" alignY="bottom" marginBottom="25"
+                    />
+                    <Grid name="reward_list"
+                          itemGapX="0"
+                          itemGapY="0"
+                          width="490"
+                          height="150"
+                          alignX="left"
+                          marginLeft="16"
+                          alignY="bottom"
+                          marginBottom="25"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          autoSizeWidth="false"
+                          layout="grid"
+                          cacheSkinMaskAsBitmap="false"
+                          itemAlignX="left"
+                          registeredSkinName="commonui_list_mask">
+                        <itemrenderer width="60"
+                                      autoSizeWidth="false"
+                                      height="150"
+                                      mouseEnabled="true"
+                                      mouseChildren="true">
+
+                            <label name="index_label" registeredSkinName="commonui_default_label"
+                                   registeredTextStyleName="rewards_index_text_default" alightX="left" marginTop="15"
+                                   width="60" autoSizeTextHeight="true"/>
+
+                            <coreponent name="bg" width="60" height="80" alignX="center" alignY="bottom"
+                                        marginBottom="20"/>
+
+                            <button name="pic" width="30" height="30" alignX="center" alignY="top" marginTop="65"/>
+
+                            <coreponent name="checkmark" width="42" height="38" alignX="center" alignY="bottom"
+                                        marginBottom="41" visible="true"
+                                        registeredSkinName="reward_checkmark"/>
+
+                            <label name="amount" registeredSkinName="commonui_default_label"
+                                   registeredTextStyleName="19th_rewards_amount_text_default" alightX="center"
+                                   marginBottom="30"
+                                   width="60" autoSizeTextHeight="true" alignY="bottom" text="50"/>
+                            <coreponent name="item_highlight" width="62" height="135" autoSizeWidth="false"
+                                        autoSizeHeight="false" alignY="bottom" marginBottom="2"
+                                        registeredSkinName="season_pass_item_highlight" marginLeft="-1"/>
+                        </itemrenderer>
+                    </Grid>
+
+                    <container name="page"
+                               width="480" height="60" autoSizeWidth="false" autoSizeHeight="false" alignX="center"
+                               alignY="bottom"
+                               marginBottom="-10">
+
+                        <label name="page_label" text="Page: 888/888"
+                               width="500" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                               marginTop="25" alignX="center"
+                               registeredTextStyleName="19th_reward_page_text"
+                               registeredSkinName="commonui_default_label"/>
+
+                        <button name="first_page" text="&lt;&lt;"
+                                width="60" height="10"
+                                marginTop="30" alignX="left"
+                                registeredSkinName="19th_reward_page_button" buttonMode="true"/>
+
+                        <button name="prev_page" text="&lt;"
+                                width="60" height="10"
+                                marginTop="30" marginLeft="60" alignX="left"
+                                registeredSkinName="19th_reward_page_button" buttonMode="true"/>
+
+                        <button name="next_page" text="&gt;"
+                                width="60" height="10"
+                                marginTop="30" marginRight="60" alignX="right"
+                                registeredSkinName="19th_reward_page_button" buttonMode="true"/>
+
+                        <button name="last_page" text="&gt;&gt;"
+                                width="60" height="10"
+                                marginTop="30" alignX="right"
+                                registeredSkinName="19th_reward_page_button" buttonMode="true"/>
+                    </container>
+
+                </container>
+            </coreponent>
+        </container>
+
+    </template>
+
+    <container name="root"
+               width="840" height="420" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChilderen="true">
+        <reference template="birthday_2025"/>
+    </container>
+</root>

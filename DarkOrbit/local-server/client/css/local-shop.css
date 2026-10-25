@@ -1,0 +1,14 @@
+/* Preserve the captured two-column, 105px row geometry after removing offers.
+   Float packing used variable content heights and could leave empty cells. */
+#item_list > .item { width:100px; height:100px; box-sizing:border-box; }
+#subNavSpecialOffers a { display:block; height:34px; text-decoration:none; }
+.localSpecialOffersLabel { display:block; padding-top:10px; color:#ddd; font:bold 10px Verdana,Arial,sans-serif; white-space:nowrap; }
+#subNavSpecialOffers.subNavButtonActive .localSpecialOffersLabel { color:#143143; padding-left:4px; }
+/* Keep every category inside the original panel and expose the final offer tab. */
+#dock_container #subNavTop { height:397px; overflow-y:auto; overflow-x:hidden; position:relative; scrollbar-width:thin; scrollbar-color:#537c9c #0a131a; }
+#dock_container #subNavTop::-webkit-scrollbar { width:7px; }
+#dock_container #subNavTop::-webkit-scrollbar-track { background:#0a131a; }
+#dock_container #subNavTop::-webkit-scrollbar-thumb { background:#537c9c; border:1px solid #223e50; border-radius:3px; }
+#dock_container #subNavTop > [id^="subNav"] { box-sizing:border-box; width:133px; }
+#subNavSpecialOffers { margin-bottom:8px; }
+.itemList_singleItem .localShipName { position:absolute; top:0; color:#f1f1f1; height:13px; text-align:center; width:94px; margin:3px; overflow:hidden; font:10px Verdana,Arial,sans-serif; background:#0a131a; }

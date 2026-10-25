@@ -1,0 +1,149 @@
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="chatWindowUIAssets"/>
+        <library id="traininggroundsUI"/>
+        <library id="battlePass"/>
+        <library id="miniClientReward"/>
+    </libraries>
+
+
+    <textstyle
+            name="rewards_day_text_default"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="10"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"/>
+
+    <textstyle
+            name="rewards_amount_text_default"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="10"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"/>
+
+    <textstyle
+            name="countdown_title"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="12"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="false"
+            align="left"/>
+
+    <textstyle
+            name="countdown_timer_text"
+            textColor="0xffcc00"
+            type="dynamic"
+            fontSize="12"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="true"
+            align="left"/>
+
+    <textstyle
+            name="overlay_text_default"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="17"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="false"
+            align="center"/>
+
+    <skin name="reward_bg" classname="FadableButtonSkin" library="miniClientReward">
+        <layer classname="BitmapLayer" libraryID="rewardbg_blue">normal</layer>
+        <layer classname="BitmapLayer" libraryID="rewardbg_yellow">over</layer>
+        <layer classname="BitmapLayer" libraryID="rewardbg_large">clicked</layer>
+    </skin>
+
+    <skin name="reward_last_bg" classname="FadableButtonSkin" library="miniClientReward">
+        <layer classname="BitmapLayer" libraryID="rewardbg_large">normal</layer>
+    </skin>
+
+    <skin name="reward_checkmark" classname="FadableButtonSkin" library="miniClientReward">
+        <layer classname="BitmapLayer" libraryID="reward_checkmark">normal</layer>
+    </skin>
+
+
+    <skin name="countdown_timer_bg" classname="BasicSkin" library="battlePass">
+        <layer classname="BitmapLayer" libraryID="frame_bp-description">normal</layer>
+    </skin>
+
+    <skin name="overlay_bg_skin" classname="BasicSkin" library="gameclientCommonUI">
+        <layer classname="BitmapLayer" libraryID="scale9btn_disabled" scale9grid="8,8,9,9">normal</layer>
+    </skin>
+
+    <template name="MINI_CLIENT_REWARD_OVERVIEW">
+        <container name="rewards" marginLeft="9" marginRight="9" marginTop="9"
+                   width="570" height="360"
+                   alignX="left">
+            <container name="body" width="570" height="250" marginTop="0" alignX="center">
+              
+                <scrollcontainer mouseEnabled="true" name="reward_scroll_container"
+                                 width="570" height="250"
+                                 alignX="center"
+                                 marginTop="0"
+                                 registeredSkinName="commonui_scrollContainer_mask">
+                    <container name="content" width="570" height="360" mouseEnabled="true" mouseChildren="true"/>
+                </scrollcontainer>
+                <scrollbar name="reward_list_scroll_bar"
+                    visible="false"
+                    width="10" height="250" autoSizeHeight="false" direction="vertical"
+                    marginTop="0" alignX="right" marginRight="0"
+                    registeredSkinName="commonui_scrollbar_bgnd">
+                    <button name="buttonSlider"
+                            width="8" height="10" alignX="center"
+                            registeredSkinName="commonui_scrollbar_slider"/>
+                </scrollbar>
+                <container name="overlay" width="460" height="190" alignX="center" alignY="center">
+                    <coreponent name="overlay_bg" width="460" height="150" alignX="center" marginTop="20" visible="false"
+                                registeredSkinName="overlay_bg_skin"/>
+
+                    <label name="overlay_text" registeredSkinName="commonui_default_label" localizedText="miniclient_reward_overlay"
+                           registeredTextStyleName="overlay_text_default" marginLeft="30" marginTop="70" visible="false"
+                           width="400" autoSizeTextHeight="true"/>
+                </container>
+            </container>
+
+            <container name="bottom" width="570" height="111" alignX="center" alignY="bottom">
+
+                <label name="countdown_text" width="125" autoSizeTextHeight="true" localizedText="miniclient_reward_calendar_end" marginLeft="130" marginTop="4" registeredTextStyleName="countdown_title"/>
+                <label name="countdown_timer" width="500" marginLeft="276" marginTop="4" autoSizeTextHeight="true" text="21d 02h 02m"
+                       registeredTextStyleName="countdown_timer_text"/>
+                <button name="info_btn" tooltipData="localize:miniclientbonus_reward_info_ttp"
+                        marginLeft="430" marginTop="3" alignX="left" registeredSkinName="commonui_info_button"/>
+                <button name="download_btn" visible="false" localizedText="miniclient_reward_btn_download" width="176" marginTop="37" marginBottom="10"
+                        alignX="center" height="40" registeredSkinName="commonui_scale9_button_green" textMarginY="1"/>
+                <button name="claim_btn" localizedText="miniclient_reward_btn_claim" width="176" marginTop="37" marginBottom="10"
+                        alignX="center" height="40" registeredSkinName="commonui_scale9_button_green" textMarginY="1"/>
+            </container>
+        </container>
+    </template>
+
+
+
+    <container name="root" width="580" height="360" mouseEnabled="false" mouseChildren="true">
+        <reference template="MINI_CLIENT_REWARD_OVERVIEW"/>
+    </container>
+</root>

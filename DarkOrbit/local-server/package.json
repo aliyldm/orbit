@@ -1,0 +1,19 @@
+{
+  "name": "darkorbit-local",
+  "version": "0.2.0",
+  "private": true,
+  "description": "DarkOrbit solo local server and client compatibility tools",
+  "engines": { "node": ">=26.0.0" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js",
+    "test:e2e": "node tools/test-network.js",
+    "check": "node tools/check-source.js",
+    "check:client": "node tools/check-client.js",
+    "check:db": "node tools/check-database.js",
+    "audit": "node tools/audit-capabilities.js",
+    "audit:assets": "node tools/asset-manifest.js",
+    "cache:assets": "node tools/cache-assets.js",
+    "cache:assets:all": "node tools/cache-assets.js --all"
+  }
+}

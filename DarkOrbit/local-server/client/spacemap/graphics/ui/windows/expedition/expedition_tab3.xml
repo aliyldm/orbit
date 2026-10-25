@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="expeditionRewardTab3"/>
+    </libraries>
+    <skin name="expendition_tab3_item_icon_bg" library="expeditionRewardTab3" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="item_icon_bg">normal</layer>
+    </skin>
+    <skin name="expendition_tab3_itemRenderer_bg" library="gameclientCommonUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" scale9grid="24,5,50,9" libraryID="itemlist_entry_bg_normal">normal</layer>
+    </skin>
+    <skin name="expendition_tab3_reward_list_title" library="expeditionRewardTab3" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="reward_list_title">normal</layer>
+    </skin>
+    <!-- TEXT STYLES -->
+    <textstyle
+            name="expendition_tab3_rest_time"
+            textColor="0xffffff"
+            type="dynamic"
+            fontSize="12"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"/>
+    <textstyle
+            name="expendition_tab3_list_title_label"
+            textColor="0x86a2b9"
+            type="dynamic"
+            fontSize="14"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            bold="true"
+            align="center"/>
+        <textstyle
+            name="expendition_tab3_list_item_label"
+            textColor="0xffffff"
+            type="dynamic"
+            fontSize="12"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"/>
+        <textstyle
+            name="expendition_tab3_list_item_rank_label"
+            textColor="0xffffff"
+            type="dynamic"
+            fontSize="12"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"/>
+    <template name="expedition_tab3">
+        <coreponent name="tab3" width="845" height="500">        
+            <Label name="rest_time_label" alignX="left" alignY="top" marginLeft="25" marginTop="20" width="200" height="20" registeredTextStyleName="expendition_tab3_rest_time" registeredSkinName="commonui_default_label" text="localize:window_dse_reward_set_time"/>
+            <coreponent name="list_title" width="845" height="20" alignX="left" alignY="top" marginTop="40">
+                <coreponent name="title_bg" width="845" height="20" registeredSkinName="expendition_tab3_reward_list_title"/>
+                <Label name="rank_title_label" width="125" height="20" alignX="left" alignY="top" registeredTextStyleName="expendition_tab3_list_title_label" registeredSkinName="commonui_default_label" text="localize:window_dse_rank"/>            
+                <Label name="reward_title_label" width="725" height="20" alignX="left" alignY="top" marginLeft="125" registeredTextStyleName="expendition_tab3_list_title_label" registeredSkinName="commonui_default_label" text="localize:window_dse_reward_reward"/>
+            </coreponent>            
+            <scrollcontainer name="expedition_tab3_reward_items_list"
+                width="835" 
+                height="425"
+                autoSizeHeight="false"
+                autoSizeWidth="false"
+                alignY="top"
+                alignX="left"
+                marginLeft="10"
+                marginTop="60"                  
+                mouseEnabled="true" 
+                mouseChildren="true" registeredSkinName="commonui_scrollContainer_mask">
+                    <coreponent name="content" width="835" 
+                    autoSizeHeight="true"
+                    autoHeightMode="children"
+                    alignY="top"
+                    alignX="left"
+                    mouseEnabled="true" 
+                    mouseChildren="true"></coreponent>
+            </scrollcontainer>
+            <scrollbar name="expedition_tab3_scroll_bar"
+                           width="10" height="425" autoSizeHeight="false" direction="vertical"
+                           marginTop="60" marginBottom="0" alignX="right" marginRight="0"
+                           registeredSkinName="commonui_scrollbar_bgnd">
+                            <button name="buttonSlider"
+                                    width="8" height="10" alignX="center"
+                                    registeredSkinName="commonui_scrollbar_slider"/>
+            </scrollbar>
+            <!-- <bind source="scroll_bar"
+              target="reward_items_list"
+              type="scrollcontainer"/> -->
+        </coreponent>
+    </template>
+    <container name="root"
+               width="845" height="500" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChildren="true">
+        <reference template="expedition_tab3"/>
+    </container>
+   
+</root>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<battlePass>
+    <!-- Objective Panel -->
+    <objectiveList>
+        <!-- Tier 1 -->
+
+        <!-- Butterfly Effect - Kill Chaos Protegit -->
+        <objective questId="500412">
+            <questReward lootid="ammunition_laser_ucb-100" amount="4000"/>
+            <bpReward lootid="resource_collectable_indoctrineoil" amount="20"/>
+        </objective>
+
+        <!-- Reassembly - Use Cubikon Alien CPU -->
+        <objective questId="500415">
+            <questReward lootid="ammunition_laser_spacecup_group-d" amount="2000"/>
+            <bpReward lootid="booster_shd-dlb" amount="10"/>
+        </objective>
+
+        <!-- Hodgepodge - Use Common Alien CPU -->
+        <objective questId="500416">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="10"/>
+            <bpReward lootid="tech_battle-repair-bot2" amount="1"/>
+        </objective>
+
+        <!-- Fractured Space - Damage NPCs -->
+        <objective questId="500418">
+            <questReward lootid="ammunition_rocketlauncher_hstrm-01" amount="500"/>
+            <bpReward lootid="resource_collectable_indoctrineoil" amount="20"/>
+        </objective>
+
+        <!-- Messy Situation - Collect Chaos Fragments -->
+        <objective questId="500421">
+            <questReward lootid="ammunition_rocket_plt-2021" amount="2000"/>
+            <bpReward lootid="resource_collectable_indoctrineoil" amount="20"/>
+        </objective>
+
+        <!-- Mixed Signals - Use Rare Alien CPU -->
+        <objective questId="500424">
+            <questReward lootid="resource_booty-key" amount="1"/>
+            <bpReward lootid="ammunition_laser_spacecup_group-c" amount="3000"/>
+        </objective>
+
+        <!-- Up to Chance - Use Legendary Alien CPU -->
+        <objective questId="500427">
+            <questReward lootid="ammunition_laser_rsb-75" amount="3000"/>
+            <bpReward lootid="ammunition_specialammo_sr-5" amount="100"/>
+        </objective>
+
+        <!-- Pandemonium - Complete 15 Objectives -->
+        <objective questId="500430">
+            <questReward lootid="equipment_shipupgrade_shd-gol01" amount="1"/>
+            <bpReward lootid="equipment_shipupgrade_dmg-st01" amount="1"/>
+        </objective>
+
+        <!-- Tier 2 -->
+
+        <!-- Hot Mess - Kill Chaos Protegit -->
+        <objective questId="500413">
+            <questReward lootid="resource_collectable_axion-beam-regulator" amount="50"/>
+            <bpReward lootid="tech_burning-trail" amount="1"/>
+        </objective>
+
+        <!-- Seemingly Random - Use Common Alien CPU -->
+        <objective questId="500417">
+            <questReward lootid="ammunition_rocket_plt-2021" amount="6000"/>
+            <bpReward lootid="ammunition_rocketlauncher_ubr-100" amount="3000"/>
+        </objective>
+
+        <!-- Undermine - Damge NPCs -->
+        <objective questId="500419">
+            <questReward lootid="resource_collectable_axion-beam-regulator" amount="50"/>
+            <bpReward lootid="ammunition_laser_ucb-100" amount="8000"/>
+        </objective>
+
+        <!-- Reconstruction - Collect Chaos Fragments -->
+        <objective questId="500422">
+            <questReward lootid="resource_collectable_axion-beam-regulator" amount="50"/>
+            <bpReward lootid="equipment_shipupgrade_dmg-sg01" amount="1"/>
+        </objective>
+
+        <!-- Breaking the Mold - Use Rare Alien CPU -->
+        <objective questId="500425">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="15"/>
+            <bpReward lootid="resource_collectable_axion-beam-regulator" amount="100"/>
+        </objective>
+
+        <!-- Hit or Miss - Use Legendary Alien CPU -->
+        <objective questId="500428">
+            <questReward lootid="resource_collectable_axion-beam-regulator" amount="75"/>
+            <bpReward lootid="ammunition_laser_rsb-75" amount="10000"/>
+        </objective>
+
+        <!-- Tier 3 -->
+        <!-- Clearing Debris - Kill Chaos Protegit -->
+        <objective questId="500414">
+            <questReward lootid="ammunition_laser_spacecup_group-c" amount="5000"/>
+            <bpReward packageid="package_battlepass_bpReward-500414" packageItemIds="booster_dmg-dlb,tech_npc-nuke" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500414"/>
+        </objective>
+
+        <!-- Maim and Destroy - Damage NPCs -->
+        <objective questId="500420">
+            <questReward lootid="equipment_shipupgrade_shd-ms01" amount="1"/>
+            <bpReward lootid="ammunition_laser_spacecup_group-c" amount="6000"/>
+        </objective>    
+
+        <!-- Restoring Order - Collect Chaos Fragments -->
+        <objective questId="500423">
+            <questReward lootid="booster_dmg-dlb" amount="10"/>
+            <bpReward lootid="resource_collectable_axion-beam-regulator" amount="50"/>
+        </objective>
+
+        <!-- Finding a Pattern - Use Rare Alien CPU -->
+        <objective questId="500426">
+            <questReward lootid="ammunition_laser_spacecup_group-d" amount="4000"/>
+            <bpReward packageid="package_battlepass_bpReward-500426" packageItemIds="ammunition_laser_ucb-100,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500426"/>
+        </objective>
+
+        <!-- Breeding Ground - Use Legendary Alien CPU -->
+        <objective questId="500429">
+            <questReward lootid="tech_npc-nuke" amount="1"/>
+            <bpReward packageid="package_battlepass_bpReward-500429" packageItemIds="resource_collectable_axion-beam-regulator,ammunition_specialammo_dcr-250" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500429"/>
+        </objective>
+
+        <!-- Epic Objectives -->
+
+        <!-- Deep Wound - Damage NPCs -->
+        <objective questId="500431">
+            <questReward lootid="tech_burning-trail" amount="2"/>
+            <bpReward lootid="ammunition_rocketlauncher_hstrm-01" amount="50000"/>
+        </objective>
+
+        <!-- Wreak Havoc - Damage NPCs -->
+        <objective questId="500432">
+            <questReward lootid="tech_explosive-charging-blob" amount="2"/>
+            <bpReward lootid="ammunition_laser_ucb-100" amount="150000"/>
+        </objective>
+
+        <!-- Drive to Extinction - Damage NPCs -->
+        <objective questId="500433">
+            <questReward lootid="tech_shield-backup2" amount="3"/>
+            <bpReward lootid="ammunition_laser_rsb-75" amount="25000"/>
+        </objective>
+
+    </objectiveList>
+
+    <!-- Battle pass texts -->
+    <flvDisplayLootId>equipment_shipupgrade_dmg-st01</flvDisplayLootId>
+    
+    <titleKeyBeforePurchase>window_objectives_bp_title</titleKeyBeforePurchase>
+    <descriptionKeyBeforePurchase>window_objectives_bp_promo_desc-chaosProtegit</descriptionKeyBeforePurchase>
+    
+    <descriptionKeyCollect>window_objectives_bp_collect_desc</descriptionKeyCollect>
+    
+    <titleKeyAfterPurchase>window_objectives_bp_highlight_title-chaosProtegit</titleKeyAfterPurchase>
+    <descriptionKeyAfterPurchase>window_objectives_bp_highlight_desc-chaosProtegit</descriptionKeyAfterPurchase>
+</battlePass>

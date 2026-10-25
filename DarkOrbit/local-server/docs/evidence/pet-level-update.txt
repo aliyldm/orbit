@@ -1,0 +1,107 @@
+Source: https://board-en.darkorbit.com/threads/p-e-t-level-update.120879/
+Captured: 2026-10-23T16:07:47.952Z
+P.E.T. Level Update | DarkOrbit 
+ DarkOrbit 
+ Home 
+ Forums 
+ &gt; 
+ Help 
+ &gt; 
+ Game FAQs 
+ &gt; 
+ FAQ 
+ &gt; 
+ You are using an out of date browser. It may not display this or other websites correctly.
+You should upgrade or use an alternative browser .
+ P.E.T. Level Update
+ Discussion in ' FAQ ' started by Baracus , Dec 7, 2017 .
+ Dear forum reader,
+if you’d like to actively participate on the forum by joining discussions or starting your own threads or topics, please log into the game first. If you do not have a game account, you will need to register for one. We look forward to your next visit!
+ CLICK HERE 
+ Thread Status: 
+ Not open for further replies. 
+ Baracus 
+ Community Team 
+ Team Darkorbit 
+ P.E.T. Level Update 
+07.12.2017
+ ​
+ The techs have once again found a way to squeeze even more power out of your P.E.T.s. The level threshold is now at 20, and a brand new selfless gear has been discovered. Who knows what else these mad geniuses have up their sleeves... 
+ P.E.T. EP Requirements 
+ Level PET EP 
+ 16 39,000,000 
+ 17 50,000,000 
+ 18 70,000,000 
+ 19 100,000,000 
+ 20 150,000,000 
+ * PET EP is equivalent to 5% of regular EP gained. This means 2,460,000,000 total EP must be gained to level up from 15 to 20. 
+ Slots and Passive Bonuses 
+ Level Weapon Slot Weapon Slot Cost Generator Slot Generator Slot Cost Passive Bonus 
+ 16 10 - 18 98,000 U. 14% Damage 
+ 17 11 40,000 U. 19 110,000 U. 16% Shield 
+ 18 11 - 20 124,000 U. 16% Damage 
+ 19 12 48,000 U. 21 140,000 U. 18% Shield 
+ 20 12 22 158,000 U. Level 4 Access 
+ HP Increase 
+ Level HP Unlock Cost 
+ 16 210,000 50,000 U. 
+ 17 220,000 50,000 U. 
+ 18 230,000 50,000 U. 
+ 19 240,000 50,000 U. 
+ 20 250,000 50,000 U. 
+Repair Costs 
+ The cost to repair PETs from level 16 - 20 is 350 Uridium
+ Repair remains free for Premium Pilots
+Sacrificial Flame – New Gear 
+When selected the PET will become passive and wait for a damaged player to come into range.
+If a friendly ship with less than 50% shield is in range then the PET will fly towards the player and explode. Friendly ships count as players in the same clan and / or group.
+Upon death a % of shield is transferred from the PET to the friendly ship.
+ Level Range from PET Shield Transfer Cooldown Price 
+ 1 350 30% 90 9,000 U. 
+ 2 400 40% 75 12,500 U. 
+ 3 450 50% 60 45,000 U. 
+ 4 * 500 60% 45 70,000 U. 
+ *The level 4 gear is currently not available in the shop, it will be added at a later date. 
+ Protocol Changes 
+ The Fuel protocol (AI-ECO) has received some changed to level 1 and 2
+ Level 1 will now grant a 3% reduction in fuel usage (was 1%)
+ Level 2 will now grant a 3.5% reduction in fuel usage (was 2%)
+ Last edited by moderator: Dec 14, 2017 
+ Baracus , 
+ Dec 7, 2017 
+ #1 
+ #Đištúrḃéđ# and -ĐΔ_HΞΔĐLΞSS_KØЯPZΞ- like this.
+ Show Ignored Content 
+ Thread Status: 
+ Not open for further replies. 
+ Your name or email address: 
+ Do you already have an account? 
+ No, create an account now. 
+ Yes, my password is: 
+ Forgot your password? 
+ Stay logged in 
+ DarkOrbit 
+ Home 
+ Forums 
+ &gt; 
+ Help 
+ &gt; 
+ Game FAQs 
+ &gt; 
+ FAQ 
+ &gt; 
+ Home 
+ Forums 
+ Forums
+ Quick Links
+ Recent posts 
+ Calendar 
+ Menu 
+ Legal Notice 
+ Help 
+ Home 
+ RSS 
+ Terms and Rules 
+ Privacy Policy 
+ Forum software by XenForo &reg; &copy; 2010-2019 XenForo Ltd. Forum software by XenForo&trade; &copy;2010-2015 XenForo Ltd. 
+ XenForo Add-ons by Brivium &trade; &copy; 2012-2026 Brivium LLC.

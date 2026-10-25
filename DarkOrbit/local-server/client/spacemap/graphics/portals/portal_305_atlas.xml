@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+
+<TextureAtlas imagePath="portal_305_texture.png">
+	<SubTexture name="portal_305" x="0" y="0" width="512" height="512"/>
+	<SubTexture name="portal_305_active" x="0" y="512" width="512" height="512"/>
+</TextureAtlas>

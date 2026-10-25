@@ -1,0 +1,25 @@
+{
+  "source": "client/swf_global/inventory/inventory.swf",
+  "sourceSha256": "b7822f03cf8e4c639e1ed475cd11429deee40dde113e0466b43f43c96f3fb11a",
+  "classes": [
+    {
+      "file": "events/ActionIdentifiers.as",
+      "sha256": "428b36dd0d9c761e245f6dcba8a380448d28a6d2ffa791c3f943a423fe7bf6e8"
+    },
+    {
+      "file": "view/components/items/GridComponent.as",
+      "sha256": "ac6301ad6e1a48fa52520eeabaee40ca4352af8aef5e1b440eb1a0261ecf5d1f"
+    },
+    {
+      "file": "model/managers/FilterManager.as",
+      "sha256": "5a7af49ebaf7fb740f6b0b33424422df1ef0011e1d538a0baf8f1493c0841a1a"
+    }
+  ],
+  "predicate": "getEquipByOnly().indexOf(param4) != -1",
+  "contextIdentifiers": [
+    "ship",
+    "drone",
+    "pet"
+  ],
+  "changedSWF": false
+}

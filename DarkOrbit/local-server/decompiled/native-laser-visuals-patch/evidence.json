@@ -1,0 +1,252 @@
+{
+  "beforeSha256": "ffd878c5462c1ed5e0afbb065eaf970c0cb3fc383e18a550478b13d9c98d04fc",
+  "afterSha256": "8982264ff56b60223647ccf697881ad94b120633db5007d0481897de091aed97",
+  "hostSha256": "1170d6ae040ba108e72bce7a283d3710cb217d5d62662e94e10c934ba336c107",
+  "normalSubSalvoIntervalMs": 200,
+  "rsbSubSalvoIntervalMs": 200,
+  "nonAbcIdentical": true,
+  "hostEmbeddedAssetsIdentical": false,
+  "hostNonCodeDifferences": [
+    {
+      "index": 1,
+      "current": {
+        "tag": 77,
+        "sha256": "2c4f2f7d142ea13433304737c274f12cf4c3eab4f9b249f7b0b1299a3e07e950"
+      },
+      "host": {
+        "tag": 77,
+        "sha256": "11d489a15609a8adfe26868510a33dbf6895f74316adf9f752860c008cfa7934"
+      }
+    },
+    {
+      "index": 4,
+      "current": {
+        "tag": 41,
+        "sha256": "78baf25fadd8cecc9ee088bbf361579d92e3312d2ad73c61dcd9c713dd734a7b"
+      },
+      "host": {
+        "tag": 41,
+        "sha256": "84ba0313867193dcd87a640914fed3eedc82ad927467569cf2e410d76eedbb4f"
+      }
+    },
+    {
+      "index": 233,
+      "current": {
+        "tag": 87,
+        "sha256": "53dad5f6600f664aa78089bfebaba948192e6c5cec971c145f2d63b4366a52ff"
+      },
+      "host": {
+        "tag": 87,
+        "sha256": "9ad96c289616e1f5e43b16af1fcc2f5ff755da78319f33a6d1bb505d7874beab"
+      }
+    },
+    {
+      "index": 237,
+      "current": {
+        "tag": 36,
+        "sha256": "95e75a3c37697e57ba921fec5a4dcbd3b0149ad83c87d4f24cf1e296385a5f3d"
+      },
+      "host": {
+        "tag": 36,
+        "sha256": "43bbf4137ed582d13dc7a6605e4dabc517cf67e26aafe5a5468b07451225af26"
+      }
+    },
+    {
+      "index": 245,
+      "current": {
+        "tag": 87,
+        "sha256": "bfff56b89187cd9d6440bb4f34d0b7570bd21c13c874664f497f77882d2d7cb2"
+      },
+      "host": {
+        "tag": 87,
+        "sha256": "52f0a3a00bc23dbe4b7497c7f33657424caadbdea47534865dc8fc578a6413b4"
+      }
+    },
+    {
+      "index": 247,
+      "current": {
+        "tag": 87,
+        "sha256": "c9714315480e38c33bc127c077a755a2e798f0c071de1e6b262f99c63f20c0b4"
+      },
+      "host": {
+        "tag": 87,
+        "sha256": "2ef56eec0e20f7a15c81d923a2e0eca5dc5f16a36e88d85f15466fed576a61e1"
+      }
+    },
+    {
+      "index": 251,
+      "current": {
+        "tag": 87,
+        "sha256": "2be135ba5e5892296ee72ab7932d81abe3e9356a2ffe4098a6ebdf7e0ef4fe58"
+      },
+      "host": {
+        "tag": 87,
+        "sha256": "928e4174d8d1bc508b56e326f10c43bf455de9df10039aed77a36bf5195ec7d1"
+      }
+    }
+  ],
+  "unchangedNonAbcTags": 256,
+  "changes": [
+    {
+      "index": 254,
+      "before": {
+        "tag": 82,
+        "sha256": "ac5629621c96bfe63c38fbad31b2bca9023d60b1340cf5e381a98c045de31564"
+      },
+      "after": {
+        "tag": 82,
+        "sha256": "369599d0cb9db4f5f8eeb2048d201b6100f6ad97d1cc5a777c92aca2e2763f9e"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "class": "net.bigpoint.darkorbit.map.common.LaserEmissionSchedule",
+      "verifiedSha256": "31bc08803f02bee3e3c79631728a7bf5735007b250d90bb512e89192176c3637",
+      "hostSha256": "31bc08803f02bee3e3c79631728a7bf5735007b250d90bb512e89192176c3637",
+      "exactSourceMatch": true,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.map.common.LaserImpactGeometry",
+      "verifiedSha256": "1483fa080481b7862f3b12b0d7433a62d726c5dfe215c1db4b970357d88a73fb",
+      "hostSha256": "1483fa080481b7862f3b12b0d7433a62d726c5dfe215c1db4b970357d88a73fb",
+      "exactSourceMatch": true,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.map.view2D.effects.combat.laser.LaserSalvo2D",
+      "verifiedSha256": "72a8fb8d44d1b3e976062126d33d9646905202742b7dd6e10c8f1e29a483682d",
+      "hostSha256": "eee642f149e0443f3372dfb6a1d82c589922c53e23ab6ed71cde4cd88f3d5736",
+      "exactSourceMatch": false,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.map.view3D.effects.combat.laser.LaserSalvo3D",
+      "verifiedSha256": "346ad0eb759c33f66cba3a18f74edc31d0b73e65173758b240faa952bbc1a82b",
+      "hostSha256": "c79aba1b241be50063e432c02c4794044e7324f57373523cff50b8c1102052bd",
+      "exactSourceMatch": false,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.map.view2D.effects.combat.laser.LaserEffect2D",
+      "verifiedSha256": "a5727573769a39bc494a1f8a4ee8d1994cdfa99b19b8dc4dbc1cc727e90e0f8a",
+      "hostSha256": "a5727573769a39bc494a1f8a4ee8d1994cdfa99b19b8dc4dbc1cc727e90e0f8a",
+      "exactSourceMatch": true,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.map.view3D.effects.combat.laser.LaserEffect3D",
+      "verifiedSha256": "5b815c339ad37bd9623a1f51f78f0aa136380da2c36bc841b1847add12dc8867",
+      "hostSha256": "5b815c339ad37bd9623a1f51f78f0aa136380da2c36bc841b1847add12dc8867",
+      "exactSourceMatch": true,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.map.view3D.effects.combat.laser.LaserBullet3D",
+      "verifiedSha256": "1c8f58c829714ae96e8b6023543b2b28b5f01f52dfa4538c033533d7a1b9071c",
+      "hostSha256": "1c8f58c829714ae96e8b6023543b2b28b5f01f52dfa4538c033533d7a1b9071c",
+      "exactSourceMatch": true,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.map.view2D.display.ship.Lasers2D",
+      "verifiedSha256": "0f4bbfa99b3fe4213a8f15b096fee4c3143a5911089b693b6b901081ae3a82ae",
+      "hostSha256": "0f4bbfa99b3fe4213a8f15b096fee4c3143a5911089b693b6b901081ae3a82ae",
+      "exactSourceMatch": true,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.map.view3D.display3D.ship.Lasers3D",
+      "verifiedSha256": "875b0e6dede7ae0ae2eb6545479152d04ac448bcf691a349efbd912a5c8ef2a0",
+      "hostSha256": "875b0e6dede7ae0ae2eb6545479152d04ac448bcf691a349efbd912a5c8ef2a0",
+      "exactSourceMatch": true,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.map.model.traits.weapons.LaserCannon",
+      "verifiedSha256": "3f442be14228cb62626c2026c8768619e9ca98e16fd35e12bc9e07072f6aab0d",
+      "hostSha256": "3f442be14228cb62626c2026c8768619e9ca98e16fd35e12bc9e07072f6aab0d",
+      "exactSourceMatch": true,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.audio.AudioManager",
+      "verifiedSha256": "8db4942a09d666cc94bdfa5e3a5be0cf6bf8debecc1f4f4af49ba5fcb49da7a6",
+      "hostSha256": "1f20cab9ffb791d69ec8da569caeb49ba5db8d85b8919cbd3779995f3f32cd44",
+      "exactSourceMatch": false,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.pattern.LaserPattern",
+      "verifiedSha256": "fe5edb7df44fec8573d5f707e5396f01b67b47601a125aaa8834341345f0b56a",
+      "hostSha256": "fe5edb7df44fec8573d5f707e5396f01b67b47601a125aaa8834341345f0b56a",
+      "exactSourceMatch": true,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.pattern.PatternManager",
+      "verifiedSha256": "d2ebb8f6dab03765f9e313d9d06b744efb3a559941fa3caceb90918bc54afbeb",
+      "hostSha256": "d2ebb8f6dab03765f9e313d9d06b744efb3a559941fa3caceb90918bc54afbeb",
+      "exactSourceMatch": true,
+      "equivalentSourceMatch": true
+    },
+    {
+      "class": "net.bigpoint.darkorbit.net.netty.handlers.combat.AttackLaserRunHandler",
+      "verifiedSha256": "56c52ec0572649e8b78db28f7dc45d649010ee01f756846b340db3b142217ea5",
+      "hostSha256": "56c52ec0572649e8b78db28f7dc45d649010ee01f756846b340db3b142217ea5",
+      "exactSourceMatch": true,
+      "equivalentSourceMatch": true
+    }
+  ],
+  "sections": [
+    {
+      "name": "laserDefinitions",
+      "sha256": "001b297f3b1f99eb7797cac8dcc5b6a8ed722ef0faf1912c165bf2be9ddadb5b",
+      "identical": true
+    },
+    {
+      "name": "laserDefinitionsAprilsFools",
+      "sha256": "e5d7b56b1ab8a7f4d663dcff4a6592c7bbd8f64bacfc46b37cb53855d9f913b7",
+      "identical": true
+    },
+    {
+      "name": "lasers",
+      "sha256": "5552b2f20182b4a69ed56f171450866a2cd0df7473ba71bf06698285babbddc3",
+      "identical": true
+    },
+    {
+      "name": "expansions",
+      "sha256": "e9469ec94a26e24d9c0d64f8bae97e858560d4468092aabef613add940e7ca5e",
+      "identical": true
+    }
+  ],
+  "soundIds": [
+    0,
+    9,
+    10,
+    11,
+    13,
+    39,
+    32,
+    15,
+    19,
+    17,
+    16,
+    110,
+    111,
+    118,
+    133
+  ],
+  "sourceNormalization": [
+    "Number(NaN) and NaN local numeric defaults",
+    "Redundant Boolean expression parentheses",
+    "Unused third dummy cannon-position argument default0/NaN; body ignores argument",
+    "Redundant int casts on declared int music IDs and Boolean on a Boolean comparison"
+  ],
+  "limitations": [
+    "Cached host is a captured version, not a live server timing measurement.",
+    "No audible/visual Qt acceptance.",
+    "Server-side equipment expansion thresholds and unsupported modern weapon-specific packet choices are not recovered from client source."
+  ]
+}

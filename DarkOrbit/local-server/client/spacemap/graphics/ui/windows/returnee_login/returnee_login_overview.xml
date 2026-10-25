@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="returneelogin"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+	<textstyle  name="overview_welcome"
+				textColor="0xededed"
+				type="dynamic"
+				fontSize="10"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"
+				autoSize="center"/>
+
+	<textstyle  name="reward_item_amount"
+				textColor="0xededed"
+				type="dynamic"
+				fontSize="8"
+				autoSize="right"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="right"/>
+
+	<!-- SKINS -->
+	<skin name="returnee_login_banner_bg" classname="BasicSkin" library="returneelogin">
+		<layer classname="BitmapLayer" libraryID="banner_en">normal</layer>
+	</skin>
+
+	<skin name="returnee_login_scrollbar_bg" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+	</skin>
+
+	<skin name="returnee_login_item_bg" classname="BasicSkin">
+		<layer classname="FilledBoxLayer"  fillColor="0x2b2e31" fillAlpha="1">normal</layer>
+	</skin>
+
+	<!-- TEMPLATES -->
+	<template name="RETURNEE_LOGIN_OVERVIEW">
+		<container name="overview"
+				   width="570" height="370" autoSizeWidth="false" autoSizeHeight="false"
+				   marginTop="40"
+				   alignX="center">
+
+			<coreponent name="banner"
+						width="570" height="150" autoSizeWidth="false" autoSizeHeight="false"
+						marginLeft="5"
+						registeredSkinName="returnee_login_banner_bg"/>
+
+			<label name="welcome" text=""
+				   height="70" autoSizeWidth="true" autoSizeHeight="false"
+				   marginTop="170"
+				   registeredTextStyleName="overview_welcome" registeredSkinName="commonui_default_label"/>
+
+			<container name="rewards"
+					   width="500" height="60" autoSizeWidth="false" autoSizeHeight="false"
+					   marginTop="260" alignX="center">
+
+				<Grid name="list"
+					  width="500" height="55" itemGap="10"
+					  alignX="center"
+					  mouseEnabled="true" mouseChildren="true"
+					  cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+					<itemrenderer width="50" height="50" autoSizeWidth="false" autoSizeHeight="false"
+								  itemGap="0" mouseEnabled="true" mouseChildren="true">
+
+						<coreponent width="50" height="50" autoSizeWidth="false" autoSizeHeight="false"
+									registeredSkinName="returnee_login_item_bg"/>
+
+						<coreponent name="icon"
+									width="35" height="35" autoSizeWidth="false" autoSizeHeight="false"
+									alignX="center" alignY="center"/>
+
+						<label name="amount" text="x88"
+							   width="50" height="15" autoSizeWidth="false" autoSizeHeight="false"
+							   alignX="right" alignY="bottom"
+							   registeredTextStyleName="reward_item_amount" registeredSkinName="commonui_default_label"/>
+					</itemrenderer>
+				</Grid>
+				<scrollbar name="scroll_bar"
+						   width="10" autoSizeHeight="true" direction="vertical"
+						   marginTop="0" marginBottom="0" marginRight="0" alignX="right"
+						   registeredSkinName="returnee_login_scrollbar_bg">
+					<button name="buttonSlider"
+							width="10" height="10" alignX="center"
+							registeredSkinName="commonui_scrollbar_slider"/>
+				</scrollbar>
+				<bind source="scroll_bar"
+					  target="list"
+					  type="scrollcontainer"/>
+			</container>
+
+			<button name="claim_btn"
+					text="localize:miniclient_reward_btn_claim" textMarginY="1"
+					width="180" height="40" autoSizeWidth="false" autoSizeHeight="false"
+					alignX="center" alignY="bottom"
+					registeredSkinName="commonui_scale9_button_green"/>
+		</container>
+	</template>
+
+	<!-- CONTENT -->
+	<container name="root"
+			   width="570" height="370" autoSizeWidth="false" autoSizeHeight="false"
+			   mouseEnabled="false" mouseChilderen="true">
+		<reference template="RETURNEE_LOGIN_OVERVIEW"/>
+	</container>
+</root>

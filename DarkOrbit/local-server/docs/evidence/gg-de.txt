@@ -1,0 +1,876 @@
+Source: https://board-de.darkorbit.com/threads/faq-galaxy-gates.2848/
+Captured: 2026-10-23T16:07:46.119Z
+FAQ - Galaxy Gates | DarkOrbit DE 
+ DarkOrbit DE 
+ Foren 
+ &gt; 
+ Hilfe 
+ &gt; 
+ Alles rund um das Spiel 
+ &gt; 
+ FAQs / Glossar 
+ &gt; 
+ You are using an out of date browser. It may not display this or other websites correctly.
+You should upgrade or use an alternative browser .
+ FAQ - Galaxy Gates
+ Dieses Thema im Forum ' FAQs / Glossar ' wurde von BA-RescueKnight gestartet, 4 Dezember 2013 .
+ Liebe(r) Forum-Leser/in,
+wenn Du in diesem Forum aktiv an den Gesprächen teilnehmen oder eigene Themen starten möchtest, musst Du Dich bitte zunächst im Spiel einloggen. Falls Du noch keinen Spielaccount besitzt, bitte registriere Dich neu. Wir freuen uns auf Deinen nächsten Besuch in unserem Forum!
+ „Zum Spiel“ 
+ Status des Themas: 
+ Es sind keine weiteren Antworten möglich. 
+ BA-RescueKnight 
+ Board Administrator 
+ Team Darkorbit 
+ Inhalt 
+ 1. Allgemeine Informationen 
+ 1.1 Was kostet ein Materialisierungsvorgang
+1.2 Gewinne ich nur Gate-Teile
+1.3 Was passiert, wenn ich schon ein Gate-Teil habe
+1.4 Kann ich aus einem Gate auch wieder heraus, nachdem ich hineingesprungen bin
+ ​
+ 2. Der Gate Generator 
+ 2.1 Wie benutze ich den Gate Generator
+2.2 Wie setze ich Multiplikatoren ein
+2.3 Wie sehe ich die Extra Energie
+2.4 Wo sehe ich, was ich gewonnen habe
+2.5 Wo sehe ich die Chancen des Generators auf ein bestimmtes Item
+2.6 Wie stelle ich ein fertiges Gate auf
+2.7 Wie kann ich Extra-Leben für mein Gate kaufen ​
+ 3. Die Galaxy-Gates Alpha, Beta und Gamma 
+ 3.1 Die Wellen
+3.2 Die Endbelohnung
+3.3 Der Unterschied zwischen den drei Gates ​
+ 4. Das Galaxy Gate Delta 
+ 4.1 Die Wellen
+4.2 Die Endbelohnung
+4.3 Besonderheiten des Delta-Gate ​
+ 5. Das Galaxy Gate Epsilon 
+ 5.1 Die Wellen
+5.2 Die Endbelohnung
+5.3 Besonderheiten des Epsilon-Gate ​
+ 6. Das Galaxy Gate Zeta 
+ 6.1 Die Wellen
+6.2 Die Endbelohnung
+6.3 Besonderheiten des Zeta-Gate ​
+ 7. Das Galaxy Gate Kappa 
+ 7.1 Die Wellen
+7.2 Die Endbelohnung
+7.3 Besonderheiten des Kappa-Gate ​
+ 8. Das Galaxy Gate Lamda 
+ 8.1 Die Wellen
+8.2 Die Endbelohnung
+8.3 Besonderheiten des Lamda-Gate ​
+ 9. Das Galxy Gate Kronos 
+ 9.1 Die Wellen
+9.2 Die Endbelohnung
+9.3 Besonderheiten des Kronos-Gate ​
+ 10. Das Hades (Gruppen-)Gate 
+ 10.1 Allgemeine Informationen zum Hades Gate
+10.2 Die Wellen
+10.3 Die Endbelohnung ​
+ 11. Das Kuiper-Gate 
+ Zuletzt bearbeitet: 21 November 2015 
+ Supportformular 
+ PN möglich auf Nachfrage im Spielerprofil ​
+ BA-RescueKnight , 
+ 4 Dezember 2013 
+ #1 
+ X-WarRock-X , FLYING_RASTA und Оrbiter0815 gefällt dies.
+ BA-RescueKnight 
+ Board Administrator 
+ Team Darkorbit 
+ 1. Allgemeine Informationen zu den Galaxy Gates 
+ Die Galaxy Gates stellen eine Herausforderung für Space Piloten dar, in der es darum geht sein Schiff gegen mehrere Wellen fieser Aliens zu verteidigen.
+Mit Hilfe des Materialisiers kannst du dir bis zu 6 Sprungtore zusammenbauen und in unbekannte Galaxien vorstoßen. 
+ 1.1 Was kostet ein Materialisierungsvorgang? 
+ Ein Materialisierungs Vorgang kostet 100 Uridium (abzgl. eventueller Rabatte/Vorteilspakete). Du bekommst für deinen Materialisierungs Vorgang entweder ein Torteil oder mindestens einen Gewinn im Wert von 100 Uridium oder mehr. Außerdem kannst Du Extra Energie sammeln, sodass Du für das Benutzen des Materialisierers nichts zahlen musst. 
+ 1.2 Gewinne ich nur Gate-Teile? 
+ Neben den Gateteilen kannst Du auch folgende Dinge gewinnen: 
+ Alle EliteLasermunition Typen (zwischen 40 -280 Schuss) 
+ Elite Raketen und Minen (zwischen 2-28 Stück) 
+ Reparaturgutscheine 
+ Xenomit (zwischen 10-14 Stück) 
+ Extra-Hitpoints (zwischen 8000-12000 HP) 
+ Logfile(s) 
+ 1.3 Was passiert, wenn ich schon ein Gate-Teil habe? 
+ Solltest Du ein bestimmtes Gateteil schon haben, ist dieses nicht verloren. Du kannst bis zu 5 Gateteile sammeln und diese als Multiplikator einsetzen.
+Je nach dem wie viele Torteile Du hast bekommst Du bei: 
+ 1 Gateteil das Doppelte 
+ 2 Gateteile das Dreifache 
+ 3 Gateteile das Vierfache 
+ 4 Gateteile das Fünffache 
+ 5 Gateteile das Sechsfache 
+ Hast Du also fünf Gateteile gesammelt, gewinnst Du beim nächsten Benutzen des Materialisierers das Sechsfache des angegeben Wertes!Wenn Du 5 Teile doppelt hast, werden diese beim nächsten Benutzen des Materialisierers automatisch als Multiplikator eingesetzt. Solltest du beim Einsatz eines Jokers auf ein Gate-Teil kommen, so werden dir nur Gate-Teile gutgeschrieben, die du noch nicht besitzt. Setzt du aber mehr Joker ein, als du Gate-Teile benötigst, wrid dir der Rest in Munition, oder Gutscheine ausgezahlt. 
+ 1.4 Kann ich aus einem Gate auch wieder herausspringen? 
+ Ja, entweder du wirst vernichtet, oder meisterst die Herausforderung in einem Gate. Nur zwischen den sog. &quot;Wellen&quot; erscheinen zwei Tore wovon das Linke weiter in die Galaxie führt und das rechte dich zurück bringt. 
+ Supportformular 
+ PN möglich auf Nachfrage im Spielerprofil ​
+ BA-RescueKnight , 
+ 4 Dezember 2013 
+ #2 
+ Оrbiter0815 gefällt dies.
+ BA-RescueKnight 
+ Board Administrator 
+ Team Darkorbit 
+ 2. Der Gate Generator 
+ 2.1 Wie benutze ich den Gate Generator? 
+ Es gibt 9 Bereiche: 
+ Alpha/Beta/Gamma 
+ Delta 
+ Epsilon 
+ Zeta 
+ Kappa 
+ Lambda 
+ Kronos 
+ Hades 
+ Kuiper 
+Je nachdem welchen Bereich man einstellt, erhält man Teile für das jewalige Gate. Wobei sich Alpha, Beta und Gamma einen gemeinsamen Pool teilen aus dem man zieht.
+Um den Generator zu benutzen, klick den Button:
+Allerdings kannst du nun auch mehrere Drehungen auf einmal einstellen:
+Du kannst wählen zwischen 1, 5, 10 und 100 Drehungen.
+Der zusammengerechnte Preis der Drehung wird dann berechnet und auf dem Button angezeigt. 
+ 2.2 Wie setze ich Multiplikatoren ein? 
+ Hier siehst du welche Multiplikatoren du hast. Durch Markierung des Checkbox kannst du ihn nutzen:
+Nutzt du die Möglichkeit der 100 Drehungen auf einmal und man erreicht dadurch den 6 fach Multiplikator, so wird dieser automatisch auf ein zufälliges Ergebnis angewendet, welches man aus dem Generator hat. 
+ 2.3 Wie sehe ich die Extra Energie? 
+ Oben rechts auf der GG Generator Seite, siehst du das Uridium das du hast und darunter den Betrag an Extra Energie.
+Die Kosten auf dem Button zur Nutzung des GG Generators passt sich automatisch an und berechnt die Extra Drehs mit.
+ 2.4 Wo sehe ich, was ich gewonnen habe? 
+ Du siehst die gewonnenen Gegenstände im Logbuch. Dort kannst du dann im Detail prüfen was du erhalten hast.
+Wenn du 100 Drehs auf einmal genutzt hast, werden die Ergebnisse aufeinander addiert.
+ 2.5 Wo sehe ich die Chancen des Generators auf ein bestimmtes Item 
+ Du kannst den % Button neben dem Gate klicken.
+ 2.6 Wie stelle ich ein fertiges Gate auf 
+ Wenn du noch kein Gate dieser Art auf der Spacemap hast und du ein Gate nun aufstellen kannst, machst du dies mit dem Button auf der rechten Seite.
+ 2.7 Wie kann ich Extra-Leben für mein Gate kaufen 
+ Ist ein Gate aufgestellt kannst du mit dem Button unten links weitere Leben für das Gate kaufen.
+ Zuletzt bearbeitet von Moderator: 16 Mai 2020 
+ Supportformular 
+ PN möglich auf Nachfrage im Spielerprofil ​
+ BA-RescueKnight , 
+ 4 Dezember 2013 
+ #3 
+ Ron-65 und Оrbiter0815 gefällt dies.
+ BA-RescueKnight 
+ Board Administrator 
+ Team Darkorbit 
+ 3. Die Galaxy-Gates Alpha, Beta und Gamma 
+ Wenn Du ein Gate zusammengebaut hast, kannst Du in die Galaxie springen die das Gate verbirgt und Dich dort der Herausforderung stellen. Meisterst Du alle Herausforderungen einer Galaxie, erwarten dich fette Gewinne. Diese werden wenige Sekunden nach Abschuss des letzten NPCs im Gate gegeben. 
+ Alpha-Gate
+Beta-Gate
+Gamma-Gate
+ 3.1 Die Wellen 
+ Streuner 20 Stück 
+ Lordakia 20 Stück 
+ Mordon 20 Stück (Beta 40) 
+ Saimon 20 Stück 
+ Devolarium 20 Stück 
+ Kristallin 40 Stück 
+ Sibelon 20 Stück 
+ Sibelonit 80 Stück (Beta, Gamma 40) 
+ Kristallon 16 Stück 
+ Protegit 20 Stück 
+ EP/Ehre/Uridium/Credits für die jeweiligen Wellen: 
+Streuner = 16.000 EP/ 80 Ehre/ 40 Uridium / 16.000 Credits*
+Lordakia = 32.000 EP / 160 Ehre / 80 Uridium / 32.000 Credits*
+Mordon = 128.000 EP / 640 Ehre / 320 Uridium / 256.000 Credits*
+Saimon = 128.000 EP / 640 Ehre / 320 Uridium / 128.000 Credits*
+Devolarium = 128.000 EP / 640 Ehre / 320 Uridium / 1.024.000 Credits*
+Kristallin = 512.000 EP / 2560 Ehre / 1280 Uridium / 1.024.000 Credits*
+Sibelon = 256.000 EP / 1280 Ehre / 640 Uridium / 2.048.000 Credits*
+Sibelonit = 256.000 EP / 1280 Ehre / 960 Uridium / 1.024.000 Credits*
+Kristallon = 819.200 EP / 4096 Ehre / 2048 Uridium / 6.553.600 Credits* 
+ Protegit = 192.000 EP / 960 Ehre / 480 Uridium / 384.000 Credits* 
+ Also alles in allem: 
+ 446 NPCs in allen Wellen
+ Gesamte NPC EP = 2.467.200 EP *
+Gesamte NPC Ehre = 12.336 Ehre*
+Gesamte NPC Uri = 6.488 Uridium*
+Gesamte Credits = 12.489.600 Credits*
+ *die Angaben gelten für das Alpha-Gate. 
+ 3.2 Die Endbelohnung 
+ Alpha: 
+ 4.000.000 Erfahrungspunkte 
+ 100.000 Ehre 
+ 20.000 Uridium 
+ 20.000 Schuss X4 Muniton (UCB-100) 
+ 2 Repgutscheine 
+ 2 Logfiles 
+ 1 Kronos-Gateteil 
+ 1 Ring über dem Rangabzeichen 
+ 2 ASR 
+ Eine Chance auf 70-80 Diametrion und eine der Folgenden Rohstoffe: 
+ 8-14 Kyhalon 
+ 8-14 Tetrathrin 
+ 6-10 Bifenon 
+ Eine Chance auf das Sandstorm Pusat Schiffsdesign (10% Manuell oder über Gate-Entsendung 
+ Tag der doppelten Galaxy Gate Belohnungen 
+ 8.000.000 Erfahrungspunkte 
+ 200.000 Ehre 
+ 20.000 Uridium 
+ 20.000 Schuss X4 Muniton (UCB-100) 
+ 4 Repgutscheine 
+ 4 Logfiles 
+ 1 Kronos-Gateteil 
+ 2 ASR 
+ 1 Ring über dem Rangabzeichen 
+ Eine Chance auf 140-160 Diametrion und eine der Folgenden Rohstoffe: 
+ 16-28 Kyhalon 
+ 16-28 Tetrathrin 
+ 12-20 Bifenon 
+ Eine Chance auf das Sandstorm Pusat Schiffsdesign (10% Manuell oder über Gate-Entsendung) 
+ An Tagen der roten, blauen, Obsidian und Apocalypse Beute Boxen werden gelegentlich Spaltungskristalle fallen gelassen. Das Alpha Gate kann zwischen 5 und 10 Spaltungskristalle an diesen Tagen ausgeben. Spaltungskristalle werden nicht per Gate-Entsendung fallen gelassen. 
+ Beta: 
+ 8.000.000 Erfahrungspunkte 
+ 200.000 Ehre 
+ 40.000 Uridium 
+ 40.000 Schuss X4 Muniton (UCB-100) 
+ 4 Repgutscheine 
+ 400 Xenomit 
+ 4 Logfiles 
+ 1 Kronos-Gateteil 
+ 1 Ring über dem Rangabzeichen 
+ 2 ASR 
+ Eine Chance auf 70-80 Diametrion und eine der Folgenden Rohstoffe:
+ 8-14 Kyhalon 
+ 8-14 Tetrathrin 
+ 6-10 Bifenon 
+ Eine Chance auf das Sandstorm Pusat Schiffsdesign (10% Manuell oder über Gate-Entsendung) 
+ Tag der doppelten Galaxy Gate Belohnungen 
+ 16.000.000 Erfahrungspunkte 
+ 400.000 Ehre 
+ 40.000 Uridium 
+ 40.000 Schuss X4 Muniton (UCB-100) 
+ 8 Repgutscheine 
+ 800 Xenomit 
+ 8 Logfiles 
+ 1 Kronos-Gateteil 
+ 1 Ring über dem Rangabzeichen 
+ 2 ASR 
+ Eine Chance auf 140-160 Diametrion und eine der Folgenden Rohstoffe: 
+ 16-28 Kyhalon 
+ 16-28 Tetrathrin 
+ 12-20 Bifenon 
+ Eine Chance auf das Sandstorm Pusat Schiffsdesign (10% Manuell oder über Gate-Entsendung) 
+ An Tagen der roten, blauen, Obsidian und Apocalypse Beute Boxen werden gelegentlich Spaltungskristalle fallen gelassen. Das Beta Gate kann zwischen 5 und 10 Spaltungskristalle an diesen Tagen ausgeben. Spaltungskristalle werden nicht per Gate-Entsendung fallen gelassen. 
+ Gamma: 
+ 12.000.000 Erfahrungspunkte 
+ 300.000 Ehre 
+ 60.000 Uridium 
+ 60.000 Schuss X4 Muniton (UCB-100) 
+ 6 Repgutscheine 
+ 600 Xenomit 
+ 10 Logfiles 
+ 1 Kronos-Gateteil 
+ 1 Ring über dem Rangabzeichen 
+ 3 ASR 
+ Eine Chance auf 70-80 Diametrion und eine der Folgenden Rohstoffe: 
+ 8-16 Kyhalon 
+ 8-16 Tetrathrin 
+ 6-10 Bifenon 
+ Eine Chance auf das Sandstorm Pusat Schiffsdesign (10% Manuell oder über Gate-Entsendung) 
+ Tag der doppelten Galaxy Gate Belohnungen 
+ 24.000.000 Erfahrungspunkte 
+ 600.000 Ehre 
+ 60.000 Uridium 
+ 60.000 Schuss X4 Muniton (UCB-100) 
+ 12 Repgutscheine 
+ 1200 Xenomit 
+ 20 Logfiles 
+ 1 Kronos-Gateteil 
+ 1 Ring über dem Rangabzeichen 
+ 3 ASR 
+ Eine Chance auf 140-160 Diametrion und eine der Folgenden Rohstoffe: 
+ 16-28 Kyhalon 
+ 16-28 Tetrathrin 
+ 12-20 Bifenon 
+ Eine Chance auf das Sandstorm Pusat Schiffsdesign (10% Manuell oder über Gate-Entsendung) 
+ An Tagen der roten, blauen, Obsidian und Apocalypse Beute Boxen werden gelegentlich Spaltungskristalle fallen gelassen. Das Gama Gate kann zwischen 8 und 16 Spaltungskristalle an diesen Tagen ausgeben. Spaltungskristalle werden nicht per Gate-Entsendung fallen gelassen. 
+ 3.3 Der Unterschied zwischen den drei Gates 
+ Im Alpha-Gate sind die NPCs wie auf der normalen Map. Im Beta-Gate sind diese doppelt so stark (doppelter Schaden und doppelte HP/Schild) und im Gamma-Gate dreifach so hoch. Dementsprechend gibt es auch die doppelte (Beta) bzw. dreifache (Gamma) Belohnung!
+Von den Wellen und der Anzahl der NPCs her sind die drei Gates gleich. 
+ Zuletzt bearbeitet von Moderator: 11 November 2021 
+ Supportformular 
+ PN möglich auf Nachfrage im Spielerprofil ​
+ BA-RescueKnight , 
+ 4 Dezember 2013 
+ #4 
+ FLYING_RASTA , Ron-65 , Eatforyou und 4 anderen gefällt dies.
+ BA-RescueKnight 
+ Board Administrator 
+ Team Darkorbit 
+ 4. Das Galaxy Gate Delta 
+ Wenn Du ein Gate zusammengebaut hast, kannst Du in die Galaxie springen die das Gate verbirgt und Dich dort der Herausforderung stellen. Meisterst Du alle Herausforderungen einer Galaxie, erwarten dich fette Gewinne. Diese werden wenige Sekunden nach Abschuss des letzten NPCs im Gate gegeben. 
+ 4.1 Die Wellen 
+ Lordakia 5 Stück, Saimon 15 Stück, Mordon 10 Stück 
+ Streuner 11 Stück, StreuneR 1 Stück* 
+ Saimon 10 Stück, Mordon 5 Stück, Kristallin 15 Stück 
+ Lordakia 12 Stück, Lordakium 1 Stück* 
+ Boss Lordakia 10 Stück, Boss Saimon 6 Stück, Boss Mordon 8 Stück 
+ Sibelonit 15 Stück, Sibelon 1 Stück* 
+ Sibelonit 5 Stück, Kristallin 10 Stück Boss StreuneR 5 Stück 
+ Kristallin 10 Stück, Kristallon 1 Stück* 
+ Boss Lordakium 3 Stück*, Protegit 15 Stück 
+ DemaNeR 3 Stück 
+ *Boss NPC. Die anderen NPCs bleiben stets bei dem &quot;Boss&quot;, diese müssen zuerst geschossen werden, denn der &quot;Boss&quot; hat ein InstaShield, solange die anderen NPCs noch da sind. 
+ 4.2 Die Endbelohnung 
+ 9.000.000 Erfahrungspunkte 
+ 225.000 Ehre 
+ 45.000 Uridium 
+ 45.000 Schuss X4 Muniton (UCB-100) 
+ 5 Repgutscheine 
+ 450 Xenomit 
+ 450 Promeium 
+ 8 Spaltungskristalle 
+ 8 Logfiles 
+ 1 Kronos-Gateteil 
+ 1 Ring über dem Rangabzeichen 
+ 4 ASR 
+ Eine Chance auf 70-80 Diametrion und eine der Folgenden Rohstoffe: 
+ 8-14 Kyhalon 
+ 8-14 Tetrathrin 
+ 6-10 Bifenon 
+ Eine Chance auf das Hermes Drohnen-Design 
+ Tag der doppelten Galaxy Gate Belohnungen 
+ Erfahrungspunkte: 18.000.000 
+ Ehrepunkte: 450.000 
+ Uridium: 45.000 
+ UCB-100: 45.000 
+ Reparaturgutscheine: 10 
+ Logfiles: 16 
+ Xenomit: 900 
+ Promerium: 900 
+ Spaltungskristalle: 6 
+ Kronos-Teile: 1 
+ ASR: 4 
+ Eine Chance auf 140-160 Diametrion und eine der Folgenden Rohstoffe: 
+ 16-28 Kyhalon 
+ 16-28 Tetrathrin 
+ 12-20 Bifenon 
+ Am Tag der doppelten Galaxy Gate Belohnung wird das Hermes Drohnen Design NICHT!!! ausgeschüttet. (Nicht einmal 1x!) 
+ An Tagen der roten, blauen, Obsidian und Apocalypse Beute Boxen werden gelegentlich Spaltungskristalle fallen gelassen. Das Delta Gate kann zwischen 10 und 15 Spaltungskristalle an diesen Tagen ausgeben. Spaltungskristalle werden nicht per Gate-Entsendung fallen gelassen. 
+ LF4 Tag 
+Als zusätzliche Belohnung erhaltet ihr entweder 1 LF-4 oder 10.000 UCB-100
+Dies erhaltet ihr nicht über den Abschluss des Gates per Gate-Entsendung.
+ Tag der Erweiterten LF-4 
+Als zusätzliche Belohnung erhaltet ihr entweder 1 LF-4 Hyperplasmoid / Magmaspalter/ Paritätsspalter oder 10.000 UCB-100.
+Dies erhaltet ihr nicht über den Abschluss des Gates per Gate-Entsendung. 
+ 4.3 Besonderheiten des Delta-Gate 
+ Das Delta-Gate ist eine abwechslungsreiche Herausforderung für jeden Elite-Piloten. 
+ Zuletzt bearbeitet von Moderator: 11 November 2021 
+ Supportformular 
+ PN möglich auf Nachfrage im Spielerprofil ​
+ BA-RescueKnight , 
+ 4 Dezember 2013 
+ #5 
+ X-WarRock-X , FLYING_RASTA , Ron-65 und 2 anderen gefällt dies.
+ BA-RescueKnight 
+ Board Administrator 
+ Team Darkorbit 
+ 5. Das Galaxy Gate Epsilon 
+ Wenn Du ein Gate zusammengebaut hast, kannst Du in die Galaxie springen die das Gate verbirgt und Dich dort der Herausforderung stellen. Meisterst Du alle Herausforderungen einer Galaxie, erwarten dich fette Gewinne. Diese werden wenige Sekunden nach Abschuss des letzten NPCs im Gate gegeben.
+ 5.1 Die Wellen 
+ Vagrant 17 Stück 
+ Vagrant 12 Stück, Marauder 5 Stück 
+ Marauder 5 Stück, Outcast 9 Stück 
+ Marauder 5 Stück, Outcast 12 Stück 
+ Outcast 6 Stück, Corsair 9 Stück 
+ Corsair 4 Stück, Outcast 6 Stück, Hooligan 5 Stück 
+ Corsair 5 Stück, Hooligan 9 Stück 
+ Hooligan 9 Stück, Ravager 4 Stück 
+ Hooligan 5 Stück, Ravager 6 Stück, Convict 3 Stück 
+ Convict 4 Stück 
+ Ravager 5 Stück, Convict 6 Stück 
+ 5.2 Die Endbelohnung 
+ 5.000.000 EP 
+ 150.000 Ehre 
+ 25.000 Uridium 
+ 20.000 Schuss x4 Munition (UCB-100) 
+ 10 Logfiles 
+ 5 Beute Keys 
+ 1 Kronos-Gateteil 
+ 1 Ring über dem Rangabzeichen 
+ 4 ASR 
+ Eine Chance auf 70-80 Diametrion und eine der Folgenden Rohstoffe: 
+ 8-14 Kyhalon 
+ 8-14 Tetrathrin 
+ 6-10 Bifenon 
+ Chance auf einen LF-4-Laser 
+ Tag der doppelten Galaxy Gate Belohnung 
+ 10.000.000 EP 
+ 300.000 Ehre 
+ 25.000 Uridium 
+ 20.000 Schuss x4 Munition (UCB-100) 
+ 20 Logfiles 
+ 10 Beute Keys 
+ 1 Kronos-Gateteil 
+ 1 Ring über dem Rangabzeichen 
+ 4 ASR 
+ Eine Chance auf 140-160 Diametrion und eine der Folgenden Rohstoffe: 
+ 16-28 Kyhalon 
+ 16-28 Tetrathrin 
+ 12-20 Bifenon 
+ Chance auf zwei LF-4-Laser 
+ Bitte beachtet: Beim ersten Manuellen Abschluss des Gates erhaltet ihr den LF-4 zu 100%.
+Bei folgenden Abschlüssen habt ihr eine 25%ige Chance unabhängig davon, ob ihr das Gate manuell oder über die Gate-Entsendung abschließt. 
+ An Tagen der roten, blauen, Obsidian und Apocalypse Beute Boxen werden gelegentlich Spaltungskristalle fallen gelassen. Das Epsilon Gate kann zwischen 5 und 10 Spaltungskristalle an diesen Tagen ausgeben. Spaltungskristalle werden nicht per Gate-Entsendung fallen gelassen. 
+ LF4 Tag 
+Als zusätzliche Belohnung erhaltet ihr entweder 1 LF-4 oder 10.000 UCB-100
+Dies erhaltet ihr nicht über den Abschluss des Gates per Gate-Entsendung.
+ Tag der Erweiterten LF-4 
+Als zusätzliche Belohnung erhaltet ihr entweder 1 LF-4 Hyperplasmoid / Magmaspalter/ Paritätsspalter oder 10.000 UCB-100.
+Dies erhaltet ihr nicht über den Abschluss des Gates per Gate-Entsendung. 
+ 5.3 Besonderheiten des Epsilon-Gate 
+ Im diesen Gate gibt es - im Gegensatz zu den anderen - nicht die konventionellen Aliens, die man von dennormalen Karten gewohnt ist, sondern gänzlich andere. Man muß seine Strategie entsprechend anpassen, denn diese NPCs sind ebenso wenig freundlich zu Eindringlingen, wie aus den anderen Gates bekannt. 
+ Zuletzt bearbeitet von Moderator: 11 November 2021 
+ Supportformular 
+ PN möglich auf Nachfrage im Spielerprofil ​
+ BA-RescueKnight , 
+ 4 Dezember 2013 
+ #6 
+ FLYING_RASTA , Mate280 , Ron-65 und 2 anderen gefällt dies.
+ BA-RescueKnight 
+ Board Administrator 
+ Team Darkorbit 
+ 6. Das Galaxy Gate Zeta 
+ Wenn Du ein Gate zusammengebaut hast, kannst Du in die Galaxie springen die das Gate verbirgt und Dich dort der Herausforderung stellen. Meisterst Du alle Herausforderungen einer Galaxie, erwarten dich fette Gewinne. Diese werden wenige Sekunden nach Abschuss des letzten NPCs im Gate gegeben. 
+ 6.1 Die Wellen 
+ Infernal 10 Stück 
+ Infernal 9 Stück, Scorcher 3 Stück 
+ Infernal 5 Stück, Scorcher 7 Stück 
+ Scorcher 9 Stück 
+ Scorcher 8 Stück, Melter 2 Melter 
+ Scorcher 3 Stück, Melter 6 Stück 
+ Melter 10 Stück 
+ Melter 13 Stück 
+ Infernal 6 Stück, Devourer 1* 
+ Devourer 1** 
+ Infernal 2 Stück 
+ Scorcher 10 Stück 
+ Streuner 2 Stück, StreuneR 2 Stück, Boss Streuner 2 Stück, ÜberStreuner 2 Stück, ÜberStreuneR 2 Stück 
+ Lordakia 3 Stück, Boss Lordakia 3 Stück, ÜberLordakia 3 Stück 
+ Saimon 3 Stück, Boss Saimon 3 Stück, ÜberSaimon 3 Stück 
+ Sibelonit 3 Stück, Boss Sibelonit 3 Stück, ÜberSibelonit 3 Stück 
+ Kristallin 3 Stück, Boss Kristallin 3 Stück, ÜberKristallin 3 Stück 
+ *Boss NPC. Die anderen NPCs bleiben stets bei dem &quot;Boss&quot;, diese müssen zuerst geschossen werden, denn der &quot;Boss&quot; hat ein InstaShield, solange die anderen NPCs noch da sind.
+**Boss NPC mit Insta-Shield, solange es von anderen Aliens umgeben ist. Dieses Alien spawnt in regelmäßigen Abständen Wellen verschiedener NPCs, die es zu eliminieren gillt. 
+ 6.2 Die Endbelohnung 
+ 6.000.000 EP 
+ 200.000 Ehre 
+ 35.000 Uridium 
+ 25.000 Schuß x4 Munition (UCB-100) 
+ 25 Beute Keys 
+ 50 Logfiles 
+ 1 Kronos-Gateteil 
+ 1 Ring über dem Rangabzeichen 
+ 3 ASR 
+ Eine Chance auf 70-80 Diametrion und eine der Folgenden Rohstoffe: 
+ 8-14 Kyhalon 
+ 8-14 Tetrathrin 
+ 6-10 Bifenon 
+ Chance (45%) auf ein Havoc-Drohnendesign
+ Hinweis: 
+ Beim ersten Abschließen des Zeta Gates gibt es eine 100% Chance auf ein Havoc-Drohnendesign. 
+ Danach gilt die Chance von 45% auf ein Havoc-Drohnendesign für das manuelle Abschließen sowie das Abschließen des Gates per Gate-Entsendung. 
+ Tag der doppelten Galaxy Gate Belohnung 
+ 12.000.000 EP 
+ 400.000 Ehre 
+ 35.000 Uridium 
+ 25.000 Schuß x4 Munition (UCB-100) 
+ 50 Beute Keys 
+ 100 Logfiles 
+ 1 Kronos-Gateteil 
+ 1 Ring über dem Rangabzeichen 
+ 3 ASR 
+ Eine Chance auf 140-160 Diametrion und eine der Folgenden Rohstoffe: 
+ 16-28 Kyhalon 
+ 16-28 Tetrathrin 
+ 12-20 Bifenon 
+ Chance (45%) auf ein Havoc-Drohnendesign
+ Hinweis: 
+ Am Tag der doppelten Galaxy Gate Belohnungen werden beim ersten Abschluss damit 2 Havoc-Drohnendesigns mit 100% Chance ausgeschüttet. 
+ Danach gilt die Chance von 45% auf ein Havoc-Drohnendesign für das manuelle Abschließen sowie das Abschließen des Gates per Gate-Entsendung. 
+ An Tagen der roten, blauen, Obsidian und Apocalypse Beute Boxen werden gelegentlich Spaltungskristalle fallen gelassen. Das Zeta Gate kann zwischen 10 und 15 Spaltungskristalle an diesen Tagen ausgeben. Spaltungskristalle werden nicht per Gate-Entsendung fallen gelassen. 
+ 6.3 Besonderheiten des Zeta-Gate 
+ Das Zeta-Gate wird von den seltensten NPCs bewohnt, die man nirgendwo sonst findet. Diese sind sehr aggressiv und versuchen alles, um ihre Galaxie gegen feindliche Schiffe zu verteidigen. 
+ Zuletzt bearbeitet von Moderator: 15 Mai 2022 
+ Supportformular 
+ PN möglich auf Nachfrage im Spielerprofil ​
+ BA-RescueKnight , 
+ 4 Dezember 2013 
+ #7 
+ FLYING_RASTA , Ron-65 , Darktheus und 3 anderen gefällt dies.
+ BA-RescueKnight 
+ Board Administrator 
+ Team Darkorbit 
+ 7. Das Galaxy Gate Kappa 
+ Wenn Du ein Gate zusammengebaut hast, kannst Du in die Galaxie springen die das Gate verbirgt und Dich dort der Herausforderung stellen. Meisterst Du alle Herausforderungen einer Galaxie, erwarten dich fette Gewinne. Diese werden wenige Sekunden nach Abschuss des letzten NPCs im Gate gegeben. 
+ 7.1 Die Wellen 
+ Streuner 10 Stück, Vagrant 10 Stück, Infernal 10 Stück 
+ Marauder 6 Stück, Scorcher 7 Stück, Boss Mordon 8 Stück 
+ Outcast 6 Stück, Devolarium 6 Stück, Icy 3 Stück 
+ Boss Sibelonit 5 Stück, Corsair 5 Stück, Scorcher 5 Stück 
+ Hooligan 4 Stück, Kristallin 5 Stück, Melter 4 Stück 
+ Interceptor 8 Stück, Barracuda 6 Stück, Annihilator 3 Stück 
+ Boss Lordakium 6 Stück, Boss Sibelon 2 Stück, Protegit 8 Stück 
+ Kucurbium 3 Stück, Kucurbium 3 Stück, Über Saimon 8 Stück 
+ Convict 6 Stück, Boss Kristallin 5 Stück, DemaNeR 1 Stück 
+ Boss Kucurbium 1 Stück 
+ Century Falcon 1 Stück 
+ 7.2 Die Endbelohnung 
+ 9.000.000 EP 
+ 325.000 Ehre 
+ 15.000 Uridium 
+ 30.000 UCB-100 
+ 10 Logfiles 
+ 5 Beute Keys 
+ 1 Kronos-Gateteil 
+ 4 ASR 
+ Eine Chance auf 70-80 Diametrion und eine der Folgenden Rohstoffe: 
+ 8-14 Kyhalon 
+ 8-14 Tetrathrin 
+ 6-10 Bifenon 
+ zusätzlich 25%-Chance auf : 
+ das neue Hercules-Drohnen-Design * 
+ einen LF-4 Laser 
+ einen Multi-Booster für 5 Stunden 
+ leider auch eine Niete und gar nichts von den drei Zusatzboni 
+ *Die Chance auf ein Hercules-Drohnen-Design wurde auf 37,5% erhöht
+ ​
+ Tag der doppelten Galaxy Gate Belohnung 
+ 18.000.000 EP 
+ 650.000 Ehre 
+ 15.000 Uridium 
+ 30.000 UCB-100 
+ 20 Logfiles 
+ 10 Beute Keys 
+ 1 Kronos-Gateteil 
+ 4 ASR 
+ Eine Chance auf 140-160 Diametrion und eine der Folgenden Rohstoffe: 
+ 16-28 Kyhalon 
+ 16-28 Tetrathrin 
+ 12-20 Bifenon 
+ zusätzlich 25%-Chance auf : 
+ das neue Hercules-Drohnen-Design * 
+ einen LF-4 Laser 
+ einen Multi-Booster für 5 Stunden 
+ leider auch eine Niete und gar nichts von den drei Zusatzboni 
+ *Die Chance auf ein Hercules-Drohnen-Design wurde auf 37,5% erhöht ​
+ An Tagen der roten, blauen, Obsidian und Apocalypse Beute Boxen werden gelegentlich Spaltungskristalle fallen gelassen. Das Kappa Gate kann zwischen 10 und 15 Spaltungskristalle an diesen Tagen ausgeben. Spaltungskristalle werden nicht per Gate-Entsendung fallen gelassen. 
+ 7.3 Besonderheiten des Kappa-Gates 
+ Im Kappa-Gate findet man Aliens vor, die zum Teil nur zu besonderen Events ihre Höhle verlassen. Außerdem hast du neben der regulären Endbelohnung am Ende, die Chance auf ein exklusives Extra (Hercules-Design, LF-4-Laser oder Multi-Booster). 
+ Zuletzt bearbeitet von Moderator: 15 Mai 2022 
+ Supportformular 
+ PN möglich auf Nachfrage im Spielerprofil ​
+ BA-RescueKnight , 
+ 4 Dezember 2013 
+ #8 
+ FLYING_RASTA , Ron-65 , Orbit-Bomber und 1 weiteren Person gefällt dies.
+ BA-RescueKnight 
+ Board Administrator 
+ Team Darkorbit 
+ 8. Das Galaxy Gate Lambda 
+ Wenn Du ein Gate zusammengebaut hast, kannst Du in die Galaxie springen die das Gate verbirgt und Dich dort der Herausforderung stellen. Meisterst Du alle Herausforderungen einer Galaxie, erwarten dich fette Gewinne. Diese werden wenige Sekunden nach Abschuss des letzten NPCs im Gate gegeben. 
+ 8.1 Die Wellen 
+ Boss Streuner 10 Stück, Boss Lordakia 10 Stück, Boss Lordakia 10 Stück 
+ Boss Mordon 10 Stück, Boss Saimon 7 Stück, Boss Saimon 7 Stück 
+ Boss Devolarium 4 Stück, Boss Sibelonit 3 Stück, Boss Sibelonit 3 Stück 
+ Boss Sibelonit 5 Stück, Boss Sibelonit 5 Stück, Boss Sibelon 1 Stück 
+ Boss Lordakia 9 Stück, Boss Lordakium 3 Stück 
+ Boss Kristallin 11 Stück, Boss Kristallon 1 Stück 
+ Boss Kristallon 2 Stück, Boss Kristallin 10 Stück, Boss Kristallin 10 Stück 
+ 8.2 Die Endbelohnung 
+ 2.750.000 EP 
+ 100.000 Ehre 
+ 15.000 Uridium 
+ 10.000 UCB-100 
+ 3 Logfiles 
+ 5 Beute Keys 
+ 1 Kronos-Gateteil 
+ 4 ASR 
+ Eine Chance auf 70-80 Diametrion und eine der Folgenden Rohstoffe: 
+ 8-14 Kyhalon 
+ 8-14 Tetrathrin 
+ 6-10 Bifenon 
+ Tag der doppelten Galaxy Gate Belohnung 
+ 5.500.000 EP 
+ 200.000 Ehre 
+ 15.000 Uridium 
+ 10.000 UCB-100 
+ 6 Logfiles 
+ 10 Beute Keys 
+ 1 Kronos-Gateteil 
+ 4 ASR 
+ Eine Chance auf 140-160 Diametrion und eine der Folgenden Rohstoffe: 
+ 16-28 Kyhalon 
+ 16-28 Tetrathrin 
+ 12-20 Bifenon 
+An Tagen der roten, blauen, Obsidian und Apocalypse Beute Boxen werden gelegentlich Spaltungskristalle fallen gelassen. Das Lambda Gate kann zwischen 5 und 10 Spaltungskristalle an diesen Tagen ausgeben. Spaltungskristalle werden nicht per Gate-Entsendung fallen gelassen. 
+ LF4 Tag 
+Als zusätzliche Belohnung erhaltet ihr entweder 1 LF-4 oder 10.000 UCB-100
+Dies erhaltet ihr nicht über den Abschluss des Gates per Gate-Entsendung.
+ Tag der Erweiterten LF-4 
+Als zusätzliche Belohnung erhaltet ihr entweder 1 LF-4 Hyperplasmoid / Magmaspalter/ Paritätsspalter oder 10.000 UCB-100.
+Dies erhaltet ihr nicht über den Abschluss des Gates per Gate-Entsendung. 
+8.3 Besonderheiten des Lambda-Gates 
+ Das Lambda-Gate ist eine Galaxie in die man ohne großen Aufwand gelangen kann. Keine andere Galaxie erreicht man schneller, dafür erwartet einen dort keine normalen Aliens, sondern nur ihre stärkeren Boss-Kollegen. 
+ Zuletzt bearbeitet von Moderator: 11 November 2021 
+ Supportformular 
+ PN möglich auf Nachfrage im Spielerprofil ​
+ BA-RescueKnight , 
+ 4 Dezember 2013 
+ #9 
+ FLYING_RASTA , Mate280 , Ron-65 und 2 anderen gefällt dies.
+ BA-RescueKnight 
+ Board Administrator 
+ Team Darkorbit 
+ 9. Das Galaxy Gate Kronos 
+ Wenn Du ein Gate zusammengebaut hast, kannst Du in die Galaxie springen die das Gate verbirgt und Dich dort der Herausforderung stellen. Meisterst Du alle Herausforderungen einer Galaxie, erwarten dich fette Gewinne. Diese werden wenige Sekunden nach Abschuss des letzten NPCs im Gate gegeben. 
+ 9.1 Die Wellen 
+ Phönix 10 Stück, Yamato 15 Stück, Yamato 15 Stück 
+ Defcom 10 Stück, Defcom 10 Stück, Liberator 15 Stück, Liberator 15 Stück 
+ Nostromo 10 Stück, Piranha 15 Stück, Piranha 15 Stück, Nostromo 10 Stück 
+ Bigboy 10 Stück, Bigboy 5 Stück, Bigboy 10 Stück, Bigboy 5 Stück 
+ Vengeance 5 Stück, Vengeance 5 Stück, Vengeance 5 Stück, Goliath 8 Stück 
+ Leonov 5 Stück, Leonov 5 Stück, Leonov 5 Stück, Leonov 5 Stück 
+ Venom-Goliath* 5 Stück, Sentinel-Goliath* 5 Stück, Spectrum-Goliath* 5 Stück, Diminisher-Goliath* 5 Stück, Solace-Goliath* 5 Stück 
+ Revenge-Vengeance 5 Stück, Revenge-Vengeance 5 Stück, Enforcer-Goliath 5 Stück, Enforcer-Goliath 5 Stück, Enforcer-Goliath 5 Stück 
+ Lightning-Vengeance* 6 Stück, Avenger-Vengeance 6 Stück, Lightning-Vengeance* 6 Stück, Avenger-Vengeance 6 Stück, Lightning-Vengeance* 6 Stück 
+ Bastion-Goliath 6 Stück, Enforcer-Goliath 6 Stück, Bastion-Goliath 6 Stück 
+ Spearhead 10 Stück, Citadel 5 Stück, Aegis 8 Stück, Goliath 10 Stück 
+ Crimson-Goliath 8 Stück, Jade-Goliath 8 Stück, Sapphire-Goliath 8 Stück 
+ Kopie des Spielers-Schiffes* 1 Stück, Iris-Drohne 8 Stück 
+ *Schiffe ohne Spezialfähigkeiten, lediglich optische Übereinstimmung mit Schiffen anderer Firmen. 
+ 9.2 Die Endbelohnung 
+ 12.000.000 EP 
+ 450.000 Ehre 
+ 25.000 Uridium 
+ 5.000 RSB-75 
+ 25.000 UCB-100 
+ 500 UBR 100 Raketen 
+ 250 Extra Energie 
+ 15 Logfiles 
+ 10 grüne Beutekeys 
+ Eine Chance auf 70-80 Diametrion und eine der Folgenden Rohstoffe: 
+ 8-14 Kyhalon 
+ 8-14 Tetrathrin 
+ 6-10 Bifenon 
+ Chance auf das exklusive Saturn-Design für den Goliath. 
+ Tag der doppelten Galaxy Gate Belohnung 
+ 24.000.000 EP 
+ 900.000 Ehre 
+ 25.000 Uridium 
+ 10.000 RSB-75 
+ 25.000 UCB-100 
+ 1000 UBR 100 Raketen 
+ 500 Extra Energie 
+ 30 Logfiles 
+ 20 grüne Beutekeys 
+ Eine Chance auf 140-160 Diametrion und eine der Folgenden Rohstoffe: 
+ 16-28 Kyhalon 
+ 16-28 Tetrathrin 
+ 12-20 Bifenon 
+ Chance auf das exklusive Saturn-Design für den Goliath. 
+An Tagen der roten, blauen, Obsidian und Apocalypse Beute Boxen werden gelegentlich Spaltungskristalle fallen gelassen. Das Kronos Gate kann zwischen 25 und 30 Spaltungskristalle an diesen Tagen ausgeben. Spaltungskristalle werden nicht per Gate-Entsendung fallen gelassen. 
+9.3 Besonderheiten des Kronos-Gates 
+ Im Kronos Gate erwarten dich gegnerische Schiffe der geheimnisvollen Saturn Firma. So geheimnisvoll die Firma ist, so besonders ist auch der Weg in jene Galaxie. Um Teile für das Gate zu bekommen musst du die bekannten Galaxy Gates (Alpha bis Lambda) durchspielen. Jedes dieser Gates gibt bei erfolgreichen durchspielen Teile für das Kronos Gate. So kannst du es Stück für Stück zusammenbauen.
+Wissenschaftler der Firmen haben es bereits geschafft die Zusammensetzung des Kronos-Gates zu analysieren und errechnet wieoft man andere Gates absolvieren muß, um das geheimnisvolle Kronos-Gate aufstellen zu können.
+Die Auswertung der Daten ergab folgende Ergebnisse: 
+ Alpha 4 
+ Beta 3 
+ Gamma 1 
+ Delta 1 
+ Epsilon 4 
+ Zeta 1 
+ Kappa 2 
+ Lambda 5 
+ Zuletzt bearbeitet von Moderator: 11 November 2021 
+ Supportformular 
+ PN möglich auf Nachfrage im Spielerprofil ​
+ BA-RescueKnight , 
+ 4 Dezember 2013 
+ #10 
+ FLYING_RASTA , Ron-65 , Razorskin und 1 weiteren Person gefällt dies.
+ BA-RescueKnight 
+ Board Administrator 
+ Team Darkorbit 
+ 10. Das Hades (Gruppen-)Gate 
+ Wenn Du ein Gate zusammengebaut hast, kannst Du in die Galaxie springen die das Gate verbirgt und Dich dort der Herausforderung stellen. Meisterst Du alle Herausforderungen einer Galaxie, erwarten dich fette Gewinne. Diese werden wenige Sekunden nach Abschuss des letzten NPCs im Gate gegeben. 
+ 10.1 Allgemeine Informationen 
+ Das Hades-Gate befindet sich in der gefährlichen &quot;Hades Nebula&quot;. Es ist ein Galaxygate, das ihr nur in einer Gruppe erledigen könnt. Es stellt euch vor eine neue Herausforderung und bietet epische Bosskämpfe. 
+ Wie wird das Hades-Gate aufgebaut? 
+Das Hades-Gate muss wie jedes andere Galaxygate im GG-Generator zusammengebaut werden. Es besteht aus 45 Teilen. Jeder Spieler, der am Hades-Gate teinehmen möchte, muss dieses im GG-Generator aufgebaut haben. 
+ Wie ist das Gate aufgebaut und gibt es Einschränkungen während man im Gate ist? 
+ Das Gate hat 3 Stufen, wobei jede Stufe mit einem Kampf gegen einen Boss endet. 
+ Das Gate kann nur in einer Gruppe von mind. 4 und max. 8 Spacepiloten gespielt werden. Alle Mitglieder der Gruppe müssen das Hades-Gate zusammengebaut und auf die Map gesetzt haben. 
+ Die Spieler des Gates können sich nicht gegenseitig angreifen. Es ist jedoch möglich, die Fähigkeiten der anderen Spieler zu nutzen, genau wie auf den normalen Maps. 
+ Wie komme ich rein in das Hades-Gate mit meiner Gruppe? 
+ Das Gate wird wie jedes andere Galaxygate auf der x-1 aufgestellt. 
+ Erst wenn die Gruppe mindestens 4 Spieler hat, kann das Gate betreten werden. 
+ Das Gate startet, sobald alle Spieler der Gruppe (mind. 4 Spieler) ihre Schiffe in die spezielle Aktivierungszone in der Mitte der Map gesetzt haben. 
+ Wird ein User in die Gruppe eingeladen, nachdem das Gate gestartet wurde, so kann er über das Jumpgate auf der x-1 in das Gate springen. 
+ Der Fortschritt des Gruppen-Leaders bestimmt im allgemeinen welchen Gate-Abschnitt (Abschnitt 1, 2 oder 3) das Hades Gate für die Gruppe hat, auch wenn er nicht der erste Spieler aus seiner Gruppe ist, der das Gate betritt. 
+ Wenn ein Spieler, im Vergleich zur restlichen Gruppe, in einem anderen Gate Abschnitt ist, dann kann er das Gate nicht betreten. 
+ Für den Fall, dass ein Hades Gate betreten werden soll, welches an dem Punkt vor der finalen Belohnung steht (nachdem der letzte Boss gekillt wurde), kann der neue Spieler das Gate nicht betreten. 
+ Wie kann ich das Hades-Gate verlassen? 
+ Verlässt ein User die Gruppe oder wird aus dieser gekickt bevor das Gate gestartet wurde, wird er sofort auf die x-1 gesetzt. 
+ Verlässt ein User die Gruppe oder wird er aus der Gruppe gekickt, nachdem das Gate gestartet wurde, so hat dies keine unmittelbaren Auswirkungen. Der Spieler bleibt im Gate. Sobald er jedoch zerstört wurde, wird er auf die x-1 gesetzt. 
+ Wenn ein User die Map vor Beendigung einer Stufe verlassen möchte, so kann er dies nur über den Killscreen „Reparatur auf x-1“ tun. Er muss sich also zerstören lassen. 
+ Was passiert bei Zerstörung eines Spielers im Hades-Gate? 
+Wird ein User im Hades-Gate zerstört und hat noch verbleibende Leben, so erhält er im Killscreen die Option, kostenlos wieder in das Hades-Gate zu gelangen.
+Nach einem 30-Sekunden-Countdown erhält er die Option, das Gate zu verlassen und auf der x-1 zu reparieren. Beide Optionen kosten ein Leben im Gate. 
+ Welche Belohnungen erwarten mich im Hades-Gate? 
+Alle User im Gate erhalten den gleichen Anteil an der Belohnung für die Zerstörung der NPCs im Hades-Gate. 
+ 10.2 Die Wellen 
+• Sibelon 30 Stück
+ Boss Sibelon 20 Stück
+ Über Sibelon 4 Stück
+ Emperor Sibelon 1 Stück
+• Lordakium 30 Stück
+ Boss Lordakium 20 Stück
+ Über Lordakium 4 Stück
+ Emperor Lordakium 1 Stück
+• Kristallon 30 Stück
+ Boss Kristallon 20 Stück
+ Über Kristallon 4 Stück
+ Emperor Kristallon 1 Stück
+In der 1. Welle flieht der Emperor Sibelon zu Bojen, sobald sein Schild weg ist. Um ihn nicht sofort von einer Boje zur nächsten Boje fliehen zu lassen, muss man den Cooldown abwarten und die Bojen in Ruhe lassen.
+Es taucht in der 2. Welle zunächst 1 Emperor Lordakium auf. Sobald der Emperor es in die Strahlenzone schafft zu fliegen oder auf bestimmte Hitpoints geschwächt wurde, erscheint erneut der 1. Emperor mit jeweils 2 Trugbildern.
+Bei der 3. Welle ist darauf zu achten, nur mit Spielern auf einer Seite den Emperor Kristallon zu angreifen, die das gleiche Vorzeichen über ihrem Schiff stehen haben und sich von den geschmissenen Bomben nicht zerstören zu lassen. Als Beispiel: - links + rechts ​
+10.3 Die Endbelohnung 
+ Jeder User, der mit im Gate war , erhält folgende Belohnungen: 
+ 20.000 Uridium 
+ 15.000 UCB-100 
+ 200.000 Ehre 
+ 4.000.000 Erfahrungspunkte 
+ 8 Log-Files 
+ 4 Beutekeys 
+ Chance auf einen LF-4 Laser für jedes Gruppenmitglied 
+ Titel &quot;Emperor of Hades&quot; 
+ Tag der doppelten Galaxy Gate Belohnung 
+ 20.000 Uridium 
+ 15.000 UCB-100 
+ 400.000 Ehre 
+ 8.000.000 Erfahrungspunkte 
+ 16 Log-Files 
+ 8 Beutekeys 
+ Chance auf einen LF-4 Laser für jedes Gruppenmitglied 
+ Titel &quot;Emperor of Hades&quot; 
+ Zuletzt bearbeitet von Moderator: 9 Juli 2021 
+ Supportformular 
+ PN möglich auf Nachfrage im Spielerprofil ​
+ BA-RescueKnight , 
+ 4 Dezember 2013 
+ #11 
+ Ron-65 und Оrbiter0815 gefällt dies.
+ BA-RescueKnight 
+ Board Administrator 
+ Team Darkorbit 
+ 11. Das Kuiper-Gate 
+ Im Allgemeinen funktioniert dieses GG gleich wie die normalen GGs. Es muss mit Extra-Energie oder Uri gebaut werden und besteht aus 100 Teilen. Das Kuiper Gate bietet 3 neue Streuner-Typen und ein Wächter-Geschütz. Ihr müsst Euch durch 5 Maps kämpfen. 
+ Map 1 
+ 20 Streuner, 5 StreuneR, 1 Streuner Rocketeer ( Achtung: Schießt mit Raketen ! ) 
+ Map 2 
+ 10 Boss Saimon, 10 UberStreuneR, 1 Streuner Rocketeer
+2 Streuner Soldier
+10 Streuner Soldier, 15 Saimon 
+ Map 3 
+ 6 Streuner Soldier, 1 Streuner Specialist ( Heiler Schiff )
+10 Streuner Soldier, 1 Streuner Rocketeer, 4 Boss Sibelon
+11 Streuner Soldier, 2 Streuner Specialist
+8 Streuner Soldier, 2 Streuner Specialist, 1 Streuner Rocketeer 
+ Map 4 
+ 2 Streuner Soldier, 2 Streuner Rocketeer, 4 Streuner Turret ( Achtung: Stört deine Schiffssteuerung ! )
+10 Boss Saimon, 2 Uber Sibelon, 1 Streuner Rocketeer,
+3 Streuner Soldier, 1 Streuner Specialist
+3 Streuner Soldier, 1 Streuner Specialist
+2 Streuner Soldier, 1 Streuner Specialist, 1 Streuner Rocketeer
+10 Streuner Soldier, 2 Streuner Specialist 
+ Map 5 
+ 1 Streuner Rocketeer
+2 Streuner Rocketeer
+6 Streuner Rocketeer
+1 Streuner Emporer, 5 Streuner Rocketeer, 5 Streuner Specialist
+1 Streuner Turret, 2 Uber Sibelon, 34 Streuner Soldier 
+ Belohnungen:
+ 15.000 Uridium 
+ 150.000 Ehre 
+ 2.000.000 XP 
+ 5 Beute-Keys 
+ 6 ASR 
+ Eine Chance auf 70-80 Diametrion und eine der Folgenden Rohstoffe: 
+ 8-14 Kyhalon 
+ 8-14 Tetrathrin 
+ 6-10 Bifenon 
+ Achievement für den Abschluß des Gates: Ich sehe tote Streuner (Gold) CHANCE auf eines der folgenden Schiffe (ersatzweise 10k Uri wenn Schiff bereits vorhanden im Account): 
+ Aegis Elite 
+ Citadel Elite 
+ Spearhead Elite 
+ Goliath Venom 
+ Vengeance Pusat 
+ Tag der doppelten Galaxy Gate Belohnung 
+ 15.000 Uridium 
+ 300.000 Ehre 
+ 4.000.000 XP 
+ 10 Beute-Keys 
+ 6 ASR 
+ Eine Chance auf 140-160 Diametrion und eine der Folgenden Rohstoffe: 
+ 16-28 Kyhalon 
+ 16-28 Tetrathrin 
+ 12-20 Bifenon 
+ Achievement für den Abschluß des Gates: Ich sehe tote Streuner (Gold) CHANCE auf eines der folgenden Schiffe (ersatzweise 10k Uri wenn Schiff bereits vorhanden im Account): 
+ Aegis Elite 
+ Citadel Elite 
+ Spearhead Elite 
+ Goliath Venom 
+ Vengeance Pusat 
+ Hinweis/Präzisierung : Falls die Möglichkeit eintritt, das KEIN Schiff ausgeschüttet wird als Belohnung, dann gibt es auch kein Uridium als Ersatz! 
+An Tagen der roten, blauen, Obsidian und Apocalypse Beute Boxen werden gelegentlich Spaltungskristalle fallen gelassen. Das Kuiper Gate kann zwischen 25 und 30 Spaltungskristalle an diesen Tagen ausgeben. Spaltungskristalle werden nicht per Gate-Entsendung fallen gelassen.
+ LF4 Tag 
+Als zusätzliche Belohnung erhaltet ihr entweder 1 LF-4 oder 10.000 UCB-100
+Dies erhaltet ihr nicht über den Abschluss des Gates per Gate-Entsendung.
+ Tag der Erweiterten LF-4 
+Als zusätzliche Belohnung erhaltet ihr entweder 1 LF-4 Hyperplasmoid / Magmaspalter/ Paritätsspalter oder 10.000 UCB-100.
+Dies erhaltet ihr nicht über den Abschluss des Gates per Gate-Entsendung.
+ Zuletzt bearbeitet von Moderator: 11 November 2021 
+ Supportformular 
+ PN möglich auf Nachfrage im Spielerprofil ​
+ BA-RescueKnight , 
+ 21 November 2015 
+ #12 
+ FLYING_RASTA , _ArchNemesis_ , ##SPEEDY## und 1 weiteren Person gefällt dies.
+ Zeige ignorierte Inhalte 
+ Status des Themas: 
+ Es sind keine weiteren Antworten möglich. 
+ Benutzername oder E-Mail-Adresse: 
+ Besitzt du schon ein Benutzerkonto? 
+ Nein, erstelle jetzt ein Benutzerkonto. 
+ Ja, mein Passwort ist: 
+ Hast du dein Passwort vergessen? 
+ Angemeldet bleiben 
+ DarkOrbit DE 
+ Foren 
+ &gt; 
+ Hilfe 
+ &gt; 
+ Alles rund um das Spiel 
+ &gt; 
+ FAQs / Glossar 
+ &gt; 
+ Foren 
+ Foren
+ Direktauswahl
+ Letzte Beiträge 
+ Kalender 
+ Menu 
+ Sprache 
+ Deutsch 
+ Kontakt 
+ Hilfe 
+ Startseite 
+ RSS-Feed 
+ Nutzungsbedingungen 
+ Privatsphäre 
+ Forum software by XenForo &reg; &copy; 2010-2019 XenForo Ltd. Forum software by XenForo&trade; &copy;2010-2015 XenForo Ltd. 
+ XenForo Add-ons by Brivium &trade; &copy; 2012-2026 Brivium LLC.

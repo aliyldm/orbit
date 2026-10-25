@@ -1,0 +1,107 @@
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="battlePass"/>
+    </libraries>
+    <textstyle name="armory_unlock_time_style"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="12"
+               autoSize="right"
+               embedFonts="false" fontName="Verdana" bold="false" align="right"/>
+
+    <template name="amoryUnlock">
+        <container name="body"
+                   autoSizeWidth="true" autoSizeHeight="true" autoWidthMode="parent" autoHeightMode="parent">
+            <!--  text="localize:ammunition_laser_ucb-100" -->
+            <itemlist name="tabsItemlist"
+                      width="360" height="17"
+                      alignX="right" marginRight="-7"
+                      layout="horizontal" itemGap="0"
+                      mouseEnabled="true" mouseChildren="true"
+                      cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+                <itemrenderer width="120" height="17" autoSizeWidth="false"
+                              mouseEnabled="true" mouseChildren="true">
+                    <button name="tab"
+                            autoSizeWidth="true" autoSizeHeight="true"
+                            mouseEnabled="true" mouseChildren="true"
+                            registeredSkinName="commonui_tabbarbutton"/>
+                    <button name="tab_selected" visible="false"
+                            autoSizeWidth="true" autoSizeHeight="true"
+                            mouseEnabled="true" mouseChildren="true"
+                            registeredSkinName="commonui_tabbarbutton"/>
+                    <label name="tabLabel" text="?"
+                           autoSizeWidth="true" height="15" alignY="center"
+                           mouseEnabled="false" mouseChildren="false"
+                           registeredTextStyleName="commonui_tabbar_center"
+                           registeredSkinName="commonui_default_label"/>
+
+                    <coreponent
+                            name="redDot"
+                            width="8"
+                            height="8"
+                            autoSizeWidth="false"
+                            autoSizeHeight="false"
+                            alignX="right"
+                            alignY="center"
+                            marginX="4"
+
+                    />
+                    <!--                    registeredSkinName="commonui_darklayer" -->
+                </itemrenderer>
+            </itemlist>
+
+            <button name="test_button_lef"
+                    width="30" height="30" registeredSkinName="commonui_spinbox_button_arrow_lef"
+                    visible="true"/>
+
+            <container name="cardsContainer"
+                       autoSizeWidth="false" autoSizeHeight="false"
+                       width="600" height="390"
+                       alignX="center"
+                       alignY="top"
+                       marginTop="50"/>
+            <!--                   registeredSkinName="commonui_darklayer" -->
+
+            <button name="test_button_right"
+                    alignX="left"
+                    marginLeft="80"
+
+                    width="30" height="30" registeredSkinName="commonui_spinbox_button_arrow_right"
+                    visible="true"/>
+
+            <button name="explore01_btn"
+                    text="Explore"
+                    textMarginY="1"
+                    width="260" height="40"
+                    autoSizeWidth="false" autoSizeHeight="false"
+                    alignX="left" alignY="bottom"
+                    marginLeft="90" marginBottom="90"
+                    registeredSkinName="commonui_scale9_button_blue" visible="true"/>
+
+            <button name="explore10_btn"
+                    text="Explore"
+                    textMarginY="1"
+                    width="260" height="40"
+                    autoSizeWidth="false" autoSizeHeight="false"
+                    alignX="right" alignY="bottom"
+                    marginRight="90" marginBottom="90"
+                    registeredSkinName="commonui_scale9_button_green" visible="true"/>
+
+            <label name="time_label" text="?"
+                   width="200" height="15"
+                   alignX="right" alignY="bottom"
+                   marginRight="95" marginBottom="60"
+                   mouseEnabled="false" mouseChildren="false"
+                   registeredTextStyleName="armory_unlock_time_style"
+                   registeredSkinName="commonui_default_label"/>
+
+
+        </container>
+    </template>
+    <container name="root"
+               width="800" height="634" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChildren="true">
+        <reference template="amoryUnlock"/>
+    </container>
+</root>

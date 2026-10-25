@@ -1,0 +1,182 @@
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="chatWindowUIAssets"/>
+        <library id="traininggroundsUI"/>
+        <library id="battlePass"/>
+        <library id="miniClientReward"/>
+    </libraries>
+
+
+    <textstyle
+            name="rewards_day_text_default"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="10"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"/>
+
+    <textstyle
+            name="rewards_amount_text_default"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="10"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"/>
+
+    <textstyle
+            name="countdown_title"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="12"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="false"
+            align="left"/>
+
+    <textstyle
+            name="countdown_timer_text"
+            textColor="0xffcc00"
+            type="dynamic"
+            fontSize="12"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="true"
+            align="left"/>
+
+    <textstyle
+            name="note_text"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="12"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="true"
+            align="center"/>
+
+    <textstyle
+            name="overlay_text_default"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="17"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="false"
+            align="center"/>
+
+    <skin name="reward_bg" classname="FadableButtonSkin" library="miniClientReward">
+        <layer classname="BitmapLayer" libraryID="rewardbg_blue">normal</layer>
+        <layer classname="BitmapLayer" libraryID="rewardbg_yellow">over</layer>
+        <layer classname="BitmapLayer" libraryID="rewardbg_large">clicked</layer>
+    </skin>
+
+    <skin name="reward_last_bg" classname="FadableButtonSkin" library="miniClientReward">
+        <layer classname="BitmapLayer" libraryID="rewardbg_large">normal</layer>
+    </skin>
+
+    <skin name="reward_checkmark" classname="FadableButtonSkin" library="miniClientReward">
+        <layer classname="BitmapLayer" libraryID="reward_checkmark">normal</layer>
+    </skin>
+
+
+    <skin name="countdown_timer_bg" classname="BasicSkin" library="battlePass">
+        <layer classname="BitmapLayer" libraryID="frame_bp-description">normal</layer>
+    </skin>
+
+    <skin name="overlay_bg_skin" classname="BasicSkin" library="gameclientCommonUI">
+        <layer classname="BitmapLayer" libraryID="scale9btn_disabled" scale9grid="8,8,9,9">normal</layer>
+    </skin>
+
+    <template name="MONTHLY_DELUXE_OVERVIEW">
+        <container name="rewards" width="570" marginLeft="9" marginRight="9" marginTop="9"
+                   height="590"
+                   alignX="left">
+            <container name="body" width="570" marginTop="0" height="480" alignX="center">
+                <itemlist name="reward_list"
+                          width="570"
+                          itemGapX="13"
+                          itemGapY="0"
+                          height="480"
+                          alignX="center"
+                          marginTop="0"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          autoSizeWidth="false"
+                          layout="grid"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask">
+
+                    <itemrenderer width="80"
+                                  autoSizeWidth="false"
+                                  height="114"
+                                  mouseEnabled="true"
+                                  mouseChildren="true">
+
+                        <label name="day" registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="rewards_day_text_default" alightX="left" marginTop="10"
+                               width="66" autoSizeTextHeight="true"/>
+
+                        <button name="bg" registeredSkinName="reward_bg" width="80" height="120" alignX="center" alignY="center"/>
+
+                        <button name="pic" width ="50" height ="50" alignX="center" marginTop="34"/>
+
+                        <coreponent name="checkmark" width="42" height="38" marginLeft="15" alignY="center" visible="false"
+                        registeredSkinName="reward_checkmark"/>
+
+                        <label name="amount" registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="rewards_amount_text_default" alightX="center" marginTop="90"
+                               width="80" autoSizeTextHeight="true"/>
+                    </itemrenderer>
+                </itemlist>
+                <container name="overlay" width="460" height="320" alignX="center" alignY="center">
+                    <coreponent name="overlay_bg" width="460" height="150" alignX="çenter" marginTop="70" visible="false"
+                                registeredSkinName="overlay_bg_skin"/>
+
+                    <label name="overlay_text" registeredSkinName="commonui_default_label" localizedText="monthlydeluxe_overlay"
+                           registeredTextStyleName="overlay_text_default" marginLeft="30" marginTop="105" visible="false"
+                           width="400" autoSizeTextHeight="true"/>
+                </container>
+            </container>
+
+            <container name="bottom" width="570" marginTop="458" height="123" alignX="center">
+
+                <label name="countdown_text" width="125" autoSizeTextHeight="true" localizedText="miniclient_reward_calendar_end" marginLeft="145" marginTop="5" registeredTextStyleName="countdown_title"/>
+                <label name="countdown_timer" width="500" marginLeft="291" marginTop="5" autoSizeTextHeight="true" text="21d 02h 02m"
+                       registeredTextStyleName="countdown_timer_text"/>
+                <button name="info_btn" tooltipData="localize:monthlydeluxe_reward_info_ttp"
+                        marginLeft="505" marginTop="29" alignX="left" registeredSkinName="commonui_info_button"/>
+                <label name="countdown_text" width="440" autoSizeTextHeight="true" localizedText="monthlydeluxe_reward_calendar_note" alignX="center" marginTop="30" registeredTextStyleName="note_text"/>
+                <button name="buy_btn" localizedText="window_objectives_bp_buynow" width="176" alignY="bottom" marginBottom="12"
+                        alignX="center" height="40" registeredSkinName="commonui_scale9_button_green" textMarginY="1"/>
+                <button name="claim_btn" visible="false" localizedText="miniclient_reward_btn_claim" width="176" alignY="bottom" marginBottom="12"
+                        alignX="center" height="40" registeredSkinName="commonui_scale9_button_green" textMarginY="1"/>
+            </container>
+        </container>
+    </template>
+
+
+
+    <container name="root" width="580" height="600" mouseEnabled="false" mouseChildren="true">
+        <reference template="MONTHLY_DELUXE_OVERVIEW"/>
+    </container>
+</root>

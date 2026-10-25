@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <libraries>
+        <library id="chatWindowUIAssets"/>
+        <library id="craftingWindow"/>
+        <library id="gameclientCommonUI"/>
+        <library id="traininggroundsUI"/>
+    </libraries>
+
+    <textstyle  name="rogue_lite_status_headline"
+                textColor="0xffe103"
+                type="dynamic"
+                fontSize="10"
+                autoSize="right"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="left"/>
+
+    <textstyle  name="rogue_lite_status_left"
+                textColor="0xffe103"
+                type="dynamic"
+                fontSize="10"
+                autoSize="right"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                align="left"/>
+
+    <textstyle  name="rogue_lite_status_right"
+                textColor="0xffe103"
+                type="dynamic"
+                fontSize="10"
+                autoSize="right"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                align="right"/>
+
+    <textstyle  name="rogue_lite_message_left"
+                textColor="0xfefefe"
+                type="dynamic"
+                fontSize="10"
+                autoSize="right"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                align="left"/>
+
+    <textstyle  name="rogue_lite_message_center"
+                textColor="0xfefefe"
+                type="dynamic"
+                fontSize="10"
+                autoSize="right"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                align="center"/>
+
+    <textstyle  name="rogue_lite_message_right"
+                textColor="0xfefefe"
+                type="dynamic"
+                fontSize="10"
+                autoSize="right"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                align="right"/>
+
+    <textstyle  name="rogue_lite_reward_cashout_item_amount"
+                textColor="0x66ffff"
+                type="dynamic"
+                fontSize="8"
+                autoSize="right"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="left"/>
+
+    <textstyle  name="rogue_lite_inventory_item_level"
+                textColor="0x66ffff"
+                type="dynamic"
+                fontSize="8"
+                autoSize="right"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="left"/>
+
+    <textstyle name="rogue_lite_reward_item"
+               textColor="0xededed"
+               type="dynamic"
+               fontSize="10"
+               wordWrap="true"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               autoSize="center"
+               align="center"/>
+
+    <textstyle name="rogue_lite_ranking_headline_center"
+               textColor="0xfefefe"
+               type="dynamic"
+               fontSize="10"
+               autoSize="right"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               align="center"
+               bold="true"/>
+
+    <textstyle name="rogue_lite_ranking_headline_left"
+               textColor="0xfefefe"
+               type="dynamic"
+               fontSize="10"
+               autoSize="right"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               align="left"
+               bold="true"/>
+
+    <skin name="rogue_lite_info_image" classname="BasicSkin" library="gameclientCommonUI">
+        <layer classname="BitmapLayer" libraryID="icon_info_grey">normal</layer>
+    </skin>
+
+    <skin name="rogue_lite_scrollbar_bg" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+    </skin>
+
+    <skin name="rogue_lite_label_truncate" classname="LabelSkin" truncateText="true" />
+
+    <skin name="rogue_lite_item_outline" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" lineColor="0x00ccff" fillAlpha="0" lineAlpha="1">normal</layer>
+    </skin>
+
+    <skin name="rogue_lite_reward_cashout_item_bg" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x666666" fillAlpha="1">normal</layer>
+    </skin>
+
+    <skin name="rogue_lite_reward_cashout_item_overlay" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.6">normal</layer>
+    </skin>
+
+    <skin name="rogue_lite_reward_item_bg" classname="BasicStateSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x1e586d" fillAlpha="1" lineAlpha="0">normal</layer>
+        <layer classname="FilledBoxLayer" fillColor="0x1e586d" fillAlpha="1" lineColor="0xffffff" lineAlpha="1">selected</layer>
+    </skin>
+
+    <skin name="upgrade_grid_bg" classname="BasicSkin" library="craftingWindow">
+        <layer classname="BitmapLayer" libraryID="upgradeGridBg">normal</layer>
+    </skin>
+
+    <skin name="rogue_lite_inventory_type_state_overlay" classname="BasicStateSkin">
+        <layer classname="FilledBoxLayer" lineColor="0x0888a9" lineAlpha="1" fillColor="0x000000" fillAlpha="0">selected</layer>
+        <layer classname="FilledBoxLayer" lineColor="0x767676" lineAlpha="0" fillColor="0x000000" fillAlpha="0.5">unselected</layer>
+    </skin>
+
+    <skin name="rogue_lite_inventory_item_state_overlay" classname="BasicStateSkin">
+        <layer classname="FilledBoxLayer" lineColor="0x0888a9" lineAlpha="1" fillColor="0x000000" fillAlpha="0">equipped</layer>
+        <layer classname="FilledBoxLayer" lineColor="0x767676" lineAlpha="0" fillColor="0x000000" fillAlpha="0.5">unequipped</layer>
+    </skin>
+
+    <skin name="rogue_lite_ttip_frame" library="traininggroundsUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" scale9grid="1,1,2,2" libraryID="ttip_frame">normal</layer>
+    </skin>
+
+    <template name="ROGUE_LITE_TABBAR">
+        <container name="tabbarContainer" height="20" width="720" marginTop="0" marginLeft="0"
+                   marginRight="0" pixelSnapping="true">
+            <itemlist name="tabsItemlist" registeredSkinName="commonui_list_mask" layout="horizontal" alignX="right"
+                      width="707" itemGap="0" height="20" mouseEnabled="true" mouseChildren="true"
+                      cacheSkinMaskAsBitmap="false">
+                <itemrenderer height="15" width="101" autoSizeWidth="false" mouseEnabled="true" mouseChildren="true">
+                    <button name="tab" registeredSkinName="commonui_tabbarbutton" mouseEnabled="true"
+                            autoSizeWidth="true" autoSizeHeight="true" mouseChildren="true"/>
+                    <button name="tab_selected" registeredSkinName="commonui_tabbarbutton" mouseEnabled="true"
+                            autoSizeWidth="true" visible="false" autoSizeHeight="true" mouseChildren="true"/>
+                    <label y="-1" name="tabLabel" registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="commonui_tabbar_center" mouseEnabled="false"
+                           mouseChildren="false" autoSizeWidth="true" text="?"/>
+                </itemrenderer>
+            </itemlist>
+        </container>
+    </template>
+
+    <template name="ROGUE_LITE_OVERVIEW">
+        <container name="overview"
+                   width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                   marginTop="30" marginLeft="20" alignX="center">
+
+            <container name="top"
+                       width="520" height="145" autoSizeWidth="false" autoSizeHeight="false"
+                       registeredSkinName="commonui_darklayer">
+
+                <container name="progress"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           width="510" height="10" marginLeft="10" marginTop="10">
+                    <label text="localize:astral_ascension_header_overview_progress"
+                           width="200" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           registeredTextStyleName="rogue_lite_status_headline" registeredSkinName="commonui_default_label"/>
+                    <coreponent  alignX="right" marginRight="10" y="-3" registeredSkinName="rogue_lite_info_image"/>
+                </container>
+
+                <container name="last_room"
+                           width="510" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginLeft="10" marginTop="30">
+                    <label text="localize:astral_ascension_header_overview_current_rift"
+                           width="200" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           registeredTextStyleName="rogue_lite_status_left" registeredSkinName="commonui_default_label"/>
+                    <label name="count" text="888888888888888"
+                           width="100" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="right" marginRight="10"
+                           registeredTextStyleName="rogue_lite_status_right" registeredSkinName="commonui_default_label"/>
+                </container>
+
+                <container name="score"
+                           width="510" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginLeft="10" marginTop="50">
+                    <label text="localize:astral_ascension_header_overview_score"
+                           width="200"  height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           registeredTextStyleName="rogue_lite_status_left" registeredSkinName="commonui_default_label"/>
+                    <label name="count" text="888888888888888"
+                           width="100" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="right" marginRight="10"
+                           registeredTextStyleName="rogue_lite_status_right" registeredSkinName="commonui_default_label"/>
+                </container>
+
+                <coreponent autoSizeWidth="true" height="5" marginTop="75" registeredSkinName="commonui_horizontal_divider"/>
+
+                <container name="high_score"
+                           width="510" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginLeft="10" marginTop="85">
+                    <label text="localize:astral_ascension_header_overview_high_score"
+                           width="200"  height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           registeredTextStyleName="rogue_lite_message_left" registeredSkinName="commonui_default_label"/>
+                    <label name="count" text="888888888888888"
+                           width="100" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="right" marginRight="10"
+                           registeredTextStyleName="rogue_lite_message_right" registeredSkinName="commonui_default_label"/>
+                </container>
+
+                <container name="key"
+                           width="510" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                           marginLeft="10" marginTop="105" >
+                    <coreponent name="img" width="30" height="30" mouseEnabled="false"/>
+                    <label text="localize:items_ammunition_ggportal_astral-cpu_fullname:items"
+                           width="200" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginLeft="40" marginTop="5"
+                           registeredTextStyleName="rogue_lite_message_left" registeredSkinName="commonui_default_label"/>
+                    <label name="count" text="888888888888888"
+                           width="100" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="right" marginRight="40" marginTop="5"
+                           registeredTextStyleName="rogue_lite_message_right" registeredSkinName="commonui_default_label"/>
+                    <button name="info" autoSizeWidth="false" autoSizeHeight="false"
+                            marginTop="3" alignX="right" marginRight="10"
+                            registeredSkinName="commonui_info_button" tooltipData="localize:astral_ascension_tab_overview_ttip"/>
+                </container>
+            </container>
+
+            <container name="bottom"
+                       width="520" height="60" autoSizeWidth="false" autoSizeHeight="false" marginTop="155">
+                <coreponent  alignX="left" alignY="top" registeredSkinName="rogue_lite_info_image"/>
+                <label text="localize:astral_ascension_header_overview_desc"
+                        width="480" height="60" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" marginLeft="30" marginTop="3"
+                       registeredTextStyleName="rogue_lite_message_left" registeredSkinName="commonui_default_label" />
+            </container>
+        </container>
+    </template>
+
+    <template name="ROGUE_LITE_REWARDS_CASHOUT">
+        <container name="rewards_cashout"
+                   width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                   marginTop="30" marginLeft="20" alignX="center">
+
+            <container name="active" width="520" height="250" autoSizeWidth="false" autoSizeHeight="false">
+
+                <container name="top"
+                           width="520" height="160" autoSizeWidth="false" autoSizeHeight="false"
+                           registeredSkinName="commonui_darklayer">
+
+                    <container name="guaranteed" autoSizeWidth="false" autoSizeHeight="false"
+                               width="510" height="60" marginLeft="10" marginTop="10">
+
+                        <container name="header"
+                                   autoSizeWidth="false" autoSizeHeight="false"
+                                   width="510" height="10">
+                            <label text="localize:astral_ascension_header_rewards_guaranteed"
+                                   width="300" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                                   registeredTextStyleName="rogue_lite_status_headline" registeredSkinName="commonui_default_label"/>
+
+                            <button name="info" autoSizeWidth="false" autoSizeHeight="false"
+                                    marginTop="3" alignX="right" marginRight="10"
+                                    registeredSkinName="commonui_info_button" tooltipData="localize:ttip_guaranteed"/>
+                        </container>
+
+                        <Grid name="list"
+                              width="470" height="40" itemGap="5"
+                              marginTop="20" alignX="left"
+                              mouseEnabled="true" mouseChildren="true"
+                              cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+                            <itemrenderer width="40" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                                          itemGap="0" mouseEnabled="true" mouseChildren="true">
+                                <coreponent name="bg"
+                                            width="40" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                                            registeredSkinName="rogue_lite_reward_cashout_item_bg"/>
+                                <coreponent name="icon"
+                                            width="40" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                                            alignX="center" alignY="top"/>
+                                <label name="amount" text="888"
+                                       width="40" height="15" autoSizeWidth="false" autoSizeHeight="false"
+                                       alignX="left" alignY="bottom"
+                                       registeredTextStyleName="rogue_lite_reward_cashout_item_amount" registeredSkinName="commonui_default_label"/>
+                                <coreponent name="state"
+                                            width="40" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                                            alignX="center" alignY="top" registeredSkinName="rogue_lite_reward_cashout_item_overlay"/>
+                            </itemrenderer>
+                        </Grid>
+                    </container>
+
+                    <container name="chance" autoSizeWidth="false" autoSizeHeight="false"
+                               width="510" height="60" marginLeft="10" marginTop="80">
+
+                        <container name="header"
+                                   autoSizeWidth="false" autoSizeHeight="false"
+                                   width="510" height="10">
+                            <label text="localize:astral_ascension_header_rewards_chance_based"
+                                   width="300" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                                   registeredTextStyleName="rogue_lite_status_headline" registeredSkinName="commonui_default_label"/>
+
+                            <button name="info" autoSizeWidth="false" autoSizeHeight="false"
+                                    marginTop="3" alignX="right" marginRight="10"
+                                    registeredSkinName="commonui_info_button" tooltipData="localize:ttip_chance-based"/>
+                        </container>
+
+                        <Grid name="list"
+                              width="470" height="40" itemGap="5"
+                              marginTop="20" alignX="left"
+                              mouseEnabled="true" mouseChildren="true"
+                              cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+                            <itemrenderer width="40" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                                          itemGap="0" mouseEnabled="true" mouseChildren="true">
+                                <coreponent name="bg"
+                                            width="40" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                                            registeredSkinName="rogue_lite_reward_cashout_item_bg"/>
+                                <coreponent name="icon"
+                                            width="40" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                                            alignX="center" alignY="top"/>
+                                <label name="amount" text="888"
+                                       width="40" height="15" autoSizeWidth="false" autoSizeHeight="false"
+                                       alignX="left" alignY="bottom"
+                                       registeredTextStyleName="rogue_lite_reward_cashout_item_amount" registeredSkinName="commonui_default_label"/>
+                                <coreponent name="state"
+                                            width="40" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                                            alignX="center" alignY="top" registeredSkinName="rogue_lite_reward_cashout_item_overlay"/>
+                            </itemrenderer>
+                        </Grid>
+                    </container>
+                </container>
+
+                <container name="bottom"
+                           width="520" height="40" autoSizeWidth="false" autoSizeHeight="false" marginTop="170">
+                    <coreponent  alignX="left" alignY="top" registeredSkinName="rogue_lite_info_image"/>
+                    <label text="localize:astral_ascension_header_rewards_desc"
+                           width="480" height="60" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" marginLeft="30" marginTop="5"
+                           registeredTextStyleName="rogue_lite_message_left" registeredSkinName="commonui_default_label" />
+                </container>
+            </container>
+
+            <container name="inactive"
+                       width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" mouseChildren="false" mouseEnabled="false">
+                <coreponent  alignX="left" registeredSkinName="rogue_lite_info_image"/>
+                <label text="localize:astral_ascension_rewardstab_inactive"
+                       width="500" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                       marginLeft="30"
+                       registeredTextStyleName="rogue_lite_message_left" registeredSkinName="commonui_default_label" />
+            </container>
+        </container>
+    </template>
+
+    <template name="ROGUE_LITE_REWARDS">
+        <container name="rewards"
+                   width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                   marginTop="30" marginLeft="20" alignX="center">
+
+            <container name="active" width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                       registeredSkinName="commonui_darklayer">
+
+                <coreponent  alignX="left" alignY="top" registeredSkinName="rogue_lite_info_image"/>
+
+                <label text="localize:astral_ascension_rewards_header"
+                       width="520" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" alignY="top" marginLeft="30"
+                       registeredTextStyleName="rogue_lite_status_headline" registeredSkinName="commonui_default_label" />
+
+                <itemlist name="rewards_list"
+                          width="520" height="160" itemGap="10"
+                          autoSizeWidth="false" autoSizeHeight="false"
+                          marginTop="30" layout="horizontal" alignX="center"
+                          mouseChildren="true" mouseEnabled="true"
+                          cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+                    <itemrenderer width="120" height="150" autoSizeWidth="false" autoSizeHeight="false"
+                                  mouseEnabled="true" mouseChildren="true">
+
+                        <coreponent name="bg"
+                                    width="120" height="150" autoSizeWidth="false" autoSizeHeight="false"
+                                    registeredSkinName="rogue_lite_reward_item_bg"/>
+
+                        <coreponent name="icon"
+                                    width="100" height="100" autoSizeWidth="false" autoSizeHeight="false"
+                                    marginTop="10" marginLeft="10" alignY="top"/>
+
+                        <label name="name"
+                               width="120" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                               alignY="bottom" marginBottom="20"
+                               registeredSkinName="commonui_default_label" registeredTextStyleName="rogue_lite_reward_item" />
+
+                        <label name="level"
+                               width="120" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                               alignY="bottom" marginBottom="10"
+                               registeredSkinName="commonui_default_label" registeredTextStyleName="rogue_lite_reward_item" />
+                    </itemrenderer>
+                </itemlist>
+            </container>
+
+            <container name="inactive"
+                       width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" mouseChildren="false" mouseEnabled="false">
+                <coreponent  alignX="left" registeredSkinName="rogue_lite_info_image"/>
+                <label text="localize:astral_ascension_bounty_inactive"
+                       width="500" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                       marginLeft="30"
+                       registeredTextStyleName="rogue_lite_message_left" registeredSkinName="commonui_default_label" />
+            </container>
+        </container>
+    </template>
+
+    <template name="ROGUE_LITE_INVENTORY">
+        <container name="inventory"
+                   width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                   marginTop="30" marginLeft="20" alignX="center">
+
+            <container name="active"
+                       width="520" height="250" autoSizeWidth="false" autoSizeHeight="false">
+
+                <coreponent autoSizeWidth="true" height="5" registeredSkinName="commonui_horizontal_divider"/>
+
+                <coreponent autoSizeWidth="true" height="40" marginTop="10" registeredSkinName="commonui_darklayer"/>
+
+                <itemlist name="tab_list"
+                          width="520" height="35" itemGap="10"
+                          autoSizeWidth="false" autoSizeHeight="false"
+                          marginTop="15" layout="horizontal" alignX="center"
+                          mouseChildren="true" mouseEnabled="true"
+                          cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+                    <itemrenderer width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                  mouseEnabled="true" mouseChildren="true">
+                        <coreponent name="icon"
+                                    width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                    alignX="center" alignY="top"/>
+                        <coreponent name="state"
+                                    width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                    alignX="center" alignY="top" registeredSkinName="rogue_lite_inventory_type_state_overlay"/>
+                    </itemrenderer>
+                </itemlist>
+
+                <coreponent autoSizeWidth="true" height="5" marginTop="55" registeredSkinName="commonui_horizontal_divider"/>
+
+                <coreponent width="500" height="130" autoSizeWidth="false" autoSizeHeight="false"
+                            marginTop="75" alignX="center"
+                            registeredSkinName="upgrade_grid_bg"/>
+
+                <label name="info" text="Type: 888/888"
+                       width="500" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                       marginTop="70" marginLeft="40" alignX="left"
+                       registeredTextStyleName="rogue_lite_message_left" registeredSkinName="commonui_default_label"/>
+
+                <container name="inventory"
+                           width="470" height="104" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="95" marginLeft="20" alignX="center">
+
+                    <Grid name="filtered_list"
+                          width="470" height="100" itemGap="5"
+                          marginTop="2" alignX="left"
+                          mouseEnabled="true" mouseChildren="true"
+                          cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+                        <itemrenderer width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                      itemGap="0" mouseEnabled="true" mouseChildren="true">
+                            <coreponent name="icon"
+                                        width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                        alignX="center" alignY="top"/>
+                            <label name="level" text="88"
+                                   width="30" height="15" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="left" alignY="top" marginTop="-2"
+                                   registeredTextStyleName="rogue_lite_inventory_item_level" registeredSkinName="commonui_default_label"/>
+                            <coreponent name="state"
+                                        width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                        alignX="center" alignY="top" registeredSkinName="rogue_lite_inventory_item_state_overlay"/>
+                        </itemrenderer>
+                    </Grid>
+                    <scrollbar name="scroll_bar"
+                               width="10" autoSizeHeight="true" direction="vertical"
+                               marginTop="0" marginBottom="0" marginRight="0" alignX="right"
+                               registeredSkinName="rogue_lite_scrollbar_bg">
+                        <button name="buttonSlider"
+                                width="10" height="10" alignX="center"
+                                registeredSkinName="commonui_scrollbar_slider"/>
+                    </scrollbar>
+                    <bind source="scroll_bar"
+                          target="filtered_list"
+                          type="scrollcontainer"/>
+                </container>
+
+                <coreponent name="overlay"
+                            width="504" height="134" autoSizeWidth="false" autoSizeHeight="false"
+                            marginTop="73" marginLeft="-2" alignX="center"
+                            registeredSkinName="commonui_darklayer"/>
+
+                <button name="reset"
+                        width="100" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                        alignY="bottom" marginBottom="5" alignX="left" marginLeft="100"
+                        registeredSkinName="commonui_smallbutton_blue"/>
+
+                <label text="localize:btn_reset"
+                       width="100" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                       alignY="bottom" marginBottom="20" alignX="left" marginLeft="100"
+                       registeredTextStyleName="rogue_lite_message_center" registeredSkinName="commonui_default_label"/>
+
+                <button name="save"
+                        width="100" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                        alignY="bottom" marginBottom="5" alignX="left" marginLeft="300"
+                        registeredSkinName="commonui_smallbutton_green"/>
+
+                <label text="localize:sett_save"
+                       width="100" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                       alignY="bottom" marginBottom="20" alignX="left" marginLeft="300"
+                       registeredTextStyleName="rogue_lite_message_center" registeredSkinName="commonui_default_label"/>
+            </container>
+
+            <container name="inactive"
+                       width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" mouseChildren="false" mouseEnabled="false">
+                <coreponent  alignX="left" registeredSkinName="rogue_lite_info_image"/>
+                <label text="localize:astral_ascension_manage_inactive"
+                       width="500" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                       marginLeft="30"
+                       registeredTextStyleName="rogue_lite_message_left" registeredSkinName="commonui_default_label" />
+            </container>
+        </container>
+    </template>
+
+    <template name="ROGUE_LITE_RANK_REWARD_TOOLTIP">
+        <container name="container" width="260" autoSizeHeight="true" autoHeightMode="children">
+            <container name="wrapper"
+                       width="260" autoSizeHeight="true" autoHeightMode="children" marginTop="20"
+                       registeredSkinName="rogue_lite_ttip_frame" >
+                <itemlist name="list"
+                          width="260" autoSizeHeight="true" autoHeightMode="children"
+                          marginBottom="10" gap="0" layout="vertical">
+                    <itemrenderer height="40" marginTop="0" marginBottom="0">
+                        <coreponent name="img"
+                                    width="30" height="30" marginTop="10" marginLeft="10"
+                                    registeredSkinName="rogue_lite_item_outline"/>
+                        <coreponent width="31" height="31" marginTop="9" marginLeft="9"
+                                    registeredSkinName="rogue_lite_item_outline"/>
+                        <label name="label"
+                               width="200" height="29"
+                               alignX="left" marginLeft="50" marginTop="15"
+                               registeredTextStyleName="rogue_lite_message_left" registeredSkinName="commonui_default_label"/>
+                    </itemrenderer>
+                </itemlist>
+            </container>
+        </container>
+    </template>
+
+    <template name="ROGUE_LITE_RANK_REWARDS">
+        <container name="rank_rewards" width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                   marginTop="30" marginLeft="20" alignX="center">
+            <container name="active"
+                       width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" registeredSkinName="commonui_light_darklayer">
+                <label text="localize:plutus_tab_rewards_headline"
+                       width="520" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                       marginLeft="20" marginTop="10"
+                       registeredTextStyleName="rogue_lite_ranking_headline_left" registeredSkinName="commonui_default_label" />
+
+                <coreponent autoSizeWidth="true" height="5" marginTop="35"
+                            registeredSkinName="commonui_horizontal_divider"/>
+
+                <container name="placement"
+                           width="520" height="210" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="40">
+                    <itemlist name="list"
+                              width="520" height="210" autoSizeWidth="false" autoSizeHeight="false"
+                              layout="vertical" alignX="left"
+                              mouseEnabled="true" mouseChildren="true"
+                              cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+                        <itemrenderer width="500" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                      mouseEnabled="true" mouseChildren="true">
+                            <coreponent name="bg"
+                                        width="520" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                        registeredSkinName="commonui_darklayer"/>
+                            <label name="placing" text="888888888888888"
+                                   width="150" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                   marginTop="8" marginLeft="20" alignX="left"
+                                   registeredTextStyleName="rogue_lite_message_left" registeredSkinName="commonui_default_label"/>
+                            <button name="infoBtn" autoSizeWidth="false" autoSizeHeight="false"
+                                    marginTop="5" alignX="right"
+                                    registeredSkinName="commonui_info_button"/>
+                        </itemrenderer>
+                    </itemlist>
+                    <scrollbar name="scroll_bar"
+                               width="10" autoSizeHeight="true" direction="vertical"
+                               marginTop="0" marginBottom="0" marginRight="0" alignX="right"
+                               registeredSkinName="rogue_lite_scrollbar_bg">
+                        <button name="buttonSlider"
+                                width="10" height="10" alignX="center"
+                                registeredSkinName="commonui_scrollbar_slider"/>
+                    </scrollbar>
+                    <bind source="scroll_bar"
+                          target="list"
+                          type="scrollcontainer"/>
+                </container>
+            </container>
+
+            <container name="inactive"
+                       width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" mouseChildren="false" mouseEnabled="false">
+                <coreponent  alignX="left" registeredSkinName="rogue_lite_info_image"/>
+                <label text="localize:astral_ascension_rewards_inactive"
+                       width="500" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                       marginLeft="30"
+                       registeredTextStyleName="rogue_lite_message_left" registeredSkinName="commonui_default_label" />
+            </container>
+        </container>
+    </template>
+
+    <template name="ROGUE_LITE_RANK_INFO_ROW">
+        <container name="rank_info" width="500" height="30" autoSizeWidth="false" autoSizeHeight="false">
+            <label name="rank" text="888"
+                   width="40" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                   alignX="left" marginLeft="10" marginTop="7"
+                   registeredSkinName="commonui_default_label" registeredTextStyleName="rogue_lite_message_center"/>
+            <label name="name" text="John Doe"
+                   width="260" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                   alignX="left" marginLeft="60" marginTop="7"
+                   registeredSkinName="rogue_lite_label_truncate" registeredTextStyleName="rogue_lite_message_left"/>
+            <label name="time" text="18/11 23:09"
+                   width="90" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                   alignX="left" marginLeft="330" marginTop="7"
+                   registeredSkinName="commonui_default_label" registeredTextStyleName="rogue_lite_message_center"/>
+            <label name="score" text="888"
+                   width="70" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                   alignX="left" marginLeft="430" marginTop="7"
+                   registeredSkinName="commonui_default_label" registeredTextStyleName="rogue_lite_message_center"/>
+        </container>
+    </template>
+
+    <template name="ROGUE_LITE_RANK">
+        <container name="rank" width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                   marginTop="30" marginLeft="20" alignX="center">
+            <container name="active"
+                       width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" registeredSkinName="commonui_light_darklayer">
+                <container name="header"
+                           width="520" height="35" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" registeredSkinName="commonui_darklayer">
+                    <label text="localize:eternal_blacklight_tab_rank_header_rank"
+                           width="40" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" marginLeft="10" marginTop="10"
+                           registeredSkinName="commonui_default_label" registeredTextStyleName="rogue_lite_ranking_headline_center"/>
+                    <label text="localize:eternal_blacklight_tab_rank_header_name"
+                           width="260" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" marginLeft="60" marginTop="10"
+                           registeredSkinName="commonui_default_label" registeredTextStyleName="rogue_lite_ranking_headline_left"/>
+                    <label text="localize:eternal_blacklight_tab_rank_header_time"
+                           width="90" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" marginLeft="330" marginTop="10"
+                           registeredSkinName="commonui_default_label" registeredTextStyleName="rogue_lite_ranking_headline_center"/>
+                    <label text="localize:plutus_tab_record_headline_score"
+                           width="70" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" marginLeft="430" marginTop="10"
+                           registeredSkinName="commonui_default_label" registeredTextStyleName="rogue_lite_ranking_headline_center"/>
+                </container>
+
+                <coreponent autoSizeWidth="true" height="5" marginTop="35"
+                            registeredSkinName="commonui_horizontal_divider"/>
+
+                <container name="ranking"
+                           width="520" height="170" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="40" alignX="left">
+                    <itemlist name="list"
+                              width="520" height="170" autoSizeWidth="false" autoSizeHeight="false"
+                              layout="vertical" alignX="left"
+                              mouseEnabled="false" mouseChildren="false"
+                              cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+                        <itemrenderer width="500" height="30" autoSizeWidth="false" autoSizeHeight="false">
+                            <reference template="ROGUE_LITE_RANK_INFO_ROW" />
+                        </itemrenderer>
+                    </itemlist>
+                    <scrollbar name="scroll_bar"
+                               width="10" autoSizeHeight="true" direction="vertical"
+                               marginTop="0" marginBottom="0" marginRight="0" alignX="right"
+                               registeredSkinName="rogue_lite_scrollbar_bg">
+                        <button name="buttonSlider"
+                                width="10" height="10" alignX="center"
+                                registeredSkinName="commonui_scrollbar_slider"/>
+                    </scrollbar>
+                    <bind source="scroll_bar"
+                          target="list"
+                          type="scrollcontainer"/>
+                </container>
+
+                <coreponent autoSizeWidth="true" height="5" alignY="bottom" marginBottom="33"
+                            registeredSkinName="commonui_horizontal_divider"/>
+
+                <container name="my_rank"
+                           width="520" height="33" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="bottom" registeredSkinName="commonui_darklayer">
+                    <reference template="ROGUE_LITE_RANK_INFO_ROW" />
+                </container>
+            </container>
+
+            <container name="inactive"
+                       width="520" height="250" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left" mouseChildren="false" mouseEnabled="false">
+                <coreponent  alignX="left" registeredSkinName="rogue_lite_info_image"/>
+                <label width="500" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                       marginLeft="30" text="localize:astral_ascension_ranking_inactive"
+                       registeredTextStyleName="rogue_lite_message_left" registeredSkinName="commonui_default_label" />
+            </container>
+        </container>
+    </template>
+
+    <container name="root" width="610" height="270" mouseEnabled="false" mouseChildren="true">
+        <reference template="ROGUE_LITE_TABBAR"/>
+        <reference template="ROGUE_LITE_OVERVIEW"/>
+        <reference template="ROGUE_LITE_REWARDS_CASHOUT"/>
+        <reference template="ROGUE_LITE_REWARDS"/>
+        <reference template="ROGUE_LITE_INVENTORY"/>
+        <reference template="ROGUE_LITE_RANK_REWARDS"/>
+        <reference template="ROGUE_LITE_RANK"/>
+    </container>
+</root>

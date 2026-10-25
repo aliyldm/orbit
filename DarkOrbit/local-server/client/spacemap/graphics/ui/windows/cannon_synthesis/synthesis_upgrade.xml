@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="module_equipment_lib"/>
+        <library id="rankings_asset"/>
+        <library id="gameclientCommonUI"/>
+        <library id="commandCenterWindow"/>
+        <library id="battleStationsUI"/>
+        <library id="craftingWindow"/>
+        <library id="returneelogin"/>
+        <library id="seasonPass_asset"/>
+        <library id="synthesisLib"/>
+    </libraries>
+
+    <skin name="cannon_filter_btn" library="gameclientCommonUI" classname="FadableButtonSkin">
+        <layer classname="BitmapLayer" scale9grid="24,5,50,9" libraryID="tabbar74x15_normal">normal</layer>
+        <layer classname="BitmapLayer" scale9grid="24,5,50,9" libraryID="tabbar74x15_over">over</layer>
+        <layer classname="BitmapLayer" scale9grid="24,5,50,9" libraryID="tabbar74x15_selected">normal.selected</layer>
+    </skin>
+
+    <skin name="cannon_filter_btn_select" library="gameclientCommonUI" classname="BasicSkin">        
+        <layer classname="BitmapLayer" scale9grid="24,5,50,9" libraryID="tabbar74x15_selected">normal</layer>
+    </skin>
+
+    <skin name="cannon_filter_btn_normal" library="gameclientCommonUI" classname="BasicSkin">        
+        <layer classname="BitmapLayer" scale9grid="24,5,50,9" libraryID="tabbar74x15_normal">normal</layer>
+    </skin>
+
+    <!-- Secondary star filters use their own smaller button skins. -->
+    <skin name="cannon_filter_btn_secondary_select" library="gameclientCommonUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" scale9grid="24,5,50,9" libraryID="tabbar74x15_selected">normal</layer>
+    </skin>
+
+    <skin name="cannon_filter_btn_secondary_normal" library="gameclientCommonUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" scale9grid="24,5,50,9" libraryID="tabbar74x15_normal">normal</layer>
+    </skin>
+
+    <!-- <skin name="item_group_info_tip" library="gameclientCommonUI" classname="FadableButtonSkin">
+        <layer classname="BitmapLayer" libraryID="btn_info_hover">over</layer>
+        <layer classname="BitmapLayer" libraryID="btn_info_normal">normal</layer>
+        <layer classname="BitmapLayer" libraryID="btn_info_active">clicked</layer>
+    </skin> -->
+
+    <skin name="type_item_list_l_btn" library="gameclientCommonUI" classname="FadableButtonSkin">
+        <layer classname="BitmapLayer" libraryID="arrow_l_hover">normal</layer>
+        <layer classname="BitmapLayer" libraryID="arrow_l_normal">disabled</layer>
+        <layer classname="BitmapLayer" libraryID="arrow_l_select">over</layer>
+    </skin>
+
+    <skin name="type_item_list_r_btn" library="gameclientCommonUI" classname="FadableButtonSkin">
+        <layer classname="BitmapLayer" libraryID="arrow_r_hover">normal</layer>
+        <layer classname="BitmapLayer" libraryID="arrow_r_normal">disabled</layer>
+        <layer classname="BitmapLayer" libraryID="arrow_r_select">over</layer>
+    </skin>
+
+    <skin name="type_item_list_bg" library="seasonPass_asset" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="bg_objective_side_selected">normal</layer>
+    </skin>
+
+    <skin name="item_type_bg" library="battleStationsUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="itemslot_empty">normal</layer>
+    </skin>    
+
+    <skin name="item_type_select" library="battleStationsUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="inventory_slot_selected">normal</layer>
+    </skin>
+    <skin name="select_item_equip_img" library="module_equipment_lib" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="equipment_itemslot_other_config_30x30">normal</layer>
+    </skin>
+    <skin name="select_item_check_img" library="craftingWindow" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="icon_check">normal</layer>
+    </skin>
+
+    <skin name="cost_item_bg" library="commandCenterWindow" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="tab_blue" >normal</layer>
+    </skin>
+
+    <skin name="cost_item_icon_bg" library="craftingWindow" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="item_empty">normal</layer>
+    </skin>
+
+    <skin name="cost_ship_item_icon_bg" library="craftingWindow" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="item_selected">normal</layer>
+    </skin>
+<!-- (x=111, y=88, w=8, h=15) -->
+    <skin name="items_list_group_bg" library="synthesisLib" classname="BasicSkin">
+        <layer classname="Scale9BitmapLayer" scale9grid="111, 88, 118, 103" width="520" height="189" libraryID="select_item_bg">normal</layer>
+    </skin>
+
+    <textstyle name="combobox_button_label"
+              textColor="0xededed"
+               type="dynamic"
+               fontSize="13"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="true"
+               fontName="EurostileHeaFl"
+               align="center"
+               autoSize="center"
+               />
+    <textstyle name="secondary_filter_label"
+              textColor="0xededed"
+              type="dynamic"
+              fontSize="11"
+              wordWrap="false"
+              multiline="false"
+              embedFonts="true"
+              fontName="EurostileHeaFl"
+              align="center"
+              autoSize="center"
+              />
+    <textstyle
+            name="select_item_desc_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="15"
+            bold="true" 
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="center"/>
+    <textstyle
+            name="info_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="15"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"/>
+    <textstyle
+            name="cost_name_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="10"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"
+            glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'
+               />
+    <textstyle
+            name="cost_info_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="10"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"
+            glowFilter='{"color":"0x000000", "blurX":"1", "blurY":"1", "strength":"10", "quality":"2"}'
+               />
+
+    <textstyle name="selecter_item_level_label"
+               textColor="0x72f0ff"
+               fontSize="10"
+               bold="false"
+               embedFonts="false"
+               wordWrap="false"
+               multiline="false"
+               fontName="Verdana"
+               align="left"
+               glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'
+               />
+    <template name="synthesis">
+        <container name="main" width="640" height="460">            
+            <coreponent name="left_btn_group" width="120" height="460" alignX="left" alignY="top">
+                <itemlist name="btn_list"
+                      width="100"
+                      height="400"
+                      alignY="top"
+                      alignX="left"
+                      marginLeft="5"
+                      marginTop="30"
+                      itemAlignX="left"
+                      itemGap ="5" 
+                      layout="vertical"
+                      mouseEnabled="true" 
+                      mouseChildren="true"
+                      cacheSkinMaskAsBitmap="false"
+                      direction="vertical"
+                      registeredSkinName="commonui_list_mask">
+                    <itemrenderer width="100" height="30" autoSizeWidth="false" autoSizeHeight="false" 
+                                              mouseEnabled="true" mouseChildren="true">
+                        <coreponent name="select_btn" 
+                                width="100"
+                                height="30"
+                                autoSizeWidth="false"
+                                autoSizeHeight="false"
+                                alignY="center"
+                                alignX="center"
+                                buttonMode="false" registeredSkinName="cannon_filter_btn_select"/>
+                        <coreponent name="normal_btn" 
+                                width="100"
+                                height="30"
+                                autoSizeWidth="false"
+                                autoSizeHeight="false"
+                                alignY="center"
+                                alignX="center"
+                                buttonMode="true" registeredSkinName="cannon_filter_btn_normal"/>                                            
+                        
+                        <Label name="cannon_type_name" width="100" heigh="30" autoSizeWidth="false" autoSizeHeight="false" 
+                               alignX="center" alignY="bottom" marginBottom="25" 
+                               registeredTextStyleName="combobox_button_label"
+                               registeredSkinName="commonui_default_label"
+                        />
+
+                        <coreponent name="secondary_select_btn"
+                                width="78"
+                                height="20"
+                                autoSizeWidth="false"
+                                autoSizeHeight="false"
+                                alignY="center"
+                                alignX="left"
+                                marginLeft="18"
+                                buttonMode="false"
+                                visible="false"
+                                registeredSkinName="cannon_filter_btn_secondary_select"/>
+                        <coreponent name="secondary_normal_btn"
+                                width="78"
+                                height="20"
+                                autoSizeWidth="false"
+                                autoSizeHeight="false"
+                                alignY="center"
+                                alignX="left"
+                                marginLeft="18"
+                                buttonMode="true"
+                                visible="false"
+                                registeredSkinName="cannon_filter_btn_secondary_normal"/>
+                        <Label name="secondary_label"
+                               width="78"
+                               height="13"
+                               autoSizeWidth="false"
+                               autoSizeHeight="false"
+                               alignX="left"
+                               marginLeft="18"
+                               alignY="center"
+                               mouseEnabled="false"
+                               mouseChildren="false"
+                               visible="false"
+                               registeredTextStyleName="secondary_filter_label"
+                               registeredSkinName="commonui_default_label"/>
+                    </itemrenderer>
+                </itemlist>
+            </coreponent>
+            <coreponent name="right_view" width="520" height="460" alignX="right" alignY="top" marginTop="13">
+                <coreponent name="all_cannon_type_list" width="520" autoSizeWidth="false" heigh="80" alignX="center" alignY="top">
+                    <coreponent name="all_cannon_type_list_line_group" autoSizeWidth="true" autoWidthMode="parent" height="80" alignX="center" alignY="top" >
+                        <coreponent width="323" height="10" alignX="right" alignY="top" marginTop="8" marginRight="0">
+                            <bitmap name="right_up_line" library="commandCenterWindow" libraryID="content_frame_line_blue" />
+                        
+                        </coreponent>
+                        <coreponent name="type_list_bg" registeredSkinName="type_item_list_bg" width="485"
+                                    alignX="center"
+                                    alignY="bottom" marginBottom="20"
+                                    height="40"/>
+                        <coreponent width="323" height="10"  alignX="left" alignY="bottom" scaleY="-1" scaleX="-1" marginLeft="323">
+                            <bitmap name="left_down_line" library="commandCenterWindow" libraryID="content_frame_line_blue" />
+                        
+                        </coreponent>
+                        <button name="up_page" alignX="left" alignY="center" registeredSkinName="type_item_list_l_btn"/>
+                        <button name="next_page" alignX="right" alignY="center" registeredSkinName="type_item_list_r_btn"/>
+                    </coreponent>
+                    <Grid name="cannon_type_list"
+                          width="490"
+                          height="35"
+                          alignX="left"
+                          marginLeft="23"
+                          alignY="top"
+                          marginTop="24"
+                          layout="grid"
+                          itemGapX="2"
+                          cacheSkinMaskAsBitmap="false"
+                          itemAlignX="left"  mouseEnabled="true" mouseChildren="true"
+                          registeredSkinName="commonui_list_mask" >
+                        <itemrenderer width="32" height="32" autoSizeWidth="false" autoSizeHeight="false"  mouseEnabled="true" mouseChildren="true">
+                            <coreponent name="bg" alignY="center" alignX="center" registeredSkinName="item_type_bg"/>
+                            <coreponent name="icon" alignY="center" alignX="center" width="30" height="30" />
+                            <coreponent name="select" alignY="center" alignX="center" registeredSkinName="item_type_select"/>
+                            
+                        </itemrenderer>
+                    </Grid>
+                </coreponent>
+                <coreponent name="select_item_list_group" width="520" height="210" autoSizeWidth="false" autoSizeHeight="false" alignX="center" alignY="top" marginTop="75">
+                    <coreponent name="items_list_bg_group" width="520" height="210" autoSizeWidth="false" autoSizeHeight="false">
+                        <coreponent name="group_bg" width="520" height="210" registeredSkinName="items_list_group_bg"/>
+                        <Label name="title_label" registeredSkinName="commonui_default_label" width="300" height="30" registeredTextStyleName="select_item_desc_label" text="" alignX="center" alignY="top" marginTop="5"/>
+                    </coreponent>
+                    <Grid name="cannon_items_list"
+                          width="500"
+                          height="140"
+                          alignX="center"
+                          alignY="top"
+                          marginTop="32"
+                          layout="grid"
+                          direction="vertical"
+                          cacheSkinMaskAsBitmap="false"
+                          itemAlignX="left" itemAlignY="top" mouseEnabled="true" mouseChildren="true"
+                          registeredSkinName="commonui_list_mask">
+                        <itemrenderer width="32" 
+                              height="32"
+                              autoSizeWidth="false"
+                              mouseEnabled="true"
+                              mouseChildren="true"
+                              autoSizeHeight="false">
+                            <coreponent name="icon" width="30" height="30" alignX="center" alignY="top" marginTop="1" marginLeft="1"/>
+                            <coreponent name="item_equip" width="30" height="30"
+                                    registeredSkinName="select_item_equip_img"
+                                    alignX="center" 
+                                    alignY="top"
+                                    />
+                            <coreponent name="item_select" width="26" height="23"
+                                    registeredSkinName="select_item_check_img"
+                                    alignX="center" 
+                                    alignY="center"/>
+                            <Label name="level_Label"
+                                   width="30" height="20" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="left" alignY="top" marginLeft='1' marginTop='-1'
+                                   registeredTextStyleName="selecter_item_level_label"
+                                   registeredSkinName="commonui_default_label" 
+                                   text=''/>
+                             <coreponent name="item_select_yellow" width="30" height="30"
+                                    registeredSkinName="item_type_select"
+                                    alignX="center" 
+                                    alignY="center"/>
+                            <!-- <Label name="name_Label"
+                                   width="30" height="20" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="left" alignY="bottom" marginLeft='1' marginTop='-1'
+                                   registeredTextStyleName="selecter_item_level_label"
+                                   registeredSkinName="commonui_default_label" 
+                                   text=''/> -->
+
+                        </itemrenderer>
+                    </Grid>
+                    <scrollbar name="scroll_bar"
+                           width="10" height="140" autoSizeHeight="false" direction="vertical"
+                           marginTop="32" marginBottom="0" alignX="right" marginRight="0"
+                           registeredSkinName="commonui_scrollbar_bgnd">
+                            <button name="buttonSlider"
+                                    width="8" height="10" alignX="center"
+                                    registeredSkinName="commonui_scrollbar_slider"/>
+                    </scrollbar>
+                    <bind source="scroll_bar"
+                      target="cannon_items_list"
+                      type="scrollcontainer"/>
+                </coreponent>
+                <coreponent name="item_ship_group" width="520" height="76" alignX="left" alignY="bottom" marginBottom="95">
+                    <Label name="ships_label" registeredSkinName="commonui_default_label" width="100" height="30" registeredTextStyleName="info_label" alignX="left" alignY="top" text="localize:Synthesis_target_ship"/>
+                    <coreponent name="ship_icon" width="30" height="30" alignX="left" alignY="top" marginTop="25">
+                        <coreponent name="bg" width="30" height="30" registeredSkinName="cost_ship_item_icon_bg"/>
+                        <coreponent name="icon" width="28" height="28" alignX="center" alignY="center" mouseEnabled="true" mouseChildren="true"/>
+                    </coreponent>                    
+                </coreponent>
+                <coreponent name="normal_cost_group" width="520" height="161"  alignX="left" alignY="bottom" marginBottom="10">
+                    <Label name="item_label" width="100" height="30" alignX="left" alignY="top" marginTop="85" registeredSkinName="commonui_default_label" registeredTextStyleName="info_label" text="localize:Synthesis_need_item"/>
+                    <itemlist name="select_item_bg_list" width="300" layout="horizontal" height="32" alignX="left" alignY="bottom" marginBottom="20" itemAlignX="left" itemAlignY="center" itemGap="5" cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+                        <itemrenderer width="30" height="30" autoSizeWidth="false" autoSizeHeight="false">
+                            <coreponent name="bg" width="30" height="30" registeredSkinName="cost_ship_item_icon_bg">
+                                <bitmap x="5" y="5" width="20" height="20" library="gameclientCommonUI" libraryID="cursor_cross" />
+                            </coreponent>
+                            <!-- <coreponent name="icon" width="30" height="30" alignX="center" alignY="center"/> -->
+                        </itemrenderer>
+                    </itemlist>
+                    <Grid name="select_item_list" width="300" height="32" alignX="left" alignY="bottom"  marginBottom="20" itemAlignX="left" itemAlignY="center" itemGapX="5" cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+                        <itemrenderer width="30" height="30" autoSizeWidth="false" autoSizeHeight="false">
+                            <coreponent name="bg" width="30" height="30">
+                                
+                            </coreponent>
+                            <coreponent name="icon" width="28" height="28" alignX="center" alignY="center"/>
+                            <Label name="level_Label"
+                                   width="30" height="20" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="left" alignY="top" marginLeft='1' marginTop='-1'
+                                   registeredTextStyleName="selecter_item_level_label"
+                                   registeredSkinName="commonui_default_label" 
+                                   text=''/>
+                        </itemrenderer>
+                    </Grid>
+                    <Grid name="cost_item_list" width="195" height="110" alignY="top" marginTop="5" alignX="right" itemAlignX="left" itemGapY="5">
+                        <itemrenderer width="195" height="50" autoSizeWidth="false" autoSizeHeight="false">
+                                <coreponent name="bg" width="195" height="50" registeredSkinName="cost_item_bg" alignX="center" alignY="center" alpha="0.6"/>
+                                <coreponent name="icon_bg" registeredSkinName="cost_item_icon_bg" alignX="left" alignY="center"/>
+                                <coreponent name="icon" width="28" height="28" alignX="left" alignY="top" marginLeft="3" marginTop="10"/>
+                                <Label name="cost_item_name" width="160" height="25" registeredSkinName="commonui_default_label" registeredTextStyleName="cost_info_label" alignX="left" marginLeft="34" alignY="top" marginTop="3"/>
+                                <Label name="cost_num_label" width="160" height="25"  registeredSkinName="commonui_default_label" registeredTextStyleName="cost_info_label" alignX="left" marginLeft="34" alignY="top" marginTop="28"/>
+                                <button name="tip_info" registeredSkinName="commonui_info_button" alignX="right" alignY="bottom" mouseEnabled="true" mouseChildren="true"/>
+                           
+                        </itemrenderer>
+                    </Grid>
+                   <!--  <coreponent name="cost_item_group" width="119" height="46" alignX="right">
+                        <coreponent name="bg" registeredSkinName="cost_item_bg" alignX="center" alignY="center" alpha="0.6"/>
+                        <coreponent name="icon_bg" registeredSkinName="cost_item_icon_bg" alignX="left" alignY="center"/>
+                        <coreponent name="icon" width="30" height="30" alignX="left" marginLeft="5" alignY="center"/>
+                        <Label name="cost_item_name" registeredTextStyleName="cost_info_label" registeredSkinName="commonui_default_label" alignX="left" marginLeft="32" alignY="top" marginTop="2"/>
+                        <Label name="cost_num_label" registeredTextStyleName="cost_info_label" registeredSkinName="commonui_default_label" alignX="bottom" marginLeft="32" alignY="bottom" marginBottom="22"/>
+                        <coreponent name="tip_info" registeredSkinName="commonui_info_button" alignX="right" alignY="center"/>
+                    </coreponent> -->
+                    <button name="synthesis_btn" text="Synthesis"
+                            width="100" height="29" autoSizeWidth="false" autoSizeHeight="false"
+                            alignY="bottom" marginRight="15" alignX="right" marginBottom="18"
+                            registeredSkinName="commonui_scale9_button_blue" buttonMode="true"/>
+                </coreponent>
+            </coreponent>
+        </container>
+    </template>
+    <container name="root"
+               width="640" height="460" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChilderen="true">
+        <reference template="synthesis"/>
+    </container>
+</root>

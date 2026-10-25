@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="seasonPass_asset"/>
+		<library id="chatWindowUIAssets"/>
+		<library id="addtionalIcons"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+	<textstyle  name="season_pass_mission_side_tab"
+				textColor="0xFFFFFF"
+				type="dynamic"
+				fontSize="10"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="season_pass_mission_tab_button_normal"
+				textColor="0xFFFFFF"
+				type="dynamic"
+				fontSize="10"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="season_pass_mission_tab_button_clicked"
+				textColor="0xebda9d"
+				type="dynamic"
+				fontSize="10"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="season_pass_mission_header"
+				textColor="0xfdcb33"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="left"/>
+
+	<textstyle  name="season_pass_mission_objective_info"
+				textColor="0xffffff"
+				type="dynamic"
+				fontSize="9"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="left"/>
+
+	<textstyle  name="season_pass_mission_objective_info_completed"
+				textColor="0x878787"
+				type="dynamic"
+				fontSize="9"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="left"/>
+
+	<!-- SKINS -->
+	<skin name="season_pass_mission_bg" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="bg_missions">normal</layer>
+	</skin>
+
+	<skin name="season_pass_mission_header_bg" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="bg_objective">normal</layer>
+	</skin>
+
+	<skin name="season_pass_mission_button_tab" library="seasonPass_asset" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="bg_objective_side_unselected"
+			   registeredTextStyleName="season_pass_mission_tab_button_normal">normal
+		</layer>
+		<layer classname="BitmapLayer" libraryID="bg_objective_side_hover"
+			   registeredTextStyleName="season_pass_mission_tab_button_normal">over
+		</layer>
+		<layer classname="BitmapLayer" libraryID="bg_objective_side_selected"
+			   registeredTextStyleName="season_pass_mission_tab_button_clicked">clicked
+		</layer>
+		<layer classname="BitmapLayer" libraryID="bg_objective_side_selected"
+			   registeredTextStyleName="season_pass_mission_tab_button_clicked">disabled
+		</layer>
+	</skin>
+
+	<skin name="season_pass_mission_icon_check" classname="BasicStateSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="icon_check">normal</layer>
+		<layer classname="BitmapLayer" libraryID="icon_check_dark">dark</layer>
+	</skin>
+
+	<skin name="season_pass_mission_state_free" library="seasonPass_asset" classname="BasicStateSkin">
+		<layer classname="BitmapLayer" libraryID="bg_objective_free"
+			   registeredTextStyleName="season_pass_mission_objective_info">incomplete
+		</layer>
+		<layer classname="BitmapLayer" libraryID="bg_objective_free_claimed"
+			   registeredTextStyleName="season_pass_mission_objective_info_completed">completed
+		</layer>
+	</skin>
+
+	<skin name="season_pass_mission_state_gold" library="seasonPass_asset" classname="BasicStateSkin">
+		<layer classname="BitmapLayer" libraryID="bg_objective_gold"
+			   registeredTextStyleName="season_pass_mission_objective_info">incomplete
+		</layer>
+		<layer classname="BitmapLayer" libraryID="bg_objective_gold_claimable"
+			   registeredTextStyleName="season_pass_mission_objective_info">locked
+		</layer>
+		<layer classname="BitmapLayer" libraryID="bg_objective_gold_claimed"
+			   registeredTextStyleName="season_pass_mission_objective_info_completed">unlocked
+		</layer>
+	</skin>
+
+	<skin name="season_pass_mission_reward_locked" library="seasonPass_asset" classname="ButtonSkin">
+		<layer classname="BitmapLayer" libraryID="icon_objective_locked">normal</layer>
+		<layer classname="BitmapLayer" libraryID="icon_objective_locked">disabled</layer>
+	</skin>
+
+	<skin name="season_pass_mission_reward" library="seasonPass_asset" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="icon_objective_unlocked">normal</layer>
+	</skin>
+
+	<skin name="season_pass_mission_reward_completed" library="seasonPass_asset" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="icon_objective_completed">normal</layer>
+	</skin>
+
+	<skin name="season_pass_mission_scrollbar_bg" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+	</skin>
+	
+	<skin name="button_reconnect_skin" library="chatWindowUIAssets" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="btn_refresh_normal"   >normal</layer>
+		<layer classname="BitmapLayer" libraryID="btn_refresh_hover"    >over</layer>
+		<layer classname="BitmapLayer" libraryID="btn_refresh_active"    >clicked</layer>
+		<layer classname="BitmapLayer" libraryID="btn_refresh_inactive"    >disabled</layer>
+	</skin>
+
+	<skin name="button_hint" library="addtionalIcons" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="corner_help_normal">normal</layer>
+		<layer classname="BitmapLayer" libraryID="corner_help_hover">over</layer>
+		<layer classname="BitmapLayer" libraryID="corner_help_hover">clicked</layer>
+		<layer classname="BitmapLayer" libraryID="corner_help_normal">disabled</layer>
+	</skin>
+
+	<!-- TEMPLATES -->
+	<template name="SEASON_PASS_MISSIONS">
+		<container name="missions"
+					width="800" height="440" autoSizeWidth="false" autoSizeHeight="false">
+
+			<container  name="active" width="710" height="280" autoSizeWidth="false" autoSizeHeight="false"
+						marginTop="105" marginLeft="45">
+
+				<coreponent name="bg"
+							autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+							registeredSkinName="season_pass_mission_bg"/>
+
+				<container name="sidebar" width="105" height="124">
+
+					<button name="daily" text="localize:window_mission_sp_tab_daily"
+							autoSizeWidth="true" autoWidthMode="parent" height="40" autoSizeHeight="false"
+							mouseEnabled="true" mouseChildren="true"
+							registeredSkinName="season_pass_mission_button_tab"/>
+					<button name="weekly" text="localize:window_mission_sp_tab_weekly"
+							autoSizeWidth="true" autoWidthMode="parent" height="40" autoSizeHeight="false"
+							marginTop="42"
+							mouseEnabled="true" mouseChildren="true"
+							registeredSkinName="season_pass_mission_button_tab"/>
+					<button name="season" text="localize:window_mission_sp_tab_season"
+							autoSizeWidth="true" autoWidthMode="parent" height="40" autoSizeHeight="false"
+							marginTop="84"
+							mouseEnabled="true" mouseChildren="true"
+							registeredSkinName="season_pass_mission_button_tab"/>
+				</container>
+				
+				
+
+
+				<!-- mission list container-->
+				<container  name="body"
+							width="575" height="260" autoSizeWidth="false" autoSizeHeight="false"
+							marginLeft="120" alignY="center">
+
+					<!-- header -->
+					<container  name="header"
+								autoSizeWidth="true" autoWidthMode="parent" height="40" autoSizeHeight="false">
+						<coreponent name="bg"
+									autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+									registeredSkinName="season_pass_mission_header_bg"/>
+
+						<label  name="mission_obj" text="localize:window_mission_sp_tab_mission-objectives"
+								width="180" height="20" autoSizeWidth="false" autoSizeHeight="false"
+								alignY="center" marginLeft="40"
+								registeredTextStyleName="season_pass_mission_header" registeredSkinName="commonui_default_label"/>
+
+						<label  name="reward" text="localize:window_mission_sp_tab_rewards"
+								width="175" height="20" autoSizeWidth="false" autoSizeHeight="false"
+								alignX="right" alignY="center"
+								registeredTextStyleName="season_pass_mission_header" registeredSkinName="commonui_default_label"/>
+
+						<label  name="refresh" text="localize:window_mission_reroll_title"
+								width="80" height="20" autoSizeWidth="false" autoSizeHeight="false"
+								alignX="right" alignY="center" mouseEnabled="true" mouseChildren="true"
+								registeredTextStyleName="season_pass_mission_header" registeredSkinName="commonui_default_label"/>
+						<label  name="refreshTimes" text=""
+								width="80" height="20" autoSizeWidth="false" autoSizeHeight="false"
+								alignY="bottom" marginLeft="520" mouseEnabled="true" mouseChildren="true"
+								registeredTextStyleName="season_pass_mission_header" registeredSkinName="commonui_default_label"/>
+						<button name="tip" tooltipData="localize:window_mission_right_top_tip"
+								alignX="right"
+								marginTop="-15" marginRight="-20"
+								autoSizeWidth="false" autoWidthMode="parent" width="41" height="38" autoSizeHeight="false"
+								mouseEnabled="true" mouseChildren="true"
+								registeredSkinName="button_hint"/>
+					</container>
+
+					<!-- mission container -->
+					<container  name="content"
+								autoSizeWidth="true" autoWidthMode="parent" height="210" autoSizeHeight="false"
+								marginTop="40">
+
+						<itemlist   name="list"
+									autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+									layout="vertical" itemGap="0"
+									mouseEnabled="true" mouseChildren="true"
+									cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+							<itemrenderer autoSizeWidth="true" autoWidthMode="parent" height="70" autoSizeHeight="false"
+										  itemGap="0" mouseEnabled="true" mouseChildren="true">
+
+								<coreponent name="bg"
+											autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+											registeredSkinName="season_pass_mission_state_free"/>
+
+								<coreponent name="check"
+											width="10" height="10" autoSizeWidth="false" autoSizeHeight="false"
+											alignY="center" marginLeft="15" y="2"
+											registeredSkinName="season_pass_mission_icon_check"/>
+
+								<label  name="objective"
+										width="200" height="15" autoSizeWidth="false" autoSizeHeight="false"
+										alignY="center" marginLeft="40" autoSizeTextHeight="true"
+										registeredTextStyleName="season_pass_mission_objective_info" registeredSkinName="commonui_default_label"/>
+
+								<label  name="progress"
+										width="100" height="15" autoSizeWidth="false" autoSizeHeight="false"
+										alignY="center" marginLeft="260" autoSizeTextHeight="true"
+										registeredTextStyleName="season_pass_mission_objective_info" registeredSkinName="commonui_default_label"/>
+
+								<button name="btn_locked"
+										width="35" height="32" autoSizeWidth="false" autoSizeHeight="false"
+										alignX="right" alignY="center" marginRight="140"
+										mouseEnabled="false" visible="false"
+										registeredSkinName="season_pass_mission_reward_locked"/>
+
+								<coreponent name="icon"
+											width="35" height="32" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="right" alignY="center" marginRight="140"
+											visible="false"
+											registeredSkinName="season_pass_mission_reward"/>
+
+								<coreponent name="icon_completed"
+											width="35" height="32" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="right" alignY="center" marginRight="140"
+											visible="false"
+											registeredSkinName="season_pass_mission_reward_completed"/>
+
+								<label  name="points"
+										width="140" height="15" autoSizeWidth="false" autoSizeHeight="false"
+										alignX="right" alignY="center"
+										registeredTextStyleName="season_pass_mission_objective_info" registeredSkinName="commonui_default_label"/>
+										
+								<button name="btn_refresh" width="18" height="16" 
+										autoSizeWidth="false" autoSizeHeight="false" autoHeightMode="parent"
+										alignX="right" alignY="center" marginRight="30" visible="true" mouseEnabled="true"
+										registeredSkinName="button_reconnect_skin"/>
+
+								<!--<coreponent name="btn_refresh"
+											width="45" height="30" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="right" alignY="center" marginRight="30"
+											registeredSkinName="season_pass_icon_points"/>-->
+
+							</itemrenderer>
+						</itemlist>
+						<scrollbar name="scroll_bar"
+								   width="5" autoSizeHeight="true" direction="vertical"
+								   marginTop="0" marginBottom="0" marginRight="0" alignX="right"
+								   registeredSkinName="season_pass_mission_scrollbar_bg">
+							<button name="buttonSlider"
+									width="5" height="10" alignX="center"
+									registeredSkinName="commonui_scrollbar_slider"/>
+						</scrollbar>
+						<bind source="scroll_bar"
+							  target="list"
+							  type="scrollcontainer"/>
+					</container>
+				</container>
+			</container>
+		</container>
+	</template>
+
+	<!-- CONTENT -->
+	<container  name="root" width="800" height="440" autoSizeWidth="false" autoSizeHeight="false"
+				mouseEnabled="false" mouseChilderen="true">
+		<reference template="SEASON_PASS_MISSIONS"/>
+	</container>
+</root>

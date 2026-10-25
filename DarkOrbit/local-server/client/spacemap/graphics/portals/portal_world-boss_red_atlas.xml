@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="portal_world-boss_red_texture.png">
+	<!-- Created with Adobe Animate version 23.0.2.103 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="portal_world-boss_red_01.png" x="0" y="0" width="400" height="400" pivotX="0" pivotY="0"/>
+	<SubTexture name="portal_world-boss_red_02.png" x="0" y="400" width="400" height="400" pivotX="0" pivotY="0"/>
+	<SubTexture name="portal_world-boss_red_03.png" x="0" y="800" width="400" height="400" pivotX="0" pivotY="0"/>
+	<SubTexture name="portal_world-boss_red_04.png" x="0" y="1200" width="400" height="400" pivotX="0" pivotY="0"/>
+	<SubTexture name="portal_world-boss_red_05.png" x="0" y="1600" width="400" height="400" pivotX="0" pivotY="0"/>
+	<SubTexture name="portal_world-boss_red_06.png" x="400" y="0" width="400" height="400" pivotX="0" pivotY="0"/>
+	<SubTexture name="portal_world-boss_red_07.png" x="400" y="400" width="400" height="400" pivotX="0" pivotY="0"/>
+	<SubTexture name="portal_world-boss_red_08.png" x="400" y="800" width="400" height="400" pivotX="0" pivotY="0"/>
+	<SubTexture name="portal_world-boss_red_09.png" x="400" y="1200" width="400" height="400" pivotX="0" pivotY="0"/>
+	<SubTexture name="portal_world-boss_red_10.png" x="400" y="1600" width="400" height="400" pivotX="0" pivotY="0"/>
+</TextureAtlas>

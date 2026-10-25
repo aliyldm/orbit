@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+    </libraries>
+
+
+    <textstyle name="sae_shop_info_header"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="10"
+               autoSize="left"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="true"
+               align="left"/>
+
+    <!-- TEXT STYLES -->
+    <skin name="sae_info_image" classname="BasicSkin" library="gameclientCommonUI">
+        <layer classname="BitmapLayer" libraryID="icon_info_grey">normal</layer>
+    </skin>
+
+    <skin name="cost_item_bg" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x2b2e31" fillAlpha="1">normal</layer>
+    </skin>
+
+
+    <!-- TEMPLATES  -->
+    <!--    registeredSkinName="commonui_darklayer"-->
+    <template name="strikeAndExitInfo">
+        <container name="main" autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true"
+                   autoHeightMode="parent">
+
+            <container name="top" autoSizeWidth="true" autoSizeHeight="true" marginTop="4">
+                <container name="item0" width="380" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="0" alignX="center">
+
+                    <coreponent name="bg"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0" registeredSkinName="cost_item_bg">
+                    </coreponent>
+
+                    <coreponent name="icon"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0"/>
+                    <label name="label"
+                           width="420" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="15" marginLeft="40"
+                           registeredTextStyleName="sae_shop_info_header"
+                           registeredSkinName="commonui_default_label" text="123123"/>
+
+                           <label name="endTime"
+                           width="420" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="15" marginLeft="240"
+                           registeredTextStyleName="sae_shop_info_header"
+                           registeredSkinName="commonui_default_label" text="123123"/>
+
+
+                </container>
+            </container>
+
+            <coreponent height="2" autoSizeWidth="true" autoSizeHeight="false" marginTop="37" alignX="center"
+                        registeredSkinName="commonui_horizontal_divider"/>
+
+            <container name="body" autoSizeWidth="true" autoSizeHeight="true" marginTop="40">
+                <container name="item1" width="380" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="0" alignX="center">
+                    <coreponent name="bg"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0" registeredSkinName="cost_item_bg">
+                    </coreponent>
+
+                    <coreponent name="icon"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0"/>
+                    <label name="label"
+                           width="420" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="15" marginLeft="40"
+                           registeredTextStyleName="sae_shop_info_header"
+                           registeredSkinName="commonui_default_label" text="123123"/>
+
+                    <label name="spawn"
+                           width="420" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="15" marginLeft="200"
+                           registeredTextStyleName="sae_shop_info_header"
+                           registeredSkinName="commonui_default_label" text="123123"/>
+
+
+                </container>
+
+                <container name="item2" width="380" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="34" alignX="center">
+                    <coreponent name="bg"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0" registeredSkinName="cost_item_bg">
+                    </coreponent>
+
+                    <coreponent name="icon"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0"/>
+                    <label name="label"
+                           width="420" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="15" marginLeft="40"
+                           registeredTextStyleName="sae_shop_info_header"
+                           registeredSkinName="commonui_default_label" text="123123"/>
+                </container>
+
+                <container name="item3" width="380" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="68" alignX="center">
+                    <coreponent name="bg"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0" registeredSkinName="cost_item_bg">
+                    </coreponent>
+
+                    <coreponent name="icon"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0"/>
+                    <label name="label"
+                           width="420" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="15" marginLeft="40"
+                           registeredTextStyleName="sae_shop_info_header"
+                           registeredSkinName="commonui_default_label" text="123123"/>
+                </container>
+
+                <container name="item4" width="380" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="102" alignX="center">
+                    <coreponent name="bg"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0" registeredSkinName="cost_item_bg">
+                    </coreponent>
+
+                    <coreponent name="icon"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0"/>
+                    <label name="label"
+                           width="420" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="15" marginLeft="40"
+                           registeredTextStyleName="sae_shop_info_header"
+                           registeredSkinName="commonui_default_label" text="123123"/>
+                </container>
+
+            </container>
+
+            <coreponent height="2" autoSizeWidth="true" autoSizeHeight="false" marginTop="175" alignX="center"
+                        registeredSkinName="commonui_horizontal_divider"/>
+
+            <container name="bottom" autoSizeWidth="true" autoSizeHeight="true" marginTop="178">
+                <container name="item5" width="380" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="0" alignX="center">
+                    <coreponent name="bg"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0" registeredSkinName="cost_item_bg">
+                    </coreponent>
+
+                    <coreponent name="icon"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0"/>
+                    <label name="label"
+                           width="420" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="15" marginLeft="40"
+                           registeredTextStyleName="sae_shop_info_header"
+                           registeredSkinName="commonui_default_label" text="123123"/>
+                </container>
+
+                <container name="item6" width="380" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="34" alignX="center">
+                    <coreponent name="bg"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0" registeredSkinName="cost_item_bg">
+                    </coreponent>
+
+                    <coreponent name="icon"
+                                width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="5" marginTop="0"/>
+                    <label name="label"
+                           width="420" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="15" marginLeft="40"
+                           registeredTextStyleName="sae_shop_info_header"
+                           registeredSkinName="commonui_default_label" text="123123"/>
+                </container>
+            </container>
+
+            <button name="infoBtn" marginLeft="0" marginTop="0" registeredSkinName="commonui_info_button"/>
+        </container>
+    </template>
+
+    <container name="root" width="400" height="260" autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="false"
+               mouseChilderen="true">
+        <reference template="strikeAndExitInfo"/>
+    </container>
+</root>

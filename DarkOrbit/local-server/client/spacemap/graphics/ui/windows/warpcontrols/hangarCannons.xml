@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="contactsWindowUI"/>
+	</libraries>
+
+	<textstyle name="center_view_label"
+				textColor="0xededed"
+				fontSize="12"
+				bold="true"
+				wordWrap="false"
+				align="left"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				autoSize="left"/>
+	<textstyle name="right_view_label"
+				textColor="0xededed"
+				fontSize="12"
+				bold="true"
+				wordWrap="false"
+				align="center"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				autoSize="center"/>
+
+	<textstyle name="center_view_item_label"
+				textColor="0xFFFFFF"
+				fontSize="10"
+				bold="false"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				autoSize="center"/>
+	<textstyle name="warp_controls_item_level_label"
+				textColor="0x72f0ff"
+				fontSize="10"
+				bold="false"
+				embedFonts="false"
+				wordWrap="false"
+				multiline="false"
+				fontName="Verdana"
+				align="left"
+				glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'
+				/>
+	<textstyle name="warp_controls_ship_label"
+				background="false"
+				textColor="0xEDEDED"
+				type="dynamic"
+				align="center"
+				selectable="false"
+				fontName="Verdana"
+				embedFonts="false"
+				wordWrap="true"
+				multiline="true"
+				fontSize="14"/>
+	<textstyle name="tab_btn_label"
+				textColor="0x6FB2CB"
+				type="dynamic"
+				fontSize="22"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+	<textstyle name="center_tab_btn_label"
+				textColor="0x6FB2CB"
+				type="dynamic"
+				fontSize="10"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+	<textstyle name="center_tab_btn_label_select"
+				textColor="0xfeea90"
+				type="dynamic"
+				fontSize="10"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>             
+	<textstyle name="tab_btn_label_select"
+				textColor="0xfeea90"
+				type="dynamic"
+				fontSize="22"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<skin name="view_background_img" library="gameclientCommonUI" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="input_background_blue" scale9grid="4,4,6,5" >normal</layer>
+	</skin>
+	<skin name="can_equment_skin" library="contactsWindowUI" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="contactlist_buddy_blocked">normal</layer>
+	</skin>
+	<skin name="warp_controls_darklayer" classname="BasicSkin" library="hintSystemUI">
+			<layer classname="FilledBoxLayer"  fillColor="0x000000" fillAlpha="1"  >normal</layer>
+		</skin>
+	<skin name="warp_btn" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x32e629" fillAlpha="0">normal</layer>
+		<layer classname="FilledBoxLayer" fillColor="0xffffff" fillAlpha="0.1">over</layer>
+		<layer classname="FilledBoxLayer" fillColor="0xffffff" fillAlpha="0.3">clicked</layer>
+		<layer classname="FilledBoxLayer" lineColor="0xffcc00" fillAlpha="0" lineAlpha="1" inverted="true">disabled</layer>
+	</skin>
+		<skin name="sae_shop_scrollbar_bg" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+	</skin>
+	<!-- TEMPLATES -->
+	<template name="warp_controls" >
+		<container name="body" autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" width="770" height="500">
+					<coreponent name="left_view"
+						autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" width="200" height="300" alignX="left" marginTop="18" > 
+						<label name="weapon_view_title"
+								registeredTextStyleName="right_view_label"
+								height="30"
+								alignX="center"
+								alignY="top"
+								marginTop="10"
+								width="200"
+								text="CONFIGURATION"/>                      
+						<coreponent name="btnContainer"
+							autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" alignX="center" marginTop="50" width="120" height="50">
+							<coreponent name="btn_1" width="50" height="50" autoSizeWidth="false"
+												mouseEnabled="true" mouseChildren="true" 
+								alignX="left">
+								<button name="tab"
+									autoSizeWidth="true" autoSizeHeight="true"
+									mouseEnabled="true" mouseChildren="true"
+									registeredSkinName="commonui_tabbarbutton"/>
+								<button name="tab_selected" visible="false"
+										autoSizeWidth="true"  autoSizeHeight="true"
+										mouseEnabled="true" mouseChildren="true"
+										registeredSkinName="commonui_tabbarbutton.selected"/>
+								<label  name="tabLabel" registeredSkinName="commonui_default_label"
+										registeredTextStyleName="tab_btn_label" mouseEnabled="false"
+										mouseChildren="false" autoSizeWidth="false" text="?" alignX='center' alignY='top' marginTop='10'/>
+							</coreponent>
+							<coreponent name="btn_2" width="50" height="50" autoSizeWidth="false"
+										mouseEnabled="true" mouseChildren="true" 
+								alignX="right">
+								<button name="tab"
+									autoSizeWidth="true" autoSizeHeight="true"
+									mouseEnabled="true" mouseChildren="true"
+									registeredSkinName="commonui_tabbarbutton"/>
+								<button name="tab_selected" visible="false"
+										autoSizeWidth="true"  autoSizeHeight="true"
+										mouseEnabled="true" mouseChildren="true"
+										registeredSkinName="commonui_tabbarbutton.selected"/>
+								<label  name="tabLabel" registeredSkinName="commonui_default_label"
+										registeredTextStyleName="tab_btn_label" mouseEnabled="false" 
+										mouseChildren="false" autoSizeWidth="false" text="?" alignX='center' alignY='top' marginTop='10'/>
+							</coreponent>
+									
+													
+						</coreponent>                 
+						<coreponent name="ship_view"
+									autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" width="200" height="300" y="50">
+							
+
+								<coreponent name="warp_icon" autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" width="128" height="113" alignX="center" alignY="center">
+									<coreponent name="darkLayer"
+												height="172"
+												width="148"
+												alignX="center"
+												alignY="center"
+												registeredSkinName="commonui_darklayer"/>
+
+									<coreponent name="pic"
+												width="147"
+												height="135"
+												alignX="center"
+												alignY="center"
+												marginTop="0"/>
+									
+
+										<label name="warpShipLabel"
+												alignY="bottom"
+												alignX="center"
+												height="45"
+												width="147"
+												marginLeft="10"
+												marginBottom="-45"
+												registeredTextStyleName="warp_controls_ship_label"
+												text=""/>
+
+									
+								</coreponent>>
+									
+						</coreponent>                               
+					</coreponent>
+					<coreponent name='center_view' 
+								autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" width="260" height="300"  marginTop="10" x="200">
+						<coreponent name="up_list_view" autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" width="260" height="100" >
+							<label name="center_view_up_label"
+									registeredTextStyleName="center_view_label"
+									height="30"
+									alignX="left"
+									marginLeft="10"
+									alignY="top"
+									marginTop="10"
+									text="RAILGUN"/>
+							
+							<Grid name="center_view_up_list" width="240" height="40" y="40"  autoSizeWidth="false" autoSizeHeight="false" x="10"
+										layout="grid" itemGap="5" itemAlignX="left"
+										mouseEnabled="true" mouseChildren="true" cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+								<itemrenderer width="34" height="34" autoSizeWidth="false" autoSizeHeight="false"
+												itemGap="5" mouseEnabled="true" mouseChildren="true">
+									
+									<coreponent name="bg"
+												width="32" height="32" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="commonui_hitlayer"/>
+									<coreponent name="iconBg"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="warp_controls_darklayer"/>
+									<coreponent name="icon"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center" 
+												/>
+									<label name="titleLabel"
+										width="100" height="10" autoSizeWidth="false" autoSizeHeight="false" alignX="center" alignY="top"
+										registeredTextStyleName="center_view_item_label"
+										registeredSkinName="commonui_default_label"
+										text=''/>
+									<label name="level_Label"
+											width="30" height="20" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="left" alignY="top" marginLeft='1' marginTop='-1'
+											registeredTextStyleName="warp_controls_item_level_label"
+											registeredSkinName="commonui_default_label" 
+											text=''/>
+								</itemrenderer>
+							</Grid>                             
+								<scrollbar name="up_scroll_bar"
+								height="10" autoSizeWidth="true" direction="horizontal"
+								marginBottom="-10" marginLeft="0" marginRight="0" alignX="center" alignY="bottom"
+								registeredSkinName="commonui_scrollbar_bgnd">
+								<button name="buttonSlider"
+										width="8" height="10" alignX="center"
+										registeredSkinName="commonui_scrollbar_slider"/>
+							</scrollbar>   
+						</coreponent>
+						<coreponent name="down_list_view" autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" width="260" height="200" y="115" >
+							<label name="center_view_down_label"
+									alignX="left"
+									alignY="top"
+									registeredTextStyleName="center_view_label"
+									height="30"
+									marginLeft="10"
+									text="REFRACTOP"/>
+							
+							<Grid name="center_view_down_list" width="240" height="40" y="30"  autoSizeWidth="false" autoSizeHeight="false" x="10"
+										layout="grid" itemGap="5" itemAlignX="left"
+										mouseEnabled="true" mouseChildren="true" cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+								<itemrenderer width="34" height="34" autoSizeWidth="false" autoSizeHeight="false"
+												itemGap="5" mouseEnabled="true" mouseChildren="true">
+									
+									<coreponent name="bg"
+												width="32" height="32" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="commonui_hitlayer"/>
+									<coreponent name="iconBg"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="warp_controls_darklayer"/>
+									<coreponent name="icon"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center" 
+												/>
+									<label name="titleLabel"
+										width="100" height="10" autoSizeWidth="false" autoSizeHeight="false" alignX="center" alignY="top"
+										registeredTextStyleName="center_view_item_label"
+										registeredSkinName="commonui_default_label"
+										text=''/>
+									<label name="level_Label"
+											width="30" height="20" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="left" alignY="top" marginLeft='1' marginTop='-1'
+											registeredTextStyleName="warp_controls_item_level_label"
+											registeredSkinName="commonui_default_label" 
+											text=''/>
+								</itemrenderer>
+							</Grid>
+								<scrollbar name="down_scroll_bar"
+								height="10" autoSizeWidth="true" autoSizeHeight="false" direction="horizontal"
+								marginBottom="100" marginLeft="0" marginRight="0" alignX="center" alignY="bottom"
+								registeredSkinName="commonui_scrollbar_bgnd">
+								<button name="buttonSlider"
+										width="8" height="10" alignX="center"
+										registeredSkinName="commonui_scrollbar_slider"/>
+							</scrollbar>
+						</coreponent>
+
+						<coreponent name="quantum_list_view" autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" width="260" height="200" y="220" >
+							<label name="center_view_quantum_label"
+									alignX="left"
+									alignY="top"
+									registeredTextStyleName="center_view_label"
+									height="30"
+									marginLeft="10"
+									text="QUANTUM"/>
+							
+							<Grid name="center_view_quantum_list" width="240" height="40" y="30"  autoSizeWidth="false" autoSizeHeight="false" x="10"
+										layout="grid" itemGap="5" itemAlignX="left"
+										mouseEnabled="true" mouseChildren="true" cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+								<itemrenderer width="34" height="34" autoSizeWidth="false" autoSizeHeight="false"
+												itemGap="5" mouseEnabled="true" mouseChildren="true">
+									
+									<coreponent name="bg"
+												width="32" height="32" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="commonui_hitlayer"/>
+									<coreponent name="iconBg"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="warp_controls_darklayer"/>
+									<coreponent name="icon"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center" 
+												/>
+									
+									<label name="titleLabel"
+										width="100" height="10" autoSizeWidth="false" autoSizeHeight="false" alignX="center" alignY="top"
+										registeredTextStyleName="center_view_item_label"
+										registeredSkinName="commonui_default_label"
+										text=''/>
+									<label name="level_Label"
+											width="30" height="20" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="left" alignY="top" marginLeft='1' marginTop='-1'
+											registeredTextStyleName="warp_controls_item_level_label"
+											registeredSkinName="commonui_default_label" 
+											text=''/>
+								</itemrenderer>
+							</Grid>
+								<scrollbar name="quantum_scroll_bar"
+								height="10" autoSizeWidth="true" autoSizeHeight="false" direction="horizontal"
+								marginBottom="100" marginLeft="0" marginRight="0" alignX="center" alignY="bottom"
+								registeredSkinName="commonui_scrollbar_bgnd">
+								<button name="buttonSlider"
+										width="8" height="10" alignX="center"
+										registeredSkinName="commonui_scrollbar_slider"/>
+							</scrollbar>
+						</coreponent>
+
+					</coreponent>
+					<coreponent name='center_view_engine' visible="false"
+								autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" width="260" height="300"  marginTop="10" x="200">
+						<coreponent name="up_list_view" autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" width="260" height="100" >
+							<label name="center_view_up_label"
+									registeredTextStyleName="center_view_label"
+									height="30"
+									alignX="left"
+									marginLeft="10"
+									alignY="top"
+									marginTop="10"
+									text="ENGINE_1"/>
+							
+							<Grid name="center_view_up_list" width="240" height="135" y="35"  autoSizeWidth="false" autoSizeHeight="false" x="10" direction="vertical"
+										layout="grid" itemGap="5" 
+										itemAlignX="left"
+										mouseEnabled="true" mouseChildren="true" cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+								<itemrenderer width="34" height="34" autoSizeWidth="false" autoSizeHeight="false"
+												itemGap="5" mouseEnabled="true" mouseChildren="true">
+									
+									<coreponent name="bg"
+												width="32" height="32" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="commonui_hitlayer"/>
+									<coreponent name="iconBg"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="warp_controls_darklayer"/>
+									<coreponent name="icon"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center" 
+												/>
+									<label name="titleLabel"
+										width="100" height="10" autoSizeWidth="false" autoSizeHeight="false" alignX="center" alignY="top"
+										registeredTextStyleName="center_view_item_label"
+										registeredSkinName="commonui_default_label"
+										text=''/>
+									<label name="level_Label"
+											width="30" height="20" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="left" alignY="top" marginLeft='1' marginTop='-1'
+											registeredTextStyleName="warp_controls_item_level_label"
+											registeredSkinName="commonui_default_label" 
+											text=''/>
+								</itemrenderer>
+							</Grid>                             
+							<scrollbar name="up_scroll_bar"
+								width="10" height="112" autoSizeHeight="false" direction="vertical"
+								marginTop="35" marginBottom="0" alignX="right" marginRight="10"
+								registeredSkinName="commonui_scrollbar_bgnd">
+								<button name="buttonSlider"
+										width="8" height="10" alignX="center"
+										registeredSkinName="commonui_scrollbar_slider"/>
+							</scrollbar>   
+						</coreponent>
+						<coreponent name="down_list_view" autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" width="260" height="200" y="155" >
+							<label name="center_view_down_label"
+									alignX="left"
+									alignY="top"
+									registeredTextStyleName="center_view_label"
+									height="30"
+									marginLeft="10"
+									text="ENGINE_2"/>
+							
+							<Grid name="center_view_down_list" width="240" height="135" y="25"  autoSizeWidth="false" autoSizeHeight="false" x="10" direction="vertical"
+										layout="grid" itemGap="5"  
+										itemAlignX="left"
+										mouseEnabled="true" mouseChildren="true" cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+								<itemrenderer width="34" height="34" autoSizeWidth="false" autoSizeHeight="false"
+												itemGap="5" mouseEnabled="true" mouseChildren="true">
+									
+									<coreponent name="bg"
+												width="32" height="32" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="commonui_hitlayer"/>
+									<coreponent name="iconBg"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="warp_controls_darklayer"/>
+									<coreponent name="icon"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center" 
+												/>
+									<label name="titleLabel"
+										width="100" height="10" autoSizeWidth="false" autoSizeHeight="false" alignX="center" alignY="top"
+										registeredTextStyleName="center_view_item_label"
+										registeredSkinName="commonui_default_label"
+										text=''/>
+									<label name="level_Label"
+											width="30" height="20" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="left" alignY="top" marginLeft='1' marginTop='-1'
+											registeredTextStyleName="warp_controls_item_level_label"
+											registeredSkinName="commonui_default_label" 
+											text=''/>
+								</itemrenderer>
+							</Grid>
+							<scrollbar name="down_scroll_bar"
+								width="10" height="112" autoSizeHeight="false" direction="vertical"
+								marginTop="25" marginBottom="0" alignX="right" marginRight="10"
+								registeredSkinName="commonui_scrollbar_bgnd">
+								<button name="buttonSlider"
+										width="8" height="10" alignX="center"
+										registeredSkinName="commonui_scrollbar_slider"/>
+							</scrollbar>                             
+						</coreponent>
+					</coreponent>
+					<coreponent name="center_page_btn"
+							autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" x="305" y="307" width="35" height="15">
+							<coreponent name="btn_1" width="15" height="15" autoSizeWidth="false"
+												mouseEnabled="true" mouseChildren="true" 
+								alignX="left">
+								<button name="tab"
+									autoSizeWidth="true" autoSizeHeight="true"
+									mouseEnabled="true" mouseChildren="true"
+									registeredSkinName="commonui_tabbarbutton"/>
+								<button name="tab_selected" visible="false"
+										autoSizeWidth="true"  autoSizeHeight="true"
+										mouseEnabled="true" mouseChildren="true"
+										registeredSkinName="commonui_tabbarbutton.selected"/>
+								<label  name="tabLabel" registeredSkinName="commonui_default_label"
+										registeredTextStyleName="center_tab_btn_label" mouseEnabled="false"
+										mouseChildren="false" autoSizeWidth="false" text="1" alignX='center' alignY='top' />
+							</coreponent>
+							<coreponent name="btn_2" width="15" height="15" autoSizeWidth="false"
+										mouseEnabled="true" mouseChildren="true" 
+								alignX="right">
+								<button name="tab"
+									autoSizeWidth="true" autoSizeHeight="true"
+									mouseEnabled="true" mouseChildren="true"
+									registeredSkinName="commonui_tabbarbutton"/>
+								<button name="tab_selected" visible="false"
+										autoSizeWidth="true"  autoSizeHeight="true"
+										mouseEnabled="true" mouseChildren="true"
+										registeredSkinName="commonui_tabbarbutton.selected"/>
+								<label  name="tabLabel" registeredSkinName="commonui_default_label"
+										registeredTextStyleName="center_tab_btn_label" mouseEnabled="false" 
+										mouseChildren="false" autoSizeWidth="false" text="2" alignX='center' alignY='top' />
+							</coreponent> 
+													
+					</coreponent> 
+
+					<coreponent name='right_view'
+								autoSizeWidth="false" autoWidthMode="parent" autoSizeHeight="false" autoHeightMode="parent" width="200" height="300" marginTop="18" x="480" >
+						<label name="right_view_up_label"
+								registeredTextStyleName="right_view_label"
+								height="30"
+								alignX="left"
+								alignY="top"
+								marginTop="10"
+								width="200"
+								marginLeft="-15"                              
+								text="INVENTORY"/>
+							<itemlist name="right_view_list_bg" width="180" height="258" y="45" x="8" autoSizeWidth="false" autoSizeHeight="false" direction="vertical"
+										layout="grid" itemGap="5"
+										mouseEnabled="true" mouseChildren="true" cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+								<itemrenderer width="34" height="34" autoSizeWidth="false" autoSizeHeight="false"
+												itemGap="5" mouseEnabled="true" mouseChildren="true">
+									
+									<coreponent name="bg"
+												width="32" height="32" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="commonui_hitlayer"/>
+									<coreponent name="iconBg"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="warp_controls_darklayer"/>
+									<coreponent name="icon"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center" 
+												/>
+									
+									<label name="titleLabel"
+										width="60" height="10" autoSizeWidth="false" autoSizeHeight="false" alignX="center" alignY="top"
+										registeredTextStyleName="center_view_item_label"
+										registeredSkinName="commonui_default_label"
+										text=''/>
+									<label name="amountLabel"
+											width="60" height="20" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="center" alignY="bottom" marginBottom="10"
+											registeredTextStyleName="center_view_item_label"
+											registeredSkinName="commonui_default_label" 
+											text=''/>
+								</itemrenderer>
+							</itemlist>
+						
+							<Grid name="right_view_list" width="180" height="258" y="45" x="8" autoSizeWidth="false" autoSizeHeight="false" direction="vertical"
+										layout="grid" itemGap="5" 
+										itemAlignX="left"
+										mouseEnabled="true" mouseChildren="true" cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+								<itemrenderer width="34" height="34" autoSizeWidth="false" autoSizeHeight="false"
+												itemGap="5" mouseEnabled="true" mouseChildren="true">
+									
+									<!-- <coreponent name="bg"
+												width="34" height="34" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="commonui_hitlayer"/> -->
+									<coreponent name="iconBg"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center"
+												registeredSkinName="warp_controls_darklayer"/>
+									<coreponent name="icon"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center" tooltipData="localize:assembly_item_timer_ttip"
+													tooltipTemplateID="commonui_tooltip_simple"/>
+									<!--  <coreponent name="can_equment" width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center" registeredSkinName="can_equment_skin" alpha="0.3"/> -->
+									<label name="titleLabel"
+										width="60" height="10" autoSizeWidth="false" autoSizeHeight="false" alignX="center" alignY="top"
+										registeredTextStyleName="center_view_item_label"
+										registeredSkinName="commonui_default_label"
+										text=''/>
+									<label name="level_Label"
+											width="60" height="20" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="left" alignY="top" marginLeft='1' marginTop='-1'
+											registeredTextStyleName="warp_controls_item_level_label"
+											registeredSkinName="commonui_default_label" 
+											text=''/>
+									<coreponent name="maskSp"
+												width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+												alignX="center" alignY="center" mouseEnabled="false" mouseChildren="false"
+												/>
+								</itemrenderer>
+							</Grid>
+						
+						<scrollbar name="scroll_bar"
+							width="10" height="226" autoSizeHeight="false" direction="vertical"
+							marginTop="44" marginBottom="0" alignX="right" marginRight="30"
+							registeredSkinName="commonui_scrollbar_bgnd">
+							<button name="buttonSlider"
+									width="8" height="10" alignX="center"
+									registeredSkinName="commonui_scrollbar_slider"/>
+						</scrollbar>
+							
+					</coreponent>
+			
+		</container>
+		
+		
+		
+	</template>
+	
+	
+	<container name="root" width="715" height="310" autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="false"
+				mouseChilderen="true">
+		<reference template="warp_controls"/>
+		
+	</container>
+</root>

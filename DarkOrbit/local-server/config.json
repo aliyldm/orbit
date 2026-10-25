@@ -1,0 +1,122 @@
+{
+  "http": {
+    "host": "127.0.0.1",
+    "port": 8095
+  },
+  "game": {
+    "host": "127.0.0.1",
+    "port": 8096
+  },
+  "policy": {
+    "enabled": false,
+    "port": 843
+  },
+  "cdnCache": {
+    "_comment": "client/ altinda olmayan dosyalar bir kez buradan indirilip kaydedilir. Tamamen offline icin enabled=false yapin.",
+    "enabled": true,
+    "upstream": "https://darkorbit-22.bpsecure.com",
+    "userAgent": "BigpointClient/1.6.9"
+  },
+  "hostCache": {
+    "_comment": "Oyun sunucusu kokundeki statik dosyalar (eurostileFonts.swf vb.) bir kez buradan indirilir.",
+    "enabled": true,
+    "upstream": "https://gb1.darkorbit.com",
+    "userAgent": "BigpointClient/1.6.9"
+  },
+  "player": {
+    "_comment": "Yalnızca dil; oyuncu kimliği ve adı veritabanındaki hesaptan gelir.",
+    "lang": "tr",
+    "instanceId": 1
+  },
+  "starter": {
+    "_comment": "Canlıdaki sıfır hesaba göre (getShipDetails: 1 lazer, +2 hız jeneratörü, 5000 lazer cephanesi, 20 roket, kalkan yok, 0 kredi/uridyum). Lazer türü canlıdan doğrulanmadı; LF-1 varsayıldı.",
+    "ship": "ship_liberator",
+    "credits": 0,
+    "uridium": 0,
+    "items": [
+      [
+        "equipment_weapon_laser_lf-1",
+        1,
+        "laser"
+      ],
+      [
+        "equipment_generator_speed_g3n-1010",
+        1,
+        "generator"
+      ],
+      [
+        "ammunition_laser_lcb-10",
+        5000,
+        null
+      ],
+      [
+        "ammunition_rocket_r-310",
+        20,
+        null
+      ]
+    ]
+  },
+  "combat": {
+    "_comment": "Lazer hasar sınırları %75–100 ve temel LF-4 isabeti %80 resmi FAQ kaynaklıdır; tek salvo RNG ve bonusların birleşimi yerel politikadır. NPC/roket/launcher için doğrulanamayan temel isabet varsayılanı %100 tutulur. Ayrıntı: docs/combat-balance-audit.md.",
+    "npcShieldAbsorb": 0.8,
+    "laserDamageMin": 0.75,
+    "laserDamageMax": 1,
+    "laserHitChance": 0.8
+  },
+  "booty": {
+    "_comment": "Yerel klasik ganimet alt kümesi; özgün drop oranları yayımlanmamıştır. Renkli kutu etkinlikleri local test/oyun için açık. Kırmızı/mavi anahtar Uridyum fiyatları katalogdan yerel uyarlamadır.",
+    "zeusEvent": true,
+    "redBlueEvent": true,
+    "boxesPerColor": 6,
+    "openingMs": 5000,
+    "respawnMs": 60000
+  },
+  "client": {
+    "_comment": "Adlar canlı sunucudaki oyun sayfasından (internalMapRevolution) gözlendi; değerler local. Hash alanları istemcinin ?__cv= önbellek anahtarı; local'de sabit değer yeterli olmalı (doğrulanmadı).",
+    "swf": "{httpBase}/client/spacemap/preloader.swf",
+    "width": "100%",
+    "height": "100%",
+    "flashvars": {
+      "lang": "{lang}",
+      "userID": "{userId}",
+      "sessionID": "{sessionId}",
+      "basePath": "spacemap",
+      "pid": "502",
+      "boardLink": "{httpBase}/",
+      "helpLink": "{httpBase}/",
+      "loadingClaim": "LOADING",
+      "chatHost": "{gameHost}:7771",
+      "cdn": "{httpBase}/client/",
+      "useHash": "0",
+      "host": "{httpBase}",
+      "browser": "Unknown",
+      "fullscreen": "1",
+      "itemXmlHash": "local",
+      "resourcesXmlHash": "local-20261025-upgrade-footer",
+      "resources3dXmlHash": "local",
+      "resources3dparticlesXmlHash": "local",
+      "resourceachievementsXmlHash": "local",
+      "resourceEventsXmlHash": "local",
+      "resourceJumpGateXmlHash": "local",
+      "profileXmlHash": "local",
+      "loadingscreenHash": "local",
+      "gameclientHash": "local-20261025-compact-rsb-2d",
+      "gameclientPath": "spacemap",
+      "loadingscreenAssetsXmlHash": "local",
+      "crossdomainHash": "local",
+      "gameclientAllowedInitDelay": "10",
+      "requestScheme": "http",
+      "sharedImages": "{httpBase}/client/sharedimages/",
+      "useDeviceFonts": "0",
+      "display2d": "1",
+      "theme": "{httpBase}/client/do_img/global/loadingscreen/default.jpg",
+      "platform": "PC_CLIENT",
+      "autoStartEnabled": "0",
+      "mapID": "1",
+      "allowChat": "0"
+    }
+  },
+  "assembly": {
+    "enableAllScheduled": true
+  }
+}

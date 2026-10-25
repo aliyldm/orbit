@@ -1,0 +1,11 @@
+* text=auto
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.sh text eol=lf
+*.png binary
+*.jpg binary
+*.swf binary
+*.zip binary
+# Native audit hashes cover the exact JPEXS bytes, including line endings.
+*.as -text
+DarkOrbit/local-server/client/** -text

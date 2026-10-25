@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<huntEvent>
+
+	<eventType>MORDON_HUNTING</eventType>
+
+	<npcsToKill>
+		<npc npcId="4" factionPoints="2" factionPointsClan="2" foreignPoints="2" foreignPointsClan="2" /> <!-- npcType="MORDON" -->
+	</npcsToKill>
+
+	<rewardPlayers>event_external_rewards_piratehunt2017rewards-players</rewardPlayers>
+	<rewardClans>event_external_rewards_piratehunt2017rewards-clans</rewardClans>
+
+
+	<clientData windowTitle="title_ranked_hunt" internalHallofFameView="MORDON_HUNTING" hintButtonVisible="false" hintButtonToolTip=""/>
+
+</huntEvent>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="commandCenterWindow"/>
+		<library id="rankings_asset"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+
+	<!-- SKINS -->
+	<skin name="ranking_events_titlefrenzy_label_truncate" classname="LabelSkin" truncateText="true" />
+
+	<!-- TEMPLATES -->
+	<template name="RANKINGS_EVENTS_TITLEFRENZY">
+		<container  name="titlefrenzy"
+					width="635" height="315" autoSizeWidth="false" autoSizeHeight="false">
+			<container  name="rankingTable"
+						width="635" height="280" autoSizeWidth="false" autoSizeHeight="false">
+				<container  name="header" autoSizeWidth="true" autoWidthMode="parent" height="30" autoSizeHeight="false"
+							registeredSkinName="commonui_darklayer">
+					<label  name="rank" text="localize:events_contents_header_rank"
+							width="50" height="10" autoSizeWidth="false" autoSizeHeight="false"
+							alignY="center" marginLeft="15"
+							registeredSkinName="commonui_default_label" registeredTextStyleName="rankings_events_info_header_center"/>
+					<label  name="name" text="localize:events_contents_header_name"
+							width="280" height="10" autoSizeWidth="false" autoSizeHeight="false"
+							alignY="center" marginLeft="65"
+							registeredSkinName="ranking_events_titlefrenzy_label_truncate" registeredTextStyleName="rankings_events_info_header_left"/>
+					<label  name="time" text="localize:events_contents_header_time"
+							width="140" height="10" autoSizeWidth="false" autoSizeHeight="false"
+							alignY="center" marginLeft="485"
+							registeredSkinName="commonui_default_label" registeredTextStyleName="rankings_events_info_header_center"/>
+				</container>
+
+				<coreponent autoSizeWidth="true" height="2" marginTop="30" registeredSkinName="commonui_horizontal_divider"/>
+
+				<container  name="rankingList"
+							autoSizeWidth="true" autoWidthMode="parent" height="175" autoSizeHeight="false"
+							marginTop="30">
+					<itemlist name="list"
+							  width="635" height="175" autoSizeWidth="false" autoSizeHeight="false"
+							  layout="vertical" alignX="left" itemGap="0"
+							  mouseEnabled="false" mouseChildren="false"
+							  cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+						<itemrenderer width="635" height="25" autoSizeWidth="false" autoSizeHeight="false">
+							<reference template="RANKINGS_EVENTS_TITLEFRENZY_ROW" />
+						</itemrenderer>
+					</itemlist>
+					<scrollbar  name="scroll_bar"
+								width="5" autoSizeHeight="true" direction="vertical"
+								marginTop="0" marginBottom="0" marginRight="0" alignX="right"
+								registeredSkinName="rankings_events_scrollbar_bg">
+						<button name="buttonSlider"
+								width="5" height="20" alignX="center"
+								registeredSkinName="commonui_scrollbar_slider"/>
+					</scrollbar>
+					<bind source="scroll_bar"
+						  target="list"
+						  type="scrollcontainer"/>
+				</container>
+
+				<coreponent autoSizeWidth="true" height="2" marginTop="205" registeredSkinName="commonui_horizontal_divider"/>
+
+				<container  name="ranking"
+							autoSizeWidth="true" autoWidthMode="parent" height="75" autoSizeHeight="false"
+							marginTop="205">
+					<container  name="next"
+								autoSizeWidth="true" autoWidthMode="parent" height="25" autoSizeHeight="false">
+						<reference template="RANKINGS_EVENTS_TITLEFRENZY_ROW" />
+					</container>
+
+					<container  name="my"
+								autoSizeWidth="true" autoWidthMode="parent" height="25" autoSizeHeight="false"
+								marginTop="25">
+						<reference template="RANKINGS_EVENTS_TITLEFRENZY_ROW" />
+					</container>
+
+					<container  name="prev"
+								autoSizeWidth="true" autoWidthMode="parent" height="25" autoSizeHeight="false"
+								marginTop="50">
+						<reference template="RANKINGS_EVENTS_TITLEFRENZY_ROW" />
+					</container>
+				</container>
+			</container>
+
+			<container  name="inactive"
+						width="635" height="15" autoSizeWidth="false" autoSizeHeight="false"
+						marginTop="10">
+				<coreponent  registeredSkinName="rankings_info_image" marginLeft="15"/>
+				<label  width="500" height="10" autoSizeWidth="false" autoSizeHeight="false"
+						marginLeft="45" alignY="center" text="localize:events_contents_empty"
+						registeredTextStyleName="rankings_events_inactive" registeredSkinName="commonui_default_label" />
+			</container>
+		</container>
+	</template>
+
+	<template name="RANKINGS_EVENTS_TITLEFRENZY_ROW">
+		<container name="row" width="635" height="25" autoSizeWidth="false" autoSizeHeight="false">
+			<coreponent name="bg"
+						autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+						registeredSkinName="commonui_darklayer"/>
+			<label  name="rank"
+					width="50" height="10" autoSizeWidth="false" autoSizeHeight="false"
+					alignY="center" marginLeft="15"
+					registeredSkinName="commonui_default_label" registeredTextStyleName="rankings_events_info_row_center"/>
+			<label  name="name"
+					width="280" height="10" autoSizeWidth="false" autoSizeHeight="false"
+					alignY="center" marginLeft="65"
+					registeredSkinName="ranking_events_titlefrenzy_label_truncate" registeredTextStyleName="rankings_events_info_row_left"/>
+			<label  name="time"
+					width="140" height="10" autoSizeWidth="false" autoSizeHeight="false"
+					alignY="center" marginLeft="485"
+					registeredSkinName="commonui_default_label" registeredTextStyleName="rankings_events_info_row_center"/>
+		</container>
+	</template>
+
+	<!-- CONTENT -->
+	<container name="root"
+			   width="670" height="395" autoSizeWidth="false" autoSizeHeight="false"
+			   mouseEnabled="false" mouseChilderen="true">
+		<reference template="RANKINGS_EVENTS_TITLEFRENZY"/>
+	</container>
+</root>

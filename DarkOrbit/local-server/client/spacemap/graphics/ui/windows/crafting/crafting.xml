@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="craftingWindow"/>
+		<library id="module_equipment_lib"/>
+		<library id="gameclientCommonUI"/>
+		<library id="chatWindowUIAssets"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+
+	<textstyle name="nav_tab_textstyle"
+			   textColor="0x6FB2CB"
+			   type="dynamic"
+			   fontSize="9"
+			   autoSize="center"
+			   wordWrap="true"
+			   multiline="true"
+			   align="center"
+			   embedFonts="false"
+			   fontName="Verdana"/>
+
+	<textstyle name="nav_tab_textstyle_active"
+			   textColor="0xE9E2C0"
+			   type="dynamic"
+			   fontSize="9"
+			   autoSize="center"
+			   wordWrap="true"
+			   multiline="true"
+			   align="center"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   glowFilter='{"color":"0xE9CB3C", "blurX":"1.1", "blurY":"1.1", "strength":"2", "quality":"2"}'/>
+
+	<textstyle name="crafting_timer"
+			   textColor="0x00ccff"
+			   type="dynamic"
+			   align="center"
+			   fontSize="10"
+			   wordWrap="true"
+			   multiline="true"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="center"/>
+
+	<textstyle name="crafting_timer_left"
+			   textColor="0x00ccff"
+			   type="dynamic"
+			   align="left"
+			   fontSize="10"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="left"/>
+
+	<textstyle name="crafting_timer_right"
+			   textColor="0x00ccff"
+			   type="dynamic"
+			   align="right"
+			   fontSize="10"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="right"/>
+
+	<textstyle name="crafting_default"
+			   textColor="0xCCCCCC"
+			   type="dynamic"
+			   fontSize="10"
+			   wordWrap="true"
+			   multiline="true"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="center"/>
+
+	<textstyle name="crafting_ingredients"
+			   textColor="0xededed"
+			   type="dynamic"
+			   fontSize="10"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="left"/>
+
+	<textstyle name="crafting_ingredients_item_name"
+			   textColor="0xededed"
+			   bold="true"
+			   type="dynamic"
+			   fontSize="10"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="left"/>
+
+	<textstyle name="crafting_ingredients_not_enough"
+			   textColor="0xff0000"
+			   type="dynamic"
+			   fontSize="10"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="left"/>
+
+	<textstyle name="crafting_buff_current"
+			   textColor="0xededed"
+			   type="dynamic"
+			   fontSize="10"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="right"/>
+
+	<textstyle name="crafting_buff_positive"
+			   textColor="0x32e629"
+			   type="dynamic"
+			   fontSize="10"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="right"/>
+
+	<textstyle name="crafting_buff_negative"
+			   textColor="0xee0000"
+			   type="dynamic"
+			   fontSize="10"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="right"/>
+
+	<textstyle name="upgrade_grid_item"
+			   textColor="0xededed"
+			   type="dynamic"
+			   fontSize="10"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="center"
+			   glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>
+
+	<textstyle name="upgrade_grid_xpLevel"
+			   textColor="0x72f0ff"
+			   type="dynamic"
+			   fontSize="7"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="left"
+			   glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>/>
+
+	<textstyle name="crafting_selected_grid_item"
+			   textColor="0xededed"
+			   type="dynamic"
+			   fontSize="13"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="left"/>
+
+	<textstyle name="crafting_recipe_dropdown_item"
+			   textColor="0xededed"
+			   type="dynamic"
+			   fontSize="10"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="left"/>
+
+	<textstyle name="crafting_selected_grid_item_level"
+			   textColor="0xededed"
+			   type="dynamic"
+			   fontSize="13"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="right"/>
+
+	<textstyle name="crafting_skip_item_upgrade"
+			   textColor="0xffcc00"
+			   type="dynamic"
+			   fontSize="13"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   autoSize="left"/>
+
+	<!-- SKINS -->
+	<skin name="upgrade_grid_bg" classname="BasicSkin" library="craftingWindow">
+		<layer classname="BitmapLayer" libraryID="upgradeGridBg">normal</layer>
+	</skin>
+	<skin name="crafting_item_finished_craftable" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x32e629" fillAlpha="0.2">normal</layer>
+	</skin>
+	<skin name="crafing_item_finished_outline" classname="BasicSkin" library="craftingWindow">
+		<layer classname="BitmapLayer" libraryID="item_finished_outline">normal</layer>
+	</skin>
+	<skin name="crafing_item_equipped" classname="BasicSkin" library="module_equipment_lib">
+		<layer classname="BitmapLayer" libraryID="equipment_itemslot_other_config_30x30">normal</layer>
+	</skin>
+
+	<skin name="crafting_dropdonw_item_outline" classname="FadableButtonSkin" library="module_equipment_lib">
+		<layer classname="FilledBoxLayer" lineColor="0x32e629" lineAlpha="1">normal</layer>
+		<layer classname="FilledBoxLayer" lineColor="0xffffff" lineAlpha="1">over</layer>
+		<layer classname="FilledBoxLayer" lineColor="0x32e629" lineAlpha="1">clicked</layer>
+	</skin>
+
+	<skin name="crafting_window_progressbar_building_skin" tweenTime="0" classname="ProgressBarSkin"
+		  library="craftingWindow">
+		<layer classname="BitmapLayer" libraryID="progress_bar_fill_scale9" scale9grid="3,4,4,5">bar</layer>
+		<layer classname="BitmapLayer" libraryID="progress_bar_base_scale9" scale9grid="5,4,6,5">normal</layer>
+	</skin>
+
+	<skin name="crafting_not_possible" classname="BasicSkin" library="craftingWindow">
+		<layer classname="BitmapLayer" libraryID="caution_Sign">normal</layer>
+	</skin>
+
+	<skin name="crafting_combobox_filter" library="module_equipment_lib" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" scale9grid="4,3,17,16" libraryID="equipment_combobox_filter_normal">normal
+		</layer>
+		<layer classname="BitmapLayer" scale9grid="4,3,17,16" libraryID="equipment_combobox_filter_hover">over</layer>
+		<layer classname="BitmapLayer" scale9grid="4,3,17,16" libraryID="equipment_combobox_filter_active">clicked
+		</layer>
+	</skin>
+
+	<skin name="crafting_divider" classname="BasicSkin" library="gameclientCommonUI">
+		<layer classname="BitmapLayer" libraryID="horizontal_divider">normal</layer>
+	</skin>
+
+	<skin name="crafting_recipe_list_skin" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x000000" fillAlpha="0.3">normal</layer>
+	</skin>
+
+	<skin name="crafting_tiled_no_items_bg" library="craftingWindow" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="item_empty" scale9grid="0,0,33,36,repeatXY">normal</layer>
+	</skin>
+
+	<skin name="crafting_itemlist_green" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x32e629" fillAlpha="0">normal</layer>
+		<layer classname="FilledBoxLayer" fillColor="0xffffff" fillAlpha="0.1">over</layer>
+		<layer classname="FilledBoxLayer" fillColor="0xffffff" fillAlpha="0.3">clicked</layer>
+		<layer classname="FilledBoxLayer" lineColor="0xffcc00" fillAlpha="0" lineAlpha="1">disabled</layer>
+	</skin>
+
+	<skin name="crafting_assembly_window_progressbar_skin" classname="ProgressBarSkin" library="craftingWindow">
+		<layer classname="BitmapLayer" libraryID="item_progress_green_inner" scale9grid="1,1,2,4">bar</layer>
+		<layer classname="BitmapLayer" libraryID="item_progress_outer" scale9grid="1,1,2,4">normal</layer>
+	</skin>
+
+	<skin name="crafting_timed_progressbar_skin" classname="ProgressBarSkin" library="craftingWindow">
+		<layer classname="BitmapLayer" libraryID="item_progress_blue_inner" scale9grid="1,1,2,4">bar</layer>
+		<layer classname="BitmapLayer" libraryID="item_progress_outer" scale9grid="1,1,2,4">normal</layer>
+	</skin>
+
+	<skin name="crafting_label_truncate" classname="LabelSkin" truncateText="true"/>
+
+	<skin name="crafting_shop" classname="FadableButtonSkin" library="craftingWindow">
+		<layer classname="BitmapLayer" libraryID="btn_buy_normal">normal</layer>
+		<layer classname="BitmapLayer" libraryID="btn_buy_hover">over</layer>
+		<layer classname="BitmapLayer" libraryID="btn_buy_active">clicked</layer>
+	</skin>
+
+	<skin name="crafting_ingridient_outline" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" lineColor="0x00ccff" fillAlpha="0" lineAlpha="1">normal</layer>
+	</skin>
+
+	<skin name="crafting_vertical_list_bg_skin" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x243c49" fillAlpha="0.6">normal</layer>
+	</skin>
+
+	<skin name="crafting_background_inventory_filter_popup" library="module_equipment_lib" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="equipment_background_filter_inventory2" scale9grid="11,18,15,25">
+			normal
+		</layer>
+	</skin>
+
+	<skin name="crafing_itemlist_collect" classname="BasicSkin" library="craftingWindow">
+		<layer classname="BitmapLayer" libraryID="icon_check">normal</layer>
+	</skin>
+
+	<skin name="crafting_itemlist_crafable" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x32e629" fillAlpha="0.2">normal</layer>
+	</skin>
+
+	<!-- TEMPLATES -->
+	<template name="crafting_template_inventory_filter_popup">
+
+		<root registeredSkinName="crafting_background_inventory_filter_popup"
+			  height="134">
+
+			<container name="inventory.filter"
+					   y="30"
+					   layout="vertical"
+					   gap="5"
+					   autoSizeWidth="true"
+					   autoWidthMode="children"
+					   autoHeightMode="children"
+					   mouseEnabled="true"/>
+
+			<button name="inventory.closeButton"
+					alignX="right"
+					x="1"
+					y="5"
+					registeredSkinName="equipment_button_close_inventory_filter_popup"/>
+
+			<checkbox name="inventory.selectAllCheckbox"
+					  alignX="left"
+					  marginLeft="3"
+					  marginTop="9"
+					  width="122"
+					  height="17"
+					  registeredSkinName="equipment_combobox_filter">
+
+			</checkbox>
+
+			<bitmap name="led.off" library="module_equipment_lib" libraryID="equipment_led_off" x="5" y="9"/>
+			<bitmap name="led.on" library="module_equipment_lib" libraryID="equipment_led_on" x="5" y="9" alpha="0"/>
+
+			<label name="inventory.selectAllLabel"
+				   x="21"
+				   y="9"
+				   registeredTextStyleName="equipment_combobox_inventory_filter"
+				   text="localize:equipment_inventory_popup.filtering_label_showall:eic"
+				   autoSizeTextWidth="true"
+					/>
+
+			<checkbox name="inventory.selectEventCheckbox"
+					  alignX="left"
+					  marginLeft="93"
+					  marginTop="9"
+					  width="122"
+					  height="17"
+					  registeredSkinName="equipment_combobox_filter">
+
+			</checkbox>
+
+			<bitmap name="ledEvent.off" library="module_equipment_lib" libraryID="equipment_led_off" x="95" y="9"/>
+			<bitmap name="ledEvent.on" library="module_equipment_lib" libraryID="equipment_led_on" x="95" y="9" alpha="0"/>
+
+			<label name="inventory.selectEventLabel"
+				   x="111"
+				   y="9"
+				   registeredTextStyleName="equipment_combobox_inventory_filter"
+				   text="localize:equipment_inventory_popup.filtering_label_time_limited_only:eic"
+				   autoSizeTextWidth="true"
+			/>
+		</root>
+	</template>
+
+	<!-- CONTENT -->
+
+	<container name="root"
+			   width="528"
+			   height="424"
+			   mouseEnabled="false"
+			   mouseChildren="true">
+
+		<container name="tabbarContainer"
+				   height="20"
+				   width="500"
+				   marginLeft="18"
+				   pixelSnapping="true">
+
+			<itemlist name="tabsItemlist"
+					  layout="horizontal"
+					  autoSizeWidth="true"
+					  itemGap="1"
+					  height="20"
+					  mouseEnabled="true"
+					  mouseChildren="true"
+					  cacheSkinMaskAsBitmap="false"
+					  registeredSkinName="commonui_list_mask">
+
+				<itemrenderer height="15"
+							  width="100"
+							  autoSizeWidth="false"
+							  mouseEnabled="true"
+							  mouseChildren="true">
+
+					<button name="tab"
+							mouseEnabled="true"
+							autoSizeWidth="true"
+							autoSizeHeight="true"
+							mouseChildren="true"
+							registeredSkinName="commonui_tabbarbutton"/>
+
+					<button name="tab_selected"
+							mouseEnabled="true"
+							autoSizeWidth="true"
+							visible="false"
+							autoSizeHeight="true"
+							mouseChildren="true"
+							registeredSkinName="commonui_tabbarbutton"/>
+
+					<label name="tabLabel"
+						   y="-1"
+						   text="?"
+						   width="113"
+						   mouseEnabled="false"
+						   mouseChildren="false"
+						   autoSizeWidth="true"
+						   registeredSkinName="commonui_default_label"
+						   registeredTextStyleName="nav_tab_textstyle"/>
+
+				</itemrenderer>
+			</itemlist>
+		</container>
+
+		<container name="contentContainer" y="25"/>
+
+	</container>
+
+</root>

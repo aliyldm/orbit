@@ -1,0 +1,12 @@
+{
+  "beforeSha256": "b7822f03cf8e4c639e1ed475cd11429deee40dde113e0466b43f43c96f3fb11a",
+  "afterSha256": "3c4bfab12fbbaddd7a224ccfbf4526a362671139dbc910c0263d6b2920973853",
+  "classes": [
+    "net.bigpoint.darkorbit.equipment.view.components.items.GridComponent",
+    "net.bigpoint.darkorbit.equipment.view.components.InventoryView"
+  ],
+  "scope": "Use current item configuration instead of stale icon flags; bound compact scrolling to visible items; reset scroll on context change.",
+  "limitations": [
+    "No native Flash mouse gesture or live visual playback performed."
+  ]
+}

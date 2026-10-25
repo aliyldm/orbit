@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="chatWindowUIAssets"/>
+		<library id="contactsWindowUI"/>
+	</libraries>
+
+	<textstyle
+			name="chat_whisper_window_default_tab_center_textstyle"
+			textColor="0x6FB2CB"
+			type="dynamic"
+			fontSize="9"
+			autoSize="center"
+			wordWrap="false"
+			multiline="false"
+			embedFonts="false"
+			fontName="Verdana"
+			align="center"/>
+
+	<textstyle
+			name="chat_whisper_window_active_tab_center_textstyle"
+			textColor="0xE9E2C0"
+			type="dynamic"
+			fontSize="9"
+			autoSize="center"
+			wordWrap="false"
+			multiline="false"
+			embedFonts="false"
+			fontName="Verdana"
+			align="center"/>
+
+	<textstyle
+			name="chat_whisper_window_left_textstyle"
+			textColor="0xEEEEEE"
+			bold="false"
+			type="dynamic"
+			fontSize="11"
+			autoSize="left"
+			wordWrap="true"
+			multiline="true"
+			embedFonts="false"
+			fontName="TAHOMA"
+			align="left"/>
+
+	<textstyle
+			name="chat_whisper_window_input_textstyle"
+			textColor="0xEEEEEE"
+			selectionTextColor="0x333344"
+			type="input"
+			fontSize="11"
+			autoSize="none"
+			wordWrap="false"
+			multiline="false"
+			selectable="true"
+			embedFonts="false"
+			fontName="TAHOMA"
+			border="false"
+			marginLeft="5"
+			align="left"/>
+
+	<textstyle
+			name="chat_whisper_window_sender_textstyle"
+			textColor="0xFFE538"
+			bold="false"
+			type="dynamic"
+			fontSize="11"
+			autoSize="left"
+			wordWrap="false"
+			multiline="false"
+			embedFonts="false"
+			fontName="TAHOMA"
+			align="left"/>
+
+	<skin name="chat_whisper_window_label_skin" classname="LabelSkin" truncateText="true"/>
+
+	<skin name="chat_whisper_window_list_skin" library="gameclientCommonUI" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="debug_mask_rounded_edges_3x3" scale9grid="3,3,4,4">mask</layer>
+	</skin>
+
+	<skin name="chat_whisper_window_tab_skin" library="chatWindowUIAssets" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="tab_modern_normal">normal</layer>
+		<layer classname="BitmapLayer" libraryID="tab_modern_hover">over</layer>
+		<layer classname="BitmapLayer" libraryID="tab_modern_active">clicked</layer>
+	</skin>
+
+	<skin name="chat_whisper_window_message_area_skin" library="gameclientCommonUI" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="debug_mask_rounded_edges_3x3" scale9grid="3,3,4,4">mask</layer>
+	</skin>
+
+	<textstyle
+			name="chat_whisper_window_emoji_button_textstyle"
+			textColor="0xE9E2C0"
+			type="dynamic"
+			fontSize="14"
+			autoSize="center"
+			wordWrap="false"
+			multiline="false"
+			embedFonts="false"
+			fontName="Verdana"
+			align="center"/>
+
+	<skin name="chat_whisper_window_emoji_button_skin" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x062B36" fillAlpha="1" lineAlpha="1" lineColor="0x009AC6">normal</layer>
+		<layer classname="FilledBoxLayer" fillColor="0x073A4A" fillAlpha="1" lineAlpha="1" lineColor="0x00ccff">over</layer>
+		<layer classname="FilledBoxLayer" fillColor="0x0A4B60" fillAlpha="1" lineAlpha="1" lineColor="0x00ccff">clicked</layer>
+		<layer classname="FilledBoxLayer" fillColor="0x061920" fillAlpha="1" lineAlpha="1" lineColor="0x30606E">disabled</layer>
+	</skin>
+
+	<skin name="chat_whisper_window_close_tab_skin" library="contactsWindowUI" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="contactlist_button_remove_normal">normal</layer>
+		<layer classname="BitmapLayer" libraryID="contactlist_button_remove_hover">over</layer>
+		<layer classname="BitmapLayer" libraryID="contactlist_button_remove_active">clicked</layer>
+		<layer classname="BitmapLayer" libraryID="contactlist_button_remove_inactive">disabled</layer>
+	</skin>
+	<skin name="chat_whisper_window_clear_messages_button_skin" library="contactsWindowUI" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="contactlist_button_remove_normal">normal</layer>
+		<layer classname="BitmapLayer" libraryID="contactlist_button_remove_hover">over</layer>
+		<layer classname="BitmapLayer" libraryID="contactlist_button_remove_active">clicked</layer>
+		<layer classname="BitmapLayer" libraryID="contactlist_button_remove_inactive">disabled</layer>
+	</skin>
+
+	<container name="contentContainer"
+			   width="520"
+			   height="300"
+			   mouseEnabled="true"
+			   mouseChildren="true">
+
+		<container name="whisperTabbarContainer" height="20" layout="horizontal"
+				   autoSizeWidth="true" marginTop="0.5" marginLeft="22" marginRight="0" pixelSnapping="true">
+			<button name="scrollTabsLeft" alignX="left" marginLeft="1"
+					registeredSkinName="button_scroll_left_modern_skin" visible="true"/>
+			<itemlist name="whisperTabs" registeredSkinName="chat_list_skin" layout="horizontal"
+					  autoSizeWidth="true" marginLeft="40" marginRight="30" height="22"
+					  mouseEnabled="true" mouseChildren="true" cacheSkinMaskAsBitmap="false">
+				<itemrenderer height="22" width="113" autoSizeWidth="false" mouseEnabled="true" mouseChildren="true">
+					<coreponent name="tab" registeredSkinName="chattab_modern_skin" mouseEnabled="true" mouseChildren="true"/>
+					<label y="-1" width="100" name="tabLabel" registeredSkinName="chat_label_skin"
+						   registeredTextStyleName="chat_window_default_tab_center_modern_textstyle"
+						   mouseEnabled="false" mouseChildren="false" text="?"/>
+					<button name="closeTabButton" y="-1" registeredSkinName="chat_whisper_window_close_tab_skin"
+							tooltipTemplateID="commonui_tooltip_simple"/>
+				</itemrenderer>
+			</itemlist>
+			<button name="scrollTabsRight" marginLeft="-25"
+					registeredSkinName="button_scroll_right_modern_skin" visible="true"/>
+		</container>
+
+		<button name="clearWhisperMessagesButton"
+				alignX="right"
+				alignY="top"
+				marginRight="12"
+				marginTop="24"
+				width="19"
+				height="17"
+				registeredSkinName="chat_whisper_window_clear_messages_button_skin"
+				visible="true"
+				tooltipTemplateID="commonui_tooltip_simple"
+				tooltipData="localize:chat_clear_message:chat"/>
+
+		<container name="messagesHost"
+				   registeredSkinName="chat_whisper_window_message_area_skin"
+				   autoSizeWidth="true"
+				   autoSizeHeight="true"
+				   alignX="left"
+				   alignY="top"
+				   marginLeft="12"
+				   marginRight="12"
+				   marginTop="44"
+				   marginBottom="42"
+				   mouseEnabled="true"
+				   mouseChildren="true"
+				   cacheSkinMaskAsBitmap="false"/>
+
+		<scrollbar name="messagesScrollbar"
+				   width="10"
+				   autoSizeHeight="true"
+				   alignX="right"
+				   alignY="top"
+				   marginRight="12"
+				   marginTop="44"
+				   marginBottom="50"
+				   registeredSkinName="commonui_scrollbar_bgnd">
+			<button name="buttonSlider"
+					width="6"
+					height="28"
+					alignX="center"
+					registeredSkinName="commonui_scrollbar_slider"/>
+		</scrollbar>
+
+		<input name="whisperInput"
+			   alignX="left"
+			   alignY="bottom"
+			   autoSizeWidth="true"
+			   marginLeft="5"
+			   marginRight="30"
+			   marginBottom="0"
+			   height="24"
+			   text=""
+			   registeredSkinName="commonui_input_blue"
+			   registeredTextStyleName="chat_whisper_window_input_textstyle"
+			   mouseEnabled="true"/>
+
+		<button name="whisperEmojiButton"
+				alignX="right"
+				alignY="bottom"
+				marginRight="5"
+				marginBottom="3"
+				width="19"
+				height="17"
+				text=""
+				registeredSkinName="chat_whisper_window_emoji_button_skin"
+				registeredTextStyleName="chat_whisper_window_emoji_button_textstyle"/>
+	</container>
+</root>

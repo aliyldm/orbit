@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="seasonPass"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+	<textstyle name="seasonpass_rewards_info"
+			   textColor="0xededed"
+			   type="dynamic"
+			   fontSize="10"
+			   wordWrap="true"
+			   multiline="true"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   bold="false"
+			   align="left"
+			   autoSize="center"/>
+
+	<textstyle name="seasonpass_rewards_amount"
+			   textColor="0xededed"
+			   type="dynamic"
+			   fontSize="9"
+			   wordWrap="true"
+			   multiline="true"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   bold="false"
+			   align="center"
+			   autoSize="center"/>
+
+	<textstyle name="seasonpass_rewards_paging"
+			   textColor="0xededed"
+			   type="dynamic"
+			   fontSize="8"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   bold="false"
+			   align="center"
+			   autoSize="center"/>
+
+	<textstyle name="seasonpass_rewards_paging_disabled"
+			   textColor="0x999999"
+			   type="dynamic"
+			   fontSize="8"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   bold="false"
+			   align="center"
+			   autoSize="center"/>
+
+	<textstyle name="seasonpass_page_text"
+			   textColor="0xededed"
+			   type="dynamic"
+			   fontSize="10"
+			   wordWrap="true"
+			   multiline="true"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   bold="false"
+			   align="center"
+			   autoSize="center"/>
+
+	<textstyle name="seasonpass_buy_text"
+			   textColor="0xededed"
+			   type="dynamic"
+			   fontSize="8"
+			   wordWrap="true"
+			   multiline="true"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   bold="false"
+			   align="center"
+			   autoSize="center"/>
+
+	<textstyle name="seasonpass_rewards_ext_gold_pass"
+			   textColor="0xc19246"
+			   type="dynamic"
+			   fontSize="7"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   bold="true"
+			   align="center"
+			   autoSize="center"/>
+
+	<textstyle name="seasonpass_rewards_gold_pass"
+			   textColor="0xc19246"
+			   type="dynamic"
+			   fontSize="9"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   bold="true"
+			   align="center"
+			   autoSize="center"/>
+
+	<textstyle name="seasonpass_rewards_free_pass"
+			   textColor="0x6a94a9"
+			   type="dynamic"
+			   fontSize="9"
+			   wordWrap="false"
+			   multiline="false"
+			   embedFonts="false"
+			   fontName="Verdana"
+			   bold="true"
+			   align="center"
+			   autoSize="center"/>
+
+	<!-- SKINS -->
+	<skin name="season_pass_claim_button" library="seasonPass_asset" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="btn_claim_all_normal"
+			   registeredTextStyleName="season_pass_button_normal" scale9grid="5,5,14,10">normal
+		</layer>
+		<layer classname="BitmapLayer" libraryID="btn_claim_all_hover"
+			   registeredTextStyleName="season_pass_button_over" scale9grid="5,5,14,10">over
+		</layer>
+		<layer classname="BitmapLayer" libraryID="btn_claim_all_active"
+			   registeredTextStyleName="season_pass_button_clicked" scale9grid="5,5,14,10">clicked
+		</layer>
+		<layer classname="BitmapLayer" libraryID="btn_claim_all_disabled"
+			   registeredTextStyleName="season_pass_button_clicked" scale9grid="5,5,14,10">disabled
+		</layer>
+	</skin>
+
+	<skin name="season_pass_buy_button" library="seasonPass_asset" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="btn_buy_normal"
+			   registeredTextStyleName="season_pass_button_normal" scale9grid="5,5,14,10">normal
+		</layer>
+		<layer classname="BitmapLayer" libraryID="btn_buy_hover"
+			   registeredTextStyleName="season_pass_button_over" scale9grid="5,5,14,10">over
+		</layer>
+		<layer classname="BitmapLayer" libraryID="btn_buy_active"
+			   registeredTextStyleName="season_pass_button_clicked" scale9grid="5,5,14,10">clicked
+		</layer>
+		<layer classname="BitmapLayer" libraryID="btn_buy_disabled"
+			   registeredTextStyleName="season_pass_button_clicked" scale9grid="5,5,14,10">disabled
+		</layer>
+	</skin>
+
+	<skin name="season_pass_page_button" classname="FadableButtonSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="btn_arrow_normal"
+			   registeredTextStyleName="seasonpass_rewards_paging">normal</layer>
+		<layer classname="BitmapLayer" libraryID="btn_arrow_hover"
+			   registeredTextStyleName="seasonpass_rewards_paging">over</layer>
+		<layer classname="BitmapLayer" libraryID="btn_arrow_select"
+			   registeredTextStyleName="seasonpass_rewards_paging">clicked</layer>
+		<layer classname="BitmapLayer" libraryID="btn_arrow_disabled"
+			   registeredTextStyleName="seasonpass_rewards_paging">disabled</layer>
+	</skin>
+
+		<skin name="season_pass_list_ext_gold_item" classname="FadableButtonSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="list_item_bg_ext_gold">normal</layer>
+		<layer classname="BitmapLayer" libraryID="list_item_bg_ext_gold">over</layer>
+		<layer classname="BitmapLayer" libraryID="list_item_bg_ext_gold">clicked</layer>
+		<layer classname="BitmapLayer" libraryID="list_item_bg_ext_gold_disabled">disabled</layer>
+	</skin>
+
+	<skin name="season_pass_list_gold_item" classname="FadableButtonSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="list_item_bg_gold">normal</layer>
+		<layer classname="BitmapLayer" libraryID="list_item_bg_gold">over</layer>
+		<layer classname="BitmapLayer" libraryID="list_item_bg_gold">clicked</layer>
+		<layer classname="BitmapLayer" libraryID="list_item_bg_gold_disabled">disabled</layer>
+	</skin>
+
+	<skin name="season_pass_list_free_item" classname="FadableButtonSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="list_item_bg_free">normal</layer>
+		<layer classname="BitmapLayer" libraryID="list_item_bg_free">over</layer>
+		<layer classname="BitmapLayer" libraryID="list_item_bg_free">clicked</layer>
+		<layer classname="BitmapLayer" libraryID="list_item_bg_free_disabled">disabled</layer>
+	</skin>
+
+	<skin name="season_pass_reward_content_bg" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="bg_content">normal</layer>
+	</skin>
+
+	<skin name="season_pass_free_icon" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="icon_pass_free_small">normal</layer>
+	</skin>
+
+	<skin name="season_pass_gold_icon" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="icon_pass_gold_small">normal</layer>
+	</skin>
+
+	<skin name="season_pass_ext_gold_icon" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="icon_pass_ext_gold_small">normal</layer>
+	</skin>
+
+	<skin name="season_pass_list_header_bg" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="list_item_bg_border">normal</layer>
+	</skin>
+
+	<skin name="season_pass_list_end_bg" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="list_item_bg_border_right" scale9grid="5,5,50,145" >normal</layer>
+	</skin>
+
+	<skin name="season_pass_list_item_bg" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="list_item_bg">normal</layer>
+	</skin>
+
+	<skin name="season_pass_list_item_bg_free" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="list_item_bg_free">normal</layer>
+	</skin>
+
+	<skin name="season_pass_list_item_bg_gold" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="list_item_bg_gold">normal</layer>
+	</skin>
+
+	<skin name="season_pass_list_item_bg_ext_gold" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="list_item_bg_ext_gold">normal</layer>
+	</skin>
+
+	<skin name="season_pass_item_highlight" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="list_highlight">normal</layer>
+	</skin>
+
+	<skin name="season_pass_item_claimed" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="icon_check">normal</layer>
+	</skin>
+
+	<skin name="season_pass_item_locked" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="icon_lock-gold">normal</layer>
+	</skin>
+
+	<!-- TEMPLATES -->
+	<template name="SEASON_PASS_REWARDS">
+		<container name="rewards"
+				   width="800" height="515" autoSizeWidth="false" autoSizeHeight="false">
+			<container name="content" width="710" height="360" autoSizeWidth="false" autoSizeHeight="false"
+					   marginTop="105" marginLeft="45"
+					   registeredSkinName="season_pass_reward_content_bg">
+
+				<!-- miscellaneous container with claim button -->
+				<label text="localize:window_reward_sp_tab_promo_desc"
+					   width="500" height="10" autoSizeWidth="false" autoSizeHeight="false"
+					   marginTop="24" marginLeft="25" alignX="left"
+					   registeredTextStyleName="seasonpass_rewards_info" registeredSkinName="commonui_default_label"/>
+
+				<button name="claim_all" text="localize:window_reward_sp_tab_claim-all-button"
+						width="120" height="15" autoSizeWidth="false" autoSizeHeight="false"
+						marginTop="25" marginRight="25" alignX="right"
+						registeredSkinName="season_pass_claim_button" buttonMode="true" />
+
+
+				<!-- rewards list container -->
+				<container name="list"
+						   width="660" height="235" autoSizeWidth="false" autoSizeHeight="false"
+						   marginTop="65" marginLeft="25">
+
+					<!-- header -->
+					<container name="header" width="60" height="235" autoSizeWidth="false" autoSizeHeight="false"
+							registeredSkinName="season_pass_list_header_bg">
+
+						<label name="label" text="localize:window_reward_sp_tab_extgoldpass"
+							   width="60" height="10" autoSizeWidth="false" autoSizeHeight="false"
+							   marginTop="20" alignX="center"
+							   registeredTextStyleName="seasonpass_rewards_ext_gold_pass" registeredSkinName="commonui_default_label"/>
+
+						<coreponent width="45" height="30" autoSizeWidth="false" autoSizeHeight="false"
+									marginTop="35" alignX="center"
+									registeredSkinName="season_pass_ext_gold_icon" />
+
+						<button name="buy_ext_gold_pass" text="localize:ttip_buy_activate"
+								width="50" height="15" autoSizeWidth="false" autoSizeHeight="false"
+								marginTop="70" alignX="center"
+								registeredSkinName="season_pass_buy_button" buttonMode="true" />	
+
+						<label name="label" text="localize:window_reward_sp_tab_goldpass"
+							   width="60" height="10" autoSizeWidth="false" autoSizeHeight="false"
+							   marginTop="90" alignX="center"
+							   registeredTextStyleName="seasonpass_rewards_gold_pass" registeredSkinName="commonui_default_label"/>
+
+						<coreponent width="45" height="30" autoSizeWidth="false" autoSizeHeight="false"
+									marginTop="110" alignX="center"
+									registeredSkinName="season_pass_gold_icon" />
+
+						<button name="buy_gold_pass" text="localize:ttip_buy_activate"
+								width="50" height="15" autoSizeWidth="false" autoSizeHeight="false"
+								marginTop="145" alignX="center"
+								registeredSkinName="season_pass_buy_button" buttonMode="true" />
+
+						<label name="label" text="localize:window_reward_sp_tab_freepass"
+							   width="60" height="10" autoSizeWidth="false" autoSizeHeight="false"
+							   marginTop="165" alignX="center"
+							   registeredTextStyleName="seasonpass_rewards_free_pass" registeredSkinName="commonui_default_label"/>
+
+						<coreponent width="45" height="30" autoSizeWidth="false" autoSizeHeight="false"
+									marginTop="180" alignX="center"
+									registeredSkinName="season_pass_free_icon" />
+					</container>
+
+
+					<!-- rewards body container -->
+					<itemlist name="body" width="600" height="235" itemGap="0"
+							  autoSizeWidth="false" autoSizeHeight="false"
+							  marginLeft="60" layout="horizontal" alignX="Left"
+							  mouseChildren="true" mouseEnabled="true"
+							  cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+						<itemrenderer width="60" height="235" autoSizeWidth="false" autoSizeHeight="false"
+									  mouseChildren="true" mouseEnabled="true">
+
+							<coreponent name="bg_end" width="60" height="235" marginLeft="0" registeredSkinName="season_pass_list_end_bg" />
+							<coreponent name="bg_mid" width="60" height="235" marginLeft="0" registeredSkinName="season_pass_list_item_bg" />
+
+							<coreponent name="hitlayer"
+										registeredSkinName="commonui_hitlayer"
+										mouseEnabled="true"
+										mouseChildren="true"
+										autoSizeWidth="true"
+										autoSizeHeight="true"
+										alpha="0"
+										tooltipTemplateID="commonui_tooltip_simple"/>
+
+							<label name="label" text="888"
+								   width="60" height="10" autoSizeWidth="false" autoSizeHeight="false"
+								   alignX="center"
+								   registeredTextStyleName="seasonpass_rewards_amount" registeredSkinName="commonui_default_label"/>
+
+							<button name="ext_gold_bg" text="" width="44" height="67" autoSizeWidth="false" autoSizeHeight="false"
+									marginTop="16" alignX="center"
+									registeredSkinName="season_pass_list_ext_gold_item" />
+
+							<coreponent name="ext_gold_ttiplayer" text="" width="44" height="67" autoSizeWidth="false" autoSizeHeight="false"
+									marginTop="16" alignX="center" alpha="0"
+									registeredSkinName="season_pass_list_ext_gold_item" />
+
+							<coreponent name="ext_gold_lock" width="13" height="17" autoSizeWidth="false" autoSizeHeight="false"
+										marginTop="15" marginRight="5" alignX="right"
+										registeredSkinName="season_pass_item_locked" />
+
+							<coreponent name="ext_gold_item" width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+										marginTop="30" alignX="center"
+										registeredSkinName="season_pass_ext_gold_icon" />
+
+							<coreponent name="ext_gold_claimed" width="26" height="24" autoSizeWidth="false" autoSizeHeight="false"
+										marginTop="35" alignX="center" alpha="0.6"
+										registeredSkinName="season_pass_item_claimed" />
+
+							<label name="ext_gold_amount" text="888x"
+								   width="60" height="10" autoSizeWidth="false" autoSizeHeight="false"
+								   marginTop="65" alignX="center"
+								   registeredTextStyleName="seasonpass_rewards_amount" registeredSkinName="commonui_default_label"/>	   
+
+							<button name="gold_bg" text="" width="44" height="67" autoSizeWidth="false" autoSizeHeight="false"
+									marginTop="89" alignX="center"
+									registeredSkinName="season_pass_list_gold_item" />
+
+							<coreponent name="gold_ttiplayer" text="" width="44" height="67" autoSizeWidth="false" autoSizeHeight="false"
+									marginTop="89" alignX="center" alpha="0"
+									registeredSkinName="season_pass_list_gold_item" />
+
+							<coreponent name="gold_lock" width="13" height="17" autoSizeWidth="false" autoSizeHeight="false"
+										marginTop="88" marginRight="5" alignX="right"
+										registeredSkinName="season_pass_item_locked" />
+
+							<coreponent name="gold_item" width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+										marginTop="103" alignX="center"
+										registeredSkinName="season_pass_gold_icon" />
+
+							<coreponent name="gold_claimed" width="26" height="24" autoSizeWidth="false" autoSizeHeight="false"
+										marginTop="108" alignX="center" alpha="0.6"
+										registeredSkinName="season_pass_item_claimed" />
+
+							<label name="gold_amount" text="888x"
+								   width="60" height="10" autoSizeWidth="false" autoSizeHeight="false"
+								   marginTop="133" alignX="center"
+								   registeredTextStyleName="seasonpass_rewards_amount" registeredSkinName="commonui_default_label"/>
+
+							<button name="free_bg" text="" width="44" height="67" autoSizeWidth="false" autoSizeHeight="false"
+									marginTop="161" alignX="center"
+									registeredSkinName="season_pass_list_free_item" />
+
+							<coreponent name="free_ttiplayer" text="" width="44" height="67" autoSizeWidth="false" autoSizeHeight="false"
+									marginTop="161" alignX="center" alpha="0"
+									registeredSkinName="season_pass_list_free_item" />
+
+							<coreponent name="free_item" width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+										marginTop="175" alignX="center"
+										registeredSkinName="season_pass_gold_icon" />
+
+							<coreponent name="free_claimed" width="26" height="24" autoSizeWidth="false" autoSizeHeight="false"
+										marginTop="180" alignX="center" alpha="0.6"
+										registeredSkinName="season_pass_item_claimed" />
+
+							<label name="free_amount" text="888x"
+								   width="60" height="10" autoSizeWidth="false" autoSizeHeight="false"
+								   marginTop="210" alignX="center"
+								   registeredTextStyleName="seasonpass_rewards_amount" registeredSkinName="commonui_default_label"/>
+
+							<coreponent name="highlight"
+										width="60" height="235" autoSizeHeight="false" autoSizeWidth="false"
+										alignX="center"
+										visible="false"
+										registeredSkinName="season_pass_item_highlight"/>
+						</itemrenderer>
+					</itemlist>
+
+
+					<coreponent name="item_highlight" width="62" height="272" autoSizeWidth="false" autoSizeHeight="false"
+								alignX="left" alignY="center"
+								registeredSkinName="season_pass_item_highlight" />
+
+				</container>
+
+				<!-- pagination container -->
+				<container name="page"
+						   width="660" height="60" autoSizeWidth="false" autoSizeHeight="false"
+						   marginTop="305" marginLeft="25">
+
+					<label name="page_label" text="Page: 888/888"
+						   width="500" height="10" autoSizeWidth="false" autoSizeHeight="false"
+						   marginTop="25" alignX="center"
+						   registeredTextStyleName="seasonpass_page_text" registeredSkinName="commonui_default_label"/>
+
+					<button name="first_page" text="&lt;&lt;"
+							width="60" height="10"
+							marginTop="30" alignX="left"
+							registeredSkinName="season_pass_page_button" buttonMode="true"/>
+
+					<button name="prev_page" text="&lt;"
+							width="60" height="10"
+							marginTop="30" marginLeft="60" alignX="left"
+							registeredSkinName="season_pass_page_button" buttonMode="true"/>
+
+					<button name="next_page" text="&gt;"
+							width="60" height="10"
+							marginTop="30" marginRight="60" alignX="right"
+							registeredSkinName="season_pass_page_button" buttonMode="true"/>
+
+					<button name="last_page" text="&gt;&gt;"
+							width="60" height="10"
+							marginTop="30" alignX="right"
+							registeredSkinName="season_pass_page_button" buttonMode="true"/>
+
+					<button name="level_50_page" text="localize:sp_pagination_Lv50"
+							width="60" height="10"
+							marginTop="20" alignX="right"
+							registeredSkinName="season_pass_page_button" buttonMode="true"/>
+				</container>
+
+			</container>
+		</container>
+	</template>
+
+	<!-- CONTENT -->
+	<container name="root"
+			   width="800" height="540" autoSizeWidth="false" autoSizeHeight="false"
+			   mouseEnabled="false" mouseChilderen="true">
+		<reference template="SEASON_PASS_REWARDS"/>
+	</container>
+</root>

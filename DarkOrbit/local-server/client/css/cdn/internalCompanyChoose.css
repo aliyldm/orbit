@@ -1,0 +1,410 @@
+@import "reset.css";
+
+body {
+    margin: 0;
+    color:#fff;
+    font-family: Verdana;
+    font-size:14px;
+    background-color: #000000;
+
+    overflow-y: scroll;
+}
+
+a {color:#fff; text-decoration: none;}
+a:hover, a:active, a:visited {text-decoration: none; color:#fff;}
+a:hover {text-decoration: underline;}
+
+a img {border: none; background: none;} /* all ie's - img with a borderfix */
+
+div.clearfix {clear:both; line-height: 0; font-size: 0; height: 0;}
+
+#companySelection {
+    background-image:  url(/do_img/global/companyChoose/bg_body.jpg?__cv=413191f3cadfbabc1c9f618174810e00);
+    background-position: top center;
+    background-repeat: no-repeat;
+
+}
+
+#companySelection .clickable {cursor: pointer;}
+
+
+/* HEADER STYLES */
+
+#companySelection #header {
+    height:183px;
+}
+
+#companySelection #header #gamelogo {
+    width:  315px;
+    height: 129px;
+    background-image:  url(/do_img/global/companyChoose/gamelogo.png?__cv=b29f4c3a9676e0a91b9738fd13777100);
+    margin: auto;
+}
+
+#companySelection #header .logo {
+    height:90px;
+    background-position:top center;
+    background-repeat: no-repeat;
+}
+#companySelection #header .default,
+#companySelection #header .mmo,
+#companySelection #header .eic,
+#companySelection #header .vru {
+    background-repeat: no-repeat;
+    height:25px;
+    margin-top: -9px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: none;
+    padding-top:25px;
+}
+
+#companySelection #header .default {
+    padding-top:0px;
+    display: block;
+    margin-top: 170px;
+}
+
+#companySelection #header .mmo {
+    background-image:  url(/do_img/global/companyChoose/speech_bubble_sprite_860x50.png?__cv=5c33cb2948937096f25b22a65bfab000);
+    background-position: center top;
+}
+
+#companySelection #header .eic {
+    background-image:  url(/do_img/global/companyChoose/speech_bubble_sprite_860x50.png?__cv=5c33cb2948937096f25b22a65bfab000);
+    background-position: center center;
+}
+
+#companySelection #header .vru {
+    background-image:  url(/do_img/global/companyChoose/speech_bubble_sprite_860x50.png?__cv=5c33cb2948937096f25b22a65bfab000);
+    background-position: center bottom;
+}
+
+/* SPEECHBUBBLE STYLES */
+
+#companySelection #speach_arrows {
+    height:38px;
+    width:960px;
+
+    position: absolute;
+    left:50%;
+    margin-left:-480px;
+
+    z-index:500;
+}
+
+#companySelection #speach_arrows .arrow {
+    height:38px;
+    width: 28px;
+    background-image:  url(/do_img/global/companyChoose/speech_angle_sprite_28x38.png?__cv=1118a8d44cd12a4ed643e1cc0dfb0e00);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+#companySelection #speach_arrows .mmo,
+#companySelection #speach_arrows .eic,
+#companySelection #speach_arrows .vru {
+    display:none;
+}
+
+#companySelection #speach_arrows .mmo {
+    background-position: left top;
+    margin-left: 165px;
+    margin-top: -15px;
+}
+
+#companySelection #speach_arrows .eic {
+    background-position: left center;
+    margin-left: 470px;
+    margin-top: -15px;
+}
+
+#companySelection #speach_arrows .vru {
+    background-position: left bottom;
+    margin-left: 800px;
+    margin-top: -15px;
+}
+
+/* MAIN CONTENT STYLES */
+
+#companySelection #content {
+    position: relative;
+    width:960px;
+    left:50%;
+    margin-left:-480px;
+}
+
+#companySelection #content .faction_outer {
+    float:left;
+    width:238px;
+    height:469px;
+    margin: 0 40px;
+
+    position:relative;
+
+    background-image:  url(/do_img/global/companyChoose/bg_faction_shader.png?__cv=80075471835a617cb6055cb271f5a600);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#companySelection #content .faction_outer_border {
+    width:415px;
+    height:469px;
+
+    position:absolute;
+
+    margin-left:-88px;
+
+    background-image:  url(/do_img/global/companyChoose/bg_faction_outer.png?__cv=db87f8fd2ae9c5501faf7a277d907900);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#companySelection #content .faction_outer_highlight {
+    width:229px;
+    height:466px;
+    margin: 1px 5px;
+
+    position: absolute;
+    z-index: 200;
+
+    background-image:  url(/do_img/global/companyChoose/rollover_click_frame_sprite_229x466.png?__cv=dbbbb8dbcd48c8b1133d5d907ee69600);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+
+    display:none;
+
+}
+
+#companySelection #content .faction_charactar {
+    width:229px;
+    height:466px;
+    margin: 1px 5px;
+
+    position:absolute;
+    z-index: 100;
+
+    background-repeat: no-repeat;
+    background-size:115%;
+}
+
+#companySelection #content .faction_charactar.faction_mmo {
+    background-image:  url(/do_img/global/companyChoose/bg_character_mmo.jpg?__cv=a8f74e7dbf26b0c5db2b55ecfd41c300);
+    background-position: -20px 0;
+}
+
+#companySelection #content .faction_charactar.faction_eic {
+    background-image:  url(/do_img/global/companyChoose/bg_character_eic.jpg?__cv=8246c9b3d77ce0d17fffa6cf98b84400);
+    background-position: -44px 0;
+    background-size:135%;
+}
+
+#companySelection #content .faction_charactar.faction_vru {
+    background-image:  url(/do_img/global/companyChoose/bg_character_vru.jpg?__cv=9851431fdb31ecd9e3be916262e89800);
+    background-position: -20px 0;
+}
+
+#companySelection #content .faction_charactar_shade {
+    width:229px;
+    height:466px;
+    margin: 1px 5px;
+
+    position:absolute;
+    z-index: 150;
+
+    background-image:  url(/do_img/global/companyChoose/frame_gradient_sprite_1x214.png?__cv=43f852bacb88e5642debf3096d8d9f00);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+}
+
+#companySelection #content .faction_charactar_logo {
+    width:75px;
+    height:95px;
+
+    margin:376px 0 0 155px;
+
+    position:absolute;
+    z-index: 200;
+
+    background-image:  url(/do_img/global/companyChoose/logos_sprite_75x95.png?__cv=9399d9c9f4468a81ac03274bf7727e00);
+    background-repeat: no-repeat;
+}
+
+#companySelection #content .faction_charactar_logo.faction_mmo {background-position: top left;}
+#companySelection #content .faction_charactar_logo.faction_eic {background-position: center left;}
+#companySelection #content .faction_charactar_logo.faction_vru {background-position: bottom left;}
+
+#companySelection #content .faction_hover {
+    width:238px;
+    height:469px;
+
+    position: absolute;
+    z-index: 250;
+}
+
+#companySelection #content .faction_hover .confirm {
+    width:238px;
+    height:469px;
+
+    position: absolute;
+    z-index: 240;
+    text-align:center;
+
+    display:none;
+}
+
+#companySelection #content .faction_hover .confirm a {
+    position: relative;
+    top:431px;
+    z-index: 230;
+}
+
+/* FACTION DESCRIPTION STYLES */
+
+#companySelection #defaultHeadline {
+    position: absolute;
+    width:960px;
+    left:50%;
+    margin: 25px 0 0 -480px;
+    text-align: center;
+}
+
+#companySelection #factionDescription {
+    position: relative;
+    width:960px;
+    left:50%;
+    margin: 0px 0 0 -480px;
+    top: 25px;
+
+    height:300px;
+}
+
+#companySelection #factionDescription .headline,
+#companySelection #factionDescription .default {
+    padding: 0 150px;
+    margin-bottom: 10px;
+
+}
+
+#companySelection #factionDescription .default {
+    margin-top: -10px;
+    text-align: center;
+}
+
+#companySelection #factionDescription .headline {
+    font-size:14px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#companySelection #factionDescription .mmo .headline {
+    color:#ff2827;
+}
+
+#companySelection #factionDescription .eic .headline {
+    color:#67afff;
+}
+
+#companySelection #factionDescription .vru .headline {
+    color:#62e201;
+}
+
+#companySelection #factionDescription .devider {
+    background-image:  url(/do_img/global/companyChoose/devider_sprite_394x9.png?__cv=481fdce1aaf95450617597c630e40600);
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    height:9px;
+    width:960px;
+    margin: 10px 0 10px 0;
+
+    display:none;
+}
+
+#companySelection #factionDescription .mmo,
+#companySelection #factionDescription .eic,
+#companySelection #factionDescription .vru {display:none;}
+
+#companySelection #factionDescription .mmo .devider {
+    background-position: center top;
+}
+
+#companySelection #factionDescription .eic .devider {
+    background-position: center center;
+}
+
+#companySelection #factionDescription .vru .devider {
+    background-position: center bottom;
+}
+
+#companySelection #factionDescription .message {
+    padding: 0 150px;
+
+    height:122px;
+
+    background-image:  url(/do_img/global/companyChoose/text_bg_sprite_840x122.png?__cv=a1a6a1e9e075886fc1e5539d41176f00);
+    background-repeat: no-repeat;
+
+    font-size:12px;
+}
+
+#companySelection #factionDescription .mmo .message {
+    background-position: center top;
+}
+
+#companySelection #factionDescription .eic .message {
+    background-position: center center;
+}
+
+#companySelection #factionDescription .vru .message {
+    background-position: center bottom;
+}
+
+
+/* TEMPLATE B - OVERWRITES */
+
+#companySelection #content.templateB .faction_hover .confirm {
+    height: 52px;
+    background-image:  url(/do_img/global/companyChoose/button_sprite_238x52.png?__cv=54b9e324c60e44493b1f2c87d8fbfe00);
+    background-position: center top;
+    background-repeat: no-repeat;
+    top: 414px;
+    display:none;
+}
+.confirm_glow {
+    position: absolute;
+    background-image:  url(/do_img/global/companyChoose/button_sprite_238x52.png?__cv=54b9e324c60e44493b1f2c87d8fbfe00);
+    background-position: 0 -52px;
+    width: 238px;
+    height: 58px;
+}
+
+
+#companySelection #content.templateB .faction_hover .confirm a {
+    top:19px;
+}
+
+#companySelection #content.templateB .faction_hover .confirm a img.inactive {
+    display:none;
+}
+
+#companySelection #content.templateB .faction_hover .confirm a img.active {
+    display:none;
+}
+
+#companySelection #content.templateB .faction_hover.active .confirm {
+    background-position: center top;
+}
+
+#companySelection #content.templateB .faction_hover .confirm:hover {
+    background-position: center center;
+}
+
+
+/* IE LOWER THAN 9 OVERWRITES */
+
+.ie #companySelection #content .faction_charactar.faction_mmo {background-position:-150px 30px;}
+.ie #companySelection #content .faction_charactar.faction_eic {background-position:-97px 25px;}
+.ie #companySelection #content .faction_charactar.faction_vru {background-position:-145px 40px;}

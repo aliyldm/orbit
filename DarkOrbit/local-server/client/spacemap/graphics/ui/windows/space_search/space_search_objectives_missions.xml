@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="battlePass"/>
+
+    </libraries>
+    <skin name="sae_shop_scrollbar_bg" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+    </skin>
+
+    <skin name="sae_info_image" classname="BasicSkin" library="gameclientCommonUI">
+        <layer classname="BitmapLayer" libraryID="icon_info_grey">normal</layer>
+    </skin>
+
+    <textstyle name="world_boss_overview_info"
+               textColor="0xfefefe"
+               type="dynamic"
+               fontSize="10"
+               autoSize="left"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               align="left"/>
+
+    <textstyle name="ssom_shop_header"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="10"
+               autoSize="left"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="true"
+               align="left"/>
+
+    <textstyle name="ssom_shop_header_12"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="12"
+               autoSize="left"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="true"
+               align="left"/>
+
+    <!-- TEMPLATES -->
+    <template name="space_search_objectives_missions">
+        <container name="body_missions"
+                   autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent">
+
+            <label name="missionConditionLabel"
+                   text="Mission Condition"
+                   width="200" autoSizeWidth="false" autoSizeHeight="true"
+                   alignX="left"
+                   marginTop="36"
+                   marginLeft="5"
+                   registeredTextStyleName="world_boss_overview_info" registeredSkinName="commonui_default_label"/>
+
+            <label name="RewardsLabel"
+                   text="Rewards"
+                   width="150" autoSizeWidth="false" autoSizeHeight="true"
+                   alignX="left"
+                   marginTop="36"
+                   marginLeft="390"
+                   registeredTextStyleName="world_boss_overview_info" registeredSkinName="commonui_default_label"/>
+
+            <coreponent autoSizeWidth="true" height="2" marginTop="58"
+                        registeredSkinName="commonui_horizontal_divider"/>
+            <container name="mid"
+                       width="500" height="480"
+                       autoSizeWidth="false" autoSizeHeight="false"
+                       marginLeft="4"
+                       marginTop="60">
+
+                <container name="item"
+                           width="500" height="480"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           marginLeft="0"
+                           marginTop="0">
+
+                    <itemlist name="list"
+                              width="500" height="480" autoSizeWidth="false" autoSizeHeight="false"
+                              layout="vertical" itemGap="0"
+                              mouseEnabled="true" mouseChildren="true"
+                              cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+                        <itemrenderer width="490" height="80" autoSizeWidth="false" autoSizeHeight="false"
+                                      itemGap="0" mouseEnabled="true" mouseChildren="true">
+
+                            <coreponent name="bg"
+                                        width="490" height="80" autoSizeWidth="false" autoSizeHeight="false"
+                                        registeredSkinName="commonui_darklayer" visible="false"/>
+
+                            <coreponent name="iconBg"
+                                        width="60" height="60" autoSizeWidth="false" autoSizeHeight="false"
+                                        alignX="left" alignY="center"
+                                        marginLeft="420" registeredSkinName="commonui_darklayer" />
+
+                            <coreponent name="icon"
+                                        width="60" height="60" autoSizeWidth="false" autoSizeHeight="false"
+                                        alignX="left" alignY="center"
+                                        marginLeft="420"/>
+
+                            <coreponent name="icon2"
+                                        width="60" height="60" autoSizeWidth="false" autoSizeHeight="false"
+                                        alignX="left" alignY="center"
+                                        marginLeft="420" visible="false" />
+
+                            <label name="amountLabel"
+                                   width="60" height="60" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="left" alignY="top"
+                                   marginLeft="464"
+                                   marginTop="48"
+                                   registeredTextStyleName="ssom_shop_header_12"
+                                   registeredSkinName="commonui_default_label"/>
+
+                            <label name="titleLabel"
+                                   width="220" height="10" autoSizeWidth="false" autoSizeHeight="false"
+
+                                   registeredTextStyleName="ssom_shop_header"
+                                   registeredSkinName="commonui_default_label"/>
+
+                            <label name="descriptionLabel"
+                                   width="390"  autoSizeWidth="false" autoSizeHeight="true"
+                                    marginLeft="5"
+                                   alignY="middle"
+                                   registeredTextStyleName="world_boss_overview_info"
+                                   registeredSkinName="commonui_default_label" />
+
+
+                            <coreponent autoSizeWidth="false" width="500" height="2" marginTop="79"
+                                        registeredSkinName="commonui_horizontal_divider"/>
+
+                        </itemrenderer>
+                    </itemlist>
+                    <scrollbar name="scroll_bar"
+                               width="10" autoSizeHeight="true" direction="vertical"
+                               marginTop="0" marginBottom="0" marginRight="0" alignX="right"
+                               registeredSkinName="sae_shop_scrollbar_bg">
+                        <button name="buttonSlider"
+                                width="8" height="10" alignX="center"
+                                registeredSkinName="commonui_scrollbar_slider"/>
+                    </scrollbar>
+                    <bind source="scroll_bar"
+                          target="list"
+                          type="scrollcontainer"/>
+                </container>
+
+                <container name="info"
+                           width="500" height="70" autoSizeHeight="false"
+                           marginTop="490"
+                           alignX="center"
+                >
+                    <coreponent alignX="left" registeredSkinName="sae_info_image" marginTop="0" marginLeft="8"/>
+
+                    <label name="description" text="localize:SS_Missions_tips"
+                           width="400" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+                           alignX="center"
+                           registeredTextStyleName="world_boss_overview_info"
+                           registeredSkinName="commonui_default_label"/>
+
+                </container>
+
+            </container>
+
+        </container>
+    </template>
+    <container name="root" width="500" height="600" autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="false"
+               mouseChilderen="true">
+        <reference template="space_search_objectives_missions"/>
+    </container>
+
+</root>

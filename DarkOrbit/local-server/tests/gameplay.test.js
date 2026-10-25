@@ -1,0 +1,200 @@
+'use strict';
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const { open } = require('../game/db');
+const db = open(':memory:');
+const players = require('../game/db/players');
+const config = require('../config');
+const World = require('../game/world');
+const Combat = require('../game/combat');
+const gameplay = require('../game/gameplay');
+const maps = require('../game/maps');
+const codec = require('../game/codec/codec');
+const loot = require('../game/collectables');
+let sequence=0;
+function fixture() {
+  const account=players.createAccount(`gameplay-${++sequence}`,'test-pass');
+  const id=players.createPlayer(account,'QA',1,config.starter);
+  let now=Date.now();const commands=[];
+  const world=new World(config,{now:()=>now});
+  const session={world,send(){},close(){this.closed=true;}};
+  world.login(session,id);
+  world.rendererMode=2;
+  const send=(s,c)=>{codec.encode(c);commands.push(c);};
+  const combat=new Combat(world,send);
+  gameplay.register(()=>{}, {sendCmd:send,combatFor:()=>combat,buildInit:w=>gameplay.initialize(w)});
+  return {world,session,combat,commands,send,id,advance:n=>{now+=n;world.updatePosition(now);}};
+}
+test('migration and versioned content build the native FK-valid normal map graph',()=>{
+  assert.equal(db.prepare('PRAGMA foreign_key_check').all().length,0);
+  assert.equal(db.prepare('SELECT COUNT(*) n FROM portals').get().n,96);
+  for(let id=1;id<=12;id++)assert.ok(maps.portals(id).length>0);
+});
+test('solo session replacement saves old state and delayed close cannot mutate new session',()=>{
+  const f=fixture();const old=f.session;
+  f.world.player.x=4500;
+  const second={world:f.world,close(){},send(){}};
+  f.world.login(second,f.id);
+  assert.equal(old.closed,true);assert.equal(old.player,null);assert.equal(f.world.sessions.size,1);
+  assert.equal(f.world.player.x,4500);assert.equal(f.world.removeSession(old),false);
+  assert.equal(f.world.active(second),true);
+  f.world.removeSession(second);assert.equal(f.world.livePlayer(f.id),null);assert.equal(f.world.player,null);
+});
+test('movement follows speed over elapsed time, ignores forged reported position and clamps bounds',()=>{
+  const f=fixture();const p=f.world.player;Object.assign(p,{x:5000,y:5000,speed:300});
+  assert.equal(f.world.move({player:p},{positionX:5000,positionY:5000,targetX:7000,targetY:5000}),false);
+  assert.equal(f.world.move(f.session,{positionX:20000,positionY:12000,targetX:5600,targetY:5000}),true);
+  assert.equal(p.x,5000);f.advance(1000);assert.equal(p.x,5300);f.advance(1000);assert.equal(p.x,5600);
+  f.world.move(f.session,{positionX:5600,positionY:5000,targetX:1e9,targetY:-1e9});assert.equal(f.world.movement.targetX,21000);assert.equal(f.world.movement.targetY,0);
+  p.dead=true;assert.equal(f.world.move(f.session,{positionX:0,positionY:0,targetX:0,targetY:0}),false);
+  f.world.removeSession(f.session);
+});
+test('initial map assets, portals, resources and death UI encode and decode with actual SWF schema',()=>{
+  const f=fixture();const cmds=gameplay.initialize(f.world);
+  assert.equal(cmds.filter(c=>c._==='JumpgateCreateCommand').length,1);
+  assert.ok(cmds.some(c=>c._==='SpaceStationCommand'));
+  for(const c of cmds)assert.equal(codec.decode(codec.encode(c)).obj._,c._);
+  f.world.player.dead=true;
+  const death=codec.decode(codec.encode(gameplay.deathCommand(f.world,'Streuner'))).obj;
+  assert.equal(death.options[0].repairType.repairTypeValue,1);assert.equal(death.options[0].price.amount,0);
+  f.world.removeSession(f.session);
+});
+test('range validation prevents remote firing; NPC positions interpolate instead of teleporting',()=>{
+  const f=fixture();f.combat.map=maps.getMap(1);const p=f.world.player;Object.assign(p,{x:6000,y:6000});
+  const npc=f.combat.spawn({typeId:84,name:'Streuner',hitpoints:800,shield:400,speed:200,damageMin:1,damageMax:1,reward:{},respawnMs:5000});
+  Object.assign(npc,{x:8000,y:6000});assert.equal(f.combat.attack(f.session,npc.id),false);
+  npc.x=6500;assert.equal(f.combat.attack(f.session,npc.id),true);
+  f.combat.moveNpc(npc,6900,6000,1000);assert.equal(npc.x,6500);f.combat.updateNpc(npc,2000);assert.equal(npc.x,6700);
+  p.dead=true;assert.equal(f.combat.attack(f.session,npc.id),false);
+  f.world.removeSession(f.session);assert.equal(f.combat.timer,null);assert.equal(f.combat.npcs.size,0);
+});
+test('nearby ore collection persists once, updates free cargo, and rejects remote/replayed requests',()=>{
+  const f=fixture();const p=f.world.player;Object.assign(p,{x:6000,y:6000});
+  f.world.collectables=new loot.Collectables(f.world,f.send);
+  const box=f.world.collectables.add({x:6000,y:6000,oreType:0,amount:10},false);
+  const cmd={itemHash:box.hash,boxX:6000,boxY:6000,posX:6000,posY:6000};
+  assert.equal(f.world.collectables.collect(f.session,cmd),true);
+  assert.equal(db.prepare('SELECT amount FROM player_resources WHERE player_id=? AND ore_type=0').get(p.userId).amount,10);
+  assert.equal(p.cargoSpace,p.cargoSpaceMax-10);
+  assert.equal(f.world.collectables.collect(f.session,cmd),false);
+  const remote=f.world.collectables.add({x:18000,y:10000,reward:{credits:500}},false);
+  assert.equal(f.world.collectables.collect(f.session,{itemHash:remote.hash,posX:18000,posY:10000}),false);
+  assert.equal(p.credits,0);f.world.removeSession(f.session);
+});
+test('standard rockets use source damage/range, consume one round and enforce cooldown',t=>{
+  t.mock.timers.enable({apis:['setTimeout','Date'],now:100000});
+  const f=fixture(),p=f.world.player;Object.assign(p,{x:6000,y:6000});f.combat.map=maps.getMap(1);
+  const npc=f.combat.spawn({typeId:71,name:'Lordakia',hitpoints:2000,shield:2000,speed:200,damageMin:1,damageMax:1,reward:{},respawnMs:5000});
+  Object.assign(npc,{x:6500,y:6000});
+  assert.equal(f.combat.rocket(f.session,{targetId:npc.id,targetX:6000,targetY:6000}),false);
+  npc.x=6400;
+  const before=require('../game/ammo').count(p,'ammunition_rocket_r-310');
+  assert.equal(f.combat.rocket(f.session,{targetId:npc.id,targetX:1e9,targetY:1e9}),true);
+  assert.equal(require('../game/ammo').count(p,'ammunition_rocket_r-310'),before-1);
+  assert.equal(npc.shield,2000);assert.equal(npc.hp,2000);
+  t.mock.timers.tick(800);
+  assert.equal(npc.shield,1200);assert.equal(npc.hp,1800);
+  assert.equal(f.combat.rocket(f.session,{targetId:npc.id}),false);
+  assert.equal(f.commands.find(c=>c._==='AttackHitCommand').attackType.attackTypeValue,0);
+  assert.ok(f.commands.some(c=>c._==='MenuItemCooldownGroupTimerCommand'&&c.time===4000));
+  f.world.removeSession(f.session);
+});
+test('ore sales are station constrained, atomic and persist credit/cargo changes',()=>{
+  const f=fixture();const p=f.world.player;
+  db.prepare('INSERT INTO player_resources(player_id,ore_type,amount) VALUES(?,0,20)').run(p.userId);
+  Object.assign(p,{x:10000,y:10000});const req={toSell:{oreType:{typeValue:0},count:10}};
+  assert.equal(loot.sell(f.session,req,f.send),false);Object.assign(p,{x:2000,y:2000});
+  assert.equal(loot.sell(f.session,req,f.send),true);assert.equal(p.credits,100);
+  assert.equal(players.loadPlayer(p.userId).credits,100);
+  assert.throws(()=>loot.sell(f.session,{toSell:{oreType:{typeValue:0},count:100}},f.send),/Yetersiz/);
+  assert.equal(p.credits,100);assert.equal(db.prepare('SELECT amount FROM player_resources WHERE player_id=?').get(p.userId).amount,10);
+  f.world.removeSession(f.session);
+});
+test('player death persists, blocks movement and repairs only the authorized player at home',()=>{
+  const f=fixture();const p=f.world.player;Object.assign(p,{x:6000,y:6000,mapId:2});
+  f.combat.killPlayer({def:{name:'Streuner'}});assert.equal(p.dead,true);assert.equal(players.loadPlayer(p.userId).hitPoints,0);
+  assert.equal(gameplay.repair(f.session,{selection:{repairTypeValue:3}}),false);
+  assert.equal(gameplay.repair(f.session,{selection:{repairTypeValue:1},requestModule:{userID:p.userId+1}}),false);
+  assert.equal(gameplay.repair(f.session,{selection:{repairTypeValue:1},requestModule:{userID:p.userId}}),true);
+  assert.equal(p.mapId,1);assert.equal(p.hitPoints,p.hitMax);assert.equal(p.dead,false);
+  assert.ok(f.commands.some(c=>c._==='KillScreenPostCommand'));assert.ok(f.commands.some(c=>c._==='JumpToServerCommand'));
+  f.world.removeSession(f.session);
+});
+test('map transitions cancel stale NPC respawns and collectible timers',async()=>{
+  const f=fixture();gameplay.initialize(f.world);f.combat.start();
+  Object.assign(f.world.player,{x:18500,y:11500});assert.equal(gameplay.jump(f.session),true);
+  assert.equal(f.session.jumping,true);assert.equal(f.world.scheduled.size,1);
+  f.world.removeSession(f.session);assert.equal(f.world.scheduled.size,0);assert.equal(f.combat.respawns.size,0);
+  await new Promise(resolve=>setTimeout(resolve,10));assert.equal(f.world.player,null);
+});
+test('normal portal jump completes on the same session and persists destination',async()=>{
+  const f=fixture();f.world.config={...config,gameplay:{jumpDelayMs:0}};
+  Object.assign(f.world.player,{x:18500,y:11500});
+  assert.equal(gameplay.jump(f.session),true);
+  await new Promise(resolve=>setTimeout(resolve,15));
+  assert.equal(f.world.player.mapId,2);assert.equal(f.session.jumping,false);
+  assert.equal(players.loadPlayer(f.id).mapId,2);
+  assert.deepEqual(f.commands.filter(c=>/JumpInitiated|JumpToServer/.test(c._)).map(c=>c._),['JumpInitiatedCommand','JumpToServerCommand']);
+  assert.ok(f.combat.timer);f.world.removeSession(f.session);
+});
+test('real HarvestRequest flow waits for harvest and movement cancels without granting ore',async()=>{
+  const f=fixture();f.world.config={...config,gameplay:{harvestDelayMs:10}};Object.assign(f.world.player,{x:6000,y:6000});
+  const handlers=new Map();gameplay.register((n,fn)=>handlers.set(n,fn),{sendCmd:f.send,combatFor:()=>f.combat,buildInit:w=>gameplay.initialize(w)});
+  f.world.collectables=new loot.Collectables(f.world,f.send);
+  const box=f.world.collectables.add({x:6000,y:6000,oreType:1,amount:10},false);
+  assert.equal(handlers.get('HarvestRequest')(f.session,{itemHash:box.hash}),true);
+  assert.equal(db.prepare('SELECT COUNT(*) n FROM player_resources WHERE player_id=?').get(f.id).n,0);
+  f.world.move(f.session,{positionX:6000,positionY:6000,targetX:6100,targetY:6000});
+  await new Promise(resolve=>setTimeout(resolve,20));assert.equal(f.world.collectables.boxes.has(box.hash),true);
+  assert.equal(db.prepare('SELECT COUNT(*) n FROM player_resources WHERE player_id=?').get(f.id).n,0);
+  f.world.stopMovement();handlers.get('HarvestRequest')(f.session,{itemHash:box.hash});await new Promise(resolve=>setTimeout(resolve,20));
+  assert.equal(db.prepare('SELECT amount FROM player_resources WHERE player_id=? AND ore_type=1').get(f.id).amount,10);
+  assert.ok(f.commands.some(c=>c._==='LegacyModule'&&c.message.startsWith('0|A|SLC|')));f.world.removeSession(f.session);
+});
+test('wire laser packets use selected ammo, exact owned skill flag, NPC false, and reset immediately',()=>{
+  const f=fixture(),p=f.world.player;Object.assign(p,{x:6000,y:6000});f.combat.map=maps.getMap(1);
+  const skills=require('../game/skills');skills.state(f.id);db.prepare('UPDATE skill_accounts SET earned_points=50 WHERE player_id=?').run(f.id);
+  db.prepare('INSERT INTO player_skills(player_id,skill_id,level)VALUES(?,?,?)').run(f.id,'22a',2);
+  db.prepare('INSERT INTO player_skills(player_id,skill_id,level)VALUES(?,?,?)').run(f.id,'22b',3);
+  const npc=f.combat.spawn({typeId:71,name:'Lordakia',hitpoints:2000,shield:2000,speed:200,damageMin:1,damageMax:1,reward:{},respawnMs:5000});Object.assign(npc,{x:6400,y:6000});
+  f.session.attacking=npc.id;npc.aggro=f.session;f.commands.length=0;f.combat.tick();
+  const packet=f.commands.find(c=>c._==='AttackLaserRunCommand'&&c.attackerId===p.userId);
+  assert.equal(codec.decode(codec.encode(packet)).obj.skilledLaser,true);assert.equal(packet.laserColor,0);
+  assert.equal(f.commands.find(c=>c._==='AttackLaserRunCommand'&&c.attackerId===npc.id).skilledLaser,false);
+  p.ammo='ammunition_laser_sab-50';assert.equal(f.combat.laserRun(p.userId,npc.id).laserColor,4);
+  p.ammo='ammunition_laser_rsb-75';assert.equal(f.combat.laserRun(p.userId,npc.id).laserColor,6);
+  db.prepare('UPDATE players SET uridium=300000 WHERE id=?').run(f.id);skills.reset(f.id);
+  assert.equal(f.combat.laserRun(p.userId,npc.id).skilledLaser,false);f.world.removeSession(f.session);
+});
+test('captured generic repair robot action resolves the robot in active configuration 2',()=>{
+ const f=fixture(),p=f.world.player;
+ const id=Number(db.prepare("INSERT INTO items(player_id,loot_id,amount)VALUES(?,'equipment_extra_repbot_rep-1',1)").run(f.id).lastInsertRowid);
+ db.prepare("INSERT INTO equipment_config2(item_id,ship_id,slot,slot_index)VALUES(?,?,'extra',0)").run(id,p.shipId);
+ assert.equal(gameplay.menuAction(f.session,{menuItemId:'equipment_extra_repbot_rep'}),false);
+ db.prepare('UPDATE ships SET active_config=2 WHERE id=?').run(p.shipId);
+ assert.equal(gameplay.menuAction(f.session,{menuItemId:'equipment_extra_repbot_rep'}),true);
+ assert.equal(p.repairRobotLootId,'equipment_extra_repbot_rep-1');assert.equal(p.repairing,true);f.world.removeSession(f.session);
+});
+test('SAB drains only target shields, restores own shields and never damages target hull',()=>{
+ const f=fixture(),p=f.world.player;Object.assign(p,{shield:50,shieldMax:100});const npc={hp:500,shield:200};
+ assert.equal(f.combat.applyLaserDamage(p,npc,150,'ammunition_laser_sab-50'),150);
+ assert.equal(npc.hp,500);assert.equal(npc.shield,50);assert.equal(p.shield,100);
+ assert.equal(f.combat.applyLaserDamage(p,npc,150,'ammunition_laser_sab-50'),50);
+ assert.equal(npc.hp,500);assert.equal(f.combat.applyLaserDamage(p,npc,150,'ammunition_laser_sab-50'),0);f.world.removeSession(f.session);
+});
+test('RSB cooldown prevents extra consumption and NPC evasion produces a real missed packet',()=>{
+ const f=fixture(),p=f.world.player;Object.assign(p,{x:6000,y:6000});f.combat.map=maps.getMap(1);
+ db.prepare("INSERT INTO items(player_id,loot_id,amount)VALUES(?,'ammunition_laser_rsb-75',20)").run(f.id);require('../game/ammo').select(p,'ammunition_laser_rsb-75');
+ const npc=f.combat.spawn({typeId:71,name:'Lordakia',hitpoints:20000,shield:20000,speed:200,damageMin:1,damageMax:1,reward:{},respawnMs:5000});Object.assign(npc,{x:6400,y:6000});f.session.attacking=npc.id;
+ f.combat.tick();const after=require('../game/ammo').count(p);f.combat.tick();assert.equal(require('../game/ammo').count(p),after);assert.ok(f.commands.some(c=>c._==='MenuItemCooldownGroupTimerCommand'&&c.cooldownType.typeValue===10));
+ f.session.attacking=null;npc.aggro=f.session;p.stats.skills.evasion=.1;p.stats.formation={evasion:.05};const chances=[];
+ f.combat.rollHit=chance=>{chances.push(chance);return false;};const hp=p.hitPoints;f.combat.tick(Date.now()+1000);assert.equal(p.hitPoints,hp);assert.ok(Math.abs(chances[0]-.85)<.001);
+ assert.ok(f.commands.some(c=>c._==='AttackMissedCommand'&&c.targetUserId===p.userId));f.world.removeSession(f.session);
+});
+test('menu activation fires selected target while a plain rocket selection consumes nothing',()=>{
+ const f=fixture(),p=f.world.player;Object.assign(p,{x:6000,y:6000});f.combat.map=maps.getMap(1);
+ const npc=f.combat.spawn({typeId:71,name:'Lordakia',hitpoints:2000,shield:2000,speed:200,damageMin:1,damageMax:1,reward:{},respawnMs:5000});Object.assign(npc,{x:6400,y:6000});f.session.selected=npc.id;
+ assert.equal(gameplay.menuAction(f.session,{menuItemId:'ammunition_laser_lcb-10',actionType:1}),true);assert.equal(f.session.attacking,npc.id);
+ const before=require('../game/ammo').count(p,'ammunition_rocket_r-310');gameplay.menuAction(f.session,{menuItemId:'ammunition_rocket_r-310',actionType:0});assert.equal(require('../game/ammo').count(p,'ammunition_rocket_r-310'),before);
+ assert.equal(gameplay.menuAction(f.session,{menuItemId:'ammunition_rocket_r-310',actionType:1}),true);assert.equal(require('../game/ammo').count(p,'ammunition_rocket_r-310'),before-1);f.world.removeSession(f.session);
+});

@@ -1,0 +1,22 @@
+{
+  "beforeSha256": "c16564d0db510face99da4c4869b0b8e8a213d5fde2c0e52f53fd9cdc9b7d61d",
+  "afterSha256": "47a0a55587987d5918ccb41e3e8fa9f3da2c13a8514b01e1e5be0f296894e585",
+  "normalSoundIntervalMs": 1000,
+  "normalSubSalvoIntervalMs": 220,
+  "rsbSubSalvoIntervalMs": 200,
+  "nonAbcIdentical": true,
+  "unchangedNonAbcTags": 256,
+  "changes": [
+    {
+      "index": 254,
+      "before": {
+        "tag": 82,
+        "sha256": "8048b1b87cbfc8dc010d3253b6b69691029a4246795e7f6cae1508f68d7c39f4"
+      },
+      "after": {
+        "tag": 82,
+        "sha256": "4d277e7b786b0567d21fffca26e62bec809b71723642f10a3620d4ffc3daedc4"
+      }
+    }
+  ]
+}

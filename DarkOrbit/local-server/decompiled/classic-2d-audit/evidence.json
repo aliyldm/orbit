@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-23",
+  "mainSha256": "e672b127d1f7898e1d558e4bb7f03f4dfd5372f56f8ac6ecb3a063facc3b6a8d",
+  "classes": [
+    {
+      "name": "mvc/settingsFUI/model/SettingsWindowFUIProxy",
+      "sha256": "b93100e584bdf9ef84b75106048b7474a8f3ce00bcbf673ce102d641faa08ac6"
+    },
+    {
+      "name": "mvc/settingsFUI/control/SettingsWindowFUISaveSettingsCommand",
+      "sha256": "7a415ecef2317f269a251acd86f74494bd0b8d73ce161710cdddf9a6c5998a1b"
+    },
+    {
+      "name": "map/view2D/display/ship/Ship2D",
+      "sha256": "35ef7b38b11d795eb3202eafa3a16be83f5a8a22dc0f0c76bba787b2f31e1836"
+    },
+    {
+      "name": "map/view2D/display/ship/ShipClip",
+      "sha256": "ab5a9b1afc0d765209dfbc286c519fef5a73485d9ed44358b19426103afef4c5"
+    },
+    {
+      "name": "map/view2D/effects/combat/laser/LaserSalvo2D",
+      "sha256": "eee642f149e0443f3372dfb6a1d82c589922c53e23ab6ed71cde4cd88f3d5736"
+    }
+  ],
+  "qualityPresets": {
+    "low": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "medium": [
+      1,
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "good": [
+      2,
+      3,
+      3,
+      2,
+      1,
+      3
+    ],
+    "high": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "qualityFieldOrder": [
+    "background",
+    "zones",
+    "ship",
+    "engine",
+    "explosion",
+    "collectables"
+  ],
+  "gpuLimit": "High background uses GOOD instead of HIGH without GPU support, controlled by native client",
+  "limits": [
+    "No new native Qt input or audio/screen capture",
+    "Originality means supplied client code and assets, not all historical DarkOrbit versions"
+  ]
+}

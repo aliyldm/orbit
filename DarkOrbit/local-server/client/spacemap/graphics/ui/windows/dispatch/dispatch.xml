@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="dispatch_asset"/>
+	</libraries>
+
+	<textstyle  name="dispatch_title_yellow"
+				textColor="0xFFCC00"
+				type="dynamic"
+				fontSize="14"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Arial"
+				align="left"/>
+
+	<textstyle  name="dispatch_resource_amount"
+				textColor="0xA0B4C2"
+				type="dynamic"
+				fontSize="10"
+				autoSize="center"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Arial"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="dispatch_description_blue"
+				textColor="0xA4D3FF"
+				type="dynamic"
+				fontSize="9"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Arial"
+				align="left"/>
+
+	<textstyle  name="dispatch_tab_center"
+				textColor="0xFFCC00"
+				type="dynamic"
+				fontSize="11"
+				autoSize="center"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="dispatch_galaxygate_grey"
+				textColor="0x999999"
+				type="dynamic"
+				fontSize="13"
+				autoSize="center"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="center"/>
+
+	<textstyle  name="dispatch_subtab_center_yellow"
+				textColor="0xFFCC00"
+				type="dynamic"
+				fontSize="11"
+				autoSize="center"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="center"/>
+
+	<textstyle  name="dispatch_subtab_center_blue"
+				textColor="0xA4D3FF"
+				type="dynamic"
+				fontSize="11"
+				autoSize="center"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="center"/>
+
+	<textstyle  name="dispatch_text_right_yellow"
+				textColor="0xFFCC00"
+				type="dynamic"
+				fontSize="11"
+				autoSize="right"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Arial"
+				align="right"/>
+
+	<textstyle  name="dispatch_btn_text_center"
+				textColor="0xFFFFFF"
+				type="dynamic"
+				fontSize="12"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				align="center"/>
+
+	<textstyle  name="dispatch_table_header"
+				textColor="0xA4D3FF"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Arial"
+				bold="true"
+				align="left"/>
+
+	<textstyle  name="dispatch_table_row_label"
+				textColor="0xFFFFFF"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Arial"
+				align="left"/>
+
+	<skin name="dispatch_main_bg" classname="BasicSkin" library="dispatch_asset">
+		<layer classname="BitmapLayer" libraryID="background" >normal</layer>
+	</skin>
+
+	<skin name="dispatch_main_bg_design" classname="BasicSkin" library="dispatch_asset">
+		<layer classname="BitmapLayer" libraryID="deco_01" >normal</layer>
+	</skin>
+
+	<skin name="dispatch_res_amt_bg" classname="BasicSkin" library="dispatch_asset">
+		<layer classname="BitmapLayer" libraryID="textfield">normal</layer>
+	</skin>
+
+	<skin name="dispatch_event_icon" classname="BasicSkin" library="dispatch_asset">
+		<layer classname="BitmapLayer" libraryID="gg-bonus_reward">normal</layer>
+	</skin>
+
+	<skin name="dispatch_main_tab_btn" classname="FadableButtonSkin" library="dispatch_asset">
+		<layer classname="BitmapLayer" libraryID="subtab_sprite_139x20px" region="0,0,139,20">normal</layer>
+		<layer classname="BitmapLayer" libraryID="subtab_sprite_139x20px" region="0,21,139,20">over</layer>
+	</skin>
+
+	<skin name="dispatch_main_tab_btn.selected" classname="FadableButtonSkin" library="dispatch_asset">
+		<layer classname="BitmapLayer" libraryID="subtab_sprite_139x20px" region="0,42,139,20">normal</layer>
+	</skin>
+
+	<skin name="dispatch_sub_tab_btn" classname="FadableButtonSkin" library="dispatch_asset" >
+		<layer classname="BitmapLayer" libraryID="button_window_sprite_119x15" region="0,0,120,15">normal</layer>
+		<layer classname="BitmapLayer" libraryID="button_window_sprite_119x15" region="0,15,120,15">over</layer>
+		<layer classname="BitmapLayer" libraryID="button_window_sprite_119x15" region="0,30,120,15">clicked</layer>
+		<layer classname="BitmapLayer" libraryID="button_window_sprite_119x15" region="0,30,120,15">disabled</layer>
+	</skin>
+
+	<skin name="dispatch_help_btn_image" classname="FadableButtonSkin" library="dispatch_asset">
+		<layer classname="BitmapLayer" libraryID="icon_help_std">normal</layer>
+		<layer classname="BitmapLayer" libraryID="icon_help_hover">over</layer>
+	</skin>
+
+	<skin name="dispatch_plus_btn_yellow" classname="FadableButtonSkin" library="dispatch_asset" >
+		<layer classname="BitmapLayer" libraryID="buy-item_plus-minus_100x5" region="50,25,25,25">normal</layer>
+		<layer classname="BitmapLayer" libraryID="buy-item_plus-minus_100x5" region="75,25,25,25">over</layer>
+	</skin>
+
+	<skin name="dispatch_btn_sprite_grey" classname="FadableButtonSkin" library="dispatch_asset" >
+		<layer classname="BitmapLayer" libraryID="filter_button_142_28" region="0,0,142,28">normal</layer>
+		<layer classname="BitmapLayer" libraryID="filter_button_142_28" region="0,28,142,28">over</layer>
+		<layer classname="BitmapLayer" libraryID="filter_button_142_28" region="0,56,142,28">clicked</layer>
+	</skin>
+
+	<skin name="dispatch_btn_sprite_blue" classname="FadableButtonSkin" library="dispatch_asset" >
+		<layer classname="BitmapLayer" libraryID="button_sprite_115x20px" region="0,0,116,20">normal</layer>
+		<layer classname="BitmapLayer" libraryID="button_sprite_115x20px" region="0,23,116,20">over</layer>
+		<layer classname="BitmapLayer" libraryID="button_sprite_115x20px" region="0,46,116,20">clicked</layer>
+		<layer classname="BitmapLayer" libraryID="button_sprite_115x20px" region="0,138,116,20">disabled</layer>
+	</skin>
+
+	<skin name="dispatch_btn_sprite_green" classname="FadableButtonSkin" library="dispatch_asset" >
+		<layer classname="BitmapLayer" libraryID="button_sprite_115x20px" region="0,69,116,20">normal</layer>
+		<layer classname="BitmapLayer" libraryID="button_sprite_115x20px" region="0,92,116,20">over</layer>
+		<layer classname="BitmapLayer" libraryID="button_sprite_115x20px" region="0,115,116,20">clicked</layer>
+		<layer classname="BitmapLayer" libraryID="button_sprite_115x20px" region="0,138,116,20">disabled</layer>
+	</skin>
+
+	<skin name="dispatch_table_row_bg" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x13232F" fillAlpha="1">normal</layer>
+	</skin>
+
+	<skin name="dispatch_table_row_hover" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0xFFFFFF" fillAlpha="0">normal</layer>
+		<layer classname="FilledBoxLayer" fillColor="0x3A667D" fillAlpha="1">over</layer>
+		<layer classname="FilledBoxLayer" fillColor="0x3A667D" fillAlpha="1">clicked</layer>
+		<layer classname="FilledBoxLayer" fillColor="0x3A667D" fillAlpha="1">disabled</layer>
+	</skin>
+
+	<skin name="table_outline" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0" lineColor="0x37687F" lineAlpha="1">normal</layer>
+	</skin>
+
+	<skin name="dispatch_test_button" classname="FadableButtonSkin" library="dispatch_asset" >
+		<layer classname="FilledBoxLayer" fillColor="0x37687F" fillAlpha="0.7" lineColor="0x37687F" lineAlpha="1">normal</layer>
+		<layer classname="FilledBoxLayer" fillColor="0x37687F" fillAlpha="0.7" lineColor="0x37687F" lineAlpha="1">over</layer>
+		<layer classname="FilledBoxLayer" fillColor="0x37687F" fillAlpha="0.7" lineColor="0x37687F" lineAlpha="1">clicked</layer>
+		<layer classname="FilledBoxLayer" fillColor="0x37687F" fillAlpha="0.7" lineColor="0x37687F" lineAlpha="1">disabled</layer>
+	</skin>
+
+	<template name="DISPATCH_MAIN">
+		<container name="main"
+				   width="769" height="388" marginTop="12" marginLeft="12"
+				   registeredSkinName="dispatch_main_bg">
+
+			<label name="title" text="localize:dispatch_label_dispatch:base" width="420" height="22"
+				   marginTop="3" marginLeft="20"
+				   registeredTextStyleName="dispatch_title_yellow"
+				   registeredSkinName="commonui_default_label"/>
+
+			<coreponent name="eventIcon" width="41" height="46" marginTop="-12" marginLeft="15"
+						visible="false" registeredSkinName="dispatch_event_icon"/>
+
+			<coreponent name="bg_design" width="766" height="333" marginTop="40" marginLeft="2"
+						registeredSkinName="dispatch_main_bg_design"/>
+
+			<container name="top" width="324" height="21" alignX="right">
+				<container name="res_permit_plus" width="108" autoSizeHeight="true">
+					<container name="amount_bg" width="66" height="17" marginLeft="5" alignY="bottom"
+							   registeredSkinName="dispatch_res_amt_bg">
+						<label name="amount" text="0" autoSizeWidth="true" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_resource_amount"
+							   registeredSkinName="commonui_default_label"/>
+					</container>
+					<coreponent name="icon" width="21" height="21" marginTop="4" marginRight="7"
+								alignX="right" mouseEnabled="true"/>
+				</container>
+
+				<container name="res_permit" width="108" marginLeft="108" autoSizeHeight="true">
+					<container name="amount_bg" width="66" height="17" marginLeft="5" alignY="bottom"
+							   registeredSkinName="dispatch_res_amt_bg">
+						<label name="amount" text="0" autoSizeWidth="true" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_resource_amount"
+							   registeredSkinName="commonui_default_label"/>
+					</container>
+					<coreponent name="icon" width="21" height="21" marginTop="4" marginRight="7"
+								alignX="right" mouseEnabled="true"/>
+				</container>
+
+				<container name="res_ggeu" width="108" marginLeft="216" autoSizeHeight="true">
+					<container name="amount_bg" width="66" height="17" marginLeft="5" alignY="bottom"
+							   registeredSkinName="dispatch_res_amt_bg">
+						<label name="amount" text="0" autoSizeWidth="true" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_resource_amount"
+							   registeredSkinName="commonui_default_label"/>
+					</container>
+					<coreponent name="icon" width="21" height="21" marginTop="4" marginRight="7"
+								alignX="right" mouseEnabled="true"/>
+				</container>
+			</container>
+			<button name="help_btn" marginTop="29" marginRight="175" alignX="right"
+					registeredSkinName="dispatch_help_btn_image"/>
+		</container>
+	</template>
+
+	<template name="DISPATCH_TABBAR">
+		<container name="tabbarContainer" width="280" height="20" marginTop="41" marginLeft="15"
+				   pixelSnapping="true">
+			<itemlist name="tabsItemlist" registeredSkinName="commonui_list_mask" layout="horizontal" alignX="right"
+					  width="280" itemGap="2" height="20" mouseEnabled="true" mouseChildren="true"
+					  cacheSkinMaskAsBitmap="false">
+				<itemrenderer width="139"  height="20" autoSizeWidth="false" mouseEnabled="true" mouseChildren="true">
+					<button name="tab" registeredSkinName="dispatch_main_tab_btn" mouseEnabled="true"
+							autoSizeWidth="true" autoSizeHeight="true" mouseChildren="true"/>
+					<button name="tab_selected" registeredSkinName="dispatch_main_tab_btn.selected" mouseEnabled="true"
+							autoSizeWidth="true" autoSizeHeight="true" mouseChildren="true" visible="false"/>
+					<label y="-1" name="tabLabel" registeredSkinName="commonui_default_label"
+						   registeredTextStyleName="dispatch_tab_center" mouseEnabled="false" marginTop="2"
+						   mouseChildren="false" autoSizeWidth="true" text="?"/>
+				</itemrenderer>
+			</itemlist>
+		</container>
+	</template>
+
+	<template name="DISPATCH_RETRIEVER">
+		<container name="retriever"
+				   width="633" height="306" marginTop="60" marginLeft="14" alignX="left">
+			<!-- Right side UI  -->
+			<container name="side" width="133" height="351" marginTop="-28" marginRight="-134" alignX="right">
+				<coreponent name="icon" width="100" height="100" marginTop="20" marginLeft="15"/>
+
+				<!--<coreponent name="test1" width="101" height="150" marginTop="135" marginLeft="14"
+							registeredSkinName="table_outline"/>-->
+				<label name="description" width="101" height="150" marginTop="135" marginLeft="14"
+					   registeredTextStyleName="dispatch_description_blue"
+					   registeredSkinName="commonui_default_label"/>
+				<button name="hire_btn" text="localize:dispatch_button_hire:base" width="116" height="20"
+						marginRight="9" marginBottom="20" alignX="right" alignY="bottom"
+						registeredTextStyleName="dispatch_btn_text_center" registeredSkinName="dispatch_btn_sprite_blue"/>
+				<container name="quick_delivery" width="116" height="45" marginRight="9" marginBottom="20"
+						   alignX="right" alignY="bottom">
+					<container name="amount_bg" width="66" height="17" marginRight="29" marginBottom="25"
+							   alignX="right" alignY="bottom" registeredSkinName="dispatch_res_amt_bg">
+						<label name="amount" text="0" autoSizeWidth="true" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_resource_amount"
+							   registeredSkinName="commonui_default_label"/>
+					</container>
+					<coreponent name="icon" width="21" height="21" marginRight="-2" marginBottom="23"
+								alignX="right" alignY="bottom" mouseEnabled="true"
+								registeredSkinName="table_outline" />
+					<button name="btn" text="localize:dispatch_button_quickhire:base"
+							height="20" autoSizeWidth="true" alignX="right" alignY="bottom"
+							registeredTextStyleName="dispatch_btn_text_center"
+							registeredSkinName="dispatch_btn_sprite_green"/>
+				</container>
+			</container>
+
+			<!-- Between main tab buttons and table header -->
+			<container name="table_top_space" height="30" autoSizeWidth="true">
+				<button name="available_tab_btn" text="localize:dispatch_label_available:base" width="120" height="15" alignY="center"
+						autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="true" mouseChildren="true"
+						registeredTextStyleName="dispatch_subtab_center_yellow"
+						registeredSkinName="dispatch_sub_tab_btn"/>
+				<button name="inprogress_tab_btn" text="localize:dispatch_label_inprog:base" width="120" height="15" marginLeft="122" alignY="center"
+						autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="true" mouseChildren="true"
+						registeredTextStyleName="dispatch_subtab_center_yellow"
+						registeredSkinName="dispatch_sub_tab_btn"/>
+
+				<label name="available_slots" text="AVAILABLE SLOTS:2/2" width="140" marginTop="7" marginRight="29"
+					   alignX="right" autoSizeWidth="false" autoSizeHeight="true"
+					   registeredTextStyleName="dispatch_text_right_yellow" registeredSkinName="commonui_default_label"/>
+				<button name="addslot_btn" marginTop="9" marginRight="3" alignX="right" alignY="center"
+						mouseEnabled="true" mouseChildren="true"
+						registeredSkinName="dispatch_plus_btn_yellow" tooltipData="Add slots..."/>
+			</container>
+			<!-- Table header -->
+			<container name="table_header" height="20" autoSizeWidth="true" marginTop="30">
+
+				<!--<coreponent name="test1" width="164" marginLeft="15" autoSizeHeight="true"
+						   registeredSkinName="table_outline"/>
+				<coreponent name="test2" width="100" marginLeft="179" autoSizeHeight="true"
+						   registeredSkinName="table_outline"/>
+				<coreponent name="test3" width="120" marginLeft="279" autoSizeHeight="true"
+						   registeredSkinName="table_outline"/>
+				<coreponent name="test3" width="230" marginLeft="399" autoSizeHeight="true"
+						   registeredSkinName="table_outline"/>-->
+				<label name="name" text="localize:dispatch_label_name_retriever:base" width="164" marginTop="3" marginLeft="15"
+					   autoSizeWidth="false" autoSizeHeight="true" registeredTextStyleName="dispatch_table_header"
+					   registeredSkinName="commonui_default_label"/>
+				<label name="type" text="localize:dispatch_label_type_retriever:base" width="100" marginTop="3" marginLeft="179"
+					   autoSizeWidth="false" autoSizeHeight="true" registeredTextStyleName="dispatch_table_header"
+					   registeredSkinName="commonui_default_label"/>
+				<label name="time" text="localize:dispatch_label_name_timereq:base" width="120" marginTop="3" marginLeft="279"
+					   autoSizeWidth="false" autoSizeHeight="true" registeredTextStyleName="dispatch_table_header"
+					   registeredSkinName="commonui_default_label"/>
+				<label name="cost" text="localize:dispatch_label_cost_retriever:base" width="230" marginTop="3" marginLeft="399"
+					   autoSizeWidth="false" autoSizeHeight="true" registeredTextStyleName="dispatch_table_header"
+					   registeredSkinName="commonui_default_label"/>
+			</container>
+			<!-- Table content -->
+			<container name="table_content" height="256" autoSizeWidth="true" marginTop="52">
+				<itemlist name="table_list" marginTop="1" marginLeft="1"
+						  autoSizeWidth="true" autoSizeHeight="true"
+						  layout="vertical" itemGap="0" mouseEnabled="true" mouseChildren="true"
+						  cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+					<itemrenderer width="610" height="40" autoSizeWidth="false" autoSizeHeight="false"
+								  itemGap="0" mouseEnabled="true" mouseChildren="true">
+						<coreponent name="bg" autoSizeWidth="true" autoSizeHeight="true"
+									registeredSkinName="dispatch_table_row_bg"/>
+						<button name="hover" autoSizeWidth="true" autoSizeHeight="true"
+								registeredSkinName="dispatch_table_row_hover"/>
+
+						<!--<coreponent name="test1" width="125" marginLeft="55" autoSizeHeight="true"
+									registeredSkinName="table_outline"/>
+						<coreponent name="test2" width="100" marginLeft="180" autoSizeHeight="true"
+									registeredSkinName="table_outline"/>
+						<coreponent name="test3" width="120" marginLeft="280" autoSizeHeight="true"
+									registeredSkinName="table_outline"/>
+						<coreponent name="test4" width="170" marginLeft="400" autoSizeHeight="true"
+									registeredSkinName="table_outline"/>-->
+
+						<coreponent name="icon" width="30" height="30" marginLeft="15" alignY="center"
+									mouseEnabled="false"/>
+						<label name="name" text="A-01" width="125" marginTop="12" marginLeft="55"
+							   autoSizeWidth="false" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_table_row_label" registeredSkinName="commonui_default_label"/>
+						<label name="type" text="Ammunition" width="100" marginTop="12" marginLeft="180"
+							   autoSizeWidth="false" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_table_row_label" registeredSkinName="commonui_default_label"/>
+						<button name="collect_btn" text="localize:dispatch_button_collect:base" width="116" height="20"
+								marginLeft="180" alignY="center"
+								registeredTextStyleName="dispatch_btn_text_center" registeredSkinName="dispatch_btn_sprite_green"/>
+						<label name="time" text="6 Hrs." width="120" marginTop="12" marginLeft="280"
+							   autoSizeWidth="false" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_table_row_label" registeredSkinName="commonui_default_label"/>
+						<label name="cost" text="Uridium x 2,000" width="170" marginTop="12" marginLeft="400"
+							   autoSizeWidth="false" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_table_row_label" registeredSkinName="commonui_default_label"/>
+						<button name="info_btn" marginTop="10" marginRight="15" alignX="right"
+								registeredSkinName="commonui_info_button_clickable" tooltipData="Dispatch drop chances"/>
+					</itemrenderer>
+				</itemlist>
+				<scrollbar name="table_scrollbar"
+						   width="16" autoSizeHeight="true" direction="vertical"
+						   marginTop="2" marginBottom="1" marginRight="0" alignX="right"
+						   registeredSkinName="commonui_scrollbar_bgnd">
+					<button name="buttonSlider"
+							width="16" height="7" alignX="center"
+							registeredSkinName="commonui_scrollbar_slider"/>
+				</scrollbar>
+				<bind source="table_scrollbar" target="table_list" type="scrollcontainer"/>
+			</container>
+		</container>
+	</template>
+
+	<template name="DISPATCH_GATE">
+		<container name="gate"
+				   width="633" height="306" marginTop="60" marginLeft="14" alignX="left">
+			<!-- Right side UI  -->
+			<container name="side" width="133" height="351" marginTop="-28" marginRight="-134" alignX="right">
+				<coreponent name="icon" width="100" height="100" marginTop="20" marginLeft="15"/>
+
+				<button name="hire_btn" text="localize:dispatch_button_hire:base" width="116" height="20"
+						marginRight="9" marginBottom="20" alignX="right" alignY="bottom"
+						registeredTextStyleName="dispatch_btn_text_center" registeredSkinName="dispatch_btn_sprite_blue"/>
+			</container>
+
+			<!-- Between main tab buttons and table header -->
+			<container name="table_top_space" height="30" autoSizeWidth="true">
+				<button name="galaxygates_btn" text="Galaxy Gates" width="142" height="28" marginTop="2"
+						marginRight="5" mouseEnabled="true" mouseChildren="true" alignX="right"
+						registeredTextStyleName="dispatch_galaxygate_grey" registeredSkinName="dispatch_btn_sprite_grey"/>
+			</container>
+			<!-- Table header -->
+			<container name="table_header" height="20" autoSizeWidth="true" marginTop="30">
+				<label name="name" text="localize:dispatch_label_name_gate:base" width="164" marginTop="3" marginLeft="15"
+					   autoSizeWidth="false" autoSizeHeight="true"
+					   registeredTextStyleName="dispatch_table_header" registeredSkinName="commonui_default_label"/>
+				<label name="time" text="localize:dispatch_label_name_timereq:base" width="180" marginTop="3" marginLeft="179"
+					   autoSizeWidth="false" autoSizeHeight="true"
+					   registeredTextStyleName="dispatch_table_header" registeredSkinName="commonui_default_label"/>
+				<label name="cost" text="localize:dispatch_label_cost_retriever:base" width="270" marginTop="3" marginLeft="359"
+					   autoSizeWidth="false" autoSizeHeight="true"
+					   registeredTextStyleName="dispatch_table_header" registeredSkinName="commonui_default_label"/>
+			</container>
+			<!-- Table content -->
+			<container name="table_content" height="256" autoSizeWidth="true" marginTop="52">
+				<itemlist name="table_list" marginTop="1" marginLeft="1"
+						  autoSizeWidth="true" autoSizeHeight="true"
+						  layout="vertical" itemGap="0" mouseEnabled="true" mouseChildren="true"
+						  cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+					<itemrenderer width="610" height="40" autoSizeWidth="false" autoSizeHeight="false"
+								  itemGap="0" mouseEnabled="true" mouseChildren="true">
+						<coreponent name="bg" autoSizeWidth="true" autoSizeHeight="true"
+									registeredSkinName="dispatch_table_row_bg"/>
+						<button name="hover" autoSizeWidth="true" autoSizeHeight="true"
+								registeredSkinName="dispatch_table_row_hover"/>
+
+						<!--<coreponent name="test1" width="125" marginLeft="55" autoSizeHeight="true"
+									registeredSkinName="table_outline"/>
+						<coreponent name="test2" width="180" marginLeft="180" autoSizeHeight="true"
+									registeredSkinName="table_outline"/>
+						<coreponent name="test3" width="250" marginLeft="360" autoSizeHeight="true"
+									registeredSkinName="table_outline"/>-->
+
+						<coreponent name="icon" width="30" height="30" marginLeft="15" alignY="center"
+									mouseEnabled="false"/>
+						<label name="name" text="ALPHA GATE" width="125" marginTop="12" marginLeft="55"
+							   autoSizeWidth="false" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_table_row_label" registeredSkinName="commonui_default_label"/>
+						<label name="time" text="30 Min." width="180" marginTop="12" marginLeft="180"
+							   autoSizeWidth="false" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_table_row_label" registeredSkinName="commonui_default_label"/>
+						<label name="cost" text="Galaxy Gate Excursion Unit" width="250" marginTop="12" marginLeft="360"
+							   autoSizeWidth="false" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_table_row_label" registeredSkinName="commonui_default_label"/>
+						<button name="collect_btn" text="localize:dispatch_button_collect:base" width="116" height="20"
+								marginLeft="180" alignY="center"
+								registeredTextStyleName="dispatch_btn_text_center" registeredSkinName="dispatch_btn_sprite_green"/>
+					</itemrenderer>
+				</itemlist>
+				<scrollbar name="table_scrollbar"
+						   width="16" autoSizeHeight="true" direction="vertical"
+						   marginTop="2" marginBottom="1" marginRight="0" alignX="right"
+						   registeredSkinName="commonui_scrollbar_bgnd">
+					<button name="buttonSlider"
+							width="16" height="7" alignX="center"
+							registeredSkinName="commonui_scrollbar_slider"/>
+				</scrollbar>
+				<bind source="table_scrollbar" target="table_list" type="scrollcontainer"/>
+			</container>
+		</container>
+	</template>
+
+	<container name="root" width="785" height="424" mouseEnabled="false" mouseChildren="true">
+		<reference template="DISPATCH_MAIN"/>
+		<reference template="DISPATCH_TABBAR"/>
+		<reference template="DISPATCH_RETRIEVER"/>
+		<reference template="DISPATCH_GATE"/>
+	</container>
+</root>

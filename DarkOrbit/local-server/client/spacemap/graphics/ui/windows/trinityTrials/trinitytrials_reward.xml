@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+<template name="trinitytrials_reward" width="728" height="460">
+    <coreponent name="reward_content" width="728" height="460" autoSizeWidth="false" autoSizeHeight="false"
+                        alignX="left" alignY="top" marginTop="0">
+                <container name="upContainer" width="737" height="125" autoSizeWidth="false" autoSizeHeight="false"
+                           alignY="top" alignX="left" marginTop="20" registeredSkinName="trinitutrials_reward_title_bg">                    
+                    <coreponent name="info_label_bg_line" width="737" height="1" autoSizeWidth="false" autoSizeHeight="false" alignX="left"
+                                marginLeft="0" y="0" registeredSkinName="trinitutrials_reward_title_bg_line"/>
+                    <Label name="info_label" width="690" height="170" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" y="5" marginLeft="20" registeredTextStyleName="trinitutrials_rewards_info_text"
+                           text=""/>
+                    <button name="buy_ext_gold_pass" text="localize:trinitytrials_pass_buy_btn"
+                                width="150" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                alignY="center" marginRight="39" alignX="right"
+                                registeredSkinName="trinitutrials_buy_button" buttonMode="true" />
+                    <coreponent name="info_label_bg_line_d" width="737" height="1" autoSizeWidth="false" autoSizeHeight="false" alignX="left"
+                                marginLeft="0" y="124" registeredSkinName="trinitutrials_reward_title_bg_line"/>
+                </container>
+                
+                 
+
+                <container name="bottomContainer" width="728" height="280" autoSizeWidth="false" autoSizeHeight="false"
+                           alignY="top" alignX="center" marginTop="140">
+                    <container name="progress"
+                               width="235" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="children"
+                               marginTop="5" marginLeft="5" alignX="left" alignY="top">
+
+                        <container name="progress_bar"
+                                   width="180" height="20" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="left" alignY="bottom" marginLeft="20" marginBottom="10">
+
+                            <progressbar name="bar"
+                                         autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true"
+                                         autoHeightMode="parent"
+                                         registeredSkinName="trinitutrials_progressbar">
+                            </progressbar>
+
+                            <label name="label_current" text="8888/8888"
+                                   autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false"
+                                   alignY="center"
+                                   registeredTextStyleName="trinitutrials_progress_current"
+                                   registeredSkinName="commonui_default_label"/>
+                        </container>
+
+                        <coreponent name="icon_pts"
+                                    width="48" height="48" autoSizeWidth="false" autoSizeHeight="false"
+                                    alignX="left" alignY="bottom"
+                                    registeredSkinName="trinitutrials_icon_points"/>
+
+                        <container name="index_group"
+                                   width="30" height="25" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="right" alignY="bottom" marginRight="12" marginBottom="8">
+                            <coreponent name="bg"
+                                        autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true"
+                                        autoHeightMode="parent"
+                                        registeredSkinName="trinitutrials_bg_level"/>
+                            <label name="label_next" text="188"
+                                   autoSizeWidth="true" autoWidthMode="parent" height="20" autoSizeHeight="false"
+                                   alignY="center"
+                                   registeredTextStyleName="trinitutrials_progress_next_level"
+                                   registeredSkinName="commonui_default_label"/>
+                        </container>
+                    </container>
+
+                    <label name="time_label" text=""
+                                   autoSizeWidth="false" autoWidthMode="parent" width="100" height="20" autoSizeHeight="false"
+                                   alignY="top" alignX="right" marginRight="30" marginTop="35"
+                                   registeredTextStyleName="trinitutrials_progress_next_level"
+                                   registeredSkinName="commonui_default_label"/>    
+                    <container name="list_bg" autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="left" alignY="top" marginLeft="10" width="720" height="188" marginTop="55" registeredSkinName="trinitutrials_reward_list_bg"/>
+                    
+                    
+                    
+                    <itemlist name="reward_list"
+                          itemGap="0"
+                          width="650"
+                          height="210"
+                          alignX="left"
+                          marginLeft="80"
+                          alignY="top"
+                          marginTop="55"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          autoSizeWidth="false"
+                          layout="horizontal"
+                          cacheSkinMaskAsBitmap="false"
+                          itemAlignX="left"
+                          registeredSkinName="commonui_list_mask">
+                        <itemrenderer width="65"
+                                      autoSizeWidth="false"
+                                      height="186"
+                                      mouseEnabled="true"
+                                      mouseChildren="true">
+                                         
+                            <label name="index_label" registeredSkinName="commonui_default_label"
+                                   registeredTextStyleName="trinitutrials_rewards_index_text_default" alightX="left" alignY="top" marginTop="5"
+                                   width="65" autoSizeTextHeight="true"/>
+
+                            <coreponent name="up_item" width="65" height="93" alignX="center" alignY="top" marginTop="20" mouseEnabled="true" mouseChilderen="true">
+                                  <coreponent name="bg" width="54" height="66" alignX="center" alignY="top"
+                                        marginTop="10" registeredSkinName="trinitutrials_reward_list_item_gold_bg"/>
+
+                                <coreponent name="pic" width="30" height="30" alignX="center" alignY="top" marginTop="20" />
+                                <coreponent name="vip_lock" width="13" height="17" alignX="right" alignY="top" marginTop="3" marginRight="3" registeredSkinName="trinitutrials_pass_item_locked"/>
+                                <coreponent name="checkmark" width="42" height="38" alignX="center" alignY="top"
+                                            marginTop="20" visible="true"
+                                            registeredSkinName="trinitutrials_reward_checkmark"/>
+
+                                <label name="amount" registeredSkinName="commonui_default_label"
+                                       registeredTextStyleName="trinitutrials_rewards_amount_text_default" alightX="center"
+                                       marginBottom="30"
+                                       width="60" autoSizeTextHeight="true" alignY="bottom" text="50"/>
+                            </coreponent>
+                            <coreponent name="down_item" width="65" height="93"  alignX="center" alignY="top" marginTop="110"  mouseEnabled="true" mouseChilderen="true" >
+                                 
+                                 <coreponent name="bg" width="54" height="66" alignX="center" alignY="top"
+                                        marginTop="5" registeredSkinName="trinitutrials_reward_list_item_free_bg"/>
+
+                                <coreponent name="pic" width="30" height="30" alignX="center" alignY="top" marginTop="20" />
+
+                                <coreponent name="checkmark" width="42" height="38" alignX="center" alignY="top"
+                                            marginTop="15" visible="true"
+                                            registeredSkinName="trinitutrials_reward_checkmark"/>
+
+                                <label name="amount" registeredSkinName="commonui_default_label"
+                                       registeredTextStyleName="trinitutrials_rewards_amount_text_default" alightX="center"
+                                       marginBottom="30"
+                                       width="60" autoSizeTextHeight="true" alignY="bottom" text="50"/>
+                            </coreponent>
+                            <coreponent name="item_highlight" width="64" height="186" autoSizeWidth="false"
+                                        autoSizeHeight="false" alignY="bottom" marginBottom="0"
+                                        registeredSkinName="trinitutrials_item_highlight" marginLeft="-1"/>
+                            <coreponent name="item_mask" width="65" height="190" autoSizeWidth="false"
+                                        autoSizeHeight="false" alignY="top" marginTop="0"
+                                        registeredSkinName="trinitutrials_reward_list_item_mask" marginLeft="-1"/>
+                        </itemrenderer>
+                    </itemlist>
+                    <container name="header" width="70" height="184" autoSizeWidth="false" autoSizeHeight="false"
+                             alignX="left" marginLeft="13" alignY="top" marginTop="70">
+
+                           
+                        <coreponent width="64" height="64" autoSizeWidth="false" autoSizeHeight="false"
+                                    marginTop="20" alignX="center"
+                                    registeredSkinName="trinitutrials_ext_gold_icon" />                        
+                        <label name="label" text="localize:trinitytrials_pass_vip"
+                               width="70" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                               marginTop="10" alignX="center"
+                               registeredTextStyleName="trinitutrials_rewards_ext_gold_pass" registeredSkinName="commonui_default_label"/>
+                        
+                               
+                        <coreponent width="64" height="64" autoSizeWidth="false" autoSizeHeight="false"
+                                    marginTop="106" alignX="center"
+                                    registeredSkinName="trinitutrials_free_icon" />
+                        <label name="label" text="localize:trinitytrials_pass_free"
+                               width="60" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                               marginTop="95" alignX="center"
+                               registeredTextStyleName="trinitutrials_rewards_free_pass" registeredSkinName="commonui_default_label"/>
+                        
+                    </container> 
+                               
+                    <container name="page"
+                               width="580" height="60" autoSizeWidth="false" autoSizeHeight="false" alignX="center"
+                               alignY="top"
+                               marginTop="250">
+
+                        <label name="page_label" text="Page: 888/888"
+                               width="500" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                               marginTop="25" alignX="center"
+                               registeredTextStyleName="trinitutrials_reward_page_text"
+                               registeredSkinName="commonui_default_label"/>
+
+                        <button name="first_page" text="&lt;&lt;"
+                                width="60" height="15"
+                                marginTop="30" alignX="left"
+                                registeredSkinName="trinitutrials_reward_page_button" buttonMode="true"/>
+
+                        <button name="prev_page" text="&lt;"
+                                width="60" height="15"
+                                marginTop="30" marginLeft="60" alignX="left"
+                                registeredSkinName="trinitutrials_reward_page_button" buttonMode="true"/>
+                        <button name="level_Max_page" text="localize:trinitytrials_pass_max_level "
+                            width="60" height="15"
+                            marginTop="15" alignX="right"
+                            registeredSkinName="trinitutrials_reward_page_button" buttonMode="true"/>        
+                        <button name="next_page" text="&gt;"
+                                width="60" height="15"
+                                marginTop="30" marginRight="60" alignX="right"
+                                registeredSkinName="trinitutrials_reward_page_button" buttonMode="true"/>
+
+                        <button name="last_page" text="&gt;&gt;"
+                                width="60" height="15"
+                                marginTop="30" alignX="right"
+                                registeredSkinName="trinitutrials_reward_page_button" buttonMode="true"/>
+                    </container>
+
+                </container>
+            </coreponent>
+</template>
+
+    <container name="root"
+               width="728" height="460" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChilderen="true">
+        <reference template="trinitytrials_reward"/>
+    </container>
+</root>

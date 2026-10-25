@@ -1,0 +1,1786 @@
+{
+  "source": [
+    "session-6182-1.json",
+    "session-6182-2.json"
+  ],
+  "defaults": {
+    "UserSettingsCommand": {
+      "_": "UserSettingsCommand",
+      "displaySettingsModule": {
+        "_": "DisplaySettingsModule",
+        "notSet": false,
+        "displayPlayerName": true,
+        "displayResources": true,
+        "displayBoxes": true,
+        "displayHitpointBubbles": true,
+        "displayChat": true,
+        "displayDrones": true,
+        "displayCargoboxes": true,
+        "displayPenaltyCargoboxes": false,
+        "showNotOwnedItems": false,
+        "displayWindowBackground": true,
+        "displayMinimapBackground": true,
+        "displayNotifications": true,
+        "preloadUserShips": false,
+        "alwaysDraggableWindows": true,
+        "shipHovering": true,
+        "showSecondQuickslotBar": true,
+        "useAutoQuality": true,
+        "displayUse2d": false,
+        "displaySetting3DqualityAntialias": 4,
+        "displaySetting3DqualityBackground": 4,
+        "displaySetting3DqualityEffects": 4,
+        "displaySetting3DqualityLights": 3,
+        "displaySetting3DqualityTextures": 3,
+        "displaySetting3DqualityZones": 4,
+        "displaySetting3DsizeTextures": 3,
+        "displaySetting3DtextureFiltering": 3,
+        "proActionBarEnabled": true,
+        "proActionBarKeyboardInputEnabled": true,
+        "proActionBarAutohideEnabled": true,
+        "displayMyDrones": true,
+        "pixelatedRenderingEnabled": false
+      },
+      "windowSettingsModule": {
+        "_": "WindowSettingsModule",
+        "minmapScale": 9,
+        "barStatus": "",
+        "hideAllWindows": false
+      },
+      "gameplaySettingsModule": {
+        "_": "GameplaySettingsModule",
+        "notSet": false,
+        "autoBoost": false,
+        "autoRefinement": false,
+        "quickslotStopAttack": true,
+        "doubleclickAttack": true,
+        "autoChangeAmmo": true,
+        "autoStart": false,
+        "autoBuyGreenBootyKeys": false,
+        "showBattlerayNotifications": false,
+        "showLowHealthWarning": true
+      },
+      "questSettingsModule": {
+        "_": "QuestSettingsModule",
+        "attemptedFilter": true,
+        "inLevelRangeFilter": true,
+        "completedFilter": false,
+        "availableFilter": true,
+        "unavailableFilter": false,
+        "unattemptedFilter": true
+      },
+      "audioSettingsModule": {
+        "_": "AudioSettingsModule",
+        "notSet": false,
+        "sound": 50,
+        "music": 50,
+        "voice": 50,
+        "playCombatMusic": true
+      },
+      "qualitySettingsModule": {
+        "_": "QualitySettingsModule",
+        "notSet": false,
+        "qualityAttack": 3,
+        "qualityBackground": 3,
+        "qualityPresetting": 3,
+        "qualityCustomized": false,
+        "qualityPOIzone": 3,
+        "qualityShip": 3,
+        "qualityEngine": 3,
+        "qualityExplosion": 3,
+        "qualityCollectables": 3,
+        "qualityEffect": 3
+      }
+    },
+    "UserKeyBindingsUpdate": {
+      "_": "UserKeyBindingsUpdate",
+      "changedKeyBindings": [
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 2,
+          "keyCodes": [
+            17
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 17,
+          "keyCodes": [
+            123
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 1,
+          "keyCodes": [
+            67
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 14,
+          "keyCodes": [
+            13
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 0,
+          "keyCodes": [
+            74
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 3,
+          "keyCodes": [
+            32
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 6,
+          "keyCodes": [
+            76
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 10,
+          "keyCodes": [
+            70
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 4,
+          "keyCodes": [
+            69
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 5,
+          "keyCodes": [
+            82
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 13,
+          "keyCodes": [
+            68
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 7,
+          "keyCodes": [
+            49
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 7,
+          "keyCodes": [
+            50
+          ],
+          "parameter": 1,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 7,
+          "keyCodes": [
+            51
+          ],
+          "parameter": 2,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 7,
+          "keyCodes": [
+            52
+          ],
+          "parameter": 3,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 7,
+          "keyCodes": [
+            53
+          ],
+          "parameter": 4,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 7,
+          "keyCodes": [
+            54
+          ],
+          "parameter": 5,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 7,
+          "keyCodes": [
+            55
+          ],
+          "parameter": 6,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 7,
+          "keyCodes": [
+            56
+          ],
+          "parameter": 7,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 7,
+          "keyCodes": [
+            57
+          ],
+          "parameter": 8,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 7,
+          "keyCodes": [
+            48
+          ],
+          "parameter": 9,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 15,
+          "keyCodes": [
+            9
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 9,
+          "keyCodes": [
+            72
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 11,
+          "keyCodes": [
+            187
+          ],
+          "parameter": 0,
+          "charCode": 0
+        },
+        {
+          "_": "UserKeyBindingsModule",
+          "actionType": 12,
+          "keyCodes": [
+            189
+          ],
+          "parameter": 0,
+          "charCode": 0
+        }
+      ],
+      "remove": false
+    }
+  },
+  "quests": [
+    {
+      "definition": {
+        "_": "QuestDefinitionModule",
+        "id": 2,
+        "types": [
+          {
+            "_": "QuestTypeModule",
+            "type": 2
+          }
+        ],
+        "rootCase": {
+          "_": "QuestCaseModule",
+          "id": 2002010,
+          "active": false,
+          "mandatory": true,
+          "ordered": false,
+          "mandatoryCount": 1,
+          "modifier": [
+            {
+              "_": "QuestElementModule",
+              "questCase": {
+                "_": "QuestCaseModule",
+                "id": 0,
+                "active": false,
+                "mandatory": false,
+                "ordered": false,
+                "mandatoryCount": 0,
+                "modifier": []
+              },
+              "condition": {
+                "_": "QuestConditionModule",
+                "id": 2002011,
+                "matches": [
+                  "PROMETIUM_COLLECTOR"
+                ],
+                "type": 76,
+                "displayType": 76,
+                "targetValue": 1,
+                "mandatory": true,
+                "state": {
+                  "_": "QuestConditionStateModule",
+                  "currentValue": 0,
+                  "active": true,
+                  "completed": false
+                },
+                "subConditions": []
+              }
+            }
+          ]
+        },
+        "rewards": [
+          {
+            "_": "LootModule",
+            "lootId": "equipment_extra_hmd-07",
+            "amount": 1,
+            "modifier": ""
+          }
+        ],
+        "icons": [
+          {
+            "_": "QuestIconModule",
+            "icon": 2
+          }
+        ],
+        "textKeyFoundation": "",
+        "portraitId": "",
+        "star": 0
+      },
+      "slim": {
+        "_": "QuestSlimInfoModule",
+        "questId": 2,
+        "rootCaseId": 2002010,
+        "minLevel": 6,
+        "priority": 1000,
+        "types": [
+          {
+            "_": "QuestTypeModule",
+            "type": 2
+          }
+        ],
+        "icon": {
+          "_": "QuestIconModule",
+          "icon": 2
+        },
+        "acceptabilityStatus": {
+          "_": "QuestAcceptabilityStatusModule",
+          "type": 0
+        },
+        "missingAcceptRequirements": [
+          {
+            "_": "QuestRequirementModule",
+            "requirementType": 0,
+            "minValue": 6,
+            "maxValue": 0,
+            "matches": [],
+            "missingMatches": []
+          }
+        ],
+        "textKeyFoundation": "",
+        "portraitId": "",
+        "star": 0
+      }
+    },
+    {
+      "definition": {
+        "_": "QuestDefinitionModule",
+        "id": 20000,
+        "types": [
+          {
+            "_": "QuestTypeModule",
+            "type": 1
+          }
+        ],
+        "rootCase": {
+          "_": "QuestCaseModule",
+          "id": 2000000,
+          "active": false,
+          "mandatory": true,
+          "ordered": false,
+          "mandatoryCount": 1,
+          "modifier": [
+            {
+              "_": "QuestElementModule",
+              "questCase": {
+                "_": "QuestCaseModule",
+                "id": 0,
+                "active": false,
+                "mandatory": false,
+                "ordered": false,
+                "mandatoryCount": 0,
+                "modifier": []
+              },
+              "condition": {
+                "_": "QuestConditionModule",
+                "id": 2000001,
+                "matches": [
+                  "HOME"
+                ],
+                "type": 62,
+                "displayType": 62,
+                "targetValue": 1,
+                "mandatory": true,
+                "state": {
+                  "_": "QuestConditionStateModule",
+                  "currentValue": 0,
+                  "active": true,
+                  "completed": false
+                },
+                "subConditions": []
+              }
+            }
+          ]
+        },
+        "rewards": [
+          {
+            "_": "LootModule",
+            "lootId": "ammunition_laser_lcb-10",
+            "amount": 500,
+            "modifier": ""
+          }
+        ],
+        "icons": [
+          {
+            "_": "QuestIconModule",
+            "icon": 2
+          }
+        ],
+        "textKeyFoundation": "",
+        "portraitId": "",
+        "star": 0
+      },
+      "slim": {
+        "_": "QuestSlimInfoModule",
+        "questId": 20000,
+        "rootCaseId": 2000000,
+        "minLevel": 0,
+        "priority": 0,
+        "types": [
+          {
+            "_": "QuestTypeModule",
+            "type": 1
+          }
+        ],
+        "icon": {
+          "_": "QuestIconModule",
+          "icon": 2
+        },
+        "acceptabilityStatus": {
+          "_": "QuestAcceptabilityStatusModule",
+          "type": 3
+        },
+        "missingAcceptRequirements": [],
+        "textKeyFoundation": "",
+        "portraitId": "",
+        "star": 0
+      }
+    },
+    {
+      "definition": {
+        "_": "QuestDefinitionModule",
+        "id": 20001,
+        "types": [
+          {
+            "_": "QuestTypeModule",
+            "type": 1
+          }
+        ],
+        "rootCase": {
+          "_": "QuestCaseModule",
+          "id": 2000100,
+          "active": false,
+          "mandatory": true,
+          "ordered": true,
+          "mandatoryCount": 2,
+          "modifier": [
+            {
+              "_": "QuestElementModule",
+              "questCase": {
+                "_": "QuestCaseModule",
+                "id": 2000101,
+                "active": true,
+                "mandatory": true,
+                "ordered": false,
+                "mandatoryCount": 2,
+                "modifier": [
+                  {
+                    "_": "QuestElementModule",
+                    "questCase": {
+                      "_": "QuestCaseModule",
+                      "id": 0,
+                      "active": false,
+                      "mandatory": false,
+                      "ordered": false,
+                      "mandatoryCount": 0,
+                      "modifier": []
+                    },
+                    "condition": {
+                      "_": "QuestConditionModule",
+                      "id": 2000102,
+                      "matches": [
+                        "1"
+                      ],
+                      "type": 6,
+                      "displayType": 6,
+                      "targetValue": 2,
+                      "mandatory": true,
+                      "state": {
+                        "_": "QuestConditionStateModule",
+                        "currentValue": 0,
+                        "active": true,
+                        "completed": false
+                      },
+                      "subConditions": []
+                    }
+                  },
+                  {
+                    "_": "QuestElementModule",
+                    "questCase": {
+                      "_": "QuestCaseModule",
+                      "id": 0,
+                      "active": false,
+                      "mandatory": false,
+                      "ordered": false,
+                      "mandatoryCount": 0,
+                      "modifier": []
+                    },
+                    "condition": {
+                      "_": "QuestConditionModule",
+                      "id": 2000103,
+                      "matches": [],
+                      "type": 51,
+                      "displayType": 51,
+                      "targetValue": 2,
+                      "mandatory": true,
+                      "state": {
+                        "_": "QuestConditionStateModule",
+                        "currentValue": 0,
+                        "active": true,
+                        "completed": false
+                      },
+                      "subConditions": []
+                    }
+                  }
+                ]
+              },
+              "condition": {
+                "_": "QuestConditionModule",
+                "id": 0,
+                "matches": [],
+                "type": 0,
+                "displayType": 0,
+                "targetValue": 0,
+                "mandatory": false,
+                "state": {
+                  "_": "QuestConditionStateModule",
+                  "currentValue": 0,
+                  "active": false,
+                  "completed": false
+                },
+                "subConditions": []
+              }
+            },
+            {
+              "_": "QuestElementModule",
+              "questCase": {
+                "_": "QuestCaseModule",
+                "id": 0,
+                "active": false,
+                "mandatory": false,
+                "ordered": false,
+                "mandatoryCount": 0,
+                "modifier": []
+              },
+              "condition": {
+                "_": "QuestConditionModule",
+                "id": 2000104,
+                "matches": [
+                  "HOME"
+                ],
+                "type": 62,
+                "displayType": 62,
+                "targetValue": 1,
+                "mandatory": true,
+                "state": {
+                  "_": "QuestConditionStateModule",
+                  "currentValue": 0,
+                  "active": false,
+                  "completed": false
+                },
+                "subConditions": []
+              }
+            }
+          ]
+        },
+        "rewards": [
+          {
+            "_": "LootModule",
+            "lootId": "ammunition_rocket_r-310",
+            "amount": 100,
+            "modifier": ""
+          },
+          {
+            "_": "LootModule",
+            "lootId": "currency_credits",
+            "amount": 12000,
+            "modifier": ""
+          },
+          {
+            "_": "LootModule",
+            "lootId": "equipment_generator_speed_g3n-3310",
+            "amount": 1,
+            "modifier": ""
+          }
+        ],
+        "icons": [
+          {
+            "_": "QuestIconModule",
+            "icon": 0
+          }
+        ],
+        "textKeyFoundation": "",
+        "portraitId": "",
+        "star": 0
+      },
+      "slim": {
+        "_": "QuestSlimInfoModule",
+        "questId": 20001,
+        "rootCaseId": 2000100,
+        "minLevel": 0,
+        "priority": 0,
+        "types": [
+          {
+            "_": "QuestTypeModule",
+            "type": 1
+          }
+        ],
+        "icon": {
+          "_": "QuestIconModule",
+          "icon": 0
+        },
+        "acceptabilityStatus": {
+          "_": "QuestAcceptabilityStatusModule",
+          "type": 3
+        },
+        "missingAcceptRequirements": [],
+        "textKeyFoundation": "",
+        "portraitId": "",
+        "star": 0
+      }
+    },
+    {
+      "definition": {
+        "_": "QuestDefinitionModule",
+        "id": 20002,
+        "types": [
+          {
+            "_": "QuestTypeModule",
+            "type": 1
+          }
+        ],
+        "rootCase": {
+          "_": "QuestCaseModule",
+          "id": 2000200,
+          "active": false,
+          "mandatory": true,
+          "ordered": true,
+          "mandatoryCount": 2,
+          "modifier": [
+            {
+              "_": "QuestElementModule",
+              "questCase": {
+                "_": "QuestCaseModule",
+                "id": 0,
+                "active": false,
+                "mandatory": false,
+                "ordered": false,
+                "mandatoryCount": 0,
+                "modifier": []
+              },
+              "condition": {
+                "_": "QuestConditionModule",
+                "id": 2000201,
+                "matches": [
+                  "1"
+                ],
+                "type": 6,
+                "displayType": 6,
+                "targetValue": 4,
+                "mandatory": true,
+                "state": {
+                  "_": "QuestConditionStateModule",
+                  "currentValue": 0,
+                  "active": true,
+                  "completed": false
+                },
+                "subConditions": []
+              }
+            },
+            {
+              "_": "QuestElementModule",
+              "questCase": {
+                "_": "QuestCaseModule",
+                "id": 0,
+                "active": false,
+                "mandatory": false,
+                "ordered": false,
+                "mandatoryCount": 0,
+                "modifier": []
+              },
+              "condition": {
+                "_": "QuestConditionModule",
+                "id": 2000202,
+                "matches": [
+                  "HOME"
+                ],
+                "type": 62,
+                "displayType": 62,
+                "targetValue": 1,
+                "mandatory": true,
+                "state": {
+                  "_": "QuestConditionStateModule",
+                  "currentValue": 0,
+                  "active": false,
+                  "completed": false
+                },
+                "subConditions": []
+              }
+            }
+          ]
+        },
+        "rewards": [
+          {
+            "_": "LootModule",
+            "lootId": "equipment_weapon_laser_lf-2",
+            "amount": 1,
+            "modifier": ""
+          }
+        ],
+        "icons": [
+          {
+            "_": "QuestIconModule",
+            "icon": 0
+          }
+        ],
+        "textKeyFoundation": "",
+        "portraitId": "",
+        "star": 0
+      },
+      "slim": {
+        "_": "QuestSlimInfoModule",
+        "questId": 20002,
+        "rootCaseId": 2000200,
+        "minLevel": 0,
+        "priority": 0,
+        "types": [
+          {
+            "_": "QuestTypeModule",
+            "type": 1
+          }
+        ],
+        "icon": {
+          "_": "QuestIconModule",
+          "icon": 0
+        },
+        "acceptabilityStatus": {
+          "_": "QuestAcceptabilityStatusModule",
+          "type": 3
+        },
+        "missingAcceptRequirements": [],
+        "textKeyFoundation": "",
+        "portraitId": "",
+        "star": 0
+      }
+    },
+    {
+      "definition": {
+        "_": "QuestDefinitionModule",
+        "id": 20003,
+        "types": [
+          {
+            "_": "QuestTypeModule",
+            "type": 1
+          }
+        ],
+        "rootCase": {
+          "_": "QuestCaseModule",
+          "id": 2000300,
+          "active": false,
+          "mandatory": true,
+          "ordered": true,
+          "mandatoryCount": 2,
+          "modifier": [
+            {
+              "_": "QuestElementModule",
+              "questCase": {
+                "_": "QuestCaseModule",
+                "id": 0,
+                "active": false,
+                "mandatory": false,
+                "ordered": false,
+                "mandatoryCount": 0,
+                "modifier": []
+              },
+              "condition": {
+                "_": "QuestConditionModule",
+                "id": 2000301,
+                "matches": [
+                  "resource_ore_prometium"
+                ],
+                "type": 67,
+                "displayType": 67,
+                "targetValue": 10,
+                "mandatory": true,
+                "state": {
+                  "_": "QuestConditionStateModule",
+                  "currentValue": 0,
+                  "active": true,
+                  "completed": false
+                },
+                "subConditions": []
+              }
+            },
+            {
+              "_": "QuestElementModule",
+              "questCase": {
+                "_": "QuestCaseModule",
+                "id": 0,
+                "active": false,
+                "mandatory": false,
+                "ordered": false,
+                "mandatoryCount": 0,
+                "modifier": []
+              },
+              "condition": {
+                "_": "QuestConditionModule",
+                "id": 2000302,
+                "matches": [
+                  "1"
+                ],
+                "type": 52,
+                "displayType": 52,
+                "targetValue": 10,
+                "mandatory": true,
+                "state": {
+                  "_": "QuestConditionStateModule",
+                  "currentValue": 0,
+                  "active": false,
+                  "completed": false
+                },
+                "subConditions": []
+              }
+            },
+            {
+              "_": "QuestElementModule",
+              "questCase": {
+                "_": "QuestCaseModule",
+                "id": 0,
+                "active": false,
+                "mandatory": false,
+                "ordered": false,
+                "mandatoryCount": 0,
+                "modifier": []
+              },
+              "condition": {
+                "_": "QuestConditionModule",
+                "id": 2000303,
+                "matches": [
+                  "HOME"
+                ],
+                "type": 62,
+                "displayType": 62,
+                "targetValue": 1,
+                "mandatory": true,
+                "state": {
+                  "_": "QuestConditionStateModule",
+                  "currentValue": 0,
+                  "active": false,
+                  "completed": false
+                },
+                "subConditions": []
+              }
+            }
+          ]
+        },
+        "rewards": [
+          {
+            "_": "LootModule",
+            "lootId": "currency_experience",
+            "amount": 10000,
+            "modifier": ""
+          },
+          {
+            "_": "LootModule",
+            "lootId": "ammunition_laser_lcb-10",
+            "amount": 2000,
+            "modifier": ""
+          }
+        ],
+        "icons": [
+          {
+            "_": "QuestIconModule",
+            "icon": 1
+          }
+        ],
+        "textKeyFoundation": "",
+        "portraitId": "",
+        "star": 0
+      },
+      "slim": {
+        "_": "QuestSlimInfoModule",
+        "questId": 20003,
+        "rootCaseId": 2000300,
+        "minLevel": 0,
+        "priority": 0,
+        "types": [
+          {
+            "_": "QuestTypeModule",
+            "type": 1
+          }
+        ],
+        "icon": {
+          "_": "QuestIconModule",
+          "icon": 1
+        },
+        "acceptabilityStatus": {
+          "_": "QuestAcceptabilityStatusModule",
+          "type": 3
+        },
+        "missingAcceptRequirements": [],
+        "textKeyFoundation": "",
+        "portraitId": "",
+        "star": 0
+      }
+    },
+    {
+      "definition": {
+        "_": "QuestDefinitionModule",
+        "id": 20004,
+        "types": [
+          {
+            "_": "QuestTypeModule",
+            "type": 1
+          }
+        ],
+        "rootCase": {
+          "_": "QuestCaseModule",
+          "id": 2000400,
+          "active": false,
+          "mandatory": true,
+          "ordered": true,
+          "mandatoryCount": 1,
+          "modifier": [
+            {
+              "_": "QuestElementModule",
+              "questCase": {
+                "_": "QuestCaseModule",
+                "id": 2000401,
+                "active": true,
+                "mandatory": true,
+                "ordered": false,
+                "mandatoryCount": 4,
+                "modifier": [
+                  {
+                    "_": "QuestElementModule",
+                    "questCase": {
+                      "_": "QuestCaseModule",
+                      "id": 0,
+                      "active": false,
+                      "mandatory": false,
+                      "ordered": false,
+                      "mandatoryCount": 0,
+                      "modifier": []
+                    },
+                    "condition": {
+                      "_": "QuestConditionModule",
+                      "id": 2000404,
+                      "matches": [
+                        "1"
+                      ],
+                      "type": 6,
+                      "displayType": 6,
+                      "targetValue": 2,
+                      "mandatory": true,
+                      "state": {
+                        "_": "QuestConditionStateModule",
+                        "currentValue": 0,
+                        "active": true,
+                        "completed": false
+                      },
+                      "subConditions": []
+                    }
+                  },
+                  {
+                    "_": "QuestElementModule",
+                    "questCase": {
+                      "_": "QuestCaseModule",
+                      "id": 0,
+                      "active": false,
+                      "mandatory": false,
+                      "ordered": false,
+                      "mandatoryCount": 0,
+                      "modifier": []
+                    },
+                    "condition": {
+                      "_": "QuestConditionModule",
+                      "id": 2000402,
+                      "matches": [
+                        "resource_ore_prometium"
+                      ],
+                      "type": 67,
+                      "displayType": 67,
+                      "targetValue": 20,
+                      "mandatory": true,
+                      "state": {
+                        "_": "QuestConditionStateModule",
+                        "currentValue": 0,
+                        "active": true,
+                        "completed": false
+                      },
+                      "subConditions": []
+                    }
+                  },
+                  {
+                    "_": "QuestElementModule",
+                    "questCase": {
+                      "_": "QuestCaseModule",
+                      "id": 0,
+                      "active": false,
+                      "mandatory": false,
+                      "ordered": false,
+                      "mandatoryCount": 0,
+                      "modifier": []
+                    },
+                    "condition": {
+                      "_": "QuestConditionModule",
+                      "id": 2000403,
+                      "matches": [
+                        "resource_ore_endurium"
+                      ],
+                      "type": 67,
+                      "displayType": 67,
+                      "targetValue": 10,
+                      "mandatory": true,
+                      "state": {
+                        "_": "QuestConditionStateModule",
+                        "currentValue": 0,
+                        "active": true,
+                        "completed": false
+                      },
+                      "subConditions": []
+                    }
+                  },
+                  {
+                    "_": "QuestElementModule",
+                    "questCase": {
+                      "_": "QuestCaseModule",
+                      "id": 0,
+                      "active": false,
+                      "mandatory": false,
+                      "ordered": false,
+                      "mandatoryCount": 0,
+                      "modifier": []
+                    },
+                    "condition": {
+                      "_": "QuestConditionModule",
+                      "id": 2000406,
+                      "matches": [],
+                      "type": 51,
+                      "displayType": 51,
+                      "targetValue": 2,
+                      "mandatory": true,
+                      "state": {
+                        "_": "QuestConditionStateModule",
+                        "currentValue": 0,
+                        "active": true,
+                        "completed": false
+                      },
+                      "subConditions": []
+                    }
+                  }
+                ]
+              },
+              "condition": {
+                "_": "QuestConditionModule",
+                "id": 0,
+                "matches": [],
+                "type": 0,
+                "displayType": 0,
+                "targetValue": 0,
+                "mandatory": false,
+                "state": {
+                  "_": "QuestConditionStateModule",
+                  "currentValue": 0,
+                  "active": false,
+                  "completed": false
+                },
+                "subConditions": []
+              }
+            },
+            {
+              "_": "QuestElementModule",
+              "questCase": {
+                "_": "QuestCaseModule",
+                "id": 0,
+                "active": false,
+                "mandatory": false,
+                "ordered": false,
+                "mandatoryCount": 0,
+                "modifier": []
+              },
+              "condition": {
+                "_": "QuestConditionModule",
+                "id": 2000405,
+                "matches": [
+                  "HOME"
+                ],
+                "type": 62,
+                "displayType": 62,
+                "targetValue": 1,
+                "mandatory": true,
+                "state": {
+                  "_": "QuestConditionStateModule",
+                  "currentValue": 0,
+                  "active": false,
+                  "completed": false
+                },
+                "subConditions": []
+              }
+            }
+          ]
+        },
+        "rewards": [
+          {
+            "_": "LootModule",
+            "lootId": "equipment_weapon_laser_lf-2",
+            "amount": 1,
+            "modifier": ""
+          }
+        ],
+        "icons": [
+          {
+            "_": "QuestIconModule",
+            "icon": 0
+          }
+        ],
+        "textKeyFoundation": "",
+        "portraitId": "",
+        "star": 0
+      },
+      "slim": {
+        "_": "QuestSlimInfoModule",
+        "questId": 20004,
+        "rootCaseId": 2000400,
+        "minLevel": 0,
+        "priority": 0,
+        "types": [
+          {
+            "_": "QuestTypeModule",
+            "type": 1
+          }
+        ],
+        "icon": {
+          "_": "QuestIconModule",
+          "icon": 0
+        },
+        "acceptabilityStatus": {
+          "_": "QuestAcceptabilityStatusModule",
+          "type": 1
+        },
+        "missingAcceptRequirements": [],
+        "textKeyFoundation": "",
+        "portraitId": "",
+        "star": 0
+      }
+    }
+  ],
+  "gateInfo": {
+    "_": "GalaxyGateBuilderInfoCommand",
+    "bonusRewardsDay": false,
+    "spinamount_selected": 1,
+    "spinAmounts": [
+      1,
+      5,
+      10,
+      100
+    ],
+    "samples": 1,
+    "energy_cost": 85,
+    "spinOnSale": true,
+    "money": 0,
+    "gates": [
+      {
+        "_": "GalaxyGateBuilderGateModule",
+        "bonusGGRewardModules": [],
+        "currWave": 0,
+        "mode": "alpha",
+        "currPart": 0,
+        "boosts": [],
+        "state": 0,
+        "probabilityModules": [
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 1,
+            "percentage": 67
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 2,
+            "percentage": 12
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 3,
+            "percentage": 3
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 4,
+            "percentage": 13
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 5,
+            "percentage": 4
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 6,
+            "percentage": 1
+          }
+        ],
+        "lifePrice": -1,
+        "id": 1,
+        "multiplier": 0,
+        "multiGateProgressModules": [],
+        "livesLeft": -1
+      },
+      {
+        "_": "GalaxyGateBuilderGateModule",
+        "bonusGGRewardModules": [],
+        "currWave": 0,
+        "mode": "beta",
+        "currPart": 0,
+        "boosts": [],
+        "state": 0,
+        "probabilityModules": [
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 1,
+            "percentage": 67
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 2,
+            "percentage": 12
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 3,
+            "percentage": 3
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 4,
+            "percentage": 13
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 5,
+            "percentage": 4
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 6,
+            "percentage": 1
+          }
+        ],
+        "lifePrice": -1,
+        "id": 2,
+        "multiplier": 0,
+        "multiGateProgressModules": [],
+        "livesLeft": -1
+      },
+      {
+        "_": "GalaxyGateBuilderGateModule",
+        "bonusGGRewardModules": [],
+        "currWave": 0,
+        "mode": "streuner",
+        "currPart": 0,
+        "boosts": [],
+        "state": 0,
+        "probabilityModules": [
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 1,
+            "percentage": 67
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 2,
+            "percentage": 12
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 3,
+            "percentage": 3
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 4,
+            "percentage": 13
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 5,
+            "percentage": 4
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 6,
+            "percentage": 1
+          }
+        ],
+        "lifePrice": -1,
+        "id": 19,
+        "multiplier": 0,
+        "multiGateProgressModules": [],
+        "livesLeft": -1
+      },
+      {
+        "_": "GalaxyGateBuilderGateModule",
+        "bonusGGRewardModules": [],
+        "currWave": 0,
+        "mode": "gamma",
+        "currPart": 0,
+        "boosts": [],
+        "state": 0,
+        "probabilityModules": [
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 1,
+            "percentage": 67
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 2,
+            "percentage": 12
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 3,
+            "percentage": 3
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 4,
+            "percentage": 13
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 5,
+            "percentage": 4
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 6,
+            "percentage": 1
+          }
+        ],
+        "lifePrice": -1,
+        "id": 3,
+        "multiplier": 0,
+        "multiGateProgressModules": [],
+        "livesLeft": -1
+      },
+      {
+        "_": "GalaxyGateBuilderGateModule",
+        "bonusGGRewardModules": [],
+        "currWave": 0,
+        "mode": "delta",
+        "currPart": 0,
+        "boosts": [],
+        "state": 0,
+        "probabilityModules": [
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 1,
+            "percentage": 67
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 2,
+            "percentage": 12
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 3,
+            "percentage": 3
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 4,
+            "percentage": 13
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 5,
+            "percentage": 4
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 6,
+            "percentage": 1
+          }
+        ],
+        "lifePrice": -1,
+        "id": 4,
+        "multiplier": 0,
+        "multiGateProgressModules": [],
+        "livesLeft": -1
+      },
+      {
+        "_": "GalaxyGateBuilderGateModule",
+        "bonusGGRewardModules": [],
+        "currWave": 0,
+        "mode": "epsilon",
+        "currPart": 0,
+        "boosts": [],
+        "state": 0,
+        "probabilityModules": [
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 1,
+            "percentage": 67
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 2,
+            "percentage": 12
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 3,
+            "percentage": 3
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 4,
+            "percentage": 13
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 5,
+            "percentage": 4
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 6,
+            "percentage": 1
+          }
+        ],
+        "lifePrice": -1,
+        "id": 5,
+        "multiplier": 0,
+        "multiGateProgressModules": [],
+        "livesLeft": -1
+      },
+      {
+        "_": "GalaxyGateBuilderGateModule",
+        "bonusGGRewardModules": [],
+        "currWave": 0,
+        "mode": "zeta",
+        "currPart": 0,
+        "boosts": [],
+        "state": 0,
+        "probabilityModules": [
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 1,
+            "percentage": 67
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 2,
+            "percentage": 12
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 3,
+            "percentage": 3
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 4,
+            "percentage": 13
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 5,
+            "percentage": 4
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 6,
+            "percentage": 1
+          }
+        ],
+        "lifePrice": -1,
+        "id": 6,
+        "multiplier": 0,
+        "multiGateProgressModules": [],
+        "livesLeft": -1
+      },
+      {
+        "_": "GalaxyGateBuilderGateModule",
+        "bonusGGRewardModules": [],
+        "currWave": 0,
+        "mode": "kappa",
+        "currPart": 0,
+        "boosts": [],
+        "state": 0,
+        "probabilityModules": [
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 1,
+            "percentage": 67
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 2,
+            "percentage": 12
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 3,
+            "percentage": 3
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 4,
+            "percentage": 13
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 5,
+            "percentage": 4
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 6,
+            "percentage": 1
+          }
+        ],
+        "lifePrice": -1,
+        "id": 7,
+        "multiplier": 0,
+        "multiGateProgressModules": [],
+        "livesLeft": -1
+      },
+      {
+        "_": "GalaxyGateBuilderGateModule",
+        "bonusGGRewardModules": [],
+        "currWave": 0,
+        "mode": "lambda",
+        "currPart": 0,
+        "boosts": [],
+        "state": 0,
+        "probabilityModules": [
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 1,
+            "percentage": 67
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 2,
+            "percentage": 12
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 3,
+            "percentage": 3
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 4,
+            "percentage": 13
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 5,
+            "percentage": 4
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 6,
+            "percentage": 1
+          }
+        ],
+        "lifePrice": -1,
+        "id": 8,
+        "multiplier": 0,
+        "multiGateProgressModules": [],
+        "livesLeft": -1
+      },
+      {
+        "_": "GalaxyGateBuilderGateModule",
+        "bonusGGRewardModules": [],
+        "currWave": 0,
+        "mode": "kronos",
+        "currPart": 0,
+        "boosts": [],
+        "state": 0,
+        "probabilityModules": [],
+        "lifePrice": -1,
+        "id": 12,
+        "multiplier": 0,
+        "multiGateProgressModules": [
+          {
+            "_": "GalaxyGateBuilderMultiGateProgressModule",
+            "total": 4,
+            "current": 0,
+            "name": "Alpha"
+          },
+          {
+            "_": "GalaxyGateBuilderMultiGateProgressModule",
+            "total": 3,
+            "current": 0,
+            "name": "Beta"
+          },
+          {
+            "_": "GalaxyGateBuilderMultiGateProgressModule",
+            "total": 1,
+            "current": 0,
+            "name": "Gamma"
+          },
+          {
+            "_": "GalaxyGateBuilderMultiGateProgressModule",
+            "total": 1,
+            "current": 0,
+            "name": "Delta"
+          },
+          {
+            "_": "GalaxyGateBuilderMultiGateProgressModule",
+            "total": 4,
+            "current": 0,
+            "name": "Epsilon"
+          },
+          {
+            "_": "GalaxyGateBuilderMultiGateProgressModule",
+            "total": 1,
+            "current": 0,
+            "name": "Zeta"
+          },
+          {
+            "_": "GalaxyGateBuilderMultiGateProgressModule",
+            "total": 2,
+            "current": 0,
+            "name": "Kappa"
+          },
+          {
+            "_": "GalaxyGateBuilderMultiGateProgressModule",
+            "total": 5,
+            "current": 0,
+            "name": "Lambda"
+          }
+        ],
+        "livesLeft": -1
+      },
+      {
+        "_": "GalaxyGateBuilderGateModule",
+        "bonusGGRewardModules": [],
+        "currWave": 0,
+        "mode": "hades",
+        "currPart": 0,
+        "boosts": [],
+        "state": 0,
+        "probabilityModules": [
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 1,
+            "percentage": 67
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 2,
+            "percentage": 12
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 3,
+            "percentage": 3
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 4,
+            "percentage": 13
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 5,
+            "percentage": 4
+          },
+          {
+            "_": "GalaxyGateBuilderProbabilityModule",
+            "category": 6,
+            "percentage": 1
+          }
+        ],
+        "lifePrice": -1,
+        "id": 13,
+        "multiplier": 0,
+        "multiGateProgressModules": [],
+        "livesLeft": -1
+      }
+    ],
+    "galaxyGateDay": true
+  }
+}

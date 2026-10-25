@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI" />
+		<library id="settingsWindowFUI" />
+	</libraries>
+	<!-- TEXT STYLES -->
+
+
+	<textstyle 	name           = "popupWarning_whiteTextStyleButton"
+				  textColor      = "0xFFFFFF"
+				  type           = "dynamic"
+				  selectable     = "false"
+				  fontName       = "EurostileTHea"
+				  align		   = "center"
+				  fontSize	   = "14"
+			/>
+
+	<textstyle
+			name="popupWarning_info_left_textstyle"
+			textColor="0x999898"
+			type="dynamic"
+			fontSize="12"
+			autoSize="left"
+			wordWrap="true"
+			multiline="true"
+			embedFonts="false"
+			fontName="Verdana"
+			align="left"/>
+
+	<skin name="confirmation_label_skin" classname="LabelSkin" />
+
+	<skin name="popupWarning_label_button_green" classname="FadableButtonSkin" library="settingsWindowFUI" >
+		<layer classname="BitmapLayer" libraryID="btn_green_normal" >normal</layer>
+		<layer classname="BitmapLayer" libraryID="btn_green_hover" >over</layer>
+		<layer classname="BitmapLayer" libraryID="btn_inactive" >disabled</layer>
+	</skin>
+	<skin name="popupWarning_label_button_red" classname="FadableButtonSkin" library="settingsWindowFUI" >
+		<layer classname="BitmapLayer" libraryID="btn_red_normal" >normal</layer>
+		<layer classname="BitmapLayer" libraryID="btn_red_hover" >over</layer>
+		<layer classname="BitmapLayer" libraryID="btn_inactive" >disabled</layer>
+	</skin>
+
+<!--  -->
+<!--  -->
+<!--  -->	
+
+<!--  -->
+<!--  -->
+<!--  -->
+
+
+	<!-- CONTENT -->
+	<container
+		name="contentContainer"
+		mouseEnabled="false"
+		width="262"
+		height="120">
+
+		<label
+				name="label"
+				marginTop="10"
+				autoSizeWidth="true"
+				localizedText="label_switch_2d3d_restart"
+				alignX="left"
+				useHTML="true"
+				height="14"
+				registeredSkinName="confirmation_label_skin"
+				registeredTextStyleName="popupWarning_info_left_textstyle" />
+
+		<button name="okButton" width="100" height="30" marginTop="100" alignX="left" text="localize:btn_ok" registeredSkinName="popupWarning_label_button_green" registeredTextStyleName="commonui_button_whitetxt_16pt"/>
+		<button name="cancelButton" width="100"  height="30" marginTop="100" marginLeft="150" alignX="left" text="localize:btn_cancel" registeredSkinName="popupWarning_label_button_red" registeredTextStyleName="commonui_button_whitetxt_16pt"/>
+
+	</container>
+	<!-- CONTENT -->
+</root>

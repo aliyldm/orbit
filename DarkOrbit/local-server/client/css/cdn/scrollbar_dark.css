@@ -1,0 +1,70 @@
+/**
+ * scrollbar_dark.css
+ * 
+ * Styles for the themed jScrollPane.
+ * @author  Wolfgang Timme <w.timme@bigpoint.net>
+ */
+
+/* Horizontal bar */
+.jspHorizontalBar .jspTrack {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/horizontal-track.png?__cv=19b576e5e2db8b2ba7bbc0d715ddae00);
+}
+.jspHorizontalBar .jspArrowLeft {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/horizontal-arrowLeft.png?__cv=f8a3826c41b65fd8213a13c983af7500);
+}
+.jspHorizontalBar .jspArrowRight {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/horizontal-arrowRight.png?__cv=58f9a91bc3159e37a14171b493d55b00);
+}
+.jspHorizontalBar .jspDrag {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/horizontal-drag.png?__cv=c8bd840065f6812847f8155bf85c6100);
+}
+.jspHorizontalBar .jspDragLeft {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/horizontal-dragLeft.png?__cv=7aa00305c8ad5cb468b5681b08215d00);
+}
+.jspHorizontalBar .jspDragRight {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/horizontal-dragRight.png?__cv=b1c65959871bf16d87846e96e2c53100);
+    position            : absolute;
+    right               : 0;
+    top                 : 0;
+}
+.jspHorizontalBar .jspDragLeft,
+.jspHorizontalBar .jspDragRight {
+    width               : 5px;
+    height              : 16px;
+}
+
+/* Vertical bar */
+.jspVerticalBar .jspTrack {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-track.png?__cv=d577fed7389aaf4088d1656fd5d37900);
+}
+.jspVerticalBar .jspArrowUp,
+.jspVerticalBar .jspArrowUp.jspDisabled  {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-arrowUp.png?__cv=254c4eefa095f9667bae05870dc0ac00);
+}
+.jspVerticalBar .jspArrowDown,
+.jspVerticalBar .jspArrowDown.jspDisabled  {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-arrowDown.png?__cv=c21b286b8bf2dbfbbe72b3b6e2719d00);
+}
+.jspVerticalBar .jspDrag {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-drag.png?__cv=d2a445e0185f2bb8399caf0d259d7100);
+    background-position : bottom;
+}
+.jspVerticalBar .jspDragTop {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-dragTop.png?__cv=d3764c497f702239e4b0874c0d423000);
+}
+.jspVerticalBar .jspDragBottom {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-dragBottom.png?__cv=b41840d2f9b18c8cc1b70047e4c80300);
+    position            : absolute;
+    left                : 0;
+    bottom              : 0;
+}
+.jspVerticalBar .jspDragTop,
+.jspVerticalBar .jspDragBottom {
+    width               : 16px;
+    height              : 5px;
+}
+
+/* Corner between the two scrollbars */
+.jspCorner {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/corner.jpg?__cv=bd25a19ff947841234e849a557629700);
+}

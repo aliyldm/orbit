@@ -1,0 +1,9 @@
+QT modification Information
+
+Modified versions of the QT libraries that are interface compatible can be used by overwriting the following dlls. 
+
+installation directory:
+- Qt5Core.dll, Qt5Gui.dll, Qt5Network.dll, Qt5Positioning.dll, Qt5PrintSupport.dll, Qt5Qml.dll, Qt5QmlModels.dll, Qt5Quick.dll, Qt5QuickWidgets.dll, Qt5SerialPort.dll, Qt5Svg.dll, Qt5WebChannel.dll, Qt5WebEngineCore.dll, Qt5WebEngineWidgets.dll, Qt5Widgets.dll, Qt5Xml.dll
+- all dlls in the following subdirectories: bearer, iconengines, imageformats, platforms, position, printsupport
+
+Overwriting, exchanging, or otherwise modifying the files is at your risk, we provide no support for it and give no warranties.

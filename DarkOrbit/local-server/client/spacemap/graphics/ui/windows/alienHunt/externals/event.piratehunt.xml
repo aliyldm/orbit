@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<huntEvent>
+
+	<eventType>PirateHunt</eventType>
+
+	<npcsToKill>
+		<npc npcId="58" factionPoints="1" factionPointsClan="1" foreignPoints="1" foreignPointsClan="1" /> <!-- npcType="INTERCEPTOR" -->
+		<npc npcId="59" factionPoints="2" factionPointsClan="2" foreignPoints="2" foreignPointsClan="2" /> <!-- npcType="BARRACUDA" -->
+		<npc npcId="60" factionPoints="5" factionPointsClan="5" foreignPoints="5" foreignPointsClan="5" /> <!-- npcType="SABOTEUR" -->
+		<npc npcId="61" factionPoints="6" factionPointsClan="6" foreignPoints="6" foreignPointsClan="6" /> <!-- npcType="ANNIHILATOR" -->
+		<npc npcId="62" factionPoints="8" factionPointsClan="8" foreignPoints="8" foreignPointsClan="8" /> <!-- npcType="BATTLERAY" -->
+		<npc npcId="121" factionPoints="10" factionPointsClan="10" foreignPoints="10" foreignPointsClan="10" /> <!-- npcType="DEADLY_BATTLERAY" -->
+		
+		<npc npcId="163" factionPoints="4" factionPointsClan="4" foreignPoints="4" foreignPointsClan="4" /> <!-- npcType="UBER_INTERCEPTOR" -->
+		<npc npcId="164" factionPoints="8" factionPointsClan="8" foreignPoints="8" foreignPointsClan="8" /> <!-- npcType="UBER_BARRACUDA" -->
+		<npc npcId="165" factionPoints="20" factionPointsClan="20" foreignPoints="20" foreignPointsClan="20" /> <!-- npcType="UBER_SABOTEUR" -->
+		<npc npcId="166" factionPoints="24" factionPointsClan="24" foreignPoints="24" foreignPointsClan="24" /> <!-- npcType="UBER_ANNIHILATOR" -->
+		<npc npcId="167" factionPoints="32" factionPointsClan="32" foreignPoints="32" foreignPointsClan="32" /> <!-- npcType="UBER_BATTLERAY" -->
+	</npcsToKill>
+
+	<rewardPlayers>event_external_rewards_piratehunt2017rewards-players</rewardPlayers>
+	<rewardClans>event_external_rewards_piratehunt2017rewards-clans</rewardClans>
+
+	<clientData windowTitle="title_ranked_hunt" internalHallofFameView="pirateHunt_userRanking" hintButtonVisible="false" hintButtonToolTip=""/>
+
+</huntEvent>

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* START Subnavigation */
+#navigation {
+    float              : left ;
+    padding            : 5px 0 0 0 ;
+}
+
+#navigation div a {
+    display            : inline-block ;
+    padding            : 10px 20px ;
+    width              : 100px ;
+}
+
+#navigation div.button {
+    background-image:  url(/do_img/global/hangar/subnav_button_408x34.png?__cv=b9bc68782a1c18cd02eba2cac8e96c00) ;
+    background-position : left center ;
+    background-repeat   : no-repeat ;
+    cursor              : pointer ;
+    height              : 34px ;
+    width               : 137px ;
+}
+
+#navigationFrame {
+    background-image:  url(/do_img/global/payment/banking/navi_bar_background_01.png?__cv=5dd264d2e86a477d9c2d783fffd0ed00) ;
+    background-position : -3px -3px ;
+    background-repeat   : no-repeat ;
+    height              : 391px;
+
+}
+
+#navigation div.button:hover {
+    background-position : center center ;
+}
+
+#navigation div.button.active {
+    background-position : right center ;
+}
+/* END Subnavigation */

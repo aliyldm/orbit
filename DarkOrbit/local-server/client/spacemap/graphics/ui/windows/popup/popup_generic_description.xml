@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI" />
+		<library id="settingsWindowFUI" />
+		<library id="popup_asset" />
+	</libraries>
+
+	<!-- TEXT STYLES -->
+	<textstyle  name="popup_generic_description_center"
+				textColor="0xAFC9D3"
+				type="dynamic"
+				fontSize="11"
+				autoSize="center"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="center"/>
+
+	<!-- SKIN -->
+	<skin name="popup_generic_icon_label_skin" classname="LabelSkin" />
+
+	<!-- CONTENT -->
+	<container name="root" width="490" height="286"
+			   mouseEnabled="false" mouseChildren="true">
+		<container name="contentContainer" width="490" height="286" marginLeft="12">
+
+			<label name="label" autoSizeWidth="true" height="16"
+				   marginTop="10" alignX="center"
+				   registeredSkinName="popup_generic_icon_label_skin"
+				   registeredTextStyleName="popup_generic_description_center"/>
+		</container>
+	</container>
+</root>

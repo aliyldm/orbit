@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>DarkOrbit Reloaded · Pilot Girişi</title>
+  <script src="/mini-jquery.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: #03070c; }
+    body { margin: 0; color: #e4edf1; font: 14px/1.5 "Segoe UI", Arial, sans-serif; min-height: 100vh; background: #03070c url('/client/do_img/global/bg_standard_mmo.jpg') center / cover no-repeat fixed; }
+    body:before { content: ""; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: linear-gradient(90deg, rgba(3,8,14,.84), rgba(3,8,14,.25) 60%, rgba(3,8,14,.5)), linear-gradient(0deg, #03070c, transparent 55%); pointer-events: none; }
+    .page { position: relative; max-width: 1360px; padding: 36px 64px 22px; margin: auto; min-height: 100vh; display: flex; flex-direction: column; }
+    header { display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: block; width: 252px; height: auto; }
+    .terminal { color: #90a4af; font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; }
+    .terminal:before { content: ""; display: inline-block; height: 6px; width: 6px; margin-right: 11px; background: #60cbe0; box-shadow: 0 0 12px #2f96ad; }
+    main { flex: 1; display: flex; align-items: center; justify-content: space-between; gap: 64px; padding: 42px 0 54px; }
+    .hero { max-width: 570px; padding-bottom: 20px; }
+    .eyebrow { color: #70c3d6; font-size: 11px; font-weight: 600; letter-spacing: 3.5px; text-transform: uppercase; }
+    .eyebrow:before { content: ""; display: inline-block; width: 34px; height: 1px; background: #50aabd; vertical-align: middle; margin-right: 16px; }
+    h1 { font-size: 59px; font-weight: 650; letter-spacing: -1.8px; line-height: 1.08; margin: 22px 0 24px; text-shadow: 0 3px 25px #000; }
+    h1 span { color: #83cdda; }
+    .hero p { color: #9caeb8; font-size: 16px; line-height: 1.8; margin: 0; }
+    .companies { display: flex; gap: 25px; margin-top: 40px; }
+    .company { color: #94a8b4; letter-spacing: 2px; font-size: 10px; padding-top: 10px; border-top: 2px solid #9e543d; width: 63px; }
+    .company.eic { border-color: #397d9b; }.company.vru { border-color: #538c60; }
+    .login-panel { flex: 0 0 380px; position: relative; padding: 30px 32px 28px; border: 1px solid #305160; background: linear-gradient(135deg, rgba(23,39,50,.97), rgba(8,17,25,.98)); box-shadow: 0 22px 70px rgba(0,0,0,.55), inset 0 0 0 5px rgba(5,13,20,.28); }
+    .login-panel:before, .login-panel:after { content: ""; position: absolute; width: 20px; height: 20px; pointer-events: none; }
+    .login-panel:before { left: -1px; top: -1px; border-top: 2px solid #78c8db; border-left: 2px solid #78c8db; }
+    .login-panel:after { right: -1px; bottom: -1px; border-bottom: 2px solid #78c8db; border-right: 2px solid #78c8db; }
+    .panel-top { display: flex; justify-content: space-between; color: #7b9ba9; font-size: 9px; letter-spacing: 2px; padding-bottom: 18px; margin-bottom: 23px; border-bottom: 1px solid #29414d; }
+    .panel-top span:last-child { color: #54717e; letter-spacing: 1px; }
+    h2 { font-size: 26px; font-weight: 500; letter-spacing: -.4px; margin: 0 0 7px; }
+    .intro { color: #91a5b1; font-size: 12px; margin: 0 0 25px; }
+    .field { margin-bottom: 17px; }
+    .field label { display: block; color: #aebfc8; font-size: 10px; letter-spacing: 1.3px; text-transform: uppercase; margin-bottom: 8px; }
+    .field input { font: inherit; font-size: 13px; width: 100%; height: 45px; padding: 0 13px; border: 1px solid #304550; border-radius: 0; background: #09131c; color: #e9f3f6; outline: none; box-shadow: inset 0 2px 6px #050b12; transition: border-color .15s; }
+    .field input::placeholder { color: #59717f; opacity: 1; }
+    .field input:focus { border-color: #76c9da; box-shadow: 0 0 0 2px rgba(83,176,201,.12); }
+    .remember { display: flex; align-items: center; gap: 9px; color: #9db0ba; font-size: 11px; cursor: pointer; margin: 4px 0 25px; }
+    .remember input { width: 14px; height: 14px; margin: 0; accent-color: #66becf; }
+    button { display: flex; align-items: center; justify-content: center; gap: 15px; height: 48px; width: 100%; border: 1px solid #86b64d; border-radius: 0; background: linear-gradient(#608d32, #355f21); box-shadow: inset 0 1px 0 rgba(221,255,176,.22); color: #f3ffe7; text-shadow: 0 1px 2px #1b3b11; font-family: inherit; font-size: 12px; font-weight: 700; letter-spacing: 2px; cursor: pointer; }
+    button:hover { background: linear-gradient(#74a73e, #456f28); box-shadow: 0 0 20px rgba(96,145,49,.24); }
+    button:focus { outline: 2px solid #c6eb91; outline-offset: 4px; }
+    button svg { width: 17px; height: 17px; }
+    #msg { display: block; margin-top: 19px; color: #7893a1; font-size: 11px; line-height: 1.7; }
+    #msg.error { color: #f2aa8f; border-left: 2px solid #b96b53; padding-left: 11px; }
+    input[aria-invalid="true"] { border-color: #b96b53; }
+    footer { border-top: 1px solid rgba(76,112,131,.24); padding-top: 17px; display: flex; justify-content: space-between; color: #607b8b; font-size: 9px; letter-spacing: 1.4px; text-transform: uppercase; }
+    footer span:last-child { color: #465f6e; }
+    @media (max-width: 1050px) { .page { padding: 28px 36px 20px; } main { gap: 35px; } h1 { font-size: 46px; } .login-panel { flex-basis: 355px; padding: 26px; } }
+    @media (max-width: 760px) { .page { padding: 24px 22px 18px; } .logo { width: 210px; } .terminal, .hero { display: none; } main { justify-content: center; padding: 32px 0; } .login-panel { flex: 0 1 380px; width: 100%; } footer { font-size: 8px; letter-spacing: 1px; } body { background-position: 58% center; } }
+    @media (max-height: 700px) and (min-width: 761px) { .page { padding-top: 18px; } .logo { width: 205px; } main { padding: 22px 0; } .login-panel { padding-top: 22px; padding-bottom: 22px; } .panel-top { padding-bottom: 12px; margin-bottom: 17px; } .intro { margin-bottom: 20px; } .remember { margin-bottom: 20px; } }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header><img class="logo" src="/client/_host/do_img/global/companyChoose/gamelogo.png" alt="DarkOrbit Reloaded" width="315" height="129"><div class="terminal">Pilot terminali</div></header>
+    <main>
+    <section class="hero" aria-label="DarkOrbit"><div class="eyebrow">Uzay seni bekliyor</div><h1>YÖRÜNGENİ<br><span>YENİDEN ÇİZ.</span></h1><p>Bir gemi. Bir pilot.<br>Sonsuz bir galaksi.</p><div class="companies" aria-label="Şirketler"><span class="company">MMO</span><span class="company eic">EIC</span><span class="company vru">VRU</span></div></section>
+    <!-- id/class adları launcher'ın jshelper betiğinin aradığı seçicilerle aynı -->
+    <form class="bgcdw_login_form login-panel" method="post" action="/login" aria-labelledby="login-title">
+      <div class="panel-top"><span>PİLOT ERİŞİMİ</span><span>01 / GİRİŞ</span></div>
+      <h2 id="login-title">Hangarına dön.</h2><p class="intro">Pilot hesabınla bağlantı kur.</p>
+      <div class="field"><label for="bgcdw_login_form_username">Kullanıcı adı</label><input id="bgcdw_login_form_username" name="username" type="text" placeholder="Pilot adın" autocomplete="username" minlength="3" maxlength="20" required aria-describedby="msg"></div>
+      <div class="field"><label for="bgcdw_login_form_password">Şifre</label><input id="bgcdw_login_form_password" name="password" type="password" placeholder="Şifren" autocomplete="current-password" minlength="4" maxlength="256" required aria-describedby="msg"></div>
+      <label class="remember"><input class="bgcdw_remember_me_checkbox" type="checkbox"> Beni hatırla</label>
+      <button type="submit">GİRİŞ YAP <svg aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg></button>
+      <small id="msg" role="status" aria-live="polite">Kullanıcı adını ve şifreni gir.<br>Galaksi seni bekliyor.</small>
+      <script>
+        var err = (location.search.match(/[?&]error=(\w+)/) || [])[1];
+        var text = { password: 'Kullanıcı adı veya şifre yanlış. Bilgilerini kontrol edip tekrar dene.', invalid: 'Kullanıcı adı 3–20, şifre 4–256 karakter olmalı.' }[err];
+        if (text) { var m = document.getElementById('msg'); m.textContent = text; m.className = 'error'; m.setAttribute('role','alert'); document.getElementById('bgcdw_login_form_password').setAttribute('aria-invalid','true'); }
+      </script>
+    </form>
+    </main><footer><span>DarkOrbit Reloaded</span><span>Yıldızların ötesine</span></footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<battlePass>
+    <!-- objective Panel -->
+    <objectiveList>
+
+        <!-- No Pain, No Gain -->
+        <objective questId="500529">
+            <questReward lootid="ammunition_laser_ucb-100" amount="1500"/>
+            <bpReward lootid="ammunition_rocketlauncher_sar-02" amount="500"/>
+        </objective>
+
+        <!-- Smacking Specks -->
+        <objective questId="500532">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="15"/>
+            <bpReward lootid="ammunition_rocketlauncher_sar-02" amount="2000"/>
+        </objective>
+
+        <!-- A Walk in the Space Park -->
+        <objective questId="500535">
+            <questReward lootid="resource_booty-key" amount="2"/>
+            <bpReward packageid="package_battlepass_bpReward-500535" packageItemIds="resource_collectable_indoctrineoil,ammunition_specialammo_spray_peace" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500535"/>
+        </objective>
+
+        <!-- One-man Army -->
+        <objective questId="500538">
+            <questReward lootid="ammunition_laser_rsb-75" amount="3000"/>
+            <bpReward lootid="booster_shd-dlb" amount="10"/>
+        </objective>
+
+        <!-- Blast It! -->
+        <objective questId="500541">
+            <questReward lootid="ammunition_rocketlauncher_hstrm-01" amount="500"/>
+            <bpReward lootid="tech_battle-repair-bot2" amount="1"/>
+        </objective>
+
+        <!-- Fists to Face -->
+        <objective questId="500544">
+            <questReward lootid="ammunition_rocket_plt-2021" amount="4000"/>
+            <bpReward packageid="package_battlepass_bpReward-500544" packageItemIds="equipment_shipupgrade_dmg-st01,ammunition_specialammo_spray_question" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500544"/>
+        </objective>
+
+        <!-- Endurance is Key -->
+        <objective questId="500530">
+            <questReward lootid="resource_collectable_axion-beam-regulator" amount="50"/>
+            <bpReward lootid="ammunition_laser_rsb-75" amount="2500"/>
+        </objective>
+
+        <!-- Minor Inconveniences -->
+        <objective questId="500533">
+            <questReward lootid="ammunition_specialammo_pld-8" amount="200"/>
+            <bpReward lootid="resource_collectable_axion-beam-regulator" amount="75"/>
+        </objective>
+
+        <!-- Hunt or be Hunted -->
+        <objective questId="500536">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="15"/>
+            <bpReward lootid="ammunition_laser_spacecup_group-c" amount="3000"/>
+        </objective>
+
+        <!-- No Holdbacks -->
+        <objective questId="500539">
+            <questReward lootid="ammunition_rocket_plt-2021" amount="3000"/>
+            <bpReward lootid="tech_npc-nuke" amount="1"/>
+        </objective>
+
+        <!-- Endless Firing -->
+        <objective questId="500542">
+            <questReward lootid="equipment_shipupgrade_hp-a01" amount="1"/>
+            <bpReward packageid="package_battlepass_bpReward-500542" packageItemIds="tech_npc-nuke,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500542"/>
+        </objective>
+
+        <!-- Infinite Wealth -->
+        <objective questId="500545">
+            <questReward lootid="booster_dmg-dlb" amount="10"/>
+            <bpReward packageid="package_battlepass_bpReward-500545" packageItemIds="resource_collectable_indoctrineoil,ammunition_laser_spacecup_group-c" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500545"/>
+        </objective>
+
+        <!-- Tanks a Lot! -->
+        <objective questId="500531">
+            <questReward lootid="ammunition_laser_spacecup_group-c" amount="2000"/>
+            <bpReward packageid="package_battlepass_bpReward-500531" packageItemIds="tech_npc-nuke,ammunition_specialammo_spray_celebrate" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500531"/>
+        </objective>
+
+        <!-- Ants to a Boot -->
+        <objective questId="500534">
+            <questReward packageid="package_battlepass_questReward-500534" packageItemIds="ammunition_rocket_plt-3030,ammunition_specialammo_emote_alien-sleepy" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500534"/>
+            <bpReward lootid="ammunition_rocketlauncher_ubr-100" amount="2500"/>
+        </objective>
+
+        <!-- Lacking Lions -->
+        <objective questId="500537">
+            <questReward lootid="ammunition_laser_rsb-75" amount="3000"/>
+            <bpReward packageid="package_battlepass_bpReward-500537" packageItemIds="ammunition_specialammo_dcr-250,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500537"/>
+        </objective>
+
+        <!-- Unstoppable Spree -->
+        <objective questId="500540">
+            <questReward lootid="ammunition_rocketlauncher_cbr" amount="1000"/>
+            <bpReward packageid="package_battlepass_bpReward-500540" packageItemIds="ammunition_specialammo_dcr-250,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500540"/>
+        </objective>
+
+        <!-- Laser Stream -->
+        <objective questId="500543">
+            <questReward lootid="resource_collectable_axion-beam-regulator" amount="50"/>
+            <bpReward lootid="ammunition_specialammo_sr-5" amount="300"/>
+        </objective>
+
+        <!-- Plutus Perished -->
+        <objective questId="500546">
+            <questReward packageid="package_battlepass_questReward-500546" packageItemIds="resource_collectable_axion-beam-regulator,ammunition_specialammo_emote_alien-starryeyes" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500546"/>
+            <bpReward packageid="package_battlepass_bpReward-500546" packageItemIds="resource_collectable_axion-beam-regulator,ammunition_laser_rsb-75" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500546"/>
+        </objective>
+
+        <!-- Gauntlet of Wealth -->
+        <objective questId="500547">
+            <questReward lootid="equipment_shipupgrade_spc-tar01" amount="1"/>
+            <bpReward lootid="ship_sentinel_design_sentinel-nobilis" amount="1"/>
+        </objective>
+
+        <!-- Wicked Power -->
+        <objective questId="500548">
+            <questReward packageid="package_battlepass_questReward-500548" packageItemIds="tech_npc-nuke,ammunition_specialammo_emote_alien-dizzy" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500548"/>
+            <bpReward packageid="package_battlepass_bpReward-500548" packageItemIds="ammunition_specialammo_dcr-250,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500548"/>
+        </objective>
+
+        <!-- Dominating Power -->
+        <objective questId="500549">
+            <questReward lootid="tech_battle-repair-bot2" amount="2"/>
+            <bpReward lootid="ammunition_rocketlauncher_hstrm-01" amount="25000"/>
+        </objective>
+
+        <!-- Unlimited Power -->
+        <objective questId="500550">
+            <questReward lootid="tech_shield-backup2" amount="2"/>
+            <bpReward lootid="ammunition_specialammo_sr-5" amount="1500"/>
+        </objective>
+
+    </objectiveList>
+
+    <flvDisplayLootId>ship_sentinel_design_sentinel-nobilis</flvDisplayLootId>
+
+    <titleKeyBeforePurchase>window_objectives_bp_title</titleKeyBeforePurchase>
+    <descriptionKeyBeforePurchase>window_objectives_bp_promo_desc</descriptionKeyBeforePurchase>
+
+    <descriptionKeyCollect>window_objectives_bp_collect_desc</descriptionKeyCollect>
+
+    <titleKeyAfterPurchase>window_objectives_bp_highlight_title</titleKeyAfterPurchase>
+    <descriptionKeyAfterPurchase>window_objectives_bp_highlight_desc</descriptionKeyAfterPurchase>
+</battlePass>

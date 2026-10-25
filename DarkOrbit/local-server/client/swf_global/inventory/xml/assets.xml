@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<filecollection>
+    <location id="graphics" path="graphics/"/>
+    <location id="graphics_ui" path="graphics/ui/"/>
+    <location id="jar" path="jar/"/>
+    <location id="net" path="net/"/>
+    <location id="net_bigpoint" path="net/bigpoint/"/>
+    <location id="net_bigpoint_darkorbit" path="net/bigpoint/darkorbit/"/>
+    <location id="net_bigpoint_darkorbit_equipment" path="net/bigpoint/darkorbit/equipment/"/>
+    <location id="net_bigpoint_darkorbit_equipment_application" path="net/bigpoint/darkorbit/equipment/application/"/>
+    <location id="net_bigpoint_darkorbit_equipment_application_fonts" path="net/bigpoint/darkorbit/equipment/application/fonts/"/>
+    <location id="net_bigpoint_darkorbit_equipment_view" path="net/bigpoint/darkorbit/equipment/view/"/>
+    <location id="net_bigpoint_darkorbit_equipment_view_components" path="net/bigpoint/darkorbit/equipment/view/components/"/>
+    <location id="net_bigpoint_darkorbit_equipment_view_components_buttons" path="net/bigpoint/darkorbit/equipment/view/components/buttons/"/>
+    <location id="net_bigpoint_darkorbit_equipment_view_components_buttons_resources" path="net/bigpoint/darkorbit/equipment/view/components/buttons/resources/"/>
+    <location id="net_bigpoint_darkorbit_equipment_view_components_fonts" path="net/bigpoint/darkorbit/equipment/view/components/fonts/"/>
+    <location id="net_bigpoint_darkorbit_equipment_view_components_shipSelector" path="net/bigpoint/darkorbit/equipment/view/components/shipSelector/"/>
+    <location id="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" path="net/bigpoint/darkorbit/equipment/view/components/shipSelector/resources/"/>
+    <location id="net_bigpoint_darkorbit_equipment_view_components_tooltip" path="net/bigpoint/darkorbit/equipment/view/components/tooltip/"/>
+    <location id="net_bigpoint_darkorbit_equipment_view_components_tooltip_fonts" path="net/bigpoint/darkorbit/equipment/view/components/tooltip/fonts/"/>
+    <location id="swf" path="swf/"/>
+    <file debugView="false" hash="02c83f5298b9f5de5d95e54d8caa1900" id="navigation_btn_small_up_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_small_up_active" type="png" version="1"/>
+    <file debugView="false" hash="6b308beb31858cedd05f79bb0caff400" id="navigation_btn_big_down_normal" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_big_down_normal" type="png" version="1"/>
+    <file debugView="false" hash="cfdc8335c0a2b347ed481f0590dec700" id="btn_ship_nav_back_normal" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_ship_nav_back_normal" type="png" version="1"/>
+    <file debugView="false" hash="472bd72dd5fbcb300909143620a57a00" id="BlaExtFont" location="net_bigpoint_darkorbit_equipment_view_components_tooltip_fonts" name="BlaExtFont" type="ttf" version="1"/>
+    <file debugView="false" hash="34990ebd51386a7bdfdb68ae19e42b00" id="inventoryItems" location="graphics_ui" name="inventoryItems" type="swf" version="1"/>
+    <file debugView="false" hash="3c85bf015dbe26f382f703fdff3efa00" id="fadeout_bottom" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="fadeout_bottom" type="png" version="1"/>
+    <file debugView="false" hash="ebfd86ad4ea263ccc03edb4bd3cd4b00" id="bg_shipview_top" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="bg_shipview_top" type="png" version="1"/>
+    <file debugView="false" hash="729daafa16a5a60093cedce5557bc100" id="btn_ship_nav_back_inactive" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_ship_nav_back_inactive" type="png" version="1"/>
+    <file debugView="false" hash="60e5cea96c655474b942ab53a322b100" id="btn_info_normal" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_info_normal" type="png" version="1"/>
+    <file debugView="false" hash="b59ee30fbf1f8ea526f50598b5c56700" id="item_bg_gray_100x100" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="item_bg_gray_100x100" type="png" version="1"/>
+    <file debugView="false" hash="f4d512bf7f9e8066d9412d9e93a6b200" id="nav_tab_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="nav_tab_active" type="png" version="1"/>
+    <file debugView="false" hash="3b380aad6f6be5b0f6e7288d84f26800" id="assettool-0.1.1-SNAPSHOT" location="jar" name="assettool-0.1.1-SNAPSHOT" type="jar" version="1"/>
+    <file debugView="false" hash="e7fcb2226a5325f74e92caac3922d100" id="E004026T" location="net_bigpoint_darkorbit_equipment_view_components_fonts" name="E004026T" type="TTF" version="1"/>
+    <file debugView="false" hash="fe5248070c492581a0c725df14de3b00" id="btn_help_active" location="net_bigpoint_darkorbit_equipment_view_components_buttons_resources" name="btn_help_active" type="png" version="1"/>
+    <file debugView="false" hash="8f79b72383dd9a56ff6c25af4f970200" id="circle_normal" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="circle_normal" type="png" version="1"/>
+    <file debugView="false" hash="3a049f28711a981d3bedfcd38b244300" id="btn_info_hover" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_info_hover" type="png" version="1"/>
+    <file debugView="false" hash="0a54651558d33d3b2a58352428c58700" id="btn_fav_hover" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_fav_hover" type="png" version="1"/>
+    <file debugView="false" hash="eaf2897424a07cd74264d27a6d48d000" id="btn_ship_nav_next_hover" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_ship_nav_next_hover" type="png" version="1"/>
+    <file debugView="false" hash="9cb595494f83e43602ed0f8456750d00" id="ship_bg" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="ship_bg" type="jpg" version="1"/>
+    <file debugView="false" hash="e7fcb2226a5325f74e92caac3922d100" id="E004026T" location="net_bigpoint_darkorbit_equipment_application_fonts" name="E004026T" type="TTF" version="1"/>
+    <file debugView="false" hash="fb1b345cecc16ed69318380d64e8d600" id="btn_green_activate_norm" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_green_activate_norm" type="png" version="1"/>
+    <file debugView="false" hash="c024386d0e540360db8378eaed95d200" id="navigation_btn_small_down_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_small_down_active" type="png" version="1"/>
+    <file debugView="false" hash="080b3b7d7a3b624dbdf250b53140b000" id="btn_ship_nav_back_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_ship_nav_back_active" type="png" version="1"/>
+    <file debugView="false" hash="ceec722c074063039b2b05c3f3d1d000" id="btn_star_enable_over" location="net_bigpoint_darkorbit_equipment_view_components_buttons_resources" name="btn_star_enable_over" type="png" version="1"/>
+    <file debugView="false" hash="8f3d74bc985563ec5ed7ef6fc74c3500" id="check_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="check_active" type="png" version="1"/>
+    <file debugView="false" hash="8247b105bcbbc72d17a8f670a0cc5900" id="circle_notactive" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="circle_notactive" type="png" version="1"/>
+    <file debugView="false" hash="472bd72dd5fbcb300909143620a57a00" id="BlaExtFont" location="net_bigpoint_darkorbit_equipment_view_components_fonts" name="BlaExtFont" type="ttf" version="1"/>
+    <file debugView="false" hash="ac2ff8275abef25446abcb75ee6b0c00" id="E004006T" location="net_bigpoint_darkorbit_equipment_view_components_fonts" name="E004006T" type="TTF" version="1"/>
+    <file debugView="false" hash="ced76fc376dd6f9ec6e7c09a58fa4600" id="navigation_btn_big_down_hover" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_big_down_hover" type="png" version="1"/>
+    <file debugView="false" hash="7eb48ffb66c1703a985f799d0ced8300" id="navigation_btn_big_down_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_big_down_active" type="png" version="1"/>
+    <file debugView="false" hash="517c3fe0b5771fa6cc993588062a6600" id="navigation_btn_small_up_inactive" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_small_up_inactive" type="png" version="1"/>
+    <file debugView="false" hash="8bac9d1211e3b66ca2c9fe9422f2b300" id="EurostileStdHea" location="swf" name="EurostileStdHea" type="swf" version="1"/>
+    <file debugView="false" hash="1d157ec945078d411d263ff1ce4cf400" id="btn_info_inactive" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_info_inactive" type="png" version="1"/>
+    <file debugView="false" hash="5b281512d23c631af99964db2d59c700" id="btn_help_hover" location="net_bigpoint_darkorbit_equipment_view_components_buttons_resources" name="btn_help_hover" type="png" version="1"/>
+    <file debugView="false" hash="c19ab75c71db11d7a249646a056d8400" id="navigation_btn_small_up_normal" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_small_up_normal" type="png" version="1"/>
+    <file debugView="false" hash="d6e4ccadf3fba3c4c6357846d59a5000" id="navigation_btn_big_up_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_big_up_active" type="png" version="1"/>
+    <file debugView="false" hash="9f5eed71797b34ea546518832b14e100" id="accordionBtn" location="graphics_ui" name="accordionBtn" type="swf" version="1"/>
+    <file debugView="false" hash="fa1f7ef0f89ab04212dbf02f3424d700" id="close_button_sprite" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="close_button_sprite" type="png" version="1"/>
+    <file debugView="false" hash="778ed1d0d1b9d08f01aa3e89d1b71e00" id="btn_fav_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_fav_active" type="png" version="1"/>
+    <file debugView="false" hash="472bd72dd5fbcb300909143620a57a00" id="BlaExtFont" location="net_bigpoint_darkorbit_equipment_application_fonts" name="BlaExtFont" type="ttf" version="1"/>
+    <file debugView="false" hash="2b79e0025a4f235345c35f34f85f3d00" id="btn_ship_nav_next_normal" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_ship_nav_next_normal" type="png" version="1"/>
+    <file debugView="false" hash="989b97fde8c5daa26bcc799898f7a300" id="btn_star_enable_clicked" location="net_bigpoint_darkorbit_equipment_view_components_buttons_resources" name="btn_star_enable_clicked" type="png" version="1"/>
+    <file debugView="false" hash="d1b844c3d49bf8d1724642262c711f00" id="btn_blue_hover" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_blue_hover" type="png" version="1"/>
+    <file debugView="false" hash="a1917867a8ba77bd1cd8a274cc8f0200" id="scrollComponents" location="graphics_ui" name="scrollComponents" type="swf" version="1"/>
+    <file debugView="false" hash="38ae427c0fcb4f56fca0b1b3539ce400" id="btn_blue_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_blue_active" type="png" version="1"/>
+    <file debugView="false" hash="98544c99a7c120bc668669d43de88d00" id="navigation_btn_small_down_hover" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_small_down_hover" type="png" version="1"/>
+    <file debugView="false" hash="e0840530fcd718546b97d88b09143e00" id="navigation_btn_small_up_hover" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_small_up_hover" type="png" version="1"/>
+    <file debugView="false" hash="1a168e78317f645a968a687185810e00" id="btn_close_hover" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_close_hover" type="png" version="1"/>
+    <file debugView="false" hash="0fba109b2276b603079308cd0e679300" id="btn_close_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_close_active" type="png" version="1"/>
+    <file debugView="false" hash="939569f3c556873a7b498f3170155f00" id="btn_green_activate_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_green_activate_active" type="png" version="1"/>
+    <file debugView="false" hash="85bc4f5f11cbda54033e16ee7744b200" id="web_item-navigation_frame_select_104x104" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="web_item-navigation_frame_select_104x104" type="png" version="1"/>
+    <file debugView="false" hash="e39cad5254e2a2ae57b1ad7274516600" id="fav_Star" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="fav_Star" type="png" version="1"/>
+    <file debugView="false" hash="66b6f06fadb5549921c014c6c7cd1300" id="navigation_btn_big_up_hover" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_big_up_hover" type="png" version="1"/>
+    <file debugView="false" hash="9ab8028efcfc15bbaece33fe24b07e00" id="btn_close_disabled" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_close_disabled" type="png" version="1"/>
+    <file debugView="false" hash="828d2a30bb23eed8782126fd7e197d00" id="btn_star_disable" location="net_bigpoint_darkorbit_equipment_view_components_buttons_resources" name="btn_star_disable" type="png" version="1"/>
+    <file debugView="false" hash="cb1041a6562a707671e8334460503400" id="hangar_bg_shipselect" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="hangar_bg_shipselect" type="png" version="1"/>
+    <file debugView="false" hash="db350324fd00bbf4edee403799462c00" id="item_bg_special_100x100" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="item_bg_special_100x100" type="png" version="1"/>
+    <file debugView="false" hash="eae54a329fb6e6b1c51535ea39400e00" id="btn_star_enable" location="net_bigpoint_darkorbit_equipment_view_components_buttons_resources" name="btn_star_enable" type="png" version="1"/>
+    <file debugView="false" hash="dbafd6bf6501c99cb9062ce9e3108a00" id="btn_green_activate_hover" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_green_activate_hover" type="png" version="1"/>
+    <file debugView="false" hash="84c158ce7207871b4b655961a08c2700" id="web_item-navigation_frame_active_104x104" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="web_item-navigation_frame_active_104x104" type="png" version="1"/>
+    <file debugView="false" hash="b4ec805bb20667d4bdbb8d3d01a50f00" id="btn_ship_nav_back_hover" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_ship_nav_back_hover" type="png" version="1"/>
+    <file debugView="false" hash="f979bb947cd866d3edc4b8505b645800" id="navigation_btn_small_down_inactive" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_small_down_inactive" type="png" version="1"/>
+    <file debugView="false" hash="9fcedf71b0f80472b810d7ed3395b100" id="btn_ship_nav_next_inactive" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_ship_nav_next_inactive" type="png" version="1"/>
+    <file debugView="false" hash="de72c03522174ea66f137268e087dd00" id="btn_fav_inactive" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_fav_inactive" type="png" version="1"/>
+    <file debugView="false" hash="f7091aea1dd3acf2bbfa25db369c1c00" id="btn_ship_nav_next_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_ship_nav_next_active" type="png" version="1"/>
+    <file debugView="false" hash="360052ba795d4f0d30756c9598cba000" id="loadGfx" location="graphics_ui" name="loadGfx" type="swf" version="1"/>
+    <file debugView="false" hash="4e1641389c1a7530d0b3771e18539c00" id="navigation_btn_big_up_inactive" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_big_up_inactive" type="png" version="1"/>
+    <file debugView="false" hash="d00af6ba212378b1b250ab7bfb00b500" id="navigation_btn_small_down_normal" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_small_down_normal" type="png" version="1"/>
+    <file debugView="false" hash="287fb62fd23a5a9c07f6da1ea0354f00" id="btn_info_active" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_info_active" type="png" version="1"/>
+    <file debugView="false" hash="82114482fd9c96f75c6549bd0cd63300" id="tabBtn" location="graphics_ui" name="tabBtn" type="swf" version="1"/>
+    <file debugView="false" hash="174c91e5cff40e5130b3a67bbfbf3300" id="btn_fav_normal" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_fav_normal" type="png" version="1"/>
+    <file debugView="false" hash="f2bd538cab6174a18d1362d5b9c61600" id="check_normal" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="check_normal" type="png" version="1"/>
+    <file debugView="false" hash="9997aa60e7eb34743539298d6c372200" id="web_item-navigation_frame_hover_104x104" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="web_item-navigation_frame_hover_104x104" type="png" version="1"/>
+    <file debugView="false" hash="c4feb8e4b5471c6573738c39d6b9fb00" id="fadeout_top" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="fadeout_top" type="png" version="1"/>
+    <file debugView="false" hash="ac2ff8275abef25446abcb75ee6b0c00" id="E004006T" location="net_bigpoint_darkorbit_equipment_application_fonts" name="E004006T" type="TTF" version="1"/>
+    <file debugView="false" hash="f4f59e7e0414d3084c45bbb4a585db00" id="btn_close_normal" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_close_normal" type="png" version="1"/>
+    <file debugView="false" hash="6c69f90060fded75924bdfdd8d725700" id="navigation_btn_big_up_normal" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_big_up_normal" type="png" version="1"/>
+    <file debugView="false" hash="f2a97588bbc87a97b54801c86988aa00" id="btn_blue_normal" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="btn_blue_normal" type="png" version="1"/>
+    <file debugView="false" hash="6a9494fe0b993855f44ef58559e25200" id="nav_tab_inactive" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="nav_tab_inactive" type="png" version="1"/>
+    <file debugView="false" hash="e7ec961077ec2b39fb3c639cb9ff9900" id="navigation_btn_big_down_inactive" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="navigation_btn_big_down_inactive" type="png" version="1"/>
+    <file debugView="false" hash="aa9395d982545833d1489356069fd600" id="item_bg_standard_100x100" location="net_bigpoint_darkorbit_equipment_view_components_shipSelector_resources" name="item_bg_standard_100x100" type="png" version="1"/>
+</filecollection>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="expeditionRewardTab3"/>
+    </libraries>
+    <skin name="expendition_tab4_rank_list_bg" library="expeditionRewardTab3" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="reward_list_title">normal</layer>
+    </skin>
+    <skin name="expendition_tab4_rank_list_title" library="gameclientCommonUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" scale9grid="24,5,50,9" libraryID="itemlist_entry_bg_normal">normal</layer>
+    </skin>
+    <skin name="expendition_tab4_rank_list_item_self_bg" library="expeditionRewardTab3" classname="BasicSkin">
+        <layer classname="BitmapLayer" scale9grid="210,14,235,26"  libraryID="tab4_rank_list_item_bg">normal</layer>
+    </skin>
+    <!-- TEXT STYLES -->
+    <textstyle
+            name="expendition_tab4_rest_time"
+            textColor="0xffffff"
+            type="dynamic"
+            fontSize="12"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"/>
+    <textstyle
+            name="expendition_tab4_list_title_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="14"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            bold="true"
+            align="center"/>
+    <textstyle
+            name="expendition_tab4_list_title_left_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="14"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            bold="true"
+            align="left"/>
+        <textstyle
+            name="expendition_tab4_list_item_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="12"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"/>
+        <textstyle
+            name="expendition_tab4_list_item_rank_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="12"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"/>
+
+    <template name="expedition_tab4">
+        <coreponent name="tab4" width="845" height="500">
+            <!-- <coreponent name="panel_bg" width="845" height="480" alignX="left" alignY="top" marginTop="15"registeredSkinName="commonui_darklayer"/> -->
+            <coreponent name="list_bg" width="815" height="423" alpha="0.6" alignX="center" alignY="top" marginTop="25"registeredSkinName="commonui_darklayer"/>
+                    
+            <coreponent name="list_title" width="815" height="30" alignX="center" alignY="top" marginTop="25">
+                <coreponent name="title_bg" width="815" height="30" alignX="left" alignY="top" registeredSkinName="expendition_tab4_rank_list_title"/>
+                <Label name="rank_title_label" width="100" height="20" alignX="left" marginLeft="0" alignY="top" marginTop="5" registeredTextStyleName="expendition_tab4_list_title_label" registeredSkinName="commonui_default_label" text="localize:window_dse_rank"/>            
+                <Label name="name_title_label" width="265" height="20" alignX="left" marginLeft="105" alignY="top" marginTop="5" registeredTextStyleName="expendition_tab4_list_title_left_label" registeredSkinName="commonui_default_label" text="localize:window_dse_rank_name"/>            
+                <Label name="levels_title_label" width="100" height="20" alignX="left" marginLeft="405" alignY="top" marginTop="5" registeredTextStyleName="expendition_tab4_list_title_label" registeredSkinName="commonui_default_label" text="localize:window_dse_rank_level"/>            
+                <Label name="time_title_label" width="100" height="20" alignX="left" marginLeft="580" alignY="top" marginTop="5" registeredTextStyleName="expendition_tab4_list_title_left_label" registeredSkinName="commonui_default_label" text="localize:label_bswin_deflector_time"/>
+            </coreponent>
+            <itemlist name="rank_list" width="815" height="370" autoSizeWidth="false" autoSizeHeight="false"
+                          layout="vertical" itemGap="0" mouseEnabled="true" mouseChildren="true" alignX="center" alignY="top" marginTop="70"
+                          cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+                <itemrenderer width="815" height="36" autoSizeWidth="false"
+                              autoSizeHeight="false" itemGap="0"
+                              mouseEnabled="true" mouseChildren="true">
+                    <coreponent name="self_bg" width="815" height="36" registeredSkinName="expendition_tab4_rank_list_item_self_bg"/>
+                    <Label name="rank_label" width="100" height="20" alignX="left" alignY="center" registeredTextStyleName="expendition_tab4_list_item_rank_label" registeredSkinName="commonui_default_label" text="localize:window_dse_rank"/>            
+                    <Label name="name_label" width="265" height="20" alignX="left" marginLeft="105" alignY="center" registeredTextStyleName="expendition_tab4_list_item_label" registeredSkinName="commonui_default_label" text="localize:window_dse_rank_name"/>            
+                    <Label name="level_label" width="100" height="20" alignX="left" marginLeft="405" alignY="center" registeredTextStyleName="expendition_tab4_list_item_rank_label" registeredSkinName="commonui_default_label" text="localize:window_dse_rank_level"/>            
+                    <Label name="time_label" width="100" height="20" alignX="left" marginLeft="580" alignY="center" registeredTextStyleName="expendition_tab4_list_item_label" registeredSkinName="commonui_default_label" text="localize:label_bswin_deflector_time"/>
+             
+                </itemrenderer>
+            </itemlist> 
+            <scrollbar name="expedition_tab4_scroll_bar"
+                           width="10" height="390" autoSizeHeight="false" direction="vertical"
+                           marginTop="55" alignX="right" marginRight="5"
+                           registeredSkinName="commonui_scrollbar_bgnd">
+                            <button name="buttonSlider"
+                                    width="8" height="10" alignX="center"
+                                    registeredSkinName="commonui_scrollbar_slider"/>
+            </scrollbar>
+            <bind source="expedition_tab4_scroll_bar"
+              target="rank_list"
+              type="scrollcontainer"/>
+            <coreponent name="self_rank" width="815" height="30" alignX="center" alignY="top" marginTop="450">
+                    <coreponent name="self_rank_bg" width="815" height="30" alignX="left" alignY="top" registeredSkinName="expendition_tab4_rank_list_title"/>
+                    <Label name="self_rank_label" width="100" height="20" alignX="left" marginLeft="0" alignY="top" marginTop="5" registeredTextStyleName="expendition_tab4_list_item_rank_label" registeredSkinName="commonui_default_label" />            
+                    <Label name="self_name_label" width="265" height="20" alignX="left" marginLeft="105" alignY="top" marginTop="5" registeredTextStyleName="expendition_tab4_list_item_label" registeredSkinName="commonui_default_label" />            
+                    <Label name="self_level_label" width="100" height="20" alignX="left" marginLeft="405" alignY="top" marginTop="5" registeredTextStyleName="expendition_tab4_list_item_rank_label" registeredSkinName="commonui_default_label" />            
+                    <Label name="self_time_label" width="100" height="20" alignX="left" marginLeft="580" alignY="top" marginTop="5" registeredTextStyleName="expendition_tab4_list_item_label" registeredSkinName="commonui_default_label" />
+            </coreponent>          
+        </coreponent>
+    </template>
+    <container name="root"
+               width="845" height="500" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChildren="true">
+        <reference template="expedition_tab4"/>
+    </container>
+   
+</root>

@@ -1,0 +1,31 @@
+name: darkorbit-multiplayer-dev
+services:
+  postgres:
+    image: postgres:18@sha256:edb0c08dc33befd0262ab3b5cf1c4f3f8cfd8b09e88c05b45adee29d6761ddb6
+    environment:
+      POSTGRES_DB: darkorbit_development
+      POSTGRES_USER: darkorbit_dev
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Use tools/start-development.ps1}
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U darkorbit_dev -d darkorbit_development"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    restart: "no"
+  redis:
+    image: redis:8@sha256:97ec88159e6d7cfb5ddef9015386087d58a912de80112f06ebdfa78fa5989901
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?Use tools/start-development.ps1}
+    command: ["sh", "-c", "exec redis-server --appendonly yes --requirepass \"$$REDIS_PASSWORD\""]
+    ports:
+      - "127.0.0.1:56379:6379"
+    volumes:
+      - redis-data:/data
+    restart: "no"
+volumes:
+  postgres-data:
+  redis-data:

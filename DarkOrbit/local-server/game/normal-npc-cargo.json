@@ -1,0 +1,1216 @@
+{
+  "annihilator": [
+    {
+      "type": 0,
+      "amount": 300
+    },
+    {
+      "type": 1,
+      "amount": 300
+    },
+    {
+      "type": 2,
+      "amount": 300
+    },
+    {
+      "type": 3,
+      "amount": 2
+    },
+    {
+      "type": 4,
+      "amount": 48
+    },
+    {
+      "type": 5,
+      "amount": 48
+    },
+    {
+      "type": 6,
+      "amount": 12
+    }
+  ],
+  "barracuda": [
+    {
+      "type": 0,
+      "amount": 200
+    },
+    {
+      "type": 1,
+      "amount": 200
+    },
+    {
+      "type": 2,
+      "amount": 200
+    },
+    {
+      "type": 4,
+      "amount": 24
+    },
+    {
+      "type": 5,
+      "amount": 24
+    },
+    {
+      "type": 6,
+      "amount": 4
+    }
+  ],
+  "battleray": [
+    {
+      "type": 0,
+      "amount": 400
+    },
+    {
+      "type": 1,
+      "amount": 400
+    },
+    {
+      "type": 2,
+      "amount": 400
+    },
+    {
+      "type": 3,
+      "amount": 4
+    },
+    {
+      "type": 4,
+      "amount": 64
+    },
+    {
+      "type": 5,
+      "amount": 64
+    },
+    {
+      "type": 6,
+      "amount": 20
+    }
+  ],
+  "boss-devolarium": [
+    {
+      "type": 0,
+      "amount": 400
+    },
+    {
+      "type": 1,
+      "amount": 400
+    },
+    {
+      "type": 2,
+      "amount": 400
+    },
+    {
+      "type": 3,
+      "amount": 8
+    },
+    {
+      "type": 4,
+      "amount": 64
+    },
+    {
+      "type": 5,
+      "amount": 64
+    },
+    {
+      "type": 6,
+      "amount": 8
+    }
+  ],
+  "boss-kristallin": [
+    {
+      "type": 0,
+      "amount": 400
+    },
+    {
+      "type": 1,
+      "amount": 400
+    },
+    {
+      "type": 2,
+      "amount": 400
+    },
+    {
+      "type": 3,
+      "amount": 8
+    },
+    {
+      "type": 4,
+      "amount": 64
+    },
+    {
+      "type": 5,
+      "amount": 64
+    },
+    {
+      "type": 6,
+      "amount": 4
+    }
+  ],
+  "boss-kristallon": [
+    {
+      "type": 0,
+      "amount": 1200
+    },
+    {
+      "type": 1,
+      "amount": 1200
+    },
+    {
+      "type": 2,
+      "amount": 1200
+    },
+    {
+      "type": 3,
+      "amount": 64
+    },
+    {
+      "type": 4,
+      "amount": 512
+    },
+    {
+      "type": 5,
+      "amount": 512
+    },
+    {
+      "type": 6,
+      "amount": 64
+    }
+  ],
+  "boss-lordakia": [
+    {
+      "type": 0,
+      "amount": 80
+    },
+    {
+      "type": 1,
+      "amount": 80
+    },
+    {
+      "type": 2,
+      "amount": 80
+    },
+    {
+      "type": 3,
+      "amount": 1
+    },
+    {
+      "type": 4,
+      "amount": 10
+    },
+    {
+      "type": 6,
+      "amount": 1
+    }
+  ],
+  "boss-lordakium": [
+    {
+      "type": 0,
+      "amount": 1200
+    },
+    {
+      "type": 1,
+      "amount": 1200
+    },
+    {
+      "type": 2,
+      "amount": 1200
+    },
+    {
+      "type": 3,
+      "amount": 32
+    },
+    {
+      "type": 4,
+      "amount": 256
+    },
+    {
+      "type": 5,
+      "amount": 256
+    },
+    {
+      "type": 6,
+      "amount": 32
+    }
+  ],
+  "boss-mordon": [
+    {
+      "type": 0,
+      "amount": 320
+    },
+    {
+      "type": 1,
+      "amount": 320
+    },
+    {
+      "type": 2,
+      "amount": 320
+    },
+    {
+      "type": 3,
+      "amount": 4
+    },
+    {
+      "type": 4,
+      "amount": 32
+    },
+    {
+      "type": 5,
+      "amount": 32
+    },
+    {
+      "type": 6,
+      "amount": 8
+    }
+  ],
+  "boss-saimon": [
+    {
+      "type": 0,
+      "amount": 160
+    },
+    {
+      "type": 1,
+      "amount": 160
+    },
+    {
+      "type": 2,
+      "amount": 160
+    },
+    {
+      "type": 3,
+      "amount": 2
+    },
+    {
+      "type": 4,
+      "amount": 8
+    },
+    {
+      "type": 5,
+      "amount": 8
+    },
+    {
+      "type": 6,
+      "amount": 1
+    }
+  ],
+  "boss-sibelon": [
+    {
+      "type": 0,
+      "amount": 800
+    },
+    {
+      "type": 1,
+      "amount": 800
+    },
+    {
+      "type": 2,
+      "amount": 800
+    },
+    {
+      "type": 3,
+      "amount": 16
+    },
+    {
+      "type": 4,
+      "amount": 128
+    },
+    {
+      "type": 5,
+      "amount": 128
+    },
+    {
+      "type": 6,
+      "amount": 16
+    }
+  ],
+  "boss-sibelonit": [
+    {
+      "type": 0,
+      "amount": 400
+    },
+    {
+      "type": 1,
+      "amount": 400
+    },
+    {
+      "type": 2,
+      "amount": 400
+    },
+    {
+      "type": 3,
+      "amount": 8
+    },
+    {
+      "type": 4,
+      "amount": 32
+    },
+    {
+      "type": 5,
+      "amount": 32
+    },
+    {
+      "type": 6,
+      "amount": 4
+    }
+  ],
+  "boss-streuner": [
+    {
+      "type": 0,
+      "amount": 40
+    },
+    {
+      "type": 1,
+      "amount": 40
+    },
+    {
+      "type": 2,
+      "amount": 10
+    }
+  ],
+  "boss-streuner-upper": [
+    {
+      "type": 0,
+      "amount": 320
+    },
+    {
+      "type": 1,
+      "amount": 320
+    },
+    {
+      "type": 2,
+      "amount": 320
+    },
+    {
+      "type": 3,
+      "amount": 4
+    },
+    {
+      "type": 4,
+      "amount": 32
+    },
+    {
+      "type": 5,
+      "amount": 32
+    }
+  ],
+  "cubikon": [
+    {
+      "type": 0,
+      "amount": 1200
+    },
+    {
+      "type": 1,
+      "amount": 1200
+    },
+    {
+      "type": 2,
+      "amount": 1200
+    },
+    {
+      "type": 3,
+      "amount": 64
+    },
+    {
+      "type": 4,
+      "amount": 512
+    },
+    {
+      "type": 5,
+      "amount": 512
+    },
+    {
+      "type": 6,
+      "amount": 64
+    }
+  ],
+  "devolarium": [
+    {
+      "type": 0,
+      "amount": 100
+    },
+    {
+      "type": 1,
+      "amount": 100
+    },
+    {
+      "type": 2,
+      "amount": 100
+    },
+    {
+      "type": 4,
+      "amount": 16
+    },
+    {
+      "type": 5,
+      "amount": 16
+    },
+    {
+      "type": 6,
+      "amount": 2
+    }
+  ],
+  "interceptor": [
+    {
+      "type": 0,
+      "amount": 100
+    },
+    {
+      "type": 1,
+      "amount": 100
+    },
+    {
+      "type": 2,
+      "amount": 100
+    },
+    {
+      "type": 4,
+      "amount": 18
+    },
+    {
+      "type": 5,
+      "amount": 18
+    }
+  ],
+  "kristallin": [
+    {
+      "type": 0,
+      "amount": 100
+    },
+    {
+      "type": 1,
+      "amount": 100
+    },
+    {
+      "type": 2,
+      "amount": 100
+    },
+    {
+      "type": 4,
+      "amount": 16
+    },
+    {
+      "type": 5,
+      "amount": 16
+    },
+    {
+      "type": 6,
+      "amount": 1
+    }
+  ],
+  "kristallon": [
+    {
+      "type": 0,
+      "amount": 300
+    },
+    {
+      "type": 1,
+      "amount": 300
+    },
+    {
+      "type": 2,
+      "amount": 300
+    },
+    {
+      "type": 4,
+      "amount": 128
+    },
+    {
+      "type": 5,
+      "amount": 128
+    },
+    {
+      "type": 6,
+      "amount": 16
+    }
+  ],
+  "lordakia": [
+    {
+      "type": 0,
+      "amount": 20
+    },
+    {
+      "type": 1,
+      "amount": 20
+    },
+    {
+      "type": 2,
+      "amount": 20
+    }
+  ],
+  "lordakium": [
+    {
+      "type": 0,
+      "amount": 300
+    },
+    {
+      "type": 1,
+      "amount": 300
+    },
+    {
+      "type": 2,
+      "amount": 300
+    },
+    {
+      "type": 4,
+      "amount": 64
+    },
+    {
+      "type": 5,
+      "amount": 64
+    },
+    {
+      "type": 6,
+      "amount": 8
+    }
+  ],
+  "mordon": [
+    {
+      "type": 0,
+      "amount": 80
+    },
+    {
+      "type": 1,
+      "amount": 80
+    },
+    {
+      "type": 2,
+      "amount": 80
+    },
+    {
+      "type": 4,
+      "amount": 8
+    },
+    {
+      "type": 5,
+      "amount": 8
+    },
+    {
+      "type": 6,
+      "amount": 1
+    }
+  ],
+  "protegit": [
+    {
+      "type": 0,
+      "amount": 100
+    },
+    {
+      "type": 1,
+      "amount": 100
+    },
+    {
+      "type": 2,
+      "amount": 100
+    },
+    {
+      "type": 4,
+      "amount": 16
+    },
+    {
+      "type": 5,
+      "amount": 16
+    },
+    {
+      "type": 6,
+      "amount": 2
+    }
+  ],
+  "saboteur": [
+    {
+      "type": 0,
+      "amount": 200
+    },
+    {
+      "type": 1,
+      "amount": 200
+    },
+    {
+      "type": 2,
+      "amount": 200
+    },
+    {
+      "type": 4,
+      "amount": 32
+    },
+    {
+      "type": 5,
+      "amount": 32
+    },
+    {
+      "type": 6,
+      "amount": 8
+    }
+  ],
+  "saimon": [
+    {
+      "type": 0,
+      "amount": 40
+    },
+    {
+      "type": 1,
+      "amount": 40
+    },
+    {
+      "type": 2,
+      "amount": 40
+    },
+    {
+      "type": 4,
+      "amount": 2
+    },
+    {
+      "type": 5,
+      "amount": 2
+    }
+  ],
+  "sibelon": [
+    {
+      "type": 0,
+      "amount": 200
+    },
+    {
+      "type": 1,
+      "amount": 200
+    },
+    {
+      "type": 2,
+      "amount": 200
+    },
+    {
+      "type": 4,
+      "amount": 32
+    },
+    {
+      "type": 5,
+      "amount": 32
+    },
+    {
+      "type": 6,
+      "amount": 4
+    }
+  ],
+  "sibelonit": [
+    {
+      "type": 0,
+      "amount": 100
+    },
+    {
+      "type": 1,
+      "amount": 100
+    },
+    {
+      "type": 2,
+      "amount": 100
+    },
+    {
+      "type": 4,
+      "amount": 8
+    },
+    {
+      "type": 5,
+      "amount": 8
+    },
+    {
+      "type": 6,
+      "amount": 1
+    }
+  ],
+  "streuner": [
+    {
+      "type": 0,
+      "amount": 10
+    },
+    {
+      "type": 1,
+      "amount": 10
+    }
+  ],
+  "streuner-upper": [
+    {
+      "type": 0,
+      "amount": 160
+    },
+    {
+      "type": 1,
+      "amount": 160
+    },
+    {
+      "type": 2,
+      "amount": 160
+    },
+    {
+      "type": 3,
+      "amount": 4
+    },
+    {
+      "type": 4,
+      "amount": 15
+    },
+    {
+      "type": 5,
+      "amount": 15
+    },
+    {
+      "type": 6,
+      "amount": 1
+    }
+  ],
+  "uber-annihilator": [
+    {
+      "type": 0,
+      "amount": 1200
+    },
+    {
+      "type": 1,
+      "amount": 1200
+    },
+    {
+      "type": 2,
+      "amount": 1200
+    },
+    {
+      "type": 3,
+      "amount": 8
+    },
+    {
+      "type": 4,
+      "amount": 200
+    },
+    {
+      "type": 5,
+      "amount": 200
+    },
+    {
+      "type": 6,
+      "amount": 48
+    },
+    {
+      "type": 8,
+      "amount": 4
+    }
+  ],
+  "uber-barracuda": [
+    {
+      "type": 0,
+      "amount": 1000
+    },
+    {
+      "type": 1,
+      "amount": 1000
+    },
+    {
+      "type": 2,
+      "amount": 1000
+    },
+    {
+      "type": 4,
+      "amount": 100
+    },
+    {
+      "type": 5,
+      "amount": 100
+    },
+    {
+      "type": 6,
+      "amount": 100
+    },
+    {
+      "type": 8,
+      "amount": 2
+    }
+  ],
+  "uber-battleray": [
+    {
+      "type": 0,
+      "amount": 1400
+    },
+    {
+      "type": 1,
+      "amount": 1400
+    },
+    {
+      "type": 2,
+      "amount": 1400
+    },
+    {
+      "type": 3,
+      "amount": 8
+    },
+    {
+      "type": 4,
+      "amount": 250
+    },
+    {
+      "type": 5,
+      "amount": 250
+    },
+    {
+      "type": 6,
+      "amount": 80
+    },
+    {
+      "type": 8,
+      "amount": 8
+    }
+  ],
+  "uber-devolarium": [
+    {
+      "type": 0,
+      "amount": 800
+    },
+    {
+      "type": 1,
+      "amount": 800
+    },
+    {
+      "type": 2,
+      "amount": 800
+    },
+    {
+      "type": 3,
+      "amount": 16
+    },
+    {
+      "type": 4,
+      "amount": 128
+    },
+    {
+      "type": 5,
+      "amount": 128
+    },
+    {
+      "type": 6,
+      "amount": 16
+    }
+  ],
+  "uber-interceptor": [
+    {
+      "type": 0,
+      "amount": 800
+    },
+    {
+      "type": 1,
+      "amount": 800
+    },
+    {
+      "type": 2,
+      "amount": 800
+    },
+    {
+      "type": 4,
+      "amount": 72
+    },
+    {
+      "type": 5,
+      "amount": 72
+    },
+    {
+      "type": 6,
+      "amount": 16
+    },
+    {
+      "type": 8,
+      "amount": 2
+    }
+  ],
+  "uber-kristallin": [
+    {
+      "type": 0,
+      "amount": 800
+    },
+    {
+      "type": 1,
+      "amount": 800
+    },
+    {
+      "type": 2,
+      "amount": 800
+    },
+    {
+      "type": 3,
+      "amount": 16
+    },
+    {
+      "type": 4,
+      "amount": 128
+    },
+    {
+      "type": 5,
+      "amount": 128
+    },
+    {
+      "type": 6,
+      "amount": 8
+    }
+  ],
+  "uber-kristallon": [
+    {
+      "type": 0,
+      "amount": 2400
+    },
+    {
+      "type": 1,
+      "amount": 2400
+    },
+    {
+      "type": 2,
+      "amount": 2400
+    },
+    {
+      "type": 3,
+      "amount": 128
+    },
+    {
+      "type": 4,
+      "amount": 1024
+    },
+    {
+      "type": 5,
+      "amount": 1024
+    },
+    {
+      "type": 6,
+      "amount": 128
+    }
+  ],
+  "uber-lordakia": [
+    {
+      "type": 0,
+      "amount": 160
+    },
+    {
+      "type": 1,
+      "amount": 160
+    },
+    {
+      "type": 2,
+      "amount": 160
+    },
+    {
+      "type": 3,
+      "amount": 2
+    },
+    {
+      "type": 4,
+      "amount": 20
+    }
+  ],
+  "uber-lordakium": [
+    {
+      "type": 0,
+      "amount": 2400
+    },
+    {
+      "type": 1,
+      "amount": 2400
+    },
+    {
+      "type": 2,
+      "amount": 2400
+    },
+    {
+      "type": 3,
+      "amount": 64
+    },
+    {
+      "type": 4,
+      "amount": 512
+    },
+    {
+      "type": 5,
+      "amount": 512
+    },
+    {
+      "type": 6,
+      "amount": 64
+    }
+  ],
+  "uber-mordon": [
+    {
+      "type": 0,
+      "amount": 640
+    },
+    {
+      "type": 1,
+      "amount": 640
+    },
+    {
+      "type": 2,
+      "amount": 640
+    },
+    {
+      "type": 3,
+      "amount": 8
+    },
+    {
+      "type": 4,
+      "amount": 64
+    },
+    {
+      "type": 5,
+      "amount": 64
+    },
+    {
+      "type": 6,
+      "amount": 16
+    }
+  ],
+  "uber-saboteur": [
+    {
+      "type": 0,
+      "amount": 1500
+    },
+    {
+      "type": 1,
+      "amount": 1500
+    },
+    {
+      "type": 2,
+      "amount": 1500
+    },
+    {
+      "type": 4,
+      "amount": 120
+    },
+    {
+      "type": 5,
+      "amount": 120
+    },
+    {
+      "type": 6,
+      "amount": 32
+    },
+    {
+      "type": 8,
+      "amount": 2
+    }
+  ],
+  "uber-saimon": [
+    {
+      "type": 0,
+      "amount": 320
+    },
+    {
+      "type": 1,
+      "amount": 320
+    },
+    {
+      "type": 2,
+      "amount": 320
+    },
+    {
+      "type": 3,
+      "amount": 4
+    },
+    {
+      "type": 4,
+      "amount": 16
+    },
+    {
+      "type": 5,
+      "amount": 16
+    },
+    {
+      "type": 6,
+      "amount": 2
+    }
+  ],
+  "uber-sibelon": [
+    {
+      "type": 0,
+      "amount": 1600
+    },
+    {
+      "type": 1,
+      "amount": 1600
+    },
+    {
+      "type": 2,
+      "amount": 1600
+    },
+    {
+      "type": 3,
+      "amount": 32
+    },
+    {
+      "type": 4,
+      "amount": 256
+    },
+    {
+      "type": 5,
+      "amount": 256
+    },
+    {
+      "type": 6,
+      "amount": 32
+    }
+  ],
+  "uber-sibelonit": [
+    {
+      "type": 0,
+      "amount": 800
+    },
+    {
+      "type": 1,
+      "amount": 800
+    },
+    {
+      "type": 2,
+      "amount": 800
+    },
+    {
+      "type": 3,
+      "amount": 16
+    },
+    {
+      "type": 4,
+      "amount": 64
+    },
+    {
+      "type": 5,
+      "amount": 64
+    },
+    {
+      "type": 6,
+      "amount": 8
+    }
+  ],
+  "uber-streuner": [
+    {
+      "type": 0,
+      "amount": 80
+    },
+    {
+      "type": 1,
+      "amount": 80
+    },
+    {
+      "type": 2,
+      "amount": 20
+    }
+  ],
+  "uber-streuner-upper": [
+    {
+      "type": 0,
+      "amount": 1200
+    },
+    {
+      "type": 1,
+      "amount": 1200
+    },
+    {
+      "type": 2,
+      "amount": 1200
+    },
+    {
+      "type": 3,
+      "amount": 16
+    },
+    {
+      "type": 4,
+      "amount": 120
+    },
+    {
+      "type": 5,
+      "amount": 120
+    }
+  ]
+}

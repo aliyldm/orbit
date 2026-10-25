@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="chatWindowUIAssets"/>
+        <library id="traininggroundsUI"/>
+
+    </libraries>
+
+    <textstyle name="ship_boost_event_info"
+               textColor="0x999898"
+               type="dynamic"
+               fontSize="9"
+               autoSize="left"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               align="left"/>
+
+    <textstyle
+            name="ship_boost_event_effects_description"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"/>
+
+
+    <textstyle
+            name="ship_boost_event_headline"
+            textColor="0xffcc00"
+            type="dynamic"
+            fontSize="12"
+            autoSize="center"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="false"
+            align="center"/>
+
+    <textstyle
+            name="ship_boost_event_overview_ttip_title"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"
+            bold="true"/>
+
+    <textstyle
+            name="ship_boost_event_overview_ttip_content"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"
+            bold="false"/>
+
+    <textstyle
+            name="ship_boost_event_status"
+            textColor="0xffcc00"
+            type="dynamic"
+            fontSize="12"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="true"
+            align="center"/>
+
+    <textstyle
+            name="ship_boost_event_timer"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="10"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="false"
+            align="right"/>
+
+    <skin name="ship_boost_event_upcoming_layer" classname="BasicSkin">
+        <layer classname="FilledBoxLayer"  fillColor="0x004b55" fillAlpha="0.5"  >normal</layer>
+    </skin>
+
+    <skin name="ship_boost_event_active_layer" classname="BasicSkin">
+        <layer classname="FilledBoxLayer"  fillColor="0x00bcd4" fillAlpha="0.5"  >normal</layer>
+    </skin>
+
+    <skin name="ship_boost_event_scrollbar_bgnd" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="1">normal</layer>
+    </skin>
+
+    <skin name="ship_boost_event_item_outline" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" lineColor="0x00ccff" fillAlpha="0" lineAlpha="1">normal</layer>
+    </skin>
+
+    <skin name="ship_boost_event_ttip_frame" library="traininggroundsUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" scale9grid="1,1,2,2" libraryID="ttip_frame">normal</layer>
+    </skin>
+
+    <skin name="ship_boost_event_obj_completed_blocker" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.7">normal</layer>
+    </skin>
+
+    <skin name="battlebass_outline" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0" lineColor="0x37687F" lineAlpha="1">normal</layer>
+    </skin>
+
+    <template name="SHIP_BOOST_EVENT_OVERVIEW">
+        <container name="parent" width="511" marginLeft="20" marginRight="20" height="550"
+                   alignX="left">
+            <container name="topmost" width="510" marginTop="10" height="30">
+                <label name="ship_boost_status" width="100" marginLeft="8" autoSizeTextHeight="true" text="Status:" registeredTextStyleName="ship_boost_event_status"/>
+                <label name="ship_boost_status_message" width="280" marginLeft="120" autoSizeTextHeight="true" text="Switch your ship to take advantage of the current ongoing Fever effect on Galactic Strife maps!"
+                       registeredTextStyleName="ship_boost_event_effects_description"/>
+            </container>
+            <container name="top" width="511" marginTop="56" alignX="center" height="31">
+                <coreponent name="bg" width="511" autoSizeHeight="true" autoHeightMode="parent" registeredSkinName="commonui_darklayer"/>
+                <label text="localize:ship_boost_schedule_header_time"
+                       registeredSkinName="commonui_default_label" autoSizeTextHeight="true"
+                       width="160" marginLeft="8" marginTop="5" registeredTextStyleName="ship_boost_event_headline"/>
+                <container name="top_right" width="351" height="31" marginLeft="160">
+                    <label text="localize:ship_boost_schedule_header_effects"
+                           registeredSkinName="commonui_default_label" width="351" marginTop="5"
+                           autoSizeTextHeight="true" registeredTextStyleName="ship_boost_event_headline"/>
+                    <coreponent registeredSkinName="battlebass_outline" width="351" height="31"/>
+                </container>
+
+                <coreponent registeredSkinName="battlebass_outline" width="511" height="31"/>
+            </container>
+            <container name="body" width="511" marginTop="87" height="451" marginLeft="0">
+                <itemlist name="ship_boost_event_slotslist" width="410"
+                          autoSizeHeight="true"
+                          autoSizeWidth="true"
+                          itemGap="0"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          layout="vertical"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask">
+
+
+                    <itemrenderer width="510" autoSizeWidth="false" height="90" mouseEnabled="true"
+                                  mouseChildren="true">
+                        <coreponent name="bg" width="510" autoSizeHeight="true" autoHeightMode="parent" registeredSkinName="commonui_darklayer"/>
+                        <label name="slot" text="Mondays, %STARTTIME% - %ENDTIME%" registeredSkinName="commonui_default_label" marginTop="7" marginLeft="8"
+                               alignX="left" width="158" autoSizeTextHeight="true" registeredTextStyleName="ship_boost_event_effects_description"/>
+
+
+                        <coreponent name="vertical_divider_1" width="1" marginLeft="160" height="90"/>
+
+                        <container name="effect_col" width="347" marginLeft="160" height="90" alignX="left">
+                            <label name="effect" text="The following ships will gain 10% increased damage to player ships, 10% increased speed and 10% ship skills cooldown reduction: Berserker, Venom, Mimesis, Keres, Zephyr and Retiarus." registeredSkinName="commonui_default_label" marginTop="7" marginLeft="4"
+                                   width="347" autoSizeTextHeight="true" registeredTextStyleName="ship_boost_event_effects_description"/>
+                        </container>
+
+                        <coreponent registeredSkinName="battlebass_outline" width="510" height="90"/>
+
+                    </itemrenderer>
+
+
+                </itemlist>
+                <scrollbar name="ship_boost_event_slotslist_scrollBar" width="5" autoSizeHeight="true" direction="vertical"
+                           marginTop="1"
+                           marginBottom="1"
+                           marginRight="1"
+                           alignX="right"
+                           registeredSkinName="ship_boost_event_scrollbar_bgnd">
+                    <button name="buttonSlider" alignX="center" width="5" height="10"
+                            registeredSkinName="commonui_scrollbar_slider"/>
+                </scrollbar>
+                <bind source="ship_boost_event_slotslist_scrollBar" target="ship_boost_event_slotslist"/>
+            </container>
+
+            <container name="bottom" width="410" marginTop="523" height="53">
+                <label name="ship_boost_status" width="120" autoSizeTextHeight="true" text="Next Fever:" marginTop="25" registeredTextStyleName="ship_boost_event_status"/>
+                <label name="ship_boost_timer" width="260" marginRight="27" marginTop="25" alignX="right" autoSizeTextHeight="true" text="00:01"
+                       registeredTextStyleName="ship_boost_event_timer"/>
+                <button name="fever_btn" registeredSkinName="commonui_info_button" alignX="right"
+                        marginTop="24" marginRight="2" tooltipData="localize:ship_boost_ttip"/>
+            </container>
+        </container>
+
+
+    </template>
+
+
+
+
+    <container name="root" width="450" height="550" mouseEnabled="false" mouseChildren="true">
+        <reference template="SHIP_BOOST_EVENT_OVERVIEW"/>
+    </container>
+</root>

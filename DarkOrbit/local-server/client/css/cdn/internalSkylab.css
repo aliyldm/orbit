@@ -1,0 +1,1131 @@
+#skylab {
+    position: relative;
+    left: 1px;
+    top: 0px;
+    width: 772px;
+    height: 407px;
+    background-image: url(/do_img/global/pilotSheet/skylab/rework/background.jpg?__cv=f4b44b08b683b3404bec38921eb92e00);
+    background-repeat:no-repeat;
+    font-size: 11px;
+    color: #f2b05a;
+}
+#subnav {
+    position:absolute;
+    top:-26px;
+    left:4px;
+}
+#skylabContent{
+/*    position: relative;*/
+    left: 16px;
+    top: 21px;
+    width: 772px;
+    height: 401px;
+    background-image: url(/do_img/global/pilotSheet/skylab/rework/background.jpg?__cv=f4b44b08b683b3404bec38921eb92e00);
+    background-repeat:no-repeat;
+}
+
+.tabButtonActive{
+    background-image:  url(/do_img/global/pilotSheet/profilePage/tab_active.jpg?__cv=af06774e97a98879d2b4cd781b350400);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.tabButtonInActive{
+    background-image:  url(/do_img/global/pilotSheet/profilePage/tab_inactive1.jpg?__cv=491773b46f05dd34c2ae423de5e95800);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.tabButtonRollOver{
+    background-image:  url(/do_img/global/pilotSheet/profilePage/tab_rollover.jpg?__cv=4e701de4cf154f4df18a7b68be13dd00);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.tabLabelActive{
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    /*top: 5px;*/
+}
+
+.tabLabelInActive{
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    /*top: 5px;*/
+}
+
+#backgroundPrometiumCollector {
+    position: absolute;
+    left: 207px;
+    top: 141px;
+    width: 112px;
+    height: 66px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/prometium_collector_layer.gif?__cv=0a4f9247291dc33a22a69ac16eb6c800);
+}
+#uplinkPrometiumCollector {
+    position: absolute;
+    left: 223px;
+    top: 81px;
+    width: 33px;
+    height: 70px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/uplink_prometiumCollector.png?__cv=89e34c608eedcd2261bce25e1c854e00);
+}
+#backgroundEnduriumCollector {
+    position: absolute;
+    left: 126px;
+    top: 192px;
+    width: 73px;
+    height: 87px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/endurium_collector_layer.gif?__cv=4a0ce8fdfbf38d9dae3472d36b787900);
+}
+#uplinkEnduriumCollector {
+    position: absolute;
+    left: 161px;
+    top: 132px;
+    width: 20px;
+    height: 58px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/uplink_enduriumCollector.png?__cv=26bde8286f063f609068e3cc10102400);
+}
+#backgroundTerbiumCollector {
+    position: absolute;
+    left: 54px;
+    top: 244px;
+    width: 73px;
+    height: 78px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/terbium_collector_layer.gif?__cv=c1462ad34e1f4027de3fa4de3a106c00);
+}
+#uplinkTerbiumCollector {
+    position: absolute;
+    left: 66px;
+    top: 215px;
+    width: 4px;
+    height: 30px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/uplink_terbiumCollector.png?__cv=3d22fa8cfd4de49989d60f139b1a3e00);
+}
+#backgroundPrometidRefinery {
+    position: absolute;
+    left: 389px;
+    top: 181px;
+    width: 79px;
+    height: 62px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/prometid_refinery_layer.gif?__cv=5083137a50be7d6cb576d4a3a2058300);
+}
+#uplinkPrometidRefinery {
+    position: absolute;
+    left: 458px;
+    top: 90px;
+    width: 63px;
+    height: 113px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/uplink_prometidRefinery.png?__cv=e714d2c802f8e8cbe8adce980ab4f700);
+}
+#backgroundDuraniumRefinery {
+    position: absolute;
+    left: 452px;
+    top: 195px;
+    width: 82px;
+    height: 64px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/duranium_refinery_layer.gif?__cv=4cbb2cccb8f78afc45e723b3bbd1f500);
+}
+#uplinkDuraniumRefinery {
+    position: absolute;
+    left: 506px;
+    top: 137px;
+    width: 86px;
+    height: 76px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/uplink_duraniumRefinery.png?__cv=8774d19be94170df76dc545f5c5a8a00);
+}
+#backgroundPromeriumRefinery {
+    position: absolute;
+    left: 387px;
+    top: 258px;
+    width: 75px;
+    height: 56px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/promerium_refinery_layer.gif?__cv=3e7177491565c58911d6417411a2ee00);
+}
+#uplinkPromeriumRefinery {
+    position: absolute;
+    left: 458px;
+    top: 208px;
+    width: 138px;
+    height: 70px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/uplink_promeriumRefinery.png?__cv=318fcf994466fdced19b12e31097d600);
+}
+#backgroundSepromRefinery {
+    position: absolute;
+    left: 387px;
+    top: 313px;
+    width: 74px;
+    height: 57px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/seprom_refinery_layer.gif?__cv=841f7a3b0f8a6bf18bd0e027a5824300);
+}
+#uplinkSepromRefinery {
+    position: absolute;
+    left: 475px;
+    top: 355px;
+    width: 120px;
+    height: 46px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/uplink_sepromRefinery.png?__cv=a1ea2b14dd092db3279eaf6028c44300);
+}
+#backgroundXenoModule {
+    position: absolute;
+    left: 450px;
+    top: 267px;
+    width: 64px;
+    height: 62px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/xeno_module_layer.gif?__cv=c3a7f5faf6a97561e7f44380535da900);
+}
+#uplinkXenoModule {
+    position: absolute;
+    left: 526px;
+    top: 301px;
+    width: 116px;
+    height: 23px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/uplink_xenoModule.png?__cv=371d8327993738e316259ff1fc4fca00);
+}
+
+#skylab #modules {
+    position: absolute;
+    left: 16px;
+    top: 56px;
+    width: 772px;
+    height: 364px;
+}
+
+#skylab .module_large {
+    z-index: 20;
+    left: 195px;
+    top: -20px;
+    width: 359px;
+}
+.skylab_module_header {
+    width: inherit;
+    height: 39px;
+    background:  url(/do_img/global/skylab/modules_large/popup_header.png?__cv=45b66638c841182575af1ff7b2275c00) no-repeat center;
+}
+.skylab_module_close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background:  url(/do_img/global/skylab/modules_large/close_button_sprite.png?__cv=4a92cc513e4f7aecf46370e1bd4bfd00) no-repeat center -24px;
+}
+.skylab_module_close:hover {
+    background-position: center 0;
+}
+.skylab_module_close:active {
+    background-position: center -48px;
+}
+.skylab_module_middle {
+    width: inherit;
+    background:  url(/do_img/global/skylab/modules_large/popup_middle.png?__cv=cf1194535ea5ec52f0d4e62057db8900) repeat-y center top;
+    padding-top: 15px;
+}
+.skylab_module_tabs {
+    width: 326px;
+    margin: 0 auto 0;
+    height: 18px;
+}
+.skylab_module_tab {
+    width: 76px;
+    height: 16px;
+    background:  url(/do_img/global/skylab/modules_large/subtab_sprite_76x16px.png?__cv=be1eb93396e550273c6776dea8532f00) no-repeat 0 0;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    padding-top: 2px;
+    color: #BFBFBF;
+}
+.skylab_module_tab.tab_third {
+    background-image:  url(/do_img/global/skylab/modules_large/subtab_sprite_120x16px.png?__cv=7bbf331202e73bf92f638bb69fdb3000);
+    width: 120px;
+}
+.skylab_module_tab:hover {
+    background-position: 0 -36px;
+}
+.skylab_module_tab.tab_active {
+    background-position: 0 -18px;
+    color: #FFFFFF;
+}
+.skylab_module_content {
+    background:  url(/do_img/global/skylab/modules_large/content_bg_326x243px.png?__cv=66b024f555a2c46f7b23d8838113f000) no-repeat center;
+    width: 326px;
+    height: 243px;
+    margin: 0 auto;
+}
+.skylab_module_footer {
+    width: inherit;
+    height: 49px;
+    background:  url(/do_img/global/skylab/modules_large/popup_footer.png?__cv=bfe4f0cf9f8cf69d9cc53d2bda408500) no-repeat center;
+}
+
+
+#skylab .module_small {
+    /*background-image:  url(/do_img/global/pilotSheet/skylab/module_bg_small.png?__cv=dd6b124368acec7dc9059c7ff4ae4600);
+    width: 170px;
+    height: 36px;*/
+}
+#skylab .module {
+    position: absolute;
+}
+
+#skylab .module #corner_small_top_left_active {
+    padding:2px 0px 0px 4px;
+    background-image: url(/do_img/global/pilotSheet/skylab/box_small_left_top_active.png?__cv=c4e1b098f2490d4e975b1202e7012100);
+    background-repeat:no-repeat;
+}
+#skylab .module #corner_small_top_right_active {
+    background-image: url(/do_img/global/pilotSheet/skylab/box_small_right_top_active.png?__cv=bcc76b3cd44703e756dc3fad28095700);
+    background-repeat:no-repeat;
+}
+#skylab .module #corner_small_bottom_left_active {
+    padding:3px 0px 3px 4px;
+    background-image: url(/do_img/global/pilotSheet/skylab/box_small_left_bottom_active.png?__cv=92e7ab29bb7758c6f51607e29c0b6b00);
+    background-repeat:no-repeat;
+    background-position: left bottom;
+}
+#skylab .module #corner_small_bottom_right_active {
+    width:5px;
+    background-image: url(/do_img/global/pilotSheet/skylab/box_small_right_bottom_active.png?__cv=1c62afbbe59c9974afe2efbe0d39e000);
+    background-repeat:no-repeat;
+    background-position: right bottom;
+}
+#skylab .module #corner_small_top_left_inactive {
+    padding:2px 0px 0px 4px;
+    background-image: url(/do_img/global/pilotSheet/skylab/box_small_left_top_inactive.png?__cv=4f636a2e7c5fe28f00b7048b5ca97600);
+    background-repeat:no-repeat;
+}
+#skylab .module #corner_small_top_right_inactive {
+    background-image: url(/do_img/global/pilotSheet/skylab/box_small_right_top_inactive.png?__cv=3589d4ffd3690884d2d93710406a9b00);
+    background-repeat:no-repeat;
+}
+#skylab .module #corner_small_bottom_left_inactive {
+    padding:3px 0px 3px 4px;
+    background-image: url(/do_img/global/pilotSheet/skylab/box_small_left_bottom_inactive.png?__cv=8649a8d1e4bd24903392241df460a000);
+    background-repeat:no-repeat;
+    background-position: left bottom;
+}
+#skylab .module #corner_small_bottom_right_inactive {
+    width:5px;
+    background-image: url(/do_img/global/pilotSheet/skylab/box_small_right_bottom_inactive.png?__cv=b36406e936bb0a6c1ba0c9ddf3cb2600);
+    background-repeat:no-repeat;
+    background-position: right bottom;
+}
+
+
+
+#skylab .module .name {
+    font-weight: bold;
+    color: #f5ffff;
+    white-space: nowrap;
+}
+.skylab_module_header .name {
+    font-weight: normal !important;
+    color: #ffcc00 !important;
+    white-space: nowrap;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 14px;
+}
+#skylab .module .name_hint {
+    font-weight: bold;
+    color: #a9a9a9;
+    white-space: nowrap;
+}
+#skylab .module .name_inactive {
+    font-weight: bold;
+    color: #444444;
+    white-space: nowrap;
+}
+#skylab .module_infobox {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    width: 270px;
+}
+#skylab .module .cellview {
+    padding-left: 10px;
+}
+#skylab .module .level_icon {
+    float:left;
+    width: 14px;
+    height: 14px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/icon_level.png?__cv=b7c3e9cd04a0f0e0c8d76d022ddd1100);
+    background-repeat: no-repeat;
+}
+#skylab .module .level_icon_inactive {
+    float:left;
+    width: 14px;
+    height: 14px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/icon_level_inactive.png?__cv=cfba3d8890ecb3e74bce78aae39a2800);
+    background-repeat: no-repeat;
+}
+#skylab .module .level_icon_upgrade {
+    float:left;
+    width: 14px;
+    height: 14px;
+    background-image:  url(/do_img/global/skylab/modules_large/upgrade_icon.gif?__cv=cea0b317a17bcacbc8e66ccead585a00);
+    background-repeat: no-repeat;
+}
+#skylab .module .level {
+    float: left;
+}
+#skylab .module .efficiency_icon {
+    float:left;
+    width: 14px;
+    height: 14px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/efficiency.png?__cv=88e7be1717704ec63a63065f5db38300);
+}
+#skylab .module .efficiency {
+    float:left;
+    white-space: nowrap;
+}
+#skylab .module .power_icon {
+    float:left;
+    width: 14px;
+    height: 14px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/power.png?__cv=be162f46dd0b528f9fa4cdb235f6c900);
+}
+#skylab .module .power {
+    float:left;
+    white-space: nowrap;
+}
+#skylab .module.upgrading .state_icon {
+    width: 14px;
+    height: 14px;
+    background:  url(/do_img/global/skylab/cinema_icon.gif?__cv=51d71e8a1e713f9abf9b652338bae900) no-repeat;
+    margin-left: 10px;
+}
+
+#skylab #module_baseModule_small {
+    left: 400px;
+    top: 315px;
+    cursor: pointer;
+}
+#skylab #module_solarModule_small {
+    left: 262px;
+    top: 12px;
+    cursor: pointer;
+}
+#skylab #module_storageModule_small {
+    left: 96px;
+    top: 314px;
+    cursor: pointer;
+}
+#skylab #module_transportModule_small {
+    left: 3px;
+    top: 274px;
+    cursor: pointer;
+}
+#skylab #module_prometiumCollector_small {
+    left: 65px;
+    top: 13px;
+    cursor: pointer;
+}
+#skylab #module_enduriumCollector_small {
+    left: 7px;
+    top: 61px;
+    cursor: pointer;
+}
+#skylab #module_terbiumCollector_small {
+    left: 7px;
+    top: 124px;
+    cursor: pointer;
+}
+#skylab #module_prometidRefinery_small {
+    left: 505px;
+    top: 15px;
+    cursor: pointer;
+}
+#skylab #module_duraniumRefinery_small {
+    left: 576px;
+    top: 57px;
+    cursor: pointer;
+}
+#skylab #module_promeriumRefinery_small {
+    left: 580px;
+    top: 128px;
+    cursor: pointer;
+}
+#skylab #module_sepromRefinery_small {
+    left: 580px;
+    top: 315px;
+    cursor: pointer;
+}
+#skylab #module_xenoModule_small {
+    left: 586px;
+    top: 198px;
+    cursor: pointer;
+}
+
+#skylab #resources {
+    /*width: 768px;*/
+    height: 24px;
+    color: #e2e2e2;
+    font-weight: bold;
+    font-size: 9px;
+    position: absolute;
+    top: 24px;
+    left: 20px;
+}
+#skylab #resources .highlight {
+    color: #bcd3e3;
+}
+
+.view_generally {
+    position: absolute;
+    text-align: center;
+    color: #e2e2e2;
+    font-weight: bold;
+    font-size: 9px;
+    top: 12px;
+}
+.view_generally_maximal_bg {
+    position: absolute;
+    height: 10px;
+    background-color: #a9a9a9;
+    margin-top: 3px;
+}
+.view_generally_maximal_number {
+    position: absolute;
+    margin-top: 2px;
+    color: #5f5f5f;
+    text-align: center;
+}
+
+#view_prometium { width: 87px; left: 4px;}
+#view_prometium_stock {}
+#view_prometium_maximal {text-align:left}
+.view_prometium_maximal_number { width: 100%;}
+#view_endurium { width: 87px; left: 101px;}
+#view_endurium_stock {}
+#view_endurium_maximal {text-align:left}
+.view_endurium_maximal_number { width: 100%;}
+#view_terbium { width: 87px; left: 197px;}
+#view_terbium_stock {}
+#view_terbium_maximal {text-align:left}
+.view_terbium_maximal_number { width: 100%;}
+#view_prometid { width: 87px; left: 293px;}
+#view_prometid_stock {}
+#view_prometid_maximal {text-align:left}
+.view_prometid_maximal_number {width: 100%;}
+#view_duranium { width: 87px; left: 390px;}
+#view_duranium_stock {}
+#view_duranium_maximal {text-align:left}
+.view_duranium_maximal_number {width: 100%;}
+#view_xenomit { width: 87px; left: 486px;}
+#view_xenomit_stock {}
+#view_xenomit_maximal {text-align:left}
+.view_xenomit_maximal_number { width: 100%;}
+#view_promerium { width: 87px; left: 583px;}
+#view_promerium_stock {}
+#view_promerium_maximal {text-align:left}
+.view_promerium_maximal_number { width: 100%;}
+#view_seprom { width: 87px; left: 678px;}
+#view_seprom_stock {}
+#view_seprom_maximal {text-align:left}
+.view_seprom_maximal_number { width: 100%;}
+
+
+#skylab #resources tr {
+}
+
+#skylab #resources td {
+    width: 95px;
+    text-align: center;
+}
+.resource_view {
+    position: absolute;
+}
+.resource_view_max_bg {
+    position: absolute;
+    margin-top: 3px;
+    height: 10px;
+}
+.resource_view_max_number {
+    position: absolute;
+    margin-top: 2px;
+    width: 89px;
+    text-align:center;
+}
+
+#skylab .tabs {
+    height:18px;
+    border-left: 3px solid #b1b1b1;
+    cursor: pointer;
+}
+#skylab .tabs .tab_first, #skylab .tabs .tab_middle, #skylab .tabs .tab_end {
+    border-top: 2px solid #b1b1b1;
+    /*width: 82px;
+    text-align:center;
+    cursor: pointer;*/
+    padding: 0px 5px;
+}
+#skylab .tabs .tab_first {
+    background-color: #3c3e3f;
+}
+#skylab .tabs .tab_end, #skylab .tabs .tab_middle {
+    background-color: #1f2021;
+}
+
+#skylab .tabs .tab_separator {
+    border-top: 2px solid #b1b1b1;
+    width: 19px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/tab_select_left.jpg?__cv=24ea6c162c0fed6e9247d8819aee1a00);
+}
+#skylab .tabs .tab_separator_middle_unselected {
+    border-top: 2px solid #b1b1b1;
+    width: 19px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/tab_middle_unselected.jpg?__cv=57e01d4bbab1850c59bd6f25c8110700);
+}
+#skylab .tabs .tab_endseparator {
+    width: 19px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/tab_end_unselect.png?__cv=e8ddf41e49775cf7022de60eb9d7fd00);
+}
+#skylab .tabContent {
+    padding-top: 15px;
+}
+#skylab #module_infobox_transportModule_overview_large {
+    padding: 0 0 0 20px;
+}
+#skylab #module_infobox_solarModule_overview_large {
+    padding: 30px 0 0 35px;
+}
+#skylab #module_infobox_baseModule_overview_large {
+    padding: 25px 0 0 28px;
+}
+#skylab #module_infobox_storageModule_overview_large,
+#skylab #module_infobox_xenoModule_overview_large {
+    padding: 30px 0 0 25px;
+}
+#skylab .tabContentHead{
+    background-image:  url(/do_img/global/pilotSheet/skylab/infobox_bg_top.jpg?__cv=8e294409e8e2446153c9780504e01700);
+    height:10px;
+    border-top: 3px solid #b1b1b1;
+    border-left: 3px solid #b1b1b1;
+    border-right: 3px solid #b1b1b1;
+}
+#skylab .tabContentHeadClose {
+    position: absolute;
+    z-index: 10;
+    left: 243px;
+    top: 21px;
+    width: 24px;
+    height: 24px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/close_button_48x24.png?__cv=9f331c0d557eb27fbabf9376479ce500);
+    background-position: 0 0;
+}
+#skylab .tabContentHeadClose:hover {
+    background-position: 24px 0;
+    cursor: pointer;
+}
+
+#skylab .iteminfo_overview_progressbar {
+    position:absolute;
+    float:left;
+    margin-top:-4px;
+    background-color: #21a7c3;
+    height:7px;
+}
+#skylab .iteminfo_overview_progressgrid {
+    margin-top:-4px;
+    position:absolute;
+    width: 61px;
+    height: 7px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/construction_grid.png?__cv=b3c277112b3873354ce96325a30e8700);
+}
+
+
+#skylab .module_infobox_upgrade {
+    margin: 0 auto;
+    padding-top: 15px;
+}
+#skylab .module_infobox_upgrade .firstRow {
+    padding: 0 15px 0 6px;
+    height:14px;
+    font-weight: bold;
+}
+#skylab .module_infobox_upgrade .secondRow {
+    text-align:right;
+    padding-right:15px;
+    font-weight: bold;
+}
+#skylab .module_infobox_upgrade .thirdRow {
+    text-align:right;
+    padding-right:30px;
+    font-weight: bold;
+}
+
+#skylab .module_infobox_xenoModule .firstRow {
+    width: 99px;
+    height: 23px;
+    padding-left:6px;height:14px;
+}
+#skylab .module_infobox_xenoModule .secondRow {
+    width: 75px;
+    height: 23px;
+    text-align:center;
+    padding-right:15px;
+}
+#skylab .module_infobox_xenoModule .thirdRow {
+    width: 81px;
+    height: 23px;
+    text-align:center;
+    padding-right:30px;
+}
+
+#skylab .table_infobar {
+    border-left: 3px solid #b1b1b1;
+    border-right: 3px solid #b1b1b1;
+    border-bottom: 3px solid #b1b1b1;
+    background-image:  url(/do_img/global/pilotSheet/skylab/infobox_bg_pattern.jpg?__cv=48c625e0613ed628ddb69fe7941ac100);
+}
+#skylab .table_infobar td {
+    text-align: center;
+}
+#skylab .table_infobar td img {
+    padding-top:3px;
+}
+
+#skylab .collector_info {
+    min-height: 127px;
+    background-repeat: no-repeat;
+    background-position: center 55px;
+    text-align: center;
+}
+
+#skylab .collector_info_prometiumCollector {
+    background-image:  url(/do_img/global/pilotSheet/skylab/prometiumCollector.png?__cv=e9339b67cf8899733bf3486e34da6e00);
+}
+#skylab .collector_info_enduriumCollector {
+    background-image:  url(/do_img/global/pilotSheet/skylab/enduriumCollector.png?__cv=5dd616c4879734d1e05836b3c2def300);
+}
+#skylab .collector_info_terbiumCollector {
+    background-image:  url(/do_img/global/pilotSheet/skylab/terbiumCollector.png?__cv=0149c8e300e6a46a81247c1be3800900);
+}
+
+#transport_left {
+    float:left;
+    width:140px;
+}
+#transport_right {
+    float:left;
+    width:124px;
+    margin-left: 20px;
+}
+#transport_right td {
+    text-align: center;
+}
+
+.module_infobox_transportModule {
+    font-weight: bold;
+}
+.module_infobox_transportModule input {
+    width: 49px;
+    height: 11px;
+    background-color: #626262;
+    border:1px solid #b1b1b1;
+}
+
+
+#skylab .button_standard {
+    width:107px;
+    height:17px;
+    background-image: url(/do_img/global/pilotSheet/skylab/bg_button.png?__cv=664700f6c4064f779fd115f7a2e5e100);
+    line-height:17px;
+    text-align:center;
+    font-weight: bold;
+}
+
+#skylab .icon_efficiency {
+    position: absolute;
+    left: 154px;
+    top: 100px;
+    width: 55px;
+    height: 52px;
+}
+#skylab .icon_efficiency_100 {
+    background-image:  url(/do_img/global/pilotSheet/skylab/cog_anim_100.gif?__cv=cd1b780d03891c70cc805da851b17b00);
+}
+#skylab .icon_efficiency_75 {
+    background-image:  url(/do_img/global/pilotSheet/skylab/cog_anim_75.gif?__cv=1ef2d1344469ec0b61b275914a40b200);
+}
+#skylab .icon_efficiency_50 {
+    background-image:  url(/do_img/global/pilotSheet/skylab/cog_anim_50.gif?__cv=d9f765dc634b091e55077e5b3e7e1100);
+}
+#skylab .icon_efficiency_25 {
+    background-image:  url(/do_img/global/pilotSheet/skylab/cog_anim_25.gif?__cv=1f8d8569a6e2d656ebcf39c49ad6b500);
+}
+#skylab .icon_efficiency_0 {
+    background-image:  url(/do_img/global/pilotSheet/skylab/cog_anim_0.gif?__cv=69ad425c6dab3540b44b92d882a1a400);
+}
+#skylab .icon_attention {
+    width:18px;
+    height:16px;
+    position:absolute;
+    top:115px;
+    left:172px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/icon_attention.png?__cv=0f3e917225fce0c1d1d69449c4130b00);
+}
+
+#skylab #solarModul_overview_content {
+}
+#skylab #solarModul_overview_content .firstRow {
+    padding-left:20px;
+}
+#skylab #solarModul_overview_content .secondRow {
+    padding-left:10px;
+    color:#f1ec63;
+}
+#skylab #solarModul_overview_content .inactive {
+    color: #7b8181;
+}
+#skylab #solarModul_overview_content .label {
+    font-weight: bold;
+}
+#skylab #solarModul_overview_content .value {
+    font-weight: bold;
+}
+
+
+.skylab_standard {font-size: 10px; font-weight: normal; color: #E2E2E2}
+.skylab_standard b            {    font-weight: bold;}
+.skylab_standard a            {    color:#E2E2E2;text-decoration:none;}
+.skylab_standard a:link       {    color:#E2E2E2;}
+.skylab_standard a:visited    {    color:#E2E2E2;}
+.skylab_standard a:hover      {    color:#E2E2E2;cursor:pointer;}
+
+.skylab_price_normal {font-size: 10px; font-weight: normal; color: #b5bdbd}
+.skylab_price_normal b            {    font-weight: bold;}
+.skylab_price_normal a            {    color:#b5bdbd;text-decoration:none;}
+.skylab_price_normal a:link       {    color:#b5bdbd;}
+.skylab_price_normal a:visited    {    color:#b5bdbd;}
+.skylab_price_normal a:hover      {    color:#b5bdbd;cursor:pointer;}
+
+.skylab_font_tab_selected {font-size: 10px; font-weight: bold; color: #E2E2E2}
+.skylab_font_tab_unselected {font-size: 10px; font-weight: bold; color: #7b8181}
+
+.skylab_font_power {
+    font-size: 10px;
+    font-weight: bold;
+    color: #f1ec63;
+}
+.skylab_font_efficiency {
+    font-size: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.skylab_font_level {
+    font-size: 10px;
+    font-weight: bold;
+    color: #65aae1;
+}
+.skylab_font_level_inactive {
+    font-size: 10px;
+    font-weight: bold;
+    color: #a9a9a9;
+}
+
+#skylab .ore_prometium { color: #b32f2f;}
+#skylab .ore_endurium  { color: #59aae3;}
+#skylab .ore_terbium   { color: #f4e53f;}
+#skylab .ore_prometid  { color: #d58989;}
+#skylab .ore_duranium  { color: #3dcd6c;}
+#skylab .ore_promerium { color: #dfa33b;}
+#skylab .ore_xenomit   { color: #949ba9;}
+#skylab .ore_seprom    { color: #9e1cc3;}
+
+
+#skylab #skylabReloader {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left:15px;
+    top: 66px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/reload_btn_std.png?__cv=6cd5f1cbd55eb302144f283b138e4d00);
+    cursor: pointer;
+    z-index: 1;
+}
+#skylab #skylabReloader:hover {
+    background-image:  url(/do_img/global/pilotSheet/skylab/reload_btn_mo.png?__cv=c9557154e51e093197259cebe471d100);
+}
+#skylab #skylabHelp {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 742px;
+    top: 66px;
+    background-image:  url(/do_img/global/pilotSheet/skylab/help_btn_std.png?__cv=e74c5be0d51b6283eb9825d804317e00);
+    cursor: pointer;
+    z-index: 1;
+}
+#skylab #skylabHelp:hover {
+    background-image:  url(/do_img/global/pilotSheet/skylab/help_btn_mo.png?__cv=fb0e980bbe24dd1306e79ad5ea636600);
+}
+
+.upgrade_container {
+    padding: 0 0 0 20px;
+}
+.upgrade_container_max {
+    text-align:center;
+    padding:25px 10px;
+}
+#productivity_container {
+    padding: 15px 0 0 35px;
+    font-weight: bold;
+}
+
+
+#skylab .baseModul_level {
+    background-repeat: no-repeat;
+    background-position: 2px;
+    padding-left: 17px;
+}
+#skylab .baseModul_level_ACTIVE {
+    background-image:  url(/do_img/global/pilotSheet/skylab/icon_level.png?__cv=b7c3e9cd04a0f0e0c8d76d022ddd1100);
+}
+#skylab .baseModul_level_UPGRADE {
+    background-image:  url(/do_img/global/pilotSheet/skylab/icon_upgrade.gif?__cv=cea0b317a17bcacbc8e66ccead585a00);
+}
+
+.productivity_robotShop_credits {
+    float:left;
+    width:125px;
+    text-align:center;
+    height: 60px;
+}
+.productivity_robotShop_uridium {
+    float:left;
+    width:125px;
+    text-align:center;
+    height:60px;
+}
+.productivity_robotShop_credits img, .productivity_robotShop_uridium img {
+    margin-bottom: 5px;
+}
+
+.showActiveRobots {
+    z-index: 20;
+    position: absolute;
+    top:30px;
+    left:7px;
+    float:left;
+    width:247px;
+    height:105px;
+    background-color: black;
+}
+.container_robot_small {
+    float: left;
+    margin: 5px 0 0 1px;
+}
+.skylab_robot_price {
+    margin-top:-5px;
+    padding-left: 10px;
+}
+
+.module_infobox_info {
+    float: left;
+    width: 60px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.module_info_active_state {
+    margin-left: 50px
+}
+.module_info_level .level_icon,
+.module_info_level .level_icon_upgrade {
+    color: #65aae1;
+    background-position: 0 center;
+    padding-left: 15px;
+    width: 45px;
+}
+.module_info_power_usage {
+    color: #f1ec63;
+    background:  url(/do_img/global/skylab/modules_large/power.png?__cv=0f8823ba2b799f449e43762142544f00) no-repeat 0 center;
+    padding-left: 15px;
+    width: 45px;
+    height: 14px;
+}
+.module_info_efficiency {
+    color: #FFFFFF;
+    background:  url(/do_img/global/pilotSheet/skylab/efficiency.png?__cv=88e7be1717704ec63a63065f5db38300) no-repeat 0 center;
+    width: 45px;
+    padding-left: 15px;
+    height: 14px;
+}
+
+#skylab_shadow {
+    width: 772px;
+    height: 407px;
+    position: absolute;
+    z-index: 5;
+    background: #000000;
+    opacity: 0.6;
+    display: none;
+}
+
+.module_progressBGWrapper {
+    width: 285px;
+    height: 27px;
+}
+.module_progressBG_left {
+    background:  url(/do_img/global/skylab/modules_large/display_01.png?__cv=db7142a56ddcffa4d6fe01bc877ea800) no-repeat left center;
+    width: 10px;
+    height: 27px;
+    float: left;
+}
+.module_progressBG {
+    background:  url(/do_img/global/skylab/modules_large/display_02.png?__cv=976d2279d3b9071efa55734158af8c00) repeat-x left center;
+    width: 260px;
+    height: 27px;
+    float: left;
+}
+.module_progressBG .progress_timer {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    width: 257px;
+    position: absolute;
+    margin: 6px 0 0 0;
+    z-index: 2;
+
+}
+.module_progressBG_right {
+    background:  url(/do_img/global/skylab/modules_large/display_03.png?__cv=4eabc3070793df427a5d0e4fd4fbc000) no-repeat left center;
+    width: 10px;
+    height: 27px;
+    float: left;
+}
+.module_progressBarWrapper {
+    position: absolute;
+    height: 23px;
+    width: 20px; /* min = 20 | max = 272*/
+    background:  url(/do_img/global/skylab/modules_large/progressbar_02.png?__cv=cd594d78f3e2e34a5dc3df0f4ee8a400) repeat-x 0 center;
+    margin: 2px 0 0 -6px;
+}
+.module_progressBar_left {
+    width: 10px;
+    height: 23px;
+    float: left;
+    background:  url(/do_img/global/skylab/modules_large/progressbar_01.png?__cv=5022e4a160fcda420af7c2e3287a7b00) no-repeat left center;
+    margin-left: -2px;
+}
+.module_progressBar_right {
+    width: 10px;
+    height: 23px;
+    float: right;
+    background:  url(/do_img/global/skylab/modules_large/progressbar_03.png?__cv=a4a0d7711e745c8adea7ea72c2ef2100) no-repeat left center;
+    margin-right: -2px;
+}
+
+.upgrade_options_wrapper {
+    width: 275px;
+    margin: 5px 15px 0 2px;
+}
+.upgrade_option {
+    float: left;
+    width: 85px;
+    height: 109px;
+    background:  url(/do_img/global/skylab/modules_large/price-display.png?__cv=2c72a1ea3759b8494c6b19e6dfb34600) no-repeat center top;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 8px;
+}
+.upgrade_option_instant {
+    margin-left: 0;
+}
+.upgrade_option .option_state {
+    background:  url(/do_img/global/skylab/modules_large/icon_bg_normal.png?__cv=1c3efdeaef103d6f6f9921ee2fda7b00) no-repeat center;
+    width: 71px;
+    height: 57px;
+    margin: 8px auto 9px;
+    padding-top: 13px;
+}
+.upgrade_option .option_state:hover {
+    background-image:  url(/do_img/global/skylab/modules_large/icon_bg_hover.png?__cv=9f184cf3c31e5c2735137f6261357d00);
+}
+.upgrade_option .option_state.upgrade_option_active {
+    background-image:  url(/do_img/global/skylab/modules_large/icon_bg_active.png?__cv=8e82444cfc1ff1039ceb0b00ed84eb00);
+}
+.option_state img {
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+.upgrade_options_text, .transport_hint_wrapper {
+    clear: both;
+    padding-top: 5px;
+    text-align: center;
+    display: none;
+}
+.transport_hint_wrapper {
+    display: block;
+}
+
+.upgrade_option_confirm, .transport_option_confirm {
+    display: none;
+    width: 200px;
+    height: 26px;
+    background-image:  url(/do_img/global/pilotSheet/profilePage/rework/button_sprite_200x33px.png?__cv=cc3b881f049e88cbf8a853fa240f5900);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 12px 0 0 40px;
+    cursor: pointer;
+    padding-top: 7px;
+}
+.upgrade_option_confirm:hover, .transport_option_confirm:hover {
+    background-position: 0 -33px;
+}
+.upgrade_option_confirm img {
+    display: block;
+    margin: 0 auto;
+}
+
+.transport_option_confirm {
+    display: block;
+    margin-top: 15px;
+    height: 25px;
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+#skylab .module_resourceWarning {
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 17px;
+    width: 324px;
+    height: 239px;
+    background: #000000;
+    opacity: 0.85;
+    padding: 0;
+}
+.module_resourceWarning_text {
+    width: 270px;
+    margin: 0 auto 40px;
+    padding-top: 30px;
+}
+.module_resourceWarning_button {
+    width: 200px;
+    margin: 0 auto;
+}

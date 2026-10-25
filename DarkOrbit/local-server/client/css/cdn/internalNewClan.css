@@ -1,0 +1,624 @@
+.borderFrame {
+    background-image:  url(/do_img/global/payment/balance/bg_payment_metal_01.jpg?__cv=81748b89d554ed0ad3ddc5ca96d7d100);
+    background-position : center top;
+    background-repeat   : no-repeat;
+    margin              : -4px 14px 0;
+    width               : 776px;
+}
+
+#wrapper {
+    float               : left ;
+    width               : 638px ;
+}
+
+/* used in internalClanIndex.tpl */
+
+#wrapper.clanList {
+    background-image:  url(/do_img/global/clan/clanlist/background_frame.png?__cv=48f6a9a5100ffad49515e67615e53b00);
+    background-position : left 5px;
+    background-repeat   : no-repeat;
+}
+
+#wrapper.clanList .headline {
+    font-size           : 14px;
+    padding             : 25px 15px 20px 15px;
+    width               : 250px;
+    float               : left ;
+}
+
+#wrapper.clanList .controlls {
+    padding             : 2px 0 0 0 ;
+    float               : right;
+    width               : 320px;
+}
+#wrapper.clanList .controlls input[type="button"] {
+    display             : inline-block;
+}
+
+.searchArea {
+    width               : 315px;
+    font-family         : Arial;
+    font-size           : 9px;
+}
+.searchArea #activateFilter {
+    display             : block;
+    float               : right;
+    background:  url(/do_img/global/clan/clanlist/filter_button_142_28.png?__cv=0328f2e60fa723339fca90f069827b00) no-repeat center 0;
+    width               : 142px;
+    height              : 28px;
+    color               : #999;
+    border              : 0 none;
+    cursor              : pointer;
+}
+.searchArea #activateFilter:hover {
+    background-position : center -28px;
+}
+.searchArea #activateFilter:active {
+    background-position : center -56px;
+}
+.searchFieldWrapper {
+    float               : left;
+    width               : 170px;
+    margin-top          : 4px;
+}
+.searchFieldWrapper .searchField {
+    width               : 137px;
+    height              : 17px;
+    border              : 0 none;
+    background:  url(/do_img/global/clan/clanlist/textfield.jpg?__cv=f0ad8934c8f1ccfbdfc2e6a9f61f8f00) no-repeat center;
+    color               : #666;
+    padding             : 0 5px;
+}
+.searchFieldWrapper .searchButton {
+    width               : 20px;
+    height              : 21px;
+    background:  url(/do_img/global/clan/clanlist/search_button_sprite_20x21.png?__cv=11b4e6661468fb4e8a682841abaccb00) no-repeat 0 0;
+    border              : 0 none;
+    cursor              : pointer;
+    color               : transparent;
+}
+.searchFieldWrapper .searchButton:hover {
+    background-position : -20px 0;
+}
+.searchFieldWrapper .searchButton:active {
+    background-position : -40px 0;
+}
+
+.searchArea .resetButton {
+    background:  url(/do_img/global/clan/clanlist/button_reset.png?__cv=08c0eff94ef44d057f74ce1583e24000) no-repeat top left;
+    width               : 25px ;
+    height              : 22px ;
+    border              : none ;
+    cursor              : pointer ;
+    position            : absolute;
+    left                : 469px;
+    top                 : 30px;
+}
+
+form#searchClanList {
+    float             : right;
+}
+/*
+#searchClanList table.searchTable {
+    border-collapse     : collapse ;
+}
+
+#searchClanList .searchTable tr, 
+#searchClanList .searchTable td {
+    padding             : 0 ;
+    margin              : 0 ;
+}
+
+
+#searchClanList .searchField,
+#searchClanList .searchButton {
+    background-color    : transparent ; 
+    background-image:  url(/do_img/global/clan/clanlist/search_background.png?__cv=b27589ebb3dc3afa90e8946030cdf600);
+    background-position : top left ;
+    background-repeat   : no-repeat ;
+
+    padding             : 0 ;
+    border              : none ;
+}
+
+
+#searchClanList .searchField {
+    width               : 123px;
+    height              : 22px;
+    color               : #999999 ;
+    padding             : 0 7px ;
+}
+
+#searchClanList .searchButton {
+    background-position : -137px top;
+
+    width               : 20px ;
+    height              : 22px ;
+    cursor              : pointer ;
+}
+
+#searchClanList .resetButton {
+    background-color    : transparent ;
+    background-image:  url(/do_img/global/clan/clanlist/button_reset.png?__cv=08c0eff94ef44d057f74ce1583e24000);
+    background-position : top left ;
+    background-repeat   : no-repeat ;
+
+    width               : 25px ;
+    height              : 22px ;
+    border              : none ;
+    margin-left         : 2px ;
+    cursor              : pointer ;
+}
+*/
+#wrapper.clanList .pagination {
+    text-align          : center ;
+    padding             : 12px 0 0 0; 
+}
+
+#wrapper ul.clan_items {
+    display             : block ;
+    color               : #FFFFFF;
+}
+
+#wrapper ul li.clan_item {
+    display             : block ;
+    margin              : 0 -4px 0 1px ;
+}
+
+#wrapper ul li.no_items {
+    padding             : 10px;
+    text-align          : center ;
+}
+
+#wrapper ul li.last_application_item  {
+    border-bottom       : 1px solid #FFCC00 ;
+}
+
+ul.clan_items li.clan_item
+
+#wrapper ul li.clan_item.empty { padding:7px 10px; }
+
+#wrapper ul li.clan_item.even {
+    background-image:  url(/do_img/global/payment/balance/list_line_normal.png?__cv=ee4021449be1e78130255a7f10a88400) ;
+    background-position : top left ;
+    background-repeat   : repeat ;
+}
+
+#wrapper ul li.clan_item .clanname,
+#wrapper ul li.clan_item .members,
+#wrapper ul li.clan_item .ranking,
+#wrapper ul li.clan_item .affiliation {
+    background-image:  url(/do_img/global/payment/balance/splitter_line.jpg?__cv=1f16ccc2ed4311827a087b94ea969c00) ;
+    background-position : center right ;
+    background-repeat   : no-repeat ;
+}
+
+#wrapper ul li.clan_item .clanname,
+#wrapper ul li.clan_item .members,
+#wrapper ul li.clan_item .ranking,
+#wrapper ul li.clan_item .affiliation,
+#wrapper ul li.clan_item .status,
+#wrapper ul li.clan_item .label,
+#wrapper ul li.clan_item .info  {
+    display             : inline-block ;
+    padding             : 6px 12px ;
+}
+
+#wrapper ul li.clan_item .status.pending {
+    background-image:  url(/do_img/global/clan/clanlist/status_icon_pending.png?__cv=bf81b47f6579d209b5ce51dd8d903800) ;
+    background-position : center left ;
+    background-repeat   : no-repeat ;
+    cursor              : pointer;
+}
+#wrapper ul li.clan_item .status.pending a:hover {
+    color               : #FFCC00 ;
+}
+
+#wrapper ul li.clan_item .status.recruiting {
+    background-image:  url(/do_img/global/clan/clanlist/status_icon_recruiting.png?__cv=84b9d318daa528d48dc541468cfd1300) ;
+    background-position : center left ;
+    background-repeat   : no-repeat ;  
+}
+
+#wrapper ul li.clan_item .status.notRecruiting {
+    background-image:  url(/do_img/global/clan/clanlist/status_icon_not_recruiting.png?__cv=40ee84c84b1d7d70c81dd3bf39b25d00) ;
+    background-position : center left ;
+    background-repeat   : no-repeat ;  
+}
+
+#wrapper ul li.clan_item .clanname {
+    width               : 160px ;
+}
+#wrapper ul li.clan_item .members {
+    width               : 75px ;
+}
+#wrapper ul li.clan_item .ranking {
+    width               : 65px ;
+}
+#wrapper ul li.clan_item .affiliation {
+    width               : 80px ;
+}
+#wrapper ul li.clan_item .status {
+    width               : 85px ;
+}
+
+#wrapper ul li.clan_item a { color: #EEEEEE; }
+#wrapper ul li.clan_item a.clanlink,
+#wrapper ul li.clan_item a.sortable {
+    display             : block ;
+    height              : 13px ;
+    overflow            : hidden ;
+
+    padding-right       : 20px ;
+
+    background-image:  url(/do_img/global/clan/clanlist/arrow_right_4x7px.gif?__cv=3b2cec08d8791a2c612d7e4b83430500) ;
+    background-position : right -12px ;
+    background-repeat   : no-repeat ;
+}
+
+#wrapper ul li.clan_item a.sortable {
+    background-image:  url(/do_img/global/clan/clanlist/small-arrow-sortable.png?__cv=d14b8448cdc49337b92f3f05f4282f00) ;
+    background-position : right center ;
+}
+
+#wrapper ul li.clan_item a.sortable:hover {
+    color               : #FFCC00 ;
+}
+
+#wrapper ul li.clan_item a.sortable.desc {
+    background-image:  url(/do_img/global/clan/clanlist/small-arrow-down.png?__cv=2c13c1a13341fd97e14101075c44fd00) ;
+}
+
+#wrapper ul li.clan_item a.sortable.asc {
+    background-image:  url(/do_img/global/clan/clanlist/small-arrow-up.png?__cv=0f3eb0910f4954710d7de11a5c71e800) ;
+}
+
+#wrapper ul li.clan_item a.clanlink:hover {
+    background-position : right -24px ;
+    color               : #FFCC00 ;
+}
+
+#wrapper ul li.application_toogle {
+    display             : block ;
+    padding             : 3px 12px ;
+    margin              : 0 -4px 0 1px ;
+
+    cursor              : pointer ;
+
+    border-bottom       : 1px solid #FFCC00 ;
+    color               : #FFCC00 ;
+
+    background-image:  url(/do_img/global/clan/clanlist/applications_header_background_614x20px.jpg?__cv=77298ea12c49b1866233131a45203c00) ;
+    background-position : right top ;
+    background-repeat   : no-repeat ;
+}
+
+#wrapper ul li:hover.application_toogle,
+#wrapper ul li.application_toogle.active {
+    background-position : right -60px;
+}
+
+#wrapper ul li:hover.application_toogle.active {
+    background-position : right top;
+}
+
+
+/* used in internalClanDetailsIndex.tpl & internalClanDetailsJoinClan.tpl */
+
+#wrapper.clanDetails {
+    background-image:  url(/do_img/global/clan/clanjoin/background_frame.png?__cv=abfc26874a5c818ce85d067002124400);
+    background-position : left 5px;
+    background-repeat   : no-repeat;
+}
+
+#wrapper.clanDetails div.header {
+    height: 44px;
+}
+
+#wrapper.clanDetails div.header div.headline {
+    font-size           : 14px;
+    padding             : 17px 15px 9px 15px;
+    width               : 300px;
+    float               : left ;
+}
+
+#wrapper.clanDetails div.header div.back {
+    float               : right ;
+}
+
+#wrapper.clanDetails div.header div.back a {
+    display             : block ;
+    width               : 103px ;
+    height              : 17px ;
+
+    margin              : 10px 61px 0 0 ;
+
+    background-image:  url(/do_img/global/clan/clanjoin/button_back_103x17.png?__cv=02a6a66d48ad0e05de2b41450f546400);
+    background-position : left -17px;
+    background-repeat   : no-repeat;
+}
+
+#wrapper.clanDetails div.header div.back a:hover {
+    background-position : left -51px;
+}
+
+#wrapper.clanDetails div.teaser {
+    height              : 101px ;
+}
+
+#wrapper.clanDetails div.teaser div.clanlogo {
+    margin              : -2px 0 0 -1px ;
+    width               : 101px ;
+    height              : 101px ;
+    position            : relative ;
+    float               : left ;
+}
+
+#wrapper.clanDetails div.teaser div.clanlogo div.decor {
+    height              : 106px ;
+    width               : 106px ;
+
+    position            : absolute ;
+    left                : -1px ;
+    top                 : -2px ;
+
+    background-image:  url(/do_img/global/clan/clanjoin/clanlogo_decor.png?__cv=719f8d17b8da11edba1eae5dc7762e00);
+    background-position : left top;
+    background-repeat   : no-repeat;    
+}
+
+#wrapper.clanDetails div.teaser div.clanlogo div.decor div.image {
+    width               : 101px ;
+    height              : 101px ;
+    overflow            : hidden ;
+    margin              : 3px ;
+
+    background-image:  url(/do_img/global/clan/clanjoin/clanlogo_default.jpg?__cv=131b8f9646621d57c059b58df5226f00);
+    background-position : left top;
+    background-repeat   : no-repeat;  
+}
+
+#wrapper.clanDetails div.teaser div.claninformation {
+    width               : 526px ;
+    height              : 95px ;
+
+    float               : left ;
+    padding             : 1px 0;
+    overflow            : hidden ; 
+}
+
+#wrapper ul li.clan_item .label {width: 120px;}
+#wrapper ul li.clan_item .info  {}
+
+#wrapper.clanDetails div.body div.clandescription {
+    height              : 230px ;
+    width               : 353px ;
+
+    padding             : 10px ;
+    margin-top          : 2px ;
+
+    overflow            : hidden ;
+    float               : left ;
+}
+
+#wrapper.clanDetails div.body div.clanjoin {
+    width               : 257px ;
+    float               : left ;
+
+    text-align          : center ;
+}
+
+#wrapper.clanDetails #clanApplicationForm {
+    display             : none ;
+}
+
+#wrapper.clanDetails #clanApplicationForm textarea,
+#wrapper.clanFound #clanFoundForm textarea {
+    background-color    : #000000 ;
+    border              : 3px solid #1C2834 ;
+    color               : #999999 ;
+    height              : 131px ;
+    margin-top          : 5px ;
+    width               : 227px ;
+    padding             : 5px ;
+    font-size           : 11px ;
+    overflow            : auto ; 
+}
+
+#wrapper.clanDetails #clanApplicationForm textarea {border: none ;}
+
+#wrapper.clanDetails #clanApplicationForm div.costs,
+#wrapper.clanFound #clanFoundForm div.costs {
+    padding-left        : 60px ;
+    margin-top          : 31px ;
+}
+
+#wrapper.clanDetails #clanApplicationForm div.costs div,
+#wrapper.clanFound #clanFoundForm div.costs div {
+    display             : inline-block ;
+    height              : 27px ;
+}
+
+#wrapper.clanDetails #clanApplicationForm div.costs .left,
+#wrapper.clanFound #clanFoundForm div.costs .left {
+    background-image:  url(/do_img/global/clan/clanjoin/price_display_left.png?__cv=759645dfe18aad82c3b23770eb985300);
+    background-position : left top;
+    background-repeat   : no-repeat;
+
+    width               : 4px ;
+    float               : left ;
+}
+#wrapper.clanDetails #clanApplicationForm div.costs .center,
+#wrapper.clanFound #clanFoundForm div.costs .center {
+    background-image:  url(/do_img/global/clan/clanjoin/price_display_center.png?__cv=f7ed61d50d002099f22db2c2a5295300);
+    background-position : left top;
+    background-repeat   : repeat;
+    padding             : 7px 15px 0 ;
+    height              : 20px ;
+    width               : 100px ;
+    float               : left ;
+}
+#wrapper.clanDetails #clanApplicationForm div.costs .right,
+#wrapper.clanFound #clanFoundForm div.costs .right {
+    background-image:  url(/do_img/global/clan/clanjoin/price_display_right.png?__cv=3133adc0773b7defc0abc4128775cc00);
+    background-position : left top;
+    background-repeat   : no-repeat; 
+
+    width               : 4px ;
+    float               : left ;
+}
+
+#wrapper.clanDetails #clanApplicationForm button,
+#wrapper.clanFound #clanFoundForm button {
+    background: transparent ;
+    border: none ;
+    background-image:  url(/do_img/global/clan/clanjoin/btn_hologram_green_152x36.png?__cv=d1f07dd2faadf3b5c899044bc940dd00);
+    background-position : left -36px ;
+    background-repeat   : no-repeat ;
+
+    width               : 152px ;
+    height              : 36px ;
+    margin              : 7px 0 0 0 ;
+    padding             : 10px 0 9px 0 ;
+    cursor              : pointer;
+}
+#wrapper.clanDetails #clanApplicationForm button.clanSubmit:hover,
+#wrapper.clanFound #clanFoundForm button.clanSubmit:hover {
+    background-position : left -72px;
+}
+#wrapper.clanDetails #clanApplicationForm button.clanSubmit:active,
+#wrapper.clanFound #clanFoundForm button.clanSubmit:active {
+    background-position : left -108px;
+}
+#wrapper.clanDetails #clanApplicationForm button.clanInactive,
+#wrapper.clanFound #clanFoundForm button.clanInactive {
+    background-position : left 0px;
+    cursor              : default;
+}
+
+/* do not change display:none needed for localization */
+#wrapper.clanDetails #clanApplicationForm span.message_success,
+#wrapper.clanFound #clanFoundForm span.message_success,
+#wrapper.clanDetails #clanApplicationForm span.message_error,
+#wrapper.clanFound #clanFoundForm span.message_error {display:none;}
+
+
+/* internalClanDetailsFoundClan.tpl */
+
+#wrapper.clanFound {
+    background-image:  url(/do_img/global/clan/clanfound/background_frame.png?__cv=3191a7a1c08f51661d474a4dc706f600) ;
+    background-position : left 5px ;
+    background-repeat   : no-repeat ;
+}
+
+#wrapper.clanFound .headline {
+    font-size           : 14px ;
+    padding             : 15px 15px 12px 15px ;
+    font-weight         : bold ; 
+}
+
+#wrapper.clanFound div.description {
+    float               : left ;
+    width               : 354px ;
+
+    padding             : 15px ;
+
+    color               : #E2E2E2 ;
+    font-size           : 11px ; 
+}
+
+#wrapper.clanFound div.description span.grey {color : #999999 ;}
+#wrapper.clanFound div.description span.bluegrey {color : #A4D3FF ;}
+
+#wrapper.clanFound div.formular {
+    float               : right ;
+    width               : 243px ;
+
+    padding             : 5px ;
+    text-align          : center ; 
+}
+
+#wrapper.clanFound #clanFoundForm input {
+    background-color    : #000000 ;
+    border              : 3px solid #1C2834 ;
+    color               : #999999 ;
+    margin-top          : 5px ;
+    margin-left         : -3px ;
+    width               : 227px ;
+    padding             : 5px ;
+    font-size           : 11px ;
+}
+
+#wrapper.clanFound #clanFoundForm textarea {
+    height              : 156px ;
+    margin-left         : -2px ;
+}
+
+#wrapper.clanFound #clanFoundForm div.costs {
+    padding-left        : 53px ;
+    margin-top          : 24px ; 
+}
+
+/* layer for advanced search */
+#clanSearchAdvancedLayer {
+
+}
+#filterLayerHead {
+    font-size           : 12px;
+    font-weight         : bold;
+    color               : #ffd800;
+    text-align          : left;
+    padding             : 12px 0 0 22px;
+}
+.filterCriteria .filterCriteriaHead, .filterCriteria .filterCritLabel {
+    font-size           : 12px;
+    color               : #999;
+}
+.filterCriteria .filterCriteriaHead {
+    text-align          : left;
+    margin-bottom       : 12px;
+    padding-left        : 12px;
+}
+.filterCriteria .filterCriteriaBox {
+    height              : 124px;
+    width               : 316px;
+    background:  url(/do_img/global/clan/clanlist/advanced-filters_box.png?__cv=8626341ea34c40eefa2f28addaf9ec00) no-repeat 0 0;
+    margin              : auto;
+}
+.filterCriteriaBox .filterCritLabel {
+    height              : 20px;
+    width               : 130px;
+    display             : inline-block;
+    text-align          : left;
+    padding-top         : 10px;
+}
+.filterCriteria .filterCritSelect {
+    display             : inline-block;
+    width               : 130px;
+    height              : 18px;
+    background:  url(/do_img/global/messaging/sprites/dropdown_sprite_157x22.png?__cv=e7f04b5d1281696ba8d33a53da04cc00) no-repeat 0 0;
+    cursor              : pointer;
+    padding             : 4px 0 0 27px;
+    color               : #FFF;
+    font-size           : 11px;
+    text-align          : left;
+}
+.filterCritSelectLayer {
+    position            : absolute;
+    z-index             : 13;
+    width               : 135px;
+    background-color    : #000;
+    border              : 1px solid #666;
+    border-top          : 0 none;
+    color               : #999;
+    cursor              : pointer;
+    font-size           : 11px;
+    margin-left         : 167px;
+}
+.filterCritSelectLayer div {
+    padding             : 2px 0 2px 5px;
+    text-align          : left;
+}
+.filterCritSelectLayer div:hover {
+    background-color    : #2F4D65;
+}

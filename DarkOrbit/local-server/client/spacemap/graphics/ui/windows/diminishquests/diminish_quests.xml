@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="chatWindowUIAssets"/>
+        <library id="traininggroundsUI"/>
+        <library id="battlePass"/>
+
+        <library id="module_equipment_lib"/>
+    </libraries>
+
+    <!-- TEXT STYLE HERE -->
+    <textstyle name         = "battlepass_info"
+               textColor    ="0x999898"
+               type         ="dynamic"
+               fontSize     ="9"
+               autoSize     ="left"
+               wordWrap     ="true"
+               multiline    ="true"
+               embedFonts   ="false"
+               fontName     ="Verdana"
+               align        ="left"
+    />
+
+    <!-- SKIN HERE -->
+
+    <!-- FILTER COMBO BOX HERE -->
+
+    <!-- TEMPLATE HERE -->
+    <template name="DIMINISH_QUESTS_FOOTER">
+
+        <container name="footer" width="150" height="20"
+                   alignX="left" alignY="bottom" pixelSnapping="true" >
+
+            <label name="accept_timer" text="1 seconds" registeredSkinName="commonui_default_label"
+                marginTop="2" width="150"
+                alignX="left" autoSizeTextHeight="true"
+                registeredTextStyleName="battlepass_info"/>
+        </container>
+    </template>
+
+    <!-- CONTENT HERE -->
+    <container name="root" autoSizeWidth="true" autoSizeHeight="true" mouseEnabled="false" mouseChildren="true">
+        <reference template="DIMINISH_QUESTS_FOOTER"/>
+    </container>
+</root>

@@ -1,0 +1,657 @@
+Source: https://board-de.darkorbit.com/threads/faq-npc-daten-mit-bildern.2812/page-2
+Captured: 2026-10-23T16:07:45.916Z
+FAQ - NPC-Daten mit Bildern ⚠️⚙️| Seite 2 | DarkOrbit DE 
+ DarkOrbit DE 
+ Foren 
+ &gt; 
+ Hilfe 
+ &gt; 
+ Alles rund um das Spiel 
+ &gt; 
+ FAQs / Glossar 
+ &gt; 
+ You are using an out of date browser. It may not display this or other websites correctly.
+You should upgrade or use an alternative browser .
+ FAQ - NPC-Daten mit Bildern ⚠️⚙️
+ Dieses Thema im Forum ' FAQs / Glossar ' wurde von BA-RescueKnight gestartet, 4 Dezember 2013 .
+ Liebe(r) Forum-Leser/in,
+wenn Du in diesem Forum aktiv an den Gesprächen teilnehmen oder eigene Themen starten möchtest, musst Du Dich bitte zunächst im Spiel einloggen. Falls Du noch keinen Spielaccount besitzt, bitte registriere Dich neu. Wir freuen uns auf Deinen nächsten Besuch in unserem Forum!
+ „Zum Spiel“ 
+ Status des Themas: 
+ Es sind keine weiteren Antworten möglich. 
+ Seite 2 von 2 
+ &lt; Zurück 
+ 1 
+ 2 
+ TA-Shila 
+ Board Administrator 
+ Team Darkorbit 
+ 21. Hooligan 
+ Er macht seinem Namen alle Ehre - der Hooligan. Große Klappe und auf Angriff, aber dann doch nicht so stark wie seine Kumpane, die ihm oft zu Hilfe eilen. 
+ Auf den Hooligan trefft ihr in den Galaxy-Gates Epsilon und Kappa , sowie im Gruppengate.
+ Hier die Daten: 
+ Hitpoints: 250.000 
+ Schild: 200.000 
+ Schaden: 7.000 - 9.000 
+ Bei Abschuss erhaltet Ihr: 
+ EP: 12.000 
+ Das P.E.T. erhält 600 Erfahrungspunkte 
+ Ehre: 16 
+ Credits: 15.000 
+ Uridium: 32 
+ Rohstoffe gibt es bei diesem Gegner nicht. Für die Rangberechnung bringt er euch 16 NPC-Punkte. 
+ Zuletzt bearbeitet von Moderator: 20 Mai 2022 
+ TA-Shila , 
+ 11 April 2014 
+ #21 
+ Stogan87 gefällt dies.
+ TA-Shila 
+ Board Administrator 
+ Team Darkorbit 
+ 22. Corsair 
+Hitpoints: 200.000
+Schild: 120.000
+EP: 10.000
+Ehre: 32
+Credits: 12.000
+Uridium: 64
+Xenomit: 0
+Prometium: 0
+Terbium: 0
+Endurium: 0
+Prometid: 0
+Duranium: 0
+Promerium: 0
+NPC-Punkte: 0
+Rangpunkte: 0
+Schaden: 6.000 - 8.000
+Lebensraum: Gruppen GG
+Gesinnung: Agressiv
+P.E.T EP: 500 
+ Zuletzt bearbeitet von Moderator: 20 Mai 2022 
+ TA-Shila , 
+ 11 April 2014 
+ #22 
+ Stogan87 gefällt dies.
+ TA-Shila 
+ Board Administrator 
+ Team Darkorbit 
+ 23. Century Falcon 
+Hitpoints: 4.000.000
+Schild: 3.000.000
+EP: 1.000.000
+Ehre: 5.000
+Credits: 1.000.000
+Uridium: 5.000
+Xenomit: 1
+Prometium: 1
+Terbium: 1
+Endurium: 1
+Prometid: 1
+Duranium: 1
+Promerium: 1
+NPC-Punkte: 0
+Rangpunkte: 0
+Schaden: 19.000 - 25.000
+Lebensraum: Gruppen GG
+Gesinnung: Agressiv
+P.E.T EP: 50.000 
+ Zuletzt bearbeitet von Moderator: 20 Mai 2022 
+ TA-Shila , 
+ 11 April 2014 
+ #23 
+ Stogan87 gefällt dies.
+ TA-Shila 
+ Board Administrator 
+ Team Darkorbit 
+ 24. Die Familie der Ice Meteoroide und ihre kleinen Begleiter 
+ 24.1 Ice Meteoroid 
+Hitpoints: 1.600.000
+Schild: 1.200.000
+EP: 204.800
+Ehre: 4.096
+Credits: 3.276.800
+Uridium: ~1.600
+Xenomit: 256
+Prometium: 2.400
+Terbium: 2.400
+Endurium: 2.400
+Prometid: 1.024
+Duranium: 1.024
+Promerium: 128
+NPC-Punkte: 32
+Rangpunkte: 16
+Schaden: 0
+Lebensraum: Überall
+Gesinnung: Friedlich
+P.E.T EP: 10.240
+ 24.2 Super Ice Meteorit 
+Hitpoints: 3.200.000
+Schild: 2.400.000
+EP: 2.000.000
+Ehre: 8.000
+Credits: 6.000.000
+Uridium: 3.000
+Xenomit: 512
+Prometium: 2.400
+Terbium: 2.400
+Endurium: 2.400
+Prometid: 1.024
+Duranium: 1.024
+Promerium: 128
+NPC-Punkte: 0
+Rangpunkte: 0
+Schaden: 0
+Lebensraum: 4-4 & 4-5
+Gesinnung: Friedlich
+P.E.T EP: 100.000
+ 24.3 Icy 
+Hitpoints: 80.000
+Schild: 60.000
+EP: 6.400
+Ehre: 32
+Credits: 12.800
+Uridium: 16
+Xenomit: 0
+Prometium: 100
+Terbium: 100
+Endurium: 100
+Prometid: 16
+Duranium: 16
+Promerium: 2
+NPC-Punkte: 3
+Rangpunkte: 1,5
+Schaden: 1.300 - 1.900
+Lebensraum: bei Ice Meteorit (ähnlich Protegit)
+Gesinnung: äußerst Agressiv!
+P.E.T EP: 320 
+ Zuletzt bearbeitet von Moderator: 20 Mai 2022 
+ TA-Shila , 
+ 11 April 2014 
+ #24 
+ Stogan87 gefällt dies.
+ TA-Shila 
+ Board Administrator 
+ Team Darkorbit 
+ 25. 110101 
+Hitpoints: 200.000 - 2.000.000
+Schild: 150.000 - 1.500.000
+EP: 25.600 - 256.000
+Ehre: 78 - 780
+Credits: 204.800 - 2.048.000
+Uridium: 64 - 640
+Xenomit: 2 - 20
+Prometium: 150 - 1.500
+Terbium: 150 - 1.500
+Endurium: 150 - 1.500
+Prometid: 64 - 640
+Duranium: 64 - 640
+Promerium: 8 - 80
+NPC-Punkte: 0
+Rangpunkte: 0
+Schaden: 1.100 - 22.500
+Lebensraum: Überall
+Gesinnung: Agressiv
+P.E.T EP: 1.280 - 12.800 
+ Zuletzt bearbeitet von Moderator: 20 Mai 2022 
+ TA-Shila , 
+ 11 April 2014 
+ #25 
+ Stogan87 gefällt dies.
+ TA-Shila 
+ Board Administrator 
+ Team Darkorbit 
+ 26. Die Familie der Piraten 
+ 26.1 Interceptor 
+Hitpoints: 60.000
+Schild: 40.000
+EP: 7.500
+Ehre: 24
+Credits: 25.000
+Uridium: 20
+Xenomit: 0
+Prometium: 100
+Terbium: 100
+Endurium: 100
+Prometid: 18
+Duranium: 18
+Promerium: 0
+NPC-Punkte: 1
+Rangpunkte: 0,5
+Schaden: 350 - 500
+Lebensraum: 5-X
+Gesinnung: Agressiv
+ 26.2 Uber Interceptor 
+ Hitpoints: 480000
+Schild: 320000
+Damage: 4000
+Geschwindigkeit: 600
+EP: 30000
+Ehre: 100
+Credits: 100000
+Uri: 80
+Prometium: 800
+Endurium: 800
+Terbium: 800
+Xenomit: 0
+Prometid: 72
+Duranium: 72
+Promerium: 16
+Palladium: 2
+Lebensraum: 4-5, 5-1, 5-2, 5-3
+ 26.3 Annihilator 
+Hitpoints: 300.000
+Schild: 200.000
+EP: 75.000
+Ehre: 128
+Credits: 250.000
+Uridium: 65
+Xenomit: 2
+Prometium: 300
+Terbium: 300
+Endurium: 300
+Prometid: 48
+Duranium: 48
+Promerium: 12
+NPC-Punkte: 6
+Rangpunkte: 3
+Schaden: 12.000 - 14.000
+Lebensraum: 5-X
+Gesinnung: Agressiv
+ 26.4 Uber Annihilator 
+ Hitpoints: 2.400.000
+Schild: 1.600.000
+Damage: 90.000
+Geschwindigkeit: 320
+EP: 300.000
+Ehre: 200
+Credits: 100000
+Uri: 220
+Prometium: 1.200
+Endurium: 1.200
+Terbium: 1.200
+Xenomit: 8
+Prometid: 200
+Duranium: 200
+Promerium: 48
+Palladium: 4
+Lebensraum: 4-5, 5-2
+ 26.5 Barracuda 
+Hitpoints: 180.000
+Schild: 100.000
+EP: 15.000
+Ehre: 56
+Credits: 90.000
+Uridium: 25
+Xenomit: 0
+Prometium: 200
+Terbium: 200
+Endurium: 200
+Prometid: 24
+Duranium: 24
+Promerium: 4
+NPC-Punkte: 2
+Rangpunkte: 1
+Schaden: 4.500 - 6.000
+Lebensraum: 5-X
+Gesinnung: Agressiv
+ 26.6 Uber Barracuda 
+ Hitpoints: 1.400.000
+Schild: 800.000
+Damage: 48.000
+Geschwindigkeit: 400
+EP: 60.000
+Ehre: 100
+Credits: 360.000
+Uri: 80
+Prometium: 1.000
+Endurium: 1.000
+Terbium: 1.000
+Xenomit: 0
+Prometid: 100
+Duranium: 100
+Promerium: 100
+Palladium: 2
+Lebensraum: 4-5, 5-1, 5-2, 5-3
+ 26.7 Saboteur 
+Hitpoints: 200.000
+Schild: 150.000
+EP: 22.500
+Ehre: 72
+Credits: 125.000
+Uridium: 45
+Xenomit: 0
+Prometium: 200
+Terbium: 200
+Endurium: 200
+Prometid: 32
+Duranium: 32
+Promerium: 8
+NPC-Punkte: 4
+Rangpunkte: 2
+Schaden: 3.000 - 4.000
+Lebensraum: 5-X
+Gesinnung: Agressiv
+ 26.8 Uber Saboteur 
+ Hitpoints: 1.600.000
+Schild: 1.200.000
+Damage: 32.000
+Geschwindigkeit: 400
+EP: 90.000
+Ehre: 130
+Credits: 500.000
+Uri: 150
+Prometium: 1.500
+Endurium: 1.500
+Terbium: 1.500
+Xenomit: 0
+Prometid: 120
+Duranium: 120
+Promerium: 32
+Palladium: 2
+Lebensraum: 4-5, 5-2
+ 26.9 Battleray 
+Hitpoints: 330.000
+Schild: 260.000
+EP: 89.964
+Ehre: 200
+Credits: 1.160.000
+Uridium: 116
+Xenomit: 4
+Prometium: 400
+Terbium: 400
+Endurium: 400
+Prometid: 64
+Duranium: 64
+Promerium: 20
+NPC-Punkte: 16
+Rangpunkte: 8
+Schaden: 4.800 - 6.400
+Lebensraum: 5-3
+Gesinnung: Agressiv
+ 26.10 Uber Battleray 
+ Hitpoints: 2.640.000
+Schild: 2.080.000
+Damage: 12.800
+Geschwindigkeit: 350
+EP: 320.000
+Ehre: 300
+Credits: 4.000.000
+Uri: 300
+Prometium: 1.400
+Endurium: 1.400
+Terbium: 1.400
+Xenomit: 8
+Prometid: 250
+Duranium: 250
+Promerium: 80
+Palladium: 8
+Lebensraum: 4-5
+ 26.11 Spookfish 
+Hitpoints: 800.000
+Schild: 500.000
+Damage: 20.000
+Schadensverteilung: 90%
+Geschwindigkeit: 450
+EP: 150.000
+Ehre: 300
+Credits: 250.000
+Uri: 180
+Prometium: 200
+Endurium: 200
+Terbium: 200
+Xenomit: 0
+Prometid: 32
+Duranium: 32
+Promerium: 2
+Palladium: 0
+Lebensraum: 5-4
+ Zusätzliche Belohnung: Chance auf 1 Darksilver-Münze ​
+ 26.12 Lanternfish 
+Hitpoints: 1.500.000
+Schild: 800.000
+Damage: 30.000
+Schadensverteilung 90%
+Geschwindigkeit: 450
+EP: 250.000
+Ehre: 600
+Credits: 500.000
+Uri: 240
+Prometium: 400
+Endurium: 400
+Terbium: 400
+Xenomit: 8
+Prometid: 64
+Duranium: 64
+Promerium: 4
+Palladium: 0
+Lebensraum: 5-4
+ Zusätzliche Belohnung: Chance auf 2 Darksilver-Münze ​
+ 26.13 Barb 
+Hitpoints: 1.800.000
+Schild: 1.000.000
+Damage: 45.000
+Schadensverteilung: 90%
+Geschwindigkeit: 450
+EP: 350.000
+Ehre: 800
+Credits: 650.000
+Uri: 360
+Prometium: 800
+Endurium: 800
+Terbium: 800
+Xenomit: 16
+Prometid: 128
+Duranium: 128
+Promerium: 8
+Palladium: 0
+Lebensraum: 5-4
+ Zusätzliche Belohnung: Chance auf 3 Darksilver-Münze ​
+ 26.14 Pike 
+Hitpoints: 4.000.000
+Schild: 1.500.000
+Damage: 60.000
+Schadensverteilung: 90%
+Geschwindigkeit: 500
+EP: 800.000
+Ehre: 1.600
+Credits: 1.000.000
+Uri: 800
+Prometium: 1.200
+Endurium: 1.200
+Terbium: 1.200
+Xenomit: 256
+Prometid: 512
+Duranium: 512
+Promerium: 64 
+ Palladium: 0 
+ Lebensraum: 5-4
+ Zusätzliche Belohnung: Chance auf 1 Silver Booty Key & 5 Darksilver-Münze ​
+ 26.15 Stinger 
+Hitpoints: 85.000.000
+Schild: 70.000.000
+Damage: 100.000
+Schadensverteilung: 90%
+Geschwindigkeit: 350
+EP: 1.000.000
+Ehre: 4.000
+Credits: 10.000.000
+Uri: 2.000
+Prometium: 4.800
+Endurium: 4.800
+Terbium: 4.800
+Xenomit: 1.024 
+ Prometid: 2.048 
+ Duranium: 2.048
+Promerium: 256
+Palladium: 0
+Lebensraum: 5-4
+ Für die besten 8 Spieler in puncto Schaden werden zusätzlich die folgenden Belohnungen hinterlassen: ​
+ 5.000 Uridium 
+ 10.000.000 Credits 
+ 5.000.000 EP 
+ 12.000 Ehre 
+ 1 Caucasus-Laser – Chance von 0,5 % 
+ 75 Darksilver-Münzen 
+ 20-40 Isochronat – Chance von 45 % 
+ 15-30 Indoktrin-Beschleunigungen – Chance von 20 % 
+ 10-15 Indoktrinierungsöl – Chance von 4,5 % 
+ Zuletzt bearbeitet von Moderator: 20 Mai 2022 
+ TA-Shila , 
+ 11 April 2014 
+ #26 
+ Stogan87 gefällt dies.
+ TA-Shila 
+ Board Administrator 
+ Team Darkorbit 
+ 27. Infernal 
+Hitpoints: 60.000
+Schild: 50.000
+EP: 8.000
+Ehre: 4
+Credits: 25.000
+Uridium: 16
+Xenomit: 0
+Prometium: 100
+Terbium: 100
+Endurium: 100
+Prometid: 16
+Duranium: 16
+Promerium: 2
+Seprom: 1
+NPC-Punkte: 4
+Rangpunkte: 2
+Schaden: 900 - 1.000
+Lebensraum: Zeta Gate
+Gesinnung: Agressiv
+P.E.T EP: 400 
+ Zuletzt bearbeitet von Moderator: 20 Mai 2022 
+ TA-Shila , 
+ 11 April 2014 
+ #27 
+ Stogan87 gefällt dies.
+ TA-Shila 
+ Board Administrator 
+ Team Darkorbit 
+ 28. Scorcher 
+Hitpoints: 200.000
+Schild: 200.000
+EP: 16.000
+Ehre: 9
+Credits: 150.000
+Uridium: 32
+Xenomit: 0
+Prometium: 200
+Terbium: 200
+Endurium: 200
+Prometid: 32
+Duranium: 32
+Promerium: 4
+Seprom: 2
+NPC-Punkte: 8
+Rangpunkte: 4
+Schaden: 2.000 - 3.000
+Lebensraum: Zeta Gate
+Gesinnung: Agressiv
+P.E.T EP: 750 
+ Zuletzt bearbeitet von Moderator: 20 Mai 2022 
+ TA-Shila , 
+ 11 April 2014 
+ #28 
+ Stogan87 gefällt dies.
+ TA-Shila 
+ Board Administrator 
+ Team Darkorbit 
+ 29. Melter 
+Hitpoints: 400.000
+Schild: 300.000
+EP: 60.000
+Ehre: 12
+Credits: 400.000
+Uridium: 256
+Xenomit: 0
+Prometium: 300
+Terbium: 300
+Endurium: 300
+Prometid: 128
+Duranium: 128
+Promerium: 16
+Seprom: 8
+NPC-Punkte: 16
+Rangpunkte: 8
+Schaden: 3.500 - 5.000
+Lebensraum: Zeta Gate
+Gesinnung: Agressiv
+P.E.T EP: 2.750 
+ Zuletzt bearbeitet von Moderator: 20 Mai 2022 
+ TA-Shila , 
+ 11 April 2014 
+ #29 
+ Stogan87 gefällt dies.
+ TA-Shila 
+ Board Administrator 
+ Team Darkorbit 
+ 30. Devourer 
+Hitpoints: 2.000.000
+Schild: 1.000.000
+EP: 1.000.000
+Ehre: 512
+Credits: 2.500.000
+Uridium: 1.024
+Xenomit: 64
+Prometium: 1.600
+Terbium: 1.600
+Endurium: 1.600
+Prometid: 256
+Duranium: 256
+Promerium: 32
+Seprom: 16
+NPC-Punkte: 255
+Rangpunkte: 128
+Schaden: 1.500 - 2.000
+Lebensraum: Zeta Gate
+Gesinnung: Agressiv
+P.E.T EP: 50.000 
+ Zuletzt bearbeitet von Moderator: 20 Mai 2022 
+ TA-Shila , 
+ 11 April 2014 
+ #30 
+ Stogan87 und уσѕнινяⓤ[α∂ℓ] gefällt dies.
+ Zeige ignorierte Inhalte 
+ Seite 2 von 2 
+ &lt; Zurück 
+ 1 
+ 2 
+ Status des Themas: 
+ Es sind keine weiteren Antworten möglich. 
+ Benutzername oder E-Mail-Adresse: 
+ Besitzt du schon ein Benutzerkonto? 
+ Nein, erstelle jetzt ein Benutzerkonto. 
+ Ja, mein Passwort ist: 
+ Hast du dein Passwort vergessen? 
+ Angemeldet bleiben 
+ DarkOrbit DE 
+ Foren 
+ &gt; 
+ Hilfe 
+ &gt; 
+ Alles rund um das Spiel 
+ &gt; 
+ FAQs / Glossar 
+ &gt; 
+ Foren 
+ Foren
+ Direktauswahl
+ Letzte Beiträge 
+ Kalender 
+ Menu 
+ Sprache 
+ Deutsch 
+ Kontakt 
+ Hilfe 
+ Startseite 
+ RSS-Feed 
+ Nutzungsbedingungen 
+ Privatsphäre 
+ Forum software by XenForo &reg; &copy; 2010-2019 XenForo Ltd. Forum software by XenForo&trade; &copy;2010-2015 XenForo Ltd. 
+ XenForo Add-ons by Brivium &trade; &copy; 2012-2026 Brivium LLC.

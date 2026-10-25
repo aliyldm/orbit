@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<huntEvent>
+
+	<eventType>Blacklight_Surge</eventType>
+
+	<npcsToKill>
+		<npc npcId="174" factionPoints="2" factionPointsClan="2" foreignPoints="1" foreignPointsClan="1" /> <!-- npcType="PURPOSE_XXI" -->
+		<npc npcId="175" factionPoints="4" factionPointsClan="4" foreignPoints="2" foreignPointsClan="2" /> <!-- npcType="IMPULSE_II" -->
+		<npc npcId="176" factionPoints="8" factionPointsClan="8" foreignPoints="4" foreignPointsClan="4" /> <!-- npcType="ATTEND_IX" -->
+		<npc npcId="177" factionPoints="20" factionPointsClan="20" foreignPoints="10" foreignPointsClan="10" /> <!-- npcType="INVOKE_XVI" -->
+		<npc npcId="178" factionPoints="50" factionPointsClan="50" foreignPoints="25" foreignPointsClan="25" /> <!-- npcType="MINDFIRE_BEHEMOTH" -->
+	</npcsToKill>
+
+	<rewardPlayers>event_external_rewards_blacklightsurge2019rewards-players</rewardPlayers>
+	<rewardClans>event_external_rewards_blacklightsurge2019rewards-clans</rewardClans>
+
+	<clientData windowTitle="window_event_blsurge_title" internalHallofFameView="BlacklightSurge_userRanking" hintButtonVisible="true" hintButtonToolTip="window_event_blsurge_tab_points_ttip"/>
+</huntEvent>

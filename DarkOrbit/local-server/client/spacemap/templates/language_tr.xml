@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<filecollection>
+   <file debugView="false" hash="19122e3b8bd64ff643747dad85486300" id="flashres" location="tr" name="flashres" type="xml" version="1"/>
+   <file debugView="false" hash="ba03f67c717916574dc5ebe17ab6a700" id="laborres" location="tr" name="laborres" type="xml" version="1"/>
+   <file debugView="false" hash="6bec9bbb6474dc55ce2a22aefd636d00" id="resource" location="tr" name="resource" type="xml" version="1"/>
+   <file debugView="false" hash="e44731699d0392c5fa46c9703843ff00" id="resource_achievement" location="tr" name="resource_achievement" type="xml" version="1"/>
+   <file debugView="false" hash="4a71ddf7033f231dcd3390bfcced4000" id="resource_auction" location="tr" name="resource_auction" type="xml" version="1"/>
+   <file debugView="false" hash="23148613ff6d6f0fc858d32eebdd3a00" id="resource_breakingNews" location="tr" name="resource_breakingNews" type="xml" version="1"/>
+   <file debugView="false" hash="297600e123365eadd9a75797af391a00" id="resource_captain" location="tr" name="resource_captain" type="xml" version="1"/>
+   <file debugView="false" hash="1a381e977a450d7a00ff2abce219d600" id="resource_chat" location="tr" name="resource_chat" type="xml" version="1"/>
+   <file debugView="false" hash="887971b1f1b584305566947cf5c19200" id="resource_clan" location="tr" name="resource_clan" type="xml" version="1"/>
+   <file debugView="false" hash="dceb4823af3b83edca0639281a48a700" id="resource_clan_old" location="tr" name="resource_clan_old" type="xml" version="1"/>
+   <file debugView="false" hash="9a7ac5ae7dda71997494d36eb1b07600" id="resource_constants" location="tr" name="resource_constants" type="xml" version="1"/>
+   <file debugView="false" hash="f908f669f583d4403e0c07b5b65c6d00" id="resource_dock" location="tr" name="resource_dock" type="xml" version="1"/>
+   <file debugView="false" hash="1686d381333e3ed3fd88874d7de20e00" id="resource_eic" location="tr" name="resource_eic" type="xml" version="1"/>
+   <file debugView="false" hash="a46e11dcc1a8cf8dd8e1852151a7e900" id="resource_equipment_ui" location="tr" name="resource_equipment_ui" type="xml" version="1"/>
+   <file debugView="false" hash="99a56ff844621d40550b74518d965e00" id="resource_externalHome" location="tr" name="resource_externalHome" type="xml" version="1"/>
+   <file debugView="false" hash="b333861a0ada5d836060495d96994600" id="resource_externalPilotBio" location="tr" name="resource_externalPilotBio" type="xml" version="1"/>
+   <file debugView="false" hash="2f9f929af77d35811d45504a3b62d800" id="resource_faq" location="tr" name="resource_faq" type="xml" version="1"/>
+   <file debugView="false" hash="26741155fd6eb7b8ab34f0ee9dbff100" id="resource_galaxyGates" location="tr" name="resource_galaxyGates" type="xml" version="1"/>
+   <file debugView="false" hash="651b47517e8cf80ab7a6d5f8cbf9f200" id="resource_hallOfFame" location="tr" name="resource_hallOfFame" type="xml" version="1"/>
+   <file debugView="false" hash="365179ae73af51290216328f955d1f00" id="resource_inc" location="tr" name="resource_inc" type="xml" version="1"/>
+   <file debugView="false" hash="7a4c445d35a7885adada0c2382ddf900" id="resource_ingameEvents" location="tr" name="resource_ingameEvents" type="xml" version="1"/>
+   <file debugView="false" hash="56283219231d1d298062df3f05d6fe00" id="resource_inventory" location="tr" name="resource_inventory" type="xml" version="1"/>
+   <file debugView="false" hash="ff0664ce653f9080d861e093b0108000" id="resource_itemUpgradeSystem" location="tr" name="resource_itemUpgradeSystem" type="xml" version="1"/>
+   <file debugView="false" hash="464141ba4ebe7d2c775e98aa961b6100" id="resource_item_old" location="tr" name="resource_item_old" type="xml" version="1"/>
+   <file debugView="false" hash="0b72165c090187da4fe07230193f4c00" id="resource_items" location="tr" name="resource_items" type="xml" version="1"/>
+   <file debugView="false" hash="1559eb67728812873e62508da9c59081" id="resource_loadingScreen" location="tr" name="resource_loadingScreen" type="xml" version="1"/>
+   <file debugView="false" hash="6ec1639b93060a36138c050e81a97500" id="resource_localeBase" location="tr" name="resource_localeBase" type="xml" version="1"/>
+   <file debugView="false" hash="df2fbb30d49828290c6dfd6462e54f00" id="resource_messaging" location="tr" name="resource_messaging" type="xml" version="1"/>
+   <file debugView="false" hash="fec68897a8c99ab402c0f97fa4c99f00" id="resource_news" location="tr" name="resource_news" type="xml" version="1"/>
+   <file debugView="false" hash="6efb01b9067539d59bf39ead4f98bc00" id="resource_payment" location="tr" name="resource_payment" type="xml" version="1"/>
+   <file debugView="false" hash="fe1021b6f372135feb4717d09a497400" id="resource_pet" location="tr" name="resource_pet" type="xml" version="1"/>
+   <file debugView="false" hash="c0436a78c9e046d3a18ef8fad7f78800" id="resource_premiumExtension" location="tr" name="resource_premiumExtension" type="xml" version="1"/>
+   <file debugView="false" hash="1e6ebfbbf0b112230a76209b100174dc" id="resource_quest" location="tr" name="resource_quest" type="xml" version="1"/>
+   <file debugView="false" hash="a35c2d6861aaeb3e3769e144aed1a400" id="resource_skillTree" location="tr" name="resource_skillTree" type="xml" version="1"/>
+   <file debugView="false" hash="ae18c48f07e480ce3d6cb130499e1d00" id="resource_standalone" location="tr" name="resource_standalone" type="xml" version="1"/>
+   <file debugView="false" hash="165386af69e118c70fb61f9ad2e16500" id="resource_system" location="tr" name="resource_system" type="xml" version="1"/>
+   <file debugView="false" hash="edd20e2d0324d01dc3d13bd759492b00" id="resource_system_inc" location="tr" name="resource_system_inc" type="xml" version="1"/>
+   <file debugView="false" hash="bba8f81fa6f6ca090a448ee69b80c400" id="resource_upsellPackage" location="tr" name="resource_upsellPackage" type="xml" version="1"/>
+   <file debugView="false" hash="c1c50d65a4bd5578050e48e4fd446900" id="resource_xtm" location="tr" name="resource_xtm" type="xml" version="1"/>
+</filecollection>

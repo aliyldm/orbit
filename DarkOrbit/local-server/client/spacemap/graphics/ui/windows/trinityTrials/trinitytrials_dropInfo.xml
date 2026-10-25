@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    
+<template name="trinitytrials_dropInfo" >
+    <container name="dropInfo"
+                   width="728" height="460" autoSizeWidth="false" autoSizeHeight="false">
+        <Label name="title_info_label" 
+                width="657" 
+                height="60" 
+                alignX="center" 
+                alignY="top" 
+                marginTop="20" 
+                autoSizeWidth="false" 
+                autoSizeHeight="false" 
+                registeredSkinName="commonui_default_label" 
+                registeredTextStyleName="trinitutrials_rewards_info_text"
+                text="localize:trinitytrials_difficulty_info"/>
+        <coreponent name="list_title" 
+                autoSizeWidth="false" 
+                autoSizeHeight="false" width="532" height="41" alignX="center" alignY="top" marginTop="120">
+            <coreponent name="bg" width="532" height="42" registeredSkinName="trinitutrials_drop_info_list_item_bg"/>
+                    <Label name="label_1" width="110" height="20" alignY="center" text="localize:trinitytrials_difficulty_chart_difficulty" alignX="left" marginLeft="0" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_list_title_label"/>
+                    <Label name="label_2" width="210" height="20" alignY="top" marginTop="3" text="localize:trinitytrials_difficulty_chart_level" alignX="left" marginLeft="112" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_list_title_label"/>
+                    <Label name="label_3" width="210" height="20" alignY="center" text="localize:trinitytrials_difficulty_chart_drop_amount" alignX="left" marginLeft="322" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_list_title_label"/>
+                    
+        </coreponent>
+        <itemlist name="drop_level_info_list"
+                      itemGap="0"
+                      width="532"
+                      height="215"
+                      alignX="center"
+                      alignY="top"
+                      marginTop="162"
+                      mouseChildren="true"
+                      mouseEnabled="true"
+                      autoSizeWidth="false" 
+                      autoSizeHeight="false" 
+                      layout="vertical"
+                      cacheSkinMaskAsBitmap="false"
+                      itemAlignX="center"
+                      registeredSkinName="commonui_list_mask" >
+                <itemrenderer width="532" height="41" autoSizeWidth="false" autoSizeHeight="false" 
+                                                  mouseEnabled="true" mouseChildren="true">
+                    <coreponent name="bg" width="532" height="41" registeredSkinName="trinitutrials_drop_info_list_item_bg" alignY="top" marginTop="0"/>
+                    <Label name="label_1" width="110" height="35" alignY="top" marginTop="8" alignX="left" marginLeft="0" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_drop_info_label"/>
+                    <Label name="label_2" width="210" height="35" alignY="top" marginTop="8" alignX="left" marginLeft="110" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_drop_info_label"/>
+                    <Label name="label_3" width="210" height="35" alignY="top" marginTop="8" alignX="left" marginLeft="320" registeredSkinName="commonui_default_label" registeredTextStyleName="trinitutrials_drop_info_label"/>
+                                   
+                </itemrenderer>
+            </itemlist>
+    </container>
+</template>
+
+    <container name="root"
+               width="728" height="460" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChilderen="true">
+        <reference template="trinitytrials_dropInfo"/>
+    </container>
+</root>

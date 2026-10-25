@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="module_equipment_lib"/>
+        <library id="rankings_asset"/>
+        <library id="gameclientCommonUI"/>
+        <library id="commandCenterWindow"/>
+        <library id="battleStationsUI"/>
+        <library id="craftingWindow"/>
+        <library id="returneelogin"/>
+        <library id="seasonPass_asset"/>
+        <library id="synthesisLib"/>
+    </libraries>
+    <textstyle name="tab_textstyle"
+               textColor="0x6FB2CB"
+               type="dynamic"
+               fontSize="9"
+               autoSize="center"
+               wordWrap="true"
+               multiline="true"
+               align="center"
+               embedFonts="false"
+               fontName="Verdana"/>
+
+    <textstyle name="tab_textstyle_active"
+               textColor="0xE9E2C0"
+               type="dynamic"
+               fontSize="9"
+               autoSize="center"
+               wordWrap="true"
+               multiline="true"
+               align="center"
+               embedFonts="false"
+               fontName="Verdana"
+               glowFilter='{"color":"0xE9CB3C", "blurX":"1.1", "blurY":"1.1", "strength":"2", "quality":"2"}'/>
+    <container name="root" width="640" height="460" mouseEnabled="false" mouseChildren="true">
+        <container name="tabbarContainer" height="15" width="640" pixelSnapping="true">
+            <itemlist name="tabsItemlist" layout="horizontal" alignX="left" marginLeft="289" autoSizeWidth="true" itemGap="1" height="15"
+                      mouseEnabled="true" mouseChildren="true" cacheSkinMaskAsBitmap="false"
+                      registeredSkinName="commonui_list_mask">
+                <itemrenderer height="15" width="115" autoSizeWidth="false" mouseEnabled="true" mouseChildren="true">
+                    <button name="tab" mouseEnabled="true" autoSizeWidth="true" autoSizeHeight="true"
+                            mouseChildren="true" registeredSkinName="commonui_tabbarbutton"/>
+                    <button name="tab_selected" mouseEnabled="true" autoSizeWidth="true" visible="false"
+                            autoSizeHeight="true" mouseChildren="true" registeredSkinName="commonui_tabbarbutton"/>
+                    <label name="tabLabel" y="-1" text="?" width="113" mouseEnabled="false" mouseChildren="false"
+                           autoSizeWidth="true" registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="tab_textstyle"/>
+                </itemrenderer>
+            </itemlist>
+        </container>
+    </container>
+</root>

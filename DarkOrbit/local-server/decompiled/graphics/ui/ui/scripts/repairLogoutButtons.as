@@ -1,0 +1,17 @@
+package
+{
+   import flash.display.MovieClip;
+   
+   [Embed(source="/_assets/assets.swf", symbol="symbol593")]
+   public dynamic class repairLogoutButtons extends MovieClip
+   {
+      
+      public var buttonMC:MovieClip;
+      
+      public function repairLogoutButtons()
+      {
+         super();
+      }
+   }
+}
+

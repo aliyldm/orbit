@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<TextureAtlas imagePath="chat_ui_icon_texture.png">
+	<SubTexture name="chat_fraction1" x="0" y="0" width="24" height="24"/>
+	<SubTexture name="chat_fraction2" x="24" y="0" width="24" height="24"/>
+	<SubTexture name="chat_fraction3" x="48" y="0" width="24" height="24"/>
+	<SubTexture name="chat_ui_clean" x="72" y="0" width="19" height="17"/>
+	<SubTexture name="chat_ui_emoji_active" x="91" y="0" width="19" height="17"/>
+	<SubTexture name="chat_ui_emoji_hover" x="110" y="0" width="19" height="17"/>
+	<SubTexture name="chat_ui_emoji_normal" x="129" y="0" width="19" height="17"/>
+	<SubTexture name="chat_ui_message" x="148" y="0" width="25" height="17"/>
+	<SubTexture name="chat_ui_setting" x="173" y="0" width="19" height="17"/>
+	<SubTexture name="default_avatar" x="192" y="0" width="110" height="120"/>
+</TextureAtlas>

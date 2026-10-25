@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="portal_zeta.png">
+	<!-- Created with Adobe Animate version 15.2.0.66 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="normal" x="0" y="0" width="498" height="490" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__00.png" x="982" y="0" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__01.png" x="1282" y="0" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__02.png" x="1582" y="0" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__03.png" x="982" y="300" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__04.png" x="1282" y="300" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__05.png" x="1582" y="300" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__06.png" x="0" y="490" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__07.png" x="300" y="490" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__08.png" x="600" y="490" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__09.png" x="900" y="600" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__10.png" x="1200" y="600" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__11.png" x="1500" y="600" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__12.png" x="0" y="790" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__13.png" x="300" y="790" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__14.png" x="600" y="790" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__15.png" x="900" y="900" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__16.png" x="1200" y="900" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="effect__17.png" x="1500" y="900" width="300" height="300" pivotX="0" pivotY="0"/>
+	<SubTexture name="frozen" x="498" y="0" width="484" height="490" pivotX="0" pivotY="0"/>
+</TextureAtlas>

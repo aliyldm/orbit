@@ -1,0 +1,7 @@
+{
+  "mode": "local",
+  "portalUrl": "http://127.0.0.1:8095",
+  "gameHost": "127.0.0.1",
+  "gamePort": 8096,
+  "requireMultiplayerReady": true
+}

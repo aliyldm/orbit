@@ -1,0 +1,156 @@
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+    </libraries>
+    <textstyle name="armory_unlock_color_white"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="12"
+               autoSize="center" wordWrap="false" multiline="false"
+               embedFonts="false" fontName="Verdana" bold="true" align="center"/>
+
+    <textstyle name="armory_unlock_color_white_left"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="12"
+               autoSize="left" wordWrap="false" multiline="false"
+               embedFonts="false" fontName="Verdana" bold="true" align="left"/>
+
+    <template name="amoryUnlockTab1">
+        <container name="tab1"
+                   autoSizeWidth="true" autoSizeHeight="true" autoWidthMode="parent" autoHeightMode="parent">
+
+            <container name="body"
+                       autoSizeWidth="true" autoSizeHeight="true" autoWidthMode="parent" autoHeightMode="parent">
+
+                <container name="info001"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="top"
+                           width="155" height="35"
+                           marginLeft="50"  marginTop="25"
+                            >
+
+                    <container name="icon"
+                               autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="left" alignY="top"
+                               width="35" height="35"
+                               marginLeft="0"  marginTop="0"
+                               registeredSkinName="commonui_darklayer"
+                    />
+
+                    <label name="infoText"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="bottom"
+                           width="80" height="25"
+                           marginLeft="40"  marginBottom="0"
+                           text="x 10000"
+                           registeredTextStyleName="armory_unlock_color_white_left" />
+
+                    <button name="infoBtn"
+                            marginRight="5" marginTop="5"
+                            alignX="right"
+                            registeredSkinName="commonui_info_button"/>
+                </container>
+
+                <container name="info002"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="top"
+                           width="155" height="35"
+                           marginLeft="50"  marginTop="60"
+                            >
+
+                    <label name="infoText"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="bottom"
+                           width="80" height="25"
+                           marginLeft="0"  marginBottom="0"
+                           text="Main Prizes"
+                           registeredTextStyleName="armory_unlock_color_white_left" />
+
+                    <button name="infoBtn"
+                            marginRight="5" marginTop="5"
+                            alignX="right"
+                            registeredSkinName="commonui_info_button"/>
+                </container>
+
+                <container name="cardsContainer"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           width="600" height="390"
+                           alignX="center"
+                           alignY="top"
+                           marginTop="50"/>
+                <!--                   registeredSkinName="commonui_darklayer" -->
+
+                <container name="info003"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="bottom"
+                           width="90" height="40"
+                           marginLeft="175" marginBottom="140"
+                >
+                    <container name="icon"
+                               autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="left" alignY="top"
+                               width="40" height="40"
+                               marginLeft="0" marginTop="0"
+                               registeredSkinName="commonui_darklayer"
+                    />
+
+                    <label name="infoText"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="bottom"
+                           width="80" height="30"
+                           marginLeft="45" marginBottom="0"
+                           text="x 1"
+                           registeredTextStyleName="armory_unlock_color_white_left"/>
+                </container>
+
+                <container name="info004"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="right" alignY="bottom"
+                           width="90" height="40"
+                           marginRight="175" marginBottom="140">
+
+                    <container name="icon"
+                               autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="left" alignY="top"
+                               width="40" height="40"
+                               marginLeft="0" marginTop="0"
+                               registeredSkinName="commonui_darklayer"
+                    />
+
+                    <label name="infoText"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="bottom"
+                           width="80" height="30"
+                           marginLeft="45" marginBottom="0"
+                           text="x 10"
+                           registeredTextStyleName="armory_unlock_color_white_left"/>
+                </container>
+
+                <button name="explore01_btn"
+                        text="localize:armoryunlock_draw_once"
+                        textMarginY="1"
+                        width="260" height="40"
+                        autoSizeWidth="false" autoSizeHeight="false"
+                        alignX="left" alignY="bottom"
+                        marginLeft="90" marginBottom="90"
+                        registeredSkinName="commonui_scale9_button_blue" visible="true"/>
+
+                <button name="explore10_btn"
+                        text="localize:armoryunlock_draw_ten_times"
+                        textMarginY="1"
+                        width="260" height="40"
+                        autoSizeWidth="false" autoSizeHeight="false"
+                        alignX="right" alignY="bottom"
+                        marginRight="90" marginBottom="90"
+                        registeredSkinName="commonui_scale9_button_green" visible="true"/>
+            </container>
+
+        </container>
+    </template>
+    <container name="root"
+               width="800" height="634" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChildren="true">
+        <reference template="amoryUnlockTab1"/>
+    </container>
+</root>

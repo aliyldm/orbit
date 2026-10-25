@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<libraries>
+		<library id="gameclientCommonUI"/>
+	</libraries>
+
+	<textstyle  name="dispatch_reward_title_yellow"
+				textColor="0xFFCC00"
+				type="dynamic"
+				fontSize="12"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="sans-serif"
+				bold="true"
+				align="left"/>
+
+	<textstyle  name="dispatch_reward_table_header"
+				textColor="0xA4D3FF"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Arial"
+				bold="true"
+				align="left"/>
+
+	<textstyle  name="dispatch_reward_table_row_label"
+				textColor="0xFFFFFF"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Arial"
+				align="left"/>
+
+	<skin name="dispatch_reward_table_bg" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x0E1218" fillAlpha="1">normal</layer>
+	</skin>
+
+	<skin name="dispatch_reward_border" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x6593BE" fillAlpha="1">normal</layer>
+	</skin>
+
+	<!-- width: 346 height: 331 -->
+	<container name="root" width="331" height="307" mouseEnabled="false" mouseChildren="true">
+		<container name="contentContainer" width="330" height="295" marginTop="12" marginLeft="12"
+				   registeredSkinName="dispatch_reward_table_bg">
+			<!-- Borders -->
+			<coreponent name="border_top" width="330" height="2"
+						registeredSkinName="dispatch_reward_border"/>
+			<coreponent name="border_bottom" width="330" height="2" marginTop="293"
+						registeredSkinName="dispatch_reward_border"/>
+			<coreponent name="border_left" width="2" height="295"
+						registeredSkinName="dispatch_reward_border"/>
+			<coreponent name="border_right" width="2" height="295" marginLeft="328"
+						registeredSkinName="dispatch_reward_border"/>
+
+			<label name="title" text="A-01" height="22" marginTop="9" marginLeft="13" marginRight="2"
+				   autoSizeWidth="true" registeredTextStyleName="dispatch_reward_title_yellow"
+				   registeredSkinName="commonui_default_label"/>
+			<!-- Table header -->
+			<container name="table_header" height="27" marginTop="29" marginLeft="12" marginRight="2"
+					   autoSizeWidth="true">
+
+				<!--<coreponent name="test1" width="152" marginLeft="0" autoSizeHeight="true"
+							registeredSkinName="table_outline"/>
+				<coreponent name="test2" width="72" marginLeft="152" autoSizeHeight="true"
+							registeredSkinName="table_outline"/>
+				<coreponent name="test3" width="92" marginLeft="224" autoSizeHeight="true"
+							registeredSkinName="table_outline"/>-->
+				<label name="item" text="localize:dispatch_tooltip_header_itemName:base" width="151"
+					   marginTop="5" marginLeft="1" autoSizeWidth="false" autoSizeHeight="true"
+					   registeredTextStyleName="dispatch_reward_table_header"
+					   registeredSkinName="commonui_default_label"/>
+				<label name="amount" text="localize:dispatch_tooltip_header_amount:base" width="71"
+					   marginTop="5" marginLeft="153" autoSizeWidth="false" autoSizeHeight="true"
+					   registeredTextStyleName="dispatch_reward_table_header"
+					   registeredSkinName="commonui_default_label"/>
+				<label name="chance" text="localize:dispatch_tooltip_header_dropChance:base" width="91"
+					   marginTop="5" marginLeft="225" autoSizeWidth="false" autoSizeHeight="true"
+					   registeredTextStyleName="dispatch_reward_table_header"
+					   registeredSkinName="commonui_default_label"/>
+			</container>
+			<!-- Table content -->
+			<container name="table_content" height="237" autoSizeWidth="true" marginTop="56" marginLeft="12"
+					   marginRight="2">
+				<itemlist name="table_list"
+						  autoSizeWidth="true" autoSizeHeight="true"
+						  layout="vertical" itemGap="0" mouseEnabled="true" mouseChildren="true"
+						  cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+					<itemrenderer width="316" height="29" autoSizeWidth="false" autoSizeHeight="false"
+								  itemGap="0" mouseEnabled="true" mouseChildren="true">
+
+						<!--<coreponent name="test1" width="152" marginLeft="0" autoSizeHeight="true"
+									registeredSkinName="table_outline"/>
+						<coreponent name="test2" width="72" marginLeft="152" autoSizeHeight="true"
+									registeredSkinName="table_outline"/>
+						<coreponent name="test3" width="92" marginLeft="224" autoSizeHeight="true"
+									registeredSkinName="table_outline"/>-->
+
+						<coreponent name="icon" width="25" height="25" marginTop="1" marginLeft="2"
+									mouseEnabled="false"/>
+						<label name="name" text="Permit" width="125" marginTop="7" marginLeft="33"
+							   autoSizeWidth="false" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_reward_table_row_label"
+							   registeredSkinName="commonui_default_label"/>
+						<coreponent name="amountIcon" width="25" height="25" marginLeft="154" alignY="center"
+									mouseEnabled="false"/>
+						<label name="chance" text="Very High" width="92" marginTop="7" marginLeft="225"
+							   autoSizeWidth="false" autoSizeHeight="true"
+							   registeredTextStyleName="dispatch_reward_table_row_label"
+							   registeredSkinName="commonui_default_label"/>
+					</itemrenderer>
+				</itemlist>
+				<scrollbar name="table_scrollbar"
+						   width="6" autoSizeHeight="true" direction="vertical"
+						   marginTop="2" marginBottom="1" marginRight="0" alignX="right"
+						   registeredSkinName="commonui_scrollbar_bgnd">
+					<button name="buttonSlider"
+							width="6" height="7" alignX="center"
+							registeredSkinName="commonui_scrollbar_slider"/>
+				</scrollbar>
+				<bind source="table_scrollbar" target="table_list" type="scrollcontainer"/>
+			</container>
+		</container>
+	</container>
+</root>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+	<textstyle  name="title_frenzy_overview_min_left"
+				textColor="0xFFFFFF"
+				type="dynamic"
+				fontSize="8"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="left"/>
+
+	<textstyle  name="title_frenzy_overview_timer_header"
+				textColor="0xffbf13"
+				type="dynamic"
+				fontSize="11"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="left"/>
+
+	<textstyle  name="title_frenzy_overview_timer_right"
+				textColor="0xffbf13"
+				type="dynamic"
+				fontSize="10"
+				autoSize="right"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="right"/>
+
+	<textstyle  name="title_frenzy_overview_timer_ranking"
+				textColor="0xffbf13"
+				type="dynamic"
+				fontSize="10"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="center"/>
+
+	<textstyle  name="title_frenzy_overview_info"
+				textColor="0xFFFFFF"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="left"/>
+
+	<!-- SKINS -->
+
+
+	<!-- TEMPLATES -->
+	<template name="TITLE_FRENZY_OVERVIEW">
+		<container  name="overview"
+					autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent">
+			<container  name="main"
+						width="515" height="330" autoSizeWidth="false" autoSizeHeight="false"
+						marginTop="30" alignX="center">
+
+				<container name="scheduleTimer"
+						   autoSizeWidth="true" autoWidthMode="parent" height="45" autoSizeHeight="false"
+						   registeredSkinName="commonui_darklayer">
+
+					<label  name="header"
+							width="250" autoSizeWidth="false" height="15" autoSizeHeight="false"
+							alignY="center" marginLeft="20"
+							registeredTextStyleName="title_frenzy_overview_timer_header" registeredSkinName="commonui_default_label"/>
+
+					<label  name="value"
+							width="250" autoSizeWidth="false" height="15" autoSizeHeight="false"
+							alignX="right" alignY="center" marginRight="20"
+							registeredTextStyleName="title_frenzy_overview_timer_right" registeredSkinName="commonui_default_label"/>
+				</container>
+
+				<container  name="info"
+							width="465" height="220" autoSizeWidth="false" autoSizeHeight="false"
+							alignX="center" marginTop="70">
+					<label  name="data"
+							autoSizeWidth="true" autoWidthMode="parent"
+							registeredTextStyleName="title_frenzy_overview_info" registeredSkinName="commonui_default_label"/>
+				</container>
+
+				<container  name="eventEndTimer"
+							autoSizeWidth="true" autoWidthMode="parent" height="30" autoSizeHeight="false"
+							alignY="bottom">
+					<label  name="value"
+							width="300" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+							alignX="center"
+							registeredTextStyleName="title_frenzy_overview_timer_ranking" registeredSkinName="commonui_default_label"/>
+				</container>
+			</container>
+		</container>
+	</template>
+
+	<!-- CONTENT -->
+	<container name="root"
+			   width="545" height="390" autoSizeWidth="false" autoSizeHeight="false"
+			   mouseEnabled="false" mouseChilderen="true">
+		<reference template="TITLE_FRENZY_OVERVIEW"/>
+	</container>
+</root>

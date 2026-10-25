@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<filecollection>
+   <location id="loadingscreen" path="loadingscreen/"/>
+   <location id="loadingscreen_img" path="loadingscreen/img/"/>
+   <location id="loadingscreen_swf" path="loadingscreen/swf/"/>
+   <file debugView="false" hash="845c3d8562a9afc8b091e7f8f9006400" id="bgAssets.default" location="loadingscreen_swf" name="bgAssets.default" type="swf" version="1"/>
+   <file debugView="false" hash="9511c309cf79ca7d01050c538aed9b00" id="bgAssets.winter" location="loadingscreen_swf" name="bgAssets.winter" type="swf" version="1"/>
+   <file debugView="false" hash="43ff4794e3b844532318e0a483c35b00" id="bg_loadingscreen_1920x1200.default" location="loadingscreen_img" name="bg_loadingscreen_1920x1200.default" type="jpg" version="1"/>
+   <file debugView="false" hash="a5ce1e3fab943778baa992abf0c94000" id="bg_loadingscreen_1920x1200.winter" location="loadingscreen_img" name="bg_loadingscreen_1920x1200.winter" type="jpg" version="1"/>
+   <file debugView="false" hash="2d8a9be7993c43fc4dc54122deb03200" id="scrollbar.default" location="loadingscreen_swf" name="scrollbar.default" type="swf" version="1"/>
+   <file debugView="false" hash="2d8a9be7993c43fc4dc54122deb03200" id="scrollbar.winter" location="loadingscreen_swf" name="scrollbar.winter" type="swf" version="1"/>
+   <file debugView="false" hash="8a48cd4d8582b9231aa8c9b790ec5600" id="uiAssets.default" location="loadingscreen_swf" name="uiAssets.default" type="swf" version="1"/>
+   <file debugView="false" hash="17b19b3922a17f2ce4166e1b5f580800" id="uiAssets.winter" location="loadingscreen_swf" name="uiAssets.winter" type="swf" version="1"/>
+</filecollection>

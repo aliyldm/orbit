@@ -1,0 +1,19 @@
+{
+  "before": "decompiled/upgrade-footer-layout/upgradeWindowUI-before.xml",
+  "after": "client/spacemap/graphics/ui/windows/crafting/upgrade/upgradeWindowUI.xml",
+  "beforeFooterTop": 325,
+  "beforeFooterBottom": 490,
+  "afterFooterTop": 281,
+  "afterFooterBottom": 409,
+  "windowHeight": 450,
+  "defaultVerticalGapBefore": 5,
+  "explicitVerticalGapAfter": 0,
+  "listHeightBefore": 141,
+  "listHeightAfter": 94,
+  "scrollbarHeightAfter": 88,
+  "visibleInventoryViewportHeight": 120,
+  "mainSWFUnchanged": "47a0a55587987d5918ccb41e3e8fa9f3da2c13a8514b01e1e5be0f296894e585",
+  "inventorySWFUnchanged": "b7822f03cf8e4c639e1ed475cd11429deee40dde113e0466b43f43c96f3fb11a",
+  "xmlSha256": "8d03173b8699aefbc7179199b9b63509afe6c7bdff5fb88644f3babd489d81f8",
+  "nativeQtVisualAcceptance": false
+}

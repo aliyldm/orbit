@@ -1,0 +1,256 @@
+Source: https://board-fr.darkorbit.com/threads/guide-hades-fonctionnement-general.137511/
+Captured: 2026-10-23T16:07:48.748Z
+[GUIDE] Hadès – fonctionnement général | DarkOrbit FR 
+ DarkOrbit FR 
+ Forums 
+ &gt; 
+ Aide 
+ &gt; 
+ Stratégie, trucs & astuces 
+ &gt; 
+ You are using an out of date browser. It may not display this or other websites correctly.
+You should upgrade or use an alternative browser .
+ [GUIDE] Hadès – fonctionnement général
+ Discussion dans ' Stratégie, trucs & astuces ' démarrée par JohnLocke , 14 janvier 2026 .
+ Chère utilisatrice, cher utilisateur, 
+Nous vous informons que vous devez obligatoirement posséder un compte de jeu et vous connecter à celui-ci si vous souhaitez participer au forum. Nous nous réjouissons par avance de votre visite.
+ „Vers le jeu“ 
+ JohnLocke 
+ User 
+ [GUIDE] Hadès – fonctionnement général 
+ ​
+ Mise-à-Jour : 03/03/2026 
+ Etat : Complet 
+ une note ajoutée tout à la fin concernant le taux de proba d'un lf4 en hadès 
+Ce guide explique le fonctionnement général de la Galaxy Gate Hadès, principalement destiné aux joueurs qui la découvrent.
+Hadès est une Galaxy Gate exclusivement en groupe, exigeante, structurée en plusieurs phases et nécessitant une bonne coordination.
+ Restez dans le thème svp (Hadès : phases, NPC, organisation de groupe, récompenses, astuces). 
+ Dernière modification: 3 mars 2026 
+ ​
+ JohnLocke , 
+ 14 janvier 2026 
+ #1 
+ 33★Allnighter aime votre message.
+ JohnLocke 
+ User 
+ 1) Fonctionnement général 
+ • Hadès se joue uniquement en groupe
+• Elle est composée de 3 phases distinctes
+• Chaque phase doit être terminée pour accéder à la suivante
+• En cas de mort, il faut réintégrer une Hadès se trouvant à la même phase​
+ Astuce : 
+ • La fenêtre de groupe en jeu indique la phase actuelle du portail
+​
+ 2) Déroulement des phases et vagues de NPC 
+ 2.01) Phase 1 
+ • Vague 1 : 50 Sibelons
+• Vague 2 : 20 Boss Sibelons
+• Vague 3 : 4 Uber Sibelons
+• Vague 4 : 1 Empereur Sibelon​
+ Remarque : 
+ • L’Empereur Sibelon peut se téléporter vers un autre point de la map
+​
+ 2.02) Phase 2 
+ • Vague 1 : 50 Lordakium
+• Vague 2 : 20 Boss Lordakium
+• Vague 3 : 4 Uber Lordakium
+• Vague 4 : 1 Empereur Lordakium​
+ Remarques importantes : 
+ • L’Empereur Lordakium se téléporte régulièrement
+• Éviter absolument de le pousser vers un bord de la map
+• S’il atteint un bord, il peut se cloner (apparition de faux empereurs)
+• Se placer entre lui et le bord limite fortement ce comportement​
+ 2.03) Phase 3 
+ • Vague 1 : 50 Kristallon
+• Vague 2 : 20 Boss Kristallon
+• Vague 3 : 4 Uber Kristallon
+• Vague 4 : 1 Empereur Kristallon + 2 Uber Kristallon​
+ Remarques : 
+ • L’Empereur Kristallon pose des mines (très gros dégâts)
+• Il peut émettre des radiations infligeant des dégâts réguliers
+• Il peut également se téléporter​
+ ​
+ JohnLocke , 
+ 14 janvier 2026 
+ #2 
+ JohnLocke 
+ User 
+ 3) Récompenses
+3.01) Récompense de fin de portail 
+ • 4 000 000 PE
+• 200 000 Honneur
+• 20 000 Uridium
+• 15 000 munitions x4
+• 8 Logfiles (≈ 2 400 Uri)
+• 4 clés de butin pirate (≈ 6 000 Uri)​
+ Important : 
+ • La Hadès ne rapporte pas de Chromin
+• Lors des events Obsidienne, elle peut rapporter des Cristaux de schisme (boîtes rouge / bleue)
+​
+ 3.02) Chance spéciale 
+ • 15 % de chance d’obtenir un canon laser LF-4 (par joueur)
+• Si un joueur possède déjà 25 LF-4, il ne peut en obtenir qu’un supplémentaire
+ ​
+ 3.03) Récompenses NPC (estimation – groupe de 8) 
+ • Environ 1 200 000 PE
+• Environ 10 000 Honneur
+• Environ 15 000 000 Crédits
+• Environ 11 000 Uridium​
+ ​
+ JohnLocke , 
+ 14 janvier 2026 
+ #3 
+ JohnLocke 
+ User 
+ 4) Conseils / astuces / bonnes pratiques
+4.01) Boosters « partagés » (DB) : Honneur / XP (priorité) 
+Dans les portails collectifs (Hadès, QZ, Low), on parle très souvent de « DB » pour désigner les boosters partagés (effet de groupe).
+ • DB = booster partagé (groupe)
+ Quand un groupe demande des DB, il s’agit généralement de : 
+ ◦ DB Honneur (priorité)
+ ◦ DB XP (priorité)
+ ◦ DB Dégâts (optionnel selon les groupes, mais souvent apprécié)​
+Pourquoi c’est important ? 
+ • En Hadès, le portail est collectif : si tout le monde a DB Honneur + DB XP, l’équipe avance mieux et tout le monde optimise ses gains.
+• Dans beaucoup de groupes publics, ne pas avoir ces DB peut être mal vu et peut mener à un refus / une exclusion.
+​
+ Conseil : 
+Avant de rejoindre une Hadès, active au minimum DB Honneur + DB XP (et DB Dégâts si le groupe le demande).
+ 4.02) Munitions et rythme 
+ • Règle générale en Hadès :
+ Tir au x4
+ Grosses roquettes
+ Tirer au x1 pour “économiser” est très mal vu et ralentit fortement le groupe
+ ​
+ 4.03) Organisation de groupe 
+ • Rester groupé autant que possible
+• Éviter de partir seul “chercher des NPC”
+• Ne pas disperser les vagues
+• Vocal recommandé (ou consignes écrites claires)​
+ 4.04) Utilisation du Kamikaze (KAMI) – organisation de groupe 
+En Hadès, le Kamikaze du R.E.X est principalement utilisé au début des phases pour gagner du temps.
+ Principe général : 
+ • Le KAMI se déclenche surtout au départ d’une phase, sur la première vague de NPC.
+• Tous les joueurs se regroupent au même endroit (en cercle serré).
+• Les KAMI sont déclenchés quasi simultanément par l’équipe.​
+ Objectif : 
+ • Éliminer ou affaiblir fortement la première vague d’un coup.
+• Accélérer le clean et limiter la dispersion des NPC.
+• Éviter les tactiques individuelles : la Hadès se joue en équipe.​
+ Recommandations : 
+ • Être Premium est fortement conseillé pour réduire le cooldown du KAMI.
+• Utiliser une formation adaptée (souvent Anneau) pour maximiser l’efficacité.
+• Éviter de déclencher le KAMI seul ou en décalé : cela réduit l’impact global.
+• Après la première vague, le KAMI devient moins prioritaire et le combat se fait surtout aux lasers.​
+ Astuce : 
+ Un R.E.X avec peu de points de vie est souvent plus efficace pour le KAMI (moins de carburant gaspillé en déplacements inutiles).
+ 4.05) Astuce nanocoque lors des clics GG 
+ • Se mettre en Phoenix pour cliquer
+• Objectif : remplir rapidement la nanocoque
+• Une fois la nanocoque pleine, on n’en reçoit plus
+• Cela permet d’obtenir d’autres récompenses à la place
+​
+ 4.06) Empereur Lordakium – astuces 
+ • Ne jamais le pousser vers un bord
+• Risque de clones (perte de temps énorme)​
+ Astuce Wizz : 
+ • Lancer une Wizz juste avant sa téléportation
+• Un point apparaît ensuite sur la mini-carte
+• Il indique la position du vrai empereur
+• À répéter si nécessaire à chaque téléportation
+​
+ 4.07) À éviter absolument 
+ • Cliquer pour ouvrir d’autres Hadès pendant le combat
+• Se cacher pour “participer le minimum”
+• Désynchroniser volontairement le groupe​
+ Règle simple : 
+ • On termine la Hadès proprement, ensuite on clique
+​
+ 4.08) Quêtes : la Hadès peut compter (utile à savoir) 
+ • Les NPC de la Hadès comptent pour certaines quêtes.
+• En particulier, certaines quêtes liées à des boss / Uber peuvent progresser en Hadès.
+• C’est une des raisons pour lesquelles beaucoup de joueurs en profitent pour avancer leurs objectifs en même temps que la GG.​
+ Conseil : 
+ • Si tu as des quêtes de ce type, pense à les activer avant d’entrer en Hadès.​
+ Dernière modification: 14 janvier 2026 
+ ​
+ JohnLocke , 
+ 14 janvier 2026 
+ #4 
+ Omiris671 aime votre message.
+ 33★Allnighter 
+ User 
+ Salut JohnLocke ,
+Petites précisions :
+ 4.01 &gt; Il faudrait parler en fait de boosters partagés , qui intéressent le groupe : que chacun ait des boosters pour lui-même, après tout cela ne regarde que lui-même et tant pis/tant mieux pour ceux/celles qui peuvent ou prétendent s'en passer, mais les boosters qui servent tout le groupe doivent en effet être achetés/activés, c'est la logique même des portails collectifs (Hadès, QZ, LoW) et du travail en équipe.
+ 4.04 &gt; L'utilisation du Kamikaze se fait au départ : tout le monde restant groupé dans le cercle jusqu'à l'arrivée de la première vague de NPC, tous les Kami étant alors déclenchés ensemble. Ensuite, il ne peut plus y avoir que des tactiques individuelles vu l'éclatement inéluctable de l'équipe. Il s'agit donc essentiellement d'éliminer +/- d'un coup la première vague pour gagner du temps...
+ [ LG™ ]Latin Galactics EG3/EG6 | Alliance ABS United (AntiBot System) • ID 168783131 
+​
+ 33★Allnighter , 
+ 14 janvier 2026 
+ #5 
+ JohnLocke aime votre message.
+ JohnLocke 
+ User 
+ 33★Allnighter a dit:
+ &uarr; 
+ Salut JohnLocke ,
+Petites précisions :
+ 4.01 &gt; Il faudrait parler en fait de boosters partagés , qui intéressent le groupe : que chacun ait des boosters pour lui-même, après tout cela ne regarde que lui-même et tant pis/tant mieux pour ceux/celles qui peuvent ou prétendent s'en passer, mais les boosters qui servent tout le groupe doivent en effet être achetés/activés, c'est la logique même des portails collectifs (Hadès, QZ, LoW) et du travail en équipe.
+ 4.04 &gt; L'utilisation du Kamikaze se fait au départ : tout le monde restant groupé dans le cercle jusqu'à l'arrivée de la première vague de NPC, tous les Kami étant alors déclenchés ensemble. Ensuite, il ne peut plus y avoir que des tactiques individuelles vu l'éclatement inéluctable de l'équipe. Il s'agit donc essentiellement d'éliminer +/- d'un coup la première vague pour gagner du temps...
+ Click to expand...
+Salut et merci encore, en plus dans mes notes j'avais écrit mais au final je sais pas pourquoi j'ai tourné autrement xD, je vais modifier...
+ ​
+ JohnLocke , 
+ 14 janvier 2026 
+ #6 
+ 33★Allnighter aime votre message.
+ JohnLocke 
+ User 
+ Modifications concernant les boosters ( 4.01 , précision du DB) et usage du kami ( 4.04 , précision comment l'utiliser) ont été rectifiés.
+Merci encore à notre ami 33★Allnighter .
+ ​
+ JohnLocke , 
+ 14 janvier 2026 
+ #7 
+ 33★Allnighter aime votre message.
+ JohnLocke 
+ User 
+ Note :
+“BP n’a jamais communiqué de pourcentage officiel pour l’LF-4 sur Hadès : la FAQ dit juste ‘une chance’ (sans chiffre). Du coup, les valeurs qu’on voit (15% ou 25%) viennent de sites/estimations communautaires, pas d’une source officielle. À prendre comme indicatif, pas comme certitude.” 
+ ​
+ JohnLocke , 
+ 3 mars 2026 
+ #8 
+ 33★Allnighter aime votre message.
+ (Vous devez être identifié(e) pour pouvoir répondre.) 
+ Afficher le contenu ignoré 
+ Votre nom ou adresse e-mail: 
+ Avez vous déjà un compte ? 
+ Non, créer un compte maintenant. 
+ Oui, mon mot de passe est: 
+ Mot de passe oublié ? 
+ Rester identifié(e) 
+ DarkOrbit FR 
+ Forums 
+ &gt; 
+ Aide 
+ &gt; 
+ Stratégie, trucs & astuces 
+ &gt; 
+ Forums 
+ Forums
+ Liens rapides
+ Posts récents 
+ Calendrier 
+ Menu 
+ Langue 
+ Français 
+ Mentions légales 
+ Aide 
+ Accueil 
+ RSS 
+ Règlement 
+ Politique de confidentialité 
+ Forum software by XenForo &reg; &copy; 2010-2019 XenForo Ltd. Forum software by XenForo&trade; &copy;2010-2015 XenForo Ltd. 
+ XenForo Add-ons by Brivium &trade; &copy; 2012-2026 Brivium LLC.

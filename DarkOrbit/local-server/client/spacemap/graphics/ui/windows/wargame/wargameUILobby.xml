@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="wargameUIAssets"/>
+    </libraries>
+
+    <textstyle
+            name="wargamelobby_info"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="12"
+            autoSize="left"
+            embedFonts="false"
+            fontName="Verdana"/>
+
+    <textstyle
+            name="wargame_text_error"
+            textColor="0xffcc00"
+            type="dynamic"
+            fontSize="10"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"/>
+
+
+
+
+
+    <skin name="wargame_scrollContainer_skin" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x13323E" fillAlpha="0">mask</layer>
+        <layer classname="FilledBoxLayer" fillColor="0x13323E" fillAlpha="0.45" lineAlpha="1" lineColor="0x0cabd4">
+            normal
+        </layer>
+    </skin>
+
+    <skin name="wargamelobby_icon_watch" library="wargameUIAssets" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="icon_timer">normal</layer>
+    </skin>
+    <skin name="wargamelobby_icon_player" library="wargameUIAssets" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="icon_player">normal</layer>
+    </skin>
+
+    <skin name="wargamelobby_icon_error" library="wargameUIAssets" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="icon_error">normal</layer>
+    </skin>
+
+
+
+
+    <skin name="wargame_itemlist_hover" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillAlpha="0" lineAlpha="1" lineColor="0xb0b4b5">normal</layer>
+        <layer classname="FilledBoxLayer" fillAlpha="0" lineAlpha="1" lineColor="0xffcc00">over</layer>
+        <layer classname="FilledBoxLayer" fillAlpha="0" lineAlpha="1" lineColor="0xb0b4b5">clicked</layer>
+        <layer classname="FilledBoxLayer" lineColor="0xffcc00" fillAlpha="0" lineAlpha="1">disabled</layer>
+    </skin>
+
+    <skin name="wargame_bg_grey" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x000000" fillAlpha="0.3">normal</layer>
+    </skin>
+
+
+    <container name="root" mouseEnabled="false" height="400" width="300">
+        <container
+                name="lobby_container"
+                mouseEnabled="false"
+                width="280"
+                height="320">
+            <container width="260" y="6" x="5" height="20">
+                <coreponent registeredSkinName="commonui_info_image" />
+                <label x="28" y="1" useHTML="true" width="240" mouseEnabled="true"
+                       registeredTextStyleName="wargamelobby_info" text="localize:event_wargame_info_header"/>
+            </container>
+            <container name="info_container" x="8" y="29" height="175" width="261">
+                <scrollcontainer mouseEnabled="true" name="wargame_desc_container"
+                                 width="261" height="138" alignX="center"
+                                 registeredSkinName="wargame_scrollContainer_skin">
+                    <label name="content" alignX="center" text="localize:event_wargame_info_content" useHTML="true" width="240" mouseEnabled="true"
+                           registeredTextStyleName="commonui_info_textstyle" autoSizeTextHeight="true"/>
+                </scrollcontainer>
+                <scrollbar name="wargamelobby_info_scrollbar" width="5" y="1" height="137" alignX="right"
+                           registeredSkinName="commonui_scrollbar_bgnd">
+                    <button name="buttonSlider" width="5" height="6"
+                            alignX="center" registeredSkinName="commonui_scrollbar_slider"/>
+                </scrollbar>
+                <bind source="wargamelobby_info_scrollbar" target="wargame_desc_container"
+                      type="scrollcontainer"/>
+            </container>
+
+            <container x="5" y="178" width="260" height="20">
+                <coreponent registeredSkinName="commonui_reward_icon" />
+                <label x="28" y="1" useHTML="true" width="240" mouseEnabled="true"
+                       registeredTextStyleName="wargamelobby_info" text="localize:button_tas_rewards"/>
+            </container>
+
+
+            <container y="199" x="8" name="rewards_container" width="262" height="40">
+                <coreponent width="230" height="40" y="1" x="16" registeredSkinName="wargame_bg_grey"/>
+                <itemlist name="rewards"
+                          width="232"
+                          itemGap="0"
+                          x="16"
+                          height="32"
+                          alignY="center"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          autoSizeWidth="false"
+                          layout="horizontal"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask"
+                        >
+                    <itemrenderer width="38" autoSizeWidth="false" height="32" mouseEnabled="true" mouseChildren="true">
+                        <coreponent name="hitlayer" registeredSkinName="commonui_hitlayer" mouseEnabled="true"
+                                    mouseChildren="true" autoSizeWidth="true" autoSizeHeight="true" alpha="0"
+                                    tooltipTemplateID="commonui_tooltip_simple"/>
+                        <coreponent name="pic" width="30" height="30" alignX="center" alignY="center"/>
+                        <button name="hover" width="30" height="30" alignX="center" alignY="center"
+                                registeredSkinName="wargame_itemlist_hover"/>
+                        <label name="item_description" registeredTextStyleName="wargamelobby_info" visible="false" width="0" height="0" />
+
+                    </itemrenderer>
+                </itemlist>
+                <button name="left" alignY="center" alignX="left" width="13" height="24"
+                        registeredSkinName="commonui_arrow_button_right"/>
+                <button name="right" width="13" height="24" alignY="center" alignX="right"
+                        registeredSkinName="commonui_arrow_button_right"/>
+            </container>
+            <container y="264" name="action_container" width="280" height="50">
+                <container width="212" alignX="center" name="too_low" visible="false">
+                    <coreponent registeredSkinName="wargamelobby_icon_error" y="4" x="0"/>
+                    <label x="13" useHTML="true" width="200" height="40"
+                           registeredTextStyleName="wargame_text_error" text="localize:event_wargame_gearscore_too_low"/>
+                </container>
+                <container visible="false" height="50"  width="252" alignX="center" name="signup_running">
+                    <container alignX="center" width="200">
+                        <movieclip library="wargameUIAssets" libraryID="loadingbar" />
+                    </container>
+                    <button name="btn" width="146" height="27" text="localize:teamdeathmatch_popup_match_participation_leave"
+                            alignX="center" alignY="bottom" textMarginY="1"
+                            registeredSkinName="commonui_scale9_button_blue"/>
+                </container>
+
+
+                <container width="280" height="50" alignX="center" name="ready" visible="true">
+                    <button name="btn" width="146" height="27" text="localize:teamdeathmatch_lobbywindow_button_join"
+                            alignX="center" alignY="bottom" textMarginY="1"
+                            registeredSkinName="commonui_scale9_button_green"/>
+                </container>
+
+
+
+            </container>
+
+        </container>
+    </container>
+</root>
+
+
+
+
+

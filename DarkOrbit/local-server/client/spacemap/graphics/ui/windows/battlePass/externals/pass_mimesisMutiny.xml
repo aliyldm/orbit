@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<battlePass>
+    <!-- Objective Panel -->
+    <objectiveList>
+		
+        <!-- Tier 1 -->
+		
+        <!-- Avoiding Hexes - Damage Hexor Mimesis -->
+        <objective questId="500456">
+            <questReward lootid="ammunition_laser_emaa-20" amount="5000"/>
+            <bpReward lootid="resource_collectable_axion-beam-regulator" amount="75"/>
+        </objective>
+		<!-- Byte Collection - Collect Byte remnants -->
+        <objective questId="500461">
+            <questReward lootid="resource_extra-energy" amount="10"/>
+            <bpReward lootid="resource_collectable_indoctrineoil" amount="60"/>
+        </objective>
+		<!-- Targeting AI - Use EMAA-20 -->
+        <objective questId="500464">
+            <questReward lootid="ammunition_rocket_plt-2021" amount="2500"/>
+            <bpReward lootid="ammunition_laser_ucb-100" amount="4000"/>
+        </objective>
+		<!-- Providing Escort - Go to escort map -->
+        <objective questId="500467">
+            <questReward lootid="resource_booty-key" amount="1"/>
+			<bpReward packageid="package_battlepass_bpReward-500467" packageItemIds="ammunition_laser_emaa-20,ammunition_specialammo_emote_alien-angry" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500467"/>
+        </objective>
+		<!-- Gallant Guard - Stay on escort map -->
+        <objective questId="500470">
+            <questReward lootid="booster_shd-dlb" amount="10"/>
+            <bpReward lootid="ammunition_laser_spacecup_group-c" amount="10000"/>
+        </objective>
+		<!-- Raider Assault - Kill Raider Mimesis -->
+        <objective questId="500473">
+            <questReward lootid="ammunition_rocketlauncher_hstrm-01" amount="700"/>
+            <bpReward packageid="package_battlepass_bpReward-500473" packageItemIds="equipment_shipupgrade_hp-s01,ammunition_specialammo_spray_hearts" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500473"/>
+        </objective>
+		<!-- Secure the Freighter - Damamge Escort Mini & Boss NPC -->
+        <objective questId="500476">
+            <questReward lootid="booster_hp-dlb" amount="10"/>
+			<bpReward packageid="package_battlepass_bpReward-500476" packageItemIds="tech_burning-trail,ammunition_specialammo_spray_ko" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500476"/>
+        </objective>
+		
+        <!-- Tier 2 -->
+		
+		<!-- Calming the Rage - Damage Raging Mimesis -->
+        <objective questId="500457">
+            <questReward lootid="ammunition_rocket_bdr-1211" amount="5000"/>
+            <bpReward lootid="ammunition_specialammo_emp-01" amount="60"/>
+        </objective>
+		<!-- Qualitative Data - Collect Byte Remnants -->
+        <objective questId="500462">
+            <questReward lootid="resource_booty-key" amount="2"/>
+            <bpReward lootid="ammunition_rocketlauncher_hstrm-01" amount="1000"/>
+        </objective>
+		<!-- Damaging Systems - Use EMAA-20 -->
+        <objective questId="500465">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="15"/>
+            <bpReward lootid="resource_collectable_axion-beam-regulator" amount="50"/>
+        </objective>
+		<!-- Heavy Protection - Go to escort map -->
+        <objective questId="500468">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="20"/>
+            <bpReward lootid="ammunition_specialammo_r-ic3" amount="75"/>
+        </objective>
+		<!-- Elite Convoy - Stay on escort map -->
+        <objective questId="500471">
+            <questReward lootid="ammunition_rocketlauncher_ubr-100" amount="3000"/>
+            <bpReward packageid="package_battlepass_bpReward-500471" packageItemIds="tech_battle-repair-bot2,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500471"/>
+        </objective>
+		<!-- Don't Let them Heal - Kill Medic Mimesis -->
+        <objective questId="500474">
+            <questReward lootid="resource_collectable_axion-beam-regulator" amount="50"/>
+            <bpReward lootid="ammunition_laser_rsb-75" amount="10000"/>
+        </objective>
+		<!-- Overcoming Gimmicks - Damamge Escort Mini & Boss NPC -->
+        <objective questId="500477">
+            <questReward lootid="ammunition_specialammo_sr-5" amount="100"/>
+            <bpReward lootid="ammunition_rocketlauncher_ubr-100" amount="5000"/>
+        </objective>
+		
+        <!-- Tier 3 -->
+
+		<!-- Defeat the Clones - Damage Cloning Mimesis -->
+        <objective questId="500458">
+            <questReward lootid="ammunition_specialammo_r-ic3" amount="100"/>
+            <bpReward lootid="booster_dmg-dlb" amount="10"/>
+        </objective>
+		<!-- Data Analysis - Collect Byte Remnants -->
+        <objective questId="500463">
+			<questReward packageid="package_battlepass_questReward-500463" packageItemIds="resource_collectable_indoctrineoil,ammunition_specialammo_emote_alien-smile" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500463"/>
+            <bpReward lootid="resource_collectable_axion-beam-regulator" amount="75"/>
+        </objective>
+		<!-- Electromagnetic Resistance - Use EMAA-20 -->
+        <objective questId="500466">
+			<questReward packageid="package_battlepass_questReward-500466" packageItemIds="ammunition_specialammo_dcr-250,ammunition_specialammo_spray_like" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500466"/>
+            <bpReward lootid="ammunition_rocket_bdr-1211" amount="5000"/>
+        </objective>
+		<!-- Safe Than Sorry - Go to escort map -->
+        <objective questId="500469">
+            <questReward lootid="ammunition_laser_ucb-100" amount="3000"/>
+            <bpReward lootid="ammunition_rocket_plt-3030" amount="4000"/>
+        </objective>
+		<!-- Defensive Tactics - Stay on escort map -->
+        <objective questId="500472">
+			<questReward packageid="package_battlepass_questReward-500472" packageItemIds="tech_shield-backup2,ammunition_specialammo_emote_alien-wink" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500472"/>
+            <bpReward packageid="package_battlepass_bpReward-500472" packageItemIds="ammunition_specialammo_sr-5,tech_npc-nuke" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500472"/>
+        </objective>
+		<!-- Brains VS Brawn - Kill Escort Tank -->
+        <objective questId="500475">
+            <questReward lootid="booster_dmg-dlb" amount="10"/>
+            <bpReward lootid="resource_collectable_axion-beam-regulator" amount="100"/>
+        </objective>
+		<!-- Engaging the Enemy - Damamge Escort Mini & Boss NPC -->
+        <objective questId="500478">
+            <questReward packageid="package_battlepass_questReward-500478" packageItemIds="ammunition_laser_rsb-75,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500478"/>
+            <bpReward packageid="package_battlepass_bpReward-500478" packageItemIds="ammunition_specialammo_dcr-250,equipment_shipupgrade_shd-t01" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500478"/>
+        </objective>
+		
+		<!-- Tier 4 and above -->
+
+		<!-- Overcoming Terror - Damage Terror Mimesis -->
+        <objective questId="500459">
+            <questReward lootid="ammunition_rocketlauncher_ubr-100" amount="1000"/>
+            <bpReward lootid="tech_npc-nuke" amount="1"/>
+        </objective>
+		<!-- Two Edged Sword - Damage Reflector Mimesis -->
+        <objective questId="500460">
+            <questReward lootid="resource_collectable_axion-beam-regulator" amount="100"/>
+            <bpReward lootid="equipment_shipupgrade_spc-c02" amount="1"/>
+        </objective>
+		
+        <!-- Epic Objectives -->
+	
+        <!-- Stopping the Mutiny - Complete Objectives -->
+        <objective questId="500479">
+            <questReward packageid="package_battlepass_questReward-500479" packageItemIds="equipment_shipupgrade_dmg-ms02,resource_collectable_byte-remnant" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500479"/>
+            <bpReward packageid="package_battlepass_bpReward-500479" packageItemIds="ship_sentinel_design_sentinel-tyrannos,resource_collectable_byte-remnant" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500479"/>
+        </objective>
+		<!-- Guerrilla Warfare - Damamge any AI NPCs -->
+        <objective questId="500480">
+            <questReward packageid="package_battlepass_questReward-500480" packageItemIds="booster_cd-dlb,resource_collectable_byte-remnant" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500480"/>
+            <bpReward packageid="package_battlepass_bpReward-500480" packageItemIds="ammunition_rocketlauncher_hstrm-01,resource_collectable_byte-remnant" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500480"/>
+        </objective>
+		<!-- Uprooting Systems - Damamge any AI NPCs -->
+        <objective questId="500481">
+            <questReward packageid="package_battlepass_questReward-500481" packageItemIds="ammunition_specialammo_emp-01,resource_collectable_byte-remnant" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500481"/>
+            <bpReward packageid="package_battlepass_bpReward-500481" packageItemIds="tech_explosive-charging-blob,resource_collectable_byte-remnant" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500481"/>
+        </objective>
+		<!-- AI Eradication - Damamge any AI NPCs	-->
+        <objective questId="500482">
+            <questReward packageid="package_battlepass_questReward-500482" packageItemIds="tech_npc-nuke,resource_collectable_byte-remnant" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_questReward-500482"/>
+            <bpReward packageid="package_battlepass_bpReward-500482" packageItemIds="ammunition_rocketlauncher_ubr-100,resource_collectable_byte-remnant" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500482"/>
+        </objective>
+
+    </objectiveList>
+
+    <!-- Battle pass texts -->
+    <flvDisplayLootId>ship_sentinel_design_sentinel-tyrannos</flvDisplayLootId>
+    
+    <titleKeyBeforePurchase>window_objectives_bp_title</titleKeyBeforePurchase>
+    <descriptionKeyBeforePurchase>window_objectives_bp_promo_desc-escort</descriptionKeyBeforePurchase>
+    
+    <descriptionKeyCollect>window_objectives_bp_collect_desc</descriptionKeyCollect>
+    
+    <titleKeyAfterPurchase>window_objectives_bp_highlight_title-escort</titleKeyAfterPurchase>
+    <descriptionKeyAfterPurchase>window_objectives_bp_highlight_desc-escort</descriptionKeyAfterPurchase>
+</battlePass>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="chatWindowUIAssets"/>
+        <library id="traininggroundsUI"/>
+
+    </libraries>
+
+    <textstyle name="tiered_arena_textstyle_score"
+               background="false"
+               textColor="0xFFFFFF"
+               type="dynamic"
+               selectable="false"
+               fontName="EurostileFl"
+               wordWrap="true"
+               align="center"
+               embedFonts="true"
+               fontSize="16"
+    />
+
+    <textstyle  name        = "tiered_arena_confirmationbutton_blue_normal"
+                textColor   = "0xF1FBEC"
+                fontSize    = "16"
+                type        = "dynamic"
+                fontName    = "EurostileHeaFl"
+                embedFonts  = "true"
+                autoSize    = "center"
+    />
+
+    <textstyle name="tiered_arena_info"
+               textColor="0x999898"
+               type="dynamic"
+               fontSize="9"
+               autoSize="left"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               align="left"/>
+    <textstyle
+            name="tiered_arena_overview_left"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="9"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"/>
+    <textstyle
+            name="tiered_arena_overview_right"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="9"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="right"/>
+    <textstyle
+            name="tiered_arena_overview_yellow_right"
+            textColor="0xffe102"
+            type="dynamic"
+            fontSize="9"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="right"/>
+
+    <textstyle
+            name="tiered_arena_rewards_headline"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="left"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="true"
+            align="right"/>
+
+    <textstyle
+            name="tiered_arena_rewards_content"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="9"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"/>
+
+    <textstyle
+            name="tiered_arena_overview_ttip_title"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"
+            bold="true"/>
+
+    <textstyle
+            name="tiered_arena_overview_ttip_content"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="9"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"
+            bold="false"/>
+
+    <skin name="tiered_arena_scrollbar_bgnd" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+    </skin>
+
+    <skin name="tiered_arena_item_outline" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" lineColor="0x00ccff" fillAlpha="0" lineAlpha="1">normal</layer>
+    </skin>
+
+    <skin name="tiered_arena_ttip_frame" library="traininggroundsUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" scale9grid="1,1,2,2" libraryID="ttip_frame">normal</layer>
+    </skin>
+
+    <template name="TIEREDARENA_TABBAR">
+        <container name="tabbarContainer" height="20" width="370" marginTop="0" marginLeft="0"
+                   marginRight="0" pixelSnapping="true">
+            <itemlist name="tabsItemlist" registeredSkinName="commonui_list_mask" layout="horizontal" alignX="right"
+                      width="228" itemGap="0" height="20" mouseEnabled="true" mouseChildren="true"
+                      cacheSkinMaskAsBitmap="false">
+                <itemrenderer height="15" width="113" autoSizeWidth="false" mouseEnabled="true" mouseChildren="true">
+                    <button name="tab" registeredSkinName="commonui_tabbarbutton" mouseEnabled="true"
+                            autoSizeWidth="true" autoSizeHeight="true" mouseChildren="true"/>
+                    <button name="tab_selected" registeredSkinName="commonui_tabbarbutton" mouseEnabled="true"
+                            autoSizeWidth="true" visible="false" autoSizeHeight="true" mouseChildren="true"/>
+                    <label y="-1" name="tabLabel" registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="commonui_tabbar_center" mouseEnabled="false"
+                           mouseChildren="false" autoSizeWidth="true" text="?"/>
+                </itemrenderer>
+            </itemlist>
+        </container>
+    </template>
+
+    <template name="TIEREDARENA_OVERVIEW">
+        <container name="overview" visible="false" marginLeft="20" marginRight="20" marginTop="36"
+                   width="330" height="225"
+                   alignX="left">
+            <container name="top" alignX="center" width="330" height="120"
+                       marginLeft="0" marginRight="0" marginTop="0"
+                       registeredSkinName="commonui_darklayer" >
+                <coreponent registeredSkinName="commonui_horizontal_divider" height="3" width="330" marginTop="50"/>
+                <container name="left" width="250" height="100" marginLeft="20">
+                    <label text="localize:tieredArena_tab_overview_reputation"
+                           marginTop="15" autoSizeWidth="true"
+                           registeredSkinName="commonui_default_label" registeredTextStyleName="tiered_arena_overview_left"/>
+                    <label name="lbl_arena_time_left"
+                           text="localize:tieredArena_tab_overview_arena_open" autoSizeWidth="true"
+                           marginTop="65"
+                           registeredSkinName="commonui_default_label" registeredTextStyleName="tiered_arena_overview_left"/>
+                    <label text="localize:tieredArena_tab_overview_arena_end" autoSizeWidth="true"
+                           marginTop="85"
+                           registeredSkinName="commonui_default_label" registeredTextStyleName="tiered_arena_overview_left" />
+                </container>
+                <container name="right" width="200" height="100" marginRight="20" alignX="right">
+                    <label name="rep" autoSizeWidth="true" registeredSkinName="commonui_default_label" text="0"
+                           registeredTextStyleName="tiered_arena_overview_right" marginTop="15"/>
+                    <label name="arena_time_left" autoSizeWidth="true"
+                           text="0"
+                           marginTop="65"
+                           registeredSkinName="commonui_default_label" registeredTextStyleName="tiered_arena_overview_right" />
+                    <label name="arena_time_end" autoSizeWidth="true"
+                           text="0"
+                           marginTop="85"
+                           registeredSkinName="commonui_default_label" registeredTextStyleName="tiered_arena_overview_right" />
+                </container>
+            </container>
+            <container name="bottom" width="300" marginLeft="0" marginRight="0" marginTop="145"
+                       autoSizeHeight="true" alignX="center">
+                <button registeredSkinName="commonui_info_button" marginLeft="0" alignX="left" alignY="top"
+                        tooltipData = "localize:tieredArena_tab_overview_desc_ttip"/>
+                <label text="localize:tieredArena_tab_overview_description" registeredTextStyleName="tiered_arena_info"
+                       alignX="left" alignY="top" marginLeft="30"
+                       registeredSkinName="commonui_default_label" width="260" autoSizeHeight="true"/>
+            </container>
+        </container>
+    </template>
+
+
+    <template name="TIEREDARENA_REWARDS">
+        <container name="rewards" marginLeft="20" marginRight="20" marginTop="26"
+            height="445">
+            <!-- top section showing participant requirement -->
+            <!-- todo this label need to be bigger -->
+
+            <container name="top" width="330">
+                <label text="localize:tieredArena_tab_rewards_participate_title"
+                    marginLeft="5"
+                    registeredSkinName="commonui_default_label"
+                    autoSizeWidth="true" registeredTextStyleName="tiered_arena_rewards_headline"/>
+                <label text="localize:tieredArena_tab_rewards_participate_desc" autoSizeWidth="true"
+                    marginLeft="5" marginTop="20"
+                    registeredSkinName="commonui_default_label"
+                    registeredTextStyleName="tiered_arena_rewards_content"/>
+                <container name="participate" width="330" height="40"
+                        marginTop="60"
+                        alignX="left"
+                        registeredSkinName="commonui_darklayer">
+                    <label text="localize:tieredArena_tab_rewards_participate_required"
+                        autoSizeWidth="true" marginLeft="20" marginTop="11"
+                        registeredSkinName="commonui_default_label"
+                        registeredTextStyleName="tiered_arena_overview_left"/>
+                    <label name="reputation_required"
+                        text="!300!" autoSizeWidth="true" alignX="right"
+                        marginRight="33" marginTop="11"
+                        registeredSkinName="commonui_default_label"
+                        registeredTextStyleName="tiered_arena_overview_right"/>
+                    <button name="reputation_required_info_btn" alignX="right"
+                            marginTop="10" marginRight="8"
+                            registeredSkinName="commonui_info_button" />
+                </container>
+            </container>
+
+            <!-- bottom section showing ranking rewards -->
+            <label text="localize:tieredArena_tab_rewards_ranking_title"
+                        registeredSkinName="commonui_default_label" marginLeft="5" marginTop="110"
+                        autoSizeWidth="true" registeredTextStyleName="tiered_arena_rewards_headline"/>
+
+            <container name="bottom"
+                       width="330" height="275"
+                       marginTop="130"
+                       alignX="left" registeredSkinName="commonui_darklayer">
+                <coreponent registeredSkinName="commonui_horizontal_divider" height="3" width="330" marginTop="33"/>
+                <container width="290" marginTop="8" alignX="center">
+                    <label text="localize:eternal_blacklight_tab_rank"
+                        registeredSkinName="commonui_default_label"
+                        autoSizeWidth="true" registeredTextStyleName="tiered_arena_rewards_headline"/>
+                </container>
+
+                <container name="body"
+                           width="330" height="240"
+                           marginTop="34" marginLeft="0">
+                    <itemlist name="tiered_arena_rewardlist" width="330"
+                            autoSizeHeight="true"
+                            autoSizeWidth="true"
+                            itemGap="0"
+                            mouseChildren="true"
+                            mouseEnabled="true"
+                            layout="vertical"
+                            cacheSkinMaskAsBitmap="false"
+                            registeredSkinName="commonui_list_mask">
+
+                        <itemrenderer width="330" autoSizeWidth="false" height="30" mouseEnabled="true"
+                                    mouseChildren="true">
+                            <container name="left" width="330" marginLeft="0" height="30" alignX="left">
+                                <coreponent name="bg" width="330" height="30" registeredSkinName="commonui_darklayer"/>
+                                <label name="place" text="test" registeredSkinName="commonui_default_label" marginTop="10"
+                                    alignX="left" y="-2" x="20" width="100" registeredTextStyleName="tiered_arena_overview_left"/>
+                                <button name="btn" registeredSkinName="commonui_info_button" marginRight="8" alignX="right"
+                                        alignY="center"/>
+                            </container>
+                        </itemrenderer>
+                    </itemlist>
+                    <scrollbar name="tiered_arena_rewardlist_scrollBar" width="5" autoSizeHeight="true" direction="vertical"
+                            marginTop="0"
+                            marginBottom="0"
+                            marginRight="0"
+                            alignX="right"
+                            registeredSkinName="tiered_arena_scrollbar_bgnd">
+                        <button name="buttonSlider" alignX="center" width="5" height="10"
+                                registeredSkinName="commonui_scrollbar_slider"/>
+                    </scrollbar>
+                    <bind source="tiered_arena_rewardlist_scrollBar" target="tiered_arena_rewardlist"/>
+                </container>
+            </container>
+        </container>
+    </template>
+
+    <template name="tiered_arenaRewardToolTip">
+        <container name="container" width="250" autoSizeHeight="true" autoHeightMode="children">
+            <container name="wrapper" width="250" registeredSkinName="tiered_arena_ttip_frame" autoSizeHeight="true" marginTop="20"
+                       autoHeightMode="children">
+                <itemlist layout="vertical" width="250" gap="0" name="list" autoSizeHeight="true" marginBottom="10"
+                          autoHeightMode="children">
+                    <itemrenderer height="40" marginTop="0" marginBottom="0">
+                        <coreponent name="img" registeredSkinName="tiered_arena_item_outline" width="30" height="30" marginTop="10" marginLeft="10"/>
+                        <coreponent registeredSkinName="tiered_arena_item_outline" width="31" height="31" marginTop="9" marginLeft="9"/>
+                        <label name="label" width="200" alignX="left" marginLeft="50" marginTop="11"
+                               height="29"
+                               registeredTextStyleName="tiered_arena_overview_left"/>
+                    </itemrenderer>
+                </itemlist>
+            </container>
+        </container>
+    </template>
+
+    <template name="tiered_arenaRewardsToolTip">
+        <container name="container" width="250" autoSizeHeight="true" autoHeightMode="children">
+            <container name="wrapper" width="250" registeredSkinName="tiered_arena_ttip_frame" autoSizeHeight="true" marginTop="20"
+                       autoHeightMode="children" layout="vertical">
+                <label name="tiered_arena_overview_ttip_title" width="250" height="20" autoHeightMode="children" alignX="left"
+                    registeredTextStyleName="tiered_arena_overview_ttip_title"
+                    text="localize:tieredArena_tab_rewards_participate_title"/>
+                <itemlist layout="vertical" width="250" gap="0" name="list" autoSizeHeight="true" marginBottom="10"
+                          autoHeightMode="children">
+                    <itemrenderer height="40" marginTop="0" marginBottom="0">
+                        <coreponent name="img" registeredSkinName="tiered_arena_item_outline" width="30" height="30" marginTop="10" marginLeft="10"/>
+                        <coreponent registeredSkinName="tiered_arena_item_outline" width="31" height="31" marginTop="9" marginLeft="9"/>
+                        <label name="label" width="200" alignX="left" marginLeft="50" marginTop="11"
+                               height="29"
+                               registeredTextStyleName="tiered_arena_overview_ttip_content"/>
+                    </itemrenderer>
+                </itemlist>
+            </container>
+        </container>
+    </template>
+
+    <container name="root" width="370" height="272" mouseEnabled="false" mouseChildren="true">
+        <reference template="TIEREDARENA_OVERVIEW"/>
+        <reference template="TIEREDARENA_REWARDS"/>
+        <reference template="TIEREDARENA_TABBAR"/>
+    </container>
+</root>

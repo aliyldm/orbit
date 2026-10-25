@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="featuresMenu"/>
+        <library id="returneelogin"/>
+    </libraries>
+
+    <!-- TEXT STYLES -->
+    <textstyle name="bundle_header"
+               textColor="0xffcc00"
+               type="dynamic"
+               fontSize="16"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="true"
+               align="center"
+               autoSize="center"/>
+
+    <textstyle  name="bundle_info"
+                textColor="0x669999"
+                type="dynamic"
+                fontSize="12"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="center"
+                autoSize="center"/>
+
+    <textstyle name="bundle_list_item_header"
+               textColor="0xededed"
+               type="dynamic"
+               fontSize="11"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="true"
+               align="center"
+               autoSize="center"/>
+
+    <textstyle name="bundle_list_item_subheader"
+               textColor="0xededed"
+               type="dynamic"
+               fontSize="10"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="false"
+               align="center"
+               autoSize="center"/>
+
+    <textstyle name="bundle_list_item_payment"
+               textColor="0xededed"
+               type="dynamic"
+               fontSize="10"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="false"
+               align="center"
+               autoSize="center"/>
+
+    <textstyle name="bundle_timer_label"
+               textColor="0x669999"
+               type="dynamic"
+               fontSize="12"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="true"
+               align="right"
+               autoSize="right"/>
+
+    <textstyle name="bundle_timer"
+               textColor="0x669999"
+               type="dynamic"
+               fontSize="12"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="true"
+               align="left"
+               autoSize="right"/>
+
+    <!-- SKINS -->
+    <skin name="bundle_item_bg" classname="BasicSkin" library="returneelogin">
+        <layer classname="BitmapLayer" libraryID="bg_deal">normal</layer>
+    </skin>
+
+    <skin name="bundle_item_icon_limited" classname="BasicSkin" library="returneelogin">
+        <layer classname="BitmapLayer" libraryID="icon_limited">normal</layer>
+    </skin>
+
+    <!-- TEMPLATES -->
+    <template name="RETURNEE_LOGIN_BUNDLE">
+        <container name="bundle"
+                   width="570" height="420" autoSizeWidth="false" autoSizeHeight="false"
+                   marginTop="40"
+                   alignX="center">
+
+            <label name="header" text="localize:returnee_login_bundle_header"
+                   width="570" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                   alignX="center"
+                   registeredTextStyleName="bundle_header" registeredSkinName="commonui_default_label" />
+
+            <label name="info" text="localize:returnee_login_bundle_info"
+                   width="570" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                   marginTop="42" alignX="center"
+                   registeredTextStyleName="bundle_info" registeredSkinName="commonui_default_label" />
+
+            <itemlist name="bundle_list"
+                      width="510" height="260" autoSizeWidth="false" autoSizeHeight="false"
+                      marginTop="90" alignX="center" layout="grid" itemGap="2"
+                      mouseEnabled="true" mouseChildren="true"
+                      cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+                <itemrenderer width="250" height="125" autoSizeWidth="false" autoSizeHeight="false"
+                              mouseEnabled="true" mouseChildren="true">
+
+                    <coreponent width="250" height="125" autoSizeWidth="false" autoSizeHeight="false"
+                                alignX="center" alignY="center"
+                                registeredSkinName="bundle_item_bg"/>
+
+                    <label name="header" text=""
+                           width="250" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="center" marginTop="5"
+                           registeredTextStyleName="bundle_list_item_header" registeredSkinName="commonui_default_label"/>
+
+                    <label name="subheader" text=""
+                           width="250" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="center" marginTop="20"
+                           registeredTextStyleName="bundle_list_item_subheader" registeredSkinName="commonui_default_label"/>
+
+                    <coreponent name="icon"
+                                width="60" height="60" autoSizeWidth="false" autoSizeHeight="false"
+                                alignX="center" marginTop="45"/>
+
+                    <coreponent width="35" height="25" autoSizeWidth="false" autoSizeHeight="false"
+                                alignX="left" alignY="bottom"
+                                marginLeft="20" marginBottom="10"
+                                registeredSkinName="bundle_item_icon_limited"/>
+
+                    <label name="payment" text=""
+                           width="250" height="15" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="center" alignY="bottom" marginBottom="5"
+                           registeredTextStyleName="bundle_list_item_payment" registeredSkinName="commonui_default_label"/>
+                </itemrenderer>
+            </itemlist>
+
+            <container name="bottom"
+                       width="500" height="65" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="center" alignY="bottom">
+
+                <label name="countdown_label" text="localize:tdm_status_time_left"
+                       width="245" height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="left"
+                       registeredTextStyleName="bundle_timer_label" registeredSkinName="commonui_default_label"/>
+
+                <label name="countdown_timer" text="21d 02h 02m"
+                       width="245" height="15" autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="right"
+                       registeredTextStyleName="bundle_timer" registeredSkinName="commonui_default_label"/>
+
+                <button name="buy_btn"
+                        text="localize:ttip_menu_buy_now" textMarginY="1"
+                        width="180" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                        alignX="center" alignY="bottom"
+                        registeredSkinName="commonui_scale9_button_green"/>
+            </container>
+        </container>
+    </template>
+
+    <!-- CONTENT -->
+    <container name="root"
+               width="570" height="420" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChilderen="true">
+        <reference template="RETURNEE_LOGIN_BUNDLE"/>
+    </container>
+</root>

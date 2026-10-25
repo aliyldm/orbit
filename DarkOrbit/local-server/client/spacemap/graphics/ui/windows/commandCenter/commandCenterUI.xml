@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="commandCenterWindow"/>
+	</libraries>
+
+	<textstyle
+			name="command_center_category_text"
+			textColor="0xFFFFFF"
+			type="dynamic"
+			fontSize="10"
+			bold="true"
+			embedFonts="false"
+			fontName="Verdana"
+			wordWrap="true"
+			multiline="true"
+			autoSize="none"/>
+
+	<textstyle
+			name="command_center_category_timer_text"
+			textColor="0xFFFFFF"
+			type="dynamic"
+			fontSize="9"
+			bold="false"
+			embedFonts="false"
+			fontName="Verdana"
+			wordWrap="true"
+			multiline="true"
+			autoSize="none"/>
+
+	<textstyle
+			name="command_center_check_text"
+			textColor="0xFFFFFF"
+			type="dynamic"
+			fontSize="8"
+			bold="false"
+			embedFonts="false"
+			fontName="Verdana"
+			wordWrap="false"
+			multiline="false"
+			align="right"
+			autoSize="right"/>
+
+	<skin name="command_center_itemlist" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x32e629" fillAlpha="0">normal</layer>
+		<layer classname="FilledBoxLayer" fillColor="0xffffff" fillAlpha="0.1">over</layer>
+		<layer classname="FilledBoxLayer" fillColor="0xffffff" fillAlpha="0.3">clicked</layer>
+	</skin>
+
+	<skin name="command_center_itemlist_special" classname="FadableButtonSkin" library="commandCenterWindow">
+		<layer classname="BitmapLayer" libraryID="tab_gold">normal</layer>
+		<layer classname="BitmapLayer" libraryID="tab_gold" alpha="0.5">over</layer>
+		<layer classname="BitmapLayer" libraryID="tab_gold">clicked</layer>
+		<!--<layer classname="FilledBoxLayer" fillColor="0xffffff" fillAlpha="0.1">over</layer>-->
+		<!--<layer classname="FilledBoxLayer" fillColor="0xffffff" fillAlpha="0.3">clicked</layer>-->
+	</skin>
+
+	<skin name="command_center_has_news" library="commandCenterWindow" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="icon_marker">normal</layer>
+	</skin>
+
+	<skin name="command_center_tab_blue" library="commandCenterWindow" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="tab_blue">normal</layer>
+	</skin>
+
+	<skin name="command_center_tab_gold" library="commandCenterWindow" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="tab_gold">normal</layer>
+	</skin>
+
+	<skin name="command_center_label_truncate"
+		  classname="LabelSkin"
+		  truncateText="true"/>
+
+	<skin name="command_center_item_state_details" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x00000" lineAlpha="0.0" fillAlpha="0.33">normal</layer>
+	</skin>
+
+	<skin name="command_center_grey_bg" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0" lineAlpha="0.0" fillAlpha="0.3">normal</layer>
+	</skin>
+
+	<skin name="command_center_news_bg" library="commandCenterWindow" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="content_bg_blue">normal</layer>
+	</skin>
+
+	<skin name="command_center_news_bg_special" library="commandCenterWindow" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="content_bg_gold">normal</layer>
+	</skin>
+
+	<skin name="content_frame_box_special" library="commandCenterWindow" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="content_frame_box_gold">normal</layer>
+	</skin>
+
+	<skin name="content_frame_box" library="commandCenterWindow" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="content_frame_box_blue">normal</layer>
+	</skin>
+
+	<skin name="content_frame_line" library="commandCenterWindow" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="content_frame_line_blue">normal</layer>
+	</skin>
+
+	<skin name="content_frame_line_special" library="commandCenterWindow" classname="BasicSkin">
+		<layer classname="BitmapLayer" libraryID="content_frame_line_gold">normal</layer>
+	</skin>
+
+	<skin name="scroll_arrow_left" library="commandCenterWindow" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="scroll_arrow_left_normal">normal</layer>
+		<layer classname="BitmapLayer" libraryID="scroll_arrow_left_hover">over</layer>
+		<layer classname="BitmapLayer" libraryID="scroll_arrow_left_active">clicked</layer>
+	</skin>
+
+	<skin name="scroll_arrow_right" library="commandCenterWindow" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="scroll_arrow_right_normal">normal</layer>
+		<layer classname="BitmapLayer" libraryID="scroll_arrow_right_hover">over</layer>
+		<layer classname="BitmapLayer" libraryID="scroll_arrow_right_active">clicked</layer>
+	</skin>
+
+	<skin name="btn_radio" library="commandCenterWindow" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="btn_radio_off">normal</layer>
+		<layer classname="BitmapLayer" libraryID="btn_radio_on">over</layer>
+		<layer classname="BitmapLayer" libraryID="btn_radio_on">disabled</layer>
+	</skin>
+
+	<container name="contentContainer"
+			   width="484"
+			   height="436">
+
+		<itemlist name="categoriesList"
+				  allowDeselection="false"
+				  width="118"
+				  height="46"
+				  itemGap="1"
+				  marginTop="20"
+				  marginLeft="20"
+				  mouseChildren="true"
+				  mouseEnabled="true"
+				  autoSizeHeight="true"
+				  layout="vertical">
+
+
+			<itemrenderer height="46"
+						  width="118"
+						  mouseEnabled="true"
+						  mouseChildren="true">
+
+				<coreponent name="state"
+							width="117"
+							height="46"
+							registeredSkinName="command_center_item_state_details"/>
+
+				<button name="hover"
+						width="117"
+						height="46"
+						registeredSkinName="command_center_itemlist"/>
+
+				<coreponent name="mark"
+							width="118"
+							height="46"
+							registeredSkinName="command_center_tab_blue"/>
+
+				<coreponent name="pic"
+							width="20"
+							height="20"
+							alignX="left"
+							alignY="center"
+							marginLeft="10"/>
+
+				<coreponent name="hasNewsMark"
+							width="8"
+							height="8"
+							y="10"
+							alignX="left"
+							marginLeft="24"
+							registeredSkinName="command_center_has_news"/>
+
+				<container name="category"
+						   marginLeft="37"
+						   width="80"
+						   height="46">
+
+					<label name="category_string"
+						   autoSizeWidth="true"
+						   height="20"
+						   marginTop="2"
+						   alignY="center"
+						   registeredSkinName="commonui_default_label"
+						   registeredTextStyleName="command_center_category_text"/>
+
+					<label name="category_timer"
+						   autoSizeWidth="true"
+						   height="20"
+						   marginBottom="2"
+						   alignY="bottom"
+						   registeredSkinName="command_center_label_truncate"
+						   registeredTextStyleName="command_center_category_timer_text"/>
+
+				</container>
+
+			</itemrenderer>
+
+		</itemlist>
+
+		<container name="commandCenterNews"
+				   width="325"
+				   height="395"
+				   marginTop="20"
+				   mouseChildren="true"
+				   marginLeft="138">
+
+			<coreponent name="newsBackground"
+						autoSizeWidth="true"
+						autoSizeHeight="true"
+						registeredSkinName="command_center_news_bg"/>
+
+			<itemslideshow name="slideShow"
+						   width="303"
+						   alignY="top"
+						   marginTop="12"
+						   alignX="left"
+						   marginLeft="10"
+						   mouseChildren="true"
+						   mouseEnabled="false"
+						   height="361"
+						   cacheSkinMaskAsBitmap="false"
+
+						   registeredSkinName="commonui_list_mask">
+				<itemrenderer height="361"
+							  width="303"
+							  mouseEnabled="true"
+							  mouseChildren="true">
+				</itemrenderer>
+
+			</itemslideshow>
+
+			<coreponent name="newsContentFrameBox"
+						autoSizeWidth="false"
+						autoSizeHeight="false"
+						marginTop="11"
+						alignY="top"
+						alignX="left"
+						marginLeft="9"
+						width="305"
+						height="365"
+						registeredSkinName="content_frame_box"/>
+
+			<coreponent name="newsContentFrameLine"
+						autoSizeWidth="false"
+						autoSizeHeight="false"
+						alignX="center"
+						width="325"
+						height="10"
+						registeredSkinName="content_frame_line"/>
+
+			<coreponent name="newsContentFrameLine2"
+						autoSizeWidth="false"
+						autoSizeHeight="false"
+						alignX="center"
+						y="395"
+						width="325"
+						height="10"
+						scaleY="-1"
+						registeredSkinName="content_frame_line"/>
+
+			<button name="newsContentArrowLeft"
+					width="17"
+					height="44"
+					marginTop="136"
+					marginLeft="11"
+					registeredSkinName="scroll_arrow_left"/>
+
+			<button name="newsContentArrowRight"
+					width="17"
+					height="44"
+					marginTop="136"
+					marginLeft="295"
+					registeredSkinName="scroll_arrow_right"/>
+
+			<itemlist name="categoriesRadioList"
+					  allowDeselection="false"
+					  itemGap="3"
+					  height="10"
+					  width="300"
+					  alignX="center"
+					  marginTop="379"
+					  mouseChildren="true"
+					  mouseEnabled="true"
+					  layout="horizontal_centered">
+
+				<itemrenderer width="10"
+							  height="10"
+							  mouseEnabled="true"
+							  mouseChildren="true"
+							  utoSizeHeight="false"
+							  autoSizeWidth="false">
+
+					<button name="btn"
+							width="10" height="10"
+							autoSizeHeight="false"
+							autoSizeWidth="false"
+							registeredSkinName="btn_radio"/>
+
+				</itemrenderer>
+			</itemlist>
+		</container>
+
+		<container  name="dontShowContainer"
+					width="325" height="20"
+					alignY="bottom" marginLeft="138">
+
+			<container  name="wrapper"
+						width="250" height="15"
+						alignX="right" alignY="center">
+
+				<checkbox name="dontShowCheckbox"
+				          alignX="right"
+						  registeredSkinName="commonui_checkbox16x16_blue"/>
+
+				<label  name="dontShowLabel" text="localize:window_commandCenter_label_dontshow"
+						width="200" height="10"
+						alignX="right" alignY="center" marginRight="20"
+						registeredTextStyleName="command_center_check_text" registeredSkinName="commonui_default_label"/>
+			</container>
+		</container>
+	</container>
+
+</root>

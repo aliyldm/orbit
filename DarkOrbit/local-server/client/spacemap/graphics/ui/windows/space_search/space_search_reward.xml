@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+    </libraries>
+
+    <skin name="ss_shop_scrollbar_bg" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+    </skin>
+
+    <skin name="ss_description_bg" classname="BasicSkin" library="battlePass">
+        <layer classname="BitmapLayer" libraryID="frame_bp-description">normal</layer>
+    </skin>
+
+    <skin name="ss_shop_exchange_icon_btn" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0">normal</layer>
+    </skin>
+
+    <textstyle name="ss_shop_header"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="10"
+               autoSize="left"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="true"
+               align="left"/>
+
+    <textstyle name         = "ss_description"
+               textColor       ="0xededed"
+               type            ="dynamic"
+               fontSize        ="10"
+               autoSize        ="left"
+               wordWrap        ="true"
+               multiline       ="true"
+               embedFonts      ="false"
+               fontName        ="Verdana"
+               bold            ="false"
+               align           ="left"
+    />
+
+    <skin name="ss_invisible" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" lineColor="0x00ccff" fillAlpha="0">mask</layer>
+    </skin>
+
+    <textstyle name="ss_color_white_12"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="12"
+               autoSize="left" wordWrap="false" multiline="false"
+               embedFonts="false" fontName="Verdana" bold="true" align="left"/>
+
+    <textstyle name="ss_color_white_12_wordwrap"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="12"
+               autoSize="left" wordWrap="true" multiline="false"
+               embedFonts="false" fontName="Verdana" bold="true" align="left"/>
+
+    <textstyle name="ss_color_green_12"
+               textColor="0x00ff00"
+               type="dynamic"
+               fontSize="12"
+               autoSize="left" wordWrap="false" multiline="false"
+               embedFonts="false" fontName="Verdana" bold="true" align="left"/>
+
+    <!-- TEMPLATES -->
+    <template name="space_search_reward">
+
+        <container name="body"
+                   autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent">
+
+            <!--content: START -->
+            <!--                marginTop      = "71"-->
+            <container
+                    name="contentContainer"
+                    autoSizeWidth="true"
+                    autoSizeHeight="true"
+                    marginLeft="58"
+                    marginRight="40"
+                    marginTop="31"
+                    marginBottom="28"
+                    layout="vertical"
+            >
+
+                <!-- message: -->
+                <container
+                        name="messageContainer"
+                        autoSizeWidth="true"
+                        height="140"
+                >
+
+                    <coreponent
+                            name="characterBorder"
+                            width="140"
+                            height="148"
+                            marginLeft="-9"
+                            marginTop="-18"
+                            registeredSkinName="hintsystem_window_border_character"
+                    />
+
+                    <coreponent
+                            name="characterBackground"
+                            width="127"
+                            height="134"
+                            marginLeft="-2"
+                            marginTop="-1"
+                            registeredSkinName="hintsystem_window_panel_characterbackground"
+                    />
+
+                    <coreponent
+                            name="characterContainer"
+                            width="140"
+                            height="148"
+                            marginLeft="-9"
+                            marginTop="-18"
+                            registeredSkinName="hintsystem_window_panel_character"
+                    />
+
+
+                    <!--message: hint message -->
+                    <container name="textBoxContainer" width="380" height="130" alignX="right"
+                               registeredSkinName="hintsystem_window_panel_speechbubble"/>
+
+                    <container name="description_body"
+                            height="108" width="368"
+                               marginTop="20"
+                               alignX="right" mouseEnabled="false"  marginRight="2">
+
+                        <scrollcontainer mouseEnabled="true" alignY="center" name="scrollContainerText" height="108" autoSizeHeight="false" width="360" registeredSkinName="ss_invisible">
+                            <label  name="content" width="360"  mouseEnabled="true" registeredTextStyleName="ss_color_white_12_wordwrap" text="Default" autoSizeTextHeight="true"/>
+                        </scrollcontainer>
+
+                        <scrollbar name="scrollbarText" width="6" autoSizeHeight="true" alignX="right" marginRight="1" marginBottom="1" registeredSkinName="commonui_scrollbar_bgnd_dark">
+                            <button name="buttonSlider" width="4" height="61" alignX="center" registeredSkinName="commonui_scrollbar_slider"/>
+                        </scrollbar>
+
+                        <bind source="scrollbarText" target="scrollContainerText" type="scrollcontainer"/>
+                    </container>
+
+                </container>
+            </container>
+
+            <container
+                    name="reward_info"
+                    width="550"
+                    height="180"
+                    alignX="center"
+                    alignY="bottom"
+                    marginBottom="120"
+
+            >
+                <container name="bg"
+                           autoSizeWidth="true"
+                           autoWidthMode="parent"
+                           autoSizeHeight="true"
+                           autoHeightMode="parent">
+                </container>
+                <!--                registeredSkinName="commonui_darklayer"-->
+
+                <label text="localize:SS_result_exploration" name="title" autoSizeWidth="true" registeredSkinName="hintsystem_label"
+                       registeredTextStyleName="hintsystem_message_header" marginLeft="30" marginRight="5"
+                       marginTop="0"/>
+                <!--                ss_color_white-->
+                <label text="localize:SS_result_explore_progress" name="label1" autoSizeWidth="true" registeredSkinName="hintsystem_label"
+                       registeredTextStyleName="ss_color_white_12" marginLeft="35" width="100"
+                       marginTop="30"/>
+
+                <label text="Neptune 100%" name="message1_0" autoSizeWidth="true" registeredSkinName="hintsystem_label"
+                       registeredTextStyleName="ss_color_white_12" marginLeft="160" width="120"
+                       marginTop="30" useHTML="true" />
+
+<!--                <label text="(+20%)" name="message1_1" autoSizeWidth="true" registeredSkinName="hintsystem_label"-->
+<!--                       registeredTextStyleName="ss_color_green_12" marginLeft="400" width="150"-->
+<!--                       marginTop="30"  useHTML="true" />-->
+
+                <label text="Neptune 100%" name="message2_0" autoSizeWidth="true" registeredSkinName="hintsystem_label"
+                       registeredTextStyleName="ss_color_white_12" marginLeft="160" width="120"
+                       marginTop="48" useHTML="true" />
+
+<!--                <label text="(+20%)" name="message2_1" autoSizeWidth="true" registeredSkinName="hintsystem_label"-->
+<!--                       registeredTextStyleName="ss_color_green_12" marginLeft="400" width="150"-->
+<!--                       marginTop="48" useHTML="true" />-->
+
+                <label text="Neptune 100%" name="message3_0" autoSizeWidth="true" registeredSkinName="hintsystem_label"
+                       registeredTextStyleName="ss_color_white_12" marginLeft="160" width="120"
+                       marginTop="66" useHTML="true" />
+
+<!--                <label text="(+20%)" name="message3_1" autoSizeWidth="true" registeredSkinName="hintsystem_label"-->
+<!--                       registeredTextStyleName="ss_color_green_12" marginLeft="400" width="150"-->
+<!--                       marginTop="66" useHTML="true" />-->
+
+
+                <label text="localize:SS_result_reward" name="label2" autoSizeWidth="true" registeredSkinName="hintsystem_label"
+                       registeredTextStyleName="ss_color_white_12" marginLeft="35" width="100"
+                       marginTop="80"/>
+
+                <container name="reward_box" width="380" height="86" alignX="right"
+
+                           marginTop="90" marginRight="10" visible="true" >
+
+
+                    <itemlist name="list"
+                              width="380" height="86" autoSizeWidth="false" autoSizeHeight="false"
+                              layout="vertical" itemGap="0"
+                              mouseEnabled="true" mouseChildren="true"
+                              cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+                        <itemrenderer width="380" height="43"
+                                      autoSizeWidth="false" autoSizeHeight="false"
+                                      itemGap="0" mouseEnabled="true" mouseChildren="true">
+                            <coreponent name="iconBg0"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="2" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <coreponent name="icon0"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="2" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <button name="btn0"
+                                    width="40" height="40"
+                                    autoSizeWidth="false" autoSizeHeight="false"
+                                    marginLeft="2" marginTop="2"
+                                    registeredSkinName="ss_shop_exchange_icon_btn"/>
+
+                            <label name="amount0"
+                                   width="40" height="10"
+                                   autoSizeWidth="false" autoSizeHeight="false"
+                                   marginLeft="2" marginTop="28"
+                                   registeredTextStyleName="ss_shop_header"
+                                   registeredSkinName="commonui_default_label" text="100" />
+
+                            <coreponent name="iconBg1"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="48" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <coreponent name="icon1"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="48" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <button name="btn1"
+                                    width="40" height="40"
+                                    autoSizeWidth="false" autoSizeHeight="false"
+                                    marginLeft="48" marginTop="2"
+                                    registeredSkinName="ss_shop_exchange_icon_btn"/>
+
+                            <label name="amount1"
+                                   width="40" height="10"
+                                   autoSizeWidth="false" autoSizeHeight="false"
+                                   marginLeft="48" marginTop="28"
+                                   registeredTextStyleName="ss_shop_header"
+                                   registeredSkinName="commonui_default_label" text="100" />
+
+                            <coreponent name="iconBg2"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="94" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <coreponent name="icon2"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="94" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <button name="btn2"
+                                    width="40" height="40"
+                                    autoSizeWidth="false" autoSizeHeight="false"
+                                    marginLeft="94" marginTop="2"
+                                    registeredSkinName="ss_shop_exchange_icon_btn"/>
+
+                            <label name="amount2"
+                                   width="40" height="10"
+                                   autoSizeWidth="false" autoSizeHeight="false"
+                                   marginLeft="94" marginTop="28"
+                                   registeredTextStyleName="ss_shop_header"
+                                   registeredSkinName="commonui_default_label" text="100" />
+
+                            <coreponent name="iconBg3"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="140" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <coreponent name="icon3"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="140" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <button name="btn3"
+                                    width="40" height="40"
+                                    autoSizeWidth="false" autoSizeHeight="false"
+                                    marginLeft="140" marginTop="2"
+                                    registeredSkinName="ss_shop_exchange_icon_btn"/>
+
+                            <label name="amount3"
+                                   width="40" height="10"
+                                   autoSizeWidth="false" autoSizeHeight="false"
+                                   marginLeft="140" marginTop="28"
+                                   registeredTextStyleName="ss_shop_header"
+                                   registeredSkinName="commonui_default_label" text="100" />
+
+                            <coreponent name="iconBg4"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="186" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <coreponent name="icon4"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="186" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <button name="btn4"
+                                    width="40" height="40"
+                                    autoSizeWidth="false" autoSizeHeight="false"
+                                    marginLeft="186" marginTop="2"
+                                    registeredSkinName="ss_shop_exchange_icon_btn"/>
+
+                            <label name="amount4"
+                                   width="40" height="10"
+                                   autoSizeWidth="false" autoSizeHeight="false"
+                                   marginLeft="186" marginTop="28"
+                                   registeredTextStyleName="ss_shop_header"
+                                   registeredSkinName="commonui_default_label" text="100" />
+
+                            <coreponent name="iconBg5"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="232" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <coreponent name="icon5"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="232" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <button name="btn5"
+                                    width="40" height="40"
+                                    autoSizeWidth="false" autoSizeHeight="false"
+                                    marginLeft="232" marginTop="2"
+                                    registeredSkinName="ss_shop_exchange_icon_btn"/>
+
+                            <label name="amount5"
+                                   width="40" height="10"
+                                   autoSizeWidth="false" autoSizeHeight="false"
+                                   marginLeft="232" marginTop="28"
+                                   registeredTextStyleName="ss_shop_header"
+                                   registeredSkinName="commonui_default_label" text="100" />
+
+                            <coreponent name="iconBg6"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="278" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <coreponent name="icon6"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="278" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <button name="btn6"
+                                    width="40" height="40"
+                                    autoSizeWidth="false" autoSizeHeight="false"
+                                    marginLeft="278" marginTop="2"
+                                    registeredSkinName="ss_shop_exchange_icon_btn"/>
+
+                            <label name="amount6"
+                                   width="40" height="10"
+                                   autoSizeWidth="false" autoSizeHeight="false"
+                                   marginLeft="278" marginTop="28"
+                                   registeredTextStyleName="ss_shop_header"
+                                   registeredSkinName="commonui_default_label" text="100" />
+
+                            <coreponent name="iconBg7"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="324" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <coreponent name="icon7"
+                                        width="40" height="40"
+                                        autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="324" marginTop="2" registeredSkinName="commonui_darklayer"/>
+
+                            <button name="btn7"
+                                    width="40" height="40"
+                                    autoSizeWidth="false" autoSizeHeight="false"
+                                    marginLeft="324" marginTop="2"
+                                    registeredSkinName="ss_shop_exchange_icon_btn"/>
+
+                            <label name="amount7"
+                                   width="40" height="10"
+                                   autoSizeWidth="false" autoSizeHeight="false"
+                                   marginLeft="324" marginTop="28"
+                                   registeredTextStyleName="ss_shop_header"
+                                   registeredSkinName="commonui_default_label" text="100" />
+
+                        </itemrenderer>
+                    </itemlist>
+                    <scrollbar name="scroll_bar"
+                               width="10" autoSizeHeight="true" direction="vertical"
+                               marginTop="0" marginBottom="0" marginRight="0" alignX="right"
+                               registeredSkinName="ss_shop_scrollbar_bg">
+                        <button name="buttonSlider"
+                                width="8" height="10" alignX="center"
+                                registeredSkinName="commonui_scrollbar_slider"/>
+                    </scrollbar>
+                    <bind source="scroll_bar"
+                          target="list"
+                          type="scrollcontainer"/>
+
+                </container>
+
+            </container>
+
+            <button name="ok_btn"
+                    text="OK"
+                    textMarginY="1"
+                    width="150" height="30"
+                    autoSizeWidth="false" autoSizeHeight="false"
+                    alignX="center" alignY="bottom"
+                    marginBottom="50" registeredSkinName="commonui_scale9_button_green" visible="true"/>
+
+
+        </container>
+    </template>
+    <container name="root" width="620" height="500" autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="false"
+               mouseChilderen="true">
+        <reference template="space_search_reward"/>
+    </container>
+</root>

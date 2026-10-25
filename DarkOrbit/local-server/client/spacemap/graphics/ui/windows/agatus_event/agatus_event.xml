@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="chatWindowUIAssets"/>
+
+    </libraries>
+
+    <textstyle
+            name="npcevent_status_message"
+            textColor="0xffe103"
+            type="dynamic"
+            fontSize="10"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"/>
+
+    <textstyle
+            name="npcevent_status_timer"
+            textColor="0xffe103"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="right"/>
+
+    <textstyle
+            name="npcevent_message_left"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"/>
+
+    <textstyle
+            name="npcevent_progress_right"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="right"/>
+
+
+    <container name="root" width="450" height="205" mouseEnabled="false" mouseChildren="true">
+        <container name="main" visible="true" width="400" marginLeft="25" marginRight="25" marginTop="10"
+                   height="190"
+                   alignX="left">
+
+            <container name="top" width="400" marginLeft="0" marginRight="0" marginTop="0"
+                       registeredSkinName="commonui_darklayer" height="55" alignX="center">
+                <container name="npcevent_status_msg" width="360" marginLeft="20" height="20" marginRight="20" alignX="left">
+                    <label name="npcevent_status_message" text="localize:npcevent_status_spawning" registeredTextStyleName="npcevent_status_message"
+                           marginTop="20" registeredSkinName="commonui_default_label" width="250" autoSizeTextHeight="true"/>
+                    <label name="npcevent_timer" text="testRight" registeredTextStyleName="npcevent_status_timer" marginTop="20"
+                           registeredSkinName="commonui_default_label" autoSizeWidth="true" alignX="right"/>
+                </container>
+                <container name="middle" visible="false" width="400" marginLeft="0" marginRight="0" marginTop="55"
+                           registeredSkinName="commonui_darklayer" height="65">
+                    <coreponent registeredSkinName="commonui_horizontal_divider" height="4" width="400" marginTop="0"/>
+                    <container name="left" width="300" height="120" marginLeft="20" marginTop="20">
+                        <label name = "npcevent_countdown" text="localize:npcevent_countdown_npc" registeredSkinName="commonui_default_label"
+                               autoSizeWidth="true" registeredTextStyleName="npcevent_message_left"/>
+                    </container>
+                    <container name="right" width="200" height="120" marginRight="20" marginTop="20" alignX="right">
+                        <label name="npcevent_progress" autoSizeWidth="true" registeredSkinName="commonui_default_label"
+                               text="999" registeredTextStyleName="npcevent_progress_right"/>
+                    </container>
+                </container>
+            </container>
+            <container name="bottom" width="400" marginLeft="0" marginRight="0" marginTop="65"
+                       height="80" alignX="center">
+                <label name="event_description" text="bottom container description"
+                       registeredTextStyleName="npcevent_message_left" alignX="left" alignY="top" marginLeft="20"
+                       registeredSkinName="commonui_default_label" width="360" autoSizeTextHeight="true"/>
+            </container>
+        </container>
+    </container>
+</root>

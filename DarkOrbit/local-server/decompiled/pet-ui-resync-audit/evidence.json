@@ -1,0 +1,45 @@
+{
+  "mainSha256": "6839384bca951b7d7ece2081c4054cbac4748b1beb2e985da5e995e0afcc95e7",
+  "clientUnchanged": true,
+  "classes": [
+    {
+      "name": "net.bigpoint.darkorbit.net.PetAssembly",
+      "sha256": "570559e6620402712ef9dbd4606fe2bc11137997f8c7b4b0fab6cdaf696c6a55",
+      "bytes": 20407,
+      "identicalToPriorSource": true
+    },
+    {
+      "name": "net.bigpoint.darkorbit.net.PetWindowAssembly",
+      "sha256": "bdd25a441d530d9050b467adba67e53239b9d24cb2959ad436344cd71946c82c",
+      "bytes": 38797,
+      "identicalToPriorSource": true
+    },
+    {
+      "name": "net.bigpoint.darkorbit.gui.windows.components.gear.GearScroller",
+      "sha256": "a349731d8ac29d1f862e915b2e919393ba678430dd44c72f24c45749fe8e33a0",
+      "bytes": 8558,
+      "identicalToPriorSource": true
+    },
+    {
+      "name": "net.bigpoint.darkorbit.net.netty.handlers.pet.PetGearSelectHandler",
+      "sha256": "3d04d682cd591236198b43a768f6190b6aade527cba268e2f9f7c71820db668b",
+      "bytes": 653,
+      "identicalToPriorSource": true
+    },
+    {
+      "name": "net.bigpoint.darkorbit.net.netty.handlers.pet.PetDeactivationHandler",
+      "sha256": "441a5816a0e30ecc1d1a7f5beec27643926edc2411dea73e4b1cf3c69f4557cc",
+      "bytes": 544,
+      "identicalToPriorSource": true
+    }
+  ],
+  "findings": [
+    "PetWindowAssembly.petDeactivation calls resetPetWindowValues, which clears menu and combo text.",
+    "PetWindowAssembly.setSelectedItem updates icon/text before requestGearActivation.",
+    "Fresh server launch previously omitted all PetGearAddCommand messages.",
+    "Rejected server gear activations previously sent no authoritative selection."
+  ],
+  "limitations": [
+    "No native mouse/keyboard or visual playback."
+  ]
+}

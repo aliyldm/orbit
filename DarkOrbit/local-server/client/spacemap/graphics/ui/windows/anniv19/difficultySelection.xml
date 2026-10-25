@@ -1,0 +1,189 @@
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="influenceWindowUILibrary"/>
+        <library id="craftingWindow"/>
+        <library id="battlePass"/>
+    </libraries>
+
+    <skin name="reward_background_skin" library="gameclientCommonUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="input_background_blue" scale9grid="4,4,6,5">normal</layer>
+    </skin>
+
+    <skin name="reward_icon_bg" library="influenceWindowUILibrary" classname="BasicSkin">
+        <layer libraryID="scale_red" classname="BitmapLayer" scale9grid="4,4,5,5">normal</layer>
+    </skin>
+    <skin name="reward_icon_bg2" classname="BasicSkin" library="battlePass">
+        <layer classname="BitmapLayer" libraryID="slot_bg_red" scale9grid="5,4,6,5">normal</layer>
+    </skin>
+
+    <!-- TEXT STYLE HERE -->
+    <textstyle name="difficultySelection_style1"
+               textColor="0xF1FBEC"
+               fontSize="12"
+               type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               multiline="true"
+               wordWrap="true"
+               autoSize="left"/>
+
+    <textstyle name="difficultySelection_style2"
+               textColor="0xF1FBEC"
+               fontSize="14"
+               type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               autoSize="left"/>
+    <textstyle name="difficultySelection_style3"
+               textColor="0xF1FBEC"
+               fontSize="14"
+               type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               autoSize="right"/>
+
+    <textstyle name="difficultySelection_reward_yellow"
+               textColor="0xFFCC00"
+               type="dynamic"
+               fontSize="12"
+               autoSize="left"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="sans-serif"
+               bold="false"
+               align="left"/>
+
+    <textstyle name="difficultySelection_item_num"
+               textColor="0xF1FBEC"
+               fontSize="9"
+               type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               autoSize="right"/>
+
+    <template name="difficultySelection">
+        <container name="body" autoSizeWidth="true" autoSizeHeight="true" autoWidthMode="parent"
+                   autoHeightMode="parent">
+            <label name="info_label1" text="localize:bday2025_entry_info"
+                   registeredSkinName="commonui_default_label" marginTop="7" marginLeft="8"
+                   alignX="left" width="475" autoSizeTextHeight="true"
+                   registeredTextStyleName="difficultySelection_style1"/>
+            <label name="info_label2" text="localize:bday2025_entry_difficulty_select"
+                   registeredSkinName="commonui_default_label" marginTop="65" marginLeft="100"
+                   alignX="left" width="120" autoSizeTextHeight="true"
+                   registeredTextStyleName="difficultySelection_style2"/>
+            <coreponent name="filter_container"
+                        alignX="left"
+                        alignY="top"
+                        marginLeft="235"
+                        marginTop="65"
+                        width="150" height="130" visible="true">
+
+
+                <dropdownbox name="filter_box"
+                             width="150"
+                             height="25"
+                             alignX="left"
+                             alignY="top"
+                             marginLeft="0"
+                             marginTop="0"
+                             registeredSkinName="settings_window_dropdownbox"/>
+
+            </coreponent>
+            <container name="reward_background"
+                       width="355"
+                       height="85"
+                       alignX="left"
+                       alignY="top"
+                       marginLeft="70"
+                       marginTop="100"
+                       mouseEnabled="false"
+                       registeredSkinName="reward_background_skin">
+
+                <label name="chance_label" text="localize:bday2025_entry_chance_display"
+                       registeredSkinName="commonui_default_label" marginTop="7" marginLeft="8"
+                       alignX="left" width="475" autoSizeTextHeight="true"
+                       registeredTextStyleName="difficultySelection_reward_yellow"/>
+
+                <button name="chance_buttton"
+                        marginRight="5" marginTop="5"
+                        alignX="right"
+                        registeredSkinName="commonui_info_button"/>
+
+                <container name="reward_container"
+                           width="250" height="50"
+                           alignX="left"
+                           alignY="bottom"
+                           marginLeft="10"
+                           marginBottom="5">
+
+                    <itemlist name="list"
+                              width="250" height="50" autoSizeWidth="false" autoSizeHeight="false"
+                              layout="horizontal" itemGap="8"
+                              mouseEnabled="true" mouseChildren="true"
+                              cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+                        <itemrenderer width="50" height="50" autoSizeWidth="false" autoSizeHeight="false"
+                                      itemGap="0" mouseEnabled="true" mouseChildren="true">
+                            <coreponent name="reward_icon_bg"
+                                        width="50" height="50" autoSizeWidth="false" autoSizeHeight="false"
+                                        alignX="left" alignY="bottom" marginLeft="0" marginBottom="0"
+                                        registeredSkinName="reward_icon_bg2"/>
+                            <coreponent name="reward_item_icon"
+                                        width="48" height="48" autoSizeWidth="false" autoSizeHeight="false"
+                                        alignX="left" alignY="bottom" marginLeft="1" marginBottom="1"/>
+                            <label name="reward_item_num_label" text="9"
+                                   registeredSkinName="commonui_default_label" marginRight="5" marginBottom="6"
+                                   alignX="right" alignY="bottom" width="35" autoSizeTextHeight="true"
+                                   registeredTextStyleName="difficultySelection_item_num"/>
+                        </itemrenderer>
+                    </itemlist>
+
+                </container>
+            </container>
+
+            <container name="cost_container"
+                       width="250" height="40"
+                       alignX="center"
+                       alignY="bottom"
+                       marginLeft="0"
+                       marginBottom="60">
+
+                <coreponent name="icon"
+                            width="40" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                            alignX="left" alignY="bottom" marginLeft="0" marginBottom="0"/>
+
+                <label name="cost_name_label" text="item name label"
+                       registeredSkinName="commonui_default_label" marginLeft="45" marginBottom="15"
+                       alignX="left" alignY="bottom" width="200" autoSizeTextHeight="true"
+                       registeredTextStyleName="difficultySelection_style2"/>
+
+                <label name="cost_num_label" text="50/1"
+                       registeredSkinName="commonui_default_label" marginRight="30" marginBottom="15"
+                       alignX="right" alignY="bottom" width="100" autoSizeTextHeight="true"
+                       registeredTextStyleName="difficultySelection_style3"/>
+
+                <button name="cost_item_infoBtn"
+                        marginRight="0" marginBottom="10"
+                        alignX="right" alignY="bottom"
+                        registeredSkinName="commonui_info_button"/>
+            </container>
+
+
+            <button name="button_go"
+                    text="localize:bday2025_entry_btn_enter"
+                    textMarginY="1"
+                    width="180" height="35"
+                    autoSizeWidth="false" autoSizeHeight="false"
+                    alignX="center" alignY="bottom"
+                    marginLeft="0" marginBottom="20"
+                    registeredSkinName="commonui_scale9_button_green" visible="true"/>
+        </container>
+    </template>
+    <container name="root" width="485" height="290" autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="false"
+               mouseChildren="true">
+        <reference template="difficultySelection"/>
+    </container>
+</root>

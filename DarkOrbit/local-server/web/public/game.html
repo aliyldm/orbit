@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>DarkOrbit Local</title>
+  <script src="/mini-jquery.js"></script>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; overflow: hidden; color: #cfd8e3; font-family: Segoe UI, sans-serif; }
+    #client { width: 100%; height: 100%; }
+    #status { position: fixed; left: 8px; bottom: 8px; font-size: 12px; opacity: .6; }
+    #status a { color: inherit; }
+  </style>
+  <script>
+    // Oyun istemcisinin web sayfası açma köprüsü (main.swf: JavascriptProxy.referToURL →
+    // ExternalInterface "InternalMapRevolution.referToURL"). Hangar, pilot sheet, dükkan vb. düğmeler
+    // portal sayfasını açar: oyunu açan portal penceresi varsa o yönlendirilir, yoksa yeni pencere açılır.
+    window.InternalMapRevolution = {
+      referOpenerToUrl: function (href) {
+        var target;
+        try { target = new URL(href, window.location.href); } catch (e) { return false; }
+        if (target.origin !== window.location.origin || target.pathname !== '/indexInternal.es') return false;
+        try {
+          if (window.opener && !window.opener.closed) { window.opener.location.href = target.href; window.opener.focus(); return true; }
+        } catch (e) { /* farklı köken */ }
+        window.open(target.href, 'darkorbit_portal');
+        return true;
+      },
+      referToURL: function (action, textKey, template, focus, category, lootID, openPage) {
+        var url = '/indexInternal.es?action=' + encodeURIComponent(action || 'internalStart');
+        if (template) url += '&tpl=' + template; // ör. "internalDockShips&checkOffer"
+        try {
+          if (window.opener && !window.opener.closed) { window.opener.location.href = url; window.opener.focus(); return; }
+        } catch (e) { /* farklı köken */ }
+        window.open(url, 'darkorbit_portal');
+      }
+    };
+    window.openPaymentFromExternal = function () { window.InternalMapRevolution.referToURL('internalPayment'); };
+    // The SWF completes its logout/restart countdown with bpCloseWindow().
+    // Keep the web login and reload this game window when its renderer changed.
+    window.bpCloseWindow = function () {
+      return fetch('/api/client-view', { credentials: 'same-origin', cache: 'no-store' }).then(function (response) {
+        return response.json();
+      }).then(function (state) {
+        if (state.display2d && state.display2d !== Number('{displayMode}')) { window.location.reload(); return; }
+        window.close();
+        if (!window.closed) window.location.href = '/indexInternal.es?action=internalStart';
+      }).catch(function () { window.location.href = '/indexInternal.es?action=internalStart'; });
+    };
+
+    // Launcher, oyun sayfasında saveUserID(userId, instanceId) çağrısını bekliyor.
+    function triggeredSaveUserID() {
+      if (typeof saveUserID === 'function') saveUserID('{userId}', '{instanceId}');
+    }
+  </script>
+</head>
+<body>
+  <!-- PPAPI Flash: launcher HCSFP32.dll'i --ppapi-flash-path ile yüklüyor -->
+  <!-- canlı sayfadaki <object id="preloader"> yapısıyla aynı (docs/live-observation.md) -->
+  <object id="preloader" name="preloader" type="application/x-shockwave-flash"
+          data="{swf}" width="{width}" height="{height}">
+    <param name="allowfullscreen" value="true">
+    <param name="allowscriptaccess" value="always">
+    <param name="quality" value="high">
+    <param name="wmode" value="gpu">
+    <param name="bgcolor" value="#000000">
+    <param name="allowFullScreenInteractive" value="true">
+    <param name="flashvars" value="{flashvars}">
+  </object>
+  <div id="status">local mode &middot; <a href="/logout">çıkış</a></div>
+</body>
+</html>

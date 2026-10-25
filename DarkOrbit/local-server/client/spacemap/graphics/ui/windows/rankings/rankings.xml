@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+
+	<!-- TEMPLATES -->
+	<template name="RANKINGS_TABBAR">
+		<container  name="tabbarContainer"
+					width="670" height="395"
+					autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent">
+			<itemlist   name="tabsItemlist"
+						width="120" height="15"
+						alignX="right" marginRight="-7"
+						layout="horizontal"  itemGap="0"
+						mouseEnabled="true" mouseChildren="true"
+						cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+				<itemrenderer width="120" height="15" autoSizeWidth="false"
+							  mouseEnabled="true" mouseChildren="true">
+					<button name="tab"
+							autoSizeWidth="true" autoSizeHeight="true"
+							mouseEnabled="true" mouseChildren="true"
+							registeredSkinName="commonui_tabbarbutton"/>
+					<button name="tab_selected" visible="false"
+							autoSizeWidth="true"  autoSizeHeight="true"
+							mouseEnabled="true" mouseChildren="true"
+							registeredSkinName="commonui_tabbarbutton"/>
+					<label  name="tabLabel" text="?"
+							autoSizeWidth="true" height="15" alignY="center"
+							mouseEnabled="false" mouseChildren="false"
+							registeredTextStyleName="commonui_tabbar_center"  registeredSkinName="commonui_default_label"/>
+				</itemrenderer>
+			</itemlist>
+		</container>
+	</template>
+
+	<container name="root" width="670" height="395" autoSizeWidth="false" autoSizeHeight="false"
+			   mouseEnabled="false" mouseChilderen="true">
+		<reference template="RANKINGS_TABBAR"/>
+	</container>
+</root>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="commandCenterWindow"/>
+    </libraries>
+
+    <textstyle
+            name="command_center_label_bold_eurostyle1"
+            textColor="0xF9F9F9"
+            type="dynamic"
+            fontSize="12"
+            bold="true"
+            align="center"
+            embedFonts="true"
+            fontName="EurostileFl"
+            wordWrap="true"
+            multiline="true"
+            autoSize="none"/>
+
+    <textstyle
+            name="command_center_label_default_headline"
+            textColor="0xF9F9F9"
+            type="dynamic"
+            fontSize="12"
+            bold="true"
+            align="center"
+            dropShadow='{"distance":"1", "angle":0, "color":"0", "alpha":"0.9", "blurX":"4", "blurY":"4"}'
+            embedFonts="false"
+            fontName="Verdana"
+            wordWrap="true"
+            multiline="true"
+            autoSize="center"/>
+
+    <textstyle
+            name="command_center_label_headline"
+            textColor="0xFFFFFF"
+            type="dynamic"
+            fontSize="12"
+            bold="true"
+            dropShadow='{"distance":"1", "angle":0, "color":"0", "alpha":"0.9", "blurX":"4", "blurY":"4"}'
+            align="center"
+            embedFonts="false"
+            fontName="Verdana"
+            wordWrap="true"
+            multiline="true"
+            autoSize="center"/>
+
+
+    <textstyle
+            name="command_center_label_default"
+            textColor="0xF9F9F9"
+            type="dynamic"
+            fontSize="10"
+            bold="false"
+            align="center"
+            embedFonts="false"
+            fontName="Verdana"
+            wordWrap="true"
+            multiline="true"
+            autoSize="none"/>
+
+    <textstyle
+            name="command_center_label_footer_small"
+            textColor="0xF9F9F9"
+            type="dynamic"
+            fontSize="9"
+            bold="false"
+            align="center"
+            embedFonts="false"
+            fontName="Verdana"
+            wordWrap="true"
+            multiline="true"
+            autoSize="center"/>
+
+    <textstyle
+            name="command_center_label_bold_full_content"
+            textColor="0xFFFFFF"
+            type="dynamic"
+            fontSize="12"
+            bold="true"
+            dropShadow='{"distance":"1", "angle":0, "color":"0", "alpha":"0.9", "blurX":"4", "blurY":"4"}'
+            align="center"
+            embedFonts="false"
+            mouseEnabled="true"
+            fontName="Verdana"
+            wordWrap="true"
+            multiline="true"
+            autoSize="none"/>
+
+    <textstyle
+            name="command_center_label_timer"
+            textColor="0xFFFFFF"
+            type="dynamic"
+            fontSize="10"
+            bold="false"
+            align="justify"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"/>
+
+    <textstyle
+            name="command_center_button_default_normal"
+            textColor="0xFFFFFF"
+            type="dynamic"
+            fontSize="14"
+            align="justify"
+            embedFonts="true"
+            fontName="EurostileTHea"
+            autoSize="center"/>
+
+    <textstyle
+            name="command_center_button_default_over"
+            textColor="0xEEEEEE"
+            type="dynamic"
+            fontSize="14"
+            embedFonts="true"
+            fontName="EurostileTHea"
+            align="justify"
+            autoSize="center"/>
+
+    <textstyle
+            name="command_center_button_default_clicked"
+            textColor="0xDDDDDD"
+            type="dynamic"
+            fontSize="14"
+            bold="true"
+            embedFonts="true"
+            fontName="EurostileTHea"
+            align="justify"
+            autoSize="center"/>
+
+
+
+    <skin name="command_center_button_btn_green" library="gameclientCommonUI" classname="FadableButtonSkin">
+        <layer classname="BitmapLayer" libraryID="scale9btn_green_normal"
+               registeredTextStyleName="commonui_scale9_button_green_normal" scale9grid="10,10,25,17">normal
+        </layer>
+        <layer classname="BitmapLayer" libraryID="scale9btn_green_hover"
+               registeredTextStyleName="commonui_scale9_button_green_over" scale9grid="10,10,25,17">over
+        </layer>
+        <layer classname="BitmapLayer" libraryID="scale9btn_green_active"
+               registeredTextStyleName="commonui_scale9_button_green_clicked" scale9grid="10,10,25,17">clicked
+        </layer>
+
+        <layer classname="BitmapLayer" libraryID="scale9btn_disabled"
+               registeredTextStyleName="commonui_scale9_button_green_clicked" scale9grid="10,10,25,17">disabled
+        </layer>
+    </skin>
+
+    <skin name="command_center_button_invisible_full_size_overlay" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillAlpha="0">normal</layer>
+        <layer classname="FilledBoxLayer" fillAlpha="0">over</layer>
+        <layer classname="FilledBoxLayer" fillAlpha="0">clicked</layer>
+    </skin>
+
+
+
+    <skin name="command_center_button_defaultButton" library="gameclientCommonUI" classname="FadableButtonSkin">
+        <layer classname="BitmapLayer" libraryID="scale9btn_green_normal"
+               registeredTextStyleName="commonui_scale9_button_green_normal" scale9grid="10,10,25,17">normal
+        </layer>
+        <layer classname="BitmapLayer" libraryID="scale9btn_green_hover"
+               registeredTextStyleName="commonui_scale9_button_green_over" scale9grid="10,10,25,17">over
+        </layer>
+        <layer classname="BitmapLayer" libraryID="scale9btn_green_active"
+               registeredTextStyleName="commonui_scale9_button_green_clicked" scale9grid="10,10,25,17">clicked
+        </layer>
+
+        <layer classname="BitmapLayer" libraryID="scale9btn_disabled"
+               registeredTextStyleName="commonui_scale9_button_green_clicked" scale9grid="10,10,25,17">disabled
+        </layer>
+    </skin>
+
+
+</root>

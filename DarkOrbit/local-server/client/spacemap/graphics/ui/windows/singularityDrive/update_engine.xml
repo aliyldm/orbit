@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="craftingWindow"/>
+    </libraries>
+    <!-- TEXT STYLES -->
+    <textstyle name="expedition_inactive_message" textColor="0xfefefe" type="dynamic"
+               fontSize="14" autoSize="center" wordWrap="true" multiline="true"
+               embedFonts="true" fontName="EurostileHeaFl" align="center"/>
+
+    <textstyle name="tab_textstyle"
+               textColor="0x6FB2CB"
+               type="dynamic"
+               fontSize="9"
+               autoSize="center"
+               wordWrap="true"
+               multiline="true"
+               align="center"
+               embedFonts="false"
+               fontName="Verdana"/>
+
+    <textstyle name="tab_textstyle_active"
+               textColor="0xE9E2C0"
+               type="dynamic"
+               fontSize="9"
+               autoSize="center"
+               wordWrap="true"
+               multiline="true"
+               align="center"
+               embedFonts="false"
+               fontName="Verdana"
+               glowFilter='{"color":"0xE9CB3C", "blurX":"1.1", "blurY":"1.1", "strength":"2", "quality":"2"}'/>
+
+    <skin name="item_finished_outline" classname="BasicSkin" library="craftingWindow">
+        <layer classname="BitmapLayer" libraryID="item_finished_outline">normal</layer>
+    </skin>
+    <!-- CONTENT -->
+
+    <container name="root" width="530" height="590" mouseEnabled="false" mouseChildren="true">
+
+        <!-- type list -->
+        <coreponent registeredSkinName="commonui_tooltip_background"
+                    marginTop="4" marginLeft="20" width="498" height="2"/>
+        <coreponent registeredSkinName="commonui_tooltip_background"
+                    marginTop="44" marginLeft="20" width="498" height="2"/>
+
+        <container name="type_container"
+                   mouseEnabled="false" marginLeft="18" width="498" height="43">
+
+            <coreponent registeredSkinName="commonui_light_darklayer"
+                        width="470" height="36" alignX="center" marginTop="6"/>
+
+            <button name="left_button"
+                    width="13" height="24"
+                    alignY="top" alignX="left"
+                    marginTop="11" marginLeft="1"
+                    registeredSkinName="commonui_arrow_button_left"/>
+
+            <button name="right_button"
+                    width="13" height="24"
+                    alignY="top" alignX="right"
+                    marginTop="11" marginRight="1"
+                    registeredSkinName="commonui_arrow_button_right"/>
+
+            <itemlist name="upgrade_type_list"
+                      width="470" height="34" itemGap="2"
+                      marginLeft="18" marginTop="7"
+                      mouseChildren="true" mouseEnabled="true"
+                      autoSizeWidth="false" layout="horizontal"
+                      cacheSkinMaskAsBitmap="false"
+                      registeredSkinName="commonui_list_mask">
+
+                <itemrenderer width="32" height="32" mouseEnabled="true"
+                              autoSizeWidth="false" mouseChildren="true">
+
+                    <coreponent name="pic"
+                                width="31" height="31"
+                                alignX="center" alignY="center"/>
+
+                    <container name="craftableTypeItemContainer"
+                               width="31" height="31"
+                               visible="false" alignX="center" alignY="center">
+
+                        <coreponent name="type_image"
+                                    width="31" height="31"
+                                    alignX="center" alignY="center"
+                                    registeredSkinName="crafting_itemlist_crafable"/>
+
+                        <coreponent name="type_outline"
+                                    width="31" height="31"
+                                    alignX="center" alignY="center"
+                                    registeredSkinName="crafing_item_finished_outline"/>
+                    </container>
+
+                    <button name="hover"
+                            width="30" height="30"
+                            alignX="center" alignY="center"
+                            registeredSkinName="crafting_itemlist_green"/>
+                </itemrenderer>
+            </itemlist>
+
+
+        </container>
+        <!-- type list end-->
+
+        <!-- grid -->
+        <container name="item_grid_container"
+                   mouseEnabled="false" width="494"
+                   marginLeft="20" marginTop="45">
+
+            <coreponent name="upgrade_grid_bg"
+                        width="494" height="146"
+                        registeredSkinName="upgrade_grid_bg"/>
+
+            <Grid name="upgrade_items_grid"
+                  marginLeft="18" marginTop="25"
+                  itemGapX="6" itemGapY="3"
+                  width="460" height="120"
+                  cacheSkinMaskAsBitmap="false"
+                  registeredSkinName="commonui_list_mask">
+
+                <itemrenderer width="37" height="37"
+                              itemGap="0" mouseEnabled="true"
+                              autoSizeWidth="false" mouseChildren="true">
+
+                    <coreponent name="hitlayer"
+                                registeredSkinName="commonui_hitlayer"
+                                mouseEnabled="true" mouseChildren="true"
+                                autoSizeWidth="true" autoSizeHeight="true"
+                                alpha="0" tooltipTemplateID="commonui_tooltip_simple"/>
+
+
+                    <coreponent name="pic" width="30" height="30"
+                                alignX="center" alignY="top"/>
+
+                    <coreponent name="pic_finished"
+                                width="26" height="23"
+                                visible="false" marginTop="2"
+                                alignX="center" alignY="top"
+                                registeredSkinName="crafing_itemlist_collect"/>
+
+                    <!-- <container name="craftableItemContainer"
+                               visible="false"
+                               width="30"
+                               height="30"
+                               alignX="center"
+                               alignY="top">
+                        <coreponent name="craftableImage"
+                                    width="30"
+                                    height="30"
+                                    alignX="center"
+                                    alignY="top"
+                                    registeredSkinName="crafting_itemlist_crafable"/> 
+                    </container>-->
+
+                    <progressbar name="progress"
+                                 visible="false"
+                                 height="5"
+                                 width="28"
+                                 alignY="bottom"
+                                 alignX="center"
+                                 marginBottom="8"
+                                 registeredSkinName="crafting_timed_progressbar_skin"/>
+
+                    <button name="hover"
+                            width="30"
+                            height="30"
+                            alignX="center"
+                            alignY="top"
+                            registeredSkinName="crafting_itemlist_green"/>
+
+                    <coreponent name="equipped"
+                                width="31"
+                                height="31"
+                                alignX="center"
+                                alignY="top"
+                                registeredSkinName="crafing_item_equipped"/>
+
+                    <label name="itemUpgradeLevel"
+                           text="0"
+                           alignX="left"
+                           alignY="bottom"
+                           marginLeft="10"
+                           marginBottom="38"
+                           registeredTextStyleName="upgrade_grid_item"/>
+
+                    <!--<label name="xpLevel"
+                          text="0"
+                          alignX="right"
+                          alignY="bottom"
+                          with="10"
+                          marginRight="11"
+                          marginBottom="18"
+                          registeredTextStyleName="upgrade_grid_xpLevel"/>-->
+
+                </itemrenderer>
+
+            </Grid>
+
+            <scrollbar name="item_grid1"
+                       height="111"
+                       width="6"
+                       autoSizeWidth="false"
+                       direction="vertical"
+                       alignX="right"
+                       marginRight="12"
+                       marginTop="24"
+                       registeredSkinName="commonui_scrollbar_bgnd_dark">
+
+                <button name="buttonSlider"
+                        width="4"
+                        alignX="center"
+                        registeredSkinName="commonui_scrollbar_slider"/>
+
+            </scrollbar>
+
+            <bind source="item_grid1"
+                  target="upgrade_items_grid"
+                  type="scrollcontainer"/>
+
+            <Button name="collect_all_btn"
+                    height="18" width="100" alignY="top" alignX="left"
+                    marginLeft="25" marginTop="-4" buttonMode="true"
+                    text="localize:crafting_upgrade_collect_all_btn"
+                    registeredSkinName="commonui_smallbutton_blue" enabled="false"/>
+
+        </container>
+        <!-- grid end -->
+
+
+        <!-- tab -->
+
+        <coreponent registeredSkinName="commonui_tooltip_background"
+                    marginLeft="20" marginTop="196"
+                    width="498" height="2"/>
+
+
+        <container name="tabbarContainer" height="20" width="230" marginLeft="300" marginTop="204" pixelSnapping="true">
+            <itemlist name="tabsItemlist" layout="horizontal" autoSizeWidth="true" itemGap="1" height="20"
+                      mouseEnabled="true" mouseChildren="true" cacheSkinMaskAsBitmap="false"
+                      registeredSkinName="commonui_list_mask">
+                <itemrenderer height="15" width="115" autoSizeWidth="false" mouseEnabled="true" mouseChildren="true">
+                    <button name="tab" mouseEnabled="true" autoSizeWidth="true" autoSizeHeight="true"
+                            mouseChildren="true" registeredSkinName="commonui_tabbarbutton"/>
+                    <button name="tab_selected" mouseEnabled="true" autoSizeWidth="true" visible="false"
+                            autoSizeHeight="true" mouseChildren="true" registeredSkinName="commonui_tabbarbutton"/>
+                    <label name="tabLabel" y="-1" text="?" width="113" mouseEnabled="false" mouseChildren="false"
+                           autoSizeWidth="true" registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="tab_textstyle"/>
+                </itemrenderer>
+            </itemlist>
+        </container>
+
+        <coreponent registeredSkinName="commonui_tooltip_background"
+                    marginLeft="20" marginTop="226"
+                    width="498" height="2"/>
+        <!-- tab end -->
+
+    </container>
+
+    <container name="emptyItemsContainer"
+               visible="true" marginLeft="0" marginTop="80"
+               mouseEnabled="false"
+               width="530" height="400">
+
+        <coreponent name="img" alignY="center" alignX="center"
+                    registeredSkinName="crafting_not_possible"/>
+
+        <label name="label" alignY="center" alignX="center"
+               width="530" autoSizeTextHeight="true" text="localize:crafting_filter_no_items"
+               registeredTextStyleName="assembly_warning"/>
+
+    </container>
+    <!-- CONTENT -->
+</root>

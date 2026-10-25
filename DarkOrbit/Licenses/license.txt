@@ -1,0 +1,164 @@
+End-User License Agreement
+
+
+I. Scope of Application
+
+Bigpoint GmbH (hereinafter Bigpoint) develops, markets, advertises, and operates browser games and mobile games of various categories. These games can be played at any time and at any location online directly in the browser and/or via mobile devices. The games are fundamentally free to test and play. Throughout the games, there are various features, which are only usable by paying for them (additional purchases of game currency, premium accounts etc.).
+
+Bigpoint operates, amongst others, certain browser games for which they have developed a downloadable client (hereinafter Software) that improves the playability of the respective game (hereinafter Game) for the user and can be used to play the Game without using additional third-party software like Java and/or browser software.
+
+This end-user license agreement (hereinafter License or License Agreement) regulates the download, installation and use of the Software between Bigpoint and those, who register to play the Game using the Software. In addition to this License Agreement, Bigpoints General Terms and Conditions, which regulate the use of Bigpoints games and other services, also apply.
+
+
+II. Users
+
+1. This License Agreement will be agreed upon between Bigpoint and each real person, who has registered his/herself as a player for the Game via explicit confirmation of this License Agreement and the download of the Software (hereinafter User).
+
+2. Bigpoint offers its games and services exclusively to consumers. Upon registering, Users must have either already reached the age of majority (18) or have the consent of their legal guardian to use the Software. By downloading the Software, the User explicitly guarantees that (i) he/she is of legal age or (ii) he/she has obtained the express consent of his/her legal guardian.
+
+3. Should the User not agree or no longer agree with the License Agreement, he/she will be prohibited from downloading and installing and/or using the Software.
+
+
+III. Subject Matter of the License Agreement
+
+1. License Completion
+The download, each attempt to download and each installation of the Software is an implicit acceptance of the License Agreement. The use and/or download of the Software are expressly linked to the agreement with and the adherence to this License Agreement. An additional express, written or electronic consent is not required to contractually bind the User to the License.
+
+2. Scope of the License
+Within the bounds of the License, Bigpoint grants a limited, non-exclusive, non-transferable License, which is restricted to the use of the Software with the Game. Within the bounds of the License, the User is entitled to create a simple copy of the Software for use on their personal PC and/or mobile device. Bigpoint reserves all rights, in particular, without limitation, patents, copyrights, trademark rights, knowledge, as well as industrial and other property rights to the program, its code, the Software, the documentation and derivations thereof.
+
+3. License Restrictions
+
+3.1 The Software may only be used in direct connection to the Game offered by Bigpoint. Use of the Software for other purposes, in particular profit purposes or advertising purposes is prohibited.
+
+3.2 The User will not transfer, sub-license, commercially use, or make available, for monetary remuneration or otherwise, the Software or rights thereto.
+
+3.3 The User is expressly prohibited from decompiling, reproducing, modifying, or redeveloping by means of reverse engineering the Software either by him/herself or via a third party.
+
+4. Duty of Disclosure/Authorization
+Any use that is not expressly granted to the User according to this section III is to be reported in writing to Bigpoint and is subject to written consent from Bigpoint.
+
+5. Infringement
+Should the User violate this License Agreement or the rights of Bigpoint, he/she is immediately prohibited from using the Software now and in the future. Should the User continue to use the License, Bigpoint will pursue necessary legal recourse against the User for damages incurred. In particular, should the User make modifications to the Software and those modifications have disadvantageous consequences for Bigpoint or other players, the User must compensate Bigpoint for any incurred damages, as well as for the costs accrued for legal defense of third parties and any expenses that Bigpoint would be required to pay (especially lawyer's fees and court fees).
+
+
+IV. Software Modification
+
+1. Bigpoint reserves the right to change, modify or suspend the Software at any time. The User does not bear the right to Software continuation nor to long-term use. The User does not bear any extensive rights beyond those expressly stated in section III.
+
+2. Should changes in the Software lead to changes in the current License Agreement, the User will be appropriately informed of the changes to the License Agreement (e.g. via e-mail or an announcement on the website of the Game). The User will then have a period of seven (7) days after the changes to provide their written objection to the License Agreement. Should the User not submit their objection to the changes of the License terms in written form to Bigpoint within this period, or continue to use the Software, the changed or supplemental terms will apply to him/her. Should the User object in a timely manner, their License will immediately terminate. Further User obligations are listed in section VI.3.
+
+The revocation shall be addressed to:
+
+    Bigpoint GmbH
+    Sachsenstraße 20
+    20097 Hamburg
+    Germany
+
+    E-Mail: stop_en@customerservice-bigpoint.com
+
+
+V. Support/ Warranty/ Liability
+
+1. Support
+
+1.1 Bigpoint is not obligated to provide support for all maintenance, service, upgrade or new issues, Software installations, programs or documentation.
+
+1.2 The User does not bear the right to support services. Error and problem notifications can be reported to Bigpoint in accordance with section VII.6.
+
+2. Warranty Disclaimer
+
+2.1 The Software is offered in its current condition without any guaranteed specific properties or qualities.
+
+2.2 Bigpoint offers the User the use of the Software in its currently available form. The User has no right to the maintenance or management of a specific condition/range of functions of the Software.
+
+2.3. The User is aware that the Software offered by Bigpoint - like any other software - can never be completely error free. The Software is considered defective only when its use is usability is severely compromised and over a prolonged period of time.
+
+2.4 Bigpoint does not accept any warranty or liability for the usability or availability of the Software, as well as its programs, documentation, code, etc. or for the improper use of the Software by third parties. In particular, no warranty is given for errors, which essentially are created by external influences, handling errors on the part of the User, force majeure, changes not instituted by Bigpoint or other forms of manipulation.
+
+3. Limitation of Liability
+
+3.1 Due to the fact that Bigpoint grants the User the License to Software use, Bigpoint is in no way liable for any deliberate damages or damages due to gross negligence. This does not constitute liability of mortal, bodily or health injury or in cases of assumption of a guarantee on the part of Bigpoint. The liability for breach of contractual obligations due to gross negligence is excluded.
+
+3.2 Bigpoint is not liable for damages or loss of data on the Users computer, mobile or any other device which may be caused by the installation of Software which does not originate from Bigpoint.
+
+3.3 The aforementioned limitation of liability also applies to the personal liability of staff, employees, assistants and vicarious agents of Bigpoint, and especially contributors, representatives, organs, shareholders of Bigpoint and their members.
+
+3.4 Liability for breach of a cardinal obligation or an essential obligation is limited to the damage which could have been foreseen. The damage which can be foreseen is limited to  200.00 per account.
+
+3.5 None of the provisions under this section V shall be deemed to limit any of the Users rights granted to him by any applicable non-dispositive law.
+
+
+VI. Term/Cancellation
+
+1. The License is valid for an indeterminate period of time (as expressly specified in section II.1) and can be terminated at any time by either party without reason.
+
+2. In the event of a material violation of the License Agreement by the User, Bigpoint is entitled to terminate the License Agreement immediately.
+
+3. Once the License has been ended due to termination, effective suspension, or objection to changes of the License Agreement (see section IV.2), the User is obligated to immediately cease using the Software, to delete the downloaded Software and all copies of the program and documentation, as well as confirm their erasure in writing to Bigpoint.
+
+
+VII. Final Clauses
+
+1. This License Agreement and any future amendment is governed exclusively by German law excluding the provisions pertaining to the UN Convention on contracts for the international sale of goods and the German International Private Law.
+
+2. Bigpoint and the User will attempt to resolve any disputes about this License through direct, out-of-court negotiations. Should no agreement be reached, disputes over the rights and obligations of this License and the effectiveness of this License are to be legally settled within the jurisdiction of the courts in Hamburg.
+
+3. This License Agreement contains all agreements between the contracting parties regarding the use of the Software.
+
+4. Bigpoint reserves the right to change or make additions to this License Agreement effectively for the future at any time, as long as it is deemed necessary and the User is not disadvantaged against the principles of equity and good faith.
+
+5. Individual changes and supplementary agreements to this License shall be in written form to be considered valid. This includes any provision to suspend or amend the requirement for using the written form.
+
+6. All correspondence is to be submitted in writing to: Bigpoint GmbH, Sachsenstraße 20, 20097 Hamburg, Germany while specifying the topic or the subject. Errors and problem notifications are to be submitted via the Support contact form located on the website of the respective Game.
+
+7. If any provision in this License Agreement is or should become invalid, the contracting parties shall negotiate to replace the invalid or missing regulation with a legal and valid provision, which applies as nearly as possible to that which would have been agreed upon had the parties previously recognized the invalid or missing provision.
+
+
+Hamburg, January 1, 2023
+
+Bigpoint GmbH
+Sachsenstraße 20
+20097 Hamburg
+Deutschland
+
+HTC Reg.: HRB-Hamburg 94148
+VAT ID No.: DE813 602 704
+MDs: Wanqin Liu, Yingying Zou
+
+
+
+Copyright Notices
+
+
+1. QT Framework Essentials, Qt Installer Framework
+
+Copyright (C) 2016 The Qt Company Ltd.
+
+Used under the terms of the GNU Lesser General Public License version 3. (LGPLv3)
+
+The full text of the LGPLv3 license can be found in the installation directory.
+In addition, the LGPL licenses can also be viewed at https://opensource.org/licenses/LGPL-3.0.
+
+
+2. SimpleCryptCopyright
+
+(C) 2011, Andre Somers, All rights reserved.
+
+The full text of the SimpleCrypt license can be found in the installation directory.
+
+
+3. webpopupwindow.cpp
+
+Copyright (C) 2016 The Qt Company Ltd.
+
+Used under the terms of the BSD license. (LGPLv3)
+
+The full text of the BSD license can be found in the installation directory.
+
+
+4. Adobe Flash Player
+
+(c) 2017 Adobe Systems Incorporated and its licensors. All rights reserved.
+
+Used under license from HARMAN Connected Services, Inc.

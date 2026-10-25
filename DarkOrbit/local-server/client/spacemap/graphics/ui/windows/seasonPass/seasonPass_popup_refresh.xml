@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI" />
+		<library id="settingsWindowFUI" />
+		<library id="seasonPass_asset"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+	<textstyle  name="season_pass_popup_message"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="left"/>
+
+	<textstyle  name="season_pass_popup_common"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="10"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="season_pass_popup_common_left"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="left"/>
+
+	<textstyle  name="season_pass_popup_value_btn"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="8"
+				autoSize="center"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="season_pass_popup_cost_item_name"
+				textColor="0xededed"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="left"/>
+
+	<textstyle  name="season_pass_popup_cost_item_red"
+				textColor="0xff0000"
+				type="dynamic"
+				fontSize="10"
+				autoSize="right"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				align="right"/>
+
+	<textstyle  name="season_pass_popup_cost_item"
+				textColor="0xededed"
+				type="dynamic"
+				fontSize="10"
+				autoSize="right"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				align="right"/>
+
+	<textstyle  name        = "commonui_button_whitetxt_16pt"
+				textColor   = "0xFFFFFF"
+				fontSize    = "16"
+				type        = "dynamic"
+				fontName    = "EurostileHeaFl"
+				embedFonts  = "true"
+				autoSize    = "center"/>
+
+	<!-- SKINS -->
+	<skin name="season_pass_popup_confirmation_label_skin" classname="LabelSkin" />
+
+	<skin name="season_pass_popup_button_green" classname="FadableButtonSkin" library="settingsWindowFUI" >
+		<layer classname="BitmapLayer" libraryID="btn_green_normal" >normal</layer>
+		<layer classname="BitmapLayer" libraryID="btn_green_hover" >over</layer>
+		<layer classname="BitmapLayer" libraryID="btn_inactive" >disabled</layer>
+	</skin>
+
+	<skin name="season_pass_popup_button_red" classname="FadableButtonSkin" library="settingsWindowFUI" >
+		<layer classname="BitmapLayer" libraryID="btn_red_normal" >normal</layer>
+		<layer classname="BitmapLayer" libraryID="btn_red_hover" >over</layer>
+		<layer classname="BitmapLayer" libraryID="btn_inactive" >disabled</layer>
+	</skin>
+
+	<skin name="season_pass_popup_info_image" classname="BasicSkin" library="gameclientCommonUI">
+		<layer classname="BitmapLayer" libraryID="icon_info_grey">normal</layer>
+	</skin>
+
+	<skin name="season_pass_popup_button_blue" classname="FadableButtonSkin" library="seasonPass_asset" >
+		<layer classname="BitmapLayer" libraryID="btn_arrow_normal" >normal</layer>
+		<layer classname="BitmapLayer" libraryID="btn_arrow_hover" >over</layer>
+		<layer classname="BitmapLayer" libraryID="btn_arrow_disabled" >disabled</layer>
+	</skin>
+
+	<!-- CONTENT -->
+	<container  name="root" width="400" height="280" autoSizeWidth="false" autoSizeHeight="false"
+				mouseEnabled="false" mouseChilderen="true">
+
+		<container  name="content" width="350" height="230" autoSizeWidth="false" autoSizeHeight="false"
+					alignX="center" alignY="center">
+
+			<container name="message"
+					   autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false" marginTop="30">
+
+				<!--coreponent  alignX="left" registeredSkinName="season_pass_popup_info_image"/-->
+
+				<label
+						name = "main_message"
+						text="localize:window_mission_refresh_times_hint"
+						width="320" autoSizeWidth="false" autoSizeHeight="false" autoHeightMode="parent"
+						marginLeft="70"  alignY="top"
+						registeredTextStyleName="season_pass_popup_message" registeredSkinName="commonui_default_label"/>
+
+				<label
+						name = "refreshConfirm"
+						text="localize:window_mission_refresh_confirm_hint"
+						width="320" autoSizeWidth="false" autoSizeHeight="false" autoHeightMode="parent"
+						marginLeft="70"  alignY="bottom"
+						registeredTextStyleName="season_pass_popup_message" registeredSkinName="commonui_default_label"/>
+
+			</container>
+
+			<!--<container name="level"
+						autoSizeWidth="true" autoWidthMode="parent" height="55" autoSizeHeight="false"
+						marginTop="45">
+
+				<container  name="current"
+							width="150" autoSizeWidth="false" height="35" autoSizeHeight="false" marginTop="0">
+
+					<label  text="reroll type"
+							autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false"
+							registeredTextStyleName="season_pass_popup_common" registeredSkinName="commonui_default_label"/>
+
+					<label  name="label" text="currency use"
+							marginTop="25"
+							autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false"
+							alignY="top"
+							registeredTextStyleName="season_pass_popup_common" registeredSkinName="commonui_default_label"/>
+				</container>
+
+
+				<container  name="upgraded"
+							width="150" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+							alignX="right" marginTop="0">
+
+					<label  text="Free chance"
+							autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false"
+							registeredTextStyleName="season_pass_popup_common" registeredSkinName="commonui_default_label"/>
+					<label  name="times" text="1/5"
+							autoSizeWidth="true" autoWidthMode="parent" height="25" autoSizeHeight="false"
+							marginTop="25"
+							registeredTextStyleName="season_pass_popup_common" registeredSkinName="commonui_default_label"/>
+				</container>
+			</container>-->
+
+			<container  name="cost"
+						autoSizeWidth="true" autoWidthMode="parent" height="50" autoSizeHeight="false"
+						marginTop="105">
+
+			</container>
+
+			<container name="confirm_buttons"
+					   autoSizeWidth="true" autoWidthMode="parent" height="30" autoSizeHeight="false"
+					   marginTop="0">
+				<button name="btnConfirm" text="Confirm"
+						width="155" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+						alignX="left"
+						registeredSkinName="season_pass_popup_button_green" registeredTextStyleName="commonui_button_whitetxt_16pt" buttonMode="true"/>
+
+				<button name="btnCancel" text="Cancel"
+						width="155" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+						alignX="right"
+						registeredSkinName="season_pass_popup_button_red" registeredTextStyleName="commonui_button_whitetxt_16pt" buttonMode="true"/>
+			</container>
+
+			<container name="gold_pass"
+					   alignY="bottom"
+					   marginBottom="0"
+					   autoSizeWidth="true" autoWidthMode="parent" height="80" autoSizeHeight="false">
+				<label
+						name = "upgrade_open_hint" text="localize:window_mission_refresh_upgrade_open_hint"
+						width="320" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+						marginLeft="30"
+						registeredTextStyleName="season_pass_popup_message" registeredSkinName="commonui_default_label"/>
+				<button name="btnGoldPass" text="Upgrade"
+						width="155" autoSizeWidth="false" autoSizeHeight="false" autoHeightMode="parent" height="30"
+						alignX="center"
+						registeredSkinName="season_pass_popup_button_red" registeredTextStyleName="commonui_button_whitetxt_16pt" buttonMode="true"
+						marginTop="40"
+				/>
+
+
+			</container>
+
+		</container>
+	</container>
+</root>

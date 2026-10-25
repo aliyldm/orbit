@@ -1,0 +1,45 @@
+.dohdr {
+    background: #000000;
+    font-size: 11px;
+    width: auto;
+    color: #666666;
+    border: 1px solid #303030;
+    border-radius: 1px;
+    pointer-events: none;
+}
+
+.dohdr300 {
+    background: #000000;
+    font-size: 11px;
+    width: 300px;
+    color: #666666;
+    border: 1px solid #303030;
+    border-radius: 1px;
+    pointer-events: none;
+}
+
+.doauc300 {
+    background: #000000;
+    font-size: 11px;
+    width: 300px;
+    color: #666666;
+    border: 1px solid #303030;
+    border-radius: 1px;
+    pointer-events: none;
+}
+
+.domsg {
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 11px;
+    width: auto;
+    color: #bcd3e3;
+    border: 1px solid rgba(124, 167, 202, 0.75);
+    border-radius: 1px;
+    pointer-events: none;
+}
+
+.eppp-skill {
+    width:265px;
+    background: transparent;
+    border: 0px transparent;
+}

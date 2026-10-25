@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="seasonPass_asset"/>
+        <library id="miniClientReward"/>
+        <library id="craftingWindow"/>
+        <library id="module_equipment_lib"/>
+        <library id="trinitutrialsLib"/>
+        <library id="SingularDriveSelect"/>
+    </libraries>
+    <skin name="singularitydrive_pass_item_locked" classname="BasicSkin" library="seasonPass_asset">
+        <layer classname="BitmapLayer" libraryID="icon_lock-gold">normal</layer>
+    </skin>
+    <skin name="singularitydrive_up_level_bg" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="up_level_bg">normal</layer>
+    </skin>
+    <skin name="singularitydrive_up_level_bg_max" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="up_level_bg_max">normal</layer>
+    </skin>
+    <skin name="singularitydrive_up_level_arrow" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="up_arrow">normal</layer>
+    </skin>
+    
+    <skin name="singularitydrive_reward_content_bg" classname="BasicSkin" library="seasonPass_asset">
+        <layer classname="BitmapLayer" libraryID="bg_content">normal</layer>
+    </skin>
+    <skin name="singularitydrive_reward_title_bg" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="ttlevel_cover">normal</layer>
+    </skin>
+    <skin name="singularitydrive_reward_title_bg_line" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="up_level_line">normal</layer>
+    </skin>
+     <skin name="singularitydrive_reward_list_bg" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="item_list_bg" >normal</layer>
+    </skin>
+    <skin name="singularitydrive_reward_page_button" classname="FadableButtonSkin" library="seasonPass_asset">
+        <layer classname="BitmapLayer" libraryID="btn_arrow_normal"
+               registeredTextStyleName="seasonpass_rewards_paging">normal
+        </layer>
+        <layer classname="BitmapLayer" libraryID="btn_arrow_hover"
+               registeredTextStyleName="seasonpass_rewards_paging">over
+        </layer>
+        <layer classname="BitmapLayer" libraryID="btn_arrow_select"
+               registeredTextStyleName="seasonpass_rewards_paging">clicked
+        </layer>
+        <layer classname="BitmapLayer" libraryID="btn_arrow_disabled"
+               registeredTextStyleName="seasonpass_rewards_paging">disabled
+        </layer>
+    </skin>
+    <skin name="singularitydrive_reward_checkmark" classname="FadableButtonSkin" library="miniClientReward">
+        <layer classname="BitmapLayer" libraryID="reward_checkmark">normal</layer>
+    </skin>
+    <skin name="singularitydrive_reward_bg" classname="FadableButtonSkin" library="miniClientReward">
+        <layer classname="BitmapLayer" libraryID="rewardbg_blue">normal</layer>
+        <layer classname="BitmapLayer" libraryID="rewardbg_yellow">over</layer>
+        <layer classname="BitmapLayer" libraryID="rewardbg_large">clicked</layer>
+    </skin>
+
+    <skin name="singularitydrive_bg_level" classname="BasicSkin" library="seasonPass_asset">
+        <layer classname="BitmapLayer" libraryID="bg_level">normal</layer>
+    </skin>
+
+    <skin name="singularitydrive_icon_points" classname="BasicSkin" library="SingularDriveSelect">
+        <layer classname="BitmapLayer" libraryID="singularitydrive_pass_free">normal</layer>
+    </skin>
+
+
+    <skin name="singularitydrive_progressbar" tweenTime="1" classname="ProgressBarSkin" library="craftingWindow">
+        <layer classname="BitmapLayer" libraryID="progress_bar_fill_scale9" scale9grid="3,4,4,5">bar</layer>
+        <layer classname="BitmapLayer" libraryID="progress_bar_base_scale9" scale9grid="5,4,6,5">normal</layer>
+    </skin>
+
+    <skin name="singularitydrive_item_highlight" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="trinitutrials_item_highlight">normal</layer>
+    </skin>
+    <skin name="singularitydrive_reward_last_bg" classname="FadableButtonSkin" library="miniClientReward">
+        <layer classname="BitmapLayer" libraryID="rewardbg_yellow">normal</layer>
+    </skin>
+    
+
+    <skin name="singularitydrive_list_item_heard_bg_blue" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="list_item_heard_bg_blue">normal</layer>
+    </skin>
+    <skin name="singularitydrive_list_item_heard_bg_gold" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="list_item_heard_bg_gold">normal</layer>
+    </skin>
+    <skin name="singularitydrive_list_item_heard_bg_blue_blow" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="bg_blue_blow">normal</layer>
+    </skin>
+    <skin name="singularitydrive_list_item_heard_bg_gold_blow" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="bg_gold_blow">normal</layer>
+    </skin>
+
+    
+    <skin name="singularitydrive_reward_list_item_mask" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="reward_text_bg">normal</layer>
+    </skin>
+    <skin name="singularitydrive_reward_list_item_free_bg" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="list_item_bg_free">normal</layer>
+    </skin>
+    <skin name="singularitydrive_reward_list_item_gold_bg" classname="BasicSkin" library="trinitutrialsLib">
+        <layer classname="BitmapLayer" libraryID="list_item_bg_gold">normal</layer>
+    </skin>
+    <skin name="singularitydrive_ext_gold_icon" classname="BasicSkin" library="SingularDriveSelect">
+        <layer classname="BitmapLayer" libraryID="singularitydrive_pass_vip">normal</layer>
+    </skin>
+    <skin name="singularitydrive_buy_button" library="seasonPass_asset" classname="FadableButtonSkin">
+        <layer classname="BitmapLayer" libraryID="btn_claim_all_normal"
+               registeredTextStyleName="singularitydrive_rewards_button_normal" scale9grid="5,5,14,10">normal
+        </layer>
+        <layer classname="BitmapLayer" libraryID="btn_claim_all_hover"
+               registeredTextStyleName="singularitydrive_rewards_button_over" scale9grid="5,5,14,10">over
+        </layer>
+        <layer classname="BitmapLayer" libraryID="btn_claim_all_active"
+               registeredTextStyleName="singularitydrive_rewards_button_clicked" scale9grid="5,5,14,10">clicked
+        </layer>
+        <layer classname="BitmapLayer" libraryID="btn_claim_all_disabled"
+               registeredTextStyleName="singularitydrive_rewards_button_clicked" scale9grid="5,5,14,10">disabled
+        </layer>
+    </skin>
+    <skin name="singularitydrive_free_icon" classname="BasicSkin" library="SingularDriveSelect">
+        <layer classname="BitmapLayer" libraryID="singularitydrive_pass_free">normal</layer>
+    </skin>
+
+     <skin name="singularitydrive_cost_item_bg" library="commandCenterWindow" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="tab_blue" >normal</layer>
+    </skin>
+
+    <skin name="singularitydrive_cost_item_icon_bg" library="craftingWindow" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="item_selected">normal</layer>
+    </skin>
+    <skin name="singularitydrive_drop_info_item_bg_level_1" library="trinitutrialsLib" classname="BasicSkin">        
+        <layer classname="BitmapLayer" libraryID="item_bg_levle_1">normal</layer>
+    </skin>
+    <skin name="singularitydrive_drop_info_item_bg_level_2" library="trinitutrialsLib" classname="BasicSkin">        
+        <layer classname="BitmapLayer" libraryID="item_bg_levle_2">normal</layer>
+    </skin>
+    <skin name="singularitydrive_drop_info_item_bg_level_3" library="trinitutrialsLib" classname="BasicSkin">        
+        <layer classname="BitmapLayer" libraryID="item_bg_levle_3">normal</layer>
+    </skin>
+    <skin name="singularitydrive_drop_info_item_bg_level_4" library="trinitutrialsLib" classname="BasicSkin">        
+        <layer classname="BitmapLayer" libraryID="item_bg_levle_4">normal</layer>
+    </skin>
+    <skin name="singularitydrive_drop_info_item_bg_level_5" library="trinitutrialsLib" classname="BasicSkin">        
+        <layer classname="BitmapLayer" libraryID="item_bg_levle_5">normal</layer>
+    </skin>
+     <skin name="singularitydrive_drop_info_item_bg_level_6" library="trinitutrialsLib" classname="BasicSkin">        
+        <layer classname="BitmapLayer" libraryID="item_bg_levle_6">normal</layer>
+    </skin>
+     <skin name="singularitydrive_drop_info_item_bg_level_7" library="trinitutrialsLib" classname="BasicSkin">        
+        <layer classname="BitmapLayer" libraryID="item_bg_levle_7">normal</layer>
+    </skin>
+
+
+     <skin name="singularitydrive_drop_info_list_item_bg" library="trinitutrialsLib" classname="BasicSkin">        
+        <layer classname="BitmapLayer" libraryID="drop_info_item_bg">normal</layer>
+    </skin>
+    <textstyle  name="singularitydrive_rewards_button_normal"
+                textColor="0xFFFFFF"
+                type="dynamic"
+                fontSize="15"
+                autoSize="center"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="center"/>
+
+    <textstyle  name="singularitydrive_rewards_button_over"
+                textColor="0xEEEEEE"
+                type="dynamic"
+                fontSize="15"
+                autoSize="center"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="center"/>
+
+    <textstyle  name="singularitydrive_rewards_button_clicked"
+                textColor="0xDDDDDD"
+                type="dynamic"
+                fontSize="15"
+                autoSize="center"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="center"/>
+    <textstyle name="singularitydrive_rewards_free_pass"
+               textColor="0x6a94a9"
+               type="dynamic"
+               fontSize="9"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="true"
+               align="center"
+               autoSize="center"/>
+    <textstyle name="singularitydrive_rewards_ext_gold_pass"
+               textColor="0xc19246"
+               type="dynamic"
+               fontSize="9"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="true"
+               align="center"
+               autoSize="center"/>
+    <textstyle  name="singularitydrive_tab_center"
+                textColor="0x6FB2CB"
+                type="dynamic"
+                fontSize="9"
+                autoSize="center"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="center"/>
+
+    <textstyle
+            name="win_title_label_style"
+            textColor="0xB1D4E1"
+            type="dynamic"
+            fontSize="8"
+            autoSize="center"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="false"
+            align="center"/>
+    <textstyle
+            name="singularitydrive_progress_current"
+            textColor="0xffffff"
+            type="dynamic"
+            fontSize="10"
+            autoSize="center"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="false"
+            align="center"
+            glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>
+    <textstyle
+            name="singularitydrive_rewards_info_title"
+            textColor="0xffcc86"
+            type="dynamic"
+            fontSize="30"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"
+            glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>
+    <textstyle
+            name="singularitydrive_rewards_info_text"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="12"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"
+            glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>
+    <textstyle
+            name="singularitydrive_rewards_index_text_default"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="10"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"/>
+    <textstyle name="singularitydrive_reward_page_text"
+               textColor="0xededed"
+               type="dynamic"
+               fontSize="10"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="false"
+               align="center"
+               autoSize="center"/>
+    <textstyle
+            name="singularitydrive_rewards_amount_text_default"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="10"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"/>
+    <textstyle  name="singularitydrive_progress_next_level"
+                textColor="0xffffff"
+                type="dynamic"
+                fontSize="11"
+                autoSize="center"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="center"/>
+    <textstyle
+            name="singularitydrive_cost_info_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="12"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"
+            glowFilter='{"color":"0x000000", "blurX":"1", "blurY":"1", "strength":"10", "quality":"2"}'
+               />
+    <textstyle
+            name="singularitydrive_drop_info_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="15"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"
+            glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'
+               />
+    <textstyle
+            name="singularitydrive_drop_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="15"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="center"
+            align="left"
+            glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'
+               />
+    <textstyle
+            name="singularitydrive_title_info_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="12"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"
+            glowFilter='{"color":"0x000000", "blurX":"1", "blurY":"1", "strength":"10", "quality":"2"}'
+               />
+    <textstyle
+            name="singularitydrive_list_title_label"
+            textColor="0x788fa5"
+            type="dynamic"
+            fontSize="13"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            bold="true"
+            fontName="Verdana"
+            autoSize="center"
+            align="center"
+            glowFilter='{"color":"0x000000", "blurX":"1", "blurY":"1", "strength":"10", "quality":"2"}'
+               />
+    <textstyle
+            name="singularitydrive_cost_title_label"
+            textColor="0xededed"
+            type="dynamic"
+            fontSize="13"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            bold="true"
+            fontName="Verdana"
+            autoSize="left"
+            align="left"
+            glowFilter='{"color":"0x000000", "blurX":"1", "blurY":"1", "strength":"10", "quality":"2"}'
+               />
+<template name="voyagers" width="728" height="460">
+    <coreponent name="reward_content" width="728" height="460" autoSizeWidth="false" autoSizeHeight="false"
+                        alignX="left" alignY="top" marginTop="0">
+                <container name="upContainer" width="737" height="125" autoSizeWidth="false" autoSizeHeight="false"
+                           alignY="top" alignX="left" marginTop="20" registeredSkinName="singularitydrive_reward_title_bg">                    
+                    <coreponent name="info_label_bg_line" width="737" height="1" autoSizeWidth="false" autoSizeHeight="false" alignX="left"
+                                marginLeft="0" y="0" registeredSkinName="singularitydrive_reward_title_bg_line"/>
+                    <Label name="info_label" width="690" height="170" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" y="5" marginLeft="20" registeredTextStyleName="singularitydrive_rewards_info_text"
+                           text=""/>
+                    <button name="buy_ext_gold_pass" text="localize:voyagersascentrial_pass_buy_btn"
+                                width="150" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                alignY="center" marginRight="39" alignX="right"
+                                registeredSkinName="singularitydrive_buy_button" buttonMode="true" />
+                    <coreponent name="info_label_bg_line_d" width="737" height="1" autoSizeWidth="false" autoSizeHeight="false" alignX="left"
+                                marginLeft="0" y="124" registeredSkinName="singularitydrive_reward_title_bg_line"/>
+                </container>
+                
+                 
+
+                <container name="bottomContainer" width="728" height="280" autoSizeWidth="false" autoSizeHeight="false"
+                           alignY="top" alignX="center" marginTop="140">
+                    <container name="progress"
+                               width="235" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="children"
+                               marginTop="5" marginLeft="5" alignX="left" alignY="top">
+
+                        <container name="progress_bar"
+                                   width="180" height="20" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="left" alignY="bottom" marginLeft="20" marginBottom="10">
+
+                            <progressbar name="bar"
+                                         autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true"
+                                         autoHeightMode="parent"
+                                         registeredSkinName="singularitydrive_progressbar">
+                            </progressbar>
+
+                            <label name="label_current" text="8888/8888"
+                                   autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false"
+                                   alignY="center"
+                                   registeredTextStyleName="singularitydrive_progress_current"
+                                   registeredSkinName="commonui_default_label"/>
+                        </container>
+
+                        <coreponent name="icon_pts"
+                                    width="48" height="48" autoSizeWidth="false" autoSizeHeight="false"
+                                    alignX="left" alignY="bottom" marginBottom="-5"
+                                    registeredSkinName="singularitydrive_icon_points"/>
+
+                        <container name="index_group"
+                                   width="30" height="25" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="right" alignY="bottom" marginRight="12" marginBottom="8">
+                            <coreponent name="bg"
+                                        autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true"
+                                        autoHeightMode="parent"
+                                        registeredSkinName="singularitydrive_bg_level"/>
+                            <label name="label_next" text="188"
+                                   autoSizeWidth="true" autoWidthMode="parent" height="20" autoSizeHeight="false"
+                                   alignY="center"
+                                   registeredTextStyleName="singularitydrive_progress_next_level"
+                                   registeredSkinName="commonui_default_label"/>
+                        </container>
+                    </container>
+
+                    <label name="time_label" text=""
+                                   autoSizeWidth="false" autoWidthMode="parent" width="100" height="20" autoSizeHeight="false"
+                                   alignY="top" alignX="right" marginRight="30" marginTop="35"
+                                   registeredTextStyleName="singularitydrive_progress_next_level"
+                                   registeredSkinName="commonui_default_label"/>    
+                    <container name="list_bg" autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="left" alignY="top" marginLeft="10" width="720" height="188" marginTop="55" registeredSkinName="singularitydrive_reward_list_bg"/>
+                    
+                    
+                    
+                    <itemlist name="reward_list"
+                          itemGap="0"
+                          width="650"
+                          height="210"
+                          alignX="left"
+                          marginLeft="80"
+                          alignY="top"
+                          marginTop="55"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          autoSizeWidth="false"
+                          layout="horizontal"
+                          cacheSkinMaskAsBitmap="false"
+                          itemAlignX="left"
+                          registeredSkinName="commonui_list_mask">
+                        <itemrenderer width="65"
+                                      autoSizeWidth="false"
+                                      height="186"
+                                      mouseEnabled="true"
+                                      mouseChildren="true">
+                                         
+                            <label name="index_label" registeredSkinName="commonui_default_label"
+                                   registeredTextStyleName="singularitydrive_rewards_index_text_default" alightX="left" alignY="top" marginTop="5"
+                                   width="65" autoSizeTextHeight="true"/>
+
+                            <coreponent name="up_item" width="65" height="93" alignX="center" alignY="top" marginTop="20" mouseEnabled="true" mouseChilderen="true">
+                                  <coreponent name="bg" width="54" height="66" alignX="center" alignY="top"
+                                        marginTop="10" registeredSkinName="singularitydrive_reward_list_item_gold_bg"/>
+
+                                <coreponent name="pic" width="30" height="30" alignX="center" alignY="top" marginTop="20" />
+                                <coreponent name="vip_lock" width="13" height="17" alignX="right" alignY="top" marginTop="3" marginRight="3" registeredSkinName="singularitydrive_pass_item_locked"/>
+                                <coreponent name="checkmark" width="42" height="38" alignX="center" alignY="top"
+                                            marginTop="20" visible="true"
+                                            registeredSkinName="singularitydrive_reward_checkmark"/>
+
+                                <label name="amount" registeredSkinName="commonui_default_label"
+                                       registeredTextStyleName="singularitydrive_rewards_amount_text_default" alightX="center"
+                                       marginBottom="30"
+                                       width="60" autoSizeTextHeight="true" alignY="bottom" text="50"/>
+                            </coreponent>
+                            <coreponent name="down_item" width="65" height="93"  alignX="center" alignY="top" marginTop="110"  mouseEnabled="true" mouseChilderen="true" >
+                                 
+                                 <coreponent name="bg" width="54" height="66" alignX="center" alignY="top"
+                                        marginTop="5" registeredSkinName="singularitydrive_reward_list_item_free_bg"/>
+
+                                <coreponent name="pic" width="30" height="30" alignX="center" alignY="top" marginTop="20" />
+
+                                <coreponent name="checkmark" width="42" height="38" alignX="center" alignY="top"
+                                            marginTop="15" visible="true"
+                                            registeredSkinName="singularitydrive_reward_checkmark"/>
+
+                                <label name="amount" registeredSkinName="commonui_default_label"
+                                       registeredTextStyleName="singularitydrive_rewards_amount_text_default" alightX="center"
+                                       marginBottom="30"
+                                       width="60" autoSizeTextHeight="true" alignY="bottom" text="50"/>
+                            </coreponent>
+                            <coreponent name="item_highlight" width="64" height="186" autoSizeWidth="false"
+                                        autoSizeHeight="false" alignY="bottom" marginBottom="0"
+                                        registeredSkinName="singularitydrive_item_highlight" marginLeft="-1"/>
+                            <coreponent name="item_mask" width="65" height="190" autoSizeWidth="false"
+                                        autoSizeHeight="false" alignY="top" marginTop="0"
+                                        registeredSkinName="singularitydrive_reward_list_item_mask" marginLeft="-1"/>
+                        </itemrenderer>
+                    </itemlist>
+                    <container name="header" width="70" height="184" autoSizeWidth="false" autoSizeHeight="false"
+                             alignX="left" marginLeft="13" alignY="top" marginTop="70">
+
+                           
+                        <coreponent width="64" height="64" autoSizeWidth="false" autoSizeHeight="false"
+                                    marginTop="30" alignX="center"
+                                    registeredSkinName="singularitydrive_ext_gold_icon" />                        
+                        <label name="label" text="localize:voyagersascentrial_pass_vip"
+                               width="70" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                               marginTop="10" alignX="center"
+                               registeredTextStyleName="singularitydrive_rewards_ext_gold_pass" registeredSkinName="commonui_default_label"/>
+                        
+                               
+                        <coreponent width="64" height="64" autoSizeWidth="false" autoSizeHeight="false"
+                                    marginTop="116" alignX="center"
+                                    registeredSkinName="singularitydrive_free_icon" />
+                        <label name="label" text="localize:voyagersascentrial_pass_free"
+                               width="60" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                               marginTop="95" alignX="center"
+                               registeredTextStyleName="singularitydrive_rewards_free_pass" registeredSkinName="commonui_default_label"/>
+                        
+                    </container> 
+                               
+                    <container name="page"
+                               width="580" height="60" autoSizeWidth="false" autoSizeHeight="false" alignX="center"
+                               alignY="top"
+                               marginTop="250">
+
+                        <label name="page_label" text="Page: 888/888"
+                               width="500" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                               marginTop="25" alignX="center"
+                               registeredTextStyleName="singularitydrive_reward_page_text"
+                               registeredSkinName="commonui_default_label"/>
+
+                        <button name="first_page" text="&lt;&lt;"
+                                width="60" height="15"
+                                marginTop="30" alignX="left"
+                                registeredSkinName="singularitydrive_reward_page_button" buttonMode="true"/>
+
+                        <button name="prev_page" text="&lt;"
+                                width="60" height="15"
+                                marginTop="30" marginLeft="60" alignX="left"
+                                registeredSkinName="singularitydrive_reward_page_button" buttonMode="true"/>
+                        <button name="level_Max_page" text="localize:voyagersascentrial_pass_max_level "
+                            width="60" height="15"
+                            marginTop="15" alignX="right"
+                            registeredSkinName="singularitydrive_reward_page_button" buttonMode="true"/>        
+                        <button name="next_page" text="&gt;"
+                                width="60" height="15"
+                                marginTop="30" marginRight="60" alignX="right"
+                                registeredSkinName="singularitydrive_reward_page_button" buttonMode="true"/>
+
+                        <button name="last_page" text="&gt;&gt;"
+                                width="60" height="15"
+                                marginTop="30" alignX="right"
+                                registeredSkinName="singularitydrive_reward_page_button" buttonMode="true"/>
+                    </container>
+
+                </container>
+            </coreponent>
+</template>
+
+    <container name="root"
+               width="728" height="460" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChilderen="true">
+        <reference template="voyagers"/>
+    </container>
+</root>

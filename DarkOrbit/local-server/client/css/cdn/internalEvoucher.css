@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+#sidenav {
+    position: absolute;
+    top:18px;
+    left: 35px;
+    text-align:center;
+    width:475px;
+}
+
+.eVoucher_head{
+    width: 500px;
+    height: 45px;
+    position: relative;
+    top: 20px;
+    left: 62px;
+    padding-top:  30px;
+}
+
+.eVoucher_inner_head{
+    width: 354px;
+    height: 15px;
+    position: relative;
+    top: 65px;
+    left: 138px;
+    padding-top:  15px;
+}
+
+.eVoucher_intro{
+    width: 354px;
+    height: 15px;
+    position: relative;
+    left: 157px;
+    top: 85px;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+.voucher_arrow{
+    width: 22px;
+    height: 22px;
+    margin-left: 5px;
+    background-image:  url(/do_img/global/eVoucher/arrow_element_20x22.png?__cv=a1a50ede9757acfc14027af1c7f48300);
+    background-repeat: no-repeat;
+}
+
+.eVoucher_form {
+    height: 25px;
+    left: 148px;
+    position: relative;
+    top: 1px;
+    width: 354px;
+}
+
+.evoucherInputField {
+    height: 20px;
+    font-size: 11px;
+    padding-left: 7px;
+    background-image:  url(/do_img/global/eVoucher/textfield_237x22.png?__cv=93aa86a23f847ffd61778ad1874ce600);
+    background-repeat: no-repeat;
+    border: 0px;
+    width: 230px;
+}
+
+.evoucherInputFieldBig{
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+
+.statusIcon{
+    width: 22px;
+    height: 22px;
+    background-image:  url(/do_img/global/eVoucher/checkbox_21x22.png?__cv=73a3d18e6e79b2a7cf760b6fd0081800);
+    background-repeat: no-repeat;
+}
+
+#codeMuster{
+    height: 22px;
+    width: 300px;
+    margin: 5px 0 0 10px;
+}
+
+#eVoucher_error,
+#reCaptcha_error {
+	text-align: center;
+	text-shadow: 0 0 2px #000;	
+}
+#eVoucher_error {
+	margin: -2px 0 0 -30px;
+}
+#reCaptcha_error {
+    margin-top: 3px;
+}
+
+#eVoucher_success {
+    left: -50px;
+    margin: 15px 0 0;
+    position: absolute;
+    text-align: center;
+    width: 430px;
+}
+
+.eVoucher_success {
+    margin: 15px 0 0 35px;
+}
+
+#eVoucher_success_payment{
+    text-decoration: underline;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.eVoucher_success_payment{
+    text-decoration: underline;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+#cashCodeIconStatus {
+    height: 22px;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.cashcodeButton_inActive {
+    background: 0 0  url(/do_img/global/eVoucher/selection_button_sprite_148x44.png?__cv=d237eaf10346d39c09ef64a12f5ad700) no-repeat;
+    height: 44px;
+    width: 148px;
+    position: absolute;
+    border: 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #A0A0A0;
+}
+
+.cashcodeButton_active {
+    background: 0 -44px  url(/do_img/global/eVoucher/selection_button_sprite_148x44.png?__cv=d237eaf10346d39c09ef64a12f5ad700) no-repeat;
+    height: 44px;
+    width: 148px;
+    position: absolute;
+    border: 0;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.cashcodeButton_active:hover{
+    background-position: 0 -88px;
+}
+
+.cashcodeButton_active:active{
+    background-position: 0 -132px;
+}
+
+.cashCodeButton {
+    top: 96px;
+}
+
+.cashLogButton {
+    left: 186px;
+    top: 96px;
+}
+
+.submit_button_style{
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+
+.cashLog {
+    background: 0 0  url(/do_img/global/eVoucher/selection_button_sprite_148x44.png?__cv=d237eaf10346d39c09ef64a12f5ad700) no-repeat;
+}
+
+.failedIcon {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    background: 0 -22px  url(/do_img/global/eVoucher/status_icon_sprite_21x22.png?__cv=02c9490cfa70452bb9d54cdf39f57e00) no-repeat;
+}
+
+.successIcon {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    background: 0 0  url(/do_img/global/eVoucher/status_icon_sprite_21x22.png?__cv=02c9490cfa70452bb9d54cdf39f57e00);
+}
+
+.fliess11px-red {
+    font-size: 11px;
+    font-family: Verdana, Arial, sans-serif;
+    color: #b40000;
+}
+
+.fliess11px-green {
+    font-size: 11px;
+    font-family: Verdana, Arial, sans-serif;
+    color: #3CE800;
+}
+
+.fliess11px-gelb{
+    font-size: 11px;
+    font-family: Verdana, Arial, sans-serif;
+    color: #F1C839;
+}
+
+.fliess11px-grey {
+    color: #ABABAB;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 11px;
+}
+
+.greenText{
+    color: #3CE800;
+}
+
+.redText {
+    color: #b40000;
+}
+
+.whiteText {
+    color: #FFFFFF;
+}
+
+#eVoucherHistory {
+    margin: 25px 0 0 75px;
+    position: absolute;
+    width: 535px;
+}
+
+#sidenav {
+    left: 35px;
+    position: absolute;
+    text-align: center;
+    top: 18px;
+    width: 475px;
+}
+
+#balance {
+    height: 325px;
+    left: 35px;
+    overflow: auto;
+    position: absolute;
+    top: 35px;
+    width: 475px;
+    z-index: 1;
+}

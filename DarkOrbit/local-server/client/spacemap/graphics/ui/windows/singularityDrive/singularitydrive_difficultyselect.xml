@@ -1,0 +1,207 @@
+<root>
+       <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="SingularDriveSelect"/>
+        <library id="SingularityDrive"/>
+       </libraries>
+    <skin name="singularitydrive_btn" library="gameclientCommonUI" classname="FadableButtonSkin">
+        <layer classname="BitmapLayer" libraryID="confirmation_button_green_normal" scale9grid="22,24,140,40"
+               registeredTextStyleName="singularitydrive_btn_style_normal">normal
+        </layer>
+        <layer classname="BitmapLayer" libraryID="confirmation_button_green_over" scale9grid="22,24,140,40"
+               registeredTextStyleName="singularitydrive_btn_style_over">over
+        </layer>
+        <layer classname="BitmapLayer" libraryID="confirmation_button_green_clicked" scale9grid="22,24,140,40"
+               registeredTextStyleName="singularitydrive_btn_style_clicked">clicked
+        </layer>
+        <layer classname="BitmapLayer" libraryID="confirmation_button_disabled" scale9grid="22,24,140,40"
+               registeredTextStyleName="singularitydrive_btn_style_normal">disabled
+        </layer>
+    </skin>
+    <skin name="singularitydrive_selec_info_bg" classname="BasicSkin" library="SingularDriveSelect">
+        <layer classname="BitmapLayer" libraryID="info_bg">normal</layer>
+    </skin>
+    <skin name="singularitydrive_selec_star_0" classname="BasicSkin" library="SingularDriveSelect">
+        <layer classname="BitmapLayer" libraryID="star_0">normal</layer>
+    </skin>
+    <skin name="singularitydrive_selec_star_1" classname="BasicSkin" library="SingularDriveSelect">
+        <layer classname="BitmapLayer" libraryID="star_1">normal</layer>
+    </skin>
+
+    <textstyle name="singularitydrive_btn_style_normal" textColor="0xF1FBEC" fontSize="20" type="dynamic"
+               fontName="EurostileHeaFl" embedFonts="true" autoSize="center"/>
+    <textstyle name="singularitydrive_btn_style_over" textColor="0xF1FFEC" fontSize="20" type="dynamic"
+               fontName="EurostileHeaFl" embedFonts="true" autoSize="center"/>
+    <textstyle name="singularitydrive_btn_style_clicked" textColor="0xF9FBFC" fontSize="20" type="dynamic"
+               fontName="EurostileHeaFl" embedFonts="true" autoSize="center"/>
+    <!-- TEXT STYLE HERE -->
+    <textstyle name="singularitydrive_style1"
+               textColor="0xF1FBEC"
+               fontSize="12"
+               type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               multiline="true"
+               wordWrap="true"
+               autoSize="false"
+               align="center"/>
+
+    <textstyle name="singularitydrive_style2"
+               textColor="0xF1FBEC"
+               fontSize="14"
+               type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               autoSize="false"
+               align="right"/>
+
+    <textstyle name="singularitydrive_style3"
+               textColor="0xF1FBEC"
+               fontSize="12"
+               type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               autoSize="false"
+               align="left"/>
+    <textstyle name="singularitydrive_style4"
+               textColor="0xF1FBEC"
+               fontSize="12"
+               type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               autoSize="false"
+               align="center"/>
+
+
+    <template name="singularitydrive_difficultySelection">
+        <container name="body" autoSizeWidth="true" autoSizeHeight="true" autoWidthMode="parent"
+                   autoHeightMode="parent">
+
+            <label name="info_label" text="localize:voyagersascentrial_difficulty_info"
+                   registeredSkinName="commonui_default_label" marginTop="12" marginLeft="8"
+                   alignX="left" width="500" autoSizeTextHeight="true"
+                   registeredTextStyleName="singularitydrive_style1"/>
+              <coreponent name="info_coreponent"
+                        alignX="center" alignY="top"
+                        marginTop="44"
+                        width="374" height="110" visible="true">
+                    <coreponent name="desc_group_bg" alignX="center" alignY="top"
+                        marginTop="0" registeredSkinName="singularitydrive_selec_info_bg"/>
+                     <label name="info_title" width="374" height="32" alignX="center" alignY="top" marginTop="4" registeredTextStyleName="singularitydrive_style1" text="localize:voyagersascentrial_difficulty_objectives"/>
+
+                     <itemlist name="info_item_list"
+                          itemGap="1"
+                          width="370"
+                          height="80"
+                          alignX="center"
+                          marginLeft="1"
+                          alignY="top"
+                          marginTop="29"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          autoSizeWidth="false"
+                          cacheSkinMaskAsBitmap="false"
+                          itemAlignX="left"
+                          registeredSkinName="commonui_list_mask">
+                         <itemrenderer width="370"
+                                      autoSizeWidth="false" 
+                                      autoSizeHeight="false"
+                                      height="26"
+                                      mouseEnabled="true"
+                                      mouseChildren="true">
+                                   <coreponent name="star_group" width="140" height="26" 
+                                      autoSizeWidth="false" autoSizeHeight="false" alignX="left" marginLeft="20" alignY="center">
+                                      <coreponent name="star_0" width="24" height="24" alignX="left" alignY="center" registeredSkinName="singularitydrive_selec_star_0" />
+                                      <coreponent name="star_1" width="24" height="24" alignX="center" alignY="center" registeredSkinName="singularitydrive_selec_star_0" />
+                                      <coreponent name="star_2" width="24" height="24" alignX="right" alignY="center" registeredSkinName="singularitydrive_selec_star_0" />
+                                   </coreponent>
+                                   <coreponent name="info_label_group" width="180" height="26"
+                                    autoSizeWidth="false" autoSizeHeight="false"  alignX="right" alignY="center">
+                                          <label name="info_label" width="150" height="26" alignX="left" alignY="top" marginTop="4" autoSizeWidth="false" autoSizeHeight="false" registeredTextStyleName="singularitydrive_style1"/>
+                                          <button name="infog_tip_btn"
+                                           alignX="right"
+                                           marginRight="2"
+                                           alignY="center"
+                                           tooltipTemplateID="commonui_tooltip_html_text"
+                                           registeredSkinName="commonui_info_button"/>
+                                   </coreponent>
+                                             
+                            </itemrenderer>   
+                     </itemlist>
+
+              </coreponent>            
+
+            <label name="difficulty_select" text="localize:voyagersascentrial_gate_difficulty_select"
+                   registeredSkinName="commonui_default_label"
+                   marginLeft="44" marginTop="170"
+                   alignX="left" width="180"
+                   autoSizeTextHeight="true"
+                   registeredTextStyleName="singularitydrive_style2"/>            
+
+            <coreponent name="dropdownbox_container2"
+                        alignX="left" alignY="top"
+                        marginLeft="244" marginTop="170"
+                        width="150" height="130" visible="true">
+                <dropdownbox name="dropdownbox_select"
+                             width="150" height="25"
+                             alignX="left" alignY="top"
+                             marginLeft="0" marginTop="0"
+                             buttonMode="true"
+                             registeredSkinName="settings_window_dropdownbox"/>
+
+            </coreponent>
+
+
+            <container name="cost_container"
+                       width="250" height="40"
+                       alignX="center" alignY="bottom"
+                       marginLeft="0" marginBottom="78"
+                       mouseEnabled="false" mouseChildren="true">
+
+                <coreponent name="icon_bg"
+                            width="30" height="30"
+                            alignX="left" alignY="bottom"
+                            marginLeft="0" marginBottom="0"
+                            registeredSkinName="commonui_darklayer" visible="false"/>
+
+
+                <coreponent name="icon"
+                            width="50" height="50"
+                            alignX="left" alignY="bottom"
+                            marginLeft="0" marginBottom="-10"
+                            buttonMode="true"
+                            mouseChildren="true" mouseEnabled="true"/>
+
+                <label name="cost_name_label" text=""
+                       registeredSkinName="commonui_default_label"
+                       alignX="left" alignY="bottom"
+                       marginLeft="50" marginBottom="5"
+                       autoSizeTextHeight="true" autoSize="true" width="130"
+                       registeredTextStyleName="singularitydrive_style4"/>
+                <label name="cost_num_label" text="x1"
+                       registeredSkinName="commonui_default_label"
+                       alignX="left" alignY="bottom"
+                       marginLeft="190" marginBottom="5"
+                       autoSizeTextHeight="true" autoSize="true" width="100"
+                       registeredTextStyleName="singularitydrive_style3"/>
+
+            </container>
+
+
+            <button name="button_go"
+                    text="localize:voyagersascentrial_gate_enter_btn"
+                    textMarginY="1"
+                    width="230" height="62"
+                    autoSizeWidth="false" autoSizeHeight="false"
+                    alignX="center" alignY="bottom"
+                    marginLeft="0" marginBottom="10"
+                    registeredSkinName="singularitydrive_btn"
+                    buttonMode="true"
+                    visible="true"/>
+        </container>
+    </template>
+    <container name="root" width="500" height="310" autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="false"
+               mouseChildren="true">
+        <reference template="singularitydrive_difficultySelection"/>
+    </container>
+</root>

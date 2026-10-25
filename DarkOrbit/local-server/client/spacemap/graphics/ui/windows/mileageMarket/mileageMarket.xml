@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="mileageMarket_asset"/>
+		<library id="battlePass"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+	<textstyle  name="mileage_market_description"
+				textColor="0xffffff"
+				type="dynamic"
+				fontSize="11"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="left"/>
+
+	<textstyle  name="mileage_market_pack"
+				textColor="0xff9900"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				align="left"/>
+
+	<textstyle  name="mileage_market_timer"
+				textColor="0xff9900"
+				type="dynamic"
+				fontSize="11"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				align="center"/>
+
+	<textstyle  name="mileage_market_header"
+				textColor="0xffffff"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="left"/>
+
+	<textstyle  name="mileage_market_header_right"
+				textColor="0xffffff"
+				type="dynamic"
+				fontSize="10"
+				autoSize="right"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="right"/>
+
+	<textstyle  name="mileage_market_item_price"
+				textColor="0xffffff"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="left"/>
+
+	<textstyle  name="mileage_market_item_warning"
+				textColor="0xffffff"
+				type="dynamic"
+				fontSize="10"
+				autoSize="center"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="center"/>
+
+	<!-- SKIN -->
+	<skin name="mileage_market_scrollbar_bg" classname="FadableButtonSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+	</skin>
+
+	<skin name="mileage_market_icon_bg" classname="BasicSkin" library="mileageMarket_asset">
+		<layer classname="BitmapLayer" libraryID="bg_icon">normal</layer>
+	</skin>
+
+	<skin name="mileage_market_description_bg" classname="BasicSkin" library="mileageMarket_asset">
+		<layer classname="BitmapLayer" libraryID="bg_description">normal</layer>
+	</skin>
+
+	<skin name="mileage_market_spinbox_bg" classname="BasicSkin" library="gameclientCommonUI">
+		<layer classname="BitmapLayer" libraryID="spinbox.background" scale9grid="4,3,6,16" >normal</layer>
+	</skin>
+
+	<skin name="mileage_market_maxed_bg" classname="BasicSkin">
+		<layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.7" lineColor="0" lineAlpha="0">normal</layer>
+	</skin>
+
+	<skin name="mileage_market_warning" classname="BasicSkin" library="craftingWindow">
+		<layer classname="BitmapLayer" libraryID="caution_Sign">normal</layer>
+	</skin>
+
+	<template name="mileage_market">
+		<container  name="overview"
+					width="540" height="560" autoSizeWidth="false" autoSizeHeight="false"
+					alignX="center" marginTop="10">
+
+			<container  name="top"
+						width="490" height="210" autoSizeWidth="false" autoSizeHeight="false"
+						alignX="center">
+
+				<label  text="localize:mileage-market_description"
+						autoSizeWidth="true" autoWidthMode="parent" height="60"  autoSizeHeight="false"
+						alignX="left"
+						registeredTextStyleName="mileage_market_description" registeredSkinName="commonui_default_label"/>
+
+				<label  text="localize:window_vip-exchange_packs"
+						autoSizeWidth="true" autoWidthMode="parent" height="10" autoSizeHeight="false"
+						alignX="left" marginTop="70"
+						registeredTextStyleName="mileage_market_description" registeredSkinName="commonui_default_label"/>
+
+				<container  name="packs"
+							autoSizeWidth="true" autoWidthMode="parent" height="50" autoSizeHeight="false"
+							marginTop="90"
+							registeredSkinName="commonui_darklayer">
+					<itemlist   name="pack_list"
+								autoSizeWidth="true" autoWidthMode="parent" height="50" autoSizeHeight="false"
+								layout="vertical" itemGap="0"
+								mouseEnabled="true" mouseChildren="true"
+								cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+						<itemrenderer autoSizeWidth="true" autoWidthMode="parent" height="13" autoSizeHeight="false"
+									  itemGap="0" mouseEnabled="false" mouseChildren="false">
+							<label  name="pack" text=""
+									autoSizeWidth="true" autoWidthMode="parent" height="10" autoSizeHeight="false"
+									alignX="left"
+									registeredTextStyleName="mileage_market_pack" registeredSkinName="commonui_default_label"/>
+						</itemrenderer>
+					</itemlist>
+					<scrollbar name="scroll_bar"
+							   width="5" autoSizeHeight="true" direction="vertical"
+							   marginTop="0" marginBottom="0" marginRight="0" alignX="right"
+							   registeredSkinName="mileage_market_scrollbar_bg">
+						<button name="buttonSlider"
+								width="5" height="10" alignX="center"
+								registeredSkinName="commonui_scrollbar_slider"/>
+					</scrollbar>
+					<bind source="scroll_bar"
+						  target="pack_list"
+						  type="scrollcontainer"/>
+				</container>
+
+				<button name="buy_btn"
+						text="localize:ttip_menu_buy_now" textMarginY="1"
+						width="150" height="30" autoSizeWidth="false" autoSizeHeight="false"
+						alignX="center" alignY="bottom" marginBottom="30"
+						registeredSkinName="commonui_scale9_button_green"/>
+
+				<label  name="countdown_timer" text="21d 02h 02m"
+						autoSizeWidth="true" autoWidthMode="parent" height="10" autoSizeHeight="false"
+						alignY="bottom" marginBottom="15"
+						registeredTextStyleName="mileage_market_timer" registeredSkinName="commonui_default_label"/>
+			</container>
+
+			<coreponent autoSizeWidth="true" height="2" marginTop="210" registeredSkinName="commonui_horizontal_divider"/>
+
+			<container  name="bottom"
+						width="535" height="350" autoSizeWidth="false" autoSizeHeight="false"
+						alignX="center" marginTop="212">
+
+				<container  name="header"
+							autoSizeWidth="true" autoWidthMode="parent" height="30" autoSizeHeight="false">
+
+					<label  text="localize:mileage-market_discount-bundles"
+							width="350"  height="10" autoSizeWidth="false" autoSizeHeight="false"
+							alignY="center" y="-4"
+							registeredTextStyleName="mileage_market_header" registeredSkinName="commonui_default_label"/>
+
+					<coreponent name="icon"
+								width="20" height="20" autoSizeWidth="false" autoSizeHeight="false"
+								alignX="right" marginRight="165" alignY="center"/>
+
+					<label  text="" name="coinName"
+							width="130"  height="10" autoSizeWidth="false" autoSizeHeight="false"
+							alignX="right" marginRight="30" alignY="center" y="-4"
+							registeredTextStyleName="mileage_market_header" registeredSkinName="commonui_default_label"/>
+
+					<label  text="0" name="coin"
+							width="30"  height="10" autoSizeWidth="false" autoSizeHeight="false"
+							alignX="right" alignY="center" y="-4"
+							registeredTextStyleName="mileage_market_header_right" registeredSkinName="commonui_default_label"/>
+				</container>
+
+				<container  name="bundles"
+							width="535" height="320" autoSizeWidth="false" autoSizeHeight="false"
+							marginTop="30"
+							registeredSkinName="commonui_darklayer">
+
+					<itemlist   name="list"
+								autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+								layout="vertical" itemGap="0"
+								mouseEnabled="true" mouseChildren="true"
+								cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+						<itemrenderer autoSizeWidth="true" autoWidthMode="parent" height="80" autoSizeHeight="false"
+									  itemGap="0" mouseEnabled="true" mouseChildren="true">
+
+							<container  name="icon" width="70" height="70" autoSizeWidth="false" autoSizeHeight="false"
+										alignY="center" marginLeft="8">
+
+								<coreponent name="bg"
+											autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+											registeredSkinName="mileage_market_icon_bg"/>
+
+								<coreponent name="icon"
+											width="64" height="64" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="center" alignY="center"/>
+							</container>
+
+							<container  name="details" width="265" height="70" autoSizeWidth="false" autoSizeHeight="false"
+										alignY="center" marginLeft="86">
+								<coreponent name="bg"
+											autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+											registeredSkinName="mileage_market_description_bg"/>
+
+								<container  name="top"
+											autoSizeWidth="true" autoWidthMode="parent" height="40" autoSizeHeight="false">
+									<label  name="name"
+											width="220" height="10" autoSizeWidth="false" autoSizeHeight="false"
+											alignY="center" marginLeft="10" y="-4"
+											registeredTextStyleName="mileage_market_header" registeredSkinName="commonui_default_label"/>
+
+									<button name="info" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="right" alignY="center" marginRight="10"
+											registeredSkinName="commonui_info_button"/>
+								</container>
+
+								<container  name="bottom"
+											autoSizeWidth="true" autoWidthMode="parent" height="30" autoSizeHeight="false"
+											alignY="bottom">
+									<label  name="price"
+											width="220" height="10" autoSizeWidth="false" autoSizeHeight="false"
+											alignY="center" marginLeft="10" y="-4"
+											registeredTextStyleName="mileage_market_item_price" registeredSkinName="commonui_default_label"/>
+								</container>
+							</container>
+
+							<container  name="discount"
+										width="180" height="80" autoSizeWidth="false" autoSizeHeight="false"
+										alignX="right" marginRight="5">
+
+								<container  name="spinContainer"
+											width="100" height="15"
+											alignX="center" marginTop="10">
+									<button name="btnMinus"
+											width="16" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+											registeredSkinName="commonui_spinbox_button_symbol_minus"/>
+									<coreponent name="labelBG"
+												width="68" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+												alignX="center"
+												registeredSkinName="mileage_market_spinbox_bg"/>
+									<label  name="labelVal"
+											width="68" autoSizeWidth="false" height="17" autoSizeHeight="false"
+											alignX="center" y="-2"
+											registeredTextStyleName="commonui_spinbox_input_textstyle" registeredSkinName="commonui_default_label"/>
+									<button name="btnPlus"
+											width="16" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+											alignX="right"
+											registeredSkinName="commonui_spinbox_button_symbol_plus"/>
+								</container>
+
+								<button name="btn_apply" localizedText="mileage-market_apply_button"
+										width="100" height="30" autoSizeWidth="false" autoSizeHeight="false"
+										alignX="center" alignY="bottom" marginBottom="10"
+										registeredSkinName="commonui_scale9_button_blue" />
+
+								<button name="btn_buy" localizedText="sp_buy-button"
+										width="100" height="30" autoSizeWidth="false" autoSizeHeight="false"
+										alignX="center" alignY="bottom" marginBottom="10"
+										registeredSkinName="commonui_scale9_button_green" />
+							</container>
+
+							<container  name="warning"
+										width="180" height="80" autoSizeWidth="false" autoSizeHeight="false"
+										alignX="right" marginRight="5">
+								<coreponent name="icon_warning"
+											width="70" height="60" autoSizeWidth="false" autoSizeHeight="false"
+											alignX="center" alignY="center"
+											registeredSkinName="mileage_market_warning"/>
+								<label  text="localize:error_bswin_unspecified"
+										width="100"  height="30" autoSizeWidth="false" autoSizeHeight="false"
+										alignX="center" alignY="center"
+										registeredTextStyleName="mileage_market_item_warning" registeredSkinName="commonui_default_label"/>
+							</container>
+
+							<coreponent name="maxed_bg"
+										width="535" height="400" autoSizeWidth="false" autoSizeHeight="false"
+										registeredSkinName="mileage_market_maxed_bg"/>
+
+							<coreponent name="item_end_divider" width="535" height="1" alignY="bottom"/>
+						</itemrenderer>
+					</itemlist>
+					<scrollbar name="scroll_bar"
+							   width="5" autoSizeHeight="true" direction="vertical"
+							   marginTop="0" marginBottom="0" marginRight="0" alignX="right"
+							   registeredSkinName="mileage_market_scrollbar_bg">
+						<button name="buttonSlider"
+								width="5" height="10" alignX="center"
+								registeredSkinName="commonui_scrollbar_slider"/>
+					</scrollbar>
+					<bind source="scroll_bar"
+						  target="list"
+						  type="scrollcontainer"/>
+				</container>
+			</container>
+		</container>
+	</template>
+
+	<container name="root" width="550" height="610" mouseEnabled="false" mouseChildren="true">
+		<reference template="mileage_market"/>
+	</container>
+</root>

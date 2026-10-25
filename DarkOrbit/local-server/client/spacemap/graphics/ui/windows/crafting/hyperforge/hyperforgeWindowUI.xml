@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="module_equipment_lib"/>
+        <library id="gameclientCommonUI"/>
+    </libraries>
+
+    <textstyle name="hyperforge_head_style"
+               textColor="0xededed"
+               type="dynamic"
+               fontSize="12"
+               bold="true"
+               wordWrap="true"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               autoSize="left"
+               glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>
+
+    <textstyle name="hyperforge_item_desc"
+               textColor="0xededed"
+               type="dynamic"
+               fontSize="10"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               autoSize="left"/>
+
+    <textstyle name="hyperforge_grid_item_desc"
+               textColor="0xededed"
+               type="dynamic"
+               fontSize="8"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               autoSize="left"/>
+
+    <textstyle name="hyperforge_item_name"
+               textColor="0xededed"
+               bold="true"
+               type="dynamic"
+               fontSize="10"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               autoSize="left"/>
+
+    <textstyle name="range_style"
+               textColor="0x009900"
+               type="dynamic"
+               fontSize="10"
+               embedFonts="false"
+               fontName="Verdana"
+               autoSize="center"/>
+    <textstyle name="next_level_style"
+               textColor="0x66cc00"
+               type="dynamic"
+               fontSize="12"
+               embedFonts="false"
+               fontName="Verdana"
+               autoSize="center"/>
+
+    <textstyle name="current_style"
+               textColor="0x00ee00"
+               type="dynamic"
+               fontSize="12"
+               embedFonts="false"
+               fontName="Verdana"
+               autoSize="center"/>
+
+    <skin name="crafting_vertical_list_bg_skin_orange" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" fillColor="0xdbc13b" fillAlpha="0.6">normal</layer>
+    </skin>
+
+    <skin name="retain_cost_ttip_frame" library="traininggroundsUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" scale9grid="1,1,2,2" libraryID="ttip_frame">normal</layer>
+    </skin>
+    <!-- TEMPLATES -->
+    <template name="hyperforge_filter_template">
+        <container name="itemGridContainer"
+                   mouseEnabled="false"
+                   layout="vertical"
+                   width="469">
+            <coreponent registeredSkinName="crafting_divider"
+                        marginTop="2"
+                        marginLeft="20"
+                        width="468"
+                        height="2"/>
+            <container name="itemListContainer"
+                       mouseEnabled="false"
+                       marginLeft="18"
+                       width="469"
+                       height="43">
+
+                <coreponent registeredSkinName="crafting_recipe_list_skin"
+                            width="434"
+                            height="39"
+                            marginTop="3"
+                            marginLeft="15"/>
+
+                <itemlist name="hyperforgeTargetTypeList"
+                          width="430"
+                          itemGap="0"
+                          height="35"
+                          marginLeft="18"
+                          marginTop="6"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          autoSizeWidth="false"
+                          layout="horizontal"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask">
+
+                    <itemrenderer width="33"
+                                  height="35"
+                                  autoSizeWidth="false"
+                                  mouseEnabled="true"
+                                  mouseChildren="true">
+
+                        <coreponent name="hitlayer"
+                                    registeredSkinName="commonui_hitlayer"
+                                    mouseEnabled="true"
+                                    mouseChildren="true"
+                                    autoSizeWidth="true"
+                                    autoSizeHeight="true"
+                                    alpha="0"
+                                    tooltipTemplateID="commonui_tooltip_simple"/>
+
+                        <coreponent name="pic"
+                                    width="31"
+                                    height="31"
+                                    alignX="center"
+                                    alignY="center"/>
+
+                        <button name="hover"
+                                width="30"
+                                height="30"
+                                alignX="center"
+                                alignY="center"
+                                registeredSkinName="crafting_itemlist_green"/>
+                    </itemrenderer>
+
+                </itemlist>
+
+            </container>
+            <coreponent registeredSkinName="crafting_divider"
+                        marginLeft="20"
+                        width="468"
+                        height="2"/>
+        </container>
+    </template>
+
+    <template name="hyperforge_panel_template">
+        <container name="hyperforgeItemGridContainer"
+                   mouseEnabled="false"
+                   marginLeft="20"
+                   marginTop="70"
+                   width="469">
+
+            <coreponent name="hyperforgeGridBg"
+                        width="466"
+                        height="106"
+                        mouseEnabled="true"
+                        mouseChildren="true"
+                        registeredSkinName="upgrade_grid_bg"/>
+
+            <Grid name="hyperforgeItemsGrid"
+                  marginLeft="18"
+                  marginTop="25"
+                  itemGapX="6"
+                  itemGapY="3"
+                  width="430"
+                  height="74"
+                  cacheSkinMaskAsBitmap="false"
+                  registeredSkinName="commonui_list_mask">
+
+                <itemrenderer width="37"
+                              height="74"
+                              itemGap="0"
+                              autoSizeWidth="false"
+                              mouseEnabled="true"
+                              mouseChildren="true">
+
+                    <coreponent name="hitlayer"
+                                registeredSkinName="commonui_hitlayer"
+                                mouseEnabled="true"
+                                mouseChildren="true"
+                                autoSizeWidth="true"
+                                autoSizeHeight="true"
+                                alpha="0"
+                                tooltipTemplateID="commonui_tooltip_simple"/>
+
+                    <coreponent name="pic"
+                                width="30"
+                                height="30"
+                                alignX="center"
+                                alignY="top"/>
+
+                    <button name="hover"
+                            width="30"
+                            height="30"
+                            alignX="center"
+                            alignY="top"
+                            registeredSkinName="crafting_itemlist_green"/>
+
+                    <label name="itemName"
+                           marginTop="30"
+                           width="32"
+                           text="0"
+                           alignX="center"
+                           alignY="top"
+                           registeredTextStyleName="hyperforge_grid_item_desc"/>
+
+                    <label name="itemUpgradeLevel"
+                                   text=""
+                                   alignX="left"
+                                   alignY="bottom"
+                                   marginLeft="8"
+                                   marginBottom="75"
+                                   registeredTextStyleName="upgrade_grid_item"/>
+                    <coreponent name="equipped"
+                                width="31"
+                                height="31"
+                                alignX="center"
+                                alignY="top"
+                                registeredSkinName="crafing_item_equipped"/>
+
+                </itemrenderer>
+
+            </Grid>
+
+            <scrollbar name="item_grid"
+                       height="74"
+                       width="6"
+                       autoSizeWidth="false"
+                       direction="vertical"
+                       scrollSpeed="3"
+                       alignX="right"
+                       marginRight="12"
+                       marginTop="24"
+                       registeredSkinName="commonui_scrollbar_bgnd_dark">
+
+                <button name="buttonSlider"
+                        width="4"
+                        alignX="center"
+                        registeredSkinName="commonui_scrollbar_slider"/>
+
+            </scrollbar>
+
+            <bind source="item_grid"
+                  target="hyperforgeItemsGrid"
+                  type="scrollcontainer"/>
+
+            <label name="rowNumber" marginTop="3" width="70" text="test" alignX="right" alignY="top" registeredTextStyleName="hyperforge_item_desc"/>
+        </container>
+    </template>
+
+    <template name="hyperforge_stats_template">
+        <container name="hyperforgeStatsContainer"
+                   marginLeft="20"
+                   marginTop="180"
+                   width="469">
+            <label name="stats" text="localize:reroll_stat"  width="200" registeredTextStyleName="hyperforge_head_style"/>
+        </container>
+    </template>
+
+    <template name="hyperforge_stats_panel_template">
+        <container name="hyperforgeStatsGridContainer"
+                   marginLeft="20"
+                   marginTop="215"
+                   width="469">
+
+            <Grid name="statsGrid"
+                  width="310"
+                  itemGapX="3"
+                  itemGapY="3"
+                  height="200"
+                  cacheSkinMaskAsBitmap="false"
+                  registeredSkinName="commonui_list_mask">
+
+                <itemrenderer width="150"
+                              height="42"
+                              autoSizeWidth="false"
+                              mouseEnabled="false"
+                              mouseChildren="true">
+
+                    <coreponent name="ingredientListBg" autoSizeWidth="true" height="42" registeredSkinName="crafting_vertical_list_bg_skin"/>
+                    <coreponent name="img" marginTop="6" marginLeft="6" width="32" height="32" alignX="left" alignY="center"/>
+                    <coreponent registeredSkinName="crafting_ingridient_outline" width="31" height="31" marginTop="5" marginLeft="5" alignX="left" alignY="center"/>
+                    <label name="current_label" marginLeft="55" marginTop="5" width="75" text="0" alignX="left" alignY="top" registeredTextStyleName="current_style"/>
+                    <label name="range_label" marginLeft="40" marginTop="25" width="104" height="20" text="0" alignX="left" alignY="top" registeredTextStyleName="range_style"/>
+                    <button name="info_button" alignX="right" alignY="top" marginTop="4" marginRight="1" tooltipTemplateID="commonui_tooltip_html_text" registeredSkinName="commonui_info_button"/>
+                </itemrenderer>
+
+            </Grid>
+
+        </container>
+    </template>
+
+    <template name="hyperforge_ships_template">
+        <container name="hyperforgeShips"
+                   marginLeft="20"
+                   marginTop="335"
+                   width="469">
+            <label name="ships" text="localize:reroll_ships" width="200" registeredTextStyleName="hyperforge_head_style"/>
+            <itemlist name="shipList"
+                      width="150"
+                      itemGap="3"
+                      height="35"
+                      marginTop="30"
+                      mouseChildren="true"
+                      mouseEnabled="true"
+                      autoSizeWidth="false"
+                      layout="horizontal"
+                      cacheSkinMaskAsBitmap="false"
+                      registeredSkinName="commonui_list_mask">
+
+                <itemrenderer width="33"
+                              height="35"
+                              autoSizeWidth="false"
+                              mouseEnabled="true"
+                              mouseChildren="true">
+
+                    <coreponent name="hitlayer"
+                                registeredSkinName="commonui_hitlayer"
+                                mouseEnabled="true"
+                                mouseChildren="true"
+                                autoSizeWidth="true"
+                                autoSizeHeight="true"
+                                alpha="0"
+                                tooltipTemplateID="commonui_tooltip_simple"/>
+
+                    <coreponent name="pic"
+                                width="31"
+                                height="31"
+                                alignX="center"
+                                alignY="center"/>
+
+                    <coreponent registeredSkinName="crafting_ingridient_outline"
+                                width="31"
+                                height="31"
+                                alignX="center"
+                                alignY="center"/>
+                </itemrenderer>
+            </itemlist>
+        </container>
+    </template>
+
+    <template name="hyperforge_cost_template">
+        <container name="hyperforgeCostsContainer"
+                   marginLeft="338"
+                   marginTop="180"
+                   width="150">
+            <label name="hyperforgeCost" text="localize:crafting_skip_label_info" alignX="left" width="130" registeredTextStyleName="hyperforge_head_style"/>
+            <container name="hyperforgeInfo" width="150" marginTop="35" alignX="left" >
+                <coreponent name="hyperforgeInfoBg_discount" autoSizeWidth="true" height="48" registeredSkinName="crafting_vertical_list_bg_skin_orange" visible="false"/>
+                <coreponent name="hyperforgeInfoBg" autoSizeWidth="true" height="48" registeredSkinName="crafting_vertical_list_bg_skin"/>
+                <coreponent name="img" marginTop="6" marginLeft="6" width="32" height="32" alignX="left" mouseEnabled="true"/>
+                <coreponent registeredSkinName="crafting_ingridient_outline" width="31" height="31" marginTop="5" marginLeft="5" alignX="left"/>
+                <label height="10" width="60" name="item_name" alignX="left" alignY="top" marginTop="2" marginLeft="43" text="ABR" registeredTextStyleName="hyperforge_item_name"/>
+                <label height="20" width="60" name="item_amt" alignX="left" alignY="top" marginTop="16" marginLeft="43" text="458 / 4" registeredTextStyleName="hyperforge_item_desc"/>
+                <button name="help" alignX="right" alignY="top" marginTop="16" marginRight="1" tooltipTemplateID="commonui_tooltip_html_text" registeredSkinName="commonui_info_button"/>
+            </container>
+            <label name="next_level_label" marginLeft="0" marginTop="90" width="150" height="20" text="0" alignX="left" alignY="top" registeredTextStyleName="next_level_style"/>
+            <button name="forgeBtn" marginTop="110" width="150" height="25" alignX="left" textMarginY="1" text="localize:window_forge_btn" registeredSkinName="commonui_scale9_button_blue"/>
+
+            
+            <label name="recycleCost" text="localize:reroll_recycle_return"  alignX="left" width="150" marginTop="160" registeredTextStyleName="hyperforge_head_style"/>
+            <container name="recycleInfo" width="150" marginTop="182" alignX="left" >
+                <coreponent name="recycleInfoBg" autoSizeWidth="true" height="48" registeredSkinName="crafting_vertical_list_bg_skin"/>
+                <coreponent name="img" marginTop="6" marginLeft="6" width="32" height="32" alignX="left" mouseEnabled="true"/>
+                <coreponent registeredSkinName="crafting_ingridient_outline" width="31" height="31" marginTop="5" marginLeft="5" alignX="left"/>
+                <label height="10" width="100" name="item_name" alignX="left" alignY="top" marginTop="2" marginLeft="43" text="ABR" registeredTextStyleName="hyperforge_item_name"/>
+                <label height="20" width="100" name="item_amt" alignX="left" alignY="top" marginTop="16" marginLeft="43" text="458 / 4" registeredTextStyleName="hyperforge_item_desc"/>
+                <!-- <button name="help" alignX="right" alignY="top" marginTop="16" marginRight="1" tooltipData="localize:recycle_ttip" tooltipTemplateID="commonui_tooltip_html_text" registeredSkinName="commonui_info_button"/> -->
+            </container>
+            <button name="recycleBtn" marginTop="230" width="150" height="25" alignX="left" textMarginY="1" text="localize:reroll_recycle_btn" registeredSkinName="commonui_scale9_button_green"/>
+        </container>
+    </template>
+
+    <!-- CONTENT -->
+    <container name="globalContainer" width="530" height="480">
+        <container name="contentContainer"
+                   mouseEnabled="false"
+                   width="530"
+                   height="450">
+            <container name="standardViewContainer" mouseEnabled="false" width="530" height="450" visible="true">
+                <reference template="hyperforge_filter_template"/>
+                <reference template="hyperforge_panel_template"/>
+                <reference template="hyperforge_stats_template"/>
+                <reference template="hyperforge_stats_panel_template"/>
+                <reference template="hyperforge_ships_template"/>
+                <reference template="hyperforge_cost_template"/>
+            </container>
+
+            <container name="emptyViewContainer"
+                       visible="false"
+                       mouseEnabled="false"
+                       width="530"
+                       height="400">
+
+                <coreponent name="img"
+                            alignY="center"
+                            alignX="center"
+                            registeredSkinName="crafting_not_possible"/>
+
+                <label name="label"
+                       alignY="center"
+                       alignX="center"
+                       width="530"
+                       autoSizeTextHeight="true"
+                       text="localize:crafting_filter_no_items"
+                       registeredTextStyleName="assembly_warning"/>
+
+            </container>
+        </container>
+    </container>
+
+</root>

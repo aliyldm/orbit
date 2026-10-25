@@ -1,0 +1,223 @@
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="module_equipment_lib"/>
+    </libraries>
+
+
+    <!-- TEXT STYLE HERE -->
+    <textstyle name="ship_hangar_style"
+               textColor="0xF1FBEC"
+               fontSize="14" type="dynamic"
+               fontName="EurostileHeaFl"
+               embedFonts="true"
+               multiline="true"
+               wordWrap="true"
+               autoSize="left"/>
+    <skin name="ship_select" classname="BasicSkin" library="module_equipment_lib">
+        <layer classname="BitmapLayer" libraryID="equipment_itemslot_selected_30x30" scale9grid="3,4,4,5">normal</layer>
+    </skin>
+
+    <skin name="commonui_ship_bg" library="gameclientCommonUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" libraryID="input_background_blue" scale9grid="4,4,6,5">normal</layer>
+    </skin>
+
+    <template name="ShipHangarView">
+        <container name="body" autoSizeWidth="true" autoSizeHeight="true" autoWidthMode="parent"
+                   autoHeightMode="parent">
+            <label name="selectedLabel" text="selected: 0/5"
+                   registeredSkinName="commonui_default_label"
+                   alignX="left" alignY="bottom"
+                   marginBottom="40" marginLeft="20"
+                   width="150" autoSizeTextHeight="true"
+                   registeredTextStyleName="ship_hangar_style"/>
+
+            <button name="infoTip"
+                    alignX="right" alignY="bottom"
+                    marginRight="210" marginBottom="40"
+                    registeredSkinName="commonui_info_button"/>
+
+
+            <label name="choose_tip" text="localize:window_dse_ship_choose_tip"
+                   registeredSkinName="commonui_default_label"
+                   alignX="right" alignY="bottom"
+                   marginRight="20" marginBottom="40"
+                   width="190" autoSizeTextHeight="true"
+                   registeredTextStyleName="ship_hangar_style"/>
+
+
+
+            <button name="confirmBtn"
+                    text="Confirm" buttonMode="true"
+                    textMarginY="1"
+                    width="180" height="35"
+                    autoSizeWidth="false" autoSizeHeight="false"
+                    alignX="center" alignY="bottom"
+                    marginLeft="0" marginBottom="30"
+                    registeredSkinName="commonui_scale9_button_green" visible="true"/>
+
+
+
+
+            <container name="itemListContainer"
+                    mouseEnabled="false"
+                    alignX="left" alignY="top"
+                    marginLeft="45" marginTop="10"
+                    width="735" height="250">
+
+
+                <coreponent name="lightDarkLayer"
+                            width="735"
+                            height="250"
+                            registeredSkinName="commonui_light_darklayer"/>
+
+                <itemlist name="ships"
+                          itemGap="8"
+                          height="250"
+                          width="735"
+                          marginLeft="0"
+                          marginTop="0"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          autoSizeWidth="false"
+                          layout="horizontal"
+                          buttonMode="true"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask">
+
+                    <itemrenderer autoSizeWidth="false"
+                                  width="139"
+                                  height="225"
+                                  marginLeft="8"
+                                  marginTop="10"
+                                  alignX="left"
+                                  alignY="top"
+                                  mouseEnabled="true"
+                                  mouseChildren="true">
+
+                        <coreponent name="ship_blue_bg"
+                                    width="131"
+                                    height="225"
+                                    marginLeft="0"
+                                    marginTop="0"
+                                    alignX="left"
+                                    alignY="top"
+                                    registeredSkinName="commonui_ship_bg"/>
+
+                        <coreponent name="ship_bg"
+                                    width="129"
+                                    height="100"
+                                    marginLeft="1"
+                                    marginTop="1"
+                                    alignX="left"
+                                    alignY="top"
+                                    registeredSkinName="commonui_darklayer"/>
+
+
+
+                        <coreponent name="ship_icon"
+                                    width="129"
+                                    height="100"
+                                    marginLeft="1"
+                                    marginTop="1"
+                                    alignX="left"
+                                    alignY="top"/>
+
+                        <coreponent name="ship_select_bg"
+                                    width="131"
+                                    height="225"
+                                    marginLeft="0"
+                                    marginTop="0"
+                                    alignX="left"
+                                    alignY="top"
+                                    visible="false"
+                                    registeredSkinName="ship_select"/>
+
+                        <label name="ship_info_label_1" text=""
+                               registeredSkinName="commonui_default_label"
+                               alignX="left" alignY="bottom"
+                               marginLeft="0" marginBottom="65"
+                               width="131" autoSizeTextHeight="true"
+                               registeredTextStyleName="textstyle_button_align_left_multine_verdana_10"/>
+
+                        <label name="ship_info_label_2" text=""
+                               registeredSkinName="commonui_default_label"
+                               alignX="left" alignY="bottom"
+                               marginLeft="0" marginBottom="45"
+                               width="131" autoSizeTextHeight="true"
+                               registeredTextStyleName="textstyle_button_align_left_multine_verdana_10"/>
+
+                        <label name="ship_info_label_3" text=""
+                               registeredSkinName="commonui_default_label"
+                               alignX="left" alignY="bottom"
+                               marginLeft="0" marginBottom="25"
+                               width="131" autoSizeTextHeight="true"
+                               registeredTextStyleName="textstyle_button_align_left_multine_verdana_10"/>
+
+                        <label name="ship_info_label_4" text=""
+                               registeredSkinName="commonui_default_label"
+                               alignX="left" alignY="bottom"
+                               marginLeft="0" marginBottom="5"
+                               width="131" autoSizeTextHeight="true"
+                               registeredTextStyleName="textstyle_button_align_left_multine_verdana_10"/>
+
+
+
+                    </itemrenderer>
+
+                </itemlist>
+
+                <scrollbar name="item_bar"
+                           height="7"
+                           autoSizeWidth="true"
+                           direction="horizontal"
+                           alignX="center"
+                           alignY="bottom"
+                           marginRight="0"
+                           marginLeft="0"
+                           registeredSkinName="commonui_scrollbar_bgnd">
+
+                    <button name="buttonSlider"
+                            alignY="center"
+                            width="30"
+                            height="7"
+                            buttonMode="true"
+                            registeredSkinName="commonui_scrollbar_slider"/>
+
+                </scrollbar>
+
+                <bind source="item_bar"
+                      target="ships"
+                      type="scrollcontainer"/>
+            </container>
+
+
+
+            <button name="arrowLeftBtn"
+                    alignX="left"
+                    alignY="top"
+                    marginLeft="10"
+                    marginTop="100"
+                    buttonMode="true"
+                    registeredSkinName="commonui_arrow_button_left"/>
+
+            <button name="arrowRightBtn"
+                    alignX="right"
+                    alignY="top"
+                    marginRight="10"
+                    marginTop="100"
+                    buttonMode="true"
+                    registeredSkinName="commonui_arrow_button_right"/>
+
+
+
+
+
+
+        </container>
+    </template>
+    <container name="root" width="820" height="340" autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="false"
+               mouseChildren="true">
+        <reference template="ShipHangarView"/>
+    </container>
+</root>

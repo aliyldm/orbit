@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="spaceMapWindow"/>
+        <library id="gameclientCommonUI"/>
+        <library id="commandCenterWindow"/>
+    </libraries>
+
+    <template name="mapToolTip">
+
+        <container name="container"
+                   autoSizeHeight="true"
+                   autoHeightMode="children">
+
+            <container name="wrapper"
+                       width="360"
+                       autoSizeHeight="true"
+                       autoHeightMode="children"
+                       layout="vertical"
+                       registeredSkinName="space_map_toolTipBackground">
+
+                <coreponent name="mapImageContainer"
+                            marginTop="5"
+                            width="335"
+                            height="210"
+                            alignX="center"
+                            registeredSkinName="space_map_tooltip_map_image_bg">
+
+                    <coreponent name="mapImage"
+                                marginTop="1"
+                                marginLeft="1"
+                                width="333"
+                                height="208"
+                                alignX="center"/>
+
+                    <coreponent name="mapStatusImage"
+                                width="15"
+                                height="19"
+                                marginRight="5"
+                                marginTop="185"
+                                alignX="right"/>
+
+                </coreponent>
+
+                <label name="mapIdLabel"
+                       autoSizeTextHeight="true"
+                       width="340"
+                       marginLeft="12"
+                       marginTop="4"
+                       text="Needed for height calculation."
+                       registeredTextStyleName="space_map_toolTipText"/>
+
+                <label name="toolTipInfo"
+                       autoSizeTextHeight="true"
+                       width="330"
+                       height="10"
+                       marginTop="0"
+                       marginLeft="17"
+                       marginBottom="15"
+                       text="Needed for height calculation."
+                       registeredTextStyleName="space_map_toolTipInfo"/>
+            </container>
+        </container>
+    </template>
+
+    <container name="contentContainer"
+               mouseEnabled="false"
+               marginTop="17"
+               marginLeft="18"
+               width="775"
+               height="565">
+
+        <coreponent name="mapsBG"
+                    width="775"
+                    height="563"
+                    registeredSkinName="space_map_mapsBG"/>
+
+        <coreponent name="mapsLines"
+                    width="676"
+                    height="402"
+                    x="61"
+                    y="40"
+                    registeredSkinName="space_map_mapLines"/>
+
+        <coreponent name="blinkerSmall"
+                    width="60"
+                    height="54"
+                    x="59"
+                    y="408"
+                    visible="false"
+                    mouseEnable="false"
+                    registeredSkinName="space_map_blinker_small"/>
+
+        <coreponent name="blinkerBig"
+                    width="96"
+                    height="84"
+                    x="59"
+                    y="408"
+                    visible="false"
+                    mouseEnable="false"
+                    registeredSkinName="space_map_blinker_big"/>
+
+        <container name="maps"
+                   width="775"
+                   height="565">
+
+            <button name="map_1"
+                    width="60"
+                    height="54"
+                    x="59"
+                    y="408"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_1"/>
+
+            <button name="map_2"
+                    width="60"
+                    height="54"
+                    x="111"
+                    y="378"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_2"/>
+
+            <button name="map_3"
+                    width="60"
+                    height="54"
+                    x="111"
+                    y="317"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_3"/>
+
+            <button name="map_4"
+                    width="60"
+                    height="54"
+                    x="162"
+                    y="349"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_4"/>
+
+            <button name="map_5"
+                    width="60"
+                    height="54"
+                    x="7"
+                    y="215"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_5"/>
+
+            <button name="map_6"
+                    width="60"
+                    height="54"
+                    x="62"
+                    y="215"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_6"/>
+
+            <button name="map_7"
+                    width="60"
+                    height="54"
+                    x="111"
+                    y="240"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_7"/>
+
+            <button name="map_8"
+                    width="60"
+                    height="54"
+                    x="111"
+                    y="190"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_8"/>
+
+            <button name="map_9"
+                    width="60"
+                    height="54"
+                    x="59"
+                    y="24"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_9"/>
+
+            <button name="map_10"
+                    width="60"
+                    height="54"
+                    x="111"
+                    y="53"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_10"/>
+
+            <button name="map_11"
+                    width="60"
+                    height="54"
+                    x="111"
+                    y="113"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_11"/>
+
+            <button name="map_12"
+                    width="60"
+                    height="54"
+                    x="162"
+                    y="81"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_12"/>
+
+            <button name="map_13"
+                    width="60"
+                    height="54"
+                    x="233"
+                    y="276"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_13"/>
+
+            <button name="map_14"
+                    width="60"
+                    height="54"
+                    x="193"
+                    y="215"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_14"/>
+
+            <button name="map_15"
+                    width="60"
+                    height="54"
+                    x="233"
+                    y="152"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_15"/>
+
+            <button name="map_16"
+                    width="96"
+                    height="84"
+                    x="358"
+                    y="379"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_16"/>
+
+            <button name="map_29"
+                    width="96"
+                    height="84"
+                    x="358"
+                    y="19"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_29"/>
+
+            <button name="map_91"
+                    width="96"
+                    height="84"
+                    x="358"
+                    y="135"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_91"/>
+
+            <button name="map_92"
+                    width="60"
+                    height="54"
+                    x="375"
+                    y="214"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_92"/>
+
+            <button name="map_93"
+                    width="96"
+                    height="84"
+                    x="358"
+                    y="264"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_93"/>
+
+            <button name="map_17"
+                    width="60"
+                    height="54"
+                    x="522"
+                    y="373"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_17"/>
+
+            <button name="map_18"
+                    width="60"
+                    height="54"
+                    x="562"
+                    y="331"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_18"/>
+
+            <button name="map_19"
+                    width="60"
+                    height="54"
+                    x="562"
+                    y="414"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_19"/>
+
+            <button name="map_20"
+                    width="60"
+                    height="54"
+                    x="602"
+                    y="373"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_20"/>
+
+            <button name="map_21"
+                    width="60"
+                    height="54"
+                    x="522"
+                    y="214"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_21"/>
+
+            <button name="map_22"
+                    width="60"
+                    height="54"
+                    x="562"
+                    y="172"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_22"/>
+
+            <button name="map_23"
+                    width="60"
+                    height="54"
+                    x="562"
+                    y="256"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_23"/>
+
+            <button name="map_24"
+                    width="60"
+                    height="54"
+                    x="602"
+                    y="214"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_24"/>
+
+            <button name="map_25"
+                    width="60"
+                    height="54"
+                    x="522"
+                    y="56"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_25"/>
+
+            <button name="map_26"
+                    width="60"
+                    height="54"
+                    x="562"
+                    y="12"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_26"/>
+
+            <button name="map_27"
+                    width="60"
+                    height="54"
+                    x="562"
+                    y="98"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_27"/>
+
+            <button name="map_28"
+                    width="60"
+                    height="54"
+                    x="602"
+                    y="56"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_28"/>
+
+            <button name="map_306"
+                    width="60"
+                    height="54"
+                    x="706"
+                    y="277"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_306"/>
+
+            <button name="map_307"
+                    width="60"
+                    height="54"
+                    x="666"
+                    y="214"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_307"/>
+
+            <button name="map_308"
+                    width="60"
+                    height="54"
+                    x="706"
+                    y="152"
+                    tooltipTemplateID="mapToolTip"
+                    registeredSkinName="space_map_map_308"/>
+
+        </container>
+
+        <container name="mapIcons"
+                   width="775"
+                   height="565">
+
+            <coreponent name="map_1"
+                        width="60"
+                        height="54"
+                        x="59"
+                        y="408"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_2"
+                        width="60"
+                        height="54"
+                        x="111"
+                        y="378"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_3"
+                        width="60"
+                        height="54"
+                        x="111"
+                        y="317"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_4"
+                        width="60"
+                        height="54"
+                        x="162"
+                        y="349"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_5"
+                        width="60"
+                        height="54"
+                        x="7"
+                        y="215"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_6"
+                        width="60"
+                        height="54"
+                        x="62"
+                        y="215"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_7"
+                        width="60"
+                        height="54"
+                        x="111"
+                        y="240"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_8"
+                        width="60"
+                        height="54"
+                        x="111"
+                        y="190"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_9"
+                        width="60"
+                        height="54"
+                        x="59"
+                        y="24"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_10"
+                        width="60"
+                        height="54"
+                        x="111"
+                        y="53"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_11"
+                        width="60"
+                        height="54"
+                        x="111"
+                        y="113"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_12"
+                        width="60"
+                        height="54"
+                        x="162"
+                        y="81"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_13"
+                        width="60"
+                        height="54"
+                        x="233"
+                        y="276"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_14"
+                        width="60"
+                        height="54"
+                        x="193"
+                        y="215"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_15"
+                        width="60"
+                        height="54"
+                        x="233"
+                        y="152"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_16"
+                        width="96"
+                        height="84"
+                        x="358"
+                        y="379"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_29"
+                        width="96"
+                        height="84"
+                        x="358"
+                        y="19"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_91"
+                        width="96"
+                        height="84"
+                        x="358"
+                        y="135"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_92"
+                        width="60"
+                        height="54"
+                        x="375"
+                        y="214"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_93"
+                        width="96"
+                        height="84"
+                        x="358"
+                        y="264"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_17"
+                        width="60"
+                        height="54"
+                        x="522"
+                        y="373"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_18"
+                        width="60"
+                        height="54"
+                        x="562"
+                        y="331"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_19"
+                        width="60"
+                        height="54"
+                        x="562"
+                        y="414"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_20"
+                        width="60"
+                        height="54"
+                        x="602"
+                        y="373"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_21"
+                        width="60"
+                        height="54"
+                        x="522"
+                        y="214"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_22"
+                        width="60"
+                        height="54"
+                        x="562"
+                        y="172"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_23"
+                        width="60"
+                        height="54"
+                        x="562"
+                        y="256"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_24"
+                        width="60"
+                        height="54"
+                        x="602"
+                        y="214"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_25"
+                        width="60"
+                        height="54"
+                        x="522"
+                        y="56"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_26"
+                        width="60"
+                        height="54"
+                        x="562"
+                        y="12"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_27"
+                        width="60"
+                        height="54"
+                        x="562"
+                        y="98"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_28"
+                        width="60"
+                        height="54"
+                        x="602"
+                        y="56"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_306"
+                        width="60"
+                        height="54"
+                        x="706"
+                        y="277"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_307"
+                        width="60"
+                        height="54"
+                        x="666"
+                        y="214"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+            <coreponent name="map_308"
+                        width="60"
+                        height="54"
+                        x="706"
+                        y="152"
+                        mouseEnabled="false"
+                        mouseChildren="false"/>
+
+        </container>
+
+        <container name="cpuJumpControls"
+                   visible="false">
+
+            <coreponent name="controlsBG"
+                        y="490"
+                        height="72"
+                        width="775"
+                        registeredSkinName="space_map_controlsBG"/>
+
+            <label name="currentMapLabel"
+                   autoSizeTextHeight="true"
+                   width="175"
+                   x="50"
+                   y="507"
+                   text="localize:current_map_label"
+                   registeredTextStyleName="space_map_systemMapLabel"/>
+
+            <label name="currentMapIdLabel"
+                   autoSizeTextHeight="true"
+                   width="30"
+                   x="220"
+                   y="507"
+                   registeredTextStyleName="space_map_mapIdLabel"/>
+
+            <label name="selectedDestinationLabel"
+                   autoSizeTextHeight="true"
+                   width="175"
+                   x="50"
+                   y="531"
+                   text="localize:label_selected_map"
+                   registeredTextStyleName="space_map_systemMapLabel"/>
+
+            <label name="selectedMapIdLabel"
+                   autoSizeTextHeight="true"
+                   width="30"
+                   x="220"
+                   y="531"
+                   text="-"
+                   registeredTextStyleName="space_map_mapIdLabel"/>
+
+            <label name="jumpVoucherInfo"
+                   autoSizeTextHeight="true"
+                   width="160"
+                   x="250"
+                   y="531"
+                   text="localize:jump_cost_info_label"
+                   registeredTextStyleName="space_map_not_enough_vouchers_info"/>
+
+            <label name="jumpVoucherAmount"
+                   autoSizeTextHeight="true"
+                   width="150"
+                   x="410"
+                   y="531"
+                   registeredTextStyleName="space_map_notEnoughVouchers"/>
+
+            <button name="starSystemInfoTtip"
+                    x="451"
+                    y="529"
+                    tooltipData="localize:star_system_info_ttip"
+                    tooltipTemplateID="commonui_tooltip_simple"
+                    registeredSkinName="commonui_info_image"/>
+
+            <container name="jumpPriceBackground"
+                       width="133"
+                       height="24"
+                       x="335"
+                       y="504"
+                       mouseEnabled="false"
+                       registeredSkinName="space_map_jumpPriceInfoBackground">
+
+                <label name="jumpPriceInfo"
+                       autoSizeTextHeight="true"
+                       width="130"
+                       marginTop="4"
+                       alignX="center"
+                       text="-"
+                       mouseEnabled="false"
+                       registeredTextStyleName="space_map_jumpPriceLabel"/>
+
+            </container>
+
+            <button name="btnJumpConformation"
+                    width="145"
+                    height="27"
+                    x="580"
+                    y="515"
+                    enabled="false"
+                    text="localize:btn_jump_conformation"
+                    registeredSkinName="commonui_scale9_button_green"/>
+
+            <label name="jumpLockedInfo"
+                   autoSizeTextHeight="true"
+                   width="175"
+                   height="135"
+                   marginTop="4"
+                   x="530"
+                   y="500"
+                   visible="false"
+                   text="localize:jump_locked_info"
+                   mouseEnabled="false"
+                   registeredTextStyleName="space_map_mapLockedInfoText"/>
+
+        </container>
+
+    </container>
+
+</root>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CollectorEvent xmlns="http://www.darkorbit.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.darkorbit.com eventProgress.xsd">
+
+	<attributes>
+    	<titleKey>window_event_spacecup_title</titleKey>
+    	<descriptionKey>window_event_spacecup_label_description</descriptionKey>
+        <sourceKey>window_event_spacecup_source</sourceKey>
+        <resetPrice uridium="5000" />
+    </attributes>
+
+    <!--
+    <item name="window_event_progress_title"><![CDATA[Hatching Out!]]></item>
+    <item name="window_event_progress_button_confirmation_collect_rewards"><![CDATA[Collect]]></item>
+    <item name="window_event_progress_button_confirmation_collect_restart"><![CDATA[Restart]]></item>
+    <item name="window_event_progress_label_event_ends"><![CDATA[Event Ends in:]]></item>
+    <item name="window_event_progress_tabbar_eventprogress"><![CDATA[Progress]]></item>
+    <item name="window_event_progress_tabbar_explanation"><![CDATA[Sources]]></item>
+    <item name="window_event_progress_label_nextreward"><![CDATA[Next Reward:]]></item>
+    <item name="window_event_progress_tooltip_package01_hatching_out"><![CDATA[15 Khyalon and 50 Bifenon]]></item>
+    <item name="window_event_progress_tooltip_package02_hatching_out"><![CDATA[40 Khyalon and 60 Tetrathrin]]></item>
+    <item name="window_event_progress_label_timeleft"><![CDATA[Time left:]]></item>
+    <item name="window_event_progress_label_description"><![CDATA[Help remove the viral infection by collecting Viral Purge points. The more you collect, the better the rewards. With factions agreeing to award all who complete the process an LF-4. The more times you complete the process the more awards you will gain. So, its time to prepare for action.]]></item>
+    <item name="window_event_progress_label_event_collection_points_hatchingout_event"><![CDATA[You can collect Viral Purge points from: Eggs, Gygerthralls, Killing the HITAC, Event Missions and Alpha, Beta and Gamma Gates.]]></item>
+    <item name="ttip_event_progress"><![CDATA[Progress]]></item>
+    -->
+    <rewards class="java.util.ArrayList">
+        <reward packageid="package_event_progress-spacecup01" packageItemIds="ammunition_laser_spacecup_group-a,ammunition_laser_rsb-75" itemShowTimeInSec="3" amount="1" unlockRequirement="1000" />
+        <reward lootid="equipment_weapon_laser_lf-4" amount="1" unlockRequirement="5000" />
+        <reward lootid="resource_collectable_indoctrineoil" amount="40" unlockRequirement="10000" />
+        <reward lootid="resource_ore_seprom" amount="12000" unlockRequirement="25000" />
+        <reward packageid="package_event_progress-spacecup03" packageItemIds="ammunition_laser_spacecup_group-a,ammunition_laser_rsb-75,equipment_weapon_laser_lf-4-hp" itemShowTimeInSec="3" amount="1" unlockRequirement="50000"/>
+    </rewards> 
+	<triggers class="java.util.ArrayList" />   
+
+</CollectorEvent>

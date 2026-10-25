@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<battlePass>
+    <!-- Objective Panel -->
+    <objectiveList>
+        <!-- Tier 1 -->
+
+        <!-- Ice Cubes - Kill Frozen Icy -->
+        <objective questId="500385">
+            <questReward lootid="ammunition_laser_ucb-100" amount="3000"/>
+            <bpReward lootid="ammunition_specialammo_r-ic3" amount="100"/>
+        </objective>
+
+        <!-- Frozen Caps - Kill Frozen Kristallin -->
+        <objective questId="500388">
+            <questReward lootid="ammunition_laser_spacecup_group-d" amount="2000"/>
+            <bpReward lootid="booster_shd-dlb" amount="10"/>
+        </objective>
+
+        <!-- Clear out a Path - Kill Frozen Kristallon -->
+        <objective questId="500391">
+            <questReward lootid="resource_booty-key" amount="2"/>
+            <bpReward lootid="resource_collectable_indoctrineoil" amount="15"/>
+        </objective>
+
+        <!-- Thawing Gates - Collect FLB Keys -->
+        <objective questId="500394">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="10"/>
+            <bpReward lootid="ammunition_laser_spacecup_group-c" amount="1000"/>
+        </objective>
+
+        <!-- Avalanche - Deal damage to Frozen Super Meteoroid -->
+        <objective questId="500397">
+            <questReward lootid="ammunition_laser_rsb-75" amount="2000"/>
+            <bpReward lootid="ammunition_laser_spacecup_group-c" amount="3000"/>
+        </objective>
+
+        <!-- Exploration - Travel Distance in FLB -->
+        <objective questId="500400">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="5"/>
+            <bpReward lootid="ammunition_laser_rsb-75" amount="5000"/>
+        </objective>
+
+        <!-- Getting Chilly - Receive Damage -->
+        <objective questId="500403">
+            <questReward lootid="ammunition_rocketlauncher_hstrm-01" amount="500"/>
+            <bpReward lootid="resource_collectable_indoctrineoil" amount="10"/>
+        </objective>
+
+        <!-- Wild Goose Chase - Go to Map Alcyone -->
+        <objective questId="500406">
+            <questReward lootid="resource_extra-energy" amount="10"/>
+            <bpReward lootid="ammunition_laser_ucb-100" amount="1500"/>
+        </objective>
+
+        <!-- Frozen Labyrinth - Clear Objectives -->
+        <objective questId="500409">
+            <questReward lootid="equipment_shipupgrade_spc-spd01" amount="1"/>
+            <bpReward lootid="ship_zephyr" amount="1"/>
+        </objective>
+
+        <!-- Tier 2 -->
+
+        <!-- Making Slush - Kill Frozen Icy -->
+        <objective questId="500386">
+            <questReward lootid="ammunition_specialammo_r-ic3" amount="100"/>
+            <bpReward lootid="tech_npc-nuke" amount="1"/>
+        </objective>
+
+        <!-- Ice Field - Kill Frozen Kristallin -->
+        <objective questId="500389">
+            <questReward lootid="ammunition_rocket_plt-2021" amount="5000"/>
+            <bpReward lootid="tech_npc-nuke" amount="1"/>
+        </objective>
+
+        <!-- Piercing Cold - Kill Frozen Kristallon -->
+        <objective questId="500392">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="10"/>
+            <bpReward lootid="ammunition_specialammo_r-ic3" amount="100"/>
+        </objective>
+
+        <!-- Decipher - Collect FLB Keys -->
+        <objective questId="500395">
+            <questReward lootid="ammunition_laser_spacecup_group-d" amount="2000"/>
+            <bpReward lootid="ammunition_laser_ucb-100" amount="6000"/>
+        </objective>
+
+        <!-- Glacial Mass - Deal damage to Frozen Super Meteoroid -->
+        <objective questId="500398">
+            <questReward lootid="resource_collectable_axion-beam-regulator" amount="50"/>
+            <bpReward lootid="ammunition_laser_rsb-75" amount="10000"/>
+        </objective>
+
+        <!-- Ice Box - Travel Distance in FLB -->
+        <objective questId="500401">
+            <questReward lootid="ammunition_laser_ucb-100" amount="5000"/>
+            <bpReward lootid="tech_npc-nuke" amount="1"/>
+        </objective>
+
+        <!-- Fractured - Receive Damage -->
+        <objective questId="500404">
+            <questReward lootid="resource_collectable_axion-beam-regulator" amount="50"/>
+            <bpReward lootid="ammunition_laser_ucb-100" amount="5000"/>
+        </objective>
+
+        <!-- On The Lookout - Go to Map Bootes -->
+        <objective questId="500407">
+            <questReward lootid="equipment_shipupgrade_dmg-sg01" amount="1"/>
+            <bpReward lootid="resource_collectable_indoctrineoil" amount="5"/>
+        </objective>
+
+        <!-- Tier 3 -->
+        <!-- Numb - Kill Frozen Icy -->
+        <objective questId="500387">
+            <questReward lootid="ammunition_laser_spacecup_group-c" amount="5000"/>
+            <bpReward packageid="package_battlepass_bpReward-500387" packageItemIds="booster_dmg-dlb,tech_burning-trail" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500387"/>
+        </objective>
+
+        <!-- Broken Chunks - Kill Frozen Kristallin -->
+        <objective questId="500390">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="10"/>
+            <bpReward packageid="package_battlepass_bpReward-500390" packageItemIds="tech_explosive-charging-blob,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500390"/>
+        </objective>    
+
+        <!-- Below Zero - Kill Frozen Kristallon -->
+        <objective questId="500393">
+            <questReward lootid="ammunition_laser_ucb-100" amount="8000"/>
+            <bpReward packageid="package_battlepass_bpReward-500393" packageItemIds="ammunition_laser_spacecup_group-c,resource_collectable_axion-beam-regulator" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500393"/>
+        </objective>
+
+        <!-- Key Stash - Collect Keys -->
+        <objective questId="500396">
+            <questReward lootid="booster_dmg-dlb" amount="10"/>
+            <bpReward lootid="resource_collectable_axion-beam-regulator" amount="50"/>
+        </objective>
+
+        <!-- Glittery Pieces - Damage Frozen Super Meteoroid -->
+        <objective questId="500399">
+            <questReward lootid="tech_npc-nuke" amount="1"/>
+            <bpReward packageid="package_battlepass_bpReward-500399" packageItemIds="resource_collectable_axion-beam-regulator,ammunition_laser_ucb-100" itemShowTimeInSec="3" tooltipkey="window_objectives_bp_ttip_bpReward-500399"/>
+        </objective>
+
+        <!-- Expedition - Travel in FLB -->
+        <objective questId="500402">
+            <questReward lootid="ammunition_laser_spacecup_group-c" amount="3000"/>
+            <bpReward lootid="resource_collectable_axion-beam-regulator" amount="50"/>
+        </objective>
+
+        <!-- Frostbite - Receive damage -->
+        <objective questId="500405">
+            <questReward lootid="tech_explosive-charging-blob" amount="1"/>
+            <bpReward lootid="ammunition_laser_spacecup_group-c" amount="5000"/>
+        </objective>
+
+        <!-- Trailblazer - Go to Map Cygni -->
+        <objective questId="500408">
+            <questReward lootid="tech_npc-nuke" amount="1"/>
+            <bpReward lootid="resource_collectable_axion-beam-regulator" amount="100"/>
+        </objective>
+
+        <!-- Epic Objectives -->
+
+        <!-- Liquidate - Deal damage on Frozen Maps -->
+        <objective questId="500410">
+            <questReward lootid="resource_collectable_indoctrineoil" amount="20"/>
+            <bpReward lootid="ammunition_rocketlauncher_ubr-100" amount="20000"/>
+        </objective>
+
+        <!-- Crushed Ice - Deal damage on Frozen Maps -->
+        <objective questId="500411">
+            <questReward lootid="resource_collectable_axion-beam-regulator" amount="100"/>
+            <bpReward lootid="ammunition_laser_ucb-100" amount="50000"/>
+        </objective>
+
+    </objectiveList>
+
+    <!-- Battle pass texts -->
+    <flvDisplayLootId>ship_zephyr</flvDisplayLootId>
+    
+    <titleKeyBeforePurchase>window_objectives_bp_title</titleKeyBeforePurchase>
+    <descriptionKeyBeforePurchase>window_objectives_bp_promo_desc-winter2019</descriptionKeyBeforePurchase>
+    
+    <descriptionKeyCollect>window_objectives_bp_collect_desc</descriptionKeyCollect>
+    
+    <titleKeyAfterPurchase>window_objectives_bp_highlight_title-winter2019</titleKeyAfterPurchase>
+    <descriptionKeyAfterPurchase>window_objectives_bp_highlight_desc-winter2019</descriptionKeyAfterPurchase>
+</battlePass>

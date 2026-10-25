@@ -1,0 +1,251 @@
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="battlePass"/>
+    </libraries>
+
+    <textstyle name="armory_unlock_color_white"
+               textColor="0xffffff" type="dynamic" fontSize="12"
+               autoSize="center" wordWrap="false" multiline="false"
+               embedFonts="false" fontName="Verdana" bold="true" align="center"/>
+
+    <textstyle name="armory_unlock_color_white_left"
+               textColor="0xffffff" type="dynamic" fontSize="12"
+               autoSize="left" wordWrap="false" multiline="false"
+               embedFonts="false" fontName="Verdana" bold="true" align="left"/>
+
+    <textstyle name="armory_unlock_color_white_left_wordWrap"
+               textColor="0xffffff" type="dynamic" fontSize="12"
+               autoSize="left" wordWrap="true" multiline="false"
+               embedFonts="false" fontName="Verdana" bold="true" align="left"/>
+
+    <skin name="armory_unlock_boss_overview_info_image" classname="BasicSkin" library="gameclientCommonUI">
+        <layer classname="BitmapLayer" libraryID="icon_info_grey">normal</layer>
+    </skin>
+
+    <skin name="armory_unlock_special_ship_bg" classname="BasicSkin" library="battlePass">
+        <layer classname="BitmapLayer" libraryID="item_bg_yellow">normal</layer>
+    </skin>
+
+    <skin name="armory_unlock_ship_bg" classname="BasicSkin" library="battlePass">
+        <layer classname="BitmapLayer" libraryID="item_bg">normal</layer>
+    </skin>
+
+    <skin name="armory_unlock_ship_select_button" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x000000" fillAlpha="0">normal</layer>
+    </skin>
+
+    <skin name="armory_unlock_ship_locked_overlay" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x000000" fillAlpha="0.6">normal</layer>
+    </skin>
+
+    <template name="amoryUnlockTab2">
+        <container name="tab2"
+                   autoSizeWidth="true" autoSizeHeight="true"
+                   autoWidthMode="parent" autoHeightMode="parent">
+
+            <container name="body"
+                       autoSizeWidth="true" autoSizeHeight="true"
+                       autoWidthMode="parent" autoHeightMode="parent">
+
+                <container name="info001"
+                           width="155" height="35" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="top" marginLeft="50" marginTop="25">
+                    <container name="icon"
+                               width="35" height="35" autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="left" alignY="top"
+                               registeredSkinName="commonui_darklayer"/>
+                    <label name="infoText"
+                           width="80" height="25" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="bottom" marginLeft="40"
+                           text="x 10000"
+                           registeredTextStyleName="armory_unlock_color_white_left"/>
+                    <button name="infoBtn" alignX="right" marginRight="5" marginTop="5"
+                            registeredSkinName="commonui_info_button"/>
+                </container>
+
+                <container name="info002"
+                           width="155" height="35" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="top" marginLeft="50" marginTop="60">
+                    <label name="infoText"
+                           width="90" height="25" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="bottom" text="Main Prizes"
+                           registeredTextStyleName="armory_unlock_color_white_left"/>
+                    <button name="infoBtn" alignX="right" marginRight="5" marginTop="5"
+                            registeredSkinName="commonui_info_button"/>
+                </container>
+
+                <container name="shipSelection"
+                           width="390" height="130" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="center" alignY="top" marginTop="45">
+
+                    <container name="shipContainer1"
+                               width="120" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="left" alignY="top" registeredSkinName="armory_unlock_ship_bg">
+                        <coreponent name="selectedOverlay"
+                                    width="120" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                                    registeredSkinName="armory_unlock_special_ship_bg" visible="true"
+                                    mouseEnabled="false"/>
+                        <container name="shipIcon"
+                                   width="110" height="90" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="center" alignY="top" marginTop="20" mouseEnabled="false"/>
+                        <videoplayer name="vid" width="110" height="90"
+                                     alignX="center" alignY="top" marginTop="20"/>
+                        <label name="shipName"
+                               width="116" height="18" autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="center" alignY="top" marginTop="4" text="Ship 1"
+                               registeredTextStyleName="armory_unlock_color_white"
+                               registeredSkinName="commonui_default_label"/>
+                        <container name="lockedOverlay"
+                                   width="120" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="center" alignY="top" marginTop="0"
+                                   registeredSkinName="armory_unlock_ship_locked_overlay" visible="false"
+                                   mouseEnabled="false" mouseChildren="false">
+                            <coreponent name="lockIcon"
+                                        width="18" height="23" autoSizeWidth="false" autoSizeHeight="false"
+                                        alignX="right" alignY="bottom" marginRight="6" marginBottom="6"
+                                        mouseEnabled="false" mouseChildren="false" visible="false"/>
+                        </container>
+                        <button name="selectBtn"
+                                width="120" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                                registeredSkinName="armory_unlock_ship_select_button"/>
+                    </container>
+
+                    <container name="shipContainer2"
+                               width="120" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="left" alignY="top" marginLeft="135"
+                               registeredSkinName="armory_unlock_ship_bg">
+                        <coreponent name="selectedOverlay"
+                                    width="120" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                                    registeredSkinName="armory_unlock_special_ship_bg" visible="false"
+                                    mouseEnabled="false"/>
+                        <container name="shipIcon"
+                                   width="110" height="90" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="center" alignY="top" marginTop="20" mouseEnabled="false"/>
+                        <videoplayer name="vid" width="110" height="90"
+                                     alignX="center" alignY="top" marginTop="20"/>
+                        <label name="shipName"
+                               width="116" height="18" autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="center" alignY="top" marginTop="4" text="Ship 2"
+                               registeredTextStyleName="armory_unlock_color_white"
+                               registeredSkinName="commonui_default_label"/>
+                        <container name="lockedOverlay"
+                                   width="120" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="center" alignY="top" marginTop="0"
+                                   registeredSkinName="armory_unlock_ship_locked_overlay" visible="false"
+                                   mouseEnabled="false" mouseChildren="false">
+                            <coreponent name="lockIcon"
+                                        width="18" height="23" autoSizeWidth="false" autoSizeHeight="false"
+                                        alignX="right" alignY="bottom" marginRight="6" marginBottom="6"
+                                        mouseEnabled="false" mouseChildren="false" visible="false"/>
+                        </container>
+                        <button name="selectBtn"
+                                width="120" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                                registeredSkinName="armory_unlock_ship_select_button"/>
+                    </container>
+
+                    <container name="shipContainer3"
+                               width="120" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="right" alignY="top" registeredSkinName="armory_unlock_ship_bg">
+                        <coreponent name="selectedOverlay"
+                                    width="120" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                                    registeredSkinName="armory_unlock_special_ship_bg" visible="false"
+                                    mouseEnabled="false"/>
+                        <container name="shipIcon"
+                                   width="110" height="90" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="center" alignY="top" marginTop="20" mouseEnabled="false"/>
+                        <videoplayer name="vid" width="110" height="90"
+                                     alignX="center" alignY="top" marginTop="20"/>
+                        <label name="shipName"
+                               width="116" height="18" autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="center" alignY="top" marginTop="4" text="Ship 3"
+                               registeredTextStyleName="armory_unlock_color_white"
+                               registeredSkinName="commonui_default_label"/>
+                        <container name="lockedOverlay"
+                                   width="120" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                                   alignX="center" alignY="top" marginTop="0"
+                                   registeredSkinName="armory_unlock_ship_locked_overlay" visible="false"
+                                   mouseEnabled="false" mouseChildren="false">
+                            <coreponent name="lockIcon"
+                                        width="18" height="23" autoSizeWidth="false" autoSizeHeight="false"
+                                        alignX="right" alignY="bottom" marginRight="6" marginBottom="6"
+                                        mouseEnabled="false" mouseChildren="false" visible="false"/>
+                        </container>
+                        <button name="selectBtn"
+                                width="120" height="120" autoSizeWidth="false" autoSizeHeight="false"
+                                registeredSkinName="armory_unlock_ship_select_button"/>
+                    </container>
+                </container>
+
+                <container name="info"
+                           width="195" height="75" autoSizeWidth="false" autoSizeHeight="false"
+                           alignY="top" alignX="right" marginRight="10" marginTop="108">
+                    <coreponent alignX="left" marginTop="-2"
+                                registeredSkinName="armory_unlock_boss_overview_info_image"/>
+                    <label name="description"
+                           width="180" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+                           marginLeft="25"
+                           text="There is a chance to obtain the selected ship's exclusive railgun!"
+                           registeredTextStyleName="armory_unlock_color_white_left_wordWrap"
+                           registeredSkinName="commonui_default_label"/>
+                </container>
+
+                <container name="cardsContainer"
+                           width="600" height="390" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="center" alignY="top" marginTop="180"/>
+
+                <container name="info003"
+                           width="90" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="bottom" marginLeft="175" marginBottom="140"
+                           visible="false">
+                    <container name="icon"
+                               width="40" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="left" alignY="top" registeredSkinName="commonui_darklayer"/>
+                    <label name="infoText"
+                           width="80" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="bottom" marginLeft="45" text="x 1"
+                           registeredTextStyleName="armory_unlock_color_white_left"/>
+                </container>
+
+                <container name="info004"
+                           width="90" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="right" alignY="bottom" marginRight="175" marginBottom="140"
+                           visible="false">
+                    <container name="icon"
+                               width="40" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                               alignX="left" alignY="top" registeredSkinName="commonui_darklayer"/>
+                    <label name="infoText"
+                           width="80" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                           alignX="left" alignY="bottom" marginLeft="45" text="x 10"
+                           registeredTextStyleName="armory_unlock_color_white_left"/>
+                </container>
+
+                <button name="lock_btn"
+                        text="localize:armoryunlock_draw_confirm_btn" textMarginY="1"
+                        width="260" height="62" autoSizeWidth="false" autoSizeHeight="false"
+                        alignX="center" alignY="bottom" marginBottom="90"
+                        registeredSkinName="commonui_confirmationbutton_green"
+                        registeredTextStyleName="commonui_confirmationbutton_green_normal"
+                        visible="true"/>
+
+                <button name="explore01_btn"
+                        text="localize:armoryunlock_draw_once" textMarginY="1"
+                        width="260" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                        alignX="left" alignY="bottom" marginLeft="90" marginBottom="90"
+                        registeredSkinName="commonui_scale9_button_blue" visible="false"/>
+
+                <button name="explore10_btn"
+                        text="localize:armoryunlock_draw_ten_times" textMarginY="1"
+                        width="260" height="40" autoSizeWidth="false" autoSizeHeight="false"
+                        alignX="right" alignY="bottom" marginRight="90" marginBottom="90"
+                        registeredSkinName="commonui_scale9_button_green" visible="false"/>
+            </container>
+        </container>
+    </template>
+
+    <container name="root"
+               width="800" height="634" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChildren="true">
+        <reference template="amoryUnlockTab2"/>
+    </container>
+</root>

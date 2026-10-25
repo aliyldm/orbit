@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="craftingWindow"/>
+        <library id="settingsWindowFUI"/>
+        <library id="ui"/>
+    </libraries>
+
+    <textstyle name="textstyle_subtab_verdana_white"
+               textColor="0xFFFFFF"
+               type="dynamic"
+               fontSize="10"
+               autoSize="center"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               align="center"/>
+
+    <textstyle name="textstyle_content_header_verdana"
+               textColor="0xFFFFFF"
+               type="dynamic"
+               fontSize="10"
+               autoSize="left"
+               wordWrap="false"
+               multiline="false"
+               bold="true"
+               embedFonts="false"
+               fontName="Verdana"
+               align="left"/>
+
+    <textstyle name="textstyle_content_verdana"
+               textColor="0xFEFEFE"
+               type="dynamic"
+               fontSize="10"
+               autoSize="left"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               align="left"/>
+
+    <textstyle name="textstyle_content_verdana_right"
+               textColor="0xffe103"
+               type="dynamic"
+               fontSize="10"
+               autoSize="right"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               align="right"/>
+
+    <textstyle name="upgrade_grid_item"
+               textColor="0xededed"
+               type="dynamic"
+               fontSize="10"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               autoSize="center"
+               glowFilter='{"color":"0x000000", "blurX":"2", "blurY":"2", "strength":"10", "quality":"2"}'/>
+
+    <textstyle name="rogue_lite_ship_name_verdana"
+               textColor="0xFFFFFF"
+               type="dynamic"
+               fontSize="10"
+               autoSize="center"
+               wordWrap="false"
+               multiline="false"
+               bold="true"
+               embedFonts="false"
+               fontName="Verdana"
+               align="center"/>
+
+    <textstyle
+            name="rogue_lite_tab_center_modern_textstyle"
+            textColor="0x6FB2CB"
+            type="dynamic"
+            fontSize="9"
+            autoSize="center"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="center"/>
+
+    <skin name="rogue_lite_scrollbar_bgnd" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+    </skin>
+
+    <skin name="rogue_lite_item_outline" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" lineColor="0x00ccff" fillAlpha="0" lineAlpha="1">normal</layer>
+    </skin>
+
+    <skin name="legacyui_divider" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x7e7e7e" fillAlpha="1" lineAlpha="0">normal</layer>
+    </skin>
+
+    <skin name="legacyui_button1" classname="FadableButtonSkin" library="ui">
+        <layer classname="MovieClipButtonLayer" libraryID="button1" child="buttonMC" frame="1">normal</layer>
+        <layer classname="MovieClipButtonLayer" libraryID="button1" child="buttonMC" frame="2">over</layer>
+        <layer classname="MovieClipButtonLayer" libraryID="button1" child="buttonMC" frame="3">clicked</layer>
+        <layer classname="MovieClipButtonLayer" libraryID="button1" child="buttonMC" frame="2">disabled</layer>
+    </skin>
+
+    <skin name="icon_check" classname="BasicSkin" library="craftingWindow">
+        <layer classname="BitmapLayer" libraryID="icon_check">normal</layer>
+    </skin>
+
+    <skin name="settings_label_button_green" classname="FadableButtonSkin" library="settingsWindowFUI" >
+        <layer classname="BitmapLayer" libraryID="btn_green_normal" >normal</layer>
+        <layer classname="BitmapLayer" libraryID="btn_green_hover" >over</layer>
+        <layer classname="BitmapLayer" libraryID="btn_inactive" >disabled</layer>
+    </skin>
+
+    <skin name="roguelite_ship_bg" classname="BasicSkin" library="craftingWindow">
+        <layer classname="BitmapLayer" libraryID="upgradeGridBg">normal</layer>
+        <layer classname="FilledBoxLayer" fillColor="0x358BAC" fillAlpha="1">mask</layer>
+    </skin>
+
+    <template name="ROGUE_LITE_SELECT_TABBAR">
+        <container name="tabbarContainer"
+                   width="700" height="20"
+                   visible="false"
+                   marginTop="0" marginLeft="0"
+                   marginRight="0" pixelSnapping="true">
+            <itemlist name="tabsItemlist"
+                      registeredSkinName="commonui_list_mask"
+                      layout="horizontal"
+                      alignX="right"
+                      width="202" height="20"
+                      itemGap="0"
+                      mouseEnabled="true" mouseChildren="true"
+                      cacheSkinMaskAsBitmap="false">
+                <itemrenderer width="101" height="15"
+                              autoSizeWidth="false"
+                              mouseEnabled="true" mouseChildren="true">
+                    <button name="tab"
+                            registeredSkinName="commonui_tabbarbutton"
+                            autoSizeWidth="true" autoSizeHeight="true"
+                            mouseEnabled="true" mouseChildren="true"/>
+                    <button name="tab_selected"
+                            visible="false"
+                            registeredSkinName="commonui_tabbarbutton"
+                            autoSizeWidth="true" autoSizeHeight="true"
+                            mouseEnabled="true" mouseChildren="true"/>
+                    <label name="tabLabel"
+                           text="?"
+                           y="-1"
+                           registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="rogue_lite_tab_center_modern_textstyle"
+                           autoSizeWidth="true"
+                           mouseEnabled="false" mouseChildren="false" />
+                </itemrenderer>
+            </itemlist>
+        </container>
+    </template>
+
+    <template name="ROGUE_LITE_SHIP_SELECT">
+        <container name="ship_select_body"
+                   marginLeft="20" marginRight="20" marginTop="36"
+                   width="660" height="230"
+                   alignX="left">
+            <container name="select_ship"
+                       width="660" height="110"
+                       marginLeft="0" marginRight="0" marginTop="0"
+                       alignX="center"
+                       registeredSkinName="commonui_darklayer" > <!-- check if there are better background? -->
+                <itemlist name="shiplist"
+                          layout="horizontal"
+                          itemGap="5"
+                          width="660" height="100"
+                          alignX="center" alignY="center"
+                          mouseEnabled="true" mouseChildren="true"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask">
+                    <itemrenderer
+                            width="100" height="100"
+                            autoSizeWidth="false"
+                            mouseEnabled="true" mouseChildren="true">
+                        <!-- TODO: sprite for while the video is loading -->
+                        <coreponent name="ship_sprite"
+                                    width="100" height="100" />
+
+                        <coreponent width="98" height="98"
+                                    alignX="center" alignY="center"
+                                    registeredSkinName="rogue_lite_item_outline" />
+
+                        <label name="ship_name"
+                               text="ship name"
+                               marginLeft="0" marginTop="5"
+                               width="100" autoSizeTextHeight="true"
+                               alignX="center" alignY="top"
+                               registeredTextStyleName="rogue_lite_ship_name_verdana"
+                               registeredSkinName="commonui_default_label" />
+
+                        <coreponent name="check"
+                                    width="26" height="23"
+                                    marginBottom="5"
+                                    alignX="center" alignY="bottom"
+                                    visible="true"
+                                    registeredSkinName="icon_check" />
+                    </itemrenderer>
+                </itemlist>
+            </container>
+            <container name="describe_ship"
+                       marginLeft="20" marginRight="20" marginTop="130"
+                       width="660" height="300"
+                       alignX="center">
+                <container name="description_body"
+                           width="320" height="300"
+                           marginLeft="0"
+                           registeredSkinName="commonui_list_mask"
+                           alignX="left">
+                   <coreponent width="970" height="305"
+                               alignX="center" alignY="center"
+                               registeredSkinName="roguelite_ship_bg" />
+
+                    <coreponent width="318" height="298"
+                                alignX="center" alignY="center"
+                                registeredSkinName="rogue_lite_item_outline"/>
+
+                    <label name="ship_name"
+                           marginLeft="10" marginTop="15"
+                           width="300" autoSizeTextHeight="true"
+                           alignX="left" alignY="top"
+                           registeredTextStyleName="textstyle_content_header_verdana"
+                           registeredSkinName="commonui_default_label" />
+
+                    <label name="ship_description"
+                        marginLeft="10" marginTop="45"
+                        width="300" height="110"
+                        alignX="left" alignY="top"
+                        registeredTextStyleName="textstyle_content_verdana"
+                        registeredSkinName="commonui_default_label" />
+
+                    <!-- TODO: looding animation for while the video is loading -->
+                    <videoplayer name="ship_video"
+                                 width="150" height="150"
+                                 alignX="center" alignY="bottom"/>
+
+                    <coreponent name="ship_pic"
+                                visible="false"
+                                width="150" height="150"
+                                alignX="center" alignY="bottom"
+                                registeredSkinName="commonui_darklayer" />
+                </container>
+                <container name="equipment_body"
+                           marginLeft="0"
+                           width="320" height="260"
+                           alignX="right"
+                           registeredSkinName="commonui_darklayer">
+
+                    <container name="root">
+                        <container name="tabbarContainer"
+                                   marginTop="0" marginLeft="5" marginRight="0"
+                                   width="320" height="20"
+                                   pixelSnapping="true">
+                            <itemlist name="tabsItemlist"
+                                      layout="horizontal"
+                                      alignX="left"
+                                      width="225" height="20"
+                                      itemGap="5"
+                                      mouseEnabled="true" mouseChildren="true"
+                                      cacheSkinMaskAsBitmap="false">
+                                <itemrenderer width="70" height="20"
+                                              autoSizeWidth="false"
+                                              mouseEnabled="true" mouseChildren="true">
+                                    <radiobutton name="tab"
+                                            registeredSkinName="legacyui_button1"
+                                            autoSizeWidth="true" autoSizeHeight="true"
+                                            mouseEnabled="true" mouseChildren="false"
+                                            groupName="roguelite_equipment_group"
+                                            registeredTextStyleName="textstyle_subtab_verdana_white" />
+                                </itemrenderer>
+                            </itemlist>
+                        </container>
+                    </container>
+
+                    <coreponent marginTop="20"
+                                autoSizeWidth="true" height="0.5"
+                                registeredSkinName="legacyui_divider"/>
+
+                    <reference template="ship_attributes" />
+                    <reference template="drones_attributes" />
+                    <reference template="pet_attributes" />
+
+                    <container name="bottom"
+                               marginTop="270"
+                               autoSizeWidth="true" height="30">
+                        <button name="select_button"
+                                text="localize:label_button_select_ship:inventory"
+                                marginLeft="180"
+                                width="120" height="30"
+                                alignX="right"
+                                registeredSkinName="settings_label_button_green"
+                                registeredTextStyleName="commonui_button_whitetxt_16pt" />
+                    </container>
+                </container>
+            </container>
+        </container>
+    </template>
+
+    <template name="ROGUE_LITE_MODIFIER_SELECT">
+        <container name="modifier_select_body"
+                   visible="false"
+                   marginLeft="20" marginRight="20" marginTop="20"
+                   width="700" height="230"
+                   alignX="left">
+
+            <container name="left"
+                       marginLeft="0"
+                       width="400" height="480"
+                       alginX="left"
+                       registeredSkinName="commonui_darklayer">
+            </container>
+
+            <container name="right"
+                       marginRight="5"
+                       width="260" height="480"
+                       alignX="right"
+                       registeredSkinName="commonui_darklayer">
+
+            </container>
+
+        </container>
+    </template>
+
+    <template name="ship_attributes">
+        <container name="ship"
+                   marginTop="20"
+                   visible="true"
+                   autoSizeWidth="true" height="240">
+            <scrollcontainer name="attributes"
+                             autoSizeWidth="true" autoSizeHeight="true"
+                             mouseEnabled="true"
+                             cacheSkinMaskAsBitmap="false"
+                             registeredSkinName="commonui_list_mask">
+                <container name="content"
+                           width="320" height="420"
+                           autoWidthMode="children"
+                           mouseEnabled="true"
+                           mouseChildren="true">
+
+                    <coreponent registeredSkinName="commonui_hitlayer_invisible"
+                                mouseEnabled="true"
+                                mouseChildren="true"
+                                autoSizeWidth="true" autoSizeHeight="true" />
+
+                    <label text="localize:hangar_overview_hitpoints:base"
+                           marginLeft="5" marginTop="5"
+                           width="245" height="20"
+                           alignX="left"
+                           registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="textstyle_content_verdana" />
+                    <label name="hp" text="ph"
+                           marginRight="10" marginTop="5"
+                           width="70" height="20"
+                           alignX="right"
+                           registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="textstyle_content_verdana_right" />
+
+                    <label text="localize:label_grp_shield"
+                           marginLeft="5" marginTop="25"
+                           width="245" height="20"
+                           alignX="left"
+                           registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="textstyle_content_verdana"/>
+                    <label name="shield" text="ph"
+                           marginRight="10" marginTop="25"
+                           width="70" height="20"
+                           alignX="right"
+                           registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="textstyle_content_verdana_right"/>
+
+                    <label text="localize:hangar_overview_spreadingShieldHitpoints:base"
+                           marginLeft="5" marginTop="45"
+                           width="245" height="20"
+                           alignX="left"
+                           registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="textstyle_content_verdana" />
+                    <label name="shieldspread" text="ph"
+                           marginRight="10" marginTop="45"
+                           width="70" height="20"
+                           alignX="right"
+                           registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="textstyle_content_verdana_right" />
+
+                    <label text="localize:hangar_overview_max_speed:base"
+                           marginLeft="5" marginTop="65"
+                           width="245" height="20"
+                           alignX="left"
+                           registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="textstyle_content_verdana" />
+                    <label name="maxspeed" text="ph"
+                           marginRight="10" marginTop="65"
+                           width="70" height="20"
+                           alignX="right"
+                           registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="textstyle_content_verdana_right" />
+
+                    <container name="laser_section"
+                               marginLeft="5" marginTop="85" marginRight="10"
+                               width="305" height="85">
+
+                        <label text="localize:hangar_overview_laser_slot"
+                               marginTop="0"
+                               width="245" height="20"
+                               alignX="left"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana" />
+                        <label name="slots" text="ph"
+                               marginTop="0"
+                               width="70" height="20"
+                               alignX="right"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana_right"/>
+
+                        <label text="localize:hangar_overview_laser_equipped"
+                               marginTop="20"
+                               width="245" height="20"
+                               alignX="left"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana" />
+                        <label name="equipped" text="ph"
+                               marginTop="20"
+                               width="70" height="20"
+                               alignX="right"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana_right"/>
+
+                        <grid name="items"
+                              marginTop="45"
+                              width="305" height="40"
+                              itemGapX="6"
+                              itemGapY="3"
+                              itemAlignX="left"
+                              alignX="left"
+                              pixelSnapping="true">
+                            <itemrenderer width="32" height="32"
+                                          autoSizeWidth="false"
+                                          mouseEnabled="true"
+                                          mouseChildren="true"
+                                          pixelSnapping="true"
+                                          registeredSkinName="rogue_lite_item_outline">
+
+                                <coreponent name="hitlayer"
+                                            registeredSkinName="commonui_hitlayer"
+                                            mouseEnabled="true"
+                                            mouseChildren="true"
+                                            autoSizeWidth="true"
+                                            autoSizeHeight="true"
+                                            alpha="0"
+                                            tooltipTemplateID="commonui_tooltip_simple"/>
+
+                                <coreponent name="pic"
+                                            width="30" height="30"
+                                            pixelSnapping="true"
+                                            alignX="center" alignY="center" />
+
+                                <label name="itemUpgradeLevel"
+                                       text="0"
+                                       alignX="left"
+                                       alignY="top"
+                                       marginLeft="10"
+                                       marginTop="0"
+                                       registeredTextStyleName="upgrade_grid_item"/>
+
+                            </itemrenderer>
+
+
+                        </grid>
+                        <coreponent alignY="bottom"
+                                    autoSizeWidth="true" height="0.5"
+                                    registeredSkinName="legacyui_divider"/>
+                    </container>
+
+                    <container name="generator_section"
+                               marginLeft="5" marginRight="10"
+                               width="305" height="85">
+
+                        <label text="localize:hangar_overview_generator_slot"
+                               marginTop="0"
+                               width="245" height="20"
+                               alignX="left"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana"/>
+                        <label name="slots" text="ph"
+                               marginTop="0"
+                               width="70" height="20"
+                               alignX="right"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana_right"/>
+
+                        <label text="localize:hangar_overview_generator_equipped"
+                               marginTop="20"
+                               width="245" height="20"
+                               alignX="left"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana"/>
+                        <label name="equipped" text="ph"
+                               marginTop="20"
+                               width="70" height="20"
+                               alignX="right"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana_right"/>
+
+                        <grid name="items"
+                              marginTop="45"
+                              width="305" height="40"
+                              itemGapX="6"
+                              itemGapY="3"
+                              itemAlignX="left"
+                              alignX="left"
+                              pixelSnapping="true">
+                            <itemrenderer width="32" height="32"
+                                          autoSizeWidth="false"
+                                          mouseEnabled="true"
+                                          mouseChildren="true"
+                                          pixelSnapping="true"
+                                          registeredSkinName="rogue_lite_item_outline">
+                                <coreponent name="hitlayer"
+                                            registeredSkinName="commonui_hitlayer"
+                                            mouseEnabled="true"
+                                            mouseChildren="true"
+                                            autoSizeWidth="true"
+                                            autoSizeHeight="true"
+                                            alpha="0"
+                                            tooltipTemplateID="commonui_tooltip_simple"/>
+
+                                <coreponent name="pic"
+                                            width="30" height="30"
+                                            alignX="center" alignY="center" />
+
+                                <label name="itemUpgradeLevel"
+                                       text="0"
+                                       alignX="left"
+                                       alignY="top"
+                                       marginLeft="10"
+                                       marginTop="0"
+                                       registeredTextStyleName="upgrade_grid_item"/>
+
+                            </itemrenderer>
+                        </grid>
+                        <coreponent alignY="bottom"
+                                    autoSizeWidth="true" height="0.5"
+                                    registeredSkinName="legacyui_divider"/>
+                    </container>
+
+                    <container name="module_section"
+                               marginLeft="5" marginRight="10"
+                               width="305"
+                               height="20">
+                        <label text="localize:hangar_overview_module_slot"
+                               width="245" height="20"
+                               alignX="left"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana" />
+                        <label name="slots" text="ph"
+                               width="70" height="20"
+                               alignX="right"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana_right"/>
+                    </container>
+
+                    <container name="cpu_section"
+                               marginLeft="5" marginRight="10"
+                               width="305" height="65">
+                        <label text="localize:hangar_overview_cpu"
+                               marginTop="0"
+                               width="245" height="20"
+                               alignX="left"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana" />
+                        <label name="equipped" text="ph"
+                               marginTop="0"
+                               width="70" height="20"
+                               alignX="right"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana_right"/>
+
+                        <grid name="items"
+                              marginTop="25"
+                              width="305" height="40"
+                              itemGapX="6"
+                              itemGapY="3"
+                              itemAlignX="left"
+                              alignX="left"
+                              pixelSnapping="true">
+                            <itemrenderer width="32" height="32"
+                                          autoSizeWidth="false"
+                                          mouseEnabled="true"
+                                          mouseChildren="true"
+                                          pixelSnapping="true"
+                                          registeredSkinName="rogue_lite_item_outline">
+
+                                <coreponent name="hitlayer"
+                                            registeredSkinName="commonui_hitlayer"
+                                            mouseEnabled="true"
+                                            mouseChildren="true"
+                                            autoSizeWidth="true"
+                                            autoSizeHeight="true"
+                                            alpha="0"
+                                            tooltipTemplateID="commonui_tooltip_simple"/>
+
+                                <coreponent name="pic"
+                                            width="30" height="30"
+                                            alignX="center" alignY="center" />
+
+                                <label name="itemUpgradeLevel"
+                                       text="0"
+                                       alignX="left"
+                                       alignY="top"
+                                       marginLeft="10"
+                                       marginTop="0"
+                                       registeredTextStyleName="upgrade_grid_item"/>
+                            </itemrenderer>
+                        </grid>
+                        <coreponent alignY="bottom"
+                                    autoSizeWidth="true" height="0.5"
+                                    registeredSkinName="legacyui_divider"/>
+                    </container>
+
+                    <container name="tech_section"
+                               visible="false"
+                               marginLeft="5" marginRight="10"
+                               width="305" height="65">
+                        <label text="localize:hangar_overview_tech"
+                               marginTop="0"
+                               width="245" height="20"
+                               alignX="left"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana" />
+                        <label name="equipped" text="ph"
+                               marginTop="0"
+                               width="70" height="20"
+                               alignX="right"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana_right"/>
+
+                        <grid name="items"
+                              marginTop="25"
+                              width="305" height="40"
+                              itemGapX="6"
+                              itemGapY="3"
+                              itemAlignX="left"
+                              alignX="left">
+                            <itemrenderer width="32" height="32"
+                                          autoSizeWidth="false"
+                                          mouseEnabled="true"
+                                          mouseChildren="true"
+                                          pixelSnapping="true"
+                                          registeredSkinName="rogue_lite_item_outline">
+
+                                <coreponent name="hitlayer"
+                                            registeredSkinName="commonui_hitlayer"
+                                            mouseEnabled="true"
+                                            mouseChildren="true"
+                                            autoSizeWidth="true"
+                                            autoSizeHeight="true"
+                                            alpha="0"
+                                            tooltipTemplateID="commonui_tooltip_simple"/>
+
+                                <coreponent name="pic"
+                                            width="30" height="30"
+                                            alignX="center" alignY="center" />
+
+                                <label name="itemUpgradeLevel"
+                                       text="0"
+                                       alignX="left"
+                                       alignY="top"
+                                       marginLeft="10"
+                                       marginTop="0"
+                                       registeredTextStyleName="upgrade_grid_item"/>
+
+                            </itemrenderer>
+                        </grid>
+                        <coreponent alignY="bottom"
+                                    autoSizeWidth="true" height="0.5"
+                                    registeredSkinName="legacyui_divider"/>
+                    </container>
+                </container>
+            </scrollcontainer>
+            <scrollbar name="ship_scrollBar"
+                       width="5" autoSizeHeight="true" direction="vertical"
+                       marginTop="0"
+                       marginBottom="0"
+                       marginRight="0"
+                       alignX="right"
+                       registeredSkinName="rogue_lite_scrollbar_bgnd">
+                <button name="buttonSlider" alignX="center" width="5" height="10"
+                        registeredSkinName="commonui_scrollbar_slider"/>
+            </scrollbar>
+        </container>
+    </template>
+
+    <template name="drones_attributes">
+        <container name="drones"
+                   marginTop="20"
+                   visible="false"
+                   autoSizeWidth="true" minHeight="240" autoSizeHeight="true">
+
+            <scrollcontainer name="attributes"
+                             autoSizeWidth="true" autoSizeHeight="true"
+                             cacheSkinMaskAsBitmap="false"
+                             registeredSkinName="commonui_list_mask">
+
+                <coreponent registeredSkinName="commonui_hitlayer_invisible"
+                            mouseEnabled="true"
+                            mouseChildren="true"
+                            autoSizeWidth="true" autoSizeHeight="true" />
+
+                <grid name="content"
+                      width="310" height="440"
+                      marginLeft="5"
+                      itemGapX="0"
+                      itemGapY="5"
+                      itemAlignX="left"
+                      alignX="left">
+
+                    <itemrenderer marginLeft="0" marginTop="5"
+                                  width="155" height="110"
+                                  autoSizeWidth="false"
+                                  mouseEnabled="true"
+                                  mouseChildren="true">
+
+                            <label name="name"
+                                   text="IRIS"
+                                   marginLeft="5" marginTop="0"
+                                   registeredSkinName="commonui_default_label"
+                                   registeredTextStyleName="textstyle_content_header_verdana" />
+
+                            <label text="localize:home_level:inc"
+                                   marginLeft="5" marginTop="20"
+                                   width="150"
+                                   registeredSkinName="commonui_default_label"
+                                   registeredTextStyleName="textstyle_content_verdana" />
+                            <label name="level"
+                                   text="4"
+                                   marginRight="5" marginTop="20"
+                                   width="150"
+                                   alginX="right"
+                                   registeredSkinName="commonui_default_label"
+                                   registeredTextStyleName="textstyle_content_verdana_right" />
+
+                            <label text="localize:tf_tech_data_name:base"
+                                   marginLeft="5" marginTop="40"
+                                   width="150"
+                                   registeredSkinName="commonui_default_label"
+                                   registeredTextStyleName="textstyle_content_verdana" />
+                            <label name="effect"
+                                   text="10/20"
+                                   marginRight="5" marginTop="40"
+                                   width="150"
+                                   alginX="right"
+                                   registeredSkinName="commonui_default_label"
+                                   registeredTextStyleName="textstyle_content_verdana_right" />
+
+                            <label text="localize:title_module_equipment"
+                                   marginLeft="5" marginTop="60"
+                                   width="150"
+                                   registeredSkinName="commonui_default_label"
+                                   registeredTextStyleName="textstyle_content_verdana" />
+
+                            <container name="equip1outline"
+                                       marginTop="66" marginRight="41"
+                                       width="32" height="32"
+                                       alignX="right"
+                                       mouseEnabled="true"
+                                       mouseChildren="true"
+                                       registeredSkinName="rogue_lite_item_outline"
+                                       tooltipTemplateID="commonui_tooltip_simple">
+
+                                <coreponent name="equip1"
+                                            width="30" height="30"
+                                            alignX="center" alignY="center"
+                                            mouseEnabled="true"
+                                            mouseChildren="true"
+                                            registeredSkinName="commonui_darklayer" />
+
+                                <label name="itemLevel"
+                                       text="0"
+                                       alignX="left" alignY="top"
+                                       marginLeft="10" marginTop="0"
+                                       registeredTextStyleName="upgrade_grid_item"/>
+
+                            </container>
+
+                            <container name="equip2outline"
+                                       marginTop="66" marginRight="6"
+                                       width="32" height="32"
+                                       alignX="right"
+                                       mouseEnabled="true"
+                                       mouseChildren="true"
+                                       registeredSkinName="rogue_lite_item_outline"
+                                       tooltipTemplateID="commonui_tooltip_simple" >
+
+                                <coreponent name="equip2"
+                                            width="30" height="30"
+                                            alignX="center" alignY="center"
+                                            mouseEnabled="true"
+                                            mouseChildren="true"
+                                            registeredSkinName="commonui_darklayer" />
+
+                                <label name="itemLevel"
+                                       text="0"
+                                       alignX="left"
+                                       alignY="top"
+                                       marginLeft="10"
+                                       marginTop="0"
+                                       registeredTextStyleName="upgrade_grid_item"/>
+
+                            </container>
+
+
+                            <coreponent name="right_divider"
+                                        alignX="right"
+                                        marginTop="5"
+                                        width="1" height="95"
+                                        registeredSkinName="legacyui_divider" />
+
+                            <coreponent autoSizeWidth="true" height="1"
+                                        alignY="bottom"
+                                        registeredSkinName="legacyui_divider" />
+
+                    </itemrenderer>
+                </grid>
+            </scrollcontainer>
+            <scrollbar name="drones_scrollBar"
+                       width="5" autoSizeHeight="true" direction="vertical"
+                       marginTop="0"
+                       marginBottom="0"
+                       marginRight="0"
+                       alignX="right"
+                       registeredSkinName="rogue_lite_scrollbar_bgnd">
+                <button name="buttonSlider" alignX="center" width="5" height="10"
+                        registeredSkinName="commonui_scrollbar_slider"/>
+            </scrollbar>
+        </container>
+    </template>
+
+    <template name="pet_attributes">
+        <container name="pet"
+                   marginTop="20"
+                   visible="false"
+                   autoSizeWidth="true" minHeight="240" autoSizeHeight="true">
+
+            <scrollcontainer name="attributes"
+                             visible = "false"
+                             autoSizeWidth="true" autoSizeHeight="true"
+                             cacheSkinMaskAsBitmap="false"
+                             registeredSkinName="commonui_list_mask">
+                <container name="content"
+                           width="320" height="420"
+                           autoWidthMode="children"
+                           mouseEnabled="true">
+
+                    <coreponent registeredSkinName="commonui_hitlayer_invisible"
+                                mouseEnabled="true"
+                                mouseChildren="true"
+                                autoSizeWidth="true" autoSizeHeight="true" />
+
+                    <label name="name" text="ph"
+                           marginRight="5" marginTop="5"
+                           width="305" height="20"
+                           alignX="left"
+                           registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="textstyle_content_verdana" />
+
+                    <label text="localize:hangar_overview_hitpoints:base"
+                           marginLeft="5" marginTop="25"
+                           width="245" height="20"
+                           alignX="left"
+                           registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="textstyle_content_verdana" />
+                    <label name="hp" text="ph"
+                           marginRight="10" marginTop="25"
+                           width="70" height="20"
+                           alignX="right"
+                           registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="textstyle_content_verdana_right" />
+
+                    <container name="laser_section"
+                               marginLeft="5" marginTop="45" marginRight="10"
+                               width="305" height="65">
+
+                        <label text="localize:hangar_overview_laser_equipped"
+                               marginTop="0"
+                               width="245" height="20"
+                               alignX="left"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana" />
+                        <label name="equipped" text="ph"
+                               marginTop="0"
+                               width="70" height="20"
+                               alignX="right"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana_right"/>
+                        <grid name="items"
+                              marginTop="25"
+                              width="305" height="40"
+                              itemGapX="6"
+                              itemGapY="3"
+                              itemAlignX="left"
+                              alignX="left"
+                              pixelSnapping="true">
+                            <itemrenderer width="32" height="32"
+                                          autoSizeWidth="false"
+                                          mouseEnabled="true"
+                                          mouseChildren="true"
+                                          registeredSkinName="rogue_lite_item_outline">
+
+                                <coreponent name="hitlayer"
+                                            registeredSkinName="commonui_hitlayer"
+                                            mouseEnabled="true"
+                                            mouseChildren="true"
+                                            autoSizeWidth="true"
+                                            autoSizeHeight="true"
+                                            alpha="0"
+                                            tooltipTemplateID="commonui_tooltip_simple"/>
+
+                                <coreponent name="pic"
+                                            width="30" height="30"
+                                            alignX="center" alignY="center" />
+
+                                <label name="itemUpgradeLevel"
+                                       text="0"
+                                       alignX="left"
+                                       alignY="top"
+                                       marginLeft="10"
+                                       marginTop="0"
+                                       registeredTextStyleName="upgrade_grid_item"/>
+
+                            </itemrenderer>
+                        </grid>
+                        <coreponent alignY="bottom"
+                                    autoSizeWidth="true" height="0.5"
+                                    registeredSkinName="legacyui_divider"/>
+                    </container>
+
+                    <container name="generator_section"
+                               marginLeft="5" marginTop="110" marginRight="5"
+                               width="310" height="85">
+
+                        <label text="localize:hangar_overview_generator_equipped"
+                               marginTop="0"
+                               width="245" height="20"
+                               alignX="left"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana"/>
+                        <label name="equipped" text="ph"
+                               marginTop="0"
+                               width="70" height="20"
+                               alignX="right"
+                               registeredSkinName="commonui_default_label"
+                               registeredTextStyleName="textstyle_content_verdana_right"/>
+                        <grid name="items"
+                              marginTop="25"
+                              width="310" height="40"
+                              itemGapX="6"
+                              itemGapY="3"
+                              itemAlignX="left"
+                              alignX="left"
+                              pixelSnapping="true">
+                            <itemrenderer width="32" height="32"
+                                          autoSizeWidth="false"
+                                          mouseEnabled="true"
+                                          mouseChildren="true"
+                                          registeredSkinName="rogue_lite_item_outline">
+
+                                <coreponent name="hitlayer"
+                                            registeredSkinName="commonui_hitlayer"
+                                            mouseEnabled="true"
+                                            mouseChildren="true"
+                                            autoSizeWidth="true"
+                                            autoSizeHeight="true"
+                                            alpha="0"
+                                            tooltipTemplateID="commonui_tooltip_simple"/>
+
+                                <coreponent name="pic"
+                                            width="30" height="30"
+                                            alignX="center" alignY="center" />
+
+                                <label name="itemUpgradeLevel"
+                                       text="0"
+                                       alignX="left"
+                                       alignY="top"
+                                       marginLeft="10"
+                                       marginTop="0"
+                                       registeredTextStyleName="upgrade_grid_item"/>
+
+                            </itemrenderer>
+                        </grid>
+                        <coreponent alignY="bottom"
+                                    autoSizeWidth="true" height="0.5"
+                                    registeredSkinName="legacyui_divider"/>
+                    </container>
+
+                </container>
+            </scrollcontainer>
+            <scrollbar name="pet_scrollBar"
+                       width="5" autoSizeHeight="true" direction="vertical"
+                       marginTop="0"
+                       marginBottom="0"
+                       marginRight="0"
+                       alignX="right"
+                       registeredSkinName="rogue_lite_scrollbar_bgnd">
+                <button name="buttonSlider" alignX="center" width="5" height="10"
+                        registeredSkinName="commonui_scrollbar_slider"/>
+            </scrollbar>
+        </container>
+    </template>
+
+    <container name="root" width="700" height="272" mouseEnabled="false" mouseChildren="true">
+        <reference template="ROGUE_LITE_SELECT_TABBAR"/>
+        <reference template="ROGUE_LITE_SHIP_SELECT"/>
+        <reference template="ROGUE_LITE_MODIFIER_SELECT"/>
+    </container>
+</root>

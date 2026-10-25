@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="chatWindowUIAssets"/>
+
+    </libraries>
+
+    <textstyle name="plutus_info"
+               textColor="0x999898"
+               type="dynamic"
+               fontSize="9"
+               autoSize="left"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               align="left"/>
+    <textstyle
+            name="plutus_overview_left"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="9"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"/>
+    <textstyle
+            name="plutus_overview_yellow_left"
+            textColor="0xffe102"
+            type="dynamic"
+            fontSize="9"
+            autoSize="right"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="left"/>
+    <textstyle
+            name="plutus_overview_right"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="9"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="right"/>
+    <textstyle
+            name="plutus_overview_yellow_right"
+            textColor="0xffe102"
+            type="dynamic"
+            fontSize="9"
+            autoSize="left"
+            wordWrap="true"
+            multiline="true"
+            embedFonts="false"
+            fontName="Verdana"
+            align="right"/>
+
+    <textstyle
+            name="plutus_point_left"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="left"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="true"
+            align="left"/>
+
+    <textstyle
+            name="plutus_point_right"
+            textColor="0xfefefe"
+            type="dynamic"
+            fontSize="10"
+            autoSize="right"
+            wordWrap="false"
+            multiline="false"
+            embedFonts="false"
+            fontName="Verdana"
+            bold="true"
+            align="right"/>
+
+    <skin name="plutus_scrollbar_bgnd" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+    </skin>
+
+    <skin name="plutus_item_outline" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" lineColor="0x00ccff" fillAlpha="0" lineAlpha="1">normal</layer>
+    </skin>
+
+    <!-- [DARKORBIT-37183] missing skin from training ground UI. -->
+    <skin name="TAS_ttip_frame" library="traininggroundsUI" classname="BasicSkin">
+        <layer classname="BitmapLayer" scale9grid="1,1,2,2" libraryID="ttip_frame">normal</layer>
+    </skin>
+
+    <skin name="traininggrounds_label" classname="LabelSkin" library="gameclientCommonUI"/>
+
+    <template name="TABBAR">
+        <container name="tabbarContainer" height="20" width="370" marginTop="0" marginLeft="0"
+                   marginRight="0" pixelSnapping="true">
+            <itemlist name="tabsItemlist" registeredSkinName="commonui_list_mask" layout="horizontal" alignX="right"
+                      width="342" itemGap="0" height="20" mouseEnabled="true" mouseChildren="true"
+                      cacheSkinMaskAsBitmap="false">
+                <itemrenderer height="15" width="113" autoSizeWidth="false" mouseEnabled="true" mouseChildren="true">
+                    <button name="tab" registeredSkinName="commonui_tabbarbutton" mouseEnabled="true"
+                            autoSizeWidth="true" autoSizeHeight="true" mouseChildren="true"/>
+                    <button name="tab_selected" registeredSkinName="commonui_tabbarbutton" mouseEnabled="true"
+                            autoSizeWidth="true" visible="false" autoSizeHeight="true" mouseChildren="true"/>
+                    <label y="-1" name="tabLabel" registeredSkinName="commonui_default_label"
+                           registeredTextStyleName="commonui_tabbar_center" mouseEnabled="false"
+                           mouseChildren="false" autoSizeWidth="true" text="?"/>
+                </itemrenderer>
+            </itemlist>
+        </container>
+    </template>
+
+    <template name="OVERVIEW">
+        <container name="overview" visible="false" width="330" marginLeft="20" marginRight="20" marginTop="36"
+                   height="200"
+                   alignX="left">
+            <container name="top" width="330" marginLeft="0" marginRight="0" marginTop="0"
+                       registeredSkinName="commonui_darklayer" height="150" alignX="center">
+                <coreponent registeredSkinName="commonui_horizontal_divider" height="3" width="330" marginTop="103"/>
+
+                <container name="description_container" width="290" autoSizeHeight="true" autoHeightMode="children" marginTop="10" alignX="center">
+                    <label name="description" text="localize:plutus_tab_overview_status" registeredSkinName="commonui_default_label"
+                     width="160" autoSizeTextHeight="true" alignX="left"
+                    registeredTextStyleName="plutus_overview_yellow_left"/>
+
+                    <label name="time" width="130" alignX="right" registeredSkinName="commonui_default_label" text="0"
+                    registeredTextStyleName="plutus_overview_yellow_right" alignY="bottom" marginBottom="12"/>
+
+                </container>
+
+                <container name="lives_container" width="290" marginTop="77" alignX="center">
+                    <label name="lives_left" text="localize:plutus_tab_overview_lives_left" registeredSkinName="commonui_default_label"
+                    autoSizeWidth="true" width="145" alignX="left"
+                    registeredTextStyleName="plutus_overview_left"/>
+                    <label name="lives_num" autoSizeWidth="true" registeredSkinName="commonui_default_label" text="0"
+                    registeredTextStyleName="plutus_overview_right" alignX="right" />
+
+                </container>
+
+                <container name="points_container" width="290" marginTop="116" alignX="center">
+
+                    <button name="points_tip" tooltipData="localize:plutus_tab_overview_ttip_score" tooltipTemplateID="commonui_tooltip_simple" registeredSkinName="commonui_info_button"
+                            alignX="left"  alignY="top"/>
+                    <label text="localize:plutus_tab_overview_playerpoints"
+                    registeredSkinName="commonui_default_label"
+                    autoSizeWidth="true" registeredTextStyleName="plutus_overview_left" alignX="left" width="135" marginLeft="30" marginTop="2" />
+                    <label name="points" autoSizeWidth="true" registeredSkinName="commonui_default_label" text="0"
+                    registeredTextStyleName="plutus_overview_right" marginTop="2" alignX="right" />
+                </container>
+
+                <!--<container name="left" width="165" height="120" marginLeft="20">-->
+                    <!--<label name="description" text="localize:plutus_tab_overview_status" registeredSkinName="commonui_default_label"-->
+                           <!--marginTop="10" autoSizeWidth="true"-->
+                           <!--registeredTextStyleName="plutus_overview_yellow_left"/>-->
+                    <!--<label name="lives_left" text="localize:plutus_tab_overview_lives_left" registeredSkinName="commonui_default_label"-->
+                           <!--marginTop="57" autoSizeWidth="true"-->
+                           <!--registeredTextStyleName="plutus_overview_left"/>-->
+
+                    <!--<button name="points_tip" tooltipData="localize:plutus_tab_overview_ttip_score" tooltipTemplateID="commonui_tooltip_simple" registeredSkinName="plutus_info_hover" marginLeft="0"-->
+                            <!--marginTop="96" alignX="left" alignY="top"/>-->
+                        <!--<label text="localize:plutus_tab_overview_playerpoints"-->
+                           <!--registeredSkinName="commonui_default_label"-->
+                           <!--autoSizeWidth="true" registeredTextStyleName="plutus_overview_left" marginLeft="30" marginTop="98" />-->
+
+                <!--</container>-->
+                <!--<container name="right" width="200" height="120" marginRight="20" alignX="right">-->
+                    <!--<label name="time" autoSizeWidth="true" registeredSkinName="commonui_default_label" text="0"-->
+                           <!--registeredTextStyleName="plutus_overview_yellow_right" marginTop="33"/>-->
+                    <!--<label name="lives_num" autoSizeWidth="true" registeredSkinName="commonui_default_label" text="0"-->
+                       <!--registeredTextStyleName="plutus_overview_right" marginTop="57" />-->
+                <!--<label name="points" autoSizeWidth="true" registeredSkinName="commonui_default_label" text="0"-->
+                       <!--registeredTextStyleName="plutus_overview_right" marginTop="98"/>-->
+
+
+            <!--</container>-->
+        </container>
+        <container name="bottom" width="330" marginLeft="0" marginRight="0" marginTop="160"
+                   height="80" alignX="center">
+            <button registeredSkinName="commonui_info_image" marginLeft="20" alignX="left" alignY="top" marginTop="2"/>
+            <label text="localize:plutus_tab_overview_hint" registeredTextStyleName="plutus_info"
+                       alignX="left" alignY="top" marginLeft="50"
+                       registeredSkinName="commonui_default_label" width="260" autoSizeHeight="true"/>
+
+            </container>
+        </container>
+    </template>
+
+    <template name="REWARDS">
+        <container name="rewards" width="330" marginLeft="20" marginRight="20" marginTop="36" height="200"
+                   alignX="left" registeredSkinName="commonui_darklayer">
+            <coreponent registeredSkinName="commonui_horizontal_divider" height="3" width="330" marginTop="33"/>
+            <container width="290" marginTop="8" alignX="center">
+                <label text="localize:plutus_tab_rewards_headline"
+                       registeredSkinName="commonui_default_label"
+                       autoSizeWidth="true" registeredTextStyleName="plutus_point_left"/>
+
+            </container>
+            <container name="body" width="330" marginTop="34" height="165" marginLeft="0">
+                <itemlist name="plutus_rewardlist" width="330"
+                          autoSizeHeight="true"
+                          autoSizeWidth="true"
+                          itemGap="0"
+                          mouseChildren="true"
+                          mouseEnabled="true"
+                          layout="vertical"
+                          cacheSkinMaskAsBitmap="false"
+                          registeredSkinName="commonui_list_mask">
+
+
+                    <itemrenderer width="330" autoSizeWidth="false" height="30" mouseEnabled="true"
+                                  mouseChildren="true">
+                        <container name="left" width="330" marginLeft="0" height="30" alignX="left">
+                            <coreponent name="bg" width="330" height="30" registeredSkinName="commonui_darklayer"/>
+                            <label name="place" text="test" registeredSkinName="commonui_default_label" marginTop="10"
+                                   alignX="left" y="-2" x="20" width="100" registeredTextStyleName="plutus_overview_left"/>
+                            <button name="btn" registeredSkinName="commonui_info_button" marginRight="8" alignX="right"
+                                    alignY="center"/>
+                        </container>
+
+                    </itemrenderer>
+
+
+                </itemlist>
+                <scrollbar name="plutus_rewardlist_scrollBar" width="5" autoSizeHeight="true" direction="vertical"
+                           marginTop="0"
+                           marginBottom="0"
+                           marginRight="0"
+                           alignX="right"
+                           registeredSkinName="plutus_scrollbar_bgnd">
+                    <button name="buttonSlider" alignX="center" width="5" height="10"
+                            registeredSkinName="commonui_scrollbar_slider"/>
+                </scrollbar>
+                <bind source="plutus_rewardlist_scrollBar" target="plutus_rewardlist"/>
+            </container>
+        </container>
+    </template>
+
+    <template name="RECORDS">
+        <container name="records" width="360" marginLeft="20" marginRight="20" marginTop="20" height="350"
+                   alignX="left">
+            <container name="top" width="330" marginTop="0" alignX="center">
+                <label text="localize:plutus_tab_record_description"
+                       registeredSkinName="commonui_default_label"
+                       autoSizeWidth="true" registeredTextStyleName="plutus_overview_left" alignX="left" width="135" marginLeft="0" marginTop="0" />
+            </container>
+            <container name="bottom" width="330" marginLeft="0" marginRight="20" marginTop="35" height="183"
+                       alignX="left" registeredSkinName="commonui_darklayer">
+
+                <coreponent registeredSkinName="commonui_horizontal_divider" height="3" width="330" marginTop="33"/>
+
+                <container width="290" marginTop="8" alignX="center">
+                    <label text="localize:plutus_tab_record_headline_time"
+                           registeredSkinName="commonui_default_label" marginLeft="50"
+                           width="80" registeredTextStyleName="plutus_point_left"/>
+                    <label text="localize:plutus_tab_record_headline_score"
+                           registeredSkinName="commonui_default_label" alignX="right" marginRight="45"
+                           width="100" registeredTextStyleName="plutus_point_right"/>
+                    <button tooltipData= "localize:plutus_tab_record_score_ttip" tooltipTemplateID="commonui_tooltip_simple"
+                            registeredSkinName="commonui_info_image" alignX="right" marginRight="15" marginTop="-2"/>
+                </container>
+                <container name="body" width="330" marginTop="34" height="180" marginLeft="0">
+                    <itemlist name="plutus_recordlist" width="330"
+                              autoSizeHeight="true"
+                              autoSizeWidth="true"
+                              itemGap="0"
+                              mouseChildren="true"
+                              mouseEnabled="true"
+                              layout="vertical"
+                              cacheSkinMaskAsBitmap="false"
+                              registeredSkinName="commonui_list_mask">
+
+                        <itemrenderer width="330" autoSizeWidth="false" height="30" mouseEnabled="true"
+                                      mouseChildren="true">
+                            <container name="left" width="330" marginLeft="0" height="30" alignX="left">
+                                <coreponent name="bg" width="330" height="30" registeredSkinName="commonui_darklayer"/>
+                                <label name="index" text="1" registeredSkinName="commonui_default_label" marginTop="10" marginLeft="0"
+                                       alignX="left" y="-2" x="20" width="40" registeredTextStyleName="plutus_overview_left"/>
+                                <label name="time" text="00:00:00" registeredSkinName="commonui_default_label" marginTop="10" marginLeft="50"
+                                       alignX="left" y="-2" x="20" width="80" registeredTextStyleName="plutus_overview_left"/>
+                                <label name="score" text="999" registeredSkinName="commonui_default_label" marginTop="10" alignX="right" marginRight="85"
+                                       y="-2" x="20" width="100" registeredTextStyleName="plutus_overview_right"/>
+                            </container>
+                        </itemrenderer>
+                    </itemlist>
+                </container>
+            </container>
+        </container>
+    </template>
+
+    <template name="plutusRewardToolTip">
+        <container name="container" width="250" autoSizeHeight="true" autoHeightMode="children">
+            <container name="wrapper" width="250" registeredSkinName="TAS_ttip_frame" autoSizeHeight="true" marginTop="20"
+                       autoHeightMode="children">
+                <itemlist layout="vertical" width="250" gap="0" name="list" autoSizeHeight="true" marginBottom="10"
+                          autoHeightMode="children">
+                    <itemrenderer height="40" marginTop="0" marginBottom="0">
+                        <coreponent name="img" registeredSkinName="plutus_item_outline" width="30" height="30" marginTop="10" marginLeft="10"/>
+                        <coreponent registeredSkinName="plutus_item_outline"  width="31" height="31" marginTop="9" marginLeft="9"/>
+                        <label name="label" width="200" alignX="left" marginLeft="50" marginTop="11"
+                               height="29"
+                               registeredSkinName="traininggrounds_label"
+                               registeredTextStyleName="plutus_overview_left"/>
+                    </itemrenderer>
+                </itemlist>
+            </container>
+        </container>
+    </template>
+
+    <template name="plutusPointsTip">
+        <container name="container" width="250" autoSizeHeight="true" autoHeightMode="children">
+            <container name="wrapper" width="250" registeredSkinName="TAS_ttip_frame" autoSizeHeight="true" marginTop="20"
+                       autoHeightMode="children">
+                <itemlist layout="vertical" width="250" gap="0" name="list" autoSizeHeight="true" marginBottom="10"
+                          autoHeightMode="children">
+                    <itemrenderer height="40" marginTop="0" marginBottom="0">
+                        <coreponent name="img" registeredSkinName="plutus_item_outline" width="30" height="30" marginTop="10" marginLeft="10"/>
+                        <coreponent registeredSkinName="plutus_item_outline"  width="31" height="31" marginTop="9" marginLeft="9"/>
+                        <label name="label" width="200" alignX="left" marginLeft="50" marginTop="11"
+                               height="29"
+                               registeredSkinName="traininggrounds_label"
+                               registeredTextStyleName="plutus_overview_left"/>
+                    </itemrenderer>
+                </itemlist>
+            </container>
+        </container>
+    </template>
+
+    <container name="root" width="370" height="272" mouseEnabled="false" mouseChildren="true">
+        <reference template="OVERVIEW"/>
+        <reference template="REWARDS"/>
+        <reference template="RECORDS"/>
+        <reference template="TABBAR"/>
+    </container>
+</root>

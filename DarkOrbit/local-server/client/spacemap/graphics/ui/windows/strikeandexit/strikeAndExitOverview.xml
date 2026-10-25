@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="worldBoss_asset"/>
+    </libraries>
+
+    <!-- TEXT STYLES -->
+    <textstyle  name="world_boss_overview_min_left"
+                textColor="0xFFFFFF"
+                type="dynamic"
+                fontSize="8"
+                autoSize="left"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="false"
+                align="left"/>
+
+    <textstyle  name="world_boss_overview_headline"
+                textColor="0xffbf13"
+                type="dynamic"
+                fontSize="11"
+                autoSize="left"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="true"
+                align="left"/>
+
+    <textstyle  name="world_boss_overview_data"
+                textColor="0xffbf13"
+                type="dynamic"
+                fontSize="10"
+                autoSize="left"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="false"
+                align="left"/>
+
+    <textstyle  name="world_boss_overview_data_right"
+                textColor="0xffbf13"
+                type="dynamic"
+                fontSize="10"
+                autoSize="right"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                bold="false"
+                align="right"/>
+
+    <textstyle  name="world_boss_overview_slogan"
+                textColor="0xfefefe"
+                type="dynamic"
+                fontSize="10"
+                autoSize="center"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                align="center"/>
+
+    <textstyle  name="world_boss_overview_info"
+                textColor="0xfefefe"
+                type="dynamic"
+                fontSize="10"
+                autoSize="left"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                align="left"/>
+
+    <textstyle  name="e_shop_overview_open_time"
+                textColor="0xc9c9c9"
+                type="dynamic"
+                fontSize="10"
+                autoSize="center"
+                wordWrap="false"
+                multiline="false"
+                embedFonts="false"
+                fontName="Verdana"
+                align="center"/>
+
+    <textstyle  name="e_shop_overview_inDouble"
+                textColor="0xffffff"
+                type="dynamic"
+                fontSize="12"
+                autoSize="left"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                align="left"/>
+
+
+    <!-- SKINS -->
+    <skin name="world_boss_overview_filled_box" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x00ff00" fillAlpha="0.5">normal</layer>
+    </skin>
+
+    <skin name="world_boss_overview_progressbar" tweenTime="1" classname="ProgressBarSkin" library="worldBoss_asset">
+        <layer classname="BitmapLayer" libraryID="progress_bar_bg_full">normal</layer>
+        <layer classname="BitmapLayer" libraryID="progress_bar_fill_full">bar</layer>
+        <!--<layer classname="BitmapLayer" libraryID="progress_bar_fill_scale9_recolor" scale9grid="5,4,6,5">bar</layer>-->
+    </skin>
+
+    <skin name="sae_info_image" classname="BasicSkin" library="gameclientCommonUI">
+        <layer classname="BitmapLayer" libraryID="icon_info_grey">normal</layer>
+    </skin>
+
+    <!-- TEMPLATES -->
+    <template name="STRIKE_AND_EXIT_OVERVIEW">
+        <container  name="overview"
+                    autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent" >
+
+            <coreponent autoSizeWidth="true" height="2" marginTop="30" registeredSkinName="commonui_horizontal_divider"/>
+              <!-- 303 * 168 >> 271 * 150  -->
+              <coreponent name="top_bg"
+                                    marginTop="36"
+                                    marginLeft="9"                                    
+                                     width="550" height="168"  visible="true"  registeredSkinName="commonui_darklayer" />
+
+
+              <coreponent name="banner"
+                                    marginTop="45"
+                                    marginLeft="146"                                    
+                                     width="271" height="150"  visible="true"  registeredSkinName="commonui_darklayer" />
+
+               <container name="inDouble"
+                                   width="120" autoSizeWidth="false" height="76" autoSizeHeight="false"
+                                   marginTop="15" marginLeft="120" >
+
+                            <coreponent name="bg1"
+                                        width="120"
+                                        height="76"
+                                        autoSizeWidth="false"   autoSizeHeight="false"
+                                        marginLeft="-60" marginTop="0"
+                            />
+
+                            <coreponent name="bg"
+                                        width="20" height="20" autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="12" marginTop="2" registeredSkinName="cost_item_bg">
+                            </coreponent>
+
+                            <coreponent name="icon"
+                                        width="20" height="20" autoSizeWidth="false" autoSizeHeight="false"
+                                        marginLeft="12" marginTop="2"/>
+
+                            <label  name="text1" text="2x"
+                                    width="50" autoSizeWidth="false" height="15" autoSizeHeight="false"
+                                    marginLeft="-8" marginTop="3"
+                                    registeredTextStyleName="e_shop_overview_inDouble" registeredSkinName="commonui_default_label" />
+
+                            <label  name="text2" text="Drops"
+                                    width="50" autoSizeWidth="false" height="15" autoSizeHeight="false"
+                                    marginLeft="-8" marginTop="19"
+                                    registeredTextStyleName="e_shop_overview_inDouble" registeredSkinName="commonui_default_label" />
+
+
+
+                 </container>        
+                                    
+
+
+              <coreponent autoSizeWidth="true" height="2" marginTop="208" registeredSkinName="commonui_horizontal_divider"/>
+
+               <container name="main"
+                       width="550" height="600" autoSizeWidth="false" autoSizeHeight="false"
+                       marginTop="220" alignX="center">
+
+                       
+
+
+                <container  name="top"
+                            autoSizeWidth="true" autoWidthMode="parent" autoHeightMode="parent" autoSizeHeight="false"
+                              alignX="center" >
+
+                              
+                        
+
+                        <coreponent name="icon"
+                                    width="30" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                    marginLeft="5" marginTop="5" />
+
+                        <label  name="coinMinLeft"
+                                width="300" autoSizeWidth="false" height="15" autoSizeHeight="false"
+                                marginLeft="40"
+                                marginTop="20"
+                                registeredTextStyleName="world_boss_overview_data" registeredSkinName="commonui_default_label"/>
+
+                        <button name="infoBtn"
+                                alignY="center" alignX="left" marginLeft="200" y="26"
+                                registeredSkinName="commonui_info_button" />
+
+                        
+
+
+                    <container  name="info"
+                            width="540" height="240" autoSizeHeight="false"
+                             marginLeft="8" marginTop="60"  
+                              registeredSkinName="commonui_darklayer" >
+                    <coreponent  alignX="left" registeredSkinName="sae_info_image" marginTop="38" marginLeft="50"/>
+
+                    <label  name="description" text="localize:strikeandexit_overview_info"
+                            width="400" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+                            marginLeft="80"
+                            marginTop="40"
+                            registeredTextStyleName="world_boss_overview_info" registeredSkinName="commonui_default_label"/>
+
+                </container>
+
+                <label  name="openTime"
+                                width="500" autoSizeWidth="false" height="15" autoSizeHeight="false"
+                                marginTop="210"
+                                alignX="center"
+                                registeredTextStyleName="e_shop_overview_open_time" registeredSkinName="commonui_default_label"/>
+
+                </container>
+
+                
+            </container>
+        </container>
+    </template>
+
+    <!-- CONTENT -->
+    <container name="root"
+               width="535" height="500" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChilderen="true">
+        <reference template="STRIKE_AND_EXIT_OVERVIEW"/>
+    </container>
+</root>

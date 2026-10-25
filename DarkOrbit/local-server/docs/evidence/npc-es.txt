@@ -1,0 +1,2661 @@
+Source: https://board-es.darkorbit.com/threads/faqs-aliens.135697/
+Captured: 2026-10-23T16:07:47.468Z
+FAQ's Aliens | DarkOrbit ES 
+ DarkOrbit ES 
+ Foros 
+ &gt; 
+ Ayuda 
+ &gt; 
+ FAQ sobre el juego 
+ &gt; 
+ FAQs del juego 
+ &gt; 
+ You are using an out of date browser. It may not display this or other websites correctly.
+You should upgrade or use an alternative browser .
+ FAQ's Aliens
+ Tema en ' FAQs del juego ' iniciado por *Aurinko* , 19 Noviembre 2013 .
+ Querido usuario, 
+si deseas participar activamente en nuestro foro en los diferentes temas, deberás acceder al él desde tu cuenta de juego. En caso de no tener una cuenta de juego registrada aún, te pedimos que te registres en el juego lo antes posible. Nos alegraremos mucho con tu próxima visita a nuestro foro!
+ „JUGAR“ 
+ Estado del tema: 
+ Cerrado para nuevas respuestas 
+ *Aurinko* 
+ User 
+ FAQ's ALIENS ​
+El universo de DarkOrbit no solo está plagado de jugadores con ganas de pasarlo bien, también existen varias razas de aliens que intentarán que el juego sea más entretenido.
+Estos aliens son los que se pueden encontrar en mapas casi todos los mapas. La mayoría de ellos tienen tres formas:
+ Básicos .
+ Boss .
+ Uber .
+ Cuando la puerta del grupo se estabilizó una raza completamente nueva de aliens fue descubierta; todos bajo la protección del Century Falcon. Sólo se pueden encontrar en este portal y, no deben ser subestimados.
+ Portal de grupo (Low) .
+ Hace siglos, hubo una gran batalla en nuestra galaxia, contra un oponente llamado &quot;The Reapers&quot;. Estos piratas son agresivos e implacables, que no se detendrán ante la dominación galáctica. Sus naves están hechas de trozos de metal, rescatados de nuestra propia flota de defensa.
+ Piratas .
+ Uber Piratas .
+ Algunos aliens sólo aparecen en unas determinadas puertas galácticas.
+ Épsilon .
+ Zeta . 
+ Kronos .
+ Hades .
+ Kuiper .
+ Por otro lado tenemos los Aliens que encontrarás en mapas de Black Light
+ Black Light 
+ Algunos aliens sólo aparecen cuando hay eventos y otros simplemente a invadir nuestro espacio de vez en cuando.
+ Especiales .
+ Plutus. 
+ Última edición por moderador: 19 Octubre 2019 
+ La seguridad de tu cuenta dependerá única y exclusivamente de ti. Ningún Administrador, Moderador del foro, moderador del chat te pedirá nunca tus datos de acceso. 
+ NO COMUNIQUES NUNCA TUS DATOS DE ACCESO A ABSOLUTAMENTE NADIE ​
+ *Aurinko* , 
+ 19 Noviembre 2013 
+ #1 
+ *Aurinko* 
+ User 
+ ALIENS BÁSICOS ​
+A continuación veremos los aliens que podemos encontrar en casi todos los mapas.
+ IMPORTANTE : Los Streuners y Lordakias no darán puntos de rango en los mapas x-2 .
+ Streuner ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 800 .
+ Escudo: 400 .
+ Daños: 10 / 20 .
+ Velocidad: 270 .
+ Comportamiento: Agresivo .
+ Hábitat: x-1 , x-2 , GG ( Alfa , Beta , Gamma , Delta , Zeta y Kappa ) 
+ RECOMPENSA: 
+ Puntos de experiencia: 400 .
+ Honor: 2 .
+ Créditos: 400 .
+ Uridium: 1 .
+ Prometium: 10 .
+ Endurium: 10 .
+ A partir del nivel 7 en adelante, matando un Streuner en el mapa x-1 de tu empresa la recompensa se irá reduciendo hasta no obtener nada. 
+ .SpoilerTarget"> Spoiler: Recompensa mapa x-1 
+ Lordakia ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 2.000 .
+ Escudo: 2.000 .
+ Daños: 80 / 100 .
+ Velocidad: 320 .
+ Comportamiento: Agresivo .
+ Hábitat: x-2 , x-3 , x-4 , x-5 , GG ( Alfa , Beta , Gamma , Delta y Zeta ) 
+ RECOMPENSA: 
+ Puntos de experiencia: 800 .
+ Honor: 4 .
+ Créditos: 800 .
+ Uridium: 2 .
+ Prometium: 20 .
+ Endurium: 20 .
+ Terbium: 20 .
+ Puede dar mucosum ( FAQ's Recursos ) .
+ Recruit Streuner ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 600 .
+ Escudo: 800 .
+ Daños: 30 / 40 .
+ Velocidad: 270 .
+ Comportamiento: Agresivo .
+ Hábitat: x-1 y x-2 .
+ RECOMPENSA: 
+ Puntos de experiencia: 500 .
+ Honor: 3 .
+ Créditos: 600 .
+ Uridium: 2 .
+ Prometium: 12 .
+ Endurium: 12 .
+ Aider Streuner ​
+​
+Este alien va en ayuda del Recruit Streuner cuando está siendo atacado para repararle los PV.
+ DESCRIPCIÓN: 
+ Puntos de vida: 1.500 .
+ Escudo: 1.000 .
+ Daños: 50 / 70 .
+ Velocidad: 270 .
+ Comportamiento: Pasivo .
+ Hábitat: x-1 y x-2 .
+ RECOMPENSA: 
+ Puntos de experiencia: 700 .
+ Honor: 4 .
+ Créditos: 700 .
+ Uridium: 2 .
+ Prometium: 15 .
+ Endurium: 15 .
+ Saimon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 6.000 .
+ Escudo: 3.000 .
+ Daños: 200 / 250 .
+ Velocidad: 320 .
+ Comportamiento: Agresivo .
+ Hábitat: x-3 , x-4 , GG ( Alfa , Beta , Gamma , Delta , Zeta , Kappa y Kuiper ) 
+ Cuando el NPC esté casi destruido, tiene una alta probabilidad de utilizar un PEM ráfaga, por lo que se desmarcará y deberás volver a seleccionarlo.
+ RECOMPENSA: 
+ Puntos de experiencia: 1.600 .
+ Honor: 8 .
+ Créditos: 1.600 .
+ Uridium: 4 .
+ Prometium: 40 .
+ Endurium: 40 .
+ Terbium: 40 .
+ Prometid: 2 .
+ Duranium: 2 .
+ Puede dar scrap ( FAQ's Recursos ) .
+ Mordon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 20.000 .
+ Escudo: 10.000 .
+ Daños: 300 / 400 .
+ Velocidad: 125 .
+ Comportamiento: Agresivo .
+ Hábitat: x-3 , x-4 , GG ( Alfa , Beta , Gamma y Delta ) 
+ Si entras en su rango, existe una posibilidad de que te lance un misil ralentizador, lo que reducirá la velocidad de tu nave por unos segundos
+ RECOMPENSA: 
+ Puntos de experiencia: 3.200 .
+ Honor: 16 .
+ Créditos: 6.400 .
+ Uridium: 8 .
+ Prometium: 80 .
+ Endurium: 80 .
+ Terbium: 80 .
+ Prometid: 8 .
+ Duranium: 8 .
+ Promerium: 1 .
+ Puede dar scrap ( FAQ's Recursos ) .
+ Devolarium ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 100.000 .
+ Escudo: 100.000 .
+ Daños: 900 / 1.200 .
+ Velocidad: 200 .
+ Comportamiento: Agresivo .
+ Hábitat: x-3 , GG ( Alfa , Beta , Gamma y Kappa ) 
+ RECOMPENSA: 
+ Puntos de experiencia: 6.400 .
+ Honor: 32 .
+ Créditos: 51.200 .
+ Uridium: 16 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 16 .
+ Duranium: 16 .
+ Promerium: 2 .
+ Puede dar plásmido ( FAQ's Recursos ) .
+ Sibelon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 200.000 .
+ Escudo: 200.000 .
+ Daños: 2.250 / 3.000 .
+ Velocidad: 100 .
+ Comportamiento: Agresivo .
+ Hábitat: x-4 , GG ( Alfa , Beta , Gamma , Delta y Hades ) 
+ Cuando comiences a atacar a este NPC, te robará una pequeña parte de escudo por segundo, una vez le hayas quitado todo el escudo, detendrá esta habilidad.
+ RECOMPENSA: 
+ Puntos de experiencia: 12.800 .
+ Honor: 64 .
+ Créditos: 102.400 .
+ Uridium: 32 .
+ Prometium: 200 .
+ Endurium: 200 .
+ Terbium: 200 .
+ Prometid: 32 .
+ Duranium: 32 .
+ Promerium: 4 .
+ Puede dar plásmido ( FAQ's Recursos ) .
+ Sibelonit ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 40.000 .
+ Escudo: 40.000 .
+ Daños: 1.000 / 1.500 .
+ Velocidad: 320 .
+ Comportamiento: Agresivo .
+ Hábitat: x-5 , GG ( Alfa , Beta , Gamma , Delta y Zeta ) 
+ RECOMPENSA: 
+ Puntos de experiencia: 3.200 .
+ Honor: 16 .
+ Créditos: 12.800 .
+ Uridium: 12 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 8 .
+ Duranium: 8 .
+ Promerium: 1 .
+ Puede dar mucosum ( FAQ's Recursos ) .
+ Lordakium ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 300.000 .
+ Escudo: 200.000 .
+ Daños: 3.150 / 3.600 .
+ Velocidad: 230 .
+ Comportamiento: Pasivo .
+ Hábitat: x-5 , GG ( Delta y Hades ) .
+ Al morir, generará Spore Lordakia
+ RECOMPENSA: 
+ Puntos de experiencia: 25.600 .
+ Honor: 128 .
+ Créditos: 204.800 .
+ Uridium: 64 .
+ Prometium: 300 .
+ Endurium: 300 .
+ Terbium: 300 .
+ Prometid: 64 .
+ Duranium: 64 .
+ Promerium: 8 .
+ Puede dar mucosum ( FAQ's Recursos ) .
+ Kristallin ​
+​
+DESCRIPCIÓN: 
+ Puntos de vida: 50.000 .
+ Escudo: 40.000 .
+ Daños: 1.500 / 1.650 .
+ Velocidad: 320 .
+ Comportamiento: Agresivo .
+ Hábitat: x-6 , x-7 , GG ( Alfa , Beta , Gamma , Delta , Zeta y Kappa ) 
+ RECOMPENSA: 
+ Puntos de experiencia: 6.400 .
+ Honor: 32 .
+ Créditos: 12.800 .
+ Uridium: 16 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 16 .
+ Duranium: 16 .
+ Promerium: 1 .
+ Puede dar prismatium ( FAQ's Recursos ) .
+ Kristallon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 400.000 .
+ Escudo: 300.000 .
+ Daños: 4.050 / 5.000 .
+ Velocidad: 250 .
+ Comportamiento: Pasivo .
+ Hábitat: x-6 , x-7 , GG ( Alfa , Beta , Gamma , Delta y Hades ) 
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 256 .
+ Créditos: 409.600 .
+ Uridium: 128 .
+ Prometium: 300 .
+ Endurium: 300 .
+ Terbium: 300 .
+ Prometid: 128 .
+ Duranium: 128 .
+ Promerium: 16 .
+ Puede dar prismatium ( FAQ's Recursos ) .
+ Plagued Kristallin ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 75.000 .
+ Escudo: 60.000 .
+ Daños: 1.300 / 1.800 .
+ Velocidad: 320 .
+ Comportamiento: Pasivo .
+ Hábitat: x-6 .
+ RECOMPENSA: 
+ Puntos de experiencia: 6.400 .
+ Honor: 32 .
+ Créditos: 12.800 .
+ Uridium: 16 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 16 .
+ Duranium: 16 .
+ Promerium: 1 .
+ Blighted Kristallon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 600.000 .
+ Escudo: 400.000 .
+ Daños: 3.800 / 4.900 .
+ Velocidad: 250 .
+ Comportamiento: Pasivo .
+ Hábitat: x-7 y ZC ( FAQ's Zona de cuarentena ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 65.000 .
+ Honor: 300 .
+ Créditos: 500.000 .
+ Uridium: 150 .
+ Blighted Gygerthrall ​
+​
+Aparecen al destruir un Blighted Kristallon.
+ DESCRIPCIÓN: 
+ Puntos de vida: 240.000 .
+ Escudo: 200.000 .
+ Daños: 2.200 / 3.000 .
+ Velocidad: 320 .
+ Comportamiento: Agresivo .
+ Hábitat: x-7 y ZC ( FAQ's Zona de cuarentena ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 9.400 .
+ Honor: 45 .
+ Créditos: 18.800 .
+ Uridium: 24 .
+ Puede dar una aleación híbrida ( FAQ's Recursos ) .
+ StreuneR ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 40.000 .
+ Escudo: 30.000 .
+ Daños: 750 / 4.200 .
+ Velocidad: 280 .
+ Comportamiento: Agresivo .
+ Hábitat: x-8 y GG ( Delta , Zeta y Kuiper ) 
+ RECOMPENSA: 
+ Puntos de experiencia: 6.000 .
+ Honor: 30 .
+ Créditos: 12.000 .
+ Uridium: 15 .
+ Prometium: 160 .
+ Endurium: 160 .
+ Terbium: 160 .
+ Prometid: 15 .
+ Duranium: 15 .
+ Promerium: 1 .
+ Xenomita: 4 .
+ Protégit ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 50.000 .
+ Escudo: 40.000 .
+ Daños: 1.350 / 1.500 .
+ Velocidad: 380 .
+ Comportamiento: Agresivo .
+ Hábitat: x-6 y GG ( Alfa , Beta , Gamma , Delta y Kappa ) y Mapa ??? .
+ RECOMPENSA: 
+ Puntos de experiencia: 6.400 .
+ Honor: 32 .
+ Créditos: 12.800 .
+ Uridium: 16 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 16 .
+ Duranium: 16 .
+ Promerium: 2 .
+ Cubikon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 1.600.000 .
+ Escudo: 1.200.000 .
+ Daños: 0 .
+ Velocidad: 30 .
+ Comportamiento: Pasivo .
+ Hábitat: x-6 y Mapa ??? .
+ RECOMPENSA: 
+ Puntos de experiencia: 512.000 .
+ Honor: 4.096 .
+ Créditos: 1.638.400 .
+ Uridium: 1.024 .
+ Prometium: 1.200 .
+ Endurium: 1.200 .
+ Terbium: 1.200 .
+ Prometid: 512 .
+ Duranium: 512 .
+ Promerium: 64 .
+ Xenomita: 64 .
+ Puede dar bifenon ( FAQ's Recursos ) .
+ Deadly Battleray ​
+​
+Este alien aparecerá en un mapa PvP aleatorio. Si no se la destruye en los primeros 20 minutos , desaparecerá y volverá a aparecer con los puntos de vida al máximo en otro mapa PvP aleatorio.
+Si se desea, se puede activar la notificación que nos informará de la aparición del alien; para ello debes ir a la pantalla del juego Ajustes - Jugabilidad - Activar notificaciones del Battleray .
+Cuando el alien aparezca en el mapa, se mostrará con un símbolo 
+ visible en el minimapa.
+ DESCRIPCIÓN: 
+ Puntos de vida: 750.000 .
+ Escudo: 600.000 .
+ Daños: 11.500 / 14.500 .
+ Velocidad: -.
+ Comportamiento: Agresivo .
+ Hábitat: 4-x y 4-5 .
+ RECOMPENSA: 
+ Puntos de experiencia: 187.500 .
+ Honor: 375 .
+ Créditos: 2.625.000 .
+ Uridium: 265 .
+ Prometium: 400 .
+ Endurium: 400 .
+ Terbium: 400 .
+ Prometid: 64 .
+ Duranium: 64 .
+ Promerium: 20 .
+ Xenomita: 4 .
+ Puede dar bifenon y aurus * ( FAQ's Recursos ) ( * solamente cuando hay evento de cofres rojos/azules , apocalipsis y obsidiana ) .
+ \\ Purpose XXI // ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 800.000 .
+ Escudo: 0 .
+ Daños: 12.000 .
+ Velocidad: 450 .
+ Comportamiento: Pasivo. 
+ Habitat: X-8 . 
+ RECOMPENSA: 
+ Puntos de experiencia: 55.000 .
+ Puntos de honor: 200 .
+ Créditos: 200.000 .
+ Uridium: 5 .
+ Prometium : 300 
+ Endurium : 300 
+ Terbium : 300 
+ Duranium : 64 
+ Prometid : 64 
+ Promerium : 8 
+ La seguridad de tu cuenta dependerá única y exclusivamente de ti. Ningún Administrador, Moderador del foro, moderador del chat te pedirá nunca tus datos de acceso. 
+ NO COMUNIQUES NUNCA TUS DATOS DE ACCESO A ABSOLUTAMENTE NADIE ​
+ *Aurinko* , 
+ 19 Noviembre 2013 
+ #2 
+ *Aurinko* 
+ User 
+ BOSS ALIENS ​
+Aliens con todas las cualidades del alien básico pero multiplicado por 4 .
+ Boss Streuner ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 3.200 .
+ Escudo: 1.600 .
+ Daños: 100 / 120 .
+ Velocidad: 250 .
+ Comportamiento: Agresivo .
+ Hábitat: x-2 , 4-5 y GG ( Zeta y Lambda ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 1.600 .
+ Honor: 8 .
+ Créditos: 1.600 .
+ Uridium: 4 .
+ Prometium: 40 .
+ Endurium: 40 .
+ Terbium: 10 .
+ Boss Lordakia ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 8.000 .
+ Escudo: 8.000 .
+ Daños: 295 / 350 .
+ Velocidad: 400 .
+ Comportamiento: Agresivo .
+ Hábitat: x-2 , 4-5 , GG ( Zeta y Lambda ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 3.200 .
+ Honor: 16 .
+ Créditos: 3.200 .
+ Uridium: 8 .
+ Prometium: 80 .
+ Endurium: 80 .
+ Terbium: 80 .
+ Prometid: 10 .
+ Promerium: 1 .
+ Xenomita: 1 .
+ Puede dar mucosum ( FAQ's Recursos ) .
+ Boss Saimon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 24.000 .
+ Escudo: 12.000 .
+ Daños: 600 / 720 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: x-3 , x-4 , 4-5 , GG ( Delta , Zeta , Lambda y Kuiper ) 
+ Cuando el NPC esté casi destruido, tiene una alta probabilidad de utilizar un PEM ráfaga, por lo que se desmarcará y deberás volver a seleccionarlo.
+ RECOMPENSA: 
+ Puntos de experiencia: 6.400 .
+ Honor: 32 .
+ Créditos: 6.400 .
+ Uridium: 16 .
+ Prometium: 160 .
+ Endurium: 160 .
+ Terbium: 160 .
+ Prometid: 8 .
+ Duranium: 8 .
+ Promerium: 1 .
+ Xenomita: 2 .
+ Puede dar scrap ( FAQ's Recursos ) .
+ Boss Mordon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 80.000 .
+ Escudo: 40.000 .
+ Daños: 1.300 / 1.500 .
+ Velocidad: 150 .
+ Comportamiento: Agresivo .
+ Hábitat: x-3 , 4-5 , GG ( Delta , Kappa y Lambda ) 
+ Si entras en su rango, existe una posibilidad de que te lance un misil ralentizador, lo que reducirá la velocidad de tu nave por unos segundos
+ RECOMPENSA: 
+ Puntos de experiencia: 12.800 .
+ Honor: 64 .
+ Créditos: 25.600 .
+ Uridium: 32 .
+ Prometium: 320 .
+ Endurium: 320 .
+ Terbium: 320 .
+ Prometid: 32 .
+ Duranium: 32 .
+ Promerium: 8 .
+ Xenomita: 4 .
+ Puede dar scrap ( FAQ's Recursos ) .
+ Boss Devolarium ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 400.000 .
+ Escudo: 400.000 .
+ Daños: 4.100 / 4.650 .
+ Velocidad: 160 .
+ Comportamiento: Agresivo .
+ Hábitat: x-3 , 4-5 y GG ( Lambda ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 25.600 .
+ Honor: 128 .
+ Créditos: 204.800 .
+ Uridium: 64 .
+ Prometium: 400 .
+ Endurium: 400 .
+ Terbium: 400 .
+ Prometid: 64 .
+ Duranium: 64 .
+ Promerium: 8 .
+ Xenomita: 8 .
+ Puede dar plásmido ( FAQ's Recursos ) .
+ Boss Sibelon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 800.000 .
+ Escudo: 800.000 .
+ Daños: 9.100 / 12.350 .
+ Velocidad: 175 .
+ Comportamiento: Agresivo .
+ Hábitat: x-4 , 4-5 y GG ( Lambda , Hades y Kuiper ) .
+ Cuando comiences a atacar a este NPC, te robará una pequeña parte de escudo por segundo, una vez le hayas quitado todo el escudo, detendrá esta habilidad.
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 256 .
+ Créditos: 409.600 .
+ Uridium: 128 .
+ Prometium: 800 .
+ Endurium: 800 .
+ Terbium: 800 .
+ Prometid: 128 .
+ Duranium: 128 .
+ Promerium: 16 .
+ Xenomita: 16 .
+ Puede dar plásmido ( FAQ's Recursos ) .
+ Boss Sibelonit ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 160.000 .
+ Escudo: 160.000 .
+ Daños: 3.175 / 4.350 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: x-5 , 4-5 , GG ( Zeta , Kappa y Lambda ) 
+ RECOMPENSA: 
+ Puntos de experiencia: 12.800 .
+ Honor: 64 .
+ Créditos: 51.200 .
+ Uridium: 48 .
+ Prometium: 400 .
+ Endurium: 400 .
+ Terbium: 400 .
+ Prometid: 32 .
+ Duranium: 32 .
+ Promerium: 4 .
+ Xenomita: 8 .
+ Puede dar mucosum ( FAQ's Recursos ) .
+ Boss Lordakium ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 1.200.000 .
+ Escudo: 800.000 .
+ Daños: 10.000 / 16.000 .
+ Velocidad: 200 .
+ Comportamiento: Pasivo .
+ Hábitat: x-5 , 4-5 y GG ( Delta , Kappa , Lambda y Hades ) .
+ Al morir, generará Spore Lordakia
+ RECOMPENSA: 
+ Puntos de experiencia: 102.400 .
+ Honor: 512 .
+ Créditos: 819.200 .
+ Uridium: 256 .
+ Prometium: 1.200 .
+ Endurium: 1.200 .
+ Terbium: 1.200 .
+ Prometid: 256 .
+ Duranium: 256 .
+ Promerium: 32 .
+ Xenomita: 32 .
+ Puede dar mucosum ( FAQ's Recursos ) .
+ Boss Kristallin ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 200.000 .
+ Escudo: 160.000 .
+ Daños: 3.600 / 4.700 .
+ Velocidad: 340 .
+ Comportamiento: Agresivo .
+ Hábitat: x-6 , x-7 , 4-5 y GG ( Zeta , Kappa y Lambda ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 25.600 .
+ Honor: 128 .
+ Créditos: 51.200 .
+ Uridium: 64 .
+ Prometium: 400 .
+ Endurium: 400 .
+ Terbium: 400 .
+ Prometid: 64 .
+ Duranium: 64 .
+ Promerium: 4 .
+ Xenomita: 8 .
+ Puede dar prismatium ( FAQ's Recursos ) .
+ Boss Kristallon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 1.600.000 .
+ Escudo: 1.200.000 .
+ Daños: 15.000 / 20.000 .
+ Velocidad: 250 .
+ Comportamiento: Pasivo .
+ Hábitat: x-7 , 4-5 y GG ( Lambda y Hades ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 204.800 .
+ Honor: 1.024 .
+ Créditos: 1.638.400 .
+ Uridium: 512 .
+ Prometium: 1.200 .
+ Endurium: 1.200 .
+ Terbium: 1.200 .
+ Prometid: 512 .
+ Duranium: 512 .
+ Promerium: 64 .
+ Xenomita: 64 .
+ Puede dar prismatium ( FAQ's Recursos ) .
+ Boss StreuneR ​
+​
+Cuando está a punto de ser destruido, lanza un misil que altera la dirección de las naves.
+ DESCRIPCIÓN: 
+ Puntos de vida: 80.000 .
+ Escudo: 60.000 .
+ Daños: 700 / 2.200 .
+ Velocidad: 200 .
+ Comportamiento: Agresivo .
+ Hábitat: x-8 , 4-5 y GG ( Delta y Zeta ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 12.800 .
+ Honor: 64 .
+ Créditos: 25.600 .
+ Uridium: 32 .
+ Prometium: 320 .
+ Endurium: 320 .
+ Terbium: 320 .
+ Prometid: 32 .
+ Duranium: 32 .
+ Xenomita: 4 .
+ La seguridad de tu cuenta dependerá única y exclusivamente de ti. Ningún Administrador, Moderador del foro, moderador del chat te pedirá nunca tus datos de acceso. 
+ NO COMUNIQUES NUNCA TUS DATOS DE ACCESO A ABSOLUTAMENTE NADIE ​
+ *Aurinko* , 
+ 19 Noviembre 2013 
+ #3 
+ *Aurinko* 
+ User 
+ UBER ALIENS ​
+Aliens con todas las cualidades del alien básico pero multiplicado por 8 .
+ Uber Streuner ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 6.400 .
+ Escudo: 3.200 .
+ Daños: 120 / 160 .
+ Velocidad: - .
+ Comportamiento: Pasivo .
+ Hábitat: 4-5 y GG ( Zeta ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 3.200 .
+ Honor: 16 .
+ Créditos: 3.200 .
+ Uridium: 8 .
+ Prometium: 80 .
+ Endurium: 80 .
+ Terbium: 80 .
+ Uber Lordakia ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 16.000 .
+ Escudo: 16.000 .
+ Daños: 500 / 700 .
+ Velocidad: 250 .
+ Comportamiento: Agresivo .
+ Hábitat: 4-5 y GG ( Zeta ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 6.400 .
+ Honor: 32 .
+ Créditos: 6.400 .
+ Uridium: 16 .
+ Prometium: 160 .
+ Endurium: 160 .
+ Terbium: 160 .
+ Prometid: 20 .
+ Duranium: 20 .
+ Promerium: 2 .
+ Xenomita: 2 .
+ Puede dar mucosum ( FAQ's Recursos ) .
+ Uber Saimon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 48.000 .
+ Escudo: 24.000 .
+ Daños: 1.200 / 1.440 .
+ Velocidad: 340 .
+ Comportamiento: Agresivo .
+ Hábitat: 4-5 y GG ( Zeta y Kappa ) .
+ Cuando el NPC esté casi destruido, tiene una alta probabilidad de utilizar un PEM ráfaga, por lo que se desmarcará y deberás volver a seleccionarlo.
+ RECOMPENSA: 
+ Puntos de experiencia: 12.800 .
+ Honor: 64 .
+ Créditos: 12.800 .
+ Uridium: 32 .
+ Prometium: 320 .
+ Endurium: 320 .
+ Terbium: 320 .
+ Prometid: 16 .
+ Duranium: 16 .
+ Promerium: 2 .
+ Xenomita: 4 .
+ Puede dar scrap ( FAQ's Recursos ) .
+ Uber Mordon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 160.000 .
+ Escudo: 80.000 .
+ Daños: 2.600 / 1.300 .
+ Velocidad: 120 .
+ Comportamiento: Agresivo .
+ Hábitat: 4-5 .
+ Si entras en su rango, existe una posibilidad de que te lance un misil ralentizador, lo que reducirá la velocidad de tu nave por unos segundos
+ RECOMPENSA: 
+ Puntos de experiencia: 25.600 .
+ Honor: 128 .
+ Créditos: 51.200 .
+ Uridium: 64 .
+ Prometium: 640 .
+ Endurium: 640 .
+ Terbium: 640 .
+ Prometid: 64 .
+ Duranium: 64 .
+ Promerium: 16 .
+ Xenomita: 8 .
+ Puede dar scrap ( FAQ's Recursos ) .
+ Uber Devolarium ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 800.000 .
+ Escudo: 800.000 .
+ Daños: 8.200 / 9.300 .
+ Velocidad: 150 .
+ Comportamiento: Agresivo .
+ Hábitat: 4-5 .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 256 .
+ Créditos: 409.600 .
+ Uridium: 128 .
+ Prometium: 800 .
+ Endurium: 800 .
+ Terbium: 800 .
+ Prometid: 128 .
+ Duranium: 128 .
+ Promerium: 16 .
+ Xenomita: 16 .
+ Puede dar plásmido ( FAQ's Recursos ) .
+ Uber Sibelon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 1.600.000 .
+ Escudo: 1.600.000 .
+ Daños: 18.200 / 24.700 .
+ Velocidad: 100 .
+ Comportamiento: Agresivo .
+ Hábitat: 4-5 y GG ( Hades y Kuiper ) .
+ Cuando comiences a atacar a este NPC, te robará una pequeña parte de escudo por segundo, una vez le hayas quitado todo el escudo, detendrá esta habilidad.
+ RECOMPENSA: 
+ Puntos de experiencia: 102.400 .
+ Honor: 512 .
+ Créditos: 819.200 .
+ Uridium: 256 .
+ Prometium: 1.600 .
+ Endurium: 1.600 .
+ Terbium: 1.600 .
+ Prometid: 256 .
+ Duranium: 256 .
+ Promerium: 32 .
+ Xenomita: 32 .
+ Puede dar plásmido ( FAQ's Recursos ) .
+ Uber Sibelonit ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 320.000 .
+ Escudo: 320.000 .
+ Daños: 6.350 / 8.700 .
+ Velocidad: 350 .
+ Comportamiento: Agresivo .
+ Hábitat: 4-5 y GG ( Zeta ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 25.600 .
+ Honor: 128 .
+ Créditos: 102.400 .
+ Uridium: 96 .
+ Prometium: 800 .
+ Endurium: 800 .
+ Terbium: 800 .
+ Prometid: 128 .
+ Duranium: 128 .
+ Promerium: 16 .
+ Xenomita: 32 .
+ Puede dar mucosum ( FAQ's Recursos ) .
+ Uber Lordakium ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 2.400.000 .
+ Escudo: 1.600.000 .
+ Daños: 20.000 / 31.000 .
+ Velocidad: 100 .
+ Comportamiento: Pasivo .
+ Hábitat: 4-5 y GG ( Hades ) .
+ Al morir, generará Spore Lordakia
+ RECOMPENSA: 
+ Puntos de experiencia: 204.800 .
+ Honor: 1.024 .
+ Créditos: 1.638.400 .
+ Uridium: 512 .
+ Prometium: 2.400 .
+ Endurium: 2.400 .
+ Terbium: 2.400 .
+ Prometid: 512 .
+ Duranium: 512 .
+ Promerium: 64 .
+ Xenomita: 64 .
+ Puede dar mucosum ( FAQ's Recursos ) .
+ Uber Kristallin ​
+​
+DESCRIPCIÓN: 
+ Puntos de vida: 400.000 .
+ Escudo: 320.000 .
+ Daños: 7.900 / 9.400 .
+ Velocidad: 335 .
+ Comportamiento: Agresivo .
+ Hábitat: 4-5 y GG ( Zeta ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 256 .
+ Créditos: 102.400 .
+ Uridium: 128 .
+ Prometium: 800 .
+ Endurium: 800 .
+ Terbium: 800 .
+ Prometid: 128 .
+ Duranium: 128 .
+ Promerium: 8 .
+ Xenomita: 16 .
+ Puede dar prismatium ( FAQ's Recursos ) .
+ Uber Kristallon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 3.200.000 .
+ Escudo: 2.400.000 .
+ Daños: 30.000 / 45.000 .
+ Velocidad: 250 .
+ Comportamiento: Pasivo .
+ Hábitat: 4-5 y GG ( Hades ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 409.600 .
+ Honor: 2.048 .
+ Créditos: 3.276.800 .
+ Uridium: 1.024 .
+ Prometium: 2.400 .
+ Endurium: 2.400 .
+ Terbium: 2.400 .
+ Prometid: 1.024 .
+ Duranium: 1.024 .
+ Promerium: 128 .
+ Xenomita: 128 .
+ Puede dar prismatium ( FAQ's Recursos ) .
+ Uber StreuneR ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 320.000 .
+ Escudo: 240.000 .
+ Daños: 3.100 / 13.100 .
+ Velocidad: 200 .
+ Comportamiento: Pasivo .
+ Hábitat: 4-5 y GG ( Zeta y Kuiper ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 48.000 .
+ Honor: 240 .
+ Créditos: 96.000 .
+ Uridium: 120 .
+ Prometium: 1.200 .
+ Endurium: 1.200 .
+ Terbium: 1.200 .
+ Prometid: 120 .
+ Duranium: 120 .
+ Promerium: 8 .
+ Xenomita: 16 .
+ Uber Protégit ​
+​
+Hay 2 tipos de uber protégit:
+ * Uno tiene casi las mismas características del protégit normal.
+ * El otro tiene la habilidad raletizante del saboteur.
+ DESCRIPCIÓN: 
+ Puntos de vida: 120.000 * - 200.000 * .
+ Escudo: 100.000 * - 150.000 * .
+ Daños: 2.000 / 3.000 * - 3.000 / 4.000 * .
+ Velocidad: 380 .
+ Comportamiento: Agresivo .
+ Hábitat: Mapa ??? .
+ RECOMPENSA: 
+ Puntos de experiencia: 6.400 * - 12.800 * .
+ Honor: 32 * - 70 * ( es aproximado ) .
+ Créditos: 12.800 * - 125.000 * .
+ Uridium: 16 * - 45 * .
+ Prometium: 100 * - 200 * .
+ Endurium: 100 * - 200 * .
+ Terbium: 100 * - 200 * .
+ Prometid: 16 * - 32 * .
+ Duranium: 16 * - 32 * .
+ Promerium: 2 * - 8 * .
+ Puede dar bifenon y aurus * ( FAQ's Recursos ) ( * solamente cuando hay evento de cofres rojos/azules , apocalipsis y obsidiana ) .
+ Pude dar munición UCB-100.
+ La seguridad de tu cuenta dependerá única y exclusivamente de ti. Ningún Administrador, Moderador del foro, moderador del chat te pedirá nunca tus datos de acceso. 
+ NO COMUNIQUES NUNCA TUS DATOS DE ACCESO A ABSOLUTAMENTE NADIE ​
+ *Aurinko* , 
+ 19 Noviembre 2013 
+ #4 
+ *Aurinko* 
+ User 
+ ALIENS PIRATAS ​
+A continuación los diferentes aliens piratas que existen actualmente en el juego:
+ Interceptor ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 60.000 .
+ Escudo: 40.000 .
+ Daños: 350 / 500 .
+ Velocidad: Velocidad de la nave -20 .
+ Comportamiento: Agresivo .
+ Hábitat: 5-x y GG ( Kappa ) y Portal de invasión (pirata) .
+ RECOMPENSA: 
+ Puntos de experiencia: 7.500 .
+ Honor: 40 .
+ Créditos: 25.000 .
+ Uridium: 20 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 18 .
+ Duranium: 18 .
+ Puede dar bifenon y aurus * ( FAQ's Recursos ) ( * solamente cuando hay evento de cofres rojos/azules , apocalipsis y obsidiana ) .
+ Barracuda ​
+​
+Cuando la barracuda está a punto de ser destruida, en vez de huir, explota después de unos 10 segundos o cuando está cerca de una nave , con una denotación que causa un 20% de daños (aproximadamente) .
+ DESCRIPCIÓN: 
+ Puntos de vida: 180.000 .
+ Escudo: 100.000 .
+ Daños: 4.500 / 6.000 .
+ Velocidad: 430 .
+ Comportamiento: Agresivo .
+ Hábitat: 5-x , GG ( Kappa ) y Portal de invasión (pirata) .
+ RECOMPENSA: 
+ Puntos de experiencia: 15.000 .
+ Honor: 56 .
+ Créditos: 90.000 .
+ Uridium: 25 .
+ Prometium: 200 .
+ Endurium: 200 .
+ Terbium: 200 .
+ Prometid: 24 .
+ Duranium: 24 .
+ Promerium: 4 .
+ Puede dar bifenon y aurus * ( FAQ's Recursos ) ( * solamente cuando hay evento de cofres rojos/azules , apocalipsis y obsidiana ) .
+ Saboteur ​
+​
+Si una nave es alcanzada por el disparo de un saboteur, su velocidad se verá drásticamente reducida. Un PEM inhabilita el efecto.
+ DESCRIPCIÓN: 
+ Puntos de vida: 200.000 .
+ Escudo: 150.000 .
+ Daños: 3.000 / 4.000 .
+ Velocidad: - .
+ Comportamiento: Agresivo .
+ Hábitat: 5-x y Portal de invasión (pirata) .
+ RECOMPENSA: 
+ Puntos de experiencia: 22.500 .
+ Honor: 72 .
+ Créditos: 125.000 .
+ Uridium: 45 .
+ Prometium: 200 .
+ Endurium: 200 .
+ Terbium: 200 .
+ Prometid: 32 .
+ Duranium: 32 .
+ Promerium: 8 .
+ Puede dar bifenon y aurus * ( FAQ's Recursos ) ( * solamente cuando hay evento de cofres rojos/azules , apocalipsis y obsidiana ) .
+ Annihilator ​
+​
+El annihilator dispara misiles Hellstorms.
+ DESCRIPCIÓN: 
+ Puntos de vida: 300.000 .
+ Escudo: 200.000 .
+ Daños: 12.000 / 14.000 .
+ Velocidad: 350 .
+ Comportamiento: Agresivo .
+ Hábitat: 5-x, GG ( Kappa ) y Portal de invasión (pirata) .
+ RECOMPENSA: 
+ Puntos de experiencia: 75.000 .
+ Honor: 128 .
+ Créditos: 250.000 .
+ Uridium: 65 .
+ Prometium: 300 .
+ Endurium: 300 .
+ Terbium: 300 .
+ Prometid: 48 .
+ Duranium: 48 .
+ Promerium: 12 .
+ Xenomita: 2 .
+ Puede dar bifenon y aurus * ( FAQ's Recursos ) ( * solamente cuando hay evento de cofres rojos/azules , apocalipsis y obsidiana ) .
+ Battleray ​
+​
+El battleray es un alien que reparte premio entre todos los jugadores que lo atacan. Dispara munición UCB-100 y dispone de un escudo protector que desaparece una vez que se haya eliminado parte de los interceptores que lo rodean. Los interceptores son reparados mediante impulsos que lanza el battleray.
+Cuando el alien aparezca en el mapa, se mostrará con un símbolo 
+ visible en el minimapa .
+ DESCRIPCIÓN: 
+ Puntos de vida: 330.000 .
+ Escudo: 260.00 .
+ Daños: 4.500 / 7.500 .
+ Velocidad: - .
+ Comportamiento: Agresivo .
+ Hábitat: 5-3 y Portal de invasión (pirata) .
+ RECOMPENSA: 
+ Puntos de experiencia: 83.300 .
+ Honor: 160 .
+ Créditos: 1.160.000 .
+ Uridium: 116 .
+ Prometium: 400 .
+ Endurium: 400 .
+ Terbium: 400 .
+ Prometid: 64 .
+ Duranium: 64 .
+ Promerium: 20 .
+ Xenomita: 4 .
+ Puede dar bifenon y aurus * ( FAQ's Recursos ) ( * solamente cuando hay evento de cofres rojos/azules , apocalipsis y obsidiana ) .
+ La seguridad de tu cuenta dependerá única y exclusivamente de ti. Ningún Administrador, Moderador del foro, moderador del chat te pedirá nunca tus datos de acceso. 
+ NO COMUNIQUES NUNCA TUS DATOS DE ACCESO A ABSOLUTAMENTE NADIE ​
+ *Aurinko* , 
+ 19 Noviembre 2013 
+ #5 
+ *Aurinko* 
+ User 
+ UBER PIRATAS ​
+Los uber piratas tienen las mismas habilidades que los piratas básicos.
+A continuación los diferentes uber piratas que existen actualmente en el juego:
+ Uber Interceptor ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 480.000 .
+ Escudo: 320.000 (Reparto de escudo: 60% ) .
+ Daños: 4.000 (Alcance 600 ) .
+ Velocidad: 600 .
+ Comportamiento: Agresivo .
+ Hábitat: 4-5 y 5-x .
+ RECOMPENSA: 
+ Puntos de experiencia: 30.000 .
+ Honor: 100 .
+ Créditos: 100.000 .
+ Uridium: 80 .
+ Prometium: 800 .
+ Endurium: 800 .
+ Terbium: 800 .
+ Prometid: 72 .
+ Duranium: 72 .
+ Promerium: 16 .
+ Paladio: 2 .
+ Puede dar bifenon y aurus * ( FAQ's Recursos ) ( * solamente cuando hay evento de cofres rojos/azules , apocalipsis y obsidiana ) .
+ Uber Barracuda ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 1.440.000 .
+ Escudo: 800.000 (Reparto: 70% ) .
+ Daños: 48.000 (Alcance: 375 ) .
+ Velocidad: 400 .
+ Comportamiento: Pasivo .
+ Hábitat: 4-5 y 5-x .
+ RECOMPENSA: 
+ Puntos de experiencia: 60.000 .
+ Honor: 100 .
+ Créditos: 360.000 .
+ Uridium: 80 .
+ Prometium: 1.000 .
+ Endurium: 1.000 .
+ Terbium: 1.000 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 100 .
+ Paladio: 2 .
+ Puede dar bifenon y aurus * ( FAQ's Recursos ) ( * solamente cuando hay evento de cofres rojos/azules , apocalipsis y obsidiana ) .
+ Uber Saboteur ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 1.600.000 .
+ Escudo: 1.200.000 (Reparto: 70% ) .
+ Daños: 32.000 (Alcance: 375 ) .
+ Velocidad: 400 .
+ Comportamiento: Pasivo .
+ Hábitat: 4-5 y 5-x .
+ RECOMPENSA: 
+ Puntos de experiencia: 90.000 .
+ Honor: 130 .
+ Créditos: 500.000 .
+ Uridium: 150 .
+ Prometium: 1.500 .
+ Endurium: 1.500 .
+ Terbium: 1.500 .
+ Prometid: 120 .
+ Duranium: 120 .
+ Promerium: 32 .
+ Paladio: 3 .
+ Puede dar bifenon y aurus * ( FAQ's Recursos ) ( * solamente cuando hay evento de cofres rojos/azules , apocalipsis y obsidiana ) .
+ Uber Annihilator ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 2.400.000 .
+ Escudo: 1.600.000 (Reparto: 85% ) .
+ Daños: 90.000 (Alcance: 450 ) .
+ Velocidad: 320 .
+ Comportamiento: Pasivo .
+ Hábitat: 4-5 y 5-x .
+ RECOMPENSA: 
+ Puntos de experiencia: 300.000 .
+ Honor: 200 .
+ Créditos: 1.000.000 .
+ Uridium: 220 .
+ Prometium: 1.200 .
+ Endurium: 1.200 .
+ Terbium: 1.200 .
+ Prometid: 200 .
+ Duranium: 200 .
+ Promerium: 48 .
+ Xenomita: 8 .
+ Paladio: 4 .
+ Puede dar bifenon y aurus * ( FAQ's Recursos ) ( * solamente cuando hay evento de cofres rojos/azules , apocalipsis y obsidiana ) .
+ Uber Battleray ​
+​
+El uber battleray sacará uber interceptores.
+ DESCRIPCIÓN: 
+ Puntos de vida: 2.640.000 .
+ Escudo: 2.080.000 (Reparto: 70% ) .
+ Daños: 12.8000 (Alcance: 600 ) .
+ Velocidad: 350 .
+ Comportamiento: Pasivo .
+ Hábitat: 4-5 y 5-x .
+ RECOMPENSA: 
+ Puntos de experiencia: 32.200 .
+ Honor: 300 .
+ Créditos: 4.000.000 .
+ Uridium: 300 .
+ Prometium: 1.400 .
+ Endurium: 1.400 .
+ Terbium: 1.400 .
+ Prometid: 250 .
+ Duranium: 250 .
+ Promerium: 80 .
+ Xenomita: 8 .
+ Paladio: 6 .
+ Puede dar bifenon y aurus * ( FAQ's Recursos ) ( * solamente cuando hay evento de cofres rojos/azules , apocalipsis y obsidiana ) .
+ La seguridad de tu cuenta dependerá única y exclusivamente de ti. Ningún Administrador, Moderador del foro, moderador del chat te pedirá nunca tus datos de acceso. 
+ NO COMUNIQUES NUNCA TUS DATOS DE ACCESO A ABSOLUTAMENTE NADIE ​
+ *Aurinko* , 
+ 19 Noviembre 2013 
+ #6 
+ *Aurinko* 
+ User 
+ ALIENS PORTAL DE GRUPO (LOW) / ÉPSILON ​
+A continuación los aliens que encontraremos en el portal de grupo (Low) y puerta galáctica épsilon; algunos también los podremos encontrar en la puerta galáctica kappa.
+Los aliens en el portal de grupo NO darán cajas de carga.
+ * Portal de grupo.
+ * Épsilon.
+ * Kappa.
+ Vagrant ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 80.000 * - 40.000 * * .
+ Escudo: 80.000 * - 40.000 * * .
+ Daños: 5.800 / 7.500 * - 1.800 / 2.500 * * .
+ Velocidad: Velocidad de la nave +15 .
+ Comportamiento: Agresivo .
+ Hábitat: Portal de grupo ( Low ) y GG ( Épsilon y Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 9.000 * - 8.000 * - 4.000 * .
+ Honor: 12 * - 4 * * .
+ Créditos: 45.000 * - 15.000 * * .
+ Uridium: 24 * - 8 * * .
+ Prometium: 50 * * .
+ Endurium: 50 * * .
+ Terbium: 50 * * .
+ Prometid: 4 * * .
+ Duranium: 4 * * .
+ Xenomita: 1 * * .
+ Marauder ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 200.000 * - 100.000 * * .
+ Escudo: 120.000 * - 60.000 * * .
+ Daños: 10.500 / 13.500 * - 3.400 / 4.500 * * .
+ Velocidad: 370 .
+ Comportamiento: Agresivo .
+ Hábitat: Portal de grupo ( Low ) y GG ( Épsilon y Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 18.000 * - 16.000 * - 8.000 * .
+ Honor: 24 * - 8 * * .
+ Créditos: 90.000 * - 30.000 * * .
+ Uridium: 48 * - 16 * * .
+ Prometium: 75 * * .
+ Endurium: 75 * * .
+ Terbium: 75 * * .
+ Prometid: 8 * * .
+ Duranium: 8 * * .
+ Xenomita: 2 * * .
+ Outcast ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 300.000 * - 150.000 * * .
+ Escudo: 160.000 * - 80.000 * * .
+ Daños: 11.000 / 15.000 * - 3.700 / 5.000 * * .
+ Velocidad: 370 .
+ Comportamiento: Agresivo .
+ Hábitat: Portal de grupo ( Low ) y GG ( Épsilon y Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 27.000 / 10.800 * - 22.000 * - 11.000 * .
+ Honor: 36 / 14 * - 12 * * .
+ Créditos: 150.000 / 60.000 * - 50.000 * * .
+ Uridium: 72 / 28 * - 24 * * .
+ Prometium: 100 * * .
+ Prometid: 16 * * .
+ Duranium: 16 * * .
+ Promerium: 1 * * .
+ Xenomita: 4 * * .
+ Seprom: 1 * * .
+ Corsair ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 400.000 * - 200.000 * * .
+ Escudo: 240.000 * - 120.000 * * .
+ Daños: 12.100 / 15.800 * - 6.100 / 8.000 * * .
+ Velocidad: 380 .
+ Comportamiento: Agresivo .
+ Hábitat: Portal de grupo ( Low ) y GG ( Épsilon y Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 39.000 * - 30.000 * - 15.000 * .
+ Honor: 48 * - 16 * * .
+ Créditos: 240.000 * - 80.000 * * .
+ Uridium: 96 * - 32 * * .
+ Prometium: 150 * * .
+ Endurium: 150 * * .
+ Terbium: 150 * * .
+ Prometid: 25 * * .
+ Duranium: 25 * * .
+ Promerium: 2 * * .
+ Xenomita: 8 * * .
+ Seprom: 2 * * .
+ Hooligan ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 750.000 * - 25.000 * * .
+ Escudo: 600.000 * - 200.000 * * .
+ Daños: 14.400 / 17.500 * - 6.700 / 8.800 * * .
+ Velocidad: 380 .
+ Comportamiento: Agresivo .
+ Hábitat: Portal de grupo ( Low ) y GG ( Épsilon y Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 48.000 * - 40.000 * - 20.000 * .
+ Honor: 96 * - 32 * * .
+ Créditos: 375.000 * - 125.000 * * .
+ Uridium: 192 * - 64 * * .
+ Prometium: 200 * * .
+ Endurium: 200 * * .
+ Terbium: 200 * * .
+ Prometid: 32 * * .
+ Duranium: 32 * * .
+ Promerium: 4 * * .
+ Xenomita: 12 * * .
+ Seprom: 4 * * .
+ Ravager ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 900.000 * - 300.000 * .
+ Escudo: 600.000 * - 200.000 * .
+ Daños: 16.000 / 22.000 * - 8.300 / 10.800 * .
+ Velocidad: - .
+ Comportamiento: Agresivo .
+ Hábitat: Portal de grupo ( Low ) y GG ( Épsilon ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 54.000 * - 50.000 * .
+ Honor: 192 * - 64 * .
+ Créditos: 480.000 * - 160.000 * .
+ Uridium: 384 * - 128 * .
+ Prometium: 300 * .
+ Endurium: 300 * .
+ Terbium: 300 * .
+ Prometid: 50 * .
+ Duranium: 50 * .
+ Promerium: 8 * .
+ Xenomita: 16 * .
+ Seprom: 8 * .
+ Convict ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 1.200.000 * - 400.000 * * .
+ Escudo: 600.000 * - 200.000 * * .
+ Daños: 18.000 / 24.000 * - 9.000 / 12.000 * * .
+ Velocidad: 400 .
+ Comportamiento: Agresivo .
+ Hábitat: Portal de grupo ( Low ) y GG ( Épsilon y Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 60.000 * - 60.000 * - 30.000 * .
+ Honor: 300 * - 100 * * .
+ Créditos: 660.000 * - 220.000 * - 18.200 * .
+ Uridium: 450 * - 150 * * .
+ Prometium: 400 * - 500 * .
+ Endurium: 400 * - 500 * .
+ Terbium: 400 * - 500 * .
+ Prometid: 64 * - 80 * .
+ Duranium: 64 * - 80 * .
+ Promerium: 16 * - 20 * .
+ Xenomita: 24 * - 30 * .
+ Seprom: 16 * - 20 * .
+ Century Falcon ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 12.000.000 * - 800.000 * .
+ Escudo: 9.000.000 * - 600.000 * .
+ Daños: 19.000 / 30.000 * - 19.000 / 25.000 * .
+ Velocidad: 100 .
+ Comportamiento: Agresivo .
+ Hábitat: Portal de grupo ( Low ) y GG ( Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 4.000.000 * - 1.000.000 * .
+ Honor: 10.000 * - 5.000 * .
+ Créditos: 3.000.000 * - 1.000.000 * .
+ Uridium: 15.000 * - 5.000 * .
+ Prometium: 1 * .
+ Endurium: 1 * .
+ Terbium: 1 * .
+ Prometid: 1 * .
+ Duranium: 1 * .
+ Promerium: 1 * .
+ Xenomita: 1 * .
+ La seguridad de tu cuenta dependerá única y exclusivamente de ti. Ningún Administrador, Moderador del foro, moderador del chat te pedirá nunca tus datos de acceso. 
+ NO COMUNIQUES NUNCA TUS DATOS DE ACCESO A ABSOLUTAMENTE NADIE ​
+ *Aurinko* , 
+ 19 Noviembre 2013 
+ #7 
+ *Aurinko* 
+ User 
+ ALIENS ZETA ​
+A continuación los aliens que encontraremos en la puerta galáctica zeta; algunos también los podremos encontrar en la puerta galáctica kappa.
+ * Zeta.
+ * Kappa.
+ Infernal ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 50.000 * * .
+ Escudo: 60.000 * * .
+ Daños: 900 / 2.400 * - 900 / 1.200 * .
+ Velocidad: 370 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Zeta y Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 8.000 * * .
+ Honor: 4 * * .
+ Créditos: 25.000 * * .
+ Uridium: 16 * * .
+ Prometium: 100 * * .
+ Endurium: 100 * * .
+ Terbium: 100 * * .
+ Prometid: 16 * * .
+ Duranium: 16 * * .
+ Promerium: 2 * * .
+ Seprom: 1 * * .
+ Scorcher ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 200.000 * * .
+ Escudo: 200.000 * * .
+ Daños: 2.000 / 3.000 * * .
+ Velocidad: 360 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Zeta y Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 15.000 * * .
+ Honor: 8 * * .
+ Créditos: 150.000 * * .
+ Uridium: 32 * * .
+ Prometium: 200 * * .
+ Endurium: 200 * * .
+ Terbium: 200 * * .
+ Prometid: 16 * * .
+ Duranium: 16 * * .
+ Promerium: 2 * * .
+ Seprom: 1 * * .
+ Melter ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 300.000 * * .
+ Escudo: 400.000 * * .
+ Daños: 3.700 / 5.000 * * .
+ Velocidad: 360 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Zeta y Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 55.000 * * .
+ Honor: 12 * * .
+ Créditos: 400.000 * * .
+ Uridium: 256 * * .
+ Prometium: 300 * * .
+ Endurium: 300 * * .
+ Terbium: 300 * * .
+ Prometid: 128 * * .
+ Duranium: 128 * * .
+ Promerium: 16 * * .
+ Seprom: 8 * * .
+ Devourer ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 2.000.000 .
+ Escudo: 1.000.000 .
+ Daños: 9.000 / 12.000 .
+ Velocidad: 370 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Zeta ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 1.000.000 .
+ Honor: 512 .
+ Créditos: 2.500.000 .
+ Uridium: 1.024 .
+ Prometium: 1.600 .
+ Endurium: 1.600 .
+ Terbium: 1.600 .
+ Prometid: 256 .
+ Duranium: 256 .
+ Promerium: 32 .
+ Xenomita: 64 .
+ Seprom: 16 .
+ La seguridad de tu cuenta dependerá única y exclusivamente de ti. Ningún Administrador, Moderador del foro, moderador del chat te pedirá nunca tus datos de acceso. 
+ NO COMUNIQUES NUNCA TUS DATOS DE ACCESO A ABSOLUTAMENTE NADIE ​
+ *Aurinko* , 
+ 19 Noviembre 2013 
+ #8 
+ *Aurinko* 
+ User 
+ ALIENS KRONOS ​
+A continuación los aliens que encontraremos en la puerta galáctica kronos:
+ Saturn Phoenix ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 4.000 .
+ Escudo: 10.000 .
+ Daños: 100 / 1.000 .
+ Velocidad: 320 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) . 
+ RECOMPENSA: 
+ Puntos de experiencia: 100 .
+ Honor: 1 .
+ Créditos: 400 .
+ Uridium: 5 .
+ Prometium: 25 .
+ Endurium: 25 .
+ Terbium: 25 .
+ Prometid: 10 .
+ Duranium: 10 .
+ Saturn Yamato ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 8.000 .
+ Escudo: 20.000 .
+ Daños: 300 / 400 .
+ Velocidad: 260 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 200 .
+ Honor: 2 .
+ Créditos: 800 .
+ Uridium: 7 .
+ Prometium: 45 .
+ Endurium: 45 .
+ Terbium: 45 .
+ Prometid: 20 .
+ Duranium: 20 .
+ Saturn Defcom ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 12.000 .
+ Escudo: 50.000 .
+ Daños: 300 / 1.400 .
+ Velocidad: 340 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 800 .
+ Honor: 8 .
+ Créditos: 1.600 .
+ Uridium: 9 .
+ Prometium: 75 .
+ Endurium: 75 .
+ Terbium: 75 .
+ Prometid: 50 .
+ Duranium: 50 .
+ Saturn Liberator ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 16.000 .
+ Escudo: 60.000 .
+ Daños: 600 / 900 .
+ Velocidad: 330 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 1.600 .
+ Honor: 16 .
+ Créditos: 3.200 .
+ Uridium: 12 .
+ Prometium: 75 .
+ Endurium: 75 .
+ Terbium: 75 .
+ Prometid: 50 .
+ Duranium: 50 .
+ Saturn Nostromo ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 64.000 .
+ Escudo: 80.000 .
+ Daños: 600 / 900 .
+ Velocidad: 340 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 6.400 .
+ Honor: 64 .
+ Créditos: 6.400 .
+ Uridium: 18 .
+ Prometium: 75 .
+ Endurium: 75 .
+ Terbium: 75 .
+ Prometid: 50 .
+ Duranium: 50 .
+ Saturn Piranha ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 64.000 .
+ Escudo: 80.000 .
+ Daños: 600 / 900 .
+ Velocidad: 360 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 3.200 .
+ Honor: 64 .
+ Créditos: 6.400 .
+ Uridium: 15 .
+ Prometium: 75 .
+ Endurium: 75 .
+ Terbium: 75 .
+ Prometid: 50 .
+ Duranium: 50 .
+ Saturn Bigboy ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 128.000 .
+ Escudo: 150.000 .
+ Daños: 1.000 / 3.500 .
+ Velocidad: 260 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 25.600 .
+ Honor: 256 .
+ Créditos: 12.800 .
+ Uridium: 56 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Saturn Vengeance ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 180.000 .
+ Escudo: 100.000 .
+ Daños: 2.200 / 3.000 .
+ Velocidad: 380 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 12.800 .
+ Honor: 128 .
+ Créditos: 25.600 .
+ Uridium: 28 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 75 .
+ Duranium: 75 .
+ Promerium: 8 .
+ Saturn Goliath ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 256.000 .
+ Escudo: 150.000 .
+ Daños: 5.000 / 7.000 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 512 .
+ Créditos: 45.000 .
+ Uridium: 100 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Saturn Leonov ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 160.000 .
+ Escudo: 60.000 .
+ Daños: 3.800 / 5.000 .
+ Velocidad: 360 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 12.800 .
+ Honor: 65 .
+ Créditos: 25.600 .
+ Uridium: 25 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 75 .
+ Duranium: 75 .
+ Promerium: 8 .
+ Saturn Venom ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 256.000 .
+ Escudo: 150.000 .
+ Daños: 6.200 / 8.500 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 512 .
+ Créditos: 45.000 .
+ Uridium: 100 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Saturn Sentinel ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 256.000 .
+ Escudo: 150.000 .
+ Daños: 5.300 / 6.800 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 512 .
+ Créditos: 45.000 .
+ Uridium: 100 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Saturn Spectrum ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 256.000 .
+ Escudo: 150.000 .
+ Daños: 5.300 / 7.000 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 512 .
+ Créditos: 45.000 .
+ Uridium: 100 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Saturn Diminisher ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 256.000 .
+ Escudo: 150.000 .
+ Daños: 6.400 / 13.000 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 512 .
+ Créditos: 45.000 .
+ Uridium: 100 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Saturn Solace ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 256.000 .
+ Escudo: 150.000 .
+ Daños: 5.300 / 7.000 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 512 .
+ Créditos: 45.000 .
+ Uridium: 100 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Saturn Revenge ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 180.000 .
+ Escudo: 100.000 .
+ Daños: 3.400 / 4.500 .
+ Velocidad: 380 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) . 
+ RECOMPENSA: 
+ Puntos de experiencia: 12.800 .
+ Honor: 128 .
+ Créditos: 25.600 .
+ Uridium: 28 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 75 .
+ Duranium: 75 .
+ Saturn Enforcer ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 256.000 .
+ Escudo: 150.000 .
+ Daños: 6.500 / 8.400 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) . 
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 512 .
+ Créditos: 45.000 .
+ Uridium: 100 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Saturn Lightning ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 180.000 .
+ Escudo: 100.000 .
+ Daños: 2.200 / 3.000 .
+ Velocidad: 380 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 12.800 .
+ Honor: 128 .
+ Créditos: 25.600 .
+ Uridium: 28 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 75 .
+ Duranium: 75 .
+ Promerium: 8 .
+ Saturn Avenger ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 180.000 .
+ Escudo: 200.000 .
+ Daños: 2.300 / 3.000 .
+ Velocidad: 380 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 12.800 .
+ Honor: 128 .
+ Créditos: 25.600 .
+ Uridium: 28 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 75 .
+ Duranium: 75 .
+ Promerium: 8 .
+ Saturn Bastion ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 256.000 .
+ Escudo: 250.000 .
+ Daños: 5.300 / 7.000 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 512 .
+ Créditos: 45.000 .
+ Uridium: 100 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Saturn Spearhead ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 100.000 .
+ Escudo: 120.000 .
+ Daños: 500 / 700 .
+ Velocidad: 370 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 7.500 .
+ Honor: 75 .
+ Créditos: 20.000 .
+ Uridium: 20 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 75 .
+ Duranium: 75 .
+ Promerium: 8 .
+ Saturn Citadel ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 550.000 .
+ Escudo: 200.000 .
+ Daños: 3.300 / 6.500 .
+ Velocidad: 240 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 120.000 .
+ Honor: 1.200 .
+ Créditos: 80.000 .
+ Uridium: 175 .
+ Prometium: 300 .
+ Endurium: 300 .
+ Terbium: 300 .
+ Prometid: 200 .
+ Duranium: 200 .
+ Promerium: 20 .
+ Saturn Aegis ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 275.000 .
+ Escudo: 150.000 .
+ Daños: 3.700 / 5.000 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 25.000 .
+ Honor: 250 .
+ Créditos: 50.000 .
+ Uridium: 56 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Saturn Crimson ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 256.000 .
+ Escudo: 150.000 .
+ Daños: 5.300 / 6.800 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 512 .
+ Créditos: 45.000 .
+ Uridium: 100 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Saturn Jade ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 256.000 .
+ Escudo: 150.000 .
+ Daños: 5.200 / 7.000 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 512 .
+ Créditos: 45.000 .
+ Uridium: 100 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Saturn Sapphire ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 256.000 .
+ Escudo: 150.000 .
+ Daños: 5.300 / 7.000 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 512 .
+ Créditos: 45.000 .
+ Uridium: 100 .
+ Prometium: 150 .
+ Endurium: 150 .
+ Terbium: 150 .
+ Prometid: 100 .
+ Duranium: 100 .
+ Promerium: 12 .
+ Evil Iris ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 60.000 .
+ Escudo: 50.000 .
+ Daños: 1.000 / 1.400 .
+ Velocidad: -.
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 6.400 .
+ Honor: 32 .
+ Créditos: 12.800 .
+ Uridium: 16 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 16 .
+ Duranium: 16 .
+ Promerium: 2 .
+ Evil ​
+ ​
+DESCRIPCIÓN: 
+ Puntos de vida: 750.000 .
+ Escudo: 500.000 .
+ Daños: 25.000 / 35.000 .
+ Velocidad: -.
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kronos ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 250.000 .
+ Honor: 2.000 .
+ Créditos: 150.000 .
+ Uridium: 500 .
+ Prometium: 400 .
+ Endurium: 400 .
+ Terbium: 300 .
+ Prometid: 200 .
+ Duranium: 200 .
+ Promerium: 25 .
+ La seguridad de tu cuenta dependerá única y exclusivamente de ti. Ningún Administrador, Moderador del foro, moderador del chat te pedirá nunca tus datos de acceso. 
+ NO COMUNIQUES NUNCA TUS DATOS DE ACCESO A ABSOLUTAMENTE NADIE ​
+ *Aurinko* , 
+ 19 Noviembre 2013 
+ #9 
+ *Aurinko* 
+ User 
+ ALIENS HADES ​
+A continuación los aliens que encontraremos en la puerta galáctica hades.
+ Emperador Sibelon ​
+ ​
+ DESCRIPCIÓN: 
+ Puntos de vida: 6.400.000 .
+ Escudo: 6.400.000 .
+ Daños: ~ 35.000 .
+ Velocidad: -.
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Hades ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 409.600 .
+ Honor: 2.048 .
+ Créditos: 1.400.000 .
+ Uridium: 4.608 .
+ Prometium: 1.600 .
+ Endurium: 1.600 .
+ Terbium: 1.600 .
+ Prometid: 256 .
+ Duranium: 256 .
+ Promerium: 32 .
+ Xenomita: 64 .
+ Emperador Lordakium ​
+ ​
+ DESCRIPCIÓN: 
+ Puntos de vida: 9.600.000 .
+ Escudo: 6.400.000 .
+ Daños: ~ 45.000 .
+ Velocidad: -.
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Hades ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 786.000 (#) .
+ Honor: 4.096 (#) .
+ Créditos: 2.000.000 .
+ Uridium: 9.216 .
+ Prometium: 2.560 .
+ Endurium: 2.560 .
+ Terbium: 2.560 .
+ Prometid: 512 .
+ Duranium: 512 .
+ Promerium: 64 .
+ Xenomita: 64 .
+ Emperador Kristallon ​
+ ​
+ DESCRIPCIÓN: 
+ Puntos de vida: 14.080.000 .
+ Escudo: 11.100.000 .
+ Daños: ~ 45.000 + 300.000 (*2) .
+ Velocidad: -.
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Hades ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 1.536.000 (#) .
+ Honor: 8.192 (#) .
+ Créditos: 5.000.000 .
+ Uridium: 36.864 .
+ Prometium: 2.560 .
+ Endurium: 2.560 .
+ Terbium: 2.560 .
+ Prometid: 1.024 .
+ Duranium: 1.024 .
+ Promerium: 128 .
+ Xenomita: 128 .
+ La seguridad de tu cuenta dependerá única y exclusivamente de ti. Ningún Administrador, Moderador del foro, moderador del chat te pedirá nunca tus datos de acceso. 
+ NO COMUNIQUES NUNCA TUS DATOS DE ACCESO A ABSOLUTAMENTE NADIE ​
+ *Aurinko* , 
+ 19 Noviembre 2013 
+ #10 
+ *Aurinko* 
+ User 
+ ALIENS KUIPER ​
+A continuación los aliens que encontraremos en la puerta galáctica kuiper.
+ Streuner Rocketeer ​
+​
+Ataca lanzando un misil ( 10.000 PV) .
+ DESCRIPCIÓN: 
+ Puntos de vida: 20.000 .
+ Escudo: 10.000 .
+ Daños: 200 (misil) .
+ Velocidad: -.
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kuiper ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 3.200 .
+ Honor: 16 .
+ Créditos: 6.400 .
+ Uridium: 10 .
+ Streuner Soldier ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 150.000 .
+ Escudo: 150.000 .
+ Daños: 2.000 / 5.000 .
+ Velocidad: -.
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kuiper ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 12.000.
+ Honor: 40.
+ Créditos: 100.000.
+ Uridium: 80.
+ Streuner Specialist ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 450.000.
+ Escudo: 300.000.
+ Daños: 5.000/7.000.
+ Velocidad: -.
+ Comportamiento: Agresivo.
+ Hábitat: GG ( Kuiper ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 20.000.
+ Honor: 70.
+ Créditos: 200.000.
+ Uridium: 200.
+ Streuner Turret ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 300.000 .
+ Escudo: 300.000 .
+ Daños: 3.000 / 5.000 ; además lanza un misil que altera la dirección de la nave.
+ Velocidad: -.
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kuiper ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 18.000 .
+ Honor: 50 .
+ Créditos: 180.000 .
+ Uridium: 100 .
+ Streuner Emperor ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 650.000 .
+ Escudo: 700.000 .
+ Daños: 2.000 / 3.000 .
+ Velocidad: -.
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kuiper ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 30.000 .
+ Honor: 150 .
+ Créditos: 400.000 .
+ Uridium: 6.000 .
+ La seguridad de tu cuenta dependerá única y exclusivamente de ti. Ningún Administrador, Moderador del foro, moderador del chat te pedirá nunca tus datos de acceso. 
+ NO COMUNIQUES NUNCA TUS DATOS DE ACCESO A ABSOLUTAMENTE NADIE ​
+ *Aurinko* , 
+ 19 Noviembre 2013 
+ #11 
+ *Aurinko* 
+ User 
+ ALIENS ESPECIALES ​
+Algunos aliens sólo aparecen cuando hay eventos, algunos en puertas galácticas, portal de invasión y otros simplemente a invadir nuestro espacio de cuando en cuando.
+ Icy ​
+​
+El comportamiento de este alien es parecido al del protégit.
+ * Kappa.
+ DESCRIPCIÓN: 
+ Puntos de vida: 80.000 - 100.000 * .
+ Escudo: 60.000 - 80.000 * .
+ Daños: 1.300 / 2.000 .
+ Velocidad: 475 .
+ Comportamiento: Agresivo .
+ Hábitat: En Ice Meteoroid y GG ( Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 6.400 .
+ Honor: 32 .
+ Créditos: 12.800 .
+ Uridium: 16 .
+ Prometium: 100 .
+ Endurium: 100 .
+ Terbium: 100 .
+ Prometid: 16 .
+ Duranium: 16 .
+ Promerium: 2 .
+ Ice Meteoroid ​
+​
+Este alien es como el cubikon, la recompensa es compartida entre todos aquellos que dispararon sobre él.
+ DESCRIPCIÓN: 
+ Puntos de vida: 1.600.000 .
+ Escudo: 1.200.000 .
+ Daños: 0 .
+ Velocidad: 200 .
+ Comportamiento: Pasivo .
+ Hábitat: x-3 , x-4 , x-5 , x-6 , x-7 y x-8 .
+ RECOMPENSA: 
+ Puntos de experiencia: 204.800 .
+ Honor: 4.096 .
+ Créditos: 3.276.800 .
+ Uridium: ~ 1.600 .
+ Prometium: 2.400 .
+ Endurium: 2.400 .
+ Terbium: 2.400 .
+ Prometid: 1.024 .
+ Duranium: 1.024 .
+ Promerium: 128 .
+ Xenomita: 256 .
+ Super Ice Meteoroid ​
+​
+Este alien es como el cubikon, la recompensa es compartida entre todos aquellos que dispararon sobre él.
+ DESCRIPCIÓN: 
+ Puntos de vida: 3.200.000 .
+ Escudo: 2.400.000 .
+ Daños: 0 .
+ Velocidad: 200 .
+ Comportamiento: Pasivo .
+ Hábitat: 4-4 y 4-5 .
+ RECOMPENSA: 
+ Puntos de experiencia: 2.000.000 .
+ Honor: 8.000 .
+ Créditos: 6.000.000 .
+ Uridium: 3.000 .
+ Prometium: 2.400 .
+ Endurium: 2.400 .
+ Terbium: 2.400 .
+ Prometid: 1.024 .
+ Duranium: 1.024 .
+ Promerium: 128 .
+ Xenomita: 512 .
+ DemaNeR ​
+​
+ * Kappa.
+ DESCRIPCIÓN: 
+ Puntos de vida: 400.000 - 512.000* .
+ Escudo: 300.000 - 256.000* .
+ Daños: 3.500 / 5.000 .
+ Velocidad: 300 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Delta y Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 51.200 .
+ Honor: 512 .
+ Créditos: 409.600 .
+ Uridium: 128 - 256 * .
+ Prometium: 300 .
+ Endurium: 300 .
+ Terbium: 300 .
+ Prometid: 128 .
+ Duranium: 128 .
+ Promerium: 32 .
+ Xenomita: 32 .
+ Kucurbium ​
+​
+ * Kappa.
+ DESCRIPCIÓN: 
+ Puntos de vida: 320.000 * 
+ Escudo: 1.200.000 * .
+ Daños: 5.000 / 7.000 * 
+ Velocidad: 200 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 204.800 * .
+ Honor: 1.024 * 
+ Créditos: 3.276.800 * 
+ Uridium: 512 * 
+ Prometium: 1.200 * 
+ Endurium: 1.200 * 
+ Terbium: 1.200 * 
+ Prometid: 512 * 
+ Duranium: 512 * 
+ Promerium: 64 * 
+ Xenomita: 256 * 
+ Boss Kucurbium ​
+​
+ * Kappa.
+ DESCRIPCIÓN: 
+ Puntos de vida: 640.000 * 
+ Escudo: 480.000 * 
+ Daños: - 30.000 / 40.000 * 
+ Velocidad: 200 .
+ Comportamiento: Agresivo .
+ Hábitat: GG ( Kappa ) .
+ RECOMPENSA: 
+ Puntos de experiencia: 819.200 * 
+ Honor: 4.096 * 
+ Créditos: 13.107.200 * 
+ Uridium: 2.048 * 
+ Prometium: 4.800 * 
+ Endurium: 4.800 * 
+ Terbium: 4.800 * 
+ Prometid: 2.048 * 
+ Duranium: 2.048 * 
+ Promerium: 256 * 
+ Xenomita: 1.024 * 
+ La seguridad de tu cuenta dependerá única y exclusivamente de ti. Ningún Administrador, Moderador del foro, moderador del chat te pedirá nunca tus datos de acceso. 
+ NO COMUNIQUES NUNCA TUS DATOS DE ACCESO A ABSOLUTAMENTE NADIE ​
+ *Aurinko* , 
+ 19 Noviembre 2013 
+ #12 
+ &lt;Shadow&gt; 
+ User 
+ ALIENS PLUTUS 
+Estos Npc actualmente solo aparecen en la puerta de evento Gauntlet of Plutus 
+ Cote Lo ​
+​
+ ESTADÍSTICAS: 
+ Puntos de vida: 120.000 
+ Escudo: 20.000 
+ Daños: 2.500 
+ Probabilidad de acierto 80% 
+ Velocidad: 400 
+ Comportamiento: Agresivo 
+ Rango de ataque: 400 
+ Relación de daño a escudo/vida: 30%/70% 
+ RECOMPENSA: 
+ Puntos de experiencia: 11.000 
+ Honor: 52 
+ Créditos: 82.000 
+ Uridium: 28 
+ Prometium: 60 
+ Endurium: 60 
+ Terbium: 60 
+ Prometid: 25 
+ Duranium: 25 
+ Promerium: 3 
+ Puntos de progreso: 4 - 6 
+ Kodkod ​
+​
+ ESTADÍSTICAS: 
+ Puntos de vida: 350.000 
+ Escudo: 50.000 
+ Daños: 5.000 
+ Probabilidad de acierto 80% 
+ Velocidad: 300 
+ Comportamiento: Agresivo 
+ Rango de ataque: 450 
+ Relación de daño a escudo/vida: 30%/70% 
+ RECOMPENSA: 
+ Puntos de experiencia: 30.000 
+ Honor: 156 
+ Créditos: 235.000 
+ Uridium: 75 
+ Prometium: 180 
+ Endurium: 180 
+ Terbium: 180 
+ Prometid: 75 
+ Duranium: 75 
+ Promerium: 10 
+ Puntos de progreso: 8 - 14 
+ Aura Dun Jig ​
+​
+ ESTADÍSTICAS: 
+ Puntos de vida: 320.000 
+ Escudo: 320.000 
+ Daños: 7.500 
+ Probabilidad de acierto 80% 
+ Velocidad: 300 
+ Comportamiento: Agresivo 
+ Rango de ataque: 350 
+ Relación de daño a escudo/vida: 30%/70% 
+ RECOMPENSA: 
+ Puntos de experiencia: 48.000 
+ Honor: 235 
+ Créditos: 400.000 
+ Uridium: 128 
+ Prometium: 280 
+ Endurium: 280 
+ Terbium: 280 
+ Prometid: 120 
+ Duranium: 120 
+ Promerium: 15 
+ Puntos de progreso: 15 - 25 
+ Lac Lion ​
+​
+ ESTADÍSTICAS: 
+ Puntos de vida: 950.000 
+ Escudo: 0 
+ Daños: 3.500 
+ Probabilidad de acierto 80% 
+ Velocidad: 500 
+ Comportamiento: Agresivo 
+ Rango de ataque: 800 
+ RECOMPENSA: 
+ Puntos de experiencia: 70.000 
+ Honor: 350 
+ Créditos: 550.000 
+ Uridium: 175 
+ Prometium: 400 
+ Endurium: 400 
+ Terbium: 400 
+ Prometid: 175 
+ Duranium: 175 
+ Promerium: 22 
+ Puntos de progreso: 70 - 90 
+ Natal Nap ​
+​
+ ESTADÍSTICAS: ​
+ Puntos de vida: 2.500.000 ​
+ Escudo: 150.000 ​
+ Daños: 15.000 ​
+ Probabilidad de acierto 80% ​
+ Velocidad: 150 ​
+ Comportamiento: Agresivo ​
+ Rango de ataque: 550 ​
+ Relación de daño a escudo/vida: 30%/70% ​
+ RECOMPENSA: ​
+ Puntos de experiencia: 200.000 ​
+ Honor: 999 ​
+ Créditos: 1.555.000 ​
+ Uridium: 500 ​
+ Prometium: 1150 ​
+ Endurium: 1150 ​
+ Terbium: 1150 ​
+ Prometid: 500 ​
+ Duranium: 500 ​
+ Promerium: 60 ​
+ Puntos de progreso: 94 - 114 ​
+ ​
+ Plutus (Jefe) ​
+​
+ ESTADÍSTICAS: 
+ Puntos de vida: 3.750.000 
+ Escudo: 450.000 
+ Daños: 15.000 
+ Probabilidad de acierto 80% 
+ Velocidad: 300 
+ Comportamiento: Agresivo 
+ Rango de ataque: 450 
+ Relación de daño a escudo/vida: 30%/70% 
+ Desde la Fase 2 del jefe final, empezará a crear Npc que explotarán si se acercan demasiado a tu nave: 
+ - Soldier Rocket: Causa 6.000 de daño directo a la vida al explotar 
+ - Warhead: Causa 350.000 de daño al explotar 
+ RECOMPENSA: 
+ Puntos de experiencia: 5.000.000 
+ Honor: 500.000 
+ Créditos: 5.000.000 
+ Uridium: 5.000 
+ Prometium: 1150 
+ Endurium: 1150 
+ Terbium: 1150 
+ Prometid: 500 
+ Duranium: 500 
+ Promerium: 60 
+ Puntos de progreso: 2400 - 2600 
+ Munición PIB-100: 3.500 - 6.500 
+ Probabilidad de recompensa especial: 
+ - 5.000.000 Uridium 
+ - Munición 
+ - LF-4 Mejorados 
+ - Cyborg Nobilis 
+ - Hammerclaw Nobilis 
+ - Mimesis Nobilis 
+ Torreta plutus ​
+​
+ ESTADÍSTICAS: 
+ Puntos de vida: 1.000.000 
+ Escudo: 0 
+ Daños: 0 
+ Velocidad: 0 
+ Comportamiento: Inofensivo 
+ Rango de activación: 500 
+ Genera Npc que explotarán si se acercan demasiado a tu nave: 
+ - Soldier Rocket: Causa 6.000 de daño directo a la vida al explotar 
+ - Warhead: Causa 350.000 de daño al explotar 
+ RECOMPENSA: 
+ Ni la torreta ni los Npc dan recompensa ni caja de carga 
+ Generador plutus ​
+​
+ DESCRIPCIÓN: 
+ Carece de velocidad, ataque y recompensa, pero es necesario que sea destruido estando 5 segundos en su rango para así acabar con la invulnerabilidad de Plutus 
+ Irá generando minas a su alrededor (Pueden ser destruidas si las disparas) que causarán 100.000 de daño directamente a la vida 
+​
+ &lt;Shadow&gt; , 
+ 2 Octubre 2019 
+ #13 
+ &lt;Shadow&gt; 
+ User 
+ ALIENS BLACK LIGHT ​
+Estos son los aliens que aparecen en los mapas X-BL:
+ \\ Impulse II // ​
+ ​
+ DESCRIPCIÓN: 
+ Puntos de vida: 1.200.000 .
+ Escudo: 750.000 .
+ Daños: 12.000 .
+ Velocidad: 450 .
+ Comportamiento: Agresivo. 
+ Habitat: X-BL. 
+ RECOMPENSA: 
+ Puntos de experiencia: 55.000 .
+ Puntos de honor: 200 .
+ Créditos: 200.000 .
+ Uridium: 45 .
+ Rinusk: 15 - 25 .
+ Prometium : 350 
+ Endurium : 350 
+ Terbium : 350 
+ Duranium : 80 
+ Prometid : 80 
+ Promerium : 10 
+ \\ Attend IX // ​
+​
+ DESCRIPCIÓN: 
+ Puntos de vida: 9.000.000 .
+ Escudo: 4.800.000 .
+ Daños: 17.000 .
+ Velocidad: 150 .
+ Comportamiento: Agresivo. 
+ Habitat: X-BL. 
+ RECOMPENSA: 
+ Puntos de experiencia: 350.000 .
+ Puntos de honor: 750 .
+ Créditos: 1.000.000 .
+ Uridium: 275 .
+ Rinusk: 80 - 90 .
+ Rastro de Black Light : 5 - 15 .
+ Prometium : 500 
+ Endurium : 500 
+ Terbium : 500 
+ Duranium : 200 
+ Prometid : 200 
+ Promerium : 25 
+ \\ Invoke XVI // ​
+​
+ Estos NPC tienen ubicaciones fijas. Explora el mapa para encontrarlos.​
+El Invoke XVI está pensado para ser un NPC de grupo. Los 5 jugadores que más daño le causen, recibirán una caja (solo hay 5 cajas) con Rinusk y Rastro de Black Light . Todas las cajas tienen el mismo contenido.
+DESCRIPCIÓN: 
+ Puntos de vida: 36.000.000 .
+ Escudo: 0 .
+ Daños: 30.000 .
+ Velocidad: 0 .
+ Comportamiento: Agresivo. 
+ Habitat: X-BL. 
+ RECOMPENSA: 
+ Puntos de experiencia: 3.500.000 .
+ Puntos de honor: 20.000 .
+ Créditos: 9.500.000 .
+ Uridium: 2.000 .
+ Caja de carga: 
+ Risnuk: 55 - 80. 
+ Rastro de Black Light: 30 - 40. 
+ \\ Mindfire Behemoth // ​
+​
+ Este NPC tiene una ubicación fija. Explora el mapa para encontrarlo.​
+El Mindfire Behemoth está pensado para ser un NPC de grupo. Los 8 jugadores que más daño le causen, recibirán una caja (solo hay 8 cajas) con Rinusk , Rastro de Black Light Trace , Mindfire Cerebrum y Uridium . Todas las cajas tienen el mismo contenido.
+ DESCRIPCIÓN: 
+ Puntos de vida: 135.000.000 .
+ Escudo: 0 .
+ Daños: 145.000 .
+ Velocidad: 0 .
+ Comportamiento: Agresivo. 
+ Habitat: X-BL. 
+ RECOMPENSA: 
+ Créditos: 20.000.000 .
+ Uridium: 5.000 .
+ Caja de carga: 
+ Risnuk: 100 - 120. 
+ Rastro de Black Light: 120 - 140. 
+ Mindfire Cerebrum 30 - 45 
+ Uridium: 5.400 - 5.900 
+ Creditos: 16.500.000 - 22.500.000 
+ Honor: 52.500 - 72.500. 
+ Experiencia: 8.500.000 - 12.500.000. 
+​
+ &lt;Shadow&gt; , 
+ 13 Octubre 2019 
+ #14 
+ Mostrar contenido ignorado 
+ Estado del tema: 
+ Cerrado para nuevas respuestas 
+ Nombre o dirección e-mail: 
+ ¿Ya tienes cuenta? 
+ No, crear una cuenta ahora. 
+ Sí, mi contraseña es: 
+ ¿Olvidaste la contraseña? 
+ Permanecer conectado 
+ DarkOrbit ES 
+ Foros 
+ &gt; 
+ Ayuda 
+ &gt; 
+ FAQ sobre el juego 
+ &gt; 
+ FAQs del juego 
+ &gt; 
+ Foros 
+ Foros
+ Enlaces rápidos
+ Mensajes recientes 
+ Calendario 
+ Menu 
+ Idioma 
+ Español 
+ Aviso legal 
+ Ayuda 
+ Portal 
+ RSS 
+ Términos y reglas 
+ Política de privacidad 
+ Forum software by XenForo &reg; &copy; 2010-2019 XenForo Ltd. Forum software by XenForo&trade; &copy;2010-2015 XenForo Ltd. 
+ XenForo Add-ons by Brivium &trade; &copy; 2012-2026 Brivium LLC.

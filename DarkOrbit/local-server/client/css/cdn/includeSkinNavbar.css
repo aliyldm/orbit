@@ -1,0 +1,30 @@
+.scroll-pane .jspArrowUp  {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-arrowUp.png?__cv=254c4eefa095f9667bae05870dc0ac00);
+}
+.scroll-pane .jspArrowUp.jspDisabled {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-arrowUp.png?__cv=254c4eefa095f9667bae05870dc0ac00);
+}
+.scroll-pane .jspArrowDown  {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-arrowDown.png?__cv=c21b286b8bf2dbfbbe72b3b6e2719d00);
+}
+.scroll-pane .jspArrowDown.jspDisabled  {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-arrowDown.png?__cv=c21b286b8bf2dbfbbe72b3b6e2719d00);
+}
+.scroll-pane .jspTrack {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-track.png?__cv=d577fed7389aaf4088d1656fd5d37900);
+}
+.scroll-pane .jspDrag {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-drag.png?__cv=d2a445e0185f2bb8399caf0d259d7100);
+    background-position: bottom;
+
+}
+.scroll-pane .jspDragTop {
+    background-image:  url(/do_img/global/misc/scrollbar/dark/vertical-dragTop.png?__cv=d3764c497f702239e4b0874c0d423000);
+    height: 5px;
+    top: 0;
+}
+.scroll-pane .jspVerticalBar {
+    right: 3px;
+    top: 1px;
+    z-index: 5;
+}

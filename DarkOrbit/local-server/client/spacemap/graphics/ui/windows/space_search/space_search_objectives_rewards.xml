@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+        <library id="battlePass"/>
+
+    </libraries>
+    <!-- TEXT STYLES -->
+
+    <textstyle  name="world_boss_overview_info"
+                textColor="0xfefefe"
+                type="dynamic"
+                fontSize="10"
+                autoSize="left"
+                wordWrap="true"
+                multiline="true"
+                embedFonts="false"
+                fontName="Verdana"
+                align="left"/>
+
+    <textstyle name="sae_shop_header"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="10"
+               autoSize="left"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="true"
+               align="left"/>
+
+    <textstyle name="sae_shop_header"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="10"
+               autoSize="left"
+               wordWrap="false"
+               multiline="false"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="true"
+               align="left"/>
+
+    <textstyle name="sae_shop_item_description"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="10"
+               autoSize="right"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="false"
+               align="left"/>
+
+    <textstyle name="ss_claimed"
+               textColor="0x00ff00"
+               type="dynamic"
+               fontSize="12"
+               autoSize="right"
+               wordWrap="true"
+               multiline="true"
+               embedFonts="false"
+               fontName="Verdana"
+               bold="false"
+               align="left"/>
+
+    <skin name="sae_shop_scrollbar_bg" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0.3">normal</layer>
+    </skin>
+
+    <skin name="sae_shop_yellowlayer" classname="BasicSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x999900" fillAlpha="0.3">normal</layer>
+    </skin>
+
+    <skin name="sae_shop_exchange_icon_bg" classname="BasicSkin" library="battlePass">
+        <layer classname="BitmapLayer" libraryID="item_bg">normal</layer>
+    </skin>
+
+    <skin name="sae_shop_exchange_icon_btn" classname="FadableButtonSkin">
+        <layer classname="FilledBoxLayer" fillColor="0x0" fillAlpha="0">normal</layer>
+    </skin>
+
+    <skin name="sae_shop_exchange_icon_bg_special" classname="BasicSkin" library="battlePass">
+        <layer classname="BitmapLayer" libraryID="item_bg_yellow">normal</layer>
+    </skin>
+
+    <skin name="sae_shop_exchange_desscription_bg" classname="BasicSkin" library="battlePass">
+        <layer classname="BitmapLayer" libraryID="frame_bp-exchange_blue">normal</layer>
+    </skin>
+
+    <skin name="sae_shop_exchange_desscription_bg_special" classname="BasicSkin" library="battlePass">
+        <layer classname="BitmapLayer" libraryID="frame_bp-exchange_yellow">normal</layer>
+    </skin>
+
+    <skin name="sae_info_image" classname="BasicSkin" library="gameclientCommonUI">
+        <layer classname="BitmapLayer" libraryID="icon_info_grey">normal</layer>
+    </skin>
+
+    <!-- TEMPLATES   -->
+    <template name="space_search_objectives_rewards">
+        <container name="body_rewards"
+                   autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent">
+            <coreponent autoSizeWidth="true" height="2" marginTop="58"
+                        registeredSkinName="commonui_horizontal_divider"/>
+            <container name="mid"
+                       width="500" height="480"
+                       autoSizeWidth="false" autoSizeHeight="false"
+                       marginLeft="4"
+                       marginTop="60">
+
+                <container name="item"
+                           width="500" height="480"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           marginLeft="0"
+                           marginTop="0">
+
+                    <itemlist name="list"
+                              width="500" height="480" autoSizeWidth="false" autoSizeHeight="false"
+                              layout="vertical" itemGap="0"
+                              mouseEnabled="true" mouseChildren="true"
+                              cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+
+                        <itemrenderer width="500" height="80" autoSizeWidth="false" autoSizeHeight="false"
+                                      itemGap="0" mouseEnabled="true" mouseChildren="true">
+                            <coreponent name="bg"
+                                        width="500" height="80" autoSizeWidth="false" autoSizeHeight="false"
+                                        registeredSkinName="commonui_darklayer"/>
+
+                            <coreponent name="bg_special"
+                                        width="500" height="80" autoSizeWidth="false" autoSizeHeight="false"
+                                        registeredSkinName="sae_shop_yellowlayer" visible="false"/>
+
+                            <container name="icon" width="70" height="70" autoSizeWidth="false"
+                                       autoSizeHeight="false"
+                                       marginTop="5" marginLeft="7">
+                                <coreponent name="bg"
+                                            width="70" height="70" autoSizeWidth="false" autoSizeHeight="false"
+                                            registeredSkinName="sae_shop_exchange_icon_bg"/>
+
+                                <coreponent name="bg_special"
+                                            width="70" height="70" autoSizeWidth="false" autoSizeHeight="false"
+                                            registeredSkinName="sae_shop_exchange_icon_bg_special" visible="false"/>
+
+                                <coreponent name="icon"
+                                            width="45" height="45" autoSizeWidth="false" autoSizeHeight="false"
+                                            alignX="center" alignY="center"/>
+
+                                <button name="btn"
+                                        width="45" height="45" autoSizeWidth="false" autoSizeHeight="false"
+                                        alignX="center" alignY="center"
+                                        registeredSkinName="sae_shop_exchange_icon_btn"/>
+
+                                <label name="amount"
+                                       width="220" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                                       marginTop="2" marginLeft="5"
+                                       registeredTextStyleName="sae_shop_header"
+                                       registeredSkinName="commonui_default_label" text="100"/>
+
+                            </container>
+
+                            <coreponent name="vertical_divider_1" width="1" height="80" marginLeft="85"/>
+
+                            <container name="item" width="260" height="80" autoSizeWidth="false"
+                                       autoSizeHeight="false"
+                                       marginLeft="90">
+                                <coreponent name="bg"
+                                            width="240" height="70" autoSizeWidth="false" autoSizeHeight="false"
+                                            alignX="center " alignY="center"
+                                            registeredSkinName="sae_shop_exchange_desscription_bg"/>
+                                <coreponent name="bg_special"
+                                            width="240" height="70" autoSizeWidth="false" autoSizeHeight="false"
+                                            alignY="center"
+                                            registeredSkinName="sae_shop_exchange_desscription_bg_special"
+                                            visible="false"/>
+
+                                <label name="name"
+                                       width="220" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                                       marginTop="8" marginLeft="8"
+                                       registeredTextStyleName="sae_shop_header"
+                                       registeredSkinName="commonui_default_label"/>
+
+                                <label name="description"
+                                       width="220" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                                       marginTop="40" marginLeft="8"
+                                       registeredTextStyleName="sae_shop_item_description"
+                                       registeredSkinName="commonui_default_label"/>
+
+                            </container>
+
+                            <coreponent name="vertical_divider_2" width="1" height="80" alignX="right"
+                                        marginRight="165"/>
+
+                            <container name="cost"
+                                       width="150" height="80" autoSizeWidth="false" autoSizeHeight="false"
+                                       alignX="right" marginRight="10">
+                                <button name="exchange_btn" localizedText="SS_Rewards_Claim"
+                                        width="100" height="30" autoSizeWidth="false" autoSizeHeight="false"
+                                        alignX="center" alignY="center"
+                                        registeredSkinName="commonui_scale9_button_green" visible="false" enabled="false"/>
+
+                                <label name="claimedLabel"
+                                       text="localize:SS_Rewards_Claimed"
+                                        height="20"
+                                       width="60"
+                                       autoSizeWidth="false" autoSizeHeight="false"
+                                       alignX="center" alignY="center"
+                                       registeredTextStyleName="ss_claimed"
+                                       registeredSkinName="commonui_default_label" />
+
+                            </container>
+
+                            <coreponent name="item_end_divider" width="500" height="1" alignY="bottom"/>
+
+                            <label name="name" text="1231231231237891273dfaf"
+                                   width="220" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                                   marginTop="2" marginLeft="5"
+                                   registeredTextStyleName="sae_shop_header"
+                                   registeredSkinName="commonui_default_label" visible="false"/>
+
+                            <label name="name2" text="reward"
+                                   width="220" height="10" autoSizeWidth="false" autoSizeHeight="false"
+                                   marginTop="30" marginLeft="5"
+                                   registeredTextStyleName="sae_shop_header"
+                                   registeredSkinName="commonui_default_label" visible="false"/>
+
+
+                        </itemrenderer>
+                    </itemlist>
+                    <scrollbar name="scroll_bar"
+                               width="10" autoSizeHeight="true" direction="vertical"
+                               marginTop="0" marginBottom="0" marginRight="0" alignX="right"
+                               registeredSkinName="sae_shop_scrollbar_bg">
+                        <button name="buttonSlider"
+                                width="8" height="10" alignX="center"
+                                registeredSkinName="commonui_scrollbar_slider"/>
+                    </scrollbar>
+                    <bind source="scroll_bar"
+                          target="list"
+                          type="scrollcontainer"/>
+                </container>
+
+                <container name="info"
+                           width="500" height="70" autoSizeHeight="false"
+                           marginTop="490"
+                           alignX="center"
+                >
+                    <coreponent alignX="left" registeredSkinName="sae_info_image" marginTop="0" marginLeft="8"/>
+
+                    <label name="description" text="localize:SS_Rewards_tips"
+                           width="400" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+                           alignX="center"
+                           registeredTextStyleName="world_boss_overview_info"
+                           registeredSkinName="commonui_default_label"/>
+
+                </container>
+            </container>
+        </container>
+    </template>
+    <container name="root" width="500" height="600" autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="false"
+               mouseChilderen="true">
+        <reference template="space_search_objectives_rewards"/>
+    </container>
+
+</root>

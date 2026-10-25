@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+			<title>Darkorbit</title>
+		<style type="text/css" media="screen">    @import "/client/css/cdn/darkorbit.css?__cv=REDACTED_HEX"; </style>
+
+	<meta http-equiv="Content-Language" content="at, de, ch">
+	<meta name="language" content="Almanca, de, at, ch">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<script src="/client/js/function.js?__cv=REDACTED_HEX" type="text/javascript"></script>
+	<script type="text/javascript" src="/client/js/jQuery/jquery-1.4.4.js?__cv=REDACTED_HEX"></script>
+	<script type="text/javascript" src="/client/js/jQuery/jquery.flashembed.js?__cv=REDACTED_HEX"></script>
+	<script type="text/javascript">jQuery.noConflict();</script>
+	<script type="text/javascript" src="/client/resources/js/tools.js?__cv=REDACTED_HEX"></script>
+	<script type="text/javascript" src="/client/resources/js/tools/text.js?__cv=REDACTED_HEX"></script>
+	
+	<!-- Darkorbit Javascript tools -->
+
+	<script>
+		var textResourcesTitle = {"seo_title_client":"Darkorbit","seo_title_client_blinking":"Darkorbit | Oyun Client'\u0131","seo_title_no_aid":"DarkOrbit Reloaded | MMO ve Uzay \u00c7at\u0131\u015fmas\u0131","seo_tittle_clans":"Darkorbit | Klanlar","seo_tittle_pet":"Darkorbit | P.E.T.","seo_tittle_ships":"Darkorbit | Uzay Gemileri","seo_tittle_uridium":"Darkorbit | Uridium","seo_tittle_techfactory":"Darkorbit | Teknoloji Fabrikas\u0131","seo_tittle_hangar":"Darkorbit | Hangar","seo_title_standard":"DarkOrbit Reloaded | MMO ve Uzay \u00c7at\u0131\u015fmas\u0131","seo_title_achievements":"Darkorbit | Ba\u015far\u0131lar","seo_title_shop":"Darkorbit | D\u00fckkan","seo_title_skylab":"Darkorbit | Skylab"};
+		
+		jQuery.each(textResourcesTitle, function (i, n) {
+			Tools.Text.setResource(i, n)
+		});
+		
+	</script>
+	<script type="text/javascript" src="/client/resources/js/tools/popup.js?__cv=REDACTED_HEX"></script>
+	<script type="text/javascript" src="/client/resources/js/tools/errorHandler.js?__cv=REDACTED_HEX"></script>
+	<script type="text/javascript" src="/client/resources/js/library.js?__cv=REDACTED_HEX"></script>
+	<script src="/client/resources/js/internalMapRevolution.js?__cv=REDACTED_HEX" type="text/javascript"></script>
+	<script language="javascript">
+		InternalMapRevolution.Initialize();
+	</script>
+
+	
+			<meta http-equiv="refresh" content="900; URL=indexInternal.es?action=internalMapRevolution&dontShow=1">
+	
+			</head>
+
+<body style="width: 100%; height: 100%; text-align: left;">
+
+<!-- affiliatePopupTag -->
+
+
+
+
+<script type='text/javascript'>
+	function onFailFlashembed() {
+		if (getBrowser() == "chrome") {
+			jQuery("img.enableFlashChrome").show();
+		}
+		jQuery("#flashFailClient").show();
+	}
+
+	function expressInstallCallback(info) {
+		// possible values for info: loadTimeOut|Cancelled|Failed
+		onFailFlashembed();
+	}
+
+	jQuery(document).ready(function () {
+
+		/**
+		 * Send the Flash client version to the Server side
+		 *
+		 * @type {*}
+		 */
+		var aFlashVersion = flashembed.getVersion();
+
+		/* nicer
+		var sParam =
+				'{' +
+						'"flashVersion":' + aFlashVersion[0] + "." + aFlashVersion[1] +
+						',"browserInfo":' + JSON.stringify(jQuery.browser) +
+						'}';
+		*/
+
+		/* faster */
+
+		/* Fix IE8 Object.keys */
+
+		if (!Object.keys) Object.keys = function (o) {
+			if (o !== Object(o))
+				throw new TypeError('Object.keys called on non-object');
+			var ret = [], p;
+			for (p in o) if (Object.prototype.hasOwnProperty.call(o, p)) ret.push(p);
+			return ret;
+		}
+
+
+		var sParam =
+			'[' +
+			'"jQuery.flashEmbed"' +
+			',"' + aFlashVersion[0] + "." + aFlashVersion[1] + '"' +
+			',"' + Object.keys(jQuery.browser)[0]
+			+ '"]';
+
+		var data = {
+
+			"action": "setClientBrowserConfig",
+			"params": sParam, //null if empty
+			"isEncodeMessage": 0 // 1- encode text  // 0 - plain text
+		}
+
+		jQuery.post('/flashAPI/loadingScreen.php', data, function(data) {});
+
+		
+		flashembed("container", {"onFail": onFailFlashembed, "src": "/client/spacemap/preloader.swf?__cv=REDACTED_HEX","version": [11,0],"expressInstall": "/client/swf_global/expressInstall.swf?__cv=REDACTED_HEX","width": "100%","height": "100%","wmode": "gpu","bgcolor": "#000000","id": "preloader","allowfullscreen": "true","allowFullScreenInteractive": "true"}, {"lang": "tr","userID": "173637251","sessionID": "REDACTED","basePath": "spacemap","pid": "1433","boardLink": "https%3A%2F%2Fboard-tr.darkorbit.com%2F%2Fbp-game-login%3Ftoken%3DREDACTED","helpLink": "https%3A%2F%2Fboard-tr.darkorbit.com%2F","loadingClaim": "Y%C3%9CKLEN%C4%B0YOR","chatHost": "eps.optimist.darkorbit.infinicast.io:7771","cdn": "/client/","useHash": "REDACTED","host": "{{HOST}}","browser": "Unknown","fullscreen": "1","itemXmlHash": "REDACTED","resourcesXmlHash": "REDACTED","resources3dXmlHash": "REDACTED","resources3dparticlesXmlHash": "REDACTED","resourceachievementsXmlHash": "REDACTED","resourceEventsXmlHash": "REDACTED","resourceJumpGateXmlHash": "REDACTED","profileXmlHash": "REDACTED","languageXmlHash": "REDACTED","loadingscreenHash": "REDACTED","gameclientHash": "REDACTED","gameclientPath": "spacemap","loadingscreenAssetsXmlHash": "REDACTED","crossdomainHash": "REDACTED","showAdvertisingHint": "","gameclientAllowedInitDelay": "10","eventStreamContext": "","requestScheme": "https","sharedImages": "https://sharedimages.bpsecure.com/darkorbit/","useDeviceFonts": "0","display2d": "1","theme": "/client/do_img/global/loadingscreen/default.jpg?__cv=REDACTED_HEX","platform": "PC_CLIENT","factionID": "1","autoStartEnabled": "1","mapID": "1","newUser": "1","allowChat": "1"});
+
+		
+
+//            jQuery("p#click1").click(function(){
+////                InternalMapRevolution.referToURL("internalDock", "seo_tittle_ships", "internalDockShips", false, null);
+//            });
+//
+//            jQuery("p#click2").click(function(){
+//                InternalMapRevolution.referToURL("internalDock", "seo_tittle_uridium", "internalDockShips", false, null);
+//            });
+
+	});
+</script>
+
+	<style>
+		#container {
+			color: #FFFFFF;
+			background: #000000;
+		}
+	</style>
+
+
+</body>
+</html>

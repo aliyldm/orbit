@@ -1,0 +1,67 @@
+{
+  "updatedOn": "2026-10-25",
+  "authorized": true,
+  "goal": "Preserve current client/gameplay/account data; add .NET/PostgreSQL/Redis multiplayer architecture",
+  "phase": "native-login-presence-verified",
+  "productionCutover": false,
+  "gameplayReady": false,
+  "legacyRuntime": "../local-server",
+  "legacyDatabaseAuthority": "SQLite",
+  "foundation": {
+    "nativeSchemaClasses": 1352,
+    "nativeGoldenContracts": 4053,
+    "coreAssertions": 8148,
+    "storageAssertions": 67,
+    "realTcpProbeClients": 2,
+    "syntheticActorSessions": 1000,
+    "syntheticMapCount": 10,
+    "realGamePlayerCapacityProven": false,
+    "rehearsalTables": 60,
+    "rehearsalRows": 4584,
+    "postgresRuntimeSchemaReady": false,
+    "legacySourceAssetChecksums": 196
+  },
+  "next": "Shared NPC/collectables/portal lifecycle, actual portal/API routes, live stats/equipment repositories and authoritative combat",
+  "pending": [
+    "Existing account password verification and authoritative PostgreSQL repositories",
+    "Existing HTTP/Flash API and all portal feature routes",
+    "Shared NPC simulation, collectables, gates and map ownership",
+    "Combat, PvP, PET, drones and all existing gameplay modules",
+    "PostgreSQL defaults/constraints/indexes/migrations and atomic idempotent reward/economy writes",
+    "Distributed session revocation propagation and ownership fencing integrated into world/database writes",
+    "Full legacy feature parity and Qt/Flash visual acceptance",
+    "500/1000 real-protocol gameplay load, slow socket and outage/recovery verification",
+    "Final backup/sync, readiness gate, controlled cutover and rollback",
+    "Other-player range/interest optimization and full native Qt visual acceptance"
+  ],
+  "constraints": [
+    "No balance, price, reward, equipment or UI policy changes as part of migration",
+    "No account resets or gifts",
+    "Existing 5-x maze stays disabled",
+    "PostgreSQL archive schema is an exact-value rehearsal, not the runtime game schema",
+    "No production switch until full feature parity is verified"
+  ],
+  "native": {
+    "passwordCompatibility": "Node scrypt N16384 r8 p1, salt UTF8, 32byte key",
+    "verifiedInitializationCommands": 1422,
+    "realTcpClients": 5,
+    "integrationAssertions": 43,
+    "postgresPlayerLoad": true,
+    "webAndTcpLogin": true,
+    "sharedMapPresenceAndMovement": true,
+    "reconnectAndLogout": true,
+    "privateGateIsolation": true,
+    "derivedStatEnginePorted": false,
+    "liveFeatureRepositoriesPorted": false,
+    "nonLoopbackBindingVerified": true,
+    "separateAdvertisedEndpointVerified": true
+  },
+  "distribution": {
+    "repository": "https://github.com/aliyldm/orbit",
+    "private": true,
+    "clientBridge": "HTTP and raw TCP, independent configurable overlay/proxy endpoints",
+    "readyGateEnforced": true,
+    "portablePackage": "local-preview",
+    "sharedServerGameplayReady": false
+  }
+}

@@ -1,0 +1,205 @@
+<root>
+    <libraries>
+        <library id="gameclientCommonUI"/>
+    </libraries>
+
+
+    <textstyle name="armory_unlock_color_white_08"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="10"
+               autoSize="center" wordWrap="false" multiline="false"
+               embedFonts="false" fontName="Verdana" bold="true" align="center"/>
+
+    <template name="amoryUnlockAlert">
+        <container name="body"
+                   autoSizeWidth="true" autoSizeHeight="true" autoWidthMode="parent" autoHeightMode="parent">
+
+            <container name="itemBox"
+                       width="280" height="150"
+                       autoSizeWidth="false" autoSizeHeight="false"
+                       alignX="center" alignY="top"
+                       marginTop="20"
+
+            >
+                <container name="item01"
+                           width="40" height="40"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="0"
+                           marginLeft="0"
+                           registeredSkinName="commonui_darklayer"/>
+
+                <label name="item01_label"
+                       text="x 10000"
+                       registeredTextStyleName="armory_unlock_color_white_08"
+                       width="40" height="20"
+                       alignX="left" alignY="top"
+                       marginTop="45"
+                       marginLeft="0"
+                />
+
+
+                <container name="item02"
+                           width="40" height="40"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="0"
+                           marginLeft="60"
+                           registeredSkinName="commonui_darklayer"/>
+
+                <label name="item02_label"
+                       text="x 10000"
+                       registeredTextStyleName="armory_unlock_color_white_08"
+                       width="40" height="20"
+                       alignX="left" alignY="top"
+                       marginTop="45"
+                       marginLeft="60"
+                />
+
+
+                <container name="item03"
+                           width="40" height="40"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="0"
+                           marginLeft="120"
+                           registeredSkinName="commonui_darklayer"/>
+
+                <label name="item03_label"
+                       text="x 10000"
+                       registeredTextStyleName="armory_unlock_color_white_08"
+                       width="40" height="20"
+                       alignX="left" alignY="top"
+                       marginTop="45"
+                       marginLeft="120"
+                />
+
+                <container name="item04"
+                           width="40" height="40"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="0"
+                           marginLeft="180"
+                           registeredSkinName="commonui_darklayer"/>
+
+                <label name="item04_label"
+                       text="x 10000"
+                       registeredTextStyleName="armory_unlock_color_white_08"
+                       width="40" height="20"
+                       alignX="left" alignY="top"
+                       marginTop="45"
+                       marginLeft="180"
+                       />
+
+                <container name="item05"
+                           width="40" height="40"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="0"
+                           marginLeft="240"
+                           registeredSkinName="commonui_darklayer"/>
+
+                <label name="item05_label"
+                       text="x 10000"
+                       registeredTextStyleName="armory_unlock_color_white_08"
+                       width="40" height="20"
+                       alignX="left" alignY="top"
+                       marginTop="45"
+                       marginLeft="240"
+                       />
+
+
+                <container name="item06"
+                           width="40" height="40"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="70"
+                           marginLeft="0"
+                           registeredSkinName="commonui_darklayer"/>
+
+                <label name="item06_label"
+                       text="x 10000"
+                       registeredTextStyleName="armory_unlock_color_white_08"
+                       width="40" height="20"
+                       alignX="left" alignY="top"
+                       marginTop="115"
+                       marginLeft="0"
+                       />
+
+                <container name="item07"
+                           width="40" height="40"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="70"
+                           marginLeft="60"
+                           registeredSkinName="commonui_darklayer"/>
+
+                <label name="item07_label"
+                       text="x 10000"
+                       registeredTextStyleName="armory_unlock_color_white_08"
+                       width="40" height="20"
+                       alignX="left" alignY="top"
+                       marginTop="115"
+                       marginLeft="60"
+                       />
+
+                <container name="item08"
+                           width="40" height="40"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="70"
+                           marginLeft="120"
+                           registeredSkinName="commonui_darklayer"/>
+
+                <label name="item08_label"
+                       text="x 10000"
+                       registeredTextStyleName="armory_unlock_color_white_08"
+                       width="40" height="20"
+                       alignX="left" alignY="top"
+                       marginTop="115"
+                       marginLeft="120"
+                />
+
+                <container name="item09"
+                           width="40" height="40"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="70"
+                           marginLeft="180"
+                           registeredSkinName="commonui_darklayer"/>
+
+                <label name="item09_label"
+                       text="x 10000"
+                       registeredTextStyleName="armory_unlock_color_white_08"
+                       width="40" height="20"
+                       alignX="left" alignY="top"
+                       marginTop="115"
+                       marginLeft="180"
+                />
+
+                <container name="item10"
+                           width="40" height="40"
+                           autoSizeWidth="false" autoSizeHeight="false"
+                           marginTop="70"
+                           marginLeft="240"
+                           registeredSkinName="commonui_darklayer"/>
+
+                <label name="item10_label"
+                       text="x 10000"
+                       registeredTextStyleName="armory_unlock_color_white_08"
+                       width="40" height="20"
+                       alignX="left" alignY="top"
+                       marginTop="115"
+                       marginLeft="240"
+                />
+            </container>
+
+
+            <button name="ok_btn"
+                    text="ok"
+                    textMarginY="1"
+                    width="100" height="35"
+                    autoSizeWidth="false" autoSizeHeight="false"
+                    alignX="center" alignY="bottom"
+                    marginBottom="15"
+                    registeredSkinName="commonui_scale9_button_blue" visible="true"/>
+        </container>
+    </template>
+    <container name="root"
+               width="450" height="230" autoSizeWidth="false" autoSizeHeight="false"
+               mouseEnabled="false" mouseChildren="true">
+        <reference template="amoryUnlockAlert"/>
+    </container>
+</root>

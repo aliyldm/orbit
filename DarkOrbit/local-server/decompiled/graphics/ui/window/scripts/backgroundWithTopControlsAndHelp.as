@@ -1,0 +1,34 @@
+package
+{
+   import flash.display.MovieClip;
+   import flash.text.TextField;
+   
+   [Embed(source="/_assets/assets.swf", symbol="symbol54")]
+   public dynamic class backgroundWithTopControlsAndHelp extends MovieClip
+   {
+      
+      public var closeBtn:MovieClip;
+      
+      public var dragger:MovieClip;
+      
+      public var helpBtn:MovieClip;
+      
+      public var label:TextField;
+      
+      public var minimizeBtn:MovieClip;
+      
+      public var pattern:MovieClip;
+      
+      public var resizer:MovieClip;
+      
+      public var window:MovieClip;
+      
+      public var windowMaskContainer:MovieClip;
+      
+      public function backgroundWithTopControlsAndHelp()
+      {
+         super();
+      }
+   }
+}
+

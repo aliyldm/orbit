@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- LIBS -->
+    <libraries>
+        <library id="gameclientCommonUI"/>
+    </libraries>
+
+
+
+    <textstyle name="ss_color_white"
+               textColor="0xffffff"
+               type="dynamic"
+               fontSize="12"
+               autoSize="left" wordWrap="false" multiline="false"
+               embedFonts="false" fontName="Verdana" bold="true" align="left"/>
+
+    <!-- TEMPLATES -->
+    <template name="space_search">
+
+        <container name="body"
+                   autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent">
+            <!--        <container name="body" autoSizeWidth="false" autoSizeHeight="false" width="600" height="600" >-->
+
+
+            <!--            1018 1032-->
+            <coreponent name="top"
+                        marginTop="4"
+                        marginLeft="6"
+                        autoSizeHeight="false"
+                        autoSizeWidth="false"
+                        autoHeightMode="parent"
+                        width="900" height="450" visible="true" registeredSkinName="commonui_darklayer">
+
+                <coreponent name="bg"
+                            autoSizeWidth="true" autoSizeHeight="true" visible="true" />
+
+                <coreponent name="mark_bg"
+                            autoSizeWidth="true" autoSizeHeight="true"/>
+
+                <coreponent name="top_bg"
+                            autoSizeWidth="true" autoSizeHeight="true"/>
+
+            </coreponent>
+
+            <coreponent name="mid"
+                        marginTop="460"
+                        marginLeft="4"
+                        width="900" height="130" visible="true"  >
+
+                <coreponent name="mission_info_bg"
+                            width="53" height="60"
+                            autoSizeWidth="false" autoSizeHeight="false"
+                            marginLeft="800" marginTop="30" registeredSkinName="commonui_darklayer" />
+
+                <coreponent name="mission_info"
+                            width="53" height="60"
+                            autoSizeWidth="false" autoSizeHeight="false"
+                            marginLeft="800" marginTop="30" buttonMode="true" />
+
+                <coreponent name="loot_info"
+                            width="400"
+                            height="130"
+                            alignX="center"
+                            marginLeft="382"
+                            alignY="center"
+                            marginTop="-40"
+
+                >
+
+                    <!--                    <dropdownbox name="filter_box"-->
+                    <!--                                 width="130"-->
+                    <!--                                 height="10"-->
+                    <!--                                 alignX="center"-->
+                    <!--                                 alignY="bottom"-->
+                    <!--                                 marginBottom="5"-->
+                    <!--                                 registeredSkinName="settings_window_dropdownbox" />-->
+
+                    <!--                    <container name="share"-->
+                    <!--                               width="140" height="30" autoSizeWidth="false" autoSizeHeight="false" alignX="center" alignY="bottom" marginBottom="5"   >-->
+
+                    <dropdownbox name="filter_box"
+                                 width="130"
+                                 height="10"
+                                 alignX="center"
+                                 alignY="top"
+                                 marginLeft="0"
+                                 marginTop="60"
+                                 registeredSkinName="settings_window_dropdownbox"/>
+
+                    <!--                    </container>-->
+
+                    <button name="infoBtn"
+                            marginRight="5" marginTop="5"
+                            alignX="right"
+                            registeredSkinName="commonui_info_button"/>
+
+                    <coreponent name="iconBg"
+                                width="45" height="45"
+                                autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="140" marginTop="0" registeredSkinName="commonui_darklayer"/>
+
+                    <coreponent name="icon"
+                                width="45" height="45"
+                                autoSizeWidth="false" autoSizeHeight="false"
+                                marginLeft="140" marginTop="0" registeredSkinName="commonui_darklayer"/>
+
+                    <label name="loot_name" text="localize:ammunition_laser_ucb-100"
+                           width="200" height="10" autoSizeWidth="false"
+                           autoSizeHeight="false"
+                           alignX="left" marginLeft="194"
+                           marginTop="0"
+                           registeredTextStyleName="ss_color_white" registeredSkinName="commonui_default_label"/>
+
+                    <label name="loot_amount" text="1000/1000"
+                           width="200" height="10" autoSizeWidth="false"
+                           autoSizeHeight="false"
+                           alignX="left" marginLeft="194"
+                           marginTop="20"
+                           useHTML="true"
+                           registeredTextStyleName="ss_color_white" registeredSkinName="commonui_default_label"/>
+
+                </coreponent>
+
+                <button name="explore_btn"
+                        text="Explore"
+                        textMarginY="1"
+                        width="150" height="30"
+                        autoSizeWidth="false" autoSizeHeight="false"
+                        alignX="center" alignY="bottom"
+                        marginBottom="0" registeredSkinName="commonui_scale9_button_green" visible="true"/>
+            </coreponent>
+
+
+            <button name="clearButton" width="30" height="30" registeredSkinName="commonui_spinbox_button_arrow_lef"
+                    visible="true"/>
+
+            <!--            <coreponent autoSizeWidth="true" height="2" marginTop="108" registeredSkinName="commonui_horizontal_divider"/>-->
+
+        </container>
+    </template>
+    <container name="root" width="904" height="564" autoSizeWidth="false" autoSizeHeight="false" mouseEnabled="false"
+               mouseChilderen="true">
+        <reference template="space_search"/>
+    </container>
+</root>

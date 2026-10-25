@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+	<!-- LIBS -->
+	<libraries>
+		<library id="gameclientCommonUI"/>
+		<library id="craftingWindow"/>
+		<library id="seasonPass_asset"/>
+	</libraries>
+
+	<!-- TEXT STYLES -->
+	<textstyle  name="season_pass_tab_center"
+				textColor="0x6FB2CB"
+				type="dynamic"
+				fontSize="9"
+				autoSize="center"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="season_pass_tab_selected_center"
+				textColor="0xfeea90"
+				type="dynamic"
+				fontSize="9"
+				autoSize="center"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="season_pass_timer"
+				textColor="0xffffff"
+				type="dynamic"
+				fontSize="10"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="center"/>
+
+	<textstyle  name="season_pass_button_normal"
+				textColor="0xFFFFFF"
+				type="dynamic"
+				fontSize="8"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="season_pass_button_over"
+				textColor="0xEEEEEE"
+				type="dynamic"
+				fontSize="8"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="season_pass_button_clicked"
+				textColor="0xDDDDDD"
+				type="dynamic"
+				fontSize="8"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="season_pass_progress_current"
+				textColor="0xffffff"
+				type="dynamic"
+				fontSize="8"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="center"/>
+
+	<textstyle  name="season_pass_progress_increase"
+				textColor="0xffffff"
+				type="dynamic"
+				fontSize="9"
+				autoSize="right"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="false"
+				align="right"/>
+
+	<textstyle  name="season_pass_progress_next_level"
+				textColor="0xffffff"
+				type="dynamic"
+				fontSize="11"
+				autoSize="center"
+				wordWrap="false"
+				multiline="false"
+				embedFonts="false"
+				fontName="Verdana"
+				bold="true"
+				align="center"/>
+
+	<textstyle  name="season_pass_inactive_message"
+				textColor="0xfefefe"
+				type="dynamic"
+				fontSize="10"
+				autoSize="left"
+				wordWrap="true"
+				multiline="true"
+				embedFonts="false"
+				fontName="Verdana"
+				align="left"/>
+
+	<!-- SKINS -->
+	<skin name="season_pass_button_blue" library="seasonPass_asset" classname="FadableButtonSkin">
+		<layer classname="BitmapLayer" libraryID="btn_purchase-levels_normal"
+			   registeredTextStyleName="season_pass_button_normal">normal
+		</layer>
+		<layer classname="BitmapLayer" libraryID="btn_purchase-levels_hover"
+			   registeredTextStyleName="season_pass_button_over">over
+		</layer>
+		<layer classname="BitmapLayer" libraryID="btn_purchase-levels_active"
+			   registeredTextStyleName="season_pass_button_clicked">clicked
+		</layer>
+
+		<layer classname="BitmapLayer" libraryID="btn_purchase-levels_disabled"
+			   registeredTextStyleName="season_pass_button_clicked">disabled
+		</layer>
+	</skin>
+
+	<skin name="season_pass_bg_level" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="bg_level">normal</layer>
+	</skin>
+
+	<skin name="season_pass_icon_points" classname="BasicSkin" library="seasonPass_asset">
+		<layer classname="BitmapLayer" libraryID="icon_points_exp">normal</layer>
+	</skin>
+
+	<skin name="season_pass_progressbar" tweenTime="1" classname="ProgressBarSkin" library="craftingWindow">
+		<layer classname="BitmapLayer" libraryID="progress_bar_fill_scale9" scale9grid="3,4,4,5">bar</layer>
+		<layer classname="BitmapLayer" libraryID="progress_bar_base_scale9" scale9grid="5,4,6,5">normal</layer>
+	</skin>
+
+	<skin name="season_pass_info_image" classname="BasicSkin" library="gameclientCommonUI">
+		<layer classname="BitmapLayer" libraryID="icon_info_grey">normal</layer>
+	</skin>
+
+	<!-- TEMPLATES -->
+	<template name="SEASON_PASS_TABBAR">
+		<container name="tabbarContainer"
+				   width="710" height="20"
+				   marginTop="85" marginLeft="45" marginRight="0" pixelSnapping="true">
+			<itemlist name="tabsItemlist"
+					  width="400" height="20"
+					  layout="horizontal" alignX="left" itemGap="0"
+					  mouseEnabled="true" mouseChildren="true"
+					  cacheSkinMaskAsBitmap="false" registeredSkinName="commonui_list_mask">
+				<itemrenderer width="200" height="20" autoSizeWidth="false"
+							  mouseEnabled="true" mouseChildren="true">
+					<button name="tab"
+							autoSizeWidth="true" autoSizeHeight="true"
+							mouseEnabled="true" mouseChildren="true"
+							registeredSkinName="commonui_tabbarbutton"/>
+					<button name="tab_selected" visible="false"
+							autoSizeWidth="true"  autoSizeHeight="true"
+							mouseEnabled="true" mouseChildren="true"
+							registeredSkinName="commonui_tabbarbutton"/>
+					<label name="tabLabel" text="?"
+						   autoSizeWidth="true" height="15" alignY="center"
+						   mouseEnabled="false" mouseChildren="false"
+						   registeredTextStyleName="season_pass_tab_center"  registeredSkinName="commonui_default_label"/>
+				</itemrenderer>
+			</itemlist>
+		</container>
+	</template>
+
+	<template name="SEASON_PASS_MAIN">
+		<container name="main"
+				   width="800" height="520" autoSizeWidth="false" autoSizeHeight="false">
+			<container  name="active" width="710" height="520" autoSizeWidth="false" autoSizeHeight="false"
+						marginLeft="45">
+
+				<container  name="top"
+							autoSizeWidth="true" autoWidthMode="parent" height="65" autoSizeHeight="false"
+							marginTop="10">
+
+					<coreponent name="banner"
+								width="400" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+								alignX="left"/>
+
+					<container  name="progress"
+								width="310" autoSizeWidth="false" autoSizeHeight="true" autoHeightMode="parent"
+								alignX="right" alignY="bottom">
+
+						<button name="btn_purchase" text="localize:window_reward_sp_tab_purchase-level-button"
+								width="135" height="15" autoSizeWidth="false" autoSizeHeight="false"
+								alignX="right" alignY="bottom" marginBottom="30"
+								registeredSkinName="season_pass_button_blue" buttonMode="true" />
+
+						<label  name="label_pts_increase" text="+8888"
+								width="45" height="15" autoSizeWidth="false" autoSizeHeight="false"
+								alignX="right" alignY="bottom" marginRight="240" marginBottom="5"
+								registeredTextStyleName="season_pass_progress_increase" registeredSkinName="commonui_default_label" />
+
+						<container  name="progress_bar"
+									width="180" height="20" autoSizeWidth="false" autoSizeHeight="false"
+									alignX="right" alignY="bottom" marginRight="27" marginBottom="2">
+
+							<progressbar name="bar"
+										 autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+										 registeredSkinName="season_pass_progressbar">
+							</progressbar>
+
+							<label  name="label_current" text="8888/8888"
+									autoSizeWidth="true" autoWidthMode="parent" height="15" autoSizeHeight="false"
+									alignY="center"
+									registeredTextStyleName="season_pass_progress_current" registeredSkinName="commonui_default_label" />
+						</container>
+
+						<coreponent name="icon_pts"
+									width="45" height="30" autoSizeWidth="false" autoSizeHeight="false"
+									alignX="right" alignY="bottom" marginRight="185"
+									registeredSkinName="season_pass_icon_points"/>
+
+						<container  name="level"
+									width="30" height="25" autoSizeWidth="false" autoSizeHeight="false"
+									alignX="right" alignY="bottom">
+							<coreponent name="bg"
+										autoSizeWidth="true" autoWidthMode="parent" autoSizeHeight="true" autoHeightMode="parent"
+										registeredSkinName="season_pass_bg_level"/>
+							<label  name="label_next" text="188"
+									autoSizeWidth="true" autoWidthMode="parent" height="20" autoSizeHeight="false"
+									alignY="center"
+									registeredTextStyleName="season_pass_progress_next_level" registeredSkinName="commonui_default_label" />
+						</container>
+					</container>
+				</container>
+
+				<!--<container name="tab_window_size"
+						   width="710" height="280" autoSizeWidth="false" autoSizeHeight="false"/>-->
+
+				<container  name="bottom"
+							autoSizeWidth="true" autoWidthMode="parent" height="55" autoSizeHeight="false"
+							alignY="bottom">
+					<label  name="countdown_timer" text="21d 02h 02m"
+							autoSizeWidth="true" autoWidthMode="parent" height="30" autoSizeHeight="false"
+							alignY="center"
+							registeredTextStyleName="season_pass_timer" registeredSkinName="commonui_default_label"/>
+				</container>
+			</container>
+
+			<container  name="inactive" width="710" height="485" autoSizeWidth="false" autoSizeHeight="false"
+						marginLeft="45" marginTop="20">
+				<coreponent  alignX="left" registeredSkinName="season_pass_info_image"/>
+
+				<label  text="localize:sp_season-has-not-started"
+						width="250" autoSizeWidth="false" height="15" autoSizeHeight="false"
+						marginLeft="30"
+						registeredTextStyleName="season_pass_inactive_message" registeredSkinName="commonui_default_label"/>
+			</container>
+		</container>
+	</template>
+
+	<container name="root" width="800" height="520" autoSizeWidth="false" autoSizeHeight="false"
+			   mouseEnabled="false" mouseChilderen="true">
+		<reference template="SEASON_PASS_MAIN"/>
+		<reference template="SEASON_PASS_TABBAR"/>
+	</container>
+</root>
