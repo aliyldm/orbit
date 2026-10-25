@@ -1,6 +1,8 @@
 # User state, credentials and captures never belong in the shared repository.
 **/.local/
 **/data/
+!DarkOrbit/local-server/game/data/
+!DarkOrbit/local-server/game/data/**
 **/backups/
 **/logs/
 **/certs/

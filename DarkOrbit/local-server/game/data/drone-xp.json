@@ -1,0 +1,18 @@
+{
+  "_sources": ["https://board-en.darkorbit.com/threads/drone-faq.896/", "https://board-de.darkorbit.com/threads/faq-drohnen.2892/", "https://darkorbitwiki.com/drones/"],
+  "thresholds": [0, 100, 200, 400, 800, 1600],
+  "shipOrder": ["ship_phoenix", "ship_yamato", "ship_leonov", "ship_defcom", "ship_liberator", "ship_piranha", "ship_nostromo", "ship_vengeance", "ship_bigboy", "ship_goliath"],
+  "npcPoints": {
+    "streuner": [4, 3, 2, 1, 0, 0, 0, 0, 0, 0],
+    "lordakia": [6, 5, 4, 3, 2, 1, 0, 0, 0, 0],
+    "saimon": [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
+    "mordon": [16, 14, 12, 10, 8, 6, 4, 2, 1, 1],
+    "devolarium": [40, 35, 30, 25, 20, 15, 10, 9, 8, 7],
+    "sibelon": [50, 45, 40, 35, 30, 25, 22, 19, 17, 12],
+    "sibelonit": [20, 18, 16, 14, 12, 10, 8, 6, 4, 3],
+    "lordakium": [60, 55, 50, 45, 40, 35, 30, 25, 20, 15],
+    "kristallin": [30, 25, 20, 18, 16, 14, 12, 10, 7, 4],
+    "kristallon": [75, 70, 65, 60, 55, 50, 40, 30, 24, 18],
+    "streuner-upper": [15, 13, 11, 9, 7, 5, 4, 3, 2, 1]
+  }
+}

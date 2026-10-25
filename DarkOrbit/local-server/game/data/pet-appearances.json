@@ -1,0 +1,494 @@
+{
+  "source": "decompiled/pet-patterns/game.xml",
+  "sha256": "0359deecaca0a80466d3ae9829511c4bb89711f1f794a4034c67f1d080bc7263",
+  "appearances": {
+    "pet_designs_pet-orcus-nobilis": {
+      "type": 346,
+      "comment": "Pet Orcus Nobilis"
+    },
+    "pet_designs_pet-cyborg-dusklight": {
+      "type": 314,
+      "comment": "Pet Cyborg Dusklight"
+    },
+    "pet_designs_pet-goliath-nobilis": {
+      "type": 397,
+      "comment": "Pet Goliath Nobilis"
+    },
+    "pet_designs_pet-diminisher-carbonite": {
+      "type": 343,
+      "comment": "Pet Diminisher Carbonite"
+    },
+    "pet_designs_pet-hammerclaw-frost": {
+      "type": 336,
+      "comment": "Pet Hammerclaw Frost"
+    },
+    "pet_designs_mirage-lava": {
+      "type": 272,
+      "comment": "Pet Mirage Lava"
+    },
+    "pet_designs_pet-hyperion-cerevisia": {
+      "type": 399,
+      "comment": "Pet Hyperion Cerevisia"
+    },
+    "pet_designs_chimera-argon": {
+      "type": 178,
+      "comment": "Argon chimera design"
+    },
+    "pet_designs_pet-citadel-viking": {
+      "type": 389,
+      "comment": "Pet Citadel Viking"
+    },
+    "pet_designs_pet-goliath-x-sandstorm": {
+      "type": 186,
+      "comment": "Pet Goliath-x sandstorm"
+    },
+    "pet_designs_pet-pusat-nobilis": {
+      "type": 380,
+      "comment": "Pet Pusat Nobilis"
+    },
+    "pet_designs_pet-goliath-x-borealis": {
+      "type": 183,
+      "comment": "Pet Goliath-x borealis"
+    },
+    "pet_designs_pet-orcus-carbonite": {
+      "type": 348,
+      "comment": "Pet Orcus Carbonite"
+    },
+    "pet_designs_pet-centurion-dusklight": {
+      "type": 338,
+      "comment": "Pet Centurion Dusklight"
+    },
+    "pet_designs_pet-a-elite-blaze": {
+      "type": 169,
+      "comment": "a-elite-pet-blaze"
+    },
+    "pet_designs_hammerclaw-dusklight": {
+      "type": 269,
+      "comment": "Pet Hammerclaw Dusklight"
+    },
+    "pet_designs_pet-berserker-borealis": {
+      "type": 319,
+      "comment": "Pet Berserker Borealis"
+    },
+    "pet_designs_cyborg-argon": {
+      "type": 193,
+      "comment": "Pet Cyborg Argon"
+    },
+    "pet_designs_pet-centurion-seraph": {
+      "type": 309,
+      "comment": "Pet Centurion Seraph"
+    },
+    "pet_designs_pet-sentinel-dusklight": {
+      "type": 316,
+      "comment": "Pet Sentinel Dusklight"
+    },
+    "pet_designs_pet-goliath-x-dusklight": {
+      "type": 315,
+      "comment": "Pet Goliath X Dusklight"
+    },
+    "pet_designs_pet-diminisher-nobilis": {
+      "type": 368,
+      "comment": "Pet Diminisher Nobilis"
+    },
+    "pet_designs_pet-g-champion-legend": {
+      "type": 200,
+      "comment": "Pet G Champion Legend"
+    },
+    "pet_designs_pet-diminisher-mobius": {
+      "type": 347,
+      "comment": "Pet Diminisher Mobius"
+    },
+    "pet_designs_chimera-poison": {
+      "type": 182,
+      "comment": "Poison chimera design"
+    },
+    "pet_designs_mirage-legend": {
+      "type": 195,
+      "comment": "Pet Mirage Legend"
+    },
+    "pet_designs_pet-sentinel-phantasm": {
+      "type": 393,
+      "comment": "Pet Sentinel Phantasm"
+    },
+    "pet_designs_pet-g-champion-silver": {
+      "type": 199,
+      "comment": "Pet G Champion Silver"
+    },
+    "pet_designs_pet-centurion-nobilis": {
+      "type": 390,
+      "comment": "Pet Centurion Nobilis"
+    },
+    "pet_designs_pet-diminisher-eldritch": {
+      "type": 361,
+      "comment": "Pet Diminisher Eldritch"
+    },
+    "pet_designs_pet-sentinel-lava": {
+      "type": 202,
+      "comment": "Pet Sentinel Lava"
+    },
+    "pet_designs_chimera-lava": {
+      "type": 179,
+      "comment": "Lava chimera design"
+    },
+    "pet_designs_pet-goliath-x-ocean": {
+      "type": 184,
+      "comment": "Pet Goliath-x ocean"
+    },
+    "pet_designs_pet-pusat-inferno": {
+      "type": 310,
+      "comment": "Pet Pusat Inferno"
+    },
+    "pet_designs_pet-centurion-harbinger": {
+      "type": 323,
+      "comment": "Pet Centurion Harbinger"
+    },
+    "pet_designs_pet-diminisher-phantasm": {
+      "type": 379,
+      "comment": "Pet Diminisher Phantasm"
+    },
+    "pet_designs_chimera-orange": {
+      "type": 164,
+      "comment": "Orange chimera design"
+    },
+    "pet_designs_mirage-orange": {
+      "type": 167,
+      "comment": "Pet Mirage Orange"
+    },
+    "pet_designs_pet-hammerclaw-carbonite": {
+      "type": 211,
+      "comment": "Pet Hammerclaw Carbonite"
+    },
+    "pet_designs_mirage-green": {
+      "type": 166,
+      "comment": "Pet Mirage Green"
+    },
+    "pet_designs_pet-centurion-lava": {
+      "type": 357,
+      "comment": "Pet Centurion Lava"
+    },
+    "pet_designs_pet-a-elite-ocean": {
+      "type": 171,
+      "comment": "a-elite-pet-ocean"
+    },
+    "pet_designs_pet-goliath-dreadwing": {
+      "type": 381,
+      "comment": "Pet Goliath Dreadwing"
+    },
+    "pet_designs_pet-pusat-blaze": {
+      "type": 174,
+      "comment": "Pet Pusat Blaze"
+    },
+    "pet_designs_pet-g-champion-dusklight": {
+      "type": 329,
+      "comment": "Pet G-champion Dusklight"
+    },
+    "pet_designs_berserker-ace": {
+      "type": 304,
+      "comment": "Pet Berserker Ace"
+    },
+    "pet_designs_pet-paladin-khepri": {
+      "type": 375,
+      "comment": "Pet Paladin Khepri"
+    },
+    "pet_designs_pet-inferno": {
+      "type": 189,
+      "comment": "Pet Inferno"
+    },
+    "pet_designs_pet-cyborg-frost": {
+      "type": 321,
+      "comment": "Pet Cyborg Frost"
+    },
+    "pet_designs_pet-g-champion-argon": {
+      "type": 197,
+      "comment": "Pet G Champion Argon"
+    },
+    "pet_designs_frozen": {
+      "type": 160,
+      "comment": "Frozen pet design"
+    },
+    "pet_designs_pet-sentinel-inferno": {
+      "type": 311,
+      "comment": "Pet Sentinel Inferno"
+    },
+    "pet_designs_pet-sentinel-argon": {
+      "type": 201,
+      "comment": "Pet Sentinel Argon"
+    },
+    "pet_designs_pet-pusat-phantasm": {
+      "type": 371,
+      "comment": "Pet Pusat Phantasm"
+    },
+    "pet_designs_chimera-green": {
+      "type": 163,
+      "comment": "Green chimera design"
+    },
+    "pet_designs_pet-solace-striker": {
+      "type": 394,
+      "comment": "Pet Solace Striker"
+    },
+    "pet_designs_mirage-red": {
+      "type": 168,
+      "comment": "Pet Mirage Red"
+    },
+    "pet_designs_pet-phoenix": {
+      "type": 210,
+      "comment": "Pet Phoenix"
+    },
+    "pet_designs_spectrum-eostra": {
+      "type": 301,
+      "comment": "Pet Spectrum Eostra"
+    },
+    "pet_designs_mirage-carbonite": {
+      "type": 302,
+      "comment": "Pet Mirage Carbonite"
+    },
+    "pet_designs_chimera-red": {
+      "type": 165,
+      "comment": "Red chimera design"
+    },
+    "pet_designs_pet-g-champion-lava": {
+      "type": 198,
+      "comment": "Pet G Champion Lava"
+    },
+    "pet_designs_pet-sentinel-harbinger": {
+      "type": 308,
+      "comment": "Pet Sentinel Harbinger"
+    },
+    "pet_designs_red": {
+      "type": 161,
+      "comment": "Red pet design"
+    },
+    "pet_designs_pet-pusat-lava": {
+      "type": 369,
+      "comment": "Pet Pusat Lava"
+    },
+    "pet_designs_hammerclaw-argon": {
+      "type": 194,
+      "comment": "Pet Hammerclaw Argon"
+    },
+    "pet_designs_pet-mirage-poison": {
+      "type": 327,
+      "comment": "Pet Mirage Poison"
+    },
+    "pet_designs_pet-spectrum-seraph": {
+      "type": 339,
+      "comment": "Pet Spectrum Seraph"
+    },
+    "pet_designs_pet-cyborg-carbonite": {
+      "type": 212,
+      "comment": "Pet Cyborg Carbonite"
+    },
+    "pet_designs_pet-berserker-blaze": {
+      "type": 318,
+      "comment": "Pet Berserker Blaze"
+    },
+    "pet_designs_pet-berserker-argon": {
+      "type": 340,
+      "comment": "Pet Berserker Argon"
+    },
+    "pet_designs_pet-sentinel-nobilis": {
+      "type": 355,
+      "comment": "Pet Sentinel Nobilis"
+    },
+    "pet_designs_pet-pusat-poison": {
+      "type": 187,
+      "comment": "Pet Pusat Poison"
+    },
+    "pet_designs_diminisher-dusklight": {
+      "type": 303,
+      "comment": "Pet Diminisher Dusklight"
+    },
+    "pet_designs_pet-phantasm": {
+      "type": 313,
+      "comment": "Pet Phantasm"
+    },
+    "pet_designs_pet-goliath-x-regular": {
+      "type": 185,
+      "comment": "Pet Goliath X"
+    },
+    "pet_designs_pet-spectrum-blaze": {
+      "type": 176,
+      "comment": "Pet Spectrum Blaze"
+    },
+    "pet_designs_pet-a-elite-nobilis": {
+      "type": 337,
+      "comment": "Pet A-Elite Nobilis"
+    },
+    "pet_designs_chimera-ocean": {
+      "type": 181,
+      "comment": "Ocean chimera design"
+    },
+    "pet_designs_pet-a-elite-lava": {
+      "type": 170,
+      "comment": "a-elite-pet-lava"
+    },
+    "pet_designs_pet-hammerclaw-poison": {
+      "type": 341,
+      "comment": "Pet Hammerclaw Poison"
+    },
+    "pet_designs_pet-diminisher-legend": {
+      "type": 206,
+      "comment": "Pet Diminisher Legend"
+    },
+    "pet_designs_pet-cyborg-phantasm": {
+      "type": 360,
+      "comment": "Pet Cyborg Phantasm"
+    },
+    "pet_designs_pet-hammerclaw-legend": {
+      "type": 363,
+      "comment": "Pet Hammerclaw Legend"
+    },
+    "pet_designs_pet-berserker-legend": {
+      "type": 326,
+      "comment": "Pet Berserker Legend"
+    },
+    "pet_designs_pet-goliath-dogma": {
+      "type": 366,
+      "comment": "Pet Goliath Dogma"
+    },
+    "pet_designs_pet-cyborg-legend": {
+      "type": 344,
+      "comment": "Pet Cyborg Legend"
+    },
+    "pet_designs_pet-g-champion-nobilis": {
+      "type": 328,
+      "comment": "Pet G-champion Nobilis"
+    },
+    "pet_designs_pet-orcus-legend": {
+      "type": 382,
+      "comment": "Pet Orcus Legend"
+    },
+    "pet_designs_pet-spectrum-poison": {
+      "type": 188,
+      "comment": "Pet Spectrum Poison"
+    },
+    "pet_designs_pet-diminisher-lava": {
+      "type": 205,
+      "comment": "Pet Diminisher Lava"
+    },
+    "pet_designs_pet-hammerclaw": {
+      "type": 190,
+      "comment": "Pet Hammerclaw"
+    },
+    "pet_designs_pet-spectrum-ocean": {
+      "type": 177,
+      "comment": "Pet Spectrum Ocean"
+    },
+    "pet_designs_pet-cyborg": {
+      "type": 191,
+      "comment": "Pet Cyborg"
+    },
+    "pet_designs_pet-cyborg-lava": {
+      "type": 268,
+      "comment": "Pet Cyborg Lava"
+    },
+    "pet_designs_pet-goliath-x-legend": {
+      "type": 209,
+      "comment": "Pet Goliath X Legend"
+    },
+    "pet_designs_pet-orcus-viking": {
+      "type": 364,
+      "comment": "Pet Orcus Viking"
+    },
+    "pet_designs_mirage-argon": {
+      "type": 196,
+      "comment": "Pet Mirage Argon"
+    },
+    "pet_designs_pet-orcus-thornspire": {
+      "type": 374,
+      "comment": "Pet Orcus Thornspire"
+    },
+    "pet_designs_pet-spectrum-phantasm": {
+      "type": 391,
+      "comment": "Pet Spectrum Phantasm"
+    },
+    "pet_designs_chimera-legend": {
+      "type": 180,
+      "comment": "Legend chimera design"
+    },
+    "pet_designs_pet-berserker-nobilis": {
+      "type": 362,
+      "comment": "Pet Berserker Nobilis"
+    },
+    "pet_designs_green": {
+      "type": 162,
+      "comment": "Green pet design"
+    },
+    "pet_designs_pet-diminisher-argon": {
+      "type": 204,
+      "comment": "Pet Diminisher Argon"
+    },
+    "pet_designs_pet-hammerclaw-inferno": {
+      "type": 312,
+      "comment": "Pet Hammerclaw Inferno"
+    },
+    "pet_designs_pet-spectrum-harbinger": {
+      "type": 345,
+      "comment": "Pet Spectrum Harbinger"
+    },
+    "pet_designs_pet-citadel-samurai": {
+      "type": 370,
+      "comment": "Pet Citadel Samurai"
+    },
+    "pet_designs_pet-citadel-phantasm": {
+      "type": 398,
+      "comment": "Pet Citadel Phantasm"
+    },
+    "pet_designs_pet-sentinel-legend": {
+      "type": 203,
+      "comment": "Pet Sentinel Legend"
+    },
+    "pet_designs_pet-a-elite-poison": {
+      "type": 172,
+      "comment": "a-elite-pet-poison"
+    },
+    "pet_designs_pet-cyborg-inferno": {
+      "type": 270,
+      "comment": "Pet Cyborg Inferno"
+    },
+    "pet_designs_pet-pusat-ocean": {
+      "type": 175,
+      "comment": "Pet Pusat Ocean"
+    },
+    "pet_designs_pet-retiarus-wyvern": {
+      "type": 392,
+      "comment": "Pet Retiarus Wyvern"
+    },
+    "pet_designs_pet-berserker-lava": {
+      "type": 335,
+      "comment": "Pet Berserker Lava"
+    },
+    "pet_designs_pet-goliath-x-argon": {
+      "type": 207,
+      "comment": "Pet Goliath X Argon"
+    },
+    "pet_designs_pet-cyborg-horus": {
+      "type": 356,
+      "comment": "Pet Cyborg Horus"
+    },
+    "pet_designs_pet-solace-enigma": {
+      "type": 372,
+      "comment": "Pet Solace Enigma"
+    },
+    "pet_designs_pet-hammerclaw-nobilis": {
+      "type": 373,
+      "comment": "Pet Hammerclaw Nobilis"
+    },
+    "pet_designs_pet-a-elite-sandstorm": {
+      "type": 173,
+      "comment": "a-elite-pet-sandstorm"
+    },
+    "pet_designs_pet-a-elite-empyrian": {
+      "type": 342,
+      "comment": "Pet A-Elite Empyrian"
+    },
+    "pet_designs_pet-pusat-carbonite": {
+      "type": 365,
+      "comment": "Pet Pusat Carbonite"
+    },
+    "pet_designs_pet-goliath-x-lava": {
+      "type": 208,
+      "comment": "Pet Goliath X Lava"
+    }
+  }
+}

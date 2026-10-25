@@ -1,0 +1,285 @@
+{
+  "_source": "main.swf DefineBinaryData 187 / patterns.drones.designs + ItemDataProvider drone tier UpgradableTrait values",
+  "designs": {
+    "standard": 0,
+    "havok": 1,
+    "hercules": 2,
+    "beacon": 3,
+    "reaper": 4,
+    "reaper-red": 5,
+    "reaper-green": 6,
+    "reaper-blue": 7,
+    "skull": 8,
+    "skull-red": 9,
+    "skull-green": 10,
+    "skull-blue": 11,
+    "bat": 12,
+    "bat-red": 13,
+    "bat-green": 14,
+    "bat-blue": 15,
+    "demon": 16,
+    "demon-gg": 17,
+    "frozen": 18,
+    "enigma-green": 19,
+    "enigma-red": 20,
+    "enigma-orange": 21,
+    "phantom-green": 22,
+    "phantom-red": 23,
+    "phantom-orange": 24,
+    "champion": 25,
+    "pusat-lava": 26,
+    "pusat-poison": 27,
+    "pusat-sandstorm": 28,
+    "spectrum-lava": 29,
+    "spectrum-poison": 30,
+    "spectrum-sandstorm": 31,
+    "drone_designs_drone-a-elite-blaze": 32,
+    "drone_designs_drone-a-elite-lava": 33,
+    "drone_designs_drone-a-elite-ocean": 34,
+    "drone_designs_drone-a-elite-poison": 35,
+    "drone_designs_drone-a-elite-sandstorm": 36,
+    "pusat-blaze": 37,
+    "pusat-ocean": 38,
+    "spectrum-blaze": 39,
+    "spectrum-ocean": 40,
+    "phantom-poison": 41,
+    "phantom-ocean": 42,
+    "phantom-argon": 43,
+    "phantom-lava": 44,
+    "phantom-legend": 45,
+    "drone-goliath-x-borealis": 46,
+    "drone-goliath-x-ocean": 47,
+    "drone-goliath-x": 48,
+    "drone-goliath-x-sandstorm": 49,
+    "drone-inferno": 50,
+    "drone-hammerclaw": 53,
+    "drone-cyborg": 52,
+    "drone-spartan": 54,
+    "enigma-ocean": 55,
+    "enigma-argon": 56,
+    "drone-hammerclaw-argon": 57,
+    "drone-hammerclaw-lava": 62,
+    "drone-cyborg-argon": 58,
+    "drone-cyborg-lava": 63,
+    "enigma-poison": 59,
+    "drone-enigma-legend": 60,
+    "drone-enigma-lava": 61,
+    "drone-g-champion-legend": 64,
+    "drone-g-champion-lava": 66,
+    "drone-g-champion-argon": 65,
+    "drone-g-champion-silver": 67,
+    "drone-senitel-lava": 68,
+    "drone-senitel-argon": 69,
+    "drone-senitel-legend": 70,
+    "drone-sentinel-harbinger": 119,
+    "drone-diminisher-lava": 71,
+    "drone-diminisher-argon": 72,
+    "drone-diminisher-legend": 73,
+    "drone-goliath-x-lava": 74,
+    "drone-goliath-x-argon": 75,
+    "drone-goliath-x-legend": 76,
+    "drone-cyborg-carbonite": 77,
+    "drone-hammerclaw-carbonite": 78,
+    "drone-enigma-carbonite": 79,
+    "drone-designs-hermes": 80,
+    "drone-g-champion-dusklight": 81,
+    "drone-hammerclaw-legend": 82,
+    "drone-diminisher-dusklight": 83,
+    "drone-berserker-silver": 84,
+    "drone-eostra": 85,
+    "drone_sentinel_dusklight": 86,
+    "drone_berserker_ace": 87,
+    "drone-centurion-dusklight": 88,
+    "drone-centurion-seraph": 120,
+    "drone-goliath-x-dusklight": 121,
+    "drone-berserker-blaze": 122,
+    "drone-sentinel-seraph": 123,
+    "drone-berserker-legend": 124,
+    "drone-berserker-lava": 125,
+    "drone-berserker-argon": 126,
+    "drone-berserker-dusklight": 127,
+    "drone-berserker-borealis": 128,
+    "drone-centurion-harbinger": 129,
+    "drone-berserker-sandstorm": 130,
+    "drone-champion-eostrana": 131,
+    "drone-pusat-dusklight": 132,
+    "drone-cyborg-dusklight": 133,
+    "drone-hammerclaw-dusklight": 134,
+    "drone-cerberus": 135,
+    "drone-diminisher-seraph": 136,
+    "drone-pusat-legend": 137,
+    "drone-sentinel-mobius": 138,
+    "drone-centurion-carbonite": 139,
+    "drone-diminisher-inferno": 140,
+    "drone-champion-eostrax": 141,
+    "drone-diminisher-elysium": 143,
+    "drone-infiltrator": 142,
+    "drone-cyborg-horus": 144,
+    "drone-cyborg-sandstorm": 145,
+    "drone-pusat-argon": 146,
+    "drone-diminisher-eldritch": 147,
+    "drone-cyborg-legend": 148,
+    "drone-orcus-viking": 149,
+    "drone-artemis": 150,
+    "drone-sentinel-carbonite": 151,
+    "drone-goliath-dogma": 152,
+    "drone-cyborg-inferno": 153,
+    "drone-champion-albania": 154,
+    "drone-champion-austria": 155,
+    "drone-champion-belgium": 156,
+    "drone-champion-croatia": 157,
+    "drone-champion-czechia": 158,
+    "drone-champion-denmark": 159,
+    "drone-champion-england": 160,
+    "drone-champion-france": 161,
+    "drone-champion-georgia": 162,
+    "drone-champion-germany": 163,
+    "drone-champion-hungary": 164,
+    "drone-champion-italy": 165,
+    "drone-champion-netherlands": 166,
+    "drone-champion-poland": 167,
+    "drone-champion-portugal": 168,
+    "drone-champion-romania": 169,
+    "drone-champion-scotland": 170,
+    "drone-champion-serbia": 171,
+    "drone-champion-slovakia": 172,
+    "drone-champion-slovenia": 173,
+    "drone-champion-spain": 174,
+    "drone-champion-switzerland": 175,
+    "drone-champion-turkey": 176,
+    "drone-champion-ukraine": 177,
+    "drone-intimidator": 178,
+    "drone-cyborg-elysium": 179,
+    "drone-citadel-samurai": 180,
+    "drone-solace-enigma": 181,
+    "drone-orcus-thornspire": 182,
+    "drone-archeron": 183,
+    "drone-paladin-khepri": 184,
+    "drone-hammerclaw-sandstorm": 185,
+    "drone-sentinel-inferno": 186,
+    "drone-erythros": 187,
+    "drone-champion-brazil": 188,
+    "drone-champion-argentina": 189,
+    "drone-champion-america": 190,
+    "drone-champion-mexico": 191,
+    "drone_designs_skull-dreadwing": 192,
+    "drone-goliath-x-carbonite": 193,
+    "drone-cerberus-inferno": 194,
+    "drone-citadel-viking": 195,
+    "spectrum-carbonite": 196,
+    "drone-retiarus-wyvern": 197,
+    "drone-lepus": 199,
+    "drone-solace-striker": 200,
+    "drone-solace-inferno": 201,
+    "drone-centurion-lava": 202,
+    "drone_designs_xanthos": 203,
+    "drone_designs_hyperion": 204,
+    "drone_diminisher_carbonite": 205
+  },
+  "upgrades": {
+    "drone_apis": {
+      "0": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.5
+      },
+      "1": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      },
+      "2": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      },
+      "3": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      },
+      "4": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      },
+      "5": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      }
+    },
+    "drone_flax": {
+      "0": {
+        "DRONE_SHIELD_UPGRADE": 0.4,
+        "DRONE_DAMAGE_UPGRADE": 0.5
+      },
+      "1": {
+        "DRONE_SHIELD_UPGRADE": 0.4,
+        "DRONE_DAMAGE_UPGRADE": 0.2
+      },
+      "2": {
+        "DRONE_SHIELD_UPGRADE": 0.4,
+        "DRONE_DAMAGE_UPGRADE": 0.2
+      },
+      "3": {
+        "DRONE_SHIELD_UPGRADE": 0.4,
+        "DRONE_DAMAGE_UPGRADE": 0.2
+      },
+      "4": {
+        "DRONE_SHIELD_UPGRADE": 0.4,
+        "DRONE_DAMAGE_UPGRADE": 0.2
+      },
+      "5": {
+        "DRONE_SHIELD_UPGRADE": 0.4,
+        "DRONE_DAMAGE_UPGRADE": 0.2
+      }
+    },
+    "drone_iris": {
+      "0": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.5
+      },
+      "1": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      },
+      "2": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      },
+      "3": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      },
+      "4": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      },
+      "5": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      }
+    },
+    "drone_zeus": {
+      "0": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.5
+      },
+      "1": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      },
+      "2": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      },
+      "3": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      },
+      "4": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      },
+      "5": {
+        "DRONE_SHIELD_UPGRADE": 1,
+        "DRONE_DAMAGE_UPGRADE": 0.4
+      }
+    }
+  }
+}
