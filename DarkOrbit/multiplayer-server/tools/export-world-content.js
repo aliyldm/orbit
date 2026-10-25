@@ -19,6 +19,12 @@ try {
    staticCommands:commands.filter((c,i)=>staticNames.has(c._)&&(firstGate<0||i<firstGate)),
    afterCommands:commands.filter((c,i)=>staticNames.has(c._)&&firstGate>=0&&i>firstGate)};
  }),npcTemplate:require(path.join(legacy,'game/templates/npc-ship.json'))};
+ const ammoTemplates={};
+ const walk=v=>{if(!v||typeof v!=='object')return;if(v._==='MenuItemStatusCommand'&&/^ammunition_laser_/.test(v.menuItemId))ammoTemplates[v.menuItemId]=v;for(const x of Object.values(v))if(x&&typeof x==='object')walk(x);};
+ walk(require(path.join(legacy,'game/templates/init.json')));output.ammoTemplates=ammoTemplates;
+ output.rewardHulls=require(path.join(legacy,'game/ship-passives')).DEFINITIONS;
+ const boosters=require(path.join(legacy,'game/boosters'));
+ output.rewardBoosters=Object.fromEntries(Object.entries(boosters.definitions).filter(([id])=>boosters.isSupported(id)).map(([id,d])=>[id,d.boostList.filter(b=>['EXPERIENCE_POINTS','HONOUR_POINTS'].includes(b.type)).reduce((out,b)=>{out[b.type]=(out[b.type]||0)+b.factor;return out;},{})]));
  const serialized=JSON.stringify(output,null,2)+'\n';
  const destination=path.resolve(__dirname,'../src/DarkOrbit.Server/World/world-content.json');
  fs.mkdirSync(path.dirname(destination),{recursive:true});fs.writeFileSync(destination,serialized);

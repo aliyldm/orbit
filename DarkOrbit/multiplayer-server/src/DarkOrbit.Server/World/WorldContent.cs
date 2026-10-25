@@ -10,14 +10,17 @@ public sealed class WorldContent
     public static WorldContent Default { get; } = Load();
     public IReadOnlyDictionary<int, MapContent> Maps { get; }
     public JsonObject NpcTemplate { get; }
-    private WorldContent(Dictionary<int, MapContent> maps, JsonObject template) { Maps = maps; NpcTemplate = template; }
+    public JsonObject AmmoTemplates { get; }
+    public JsonObject RewardHulls { get; }
+    public JsonObject RewardBoosters { get; }
+    private WorldContent(Dictionary<int, MapContent> maps, JsonObject template, JsonObject ammoTemplates, JsonObject hulls, JsonObject boosters) { Maps = maps; NpcTemplate = template; AmmoTemplates = ammoTemplates; RewardHulls = hulls; RewardBoosters = boosters; }
     private static WorldContent Load()
     {
         using var stream = typeof(WorldContent).Assembly.GetManifestResourceStream("WorldContent.json")!;
         var doc = JsonNode.Parse(stream)!;
         if (doc["format"]!.GetValue<int>() != 1) throw new InvalidDataException("Unsupported world content");
         var maps = doc["maps"]!.AsArray().Select(m => new MapContent(m!.AsObject())).ToDictionary(m => m.Id);
-        return new(maps, doc["npcTemplate"]!.AsObject());
+        return new(maps, doc["npcTemplate"]!.AsObject(), doc["ammoTemplates"]!.AsObject(), doc["rewardHulls"]!.AsObject(), doc["rewardBoosters"]!.AsObject());
     }
 }
 

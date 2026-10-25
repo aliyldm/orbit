@@ -15,7 +15,7 @@ public sealed record NativePilot(long PlayerId, long AccountId, int ServerId, in
     public bool Dead => Profile["hitPoints"]!.GetValue<double>() <= 0;
     public int Faction => Profile["factionId"]!.GetValue<int>();
     public int Level => Profile["level"]?.GetValue<int>() ?? Commands.First(c => c!["_"]!.GetValue<string>() == "ShipInitializationCommand")!["level"]!.GetValue<int>();
-    public bool Cloaked => Commands.First(c => c!["_"]!.GetValue<string>() == "ShipInitializationCommand")!["cloaked"]!.GetValue<bool>();
+    public bool Cloaked => Profile["cloaked"]?.GetValue<bool>() ?? Commands.First(c => c!["_"]!.GetValue<string>() == "ShipInitializationCommand")!["cloaked"]!.GetValue<bool>();
     private static readonly HashSet<string> MapCommands = ["AssetCreateCommand", "SpaceStationCommand", "MapAddPOICommand", "QuestGiversAvailableCommand", "MapAssetActionAvailableCommand", "JumpgateCreateCommand", "POIReadyCommand", "BeaconCommand", "AddBoxCommand", "AddOreCommand"];
     public JsonObject Create(double x, double y)
     {
@@ -35,7 +35,12 @@ public sealed record NativePilot(long PlayerId, long AccountId, int ServerId, in
         {
             var command = node!.DeepClone().AsObject(); string name = command["_"]!.GetValue<string>();
             if (world is not null && MapCommands.Contains(name)) continue;
-            if (name == "ShipInitializationCommand") { command["x"] = (int)Math.Round(X); command["y"] = (int)Math.Round(Y); command["mapId"] = MapId; }
+            if (name == "ShipInitializationCommand")
+            {
+                command["x"] = (int)Math.Round(X); command["y"] = (int)Math.Round(Y); command["mapId"] = MapId;
+                command["cloaked"] = Cloaked;
+                foreach (var field in new[] { "credits", "uridium", "ep", "honourPoints", "level" }) if (Profile[field] is { } value) command[field] = value.DeepClone();
+            }
             if (name == "BeaconCommand") { command["positionX"] = (int)Math.Round(X); command["positionY"] = (int)Math.Round(Y); command["positionAheadX"] = (int)Math.Round(X); command["positionAheadY"] = (int)Math.Round(Y); }
             yield return NativeFrames.Frame(codec.Encode(command));
         }
@@ -65,7 +70,11 @@ public sealed partial class NativePlayerRepository
     }
     public async Task<NativePilot?> Load(long playerId, CancellationToken cancellation = default)
     {
-        await using var command = source.CreateCommand($"SELECT id,account_id,server_id,map_id,x,y,profile::text,initial_commands::text FROM {schema}.players WHERE id=$1");
+        await using var command = source.CreateCommand($"""
+        SELECT p.id,p.account_id,p.server_id,p.map_id,p.x,p.y,
+          (p.profile || CASE WHEN e.player_id IS NULL THEN jsonb_build_object() ELSE jsonb_build_object('credits',e.credits,'uridium',e.uridium,'ep',e.ep,'honourPoints',e.honour,'level',e.level) END)::text,p.initial_commands::text
+        FROM {schema}.players p LEFT JOIN {schema}.player_economy e ON e.player_id=p.id WHERE p.id=$1
+        """);
         command.Parameters.AddWithValue(playerId); await using var reader = await command.ExecuteReaderAsync(cancellation);
         return await reader.ReadAsync(cancellation) ? new(reader.GetInt64(0), reader.GetInt64(1), reader.GetInt32(2), reader.GetInt32(3), reader.GetDouble(4), reader.GetDouble(5), JsonNode.Parse(reader.GetString(6))!.AsObject(), JsonNode.Parse(reader.GetString(7))!.AsArray()) : null;
     }
@@ -81,6 +90,12 @@ public sealed partial class NativePlayerRepository
         await using var command = source.CreateCommand($"UPDATE {schema}.players SET connection_owner=$1,connection_fence=$2 WHERE id=$3 AND connection_fence<$2");
         command.Parameters.AddWithValue(lease.Owner); command.Parameters.AddWithValue(lease.Fence); command.Parameters.AddWithValue(playerId);
         return await command.ExecuteNonQueryAsync() == 1;
+    }
+    public async Task<IReadOnlyDictionary<string, long>> Ammo(long playerId)
+    {
+        await using var command = source.CreateCommand($"SELECT loot_id,sum(amount)::bigint FROM {schema}.inventory_items WHERE player_id=$1 AND ship_id IS NULL AND loot_id LIKE 'ammunition_laser_%' GROUP BY loot_id");
+        command.Parameters.AddWithValue(playerId); await using var reader = await command.ExecuteReaderAsync(); Dictionary<string, long> result = [];
+        while (await reader.ReadAsync()) result[reader.GetString(0)] = reader.GetInt64(1); return result;
     }
     public async Task<bool> SavePosition(long playerId, ConnectionLease lease, int mapId, double x, double y)
     {

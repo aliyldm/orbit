@@ -68,6 +68,14 @@ public sealed class WorldDirectory(Func<MapKey, MapActor> factory) : IAsyncDispo
         finally { admission.Release(); }
         return map is not null && await map.Status(lease, faction, dead, cloaked, jumping);
     }
+    public async Task<DarkOrbit.Server.World.CommittedAttack?> AttackNpc(SessionLease lease, int target, int damage, double absorb, double range, DarkOrbit.Server.World.ShotDebit debit, Func<System.Text.Json.Nodes.JsonObject, DarkOrbit.Server.World.NpcReward> reward)
+    {
+        MapActor? map;
+        await admission.WaitAsync();
+        try { map = online.TryGetValue(lease.PlayerId, out var current) && current.Lease == lease ? current.Map : null; }
+        finally { admission.Release(); }
+        return map is null ? null : await map.AttackNpc(lease, target, damage, absorb, range, debit, reward);
+    }
     public async Task<IReadOnlyDictionary<MapKey, System.Text.Json.Nodes.JsonObject[]>> Tick()
     {
         MapActor[] actors;

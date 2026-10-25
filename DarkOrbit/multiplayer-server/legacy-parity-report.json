@@ -1,0 +1,1464 @@
+{
+  "format": 1,
+  "scope": "Source inventory and port evidence; not a claim that legacy templates or the new server are fully functional.",
+  "sourceFingerprint": "7fe19b56f25eff2fee191d58db45294571d2ae16c7fa9e2b83d2afb8c91f429f",
+  "fullGameplayReady": false,
+  "summary": {
+    "legacyNativeCommands": 106,
+    "nativeCoverage": {
+      "not_ported": 96,
+      "partial": 8,
+      "ported": 2
+    },
+    "legacyTables": 60,
+    "tableCoverage": {
+      "partial": 8,
+      "archive_only": 52
+    },
+    "legacyInventoryActions": 20,
+    "legacyLiteralHttpPaths": 19,
+    "featureCoverage": {
+      "partial": 3,
+      "not_ported": 21,
+      "intentionally_off": 2
+    }
+  },
+  "commands": [
+    {
+      "name": "ActivationRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "AssemblyBuildRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "AssemblyCollectAllRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "AssemblyCollectRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "AssemblyRecipeSelectRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "AssemblySetFilterRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "AssemblySkipRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "AttackAbortLaserRequest",
+      "status": "partial",
+      "note": "Outgoing classic laser loop only.",
+      "nativeBranch": true
+    },
+    {
+      "name": "AttackLaserRequest",
+      "status": "partial",
+      "note": "Outgoing classic damage-only loadouts; modern procs/drains, NPC retaliation and live stats pending.",
+      "nativeBranch": true
+    },
+    {
+      "name": "AttackRocketRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "AudioSettingsRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "BattlePassCollectRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "BattlePassKeyExchangeRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "BattlePassSetFilterRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "CollectBoxRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "CommandCenterGetDontShowRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "CommandCenterNewsClickedRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "CommandCenterNewsInfoRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "CommandCenterUpdateDontShowRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "ConfigChangeRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "ConvertResearchPointsRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "DailyLoginClaimTodayRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "DailyLoginRewardDayRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "DisassemblyRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "DisplaySettingsRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "GalaxyGateBuilderBuyLifeRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "GalaxyGateBuilderGetGatePartsRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "GalaxyGateBuilderInfoRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "GalaxyGateBuilderMultiEnergyRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "GalaxyGateBuilderSaveSpinAmountRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "GalaxyGateBuilderSetupGateRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "GameplaySettingsRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarListRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarShipChangeShipModelRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarShipClearConfigRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarShipDetailRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarShipEquipmentRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarShipFavouriteRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarShipImportConfigRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarShipLoadConfigRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarShipMoveItemsRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarShipRenamePetRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarShipRepairDroneRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarShipSaveConfigRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HangarShipSellDroneRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HarvestRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "HintWindowClosedRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "InstantRepairRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "JumpCPUSelectRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "JumpCPUUpdateRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "JumpRequest",
+      "status": "partial",
+      "note": "Normal portals verified; Galaxy Gate transition/rules pending.",
+      "nativeBranch": true
+    },
+    {
+      "name": "KeepAlive",
+      "status": "ported",
+      "note": "Authenticated no-op plus independent session heartbeat.",
+      "nativeBranch": true
+    },
+    {
+      "name": "KillScreenRepairRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "LabRefinementRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "LabUpdateItemRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "LabUpdateRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "LegacyModule",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "LoginRequest",
+      "status": "partial",
+      "note": "Existing account/password/ticket and projected initialization; new account/feature repositories pending.",
+      "nativeBranch": true
+    },
+    {
+      "name": "LogoutCancelRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "MapAssetActivationRequest",
+      "status": "partial",
+      "note": "Normal jumpgates only; trade/quest/repair and other assets pending.",
+      "nativeBranch": true
+    },
+    {
+      "name": "MenuActionRequest",
+      "status": "partial",
+      "note": "Five classic laser ammunition choices/RSB return; other menu actions pending.",
+      "nativeBranch": true
+    },
+    {
+      "name": "MoveRequest",
+      "status": "partial",
+      "note": "Authoritative shared motion; full dynamic speed and pirate field effects pending.",
+      "nativeBranch": true
+    },
+    {
+      "name": "PetGearActivationRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "PetRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "QualitySettingsRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "QuantumFluidCoreRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "QuestAcceptRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "QuestCancelRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "QuestGiverApproachedRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "QuestGiverWindowClosedRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "QuestInfoRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "QuestListRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "QuestSettingsRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "ReadyRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "ResetSettingsRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "ResetSkillTreeRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "ReturneeLoginHideUIItemRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "SeasonPassLevelPurchaseRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "SeasonPassRefreshRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "SeasonPassRewardClaimAllRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "SeasonPassRewardClaimRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "ShipSelectRequest",
+      "status": "partial",
+      "note": "Shared normal NPC state; special shields and full multiplayer targeting pending.",
+      "nativeBranch": true
+    },
+    {
+      "name": "ShipWarpRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "ShopItemBuyRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "ShopItemListRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "SkillTreeListRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "SlotBarConfigSetRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "TrackVariableRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "TradeRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "TradeSellOreRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "TrinityTrialsClaimPassRewardRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "TrinityTrialsGateEnterRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "TrinityTrialsUIRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "UIButtonTriggerRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "UIWindowSettingsRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "UIWindowUpdateRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "UnstableModuleRecycleRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "UnstableModuleRerollRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "UnstableModuleRestabiliseRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "UpLevelSkillTreeRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "UserKeyBindingsUpdate",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "VersionRequest",
+      "status": "ported",
+      "note": "Original version echo/accept contract.",
+      "nativeBranch": true
+    },
+    {
+      "name": "VoyagersClaimPassRewardRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "VoyagersGateEnterRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "VoyagersUIRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    },
+    {
+      "name": "WindowSettingsRequest",
+      "status": "not_ported",
+      "note": "No .NET dispatcher branch.",
+      "nativeBranch": false
+    }
+  ],
+  "tables": [
+    {
+      "name": "accounts",
+      "status": "partial",
+      "runtime": "accounts",
+      "note": "Existing hashes copied; registration/account lifecycle pending."
+    },
+    {
+      "name": "assembly_jobs",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "assembly_usage",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "cpu_charges",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "daily_login_claims",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "drone_equipment",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "drone_settings",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "drones",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "equipment_config2",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "equipment_saved",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "galaxy_gate_accounts",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "galaxy_gate_completion_claims",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "galaxy_gate_kill_claims",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "galaxy_gate_progress",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "galaxy_gate_runs",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "item_types",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "items",
+      "status": "partial",
+      "runtime": "inventory_items",
+      "note": "All snapshot rows retained; ammunition debit live, equip/sell/upgrade and other mutations pending."
+    },
+    {
+      "name": "local_repairs",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "loot_claims",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "map_spawns",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "maps",
+      "status": "partial",
+      "runtime": "maps + WorldContent",
+      "note": "Normal geometry/portals; private gate worlds pending."
+    },
+    {
+      "name": "normal_spawn_state",
+      "status": "partial",
+      "runtime": "world_checkpoints + npc_reward_claims",
+      "note": "New shared world lifecycle persists; per-pilot legacy NPC state needs cutover reconciliation."
+    },
+    {
+      "name": "normal_world_versions",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "npc_types",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "payment_event_accounts",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "payment_event_claims",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "payment_event_exchanges",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "payment_event_progress",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "payment_event_receipts",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "payment_purchase_receipts",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "pet_equipment",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "pet_gear_state",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "pets",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "player_boosters",
+      "status": "partial",
+      "runtime": "active_boosters",
+      "note": "Rows/expiry and reward effects live; full stat/activation lifecycle pending."
+    },
+    {
+      "name": "player_hangar_accounts",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "player_hangar_purchases",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "player_hangar_slots",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "player_ore_buffs",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "player_quests",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "player_resources",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "player_skills",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "players",
+      "status": "partial",
+      "runtime": "players + player_economy + profile projection",
+      "note": "Identity/position/wallet live; other fields/repositories pending."
+    },
+    {
+      "name": "portals",
+      "status": "partial",
+      "runtime": "WorldContent",
+      "note": "Normal topology exported; dynamic player/group gate portals pending."
+    },
+    {
+      "name": "quest_definitions",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "quest_event_receipts",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "quest_reward_claims",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "rank_counters",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "rank_daily",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "rank_npc_claims",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "schema_migrations",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "settings",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "ship_config_shields",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "ship_designs",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "ship_types",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "ships",
+      "status": "partial",
+      "runtime": "owned_ships + profile projection",
+      "note": "Ownership/type and initial projection; live hull/config/vitals/equipment pending."
+    },
+    {
+      "name": "skill_accounts",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "skylab_accounts",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "skylab_modules",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "skylab_resources",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    },
+    {
+      "name": "skylab_transports",
+      "status": "archive_only",
+      "runtime": null,
+      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+    }
+  ],
+  "inventoryActions": [
+    {
+      "name": "getHangarList",
+      "status": "not_ported"
+    },
+    {
+      "name": "getHangar",
+      "status": "not_ported"
+    },
+    {
+      "name": "getShipDetails",
+      "status": "not_ported"
+    },
+    {
+      "name": "activateShip",
+      "status": "not_ported"
+    },
+    {
+      "name": "setFavourite",
+      "status": "not_ported"
+    },
+    {
+      "name": "sell",
+      "status": "not_ported"
+    },
+    {
+      "name": "sellMultiple",
+      "status": "not_ported"
+    },
+    {
+      "name": "changeShipModel",
+      "status": "not_ported"
+    },
+    {
+      "name": "getCompatibleShips",
+      "status": "not_ported"
+    },
+    {
+      "name": "importConfig",
+      "status": "not_ported"
+    },
+    {
+      "name": "move",
+      "status": "not_ported"
+    },
+    {
+      "name": "droneEquip",
+      "status": "not_ported"
+    },
+    {
+      "name": "moveDroneDesign",
+      "status": "not_ported"
+    },
+    {
+      "name": "clearConfig",
+      "status": "not_ported"
+    },
+    {
+      "name": "saveConfig",
+      "status": "not_ported"
+    },
+    {
+      "name": "loadConfig",
+      "status": "not_ported"
+    },
+    {
+      "name": "repairDrone",
+      "status": "not_ported"
+    },
+    {
+      "name": "sellDrone",
+      "status": "not_ported"
+    },
+    {
+      "name": "unlockSlot",
+      "status": "not_ported"
+    },
+    {
+      "name": "setAbCpuAmmo",
+      "status": "not_ported"
+    }
+  ],
+  "httpPaths": [
+    {
+      "name": "/",
+      "status": "not_ported"
+    },
+    {
+      "name": "/ajax/hangar.php",
+      "status": "not_ported"
+    },
+    {
+      "name": "/ajax/shop.php",
+      "status": "not_ported"
+    },
+    {
+      "name": "/ajax/upgrade-bulk.php",
+      "status": "not_ported"
+    },
+    {
+      "name": "/api/client-view",
+      "status": "not_ported"
+    },
+    {
+      "name": "/crossdomain.xml",
+      "status": "not_ported"
+    },
+    {
+      "name": "/faction",
+      "status": "not_ported"
+    },
+    {
+      "name": "/flashAPI/brNews.php",
+      "status": "not_ported"
+    },
+    {
+      "name": "/flashAPI/dailyLogin.php",
+      "status": "not_ported"
+    },
+    {
+      "name": "/flashAPI/inventory.php",
+      "status": "not_ported"
+    },
+    {
+      "name": "/flashAPI/loadingScreen.php",
+      "status": "not_ported"
+    },
+    {
+      "name": "/game",
+      "status": "not_ported"
+    },
+    {
+      "name": "/health",
+      "status": "partial"
+    },
+    {
+      "name": "/index.es",
+      "status": "not_ported"
+    },
+    {
+      "name": "/indexInternal.es",
+      "status": "stub_501"
+    },
+    {
+      "name": "/login",
+      "status": "partial"
+    },
+    {
+      "name": "/logout",
+      "status": "partial"
+    },
+    {
+      "name": "/spacemap/xml/maps.php",
+      "status": "not_ported"
+    },
+    {
+      "name": "/spacemap/xml/profile.xml",
+      "status": "not_ported"
+    }
+  ],
+  "portalPages": [
+    {
+      "name": "internalAuction.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalClan~internalClanChangeFirm.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalCompanyChoose.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalDock.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalDock~internalDockAmmo.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalDock~internalDockBooster.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalDock~internalDockCustomization.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalDock~internalDockDrones.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalDock~internalDockGenerator.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalDock~internalDockLaser.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalDock~internalDockPetGear.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalDock~internalDockPetProtocols.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalDock~internalDockShipModel.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalDock~internalDockShips.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalDock~internalDockSpecials.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalEvoucher.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalMapRevolution.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalNewClan.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalNewClanDetails.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalPayment.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalPilotSheet.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalSkylab.html",
+      "status": "not_ported"
+    },
+    {
+      "name": "internalStart.html",
+      "status": "not_ported"
+    }
+  ],
+  "features": [
+    {
+      "id": "auth",
+      "name": "Existing login/session/reconnect",
+      "status": "partial",
+      "source": "game/auth.js; game/db/players.js",
+      "note": "New account/company selection and full lifecycle pending."
+    },
+    {
+      "id": "world",
+      "name": "Normal maps, shared NPCs and normal portals",
+      "status": "partial",
+      "source": "game/maps.js; game/combat.js; game/normal-map-runtime.js",
+      "note": "Durable shared normal world implemented; special NPCs and full field effects pending."
+    },
+    {
+      "id": "classic-lasers",
+      "name": "Classic outgoing laser/RSB",
+      "status": "partial",
+      "source": "game/combat.js; game/ammo.js",
+      "note": "75 formula cases and native fire verified; live stat rebuilding/CPU/skill effects incomplete."
+    },
+    {
+      "id": "modern-lasers",
+      "name": "Modern lasers, drains and proc effects",
+      "status": "not_ported",
+      "source": "game/modern-lasers.js; game/laser-ammo.js",
+      "note": "Unsupported loadouts/ammo are rejected rather than silently using a classic fallback."
+    },
+    {
+      "id": "retaliation",
+      "name": "NPC retaliation, player death and paid respawn",
+      "status": "not_ported",
+      "source": "game/combat.js; game/respawn.js",
+      "note": "Critical before shared play."
+    },
+    {
+      "id": "rockets",
+      "name": "Rockets, hellstorm launcher and advanced weapons",
+      "status": "not_ported",
+      "source": "game/hellstorm.js; game/advanced-weapons.js",
+      "note": "Manual/automatic rockets, reload, charges and effects."
+    },
+    {
+      "id": "cpu",
+      "name": "Supported CPUs and automation",
+      "status": "not_ported",
+      "source": "game/cpu.js; game/automation.js",
+      "note": "Preserve supported source behavior; seven previously disabled CPUs remain outside the required feature set."
+    },
+    {
+      "id": "cargo",
+      "name": "Cargo, ore/box collection and trade",
+      "status": "not_ported",
+      "source": "game/collectables.js; game/loot-rewards.js",
+      "note": "Capacity, residual cargo, drop tables, stations/HM7/PET and claim ownership."
+    },
+    {
+      "id": "equipment",
+      "name": "Hangars, inventory, configurations and sales",
+      "status": "not_ported",
+      "source": "game/inventory.js; web/inventory-api.js; game/hangars.js",
+      "note": "Snapshot rows exist; live UI/API/equipment operations are not ported."
+    },
+    {
+      "id": "stats",
+      "name": "Live bonuses and upgrade-derived stats",
+      "status": "not_ported",
+      "source": "game/stats.js; game/db/players.js",
+      "note": "Frozen derived profile is not a live stat engine."
+    },
+    {
+      "id": "drones",
+      "name": "Drones, designs, formations and set bonuses",
+      "status": "not_ported",
+      "source": "game/drones.js; game/drone-designs.js",
+      "note": "Opening decorations remain projected; behavior/equipment/UI pending."
+    },
+    {
+      "id": "pet",
+      "name": "PET modules, protocols, fuel and progression",
+      "status": "not_ported",
+      "source": "game/pet.js; game/pet-special.js",
+      "note": "All source modes/activation/menu lifecycle need port and tests."
+    },
+    {
+      "id": "skills",
+      "name": "Research tree and reset",
+      "status": "not_ported",
+      "source": "game/skills.js; web/skills-api.js",
+      "note": "Costs, bonuses and native/portal controls."
+    },
+    {
+      "id": "lab",
+      "name": "Ore enrichment and ammunition/time buffs",
+      "status": "not_ported",
+      "source": "game/handlers/lab.js",
+      "note": "Quantities, bonus application and depletion."
+    },
+    {
+      "id": "abilities",
+      "name": "Ship abilities, passives, techs and utilities",
+      "status": "not_ported",
+      "source": "game/ship-abilities.js; game/ship-abilities-expanded.js; game/techs.js",
+      "note": "Only hull reward bonuses have been wired into payouts."
+    },
+    {
+      "id": "assembly",
+      "name": "Assembly, repeat production and module currency",
+      "status": "not_ported",
+      "source": "game/assembly.js; web/assembly-api.js",
+      "note": "CV-M/UP-M economy and all previously working native tabs."
+    },
+    {
+      "id": "upgrade",
+      "name": "Single/bulk upgrades and level bonuses",
+      "status": "not_ported",
+      "source": "game/upgrade-bulk.js; web/upgrade-api.js",
+      "note": "Upgrade jobs, costs, quantities and native layout."
+    },
+    {
+      "id": "shop",
+      "name": "Shop/catalog/special offers and purchase restrictions",
+      "status": "not_ported",
+      "source": "game/economy.js; web/portal/shop-*.js",
+      "note": "Prices, sorting, ownership and transaction effects must match the source."
+    },
+    {
+      "id": "gates",
+      "name": "All Galaxy Gates and opening/completion conditions",
+      "status": "not_ported",
+      "source": "game/galaxy-gates.js; game/kronos.js; game/hades-bosses.js",
+      "note": "Private isolation exists; actual gate content/waves/requirements/rewards are not ported."
+    },
+    {
+      "id": "progression",
+      "name": "Quests, ranks, gate rings and NPC points",
+      "status": "not_ported",
+      "source": "game/ranks.js; game/handlers/systems.js; game/gate-rings.js",
+      "note": "Wallet EP/level updates work; other progression ledgers and calculations pending."
+    },
+    {
+      "id": "events",
+      "name": "Daily login, campaigns and event windows",
+      "status": "not_ported",
+      "source": "game/native-rewards.js; game/payment-events.js",
+      "note": "Repeat guards, original UI and portal synchronization."
+    },
+    {
+      "id": "settings",
+      "name": "Settings, hotkeys and graphics/drone visibility",
+      "status": "not_ported",
+      "source": "game/handlers/core.js; game/client-view.js",
+      "note": "Original assets unchanged; persisted settings handlers are pending."
+    },
+    {
+      "id": "portal",
+      "name": "Original web/Flash API and game bootstrap",
+      "status": "not_ported",
+      "source": "web/http-server.js; web/boot-api.js",
+      "note": "indexInternal remains501 and /ready503."
+    },
+    {
+      "id": "pvp-group",
+      "name": "Multiplayer reward ownership, PvP and groups",
+      "status": "not_ported",
+      "source": "new multiplayer semantics",
+      "note": "Current classic prototype pays the finishing attacker; original claim/group rules are pending."
+    },
+    {
+      "id": "maze",
+      "name": "5-x maze",
+      "status": "intentionally_off",
+      "source": "game/pirate-maze.js",
+      "note": "User explicitly requested it remain disabled."
+    },
+    {
+      "id": "skylab",
+      "name": "Skylab requirement",
+      "status": "intentionally_off",
+      "source": "game/skylab.js",
+      "note": "User explicitly requested no Skylab requirement; source is retained."
+    }
+  ]
+}

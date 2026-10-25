@@ -1,5 +1,29 @@
 # DarkOrbit çok oyunculu sunucu geçişi
 
+## Güncel — Aşama 4: atomik klasik ateş ve kalıcı normal dünya
+
+Klasik MP-1/LF-1..4 ve LCB/MCB/UCB/RSB için native ateş, eski hasar formülleriyle yeni harita aktörüne bağlandı. **75 eski formül senaryosu / 302 kontrol**, **9 TCP istemcisi / 64 kontrol** geçti. İki oyuncu aynı lazer/hasar/imha paketini görür; RSB bir salvodan sonra önceki normal cephaneye döner. Cephane miktarı PostgreSQL'den gelir. Bu kapsam modern lazer/proc, SAB/drain, roket/launcher, NPC karşı ateşi veya canlı ekipman bonuslarının tamamı değildir; desteklenmeyen yükler klasik hasara sessizce düşürülmez.
+
+NPC checkpoint'i, çoklu yığın cephane düşümü ve ölüm nesli/ödülü aynı PG işleminde yazılır. Son adım hata verirse hasar/cephane/ödül birlikte geri alınır. Sonucu belirsiz kayıt hatasında harita yazmaya devam etmez. NPC nesli/can/kalkan/respawn ve rota kaydı yeniden yüklenir; eski saldırı hedefi yeni bağlantıya taşınmaz. Kalıcı 1s lazer/3s RSB saatleri yeniden girişle aşılamaz. Farklı işlem kimliği aynı ölümü ikinci kez ödeyemez. **25 gerçek PG kontrolü PASS**: kesirli/büyük bakiye, tekrar, eşzamanlı öldürme, geç hata, yeniden açma ve bağlantı/dünya sahipliği.
+
+Ödülün skill/formasyon aşaması uyumluluk profilinden; gövde ve süresi geçmemiş EP/şeref booster aşamaları PG'deki sahiplik/süre kayıtlarından hesaplanır. EP/şeref veren gemi modülleri tam politika portu beklediğinden bu profiller ilk klasik ateş kapsamının dışında tutulur. Envanter snapshot'ının tüm satırları saklanır; şu an yalnız cephane işlemleri canlıdır. `NativePilot.Profile` hâlâ türetilmiş stat projeksiyonudur. Diğer envanter, rütbe, PET, arge veya görev verileri canlı port edildi diye sunulmaz.
+
+Geliştirme runtime şeması **2**. Eski `mp_*` geliştirme şemasının üstüne yazılmaz: `tools/bootstrap-native-development.ps1` yeni rastgele şema oluşturur. Kaynak SQLite kullanılmaya devam eder; eski snapshot canlı oyuncu verisinin üstüne konmaz. Bir sunucu kimliği için PG süreli sahiplik/nesli aynı anda ikinci hostu engeller. Harita başına dağıtım ve tam oyun yük testi henüz yoktur.
+
+Kapsam denetimi: [LEGACY-PARITY.md](LEGACY-PARITY.md), [adlarıyla komut/tablo/API listesi](legacy-parity-report.json). Eski **1.073 test PASS**, 196 kaynak/ayar/istemci checksum'ı aynı. Eski sunucunun 106 native komutunun yalnız2'si tam,8'i kısmi kapsamdadır;96'sı port bekler. Tablo arşivi ve kaynak dosyasının mevcut olması çalışan .NET özelliği değildir. `/ready`503 ve web portalı501 kalır; ortak oynanabilir paket henüz yayımlanmadı.
+
+```powershell
+node tools/generate-classic-combat-contract.js
+node tools/export-world-content.js
+dotnet build DarkOrbit.Multiplayer.slnx -m:1
+dotnet run --project tools/DarkOrbit.Verify --no-build -- laser
+./tools/verify-native.ps1 -Mode combat
+./tools/verify-native.ps1
+node tools/audit-legacy-parity.js --check
+```
+
+Aşağıdaki aşamalar önceki kilometre taşlarının tarihçesidir.
+
 ## Güncel — Aşama 3: ortak normal dünya ve portal geçişi
 
 32 normal harita, 96 portal ve 951 NPC yuvası eski oyunun **yalnız bellekte açılan** veritabanından üretilir; hesap verisi katalogda yoktur. `tools/export-world-content.js`, C#'a gömülen `World/world-content.json` ile 405 farklı harita/şirket/konum için eski paket sözleşmesini üretir. **5.648 dünya kontrolü PASS**: portal paket sırası, şirket erişimi, istasyon/barış alanı, NPC'nin ortak can/kalkanı, tek ölüm nesli, yeniden doğuş ve ayrılan hedefin devriyesine dönüşü. NPC simülasyonu harita aktörünün tek yazıcı kuyruğunda çalışır. Normal NPC durumu şimdilik bellektedir; sunucu yeniden başlayınca korunması ve özel NPC/eskort mekanikleri henüz port edilmedi.

@@ -45,7 +45,7 @@ public sealed class NativeGameServer(NativeGameHub hub, NativeGameOptions option
                 // Register before starting: an immediate rejection cannot leave a
                 // completed connection trapped in the connection limit forever.
                 var start = new TaskCompletionSource(TaskCreationOptions.RunContinuationsAsynchronously);
-                var work = Task.Run(async () => { await start.Task; try { await connection.Run(); } catch { connection.Close(); } finally { connections.TryRemove(id, out _); } });
+                var work = Task.Run(async () => { await start.Task; try { await connection.Run(); } catch (Exception e) { Console.Error.WriteLine($"Native connection failed ({e.GetType().Name})"); connection.Close(); } finally { connections.TryRemove(id, out _); } });
                 connections[id] = (connection, work); start.SetResult();
             }
         }

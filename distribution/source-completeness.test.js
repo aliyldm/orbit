@@ -13,3 +13,7 @@ test('every .NET source and embedded world catalog is included in Git distributi
  assert(files.some(name=>name.endsWith('/Runtime/MapActor.cs')),'test includes the actual map actor');
  assert.deepEqual(files.filter(name=>!tracked.has(name)),[],'missing .NET source in clean downloads');
 });
+test('legacy parity inventory stays current with source registrations and schema names',()=>{
+ const root=path.resolve(__dirname,'..');
+ execFileSync(process.execPath,['tools/audit-legacy-parity.js','--check'],{cwd:path.join(root,'DarkOrbit/multiplayer-server'),maxBuffer:1024*1024});
+});

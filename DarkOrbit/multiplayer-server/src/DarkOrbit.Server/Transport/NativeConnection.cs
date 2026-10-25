@@ -23,6 +23,9 @@ internal sealed class NativeConnection(TcpClient client, NativeGameHub hub, int 
     internal int? Selected;
     internal readonly Dictionary<int, bool> PortalStates = [];
     internal long LastBeacon;
+    internal int? Attacking;
+    internal string Ammo = DarkOrbit.Server.World.ClassicLaser.Default, PreviousAmmo = DarkOrbit.Server.World.ClassicLaser.Default;
+    internal long NextLaser, NextRsb;
     internal bool IsClosed => closed.IsCancellationRequested;
     internal void Close()
     {

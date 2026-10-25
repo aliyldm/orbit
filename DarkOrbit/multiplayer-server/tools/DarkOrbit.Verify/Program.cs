@@ -12,6 +12,8 @@ using Npgsql;
 if (args.Length == 1 && args[0] == "storage") { await StorageVerification.Run(); return; }
 if (args.Length == 1 && args[0] == "native") { await NativeVerification.Run(); return; }
 if (args.Length == 1 && args[0] == "world") { await WorldVerification.Run(); return; }
+if (args.Length == 1 && args[0] == "combat") { await CombatVerification.Run(); return; }
+if (args.Length == 1 && args[0] == "laser") { await ClassicLaserVerification.Run(); return; }
 
 if (args.Length > 0 && args[0] == "bootstrap")
 {
@@ -29,6 +31,7 @@ if (args.Length > 0 && args[0] == "import")
     Console.WriteLine(JsonSerializer.Serialize(result, new JsonSerializerOptions { WriteIndented = true })); return;
 }
 
+if (args.Length > 0) throw new ArgumentException("Unknown verification mode");
 var clock = Stopwatch.StartNew(); int assertions = 0;
 void Check(bool condition, string label) { Interlocked.Increment(ref assertions); if (!condition) throw new InvalidOperationException(label); }
 void Throws(Action fn, string label)

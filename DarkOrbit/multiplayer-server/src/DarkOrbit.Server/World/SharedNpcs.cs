@@ -1,4 +1,6 @@
 using System.Text.Json.Nodes;
+using System.Security.Cryptography;
+using System.Text;
 using DarkOrbit.Server.Runtime;
 
 namespace DarkOrbit.Server.World;
@@ -24,11 +26,13 @@ internal sealed class SharedNpcs
     private readonly MapContent map;
     private readonly Random random;
     private readonly Dictionary<int, Npc> npcs = [];
-    private readonly Guid run = Guid.NewGuid();
+    private Guid run = Guid.NewGuid();
+    private readonly string definitionHash;
     private long previousTick;
     internal SharedNpcs(MapContent map, long now, int? seed = null)
     {
         this.map = map; random = seed is { } s ? new Random(s) : Random.Shared; previousTick = now;
+        definitionHash = Convert.ToHexStringLower(SHA256.HashData(Encoding.UTF8.GetBytes($"{map.Id}:{map.Width}:{map.Height}:" + map.Spawns.ToJsonString())));
         int id = 100000;
         foreach (var row in map.Spawns)
             for (int i = 0; i < row!["count"]!.GetValue<int>(); i++)
@@ -41,7 +45,7 @@ internal sealed class SharedNpcs
     {
         npc.Hp = npc.MaxHp; npc.Shield = npc.MaxShield; npc.X = Math.Round(Between(500, map.Width - 500)); npc.Y = Math.Round(Between(500, map.Height - 500));
         npc.HomeX = npc.X; npc.HomeY = npc.Y; npc.Target = null; npc.Route = null; npc.Returning = false; npc.Fleeing = false;
-        npc.Generation++; npc.DeadUntil = 0; npc.NextWander = now + (long)Between(1000, 4000); npc.LastHit = 0;
+        npc.Generation++; npc.DeadUntil = 0; npc.NextWander = now + (long)Between(1000, 4000); npc.LastHit = 0; npc.HasHit = false;
     }
     private void Update(Npc npc, long now)
     {
@@ -92,7 +96,7 @@ internal sealed class SharedNpcs
                 else if (n.Route is null) Move(n, n.HomeX, n.HomeY, now, events);
                 continue;
             }
-            if (n.Number("fleeAt", 0) > 0 && n.Flag("fleeToCorner", false) && n.Speed > 0 && n.Hp <= n.MaxHp * n.Number("fleeAt", 0) && (n.LastHit > 0 || n.Target is not null || n.Fleeing))
+            if (n.Number("fleeAt", 0) > 0 && n.Flag("fleeToCorner", false) && n.Speed > 0 && n.Hp <= n.MaxHp * n.Number("fleeAt", 0) && (n.HasHit || n.Target is not null || n.Fleeing))
             {
                 if (!n.Fleeing)
                 {
@@ -131,11 +135,57 @@ internal sealed class SharedNpcs
     internal NpcSnapshot[] Snapshots(long now) => npcs.Values.Where(n => n.Hp > 0).Select(n => { Update(n, now); return Snapshot(n, now); }).ToArray();
     internal NpcDamage Damage(Pilot pilot, int target, int damage, double absorb, double range, long now)
     {
-        if (!Eligible(pilot) || damage <= 0 || !double.IsFinite(absorb) || !double.IsFinite(range) || range < 0 || !npcs.TryGetValue(target, out var n) || n.Hp <= 0) return new(false, false, null, null);
+        if (!Eligible(pilot) || damage < 0 || !double.IsFinite(absorb) || !double.IsFinite(range) || range < 0 || !npcs.TryGetValue(target, out var n) || n.Hp <= 0) return new(false, false, null, null);
         Update(n, now); if (Distance(n.X, n.Y, pilot.X, pilot.Y) > range) return new(false, false, null, null);
-        int shield = Math.Min(n.Shield, (int)Math.Round(damage * Math.Clamp(absorb, 0, 1))); n.Shield -= shield; n.Hp = Math.Max(0, n.Hp - (damage - shield)); n.LastHit = now; n.Target = pilot.Lease; n.Returning = false;
+        int shield = Math.Min(n.Shield, (int)Math.Round(damage * Math.Clamp(absorb, 0, 1))); n.Shield -= shield; n.Hp = Math.Max(0, n.Hp - (damage - shield)); if (damage > 0) { n.LastHit = now; n.HasHit = true; } n.Target = pilot.Lease; n.Returning = false;
         bool killed = n.Hp == 0; if (killed) { n.DeadUntil = now + Math.Max(1, n.Def["respawnMs"]!.GetValue<int>()); n.Route = null; n.Target = null; }
         return new(true, killed, Snapshot(n, now), killed ? $"{run:N}:{n.Id}:{n.Generation}" : null);
+    }
+    internal JsonObject Definition(int id) => npcs[id].Def.DeepClone().AsObject();
+    internal JsonObject Capture(long now, long utc)
+    {
+        var rows = new JsonArray();
+        foreach (var n in npcs.Values)
+        {
+            Update(n, now);
+            rows.Add(new JsonObject { ["id"] = n.Id, ["key"] = n.Def["key"]?.DeepClone(), ["generation"] = n.Generation,
+                ["hp"] = n.Hp, ["shield"] = n.Shield, ["x"] = n.X, ["y"] = n.Y, ["homeX"] = n.HomeX, ["homeY"] = n.HomeY,
+                ["deadFor"] = Math.Max(0, n.DeadUntil - now), ["wanderIn"] = Math.Max(0, n.NextWander - now), ["hitAgo"] = n.HasHit ? Math.Max(0, now - n.LastHit) : -1,
+                ["returning"] = n.Returning, ["fleeing"] = n.Fleeing,
+                ["targetId"] = n.Target?.PlayerId, ["targetLease"] = n.Target?.ConnectionId.ToString("N"),
+                ["route"] = n.Route is { } r ? new JsonObject { ["x"] = r.TargetX, ["y"] = r.TargetY, ["duration"] = Math.Max(0, r.Start + r.Duration - now) } : null });
+        }
+        return new JsonObject { ["format"] = 1, ["definition"] = definitionHash, ["run"] = run.ToString("N"), ["savedAt"] = utc, ["npcs"] = rows };
+    }
+    internal void Restore(JsonObject state, long now, long utc, bool restart)
+    {
+        if (state["format"]!.GetValue<int>() != 1 || state["definition"]!.GetValue<string>() != definitionHash || state["npcs"]!.AsArray().Count != npcs.Count) throw new InvalidDataException("World checkpoint/catalog mismatch");
+        run = Guid.ParseExact(state["run"]!.GetValue<string>(), "N");
+        long elapsed = Math.Max(0, utc - state["savedAt"]!.GetValue<long>());
+        var seen = new HashSet<int>();
+        foreach (var row in state["npcs"]!.AsArray())
+        {
+            int id = row!["id"]!.GetValue<int>();
+            if (!seen.Add(id) || !npcs.TryGetValue(id, out var n) || row["key"]?.GetValue<string>() != n.Def["key"]?.GetValue<string>()) throw new InvalidDataException("World NPC identity changed");
+            n.Generation = row["generation"]!.GetValue<int>(); n.Hp = row["hp"]!.GetValue<int>(); n.Shield = row["shield"]!.GetValue<int>();
+            n.X = row["x"]!.GetValue<double>(); n.Y = row["y"]!.GetValue<double>(); n.HomeX = row["homeX"]!.GetValue<double>(); n.HomeY = row["homeY"]!.GetValue<double>();
+            if (n.Generation <= 0 || n.Hp < 0 || n.Hp > n.MaxHp || n.Shield < 0 || n.Shield > n.MaxShield || !double.IsFinite(n.X) || !double.IsFinite(n.Y) || !double.IsFinite(n.HomeX) || !double.IsFinite(n.HomeY) || n.X < 0 || n.X > map.Width || n.Y < 0 || n.Y > map.Height || n.HomeX < 0 || n.HomeX > map.Width || n.HomeY < 0 || n.HomeY > map.Height) throw new InvalidDataException("Invalid NPC checkpoint values");
+            n.DeadUntil = now + Math.Max(0, row["deadFor"]!.GetValue<long>() - elapsed); n.NextWander = now + Math.Max(0, row["wanderIn"]!.GetValue<long>() - elapsed);
+            long ago = row["hitAgo"]!.GetValue<long>(); n.HasHit = ago >= 0; n.LastHit = ago < 0 ? 0 : now - ago - elapsed;
+            n.Returning = row["returning"]!.GetValue<bool>(); n.Fleeing = row["fleeing"]!.GetValue<bool>(); n.Target = null; n.Route = null;
+            if (row["route"] is { } route)
+            {
+                double x = route["x"]!.GetValue<double>(), y = route["y"]!.GetValue<double>(); long duration = route["duration"]!.GetValue<long>();
+                if (!double.IsFinite(x) || !double.IsFinite(y) || x < 0 || x > map.Width || y < 0 || y > map.Height || duration < 0) throw new InvalidDataException("Invalid NPC route checkpoint");
+                double ratio = duration <= 0 ? 1 : Math.Clamp((double)elapsed / duration, 0, 1); n.X += (x - n.X) * ratio; n.Y += (y - n.Y) * ratio;
+                if (duration > elapsed) n.Route = new(n.X, n.Y, x, y, now, (int)Math.Min(int.MaxValue, duration - elapsed));
+            }
+            if (row["targetId"] is { } target)
+            {
+                if (!restart) n.Target = new SessionLease(target.GetValue<long>(), Guid.ParseExact(row["targetLease"]!.GetValue<string>(), "N"));
+                else if (n.Hp > 0 && n.Flag("chase", true) && n.Speed > 0 && Distance(n.X, n.Y, n.HomeX, n.HomeY) > 2) { n.Returning = true; n.Route = null; }
+            }
+        }
     }
     private static NpcSnapshot Snapshot(Npc n, long now) => new(n.Id, n.Def["key"]?.GetValue<string>() ?? "", n.Def["typeId"]!.GetValue<int>(), n.Def["name"]!.GetValue<string>(), n.X, n.Y, n.Hp, n.MaxHp, n.Shield, n.MaxShield, n.Generation, n.Target?.PlayerId, n.Returning,
         n.Route is { } r ? new((int)r.TargetX, (int)r.TargetY, (int)Math.Clamp(r.Start + r.Duration - now, 0, int.MaxValue)) : null);
@@ -151,7 +201,7 @@ internal sealed class SharedNpcs
         internal double X, Y, HomeX, HomeY;
         internal long LastHit, NextWander, NextSteer, DeadUntil;
         internal SessionLease? Target;
-        internal bool Returning, Fleeing;
+        internal bool Returning, Fleeing, HasHit;
         internal Route? Route;
         internal double Number(string key, double fallback) => Behavior[key]?.GetValue<double>() ?? fallback;
         internal bool Flag(string key, bool fallback) => Behavior[key]?.GetValue<bool>() ?? fallback;

@@ -15839,5 +15839,3390 @@
       "minimapStrategy": 0
     },
     "specialNpcType": ""
+  },
+  "ammoTemplates": {
+    "ammunition_laser_lcb-10": {
+      "_": "MenuItemStatusCommand",
+      "visible": true,
+      "selected": true,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_lcb-10",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "5000",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_lcb-10",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 4,
+      "blocked": false,
+      "counterValue": 5000,
+      "activatable": true,
+      "menuItemId": "ammunition_laser_lcb-10",
+      "available": true,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_lcb-10",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "5000",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_lcb-10",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_lcb-10"
+    },
+    "ammunition_laser_mcb-25": {
+      "_": "MenuItemStatusCommand",
+      "visible": true,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_mcb-25",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_mcb-25",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_mcb-25",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_mcb-25",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_mcb-25",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_mcb-25"
+    },
+    "ammunition_laser_mcb-50": {
+      "_": "MenuItemStatusCommand",
+      "visible": true,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_mcb-50",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_mcb-50",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_mcb-50",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_mcb-50",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_mcb-50",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_mcb-50"
+    },
+    "ammunition_laser_ucb-100": {
+      "_": "MenuItemStatusCommand",
+      "visible": true,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_ucb-100",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_ucb-100",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_ucb-100",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_ucb-100",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_ucb-100",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_ucb-100"
+    },
+    "ammunition_laser_sab-50": {
+      "_": "MenuItemStatusCommand",
+      "visible": true,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_sab-50",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_sab-50",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_sab-50",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_sab-50",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_sab-50",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_sab-50"
+    },
+    "ammunition_laser_cbo-100": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_cbo-100",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_cbo-100",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_cbo-100",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_cbo-100",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_cbo-100",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_cbo-100"
+    },
+    "ammunition_laser_rsb-75": {
+      "_": "MenuItemStatusCommand",
+      "visible": true,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_rsb-75",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_rsb-75",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_rsb-75",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_rsb-75",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_rsb-75",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_rsb-75"
+    },
+    "ammunition_laser_job-100": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_job-100",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_job-100",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_job-100",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_job-100",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_job-100",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_job-100"
+    },
+    "ammunition_laser_rb-214": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_rb-214",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_rb-214",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_rb-214",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_rb-214",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_rb-214",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_rb-214"
+    },
+    "ammunition_laser_pib-100": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_pib-100",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_pib-100",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_pib-100",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_pib-100",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_pib-100",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_pib-100"
+    },
+    "ammunition_laser_spacecup_group-a": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-a",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-a",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_spacecup_group-a",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-a",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-a",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_spacecup_group-a"
+    },
+    "ammunition_laser_spacecup_group-b": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-b",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-b",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_spacecup_group-b",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-b",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-b",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_spacecup_group-b"
+    },
+    "ammunition_laser_spacecup_group-c": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-c",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-c",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_spacecup_group-c",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-c",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-c",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_spacecup_group-c"
+    },
+    "ammunition_laser_spacecup_group-d": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-d",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-d",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_spacecup_group-d",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-d",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-d",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_spacecup_group-d"
+    },
+    "ammunition_laser_spacecup_group-e": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-e",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-e",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_spacecup_group-e",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-e",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-e",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_spacecup_group-e"
+    },
+    "ammunition_laser_spacecup_group-f": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-f",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-f",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_spacecup_group-f",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-f",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-f",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_spacecup_group-f"
+    },
+    "ammunition_laser_spacecup_group-g": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-g",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-g",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_spacecup_group-g",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-g",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-g",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_spacecup_group-g"
+    },
+    "ammunition_laser_spacecup_group-h": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-h",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-h",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_spacecup_group-h",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_spacecup_group-h",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_spacecup_group-h",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_spacecup_group-h"
+    },
+    "ammunition_laser_a-bl": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_a-bl",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_a-bl",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_a-bl",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_a-bl",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_a-bl",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_a-bl"
+    },
+    "ammunition_laser_rcb-140": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_rcb-140",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_rcb-140",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_rcb-140",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_rcb-140",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_rcb-140",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_rcb-140"
+    },
+    "ammunition_laser_idb-125": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_idb-125",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_idb-125",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_idb-125",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_idb-125",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_idb-125",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 7
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_idb-125"
+    },
+    "ammunition_laser_vb-142": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_vb-142",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_vb-142",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 4
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_vb-142",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_vb-142",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_vb-142",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 4
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_vb-142"
+    },
+    "ammunition_laser_emaa-20": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_emaa-20",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_emaa-20",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 4
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_emaa-20",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_emaa-20",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_emaa-20",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 4
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_emaa-20"
+    },
+    "ammunition_laser_sbl-100": {
+      "_": "MenuItemStatusCommand",
+      "visible": false,
+      "selected": false,
+      "toolTipSlotBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_sbl-100",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_sbl-100",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 4
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "counterStyle": 1,
+      "blocked": false,
+      "counterValue": 0,
+      "activatable": false,
+      "menuItemId": "ammunition_laser_sbl-100",
+      "available": false,
+      "toolTipItemBar": {
+        "_": "MessageKeyListWildcardCommand",
+        "commandList": [
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%TYPE%",
+                "replacement": "ammunition_laser_sbl-100",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 1
+                }
+              }
+            ],
+            "baseKey": "ttip_laser",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [
+              {
+                "_": "MessageWildcardReplacementModule",
+                "wildcard": "%COUNT%",
+                "replacement": "0",
+                "replacementType": {
+                  "_": "ReplacementTypeModule",
+                  "typeValue": 0
+                }
+              }
+            ],
+            "baseKey": "ttip_count",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ammunition_laser_sbl-100",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 4
+            },
+            "textStyle": 0
+          },
+          {
+            "_": "MessageKeyListWildcardModule",
+            "wildCardReplacements": [],
+            "baseKey": "ttip_double_click_to_fire",
+            "baseKeyType": {
+              "_": "ReplacementTypeModule",
+              "typeValue": 5
+            },
+            "textStyle": 0
+          }
+        ]
+      },
+      "buyable": false,
+      "maxCounterValue": 1000,
+      "iconLootId": "ammunition_laser_sbl-100"
+    }
+  },
+  "rewardHulls": {
+    "ship_g-enforcer": {
+      "damage": 0.05
+    },
+    "ship_g-bastion": {
+      "shield": 0.1
+    },
+    "ship_g-veteran": {
+      "ep": 0.1
+    },
+    "ship_g-exalted": {
+      "honour": 0.1
+    },
+    "ship_solace": {
+      "shield": 0.1
+    },
+    "ship_sentinel": {
+      "shield": 0.1
+    },
+    "ship_spectrum": {
+      "shield": 0.25
+    },
+    "ship_diminisher": {
+      "damage": 0.05
+    },
+    "ship_venom": {
+      "damage": 0.05
+    },
+    "ship_v-lightning": {
+      "damage": 0.05
+    },
+    "ship_g-referee": {
+      "damage": 0.05
+    },
+    "ship_v-revenge": {
+      "damage": 0.05
+    },
+    "ship_g-kick": {
+      "shield": 0.1
+    },
+    "ship_v-avenger": {
+      "shield": 0.1
+    },
+    "ship_g-goal": {
+      "ep": 0.1
+    },
+    "ship_v-adept": {
+      "ep": 0.1
+    },
+    "ship_bb-solemn": {
+      "ep": 0.1
+    },
+    "ship_v-corsair": {
+      "honour": 0.1
+    },
+    "ship_g-champion": {
+      "damage": 0.05,
+      "honour": 0.1
+    },
+    "ship_g-centaur": {
+      "hit": 0.1
+    },
+    "ship_g-saturn": {
+      "hit": 0.2
+    },
+    "ship_g-surgeon": {
+      "damage": 0.06,
+      "ep": 0.06,
+      "honour": 0.06
+    },
+    "ship_solace-plus": {
+      "shield": 0.15
+    },
+    "ship_hecate": {
+      "damage": 0.07,
+      "shield": 0.1
+    },
+    "ship_cyborg": {
+      "damage": 0.1
+    },
+    "ship_mimesis": {
+      "shield": 0.1,
+      "shieldPenetration": 0.05
+    },
+    "ship_spearhead-plus": {
+      "evasion": 0.05
+    },
+    "ship_a-veteran": {
+      "ep": 0.05,
+      "honour": 0.05
+    },
+    "ship_c-veteran": {
+      "ep": 0.05,
+      "honour": 0.05
+    },
+    "ship_s-veteran": {
+      "ep": 0.05,
+      "honour": 0.05
+    },
+    "ship_a-elite": {
+      "damage": 0.05
+    },
+    "ship_c-elite": {
+      "damage": 0.05
+    },
+    "ship_s-elite": {
+      "damage": 0.05
+    }
+  },
+  "rewardBoosters": {
+    "booster_p-ep-b01": {},
+    "booster_res-b01": {},
+    "booster_dmg-h01": {},
+    "booster_ep-dlb": {
+      "EXPERIENCE_POINTS": 25
+    },
+    "booster_rep-s01": {},
+    "booster_ep-50": {
+      "EXPERIENCE_POINTS": 50
+    },
+    "booster_hon-50": {
+      "HONOUR_POINTS": 50
+    },
+    "booster_rep-b01": {},
+    "booster_bb-01": {},
+    "booster_npc-b02": {},
+    "booster_hon-b01": {
+      "HONOUR_POINTS": 10
+    },
+    "booster_shd-dlb": {},
+    "booster_hp-dlb": {},
+    "booster_shd-b01": {},
+    "booster_cd-b01": {},
+    "booster_ephon-1": {
+      "EXPERIENCE_POINTS": 100,
+      "HONOUR_POINTS": 100
+    },
+    "booster_kappa-b01": {
+      "EXPERIENCE_POINTS": 5
+    },
+    "booster_cd-b02": {},
+    "booster_ep-b02": {
+      "EXPERIENCE_POINTS": 10
+    },
+    "booster_hp-b02": {},
+    "booster_dmg-b01": {},
+    "booster_hon-b02": {
+      "HONOUR_POINTS": 10
+    },
+    "booster_sreg-b02": {},
+    "booster_cd-dlb": {},
+    "booster_sreg-b01": {},
+    "booster_dmg-dlb": {},
+    "booster_shd-b02": {},
+    "booster_hp-b01": {},
+    "booster_rep-b02": {},
+    "booster_res-b02": {},
+    "booster_dmg-b02": {},
+    "booster_hon-dlb": {
+      "HONOUR_POINTS": 10
+    },
+    "booster_npc-b01": {},
+    "booster_ep-b01": {
+      "EXPERIENCE_POINTS": 10
+    },
+    "booster_dmg-dlb2": {}
   }
 }

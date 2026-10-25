@@ -8,7 +8,7 @@ using DarkOrbit.Server.World;
 
 namespace DarkOrbit.Server.Transport;
 
-public sealed class NativeGameHub : IAsyncDisposable
+public sealed partial class NativeGameHub : IAsyncDisposable
 {
     public LegacyCodec Codec { get; } = new();
     private readonly NativePlayerRepository players;
@@ -23,13 +23,15 @@ public sealed class NativeGameHub : IAsyncDisposable
     private readonly CancellationTokenSource stopping = new();
     private readonly ConcurrentDictionary<long, PendingJump> jumps = [];
     private readonly Task simulation;
+    private readonly CombatRepository? combat;
+    private long lastWorldRenew = Environment.TickCount64;
     private static readonly TimeSpan LeaseLifetime = TimeSpan.FromSeconds(40);
     public int OnlineCount => online.Count;
     public bool WorldHealthy => !simulation.IsFaulted && !stopping.IsCancellationRequested;
-    public NativeGameHub(NativePlayerRepository players, RedisSessions tickets, IReadOnlyDictionary<int, MapDefinition> maps, int serverId)
+    public NativeGameHub(NativePlayerRepository players, RedisSessions tickets, IReadOnlyDictionary<int, MapDefinition> maps, int serverId, CombatRepository? combat = null)
     {
-        this.players = players; this.tickets = tickets; this.maps = maps; this.serverId = serverId;
-        directory = new(key => { var map = maps[key.MapId]; return new MapActor(key, map.Width, map.Height, content: content.Maps.GetValueOrDefault(key.MapId)); });
+        this.players = players; this.tickets = tickets; this.maps = maps; this.serverId = serverId; this.combat = combat;
+        directory = new(key => { var map = maps[key.MapId]; return new MapActor(key, map.Width, map.Height, content: content.Maps.GetValueOrDefault(key.MapId), persistence: combat); });
         simulation = RunWorld();
     }
     public Task<MapSnapshot?> Snapshot(MapKey key) => directory.Snapshot(key);
@@ -48,6 +50,9 @@ public sealed class NativeGameHub : IAsyncDisposable
         if (name == "JumpRequest") await Jump(connection, null);
         if (name == "MapAssetActivationRequest") await Jump(connection, command["mapAssetId"]!.GetValue<int>());
         if (name == "ShipSelectRequest") await Select(connection, command["targetId"]!.GetValue<int>());
+        if (name == "AttackLaserRequest") await StartLaser(connection, command["targetId"]!.GetValue<int>());
+        if (name == "AttackAbortLaserRequest") await StopLaser(connection);
+        if (name == "MenuActionRequest") await LaserAction(connection, command);
         // Other native feature requests remain unsupported during the port. No
         // success/reward is fabricated; /ready remains false until full parity.
         return true;
@@ -89,6 +94,7 @@ public sealed class NativeGameHub : IAsyncDisposable
                 await directory.Status(connection.MapLease, pilot.Faction, pilot.Dead, pilot.Cloaked, false);
                 online[id] = connection;
                 foreach (var packet in initial) if (!connection.Send(packet)) throw new IOException("Initial queue exceeded");
+                if (combat is not null) await AmmoStatus(connection);
                 var snapshot = (await directory.Snapshot(connection.Map))!;
                 ShowNpcs(connection, snapshot);
                 foreach (var peer in Peers(connection.Map, connection).ToArray())
@@ -190,6 +196,7 @@ public sealed class NativeGameHub : IAsyncDisposable
             await directory.Move(connection.MapLease, position.X, position.Y);
             foreach (var peer in Peers(connection.Map, connection)) peer.Send(Movement(new MapMotion(pilot.PlayerId, position.X, position.Y, 0)));
             connection.Jumping = true; connection.Selected = null;
+            AbortLaser(connection);
             await directory.Status(connection.MapLease, pilot.Faction, pilot.Dead, pilot.Cloaked, true);
             connection.Send(new JsonObject { ["_"] = "JumpInitiatedCommand", ["mapId"] = portal.Target, ["gateId"] = portal.Id });
             jumps[pilot.PlayerId] = new(connection, portal, Environment.TickCount64 + 2000);
@@ -250,6 +257,18 @@ public sealed class NativeGameHub : IAsyncDisposable
         {
             while (await timer.WaitForNextTickAsync(stopping.Token))
             {
+                if (combat is not null && Environment.TickCount64 - lastWorldRenew >= 5000)
+                {
+                    if (!await combat.Renew()) throw new AuthenticationException("Lost world authority");
+                    lastWorldRenew = Environment.TickCount64;
+                }
+                foreach (var connection in online.Values.Where(c => c.Ready && !c.IsClosed && c.Attacking is not null && Environment.TickCount64 >= c.NextLaser).ToArray())
+                {
+                    var gate = pilotLocks[connection.Pilot!.PlayerId]; await gate.WaitAsync(stopping.Token);
+                    try { await FireLaser(connection); }
+                    catch (Exception e) { connection.Close(); Console.Error.WriteLine($"Native laser transaction failed ({e.GetType().Name})"); }
+                    finally { gate.Release(); }
+                }
                 foreach (var pair in jumps.ToArray()) if (pair.Value.Due <= Environment.TickCount64)
                 {
                     try { await CompleteJump(pair.Key, pair.Value); }

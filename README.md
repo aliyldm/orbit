@@ -2,7 +2,7 @@
 
 Qt/Flash DarkOrbit istemcisi, çalışan yerel Node/SQLite oyun sunucusu ve .NET10/PostgreSQL/Redis çok oyunculu geçişi.
 
-**Güncel durum:** yerel oyun çalışır. Yeni .NET sunucusunda HTTP giriş/parola doğrulaması, PostgreSQL oyuncu yükleme, ortak harita görünürlüğü/hareket ve normal portal geçişi yedi TCP istemcisiyle test edildi. 32 normal haritanın 951 NPC yuvası ortak harita durumundan üretilir. NPC savaş/ödül/kalıcı dünya, canlı envanter depoları ve bütün web portalı henüz tamamlanmadığı için çok oyunculu sürümün `/ready` yanıtı **503**. İndirilen önizleme iki kişinin ortak oyun oynamasını henüz sağlamaz. Gerçek 500–1000 oyuncu kapasitesi henüz ölçülmedi. [Kalan geçiş işleri](DarkOrbit/multiplayer-server/MIGRATION-TODO.md).
+**Güncel durum:** yerel oyun korunuyor. Yeni .NET sunucusunda giriş/hareket/normal portal ile klasik outgoing lazer/RSB ateşi dokuz TCP istemcisiyle test edildi. Normal NPC checkpoint'i, cephane ve tek ölüm ödülü PG'de atomik kaydedilir. NPC karşı ateşi, modern mekanikler, canlı ekipman/stat depoları ve web portalı tamamlanmadığından `/ready` **503**. İndirilen ZIP hâlâ yerel önizlemedir; ortak oynanabilir sürüm değildir. Gerçek 500–1000 oyuncu kapasitesi ölçülmedi. [Eski sunucu ile özellik karşılaştırması](DarkOrbit/multiplayer-server/LEGACY-PARITY.md), [kalan geçiş işleri](DarkOrbit/multiplayer-server/MIGRATION-TODO.md).
 
 ## İndirip yerel oynamak
 
