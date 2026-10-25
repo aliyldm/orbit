@@ -11,6 +11,7 @@ using Npgsql;
 
 if (args.Length == 1 && args[0] == "storage") { await StorageVerification.Run(); return; }
 if (args.Length == 1 && args[0] == "native") { await NativeVerification.Run(); return; }
+if (args.Length == 1 && args[0] == "world") { await WorldVerification.Run(); return; }
 
 if (args.Length > 0 && args[0] == "bootstrap")
 {

@@ -19,6 +19,10 @@ internal sealed class NativeConnection(TcpClient client, NativeGameHub hub, int 
     internal MapKey Map;
     internal string? Ticket;
     internal bool Ready;
+    internal bool Jumping;
+    internal int? Selected;
+    internal readonly Dictionary<int, bool> PortalStates = [];
+    internal long LastBeacon;
     internal bool IsClosed => closed.IsCancellationRequested;
     internal void Close()
     {

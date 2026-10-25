@@ -2,7 +2,7 @@
   "updatedOn": "2026-10-25",
   "authorized": true,
   "goal": "Preserve current client/gameplay/account data; add .NET/PostgreSQL/Redis multiplayer architecture",
-  "phase": "native-login-presence-verified",
+  "phase": "shared-world-portals-verified",
   "productionCutover": false,
   "gameplayReady": false,
   "legacyRuntime": "../local-server",
@@ -21,11 +21,11 @@
     "postgresRuntimeSchemaReady": false,
     "legacySourceAssetChecksums": 196
   },
-  "next": "Shared NPC/collectables/portal lifecycle, actual portal/API routes, live stats/equipment repositories and authoritative combat",
+  "next": "Atomic live equipment/ammo/economy repositories and native authoritative NPC combat; shared cargo collection; complete web portal",
   "pending": [
-    "Existing account password verification and authoritative PostgreSQL repositories",
+    "Live authoritative PostgreSQL equipment/stat/economy repositories (existing password verification is implemented)",
     "Existing HTTP/Flash API and all portal feature routes",
-    "Shared NPC simulation, collectables, gates and map ownership",
+    "Shared cargo, special NPC mechanisms, Galaxy Gate lifecycle/group instances, persistent world state and map ownership",
     "Combat, PvP, PET, drones and all existing gameplay modules",
     "PostgreSQL defaults/constraints/indexes/migrations and atomic idempotent reward/economy writes",
     "Distributed session revocation propagation and ownership fencing integrated into world/database writes",
@@ -44,8 +44,8 @@
   "native": {
     "passwordCompatibility": "Node scrypt N16384 r8 p1, salt UTF8, 32byte key",
     "verifiedInitializationCommands": 1422,
-    "realTcpClients": 5,
-    "integrationAssertions": 43,
+    "realTcpClients": 7,
+    "integrationAssertions": 56,
     "postgresPlayerLoad": true,
     "webAndTcpLogin": true,
     "sharedMapPresenceAndMovement": true,
@@ -54,7 +54,9 @@
     "derivedStatEnginePorted": false,
     "liveFeatureRepositoriesPorted": false,
     "nonLoopbackBindingVerified": true,
-    "separateAdvertisedEndpointVerified": true
+    "separateAdvertisedEndpointVerified": true,
+    "sharedNormalNpcLifecycle": true,
+    "normalPortalTransfer": true
   },
   "distribution": {
     "repository": "https://github.com/aliyldm/orbit",
@@ -63,5 +65,15 @@
     "readyGateEnforced": true,
     "portablePackage": "local-preview",
     "sharedServerGameplayReady": false
+  },
+  "world": {
+    "normalMaps": 32,
+    "portals": 96,
+    "npcSlots": 951,
+    "legacyMapCases": 405,
+    "assertions": 5648,
+    "nativeCombatReady": false,
+    "npcStatePersistent": false,
+    "specialNpcMechanicsPorted": false
   }
 }

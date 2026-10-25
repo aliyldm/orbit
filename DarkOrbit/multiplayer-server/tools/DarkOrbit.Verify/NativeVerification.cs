@@ -9,6 +9,7 @@ using DarkOrbit.Server.Protocol;
 using DarkOrbit.Server.Runtime;
 using DarkOrbit.Server.Storage;
 using DarkOrbit.Server.Transport;
+using DarkOrbit.Server.World;
 using Npgsql;
 using NpgsqlTypes;
 
@@ -40,16 +41,18 @@ internal static class NativeVerification
         var mapDefinitions = await new NativePlayerRepository(source,schema).Maps();
         int privateMap = mapDefinitions.Values.First(m=>m.Private).Id;
         string fixturePassword = passwordCases[0]!["password"]!.GetValue<string>(), hash = passwordCases[0]!["stored"]!.GetValue<string>();
-        for (int index=1;index<=5;index++)
+        var jumpPortal = WorldContent.Default.Maps[4].Portals.Single(p => p.Target == 13);
+        for (int index=1;index<=7;index++)
         {
-            long id=900000+index; int mapId=index==3?2:index>=4?privateMap:1;
-            var hero = originalHero.DeepClone().AsObject(); hero["userId"]=id;hero["userName"]="Native QA "+index;hero["x"]=1000;hero["y"]=1000;hero["mapId"]=mapId;hero["speed"]=500;hero["cloaked"]=false;
+            long id=900000+index; int mapId=index==6?4:index==7?13:index==3?2:index>=4?privateMap:1;
+            int x=index==6?jumpPortal.X:1000,y=index==6?jumpPortal.Y:1000;
+            var hero = originalHero.DeepClone().AsObject(); hero["userId"]=id;hero["userName"]="Native QA "+index;hero["x"]=x;hero["y"]=y;hero["mapId"]=mapId;hero["speed"]=500;hero["cloaked"]=false;hero["level"]=18;hero["factionId"]=1;
             var profile=hero.DeepClone();
             var commands=new JsonArray(hero,new JsonObject{["_"]="DroneFormationChangeCommand",["uid"]=id,["selectedFormationId"]=0});
             await using(var account=source.CreateCommand($"INSERT INTO {q}.accounts VALUES($1,$2,$3,0)"))
             { account.Parameters.AddWithValue(id);account.Parameters.AddWithValue("nativeqa"+index);account.Parameters.AddWithValue(hash);await account.ExecuteNonQueryAsync(); }
-            await using var command=source.CreateCommand($"INSERT INTO {q}.players(id,account_id,server_id,map_id,x,y,profile,initial_commands) VALUES($1,$1,1,$2,1000,1000,$3,$4)");
-            command.Parameters.AddWithValue(id);command.Parameters.AddWithValue(mapId);command.Parameters.AddWithValue(NpgsqlDbType.Jsonb,profile.ToJsonString());command.Parameters.AddWithValue(NpgsqlDbType.Jsonb,commands.ToJsonString());await command.ExecuteNonQueryAsync();
+            await using var command=source.CreateCommand($"INSERT INTO {q}.players(id,account_id,server_id,map_id,x,y,profile,initial_commands) VALUES($1,$1,1,$2,$3,$4,$5,$6)");
+            command.Parameters.AddWithValue(id);command.Parameters.AddWithValue(mapId);command.Parameters.AddWithValue(x);command.Parameters.AddWithValue(y);command.Parameters.AddWithValue(NpgsqlDbType.Jsonb,profile.ToJsonString());command.Parameters.AddWithValue(NpgsqlDbType.Jsonb,commands.ToJsonString());await command.ExecuteNonQueryAsync();
         }
             await using var runtime=await NativeDevelopmentRuntime.Create(pg,Environment.GetEnvironmentVariable("DARKORBIT_REDIS")!,schema,new NativeGameOptions{Port=0,BindAddress="0.0.0.0",AdvertisedHost="10.42.0.1",AdvertisedPort=34567,HeartbeatInterval=TimeSpan.FromMilliseconds(250),AuthenticationTimeout=TimeSpan.FromSeconds(3)});
             runtime.Game.Start(); await using var app=NativeApplication.Build(runtime,0);await app.StartAsync();
@@ -74,11 +77,17 @@ internal static class NativeVerification
                 await using var pa=new Probe();await pa.Connect(runtime.Game.Port,a);Check((await pa.Wait(c=>c["_"]!.GetValue<string>()=="ShipInitializationCommand"))["userId"]!.GetValue<int>()==900001,"Own pilot loaded from PostgreSQL");
                 await using var pb=new Probe();await pb.Connect(runtime.Game.Port,b);await pb.Wait(c=>c["_"]!.GetValue<string>()=="ShipInitializationCommand");
                 await pa.Wait(Is("ShipCreateCommand",900002));await pb.Wait(Is("ShipCreateCommand",900001));Check(runtime.Hub.OnlineCount==2,"Second login retains first");
+                var shared = (await runtime.Hub.Snapshot(new MapKey(1,1,Guid.Empty)))!;
+                Check(shared.Npcs.Length==20,"One shared 1-1 population, not twenty NPCs per pilot");
+                await pb.Wait(Is("ShipCreateCommand",shared.Npcs[0].Id));
+                Check(pa.Commands.Where(x=>x["_"]!.GetValue<string>()=="ShipCreateCommand"&&x["npc"]!.GetValue<bool>()).Select(x=>x["userId"]!.GetValue<int>()).Order().SequenceEqual(pb.Commands.Where(x=>x["_"]!.GetValue<string>()=="ShipCreateCommand"&&x["npc"]!.GetValue<bool>()).Select(x=>x["userId"]!.GetValue<int>()).Order()),"Both TCP clients receive the same NPC identities");
+                await pa.Send(new JsonObject{["_"]="ShipSelectRequest",["targetId"]=shared.Npcs[0].Id});
+                var selection=await pa.Wait(Is("ShipSelectionCommand",shared.Npcs[0].Id));Check(selection["hitpoints"]!.GetValue<double>()==shared.Npcs[0].Hp,"Selection reads authoritative shared NPC health");
                 Check(pa.Commands.Where(Is("ShipCreateCommand",900002)).Last()["npc"]!.GetValue<bool>()==false,"Other pilot is not an NPC");
                 await using var pc=new Probe();await pc.Connect(runtime.Game.Port,c);await pc.Wait(x=>x["_"]!.GetValue<string>()=="ShipInitializationCommand");
                 await using var pg1=new Probe();await pg1.Connect(runtime.Game.Port,g1);await pg1.Wait(x=>x["_"]!.GetValue<string>()=="ShipInitializationCommand");
                 await using var pg2=new Probe();await pg2.Connect(runtime.Game.Port,g2);await pg2.Wait(x=>x["_"]!.GetValue<string>()=="ShipInitializationCommand");
-                Check(!pc.Commands.Any(x=>x["_"]!.GetValue<string>()=="ShipCreateCommand"),"Different map receives no other-map pilots");
+                Check(!pc.Commands.Any(x=>x["_"]!.GetValue<string>()=="ShipCreateCommand"&&!x["npc"]!.GetValue<bool>()),"Different map receives no other-map pilots");
                 Check(!pg1.Commands.Any(Is("ShipCreateCommand",900005))&&!pg2.Commands.Any(Is("ShipCreateCommand",900004)),"Native private gate sessions isolated");
                 int mark=pb.Commands.Length;
                 await pa.Send(new JsonObject{["_"]="MoveRequest",["positionX"]=999999,["positionY"]=999999,["targetX"]=3000,["targetY"]=1000});
@@ -96,12 +105,34 @@ internal static class NativeVerification
                 int logoutMark=replacement.Commands.Length;await bob.GetAsync("/logout");await pb.Closed.WaitAsync(TimeSpan.FromSeconds(4));await replacement.Wait(Is("ShipRemoveCommand",900002),logoutMark);Check((await bob.GetAsync("/api/game-session")).StatusCode==HttpStatusCode.Unauthorized,"Logout revokes web and active TCP");
                 await runtime.Tickets.Revoke(a["sessionID"]!.GetValue<string>());await replacement.Send(new JsonObject{["_"]="KeepAlive",["MouseClick"]=false});await replacement.Closed.WaitAsync(TimeSpan.FromSeconds(4));
                 var persisted=await runtime.Players.Load(900001);Check(persisted!.X is >=1000 and <3000,"Position saved to fenced development row");
+                using var traveler=Client();using var destination=Client();
+                var travelTicket=await Login(traveler,6);var destinationTicket=await Login(destination,7);
+                await using var pt=new Probe();await pt.Connect(runtime.Game.Port,travelTicket);
+                await using var pd=new Probe();await pd.Connect(runtime.Game.Port,destinationTicket);
+                int travelMark=pt.Commands.Length;
+                await pt.Send(new JsonObject{["_"]="JumpRequest"});
+                await pt.Wait(x=>x["_"]!.GetValue<string>()=="JumpInitiatedCommand"&&x["mapId"]!.GetValue<int>()==13,travelMark);
+                await pt.Send(new JsonObject{["_"]="MoveRequest",["positionX"]=0,["positionY"]=0,["targetX"]=0,["targetY"]=0});
+                await pt.Send(new JsonObject{["_"]="JumpRequest"});
+                var arrival=await pt.Wait(x=>x["_"]!.GetValue<string>()=="ShipInitializationCommand"&&x["mapId"]!.GetValue<int>()==13,travelMark);
+                await pd.Wait(Is("ShipCreateCommand",900006));
+                Check(arrival["x"]!.GetValue<int>()==jumpPortal.TargetX&&arrival["y"]!.GetValue<int>()==jumpPortal.TargetY,"1-4 to 4-1 jump ignores movement/duplicate requests during transition and uses the original arrival");
+                Check(!(await runtime.Hub.Snapshot(new MapKey(1,4,Guid.Empty)))!.Pilots.Any(p=>p.Lease.PlayerId==900006)&&(await runtime.Hub.Snapshot(new MapKey(1,13,Guid.Empty)))!.Pilots.Any(p=>p.Lease.PlayerId==900006),"Portal retires origin and joins the destination shared world");
+                Check((await runtime.Players.Load(900006))!.MapId==13,"Portal position is persisted under the current PostgreSQL connection fence");
+                Check(pt.Commands.Skip(travelMark).Count(x=>x["_"]!.GetValue<string>()=="JumpInitiatedCommand")==1,"Repeated jump requests produce one transition");
+                await pd.Send(new JsonObject{["_"]="MapAssetActivationRequest",["mapAssetId"]=jumpPortal.Id});
+                await pd.Send(new JsonObject{["_"]="VersionRequest",["version"]="after-invalid-gate"});await pd.Wait(x=>x["_"]!.GetValue<string>()=="VersionCommand"&&x["version"]!.GetValue<string>()=="after-invalid-gate");
+                Check(!(await runtime.Hub.Snapshot(new MapKey(1,13,Guid.Empty)))!.Pilots.Single(p=>p.Lease.PlayerId==900007).Jumping,"A distant or wrong-map portal cannot be activated");
+                int pendingMark=pt.Commands.Length;await pt.Send(new JsonObject{["_"]="JumpRequest"});await pt.Wait(x=>x["_"]!.GetValue<string>()=="JumpInitiatedCommand",pendingMark);
+                int departureMark=pd.Commands.Length;await traveler.GetAsync("/logout");await pt.Closed.WaitAsync(TimeSpan.FromSeconds(4));await pd.Wait(Is("ShipRemoveCommand",900006),departureMark);
+                await Task.Delay(2200);Check((await runtime.Players.Load(900006))!.MapId==13,"Logout cancels a pending return jump without changing the saved map");
                 Check((await alice.GetAsync("/ready")).StatusCode==HttpStatusCode.ServiceUnavailable,"Partial gameplay never advertised ready");
                 using(var policy=new TcpClient()){await policy.ConnectAsync(IPAddress.Loopback,runtime.Game.Port);var stream=policy.GetStream();await stream.WriteAsync("<policy-"u8.ToArray());await stream.WriteAsync("file-request/>\0"u8.ToArray());byte[] bytes=new byte[512];int length=await stream.ReadAsync(bytes).AsTask().WaitAsync(TimeSpan.FromSeconds(3));Check(System.Text.Encoding.UTF8.GetString(bytes,0,length).Contains("cross-domain-policy"),"Fragmented Flash policy handled");}
-                await using(var unauthorized=new Probe()){await unauthorized.Open(runtime.Game.Port);await unauthorized.Send(new JsonObject{["_"]="MoveRequest",["targetX"]=1,["targetY"]=1});await unauthorized.Closed.WaitAsync(TimeSpan.FromSeconds(4));Check(runtime.Hub.OnlineCount<=3,"Pre-login action cannot create a pilot");}
+                int beforeUnauthorized=runtime.Hub.OnlineCount;
+                await using(var unauthorized=new Probe()){await unauthorized.Open(runtime.Game.Port);await unauthorized.Send(new JsonObject{["_"]="MoveRequest",["targetX"]=1,["targetY"]=1});await unauthorized.Closed.WaitAsync(TimeSpan.FromSeconds(4));Check(runtime.Hub.OnlineCount==beforeUnauthorized,"Pre-login action cannot create a pilot");}
             }
             finally { await app.StopAsync(); }
-            Console.WriteLine(JsonSerializer.Serialize(new{status="PASS",nativeAssertions=assertions,realNativeClients=5,webLogin=true,postgresPlayerLoad=true,mapVisibility=true,movement=true,reconnect=true,logout=true,privateGates=true,sourceAccountsUntouched=true,fullGameplayReady=false}));
+            Console.WriteLine(JsonSerializer.Serialize(new{status="PASS",nativeAssertions=assertions,realNativeClients=7,webLogin=true,postgresPlayerLoad=true,mapVisibility=true,movement=true,reconnect=true,logout=true,privateGates=true,sharedNpcs=true,normalPortalTransfer=true,sourceAccountsUntouched=true,fullGameplayReady=false}));
         }
         finally
         {

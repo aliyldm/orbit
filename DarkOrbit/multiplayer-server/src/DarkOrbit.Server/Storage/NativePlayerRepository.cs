@@ -3,6 +3,7 @@ using System.Text.RegularExpressions;
 using DarkOrbit.Server.Protocol;
 using DarkOrbit.Server.Runtime;
 using Npgsql;
+using DarkOrbit.Server.World;
 
 namespace DarkOrbit.Server.Storage;
 
@@ -12,6 +13,10 @@ public sealed record NativePilot(long PlayerId, long AccountId, int ServerId, in
 {
     public double Speed => Profile["speed"]!.GetValue<double>();
     public bool Dead => Profile["hitPoints"]!.GetValue<double>() <= 0;
+    public int Faction => Profile["factionId"]!.GetValue<int>();
+    public int Level => Profile["level"]?.GetValue<int>() ?? Commands.First(c => c!["_"]!.GetValue<string>() == "ShipInitializationCommand")!["level"]!.GetValue<int>();
+    public bool Cloaked => Commands.First(c => c!["_"]!.GetValue<string>() == "ShipInitializationCommand")!["cloaked"]!.GetValue<bool>();
+    private static readonly HashSet<string> MapCommands = ["AssetCreateCommand", "SpaceStationCommand", "MapAddPOICommand", "QuestGiversAvailableCommand", "MapAssetActionAvailableCommand", "JumpgateCreateCommand", "POIReadyCommand", "BeaconCommand", "AddBoxCommand", "AddOreCommand"];
     public JsonObject Create(double x, double y)
     {
         var hero = Commands.First(c => c!["_"]!.GetValue<string>() == "ShipInitializationCommand")!;
@@ -24,15 +29,18 @@ public sealed record NativePilot(long PlayerId, long AccountId, int ServerId, in
     public IEnumerable<JsonObject> PublicDecorations() => Commands.Where(c =>
         c!["_"]!.GetValue<string>() == "DroneFormationChangeCommand" ||
         c["_"]!.GetValue<string>() == "LegacyModule" && c["message"]!.GetValue<string>().StartsWith($"0|n|d|{PlayerId}|", StringComparison.Ordinal)).Select(c => c!.DeepClone().AsObject());
-    public IEnumerable<byte[]> Initialization(LegacyCodec codec)
+    public IEnumerable<byte[]> Initialization(LegacyCodec codec, WorldContent? world = null)
     {
         foreach (var node in Commands)
         {
             var command = node!.DeepClone().AsObject(); string name = command["_"]!.GetValue<string>();
+            if (world is not null && MapCommands.Contains(name)) continue;
             if (name == "ShipInitializationCommand") { command["x"] = (int)Math.Round(X); command["y"] = (int)Math.Round(Y); command["mapId"] = MapId; }
             if (name == "BeaconCommand") { command["positionX"] = (int)Math.Round(X); command["positionY"] = (int)Math.Round(Y); command["positionAheadX"] = (int)Math.Round(X); command["positionAheadY"] = (int)Math.Round(Y); }
             yield return NativeFrames.Frame(codec.Encode(command));
         }
+        if (world is not null && world.Maps.TryGetValue(MapId, out var map))
+            foreach (var command in map.Initialization(Faction, X, Y, Dead)) yield return NativeFrames.Frame(codec.Encode(command));
     }
 }
 

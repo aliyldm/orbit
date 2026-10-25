@@ -27,7 +27,7 @@
 setup-installers/
 notlar/
 dist/
-runtime/
+/runtime/
 DEVAM_NOTLARI.md
 PROJE_DURUMU.md
 PROJE_INCELEME_RAPORU.md

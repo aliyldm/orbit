@@ -15,8 +15,8 @@ public static partial class NativeApplication
         var app = builder.Build();
         foreach (var asset in new[] { (Url:"/mini-jquery.js", Resource:"MiniJquery.js",Mime:"application/javascript"), (Url:"/client/do_img/global/bg_standard_mmo.jpg",Resource:"LoginBackground.jpg",Mime:"image/jpeg"), (Url:"/client/_host/do_img/global/companyChoose/gamelogo.png",Resource:"LoginLogo.png",Mime:"image/png") })
             app.MapGet(asset.Url, () => Results.Stream(typeof(NativeApplication).Assembly.GetManifestResourceStream(asset.Resource)!,asset.Mime));
-        app.MapGet("/health", () => Results.Ok(new { service = "darkorbit-multiplayer", status = "ok", stage = "native-login-presence", gamePort = runtime.Game.Port, online = runtime.Hub.OnlineCount }));
-        app.MapGet("/ready", () => Results.Json(new { ready = false, reason = "Development login/presence only. Gameplay, portal and derived-stat repositories are still being ported." }, statusCode: 503));
+        app.MapGet("/health", () => Results.Json(new { service = "darkorbit-multiplayer", status = runtime.Hub.WorldHealthy ? "ok" : "failed", stage = "shared-npc-normal-portals", gamePort = runtime.Game.Port, online = runtime.Hub.OnlineCount }, statusCode: runtime.Hub.WorldHealthy ? 200 : 503));
+        app.MapGet("/ready", () => Results.Json(new { ready = false, reason = "Shared normal-map NPC lifecycle and portal transfer are available in development. Native combat, economy, full portal and live equipment repositories are still being ported." }, statusCode: 503));
         app.MapGet("/login", async context =>
         {
             context.Response.ContentType = "text/html; charset=utf-8";

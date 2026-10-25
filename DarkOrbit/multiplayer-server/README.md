@@ -1,5 +1,22 @@
 # DarkOrbit çok oyunculu sunucu geçişi
 
+## Güncel — Aşama 3: ortak normal dünya ve portal geçişi
+
+32 normal harita, 96 portal ve 951 NPC yuvası eski oyunun **yalnız bellekte açılan** veritabanından üretilir; hesap verisi katalogda yoktur. `tools/export-world-content.js`, C#'a gömülen `World/world-content.json` ile 405 farklı harita/şirket/konum için eski paket sözleşmesini üretir. **5.648 dünya kontrolü PASS**: portal paket sırası, şirket erişimi, istasyon/barış alanı, NPC'nin ortak can/kalkanı, tek ölüm nesli, yeniden doğuş ve ayrılan hedefin devriyesine dönüşü. NPC simülasyonu harita aktörünün tek yazıcı kuyruğunda çalışır. Normal NPC durumu şimdilik bellektedir; sunucu yeniden başlayınca korunması ve özel NPC/eskort mekanikleri henüz port edilmedi.
+
+Gerçek HTTP/TCP testinde **7 istemci / 56 kontrol PASS**: iki oyuncu aynı NPC kimliklerini görür, seçimi ortak durumdan gelir; 1-4 → 4-1 geçişi eski portalın varış konumuyla yapılır. Geçiş boyunca hareket/tekrarlı atlama engellenir; çıkış bekleyen atlamayı iptal eder. PostgreSQL konum kaydı bağlantı sahibi/nesli koşuluyla korunur. Varışın kaydı başarısızsa diğer oyunculara yayın yapılmadan üyelik geri alınır. NPC ateşi/ödülü ve native lazer istekleri henüz bağlanmadı; testteki sunucu hasar API'si istemciden hasar kabul etmez.
+
+`/ready` **hâlâ503**, kaynak SQLite/oyun ayarları/istemci aynı. İki bilgisayarla ortak oyun henüz açılmaz. Önizleme ZIP'i bu değişikliklerle yeni bir çok oyunculu sürüm olarak yayımlanmadı. [Güncel kalanlar](MIGRATION-TODO.md). Önceki aşamaların aşağıdaki notları tarihçedir.
+
+```powershell
+node tools/export-world-content.js
+dotnet build DarkOrbit.Multiplayer.slnx -m:1
+dotnet run --project tools/DarkOrbit.Verify --no-build -- world
+./tools/verify-native.ps1
+```
+
+Git paketindeki kök `/runtime/` dışlaması, Windows'ta C# `Runtime` kaynak klasörünü de yanlışlıkla gizliyordu; köke sabitlendi. `distribution/source-completeness.test.js` tüm C# kaynaklarını kontrol eder. `distribution/verify-source-build.ps1` Git arşivini ayrı klasöre çıkarıp özel dosyalar olmadan gerçek restore/build yapar.
+
 ## Güncel — Aşama 2: native giriş ve harita görünürlüğü doğrulandı
 
 Node scrypt parola biçimi, mevcut `dosid` form/cookie akışı, Redis doğrulaması ve PostgreSQL oyuncu yükleme yeni .NET HTTP/TCP sunucusuna bağlandı. İki istemci aynı haritada birbirini gerçek `ShipCreateCommand`, `MoveCommand`, `ShipRemoveCommand` ile görür. Üçüncü harita ve iki özel kapı dahil **5 gerçek TCP istemcisi / 43 kontrol PASS**; hatalı kullanıcı/sunucu, yeniden bağlanma, çıkış ve pozisyon kaydı kapsandı. `NativeVerification` yalnız rastgele test şemasındaki sentetik hesapları kullanır ve şemasını temizler.
@@ -69,8 +86,8 @@ Her prova yeni `legacy_<16 hex>` şeması oluşturur; var olan şemayı düşür
 ## Devam sırası
 
 1. **Tamam:** ortak protokol, harita/oturum çekirdeği, ayrı PostgreSQL/Redis ortamı, veri provası ve koruma denetimleri.
-2. **Sıradaki:** mevcut web/oyun oturum sözleşmesi, parola doğrulaması ve oyuncu yükleme; gerçek native TCP giriş yaşam döngüsü; iki istemcinin ortak haritada birbirini oluşturma/hareket/kaybolma komutları. Şu anda native oyun login'i veya tam açılış paketleri .NET'te çalışmıyor.
-3. Ortak harita NPC/kargo/portal yaşam döngüsü, otoriter savaş/hasar/hedef ve çok oyuncu etkileşimleri; özel kapılar için oyuncu/grup örnekleri. Eski tek oyunculu `World.player` varsayımları tek tek kaldırılacak.
+2. **Tamamlanan:** mevcut parola ve web/native oturum doğrulaması, PostgreSQL oyuncu projeksiyonu, ortak görünürlük/hareket/kaybolma ve yeniden giriş. Canlı türetilmiş stat depoları bekliyor.
+3. **Kısmen tamamlanan:** normal haritalarda ortak NPC yaşam döngüsü ve portal geçişi. Sırada kargo, kalıcı dünya durumu, otoriter savaş/hasar/ödül ve özel kapı/grup örnekleri var. Eski tek oyunculu `World.player` varsayımları tek tek kaldırılacak.
 4. Envanter/konfigürasyon/diroit/P.E.T./arge/üretim/geliştirme/dükkan/ödüller/görev/rütbe dahil bütün kalıcı depolar; işlem, tekrar istek ve ödülün tek kez verilmesi. SQLite SQL'lerini metin değiştirmeyle PostgreSQL'e aktarma.
 5. Eski 1.073 testin senaryo karşılıkları ve gerçek ağ akışları, aynı hesap kopyalarıyla eski/yeni sonuç karşılaştırması; Qt/Flash görsel kabul; 500 ve 1.000 gerçek protokol oturumu yük ve kopma testleri. Mevcut oyun özellikleri bu aşamaya kadar eski sürümde kalır.
 6. Son yedek, oturumların güvenli kapatılması, son veri eşitlemesi ve geri dönüş planıyla giriş noktasını yeni sunucuya çevirme. Hazır olmadan eski sunucuyu kapatma veya hesapları sıfırlama.
