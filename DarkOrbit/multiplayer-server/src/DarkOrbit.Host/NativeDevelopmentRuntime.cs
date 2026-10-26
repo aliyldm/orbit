@@ -23,8 +23,11 @@ public sealed class NativeDevelopmentRuntime : IAsyncDisposable
         var source = NpgsqlDataSource.Create(postgres); ConnectionMultiplexer? redis = null; CombatRepository? combat = null;
         try
         {
+            var players = new NativePlayerRepository(source, schema);
+            await using (var version = source.CreateCommand($"SELECT runtime_schema_version FROM \"{schema}\".metadata"))
+                if (await version.ExecuteScalarAsync() is not int revision || revision != 3) throw new InvalidOperationException("Development equipment schema v3 required. Bootstrap a fresh development schema; never overwrite the live SQLite database.");
             redis = await ConnectionMultiplexer.ConnectAsync(redisConnection);
-            var players = new NativePlayerRepository(source, schema); var maps = await players.Maps(); var tickets = new RedisSessions(redis,"darkorbit-stage2-"+schema);
+            var maps = await players.Maps(); var tickets = new RedisSessions(redis,"darkorbit-stage2-"+schema);
             combat = new(source, schema, options.ServerId); await combat.Acquire();
             var hub = new NativeGameHub(players, tickets, maps, options.ServerId, combat);
             return new(source, redis, players, tickets, hub, options, combat);

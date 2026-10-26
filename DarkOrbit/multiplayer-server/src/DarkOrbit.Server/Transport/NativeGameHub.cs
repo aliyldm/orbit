@@ -53,6 +53,15 @@ public sealed partial class NativeGameHub : IAsyncDisposable
         if (name == "AttackLaserRequest") await StartLaser(connection, command["targetId"]!.GetValue<int>());
         if (name == "AttackAbortLaserRequest") await StopLaser(connection);
         if (name == "MenuActionRequest") await LaserAction(connection, command);
+        if (name == "ConfigChangeRequest") await ChangeConfiguration(connection, (int)DarkOrbit.Server.Equipment.EquipmentStats.N(command["presetId"]));
+        if (name == "LegacyModule" && command["message"]?.GetValue<string>() is "S|CFG|1" or "S|CFG|2") await ChangeConfiguration(connection, int.Parse(command["message"]!.GetValue<string>()[6..], System.Globalization.CultureInfo.InvariantCulture));
+        if (name == "HangarShipMoveItemsRequest") await NativeMoveItems(connection, command);
+        if (name == "HangarShipClearConfigRequest") await NativeClearEquipment(connection, command);
+        if (name == "HangarShipFavouriteRequest") await NativeHangarOperation(connection, command, "setFavourite", "HangarShipFavouriteCommand");
+        if (name == "HangarShipSaveConfigRequest") await NativeHangarOperation(connection, command, "saveConfig", "HangarShipSaveConfigCommand");
+        if (name == "HangarShipLoadConfigRequest") await NativeHangarOperation(connection, command, "loadConfig", "HangarShipLoadConfigCommand");
+        if (name == "HangarShipChangeShipModelRequest") await NativeHangarOperation(connection, command, "changeShipModel", "HangarShipChangeShipModelCommand");
+        if (name == "HangarShipImportConfigRequest") await NativeHangarOperation(connection, command, "importConfig", "HangarShipImportConfigCommand");
         // Other native feature requests remain unsupported during the port. No
         // success/reward is fabricated; /ready remains false until full parity.
         return true;
@@ -66,11 +75,11 @@ public sealed partial class NativeGameHub : IAsyncDisposable
         if (connection.Pilot is not null || command["instanceId"]!.GetValue<int>() != serverId) throw new AuthenticationException("Invalid login");
         long id = command["userID"]!.GetValue<int>(); string token = command["sessionID"]!.GetValue<string>();
         var ticket = await tickets.Verify(token, id, serverId) ?? throw new AuthenticationException("Invalid ticket");
-        var pilot = await players.Load(id) ?? throw new AuthenticationException("Unknown pilot");
-        if (pilot.ServerId != serverId || pilot.AccountId != ticket.AccountId || !maps.ContainsKey(pilot.MapId)) throw new AuthenticationException("Owner mismatch");
         var gate = pilotLocks.GetOrAdd(id, _ => new SemaphoreSlim(1)); await gate.WaitAsync();
         try
         {
+            var pilot = await players.Load(id) ?? throw new AuthenticationException("Unknown pilot");
+            if (pilot.ServerId != serverId || pilot.AccountId != ticket.AccountId || !maps.ContainsKey(pilot.MapId)) throw new AuthenticationException("Owner mismatch");
             if (online.TryGetValue(id, out var previous))
             {
                 var old = (await directory.Snapshot(previous.Map))!.Pilots.Single(p => p.Lease == previous.MapLease);
@@ -80,6 +89,7 @@ public sealed partial class NativeGameHub : IAsyncDisposable
             connection.RedisLease = await tickets.Acquire(id, serverId, LeaseLifetime);
             if (!await players.Claim(id, connection.RedisLease)) throw new AuthenticationException("Stale database fence");
             if (!await players.SavePosition(id, connection.RedisLease, pilot.MapId, pilot.X, pilot.Y)) throw new AuthenticationException("Lost database owner");
+            if (!await players.SaveVitals(pilot, connection.RedisLease)) throw new AuthenticationException("Lost vitals owner");
             var initial = pilot.Initialization(Codec, content).ToArray();
             await presence.WaitAsync();
             try
@@ -125,6 +135,7 @@ public sealed partial class NativeGameHub : IAsyncDisposable
         try
         {
             if (!online.TryGetValue(pilot.PlayerId, out var current) || current != connection || connection.Jumping) return;
+            await RefreshEquipment(connection);
             if (!await directory.Move(connection.MapLease, x, y)) return;
             var snapshot = (await directory.Snapshot(connection.Map))!;
             var motion = snapshot.Motions.FirstOrDefault(m => m.PlayerId == pilot.PlayerId);
@@ -142,6 +153,7 @@ public sealed partial class NativeGameHub : IAsyncDisposable
         try
         {
             if (!online.TryGetValue(pilot.PlayerId, out var current) || current != connection) return false;
+            await RefreshEquipment(connection);
             var position = (await directory.Snapshot(connection.Map))!.Pilots.Single(p => p.Lease == connection.MapLease);
             return await players.SavePosition(pilot.PlayerId, connection.RedisLease!, connection.Map.MapId, position.X, position.Y);
         }

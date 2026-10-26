@@ -1,25 +1,26 @@
 {
   "format": 1,
   "scope": "Source inventory and port evidence; not a claim that legacy templates or the new server are fully functional.",
-  "sourceFingerprint": "7fe19b56f25eff2fee191d58db45294571d2ae16c7fa9e2b83d2afb8c91f429f",
+  "sourceFingerprint": "25ddbff14a9cdcf334e98e038deeb558b1dc3730ceadc7fb2c2b40ffa1951446",
   "fullGameplayReady": false,
   "summary": {
     "legacyNativeCommands": 106,
     "nativeCoverage": {
-      "not_ported": 96,
-      "partial": 8,
-      "ported": 2
+      "not_ported": 87,
+      "partial": 14,
+      "ported": 5
     },
     "legacyTables": 60,
     "tableCoverage": {
-      "partial": 8,
-      "archive_only": 52
+      "partial": 19,
+      "archive_only": 40,
+      "ported": 1
     },
     "legacyInventoryActions": 20,
     "legacyLiteralHttpPaths": 19,
     "featureCoverage": {
-      "partial": 3,
-      "not_ported": 21,
+      "partial": 8,
+      "not_ported": 16,
       "intentionally_off": 2
     }
   },
@@ -75,7 +76,7 @@
     {
       "name": "AttackLaserRequest",
       "status": "partial",
-      "note": "Outgoing classic damage-only loadouts; modern procs/drains, NPC retaliation and live stats pending.",
+      "note": "Outgoing classic loadouts use live equipment/skill/formation stats; modern procs/drains, CPU effects and NPC retaliation pending.",
       "nativeBranch": true
     },
     {
@@ -140,9 +141,9 @@
     },
     {
       "name": "ConfigChangeRequest",
-      "status": "not_ported",
-      "note": "No .NET dispatcher branch.",
-      "nativeBranch": false
+      "status": "ported",
+      "note": "Two canonical configurations, separate shield pools and immediate native/actor stat refresh verified.",
+      "nativeBranch": true
     },
     {
       "name": "ConvertResearchPointsRequest",
@@ -224,15 +225,15 @@
     },
     {
       "name": "HangarShipChangeShipModelRequest",
-      "status": "not_ported",
-      "note": "No .NET dispatcher branch.",
-      "nativeBranch": false
+      "status": "partial",
+      "note": "Canonical design validation exists; original offline-only policy rejects the native online request. Portal read projection pending.",
+      "nativeBranch": true
     },
     {
       "name": "HangarShipClearConfigRequest",
-      "status": "not_ported",
-      "note": "No .NET dispatcher branch.",
-      "nativeBranch": false
+      "status": "partial",
+      "note": "Clears all canonical targets and live hero stats; full inventory UI reload pending.",
+      "nativeBranch": true
     },
     {
       "name": "HangarShipDetailRequest",
@@ -248,27 +249,27 @@
     },
     {
       "name": "HangarShipFavouriteRequest",
-      "status": "not_ported",
-      "note": "No .NET dispatcher branch.",
-      "nativeBranch": false
+      "status": "ported",
+      "note": "Owned hull favourite flag and original result contract.",
+      "nativeBranch": true
     },
     {
       "name": "HangarShipImportConfigRequest",
-      "status": "not_ported",
-      "note": "No .NET dispatcher branch.",
-      "nativeBranch": false
+      "status": "partial",
+      "note": "Both configurations transfer atomically with slot/module validation; original offline-only policy enforced. Portal read projection pending.",
+      "nativeBranch": true
     },
     {
       "name": "HangarShipLoadConfigRequest",
-      "status": "not_ported",
-      "note": "No .NET dispatcher branch.",
-      "nativeBranch": false
+      "status": "partial",
+      "note": "Restores available owned items at saved indices; incomplete result2; full inventory/PET UI reload pending.",
+      "nativeBranch": true
     },
     {
       "name": "HangarShipMoveItemsRequest",
-      "status": "not_ported",
-      "note": "No .NET dispatcher branch.",
-      "nativeBranch": false
+      "status": "partial",
+      "note": "Ship/drone/PET ownership/capacity validation and partial overflow; full inventory read projections and PET runtime refresh pending.",
+      "nativeBranch": true
     },
     {
       "name": "HangarShipRenamePetRequest",
@@ -284,9 +285,9 @@
     },
     {
       "name": "HangarShipSaveConfigRequest",
-      "status": "not_ported",
-      "note": "No .NET dispatcher branch.",
-      "nativeBranch": false
+      "status": "ported",
+      "note": "Both layouts including ship/drone/PET slots are saved with original result contract.",
+      "nativeBranch": true
     },
     {
       "name": "HangarShipSellDroneRequest",
@@ -362,9 +363,9 @@
     },
     {
       "name": "LegacyModule",
-      "status": "not_ported",
-      "note": "No .NET dispatcher branch.",
-      "nativeBranch": false
+      "status": "partial",
+      "note": "C-key S|CFG text path is connected; the other legacy feature messages remain pending.",
+      "nativeBranch": true
     },
     {
       "name": "LoginRequest",
@@ -387,13 +388,13 @@
     {
       "name": "MenuActionRequest",
       "status": "partial",
-      "note": "Five classic laser ammunition choices/RSB return; other menu actions pending.",
+      "note": "Classic laser choices/RSB return and owned formation selection; other menu actions and timed formation effects pending.",
       "nativeBranch": true
     },
     {
       "name": "MoveRequest",
       "status": "partial",
-      "note": "Authoritative shared motion; full dynamic speed and pirate field effects pending.",
+      "note": "Authoritative shared motion uses live equipment speed; pirate fields and ability/PET speed effects pending.",
       "nativeBranch": true
     },
     {
@@ -694,33 +695,33 @@
     },
     {
       "name": "drone_equipment",
-      "status": "archive_only",
-      "runtime": null,
-      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+      "status": "partial",
+      "runtime": "equipment_mounts",
+      "note": "Single/multi-drone plans and saved layouts live; full portal views pending."
     },
     {
       "name": "drone_settings",
-      "status": "archive_only",
-      "runtime": null,
-      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+      "status": "partial",
+      "runtime": "equipment_formations",
+      "note": "Owned formation selection and numeric stats; drain/regeneration/combat lifecycle pending."
     },
     {
       "name": "drones",
-      "status": "archive_only",
-      "runtime": null,
-      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+      "status": "partial",
+      "runtime": "equipment_drones + equipment_mounts",
+      "note": "Mounted item level/upgrade/design/set bonuses and fresh native descriptor; XP/repair/sale lifecycle pending."
     },
     {
       "name": "equipment_config2",
-      "status": "archive_only",
-      "runtime": null,
-      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+      "status": "partial",
+      "runtime": "equipment_mounts",
+      "note": "Two configurations share physical items on the same hull; live switch/save/load/import verified; full UI pending."
     },
     {
       "name": "equipment_saved",
-      "status": "archive_only",
-      "runtime": null,
-      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+      "status": "partial",
+      "runtime": "equipment_saved",
+      "note": "Original layout format retained; validated partial restoration works; full UI reload pending."
     },
     {
       "name": "galaxy_gate_accounts",
@@ -761,8 +762,8 @@
     {
       "name": "items",
       "status": "partial",
-      "runtime": "inventory_items",
-      "note": "All snapshot rows retained; ammunition debit live, equip/sell/upgrade and other mutations pending."
+      "runtime": "inventory_items + equipment_mounts",
+      "note": "Live ship/drone/PET assignment, sales and ammo; purchases/upgrades and complete UI projections pending."
     },
     {
       "name": "local_repairs",
@@ -844,9 +845,9 @@
     },
     {
       "name": "pet_equipment",
-      "status": "archive_only",
-      "runtime": null,
-      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+      "status": "partial",
+      "runtime": "equipment_mounts",
+      "note": "Assignment, tier gating, layout restoration and tier sale pricing; PET runtime/projections pending."
     },
     {
       "name": "pet_gear_state",
@@ -856,15 +857,15 @@
     },
     {
       "name": "pets",
-      "status": "archive_only",
-      "runtime": null,
-      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+      "status": "partial",
+      "runtime": "equipment_pets",
+      "note": "Canonical ownership/level for inventory validation; activation/fuel/modules/combat pending."
     },
     {
       "name": "player_boosters",
       "status": "partial",
       "runtime": "active_boosters",
-      "note": "Rows/expiry and reward effects live; full stat/activation lifecycle pending."
+      "note": "Live stat/expiry and reward effects; purchases/activation/native booster window pending."
     },
     {
       "name": "player_hangar_accounts",
@@ -886,9 +887,9 @@
     },
     {
       "name": "player_ore_buffs",
-      "status": "archive_only",
-      "runtime": null,
-      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+      "status": "partial",
+      "runtime": "equipment_ore_buffs",
+      "note": "Timed speed/shield bonuses and expiry apply; enrichment mutations and ammunition-use depletion pending."
     },
     {
       "name": "player_quests",
@@ -898,15 +899,15 @@
     },
     {
       "name": "player_resources",
-      "status": "archive_only",
-      "runtime": null,
-      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+      "status": "partial",
+      "runtime": "equipment_resources",
+      "note": "Cargo usage reads exact archived ore quantities; collection/trade/enrichment mutations pending."
     },
     {
       "name": "player_skills",
-      "status": "archive_only",
-      "runtime": null,
-      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+      "status": "partial",
+      "runtime": "equipment_skill_levels",
+      "note": "Existing allocations affect hero stats; research allocation/reset UI and remaining event hooks pending."
     },
     {
       "name": "players",
@@ -970,15 +971,15 @@
     },
     {
       "name": "ship_config_shields",
-      "status": "archive_only",
-      "runtime": null,
-      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+      "status": "ported",
+      "runtime": "equipment_config_shields",
+      "note": "Separate configuration shield pools, capping and no-heal switch behavior."
     },
     {
       "name": "ship_designs",
-      "status": "archive_only",
-      "runtime": null,
-      "note": "Preserved in the exact-value archive; no authoritative .NET feature repository yet."
+      "status": "partial",
+      "runtime": "equipment_designs",
+      "note": "Owned compatible appearance selection live; purchase and complete views pending."
     },
     {
       "name": "ship_types",
@@ -989,8 +990,8 @@
     {
       "name": "ships",
       "status": "partial",
-      "runtime": "owned_ships + profile projection",
-      "note": "Ownership/type and initial projection; live hull/config/vitals/equipment pending."
+      "runtime": "owned_ships.record + equipment_mounts",
+      "note": "Canonical hull/config/vitals/design/favourite and live stats; complete UI and ship warp pending."
     },
     {
       "name": "skill_accounts",
@@ -1038,23 +1039,23 @@
     },
     {
       "name": "activateShip",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "setFavourite",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "sell",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "sellMultiple",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "changeShipModel",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "getCompatibleShips",
@@ -1062,31 +1063,31 @@
     },
     {
       "name": "importConfig",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "move",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "droneEquip",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "moveDroneDesign",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "clearConfig",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "saveConfig",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "loadConfig",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "repairDrone",
@@ -1144,7 +1145,7 @@
     },
     {
       "name": "/flashAPI/inventory.php",
-      "status": "not_ported"
+      "status": "partial"
     },
     {
       "name": "/flashAPI/loadingScreen.php",
@@ -1297,7 +1298,7 @@
       "name": "Classic outgoing laser/RSB",
       "status": "partial",
       "source": "game/combat.js; game/ammo.js",
-      "note": "75 formula cases and native fire verified; live stat rebuilding/CPU/skill effects incomplete."
+      "note": "75 formula cases and native fire use live stats; CPU/special effects and retaliation pending."
     },
     {
       "id": "modern-lasers",
@@ -1337,23 +1338,23 @@
     {
       "id": "equipment",
       "name": "Hangars, inventory, configurations and sales",
-      "status": "not_ported",
+      "status": "partial",
       "source": "game/inventory.js; web/inventory-api.js; game/hangars.js",
-      "note": "Snapshot rows exist; live UI/API/equipment operations are not ported."
+      "note": "12 Flash mutation actions and native write/config paths use canonical PG rows. Full read/UI projections, drone repair/sale, slot unlock and header hangars pending."
     },
     {
       "id": "stats",
       "name": "Live bonuses and upgrade-derived stats",
-      "status": "not_ported",
+      "status": "partial",
       "source": "game/stats.js; game/db/players.js",
-      "note": "Frozen derived profile is not a live stat engine."
+      "note": "364 cases / 48778 JS-C# field comparisons across91 hulls. Hero load/fire/movement uses live stats; PET/ability/CPU runtime layers remain pending."
     },
     {
       "id": "drones",
       "name": "Drones, designs, formations and set bonuses",
-      "status": "not_ported",
+      "status": "partial",
       "source": "game/drones.js; game/drone-designs.js",
-      "note": "Opening decorations remain projected; behavior/equipment/UI pending."
+      "note": "Live mounted bonuses, sets, descriptor and owned formation selection. XP/repair/sale, timed formation effects and full UI pending."
     },
     {
       "id": "pet",
@@ -1379,9 +1380,9 @@
     {
       "id": "abilities",
       "name": "Ship abilities, passives, techs and utilities",
-      "status": "not_ported",
+      "status": "partial",
       "source": "game/ship-abilities.js; game/ship-abilities-expanded.js; game/techs.js",
-      "note": "Only hull reward bonuses have been wired into payouts."
+      "note": "Hull/module stat and level-gated reward bonuses are live; activated abilities/techs/utilities pending."
     },
     {
       "id": "assembly",
@@ -1435,9 +1436,9 @@
     {
       "id": "portal",
       "name": "Original web/Flash API and game bootstrap",
-      "status": "not_ported",
+      "status": "partial",
       "source": "web/http-server.js; web/boot-api.js",
-      "note": "indexInternal remains501 and /ready503."
+      "note": "Authenticated Flash inventory mutation envelope exists. Full read APIs, pages and bootstrap pending; indexInternal remains501 and /ready503."
     },
     {
       "id": "pvp-group",

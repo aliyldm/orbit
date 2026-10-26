@@ -14,6 +14,8 @@ if (args.Length == 1 && args[0] == "native") { await NativeVerification.Run(); r
 if (args.Length == 1 && args[0] == "world") { await WorldVerification.Run(); return; }
 if (args.Length == 1 && args[0] == "combat") { await CombatVerification.Run(); return; }
 if (args.Length == 1 && args[0] == "laser") { await ClassicLaserVerification.Run(); return; }
+if (args.Length == 1 && args[0] == "equipment") { await EquipmentVerification.Run(); return; }
+if (args.Length == 1 && args[0] == "equipment-storage") { await EquipmentStorageVerification.Run(); return; }
 
 if (args.Length > 0 && args[0] == "bootstrap")
 {

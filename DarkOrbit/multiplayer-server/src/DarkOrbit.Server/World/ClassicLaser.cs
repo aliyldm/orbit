@@ -3,7 +3,7 @@ using System.Text.Json.Nodes;
 namespace DarkOrbit.Server.World;
 
 // The first outgoing-combat port intentionally accepts the classic damage-only
-// subset. Modern procs, SAB/drains, NPC retaliation and live stat rebuilding
+// subset. Modern procs, SAB/drains and NPC retaliation
 // are separate pending ports; readiness remains false.
 public static class ClassicLaser
 {
@@ -14,7 +14,7 @@ public static class ClassicLaser
     public static bool Supports(string id) => ammo.ContainsKey(id);
     public static int Color(string id) => ammo[id].Color;
     private static double Number(JsonNode? node, double fallback = 0) => node is null ? fallback : node.GetValue<double>();
-    public static bool Supports(JsonObject profile) => profile["stats"] is JsonObject s && s["laserProfiles"] is JsonArray list && list.Count > 0 && list.Count == Number(s["laserCount"]) && list.All(l => weapons.Contains(l!["lootId"]!.GetValue<string>())) && double.IsFinite(Number(s["laserDamage"])) && Number(s["laserDamage"]) >= 0 && Number(s["shipModules"]?["ep"]) == 0 && Number(s["shipModules"]?["honour"]) == 0;
+    public static bool Supports(JsonObject profile) => profile["stats"] is JsonObject s && s["laserProfiles"] is JsonArray list && list.Count > 0 && list.Count == Number(s["laserCount"]) && list.All(l => weapons.Contains(l!["lootId"]!.GetValue<string>())) && double.IsFinite(Number(s["laserDamage"])) && Number(s["laserDamage"]) >= 0;
     public static int Cost(JsonObject profile) => profile["stats"]!["laserProfiles"]!.AsArray().Count;
     public static double Chance(JsonObject profile)
     {

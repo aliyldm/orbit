@@ -1,6 +1,29 @@
 # DarkOrbit çok oyunculu sunucu geçişi
 
-## Güncel — Aşama 4: atomik klasik ateş ve kalıcı normal dünya
+## Güncel — Aşama 5a: canlı ekipman ve bonus hesaplaması
+
+26 Ekim 2026: kahramanın gemisi, iki konfigürasyonu, takılı eşyaları, diroitleri/tasarımları, gemi modülleri, mevcut arge dağılımı, süreli zenginleştirme ve booster etkileri artık PostgreSQL kayıtlarından hesaplanıyor. **91 gövde / 364 eski oyun senaryosu / 48.778 alan karşılaştırması** geçti. Modern lazerlerin temel ekipman istatistikleri bu hesaplamaya dahil; modern proc/ateş davranışı henüz ayrı bir port bekliyor.
+
+Gemi/diroit/P.E.T. takma-çıkarma, kapasite kadar toplu yerleştirme, çoklu diroit planı, satış, konfigürasyon değiştirme, düzen kaydetme/yükleme, favori, çevrimdışı gemi/tasarım seçimi ve konfigürasyon aktarımı için canlı depolar eklendi. **12 Flash mutation işlemi** orijinal base64 zarfından, uygun native yazma istekleri de aynı depodan geçer. Bu, hangarın bütün okuma ekranlarının tamamlandığı anlamına gelmez: liste/detay/uyumlu gemi projeksiyonları, başlık hangarları ve P.E.T. çalışma zamanı sonraki alt adımlardır. [Ayrıntı ve devam noktası](docs/EQUIPMENT-PORT.md).
+
+Canlı yenileme sunucu rotasını durdurur; yeni hız/bonus/diroit tanımı gönderilir. Süreli bonus sona erince can/kalkan üst sınırları daralır ve kayıt korunur; yeniden hesaplama iyileştirme vermez. Konfigürasyonların kalkan havuzları ayrıdır. Kayıtlı düzen satılan eşyayı çoğaltmaz; bulunamayan satırı atlayıp eksik sonuç döndürür. EP/şeref modüllerinin seviye sınırı gerçek ödül işlemi içinde kontrol edilir.
+
+Geliştirme şeması **3** gerektirir. Eski geliştirme şemasının üstüne migration uygulanmaz; gerekirse `tools/bootstrap-native-development.ps1` yeni şema oluşturur. Kaynak Node/SQLite oyununa yazılmadı ve canlı hesapların üstüne eski snapshot konmadı. Yeni sunucu hâlâ `/ready`503, portal başlangıcı501 verir; ortak oynanabilir paket yayımlanmış değildir.
+
+```powershell
+node tools/export-equipment-content.js
+node tools/generate-equipment-contract.js
+dotnet build DarkOrbit.Multiplayer.slnx -m:1
+dotnet run --project tools/DarkOrbit.Verify --no-build -- equipment
+./tools/verify-native.ps1 -Mode equipment-storage
+./tools/verify-native.ps1 -Mode combat
+./tools/verify-native.ps1 -Mode native
+node tools/audit-legacy-parity.js --check
+```
+
+Aşağıdaki aşamalar önceki kilometre taşlarının tarihçesidir; güncel kapsam yukarıdadır.
+
+## Önceki — Aşama 4: atomik klasik ateş ve kalıcı normal dünya
 
 Klasik MP-1/LF-1..4 ve LCB/MCB/UCB/RSB için native ateş, eski hasar formülleriyle yeni harita aktörüne bağlandı. **75 eski formül senaryosu / 302 kontrol**, **9 TCP istemcisi / 64 kontrol** geçti. İki oyuncu aynı lazer/hasar/imha paketini görür; RSB bir salvodan sonra önceki normal cephaneye döner. Cephane miktarı PostgreSQL'den gelir. Bu kapsam modern lazer/proc, SAB/drain, roket/launcher, NPC karşı ateşi veya canlı ekipman bonuslarının tamamı değildir; desteklenmeyen yükler klasik hasara sessizce düşürülmez.
 

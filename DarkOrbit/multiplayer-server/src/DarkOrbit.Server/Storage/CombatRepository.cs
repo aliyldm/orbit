@@ -163,12 +163,10 @@ public sealed partial class CombatRepository : IWorldPersistence, IAsyncDisposab
     private async Task<NpcReward> Reward(NpgsqlConnection connection, NpgsqlTransaction transaction, long player, NpcReward reward)
     {
         decimal ep = 0, honour = 0;
-        await using (var hull = new NpgsqlCommand($"SELECT s.loot_id FROM {schema}.players p JOIN {schema}.owned_ships s ON s.id=(p.profile->>'shipId')::bigint AND s.player_id=p.id WHERE p.id=$1", connection, transaction))
-        {
-            hull.Parameters.AddWithValue(player); string? id = await hull.ExecuteScalarAsync() as string;
-            if (id is not null && WorldContent.Default.RewardHulls[id] is { } definition)
-            { ep = definition["ep"]?.GetValue<decimal>() ?? 0; honour = definition["honour"]?.GetValue<decimal>() ?? 0; }
-        }
+        var modules = await new EquipmentRepository(source, schema.Trim('"')).RewardModules(connection, transaction, player);
+        if (WorldContent.Default.RewardHulls[modules.Hull] is { } hullDefinition)
+        { ep = hullDefinition["ep"]?.GetValue<decimal>() ?? 0; honour = hullDefinition["honour"]?.GetValue<decimal>() ?? 0; }
+        ep += (decimal)DarkOrbit.Server.Equipment.EquipmentStats.N(modules.Effects["ep"]); honour += (decimal)DarkOrbit.Server.Equipment.EquipmentStats.N(modules.Effects["honour"]);
         decimal rawEp = Math.Round(reward.Ep * (1 + ep), MidpointRounding.AwayFromZero), rawHonour = Math.Round(reward.Honour * (1 + honour), MidpointRounding.AwayFromZero);
         ep = 0; honour = 0;
         await using (var boosts = new NpgsqlCommand($"SELECT loot_id FROM {schema}.active_boosters WHERE player_id=$1 AND expires_at>extract(epoch FROM clock_timestamp())*1000 ORDER BY loot_id", connection, transaction))

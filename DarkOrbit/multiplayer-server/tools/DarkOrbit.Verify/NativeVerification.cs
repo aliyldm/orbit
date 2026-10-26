@@ -47,7 +47,7 @@ internal static class NativeVerification
             long id=900000+index; int mapId=index>=8?3:index==6?4:index==7?13:index==3?2:index>=4?privateMap:1;
             int x=index==6?jumpPortal.X:1000,y=index==6?jumpPortal.Y:1000;
             var hero = originalHero.DeepClone().AsObject(); hero["userId"]=id;hero["userName"]="Native QA "+index;hero["x"]=x;hero["y"]=y;hero["mapId"]=mapId;hero["speed"]=500;hero["cloaked"]=false;hero["level"]=18;hero["factionId"]=1;
-            var profile=hero.DeepClone();
+            var profile=hero.DeepClone().AsObject(); profile.Remove("shipId"); // These nine fixtures exercise transport/combat without owned equipment.
             if(index>=8)
             {
                 profile["speed"]=50000;
@@ -181,7 +181,7 @@ internal static class NativeVerification
         }
     }
     private static Func<JsonObject,bool> Is(string name,int id)=>c=>c["_"]!.GetValue<string>()==name&&c["userId"]?.GetValue<int>()==id;
-    private sealed class Probe : IAsyncDisposable
+    internal sealed class Probe : IAsyncDisposable
     {
         private readonly TcpClient client=new();private readonly LegacyCodec codec=new();private readonly ConcurrentQueue<JsonObject> commands=new();private readonly SemaphoreSlim changed=new(0);private bool first=true;private Task? reading;
         private readonly TaskCompletionSource closed=new(TaskCreationOptions.RunContinuationsAsynchronously);public Task Closed=>closed.Task;public JsonObject[] Commands=>commands.ToArray();

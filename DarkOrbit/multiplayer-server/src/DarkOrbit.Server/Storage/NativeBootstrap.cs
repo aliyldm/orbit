@@ -33,7 +33,7 @@ public static partial class NativeBootstrap
         string schema = '"' + target + '"', legacy = '"' + archive + '"';
         await Execute($"""
         CREATE SCHEMA {schema};
-        CREATE TABLE {schema}.metadata (source_snapshot_hash text NOT NULL, projections_hash text NOT NULL,runtime_schema_version integer NOT NULL DEFAULT 2);
+        CREATE TABLE {schema}.metadata (source_snapshot_hash text NOT NULL, projections_hash text NOT NULL,runtime_schema_version integer NOT NULL DEFAULT 3);
         CREATE TABLE {schema}.accounts (id bigint PRIMARY KEY CHECK(id>0), username text COLLATE "C" NOT NULL UNIQUE, password_hash text NOT NULL, created_at bigint NOT NULL);
         INSERT INTO {schema}.accounts SELECT id,username,password_hash,created_at FROM {legacy}.accounts;
         CREATE TABLE {schema}.maps (id integer PRIMARY KEY, width integer NOT NULL CHECK(width>0),height integer NOT NULL CHECK(height>0),private boolean NOT NULL DEFAULT false);
@@ -59,11 +59,12 @@ public static partial class NativeBootstrap
             if (await cmd.ExecuteNonQueryAsync() != 1) throw new InvalidDataException("Projection owner is absent from archive");
         }
         await CombatSchema.Create(connection, transaction, schema, legacy);
+        await EquipmentSchema.Create(connection, transaction, schema, legacy);
         await using (var cmd = new NpgsqlCommand($"INSERT INTO {schema}.metadata(source_snapshot_hash,projections_hash) VALUES($1,$2)", connection, transaction))
         {
             cmd.Parameters.AddWithValue(expectedSnapshotHash); cmd.Parameters.AddWithValue(Convert.ToHexStringLower(SHA256.HashData(bytes))); await cmd.ExecuteNonQueryAsync();
         }
         await transaction.CommitAsync();
-        return new { schema = target, archive, runtimeSchemaVersion = 2, players = profiles.Count, verifiedInitializationCommands = verifiedCommands, legacyPasswordHashesPreserved = true, derivedStatsPorted = false, gameplayReady = false };
+        return new { schema = target, archive, runtimeSchemaVersion = 3, players = profiles.Count, verifiedInitializationCommands = verifiedCommands, legacyPasswordHashesPreserved = true, liveHeroEquipmentStats = true, remainingFeatureProjections = true, gameplayReady = false };
     }
 }

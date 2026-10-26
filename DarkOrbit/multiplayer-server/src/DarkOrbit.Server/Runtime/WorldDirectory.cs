@@ -60,6 +60,14 @@ public sealed class WorldDirectory(Func<MapKey, MapActor> factory) : IAsyncDispo
         await admission.WaitAsync(); try { maps.TryGetValue(key, out map); } finally { admission.Release(); }
         return map is null ? null : await map.Snapshot();
     }
+    public async Task<Pilot?> Reconfigure(SessionLease lease, double speed)
+    {
+        MapActor? map;
+        await admission.WaitAsync();
+        try { map = online.TryGetValue(lease.PlayerId, out var current) && current.Lease == lease ? current.Map : null; }
+        finally { admission.Release(); }
+        return map is null ? null : await map.Reconfigure(lease, speed);
+    }
     public async Task<bool> Status(SessionLease lease, int faction, bool dead, bool cloaked, bool jumping)
     {
         MapActor? map;

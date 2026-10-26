@@ -5,5 +5,6 @@
     <PackageReference Include="BouncyCastle.Cryptography" Version="2.7.0" />
     <EmbeddedResource Include="../../../local-server/game/codec/schema.json" LogicalName="LegacySchema.json" />
     <EmbeddedResource Include="World/world-content.json" LogicalName="WorldContent.json" />
+    <EmbeddedResource Include="Equipment/equipment-content.json" LogicalName="EquipmentContent.json" />
   </ItemGroup>
 </Project>

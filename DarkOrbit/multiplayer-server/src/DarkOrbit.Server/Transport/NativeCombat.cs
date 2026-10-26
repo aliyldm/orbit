@@ -24,7 +24,9 @@ public sealed partial class NativeGameHub
     }
     private async Task LaserAction(NativeConnection connection, JsonObject command)
     {
-        string id = command["menuItemId"]!.GetValue<string>(); if (!ClassicLaser.Supports(id)) return;
+        string id = command["menuItemId"]!.GetValue<string>();
+        if (id.StartsWith("drone_formation_", StringComparison.Ordinal)) { await ChangeFormation(connection, id); return; }
+        if (!ClassicLaser.Supports(id)) return;
         var gate = pilotLocks[connection.Pilot!.PlayerId]; await gate.WaitAsync();
         try
         {
@@ -53,6 +55,8 @@ public sealed partial class NativeGameHub
     {
         var pilot = connection.Pilot!;
         if (connection.Attacking is not { } target || connection.IsClosed || connection.Jumping || pilot.Dead || Environment.TickCount64 < connection.NextLaser || online.GetValueOrDefault(pilot.PlayerId) != connection) return;
+        await RefreshEquipment(connection); pilot = connection.Pilot!;
+        if (pilot.Dead) { AbortLaser(connection); return; }
         if (combat is null || !ClassicLaser.Supports(pilot.Profile))
         {
             AbortLaser(connection); connection.Send(new JsonObject { ["_"] = "LegacyModule", ["message"] = "0|A|STD|Bu donanımın savaş özellikleri yeni sunucuya henüz taşınmadı." }); return;
@@ -122,13 +126,17 @@ public sealed partial class NativeGameHub
         {
             int beforeLevel = pilot.Level;
             // Report actual committed totals/deltas, never projected wallet data.
-            var latest = await players.Load(pilot.PlayerId); if (latest is not null) connection.Pilot = latest;
+            // Equipment/actor refresh has its own path. Copy only committed
+            // wallet fields here so reward notification cannot restore an old
+            // cloak, route, hull or stale opening projection.
             foreach (var (field, code, total) in new[] { ("credits", "CRE", wallet.Credits), ("uridium", "URI", wallet.Uridium), ("ep", "EP", wallet.Ep), ("honourPoints", "HON", wallet.Honour) })
             {
                 decimal old = pilot.Profile[field]?.GetValue<decimal>() ?? 0; decimal delta = total - old;
                 if (delta != 0) connection.Send(new JsonObject { ["_"] = "LegacyModule", ["message"] = FormattableString.Invariant($"0|LM|ST|{code}|{delta}|{total}") + (code == "EP" ? $"|{wallet.Level}" : "") });
             }
             if (wallet.Level > beforeLevel) connection.Send(new JsonObject { ["_"] = "LegacyModule", ["message"] = FormattableString.Invariant($"0|A|LUP|{wallet.Level}|{wallet.Ep}") });
+            pilot.Profile["credits"] = wallet.Credits; pilot.Profile["uridium"] = wallet.Uridium;
+            pilot.Profile["ep"] = wallet.Ep; pilot.Profile["honourPoints"] = wallet.Honour; pilot.Profile["level"] = wallet.Level;
         }
     }
 }

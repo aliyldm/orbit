@@ -92,6 +92,13 @@ public sealed class MapActor : IAsyncDisposable
         double duration = Math.Sqrt(Math.Pow(x - pilot.X, 2) + Math.Pow(y - pilot.Y, 2)) / pilot.Speed;
         routes[lease.PlayerId] = new(pilot.X, pilot.Y, x, y, time.GetTimestamp(), duration); revision++; return true;
     }, cancellation);
+    public Task<Pilot?> Reconfigure(SessionLease lease, double speed) => Ask<Pilot?>(() =>
+    {
+        if (!double.IsFinite(speed) || speed < 0) throw new ArgumentOutOfRangeException(nameof(speed));
+        if (!Owns(lease)) return null;
+        Update(lease.PlayerId); routes.Remove(lease.PlayerId);
+        var pilot = pilots[lease.PlayerId] with { Speed = speed }; pilots[lease.PlayerId] = pilot; revision++; return pilot;
+    });
     public Task<MapSnapshot> Snapshot() => Ask(() =>
     {
         foreach (long id in pilots.Keys) Update(id);

@@ -16,7 +16,7 @@ public static partial class NativeApplication
         foreach (var asset in new[] { (Url:"/mini-jquery.js", Resource:"MiniJquery.js",Mime:"application/javascript"), (Url:"/client/do_img/global/bg_standard_mmo.jpg",Resource:"LoginBackground.jpg",Mime:"image/jpeg"), (Url:"/client/_host/do_img/global/companyChoose/gamelogo.png",Resource:"LoginLogo.png",Mime:"image/png") })
             app.MapGet(asset.Url, () => Results.Stream(typeof(NativeApplication).Assembly.GetManifestResourceStream(asset.Resource)!,asset.Mime));
         app.MapGet("/health", () => Results.Json(new { service = "darkorbit-multiplayer", status = runtime.Hub.WorldHealthy ? "ok" : "failed", stage = "durable-world-classic-laser-development", gamePort = runtime.Game.Port, online = runtime.Hub.OnlineCount }, statusCode: runtime.Hub.WorldHealthy ? 200 : 503));
-        app.MapGet("/ready", () => Results.Json(new { ready = false, reason = "Durable normal worlds and outgoing classic lasers/RSB are verified in development. NPC retaliation, modern mechanics, live stat/equipment rebuilding, cargo and full portal remain incomplete." }, statusCode: 503));
+        app.MapGet("/ready", () => Results.Json(new { ready = false, reason = "Live equipment/stat port is in verification. NPC retaliation, modern mechanics, cargo and full portal remain incomplete." }, statusCode: 503));
         app.MapGet("/login", async context =>
         {
             context.Response.ContentType = "text/html; charset=utf-8";
@@ -57,6 +57,31 @@ public static partial class NativeApplication
         {
             string sid = context.Request.Cookies["dosid"] ?? ""; await runtime.Tickets.Revoke(sid); runtime.Hub.RevokeConnections(sid);
             context.Response.Cookies.Delete("dosid",new CookieOptions { Path = "/" }); context.Response.Redirect("/login");
+        });
+        app.MapPost("/flashAPI/inventory.php", async context =>
+        {
+            context.Response.Headers.CacheControl = "no-store";
+            var ticket = await runtime.Tickets.Read(context.Request.Cookies["dosid"] ?? "");
+            if (ticket is null || ticket.ServerId != runtime.Options.ServerId) { context.Response.StatusCode = 401; return; }
+            var pilot = await runtime.Players.Load(ticket.PlayerId, context.RequestAborted);
+            if (pilot is null || pilot.AccountId != ticket.AccountId) { context.Response.StatusCode = 401; return; }
+            // Flash may omit Origin; when supplied, it must identify this portal.
+            string origin = context.Request.Headers.Origin.ToString();
+            if (origin.Length > 0 && origin != $"{context.Request.Scheme}://{context.Request.Host}") { context.Response.StatusCode = 403; return; }
+            if (!context.Request.HasFormContentType) { context.Response.StatusCode = 400; return; }
+            System.Text.Json.Nodes.JsonObject response;
+            try
+            {
+                var form = await context.Request.ReadFormAsync(context.RequestAborted);
+                var bytes = Convert.FromBase64String(form["params"].ToString() is { Length: > 0 } encoded ? encoded : "e30=");
+                var request = System.Text.Json.Nodes.JsonNode.Parse(bytes) as System.Text.Json.Nodes.JsonObject ?? throw new ArgumentException("Geçersiz istek.");
+                response = await runtime.Hub.Inventory(context.Request.Cookies["dosid"]!, ticket.PlayerId, form["action"].ToString(), request);
+            }
+            catch (System.Security.Authentication.AuthenticationException) { context.Response.StatusCode = 401; return; }
+            catch (Exception e) when (e is ArgumentException or FormatException or System.Text.Json.JsonException)
+            { response = new() { ["isError"] = 1, ["error"] = new System.Text.Json.Nodes.JsonObject { ["message"] = e is ArgumentException ? e.Message : "Geçersiz istek." } }; }
+            context.Response.ContentType = "text/html; charset=UTF-8";
+            await context.Response.WriteAsync(Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(response.ToJsonString())), context.RequestAborted);
         });
         // Do not send users into a partial portal or claim their purchase worked.
         app.MapGet("/indexInternal.es", () => Results.Text("Çok oyunculu geliştirme ortamı: portalın taşınması sürüyor. Mevcut oyuna kendi giriş ekranından devam edebilirsin.",statusCode:501));

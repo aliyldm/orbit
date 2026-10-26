@@ -29,7 +29,7 @@ internal static class CombatVerification
             var hero = doc["profiles"]![0]!["commands"]!.AsArray().First(c => c!["_"]!.GetValue<string>() == "ShipInitializationCommand")!;
             for (int i = 1; i <= 3; i++)
             {
-                long id = 900100 + i; var profile = hero.DeepClone(); profile["userId"] = id; profile["level"] = 1;
+                long id = 900100 + i; var profile = hero.DeepClone().AsObject(); profile.Remove("shipId"); profile["userId"] = id; profile["level"] = 1;
                 await using var account = source.CreateCommand($"INSERT INTO {q}.accounts VALUES($1,$2,'synthetic-no-login',0)"); account.Parameters.AddWithValue(id); account.Parameters.AddWithValue("combatqa" + i); await account.ExecuteNonQueryAsync();
                 await using var player = source.CreateCommand($"INSERT INTO {q}.players(id,account_id,server_id,map_id,x,y,profile,initial_commands,connection_owner,connection_fence) VALUES($1,$1,1,$2,5000,5000,$3,$4,'qa',1)");
                 player.Parameters.AddWithValue(id); player.Parameters.AddWithValue(i == 3 ? 2 : 19); player.Parameters.AddWithValue(NpgsqlDbType.Jsonb, profile.ToJsonString()); player.Parameters.AddWithValue(NpgsqlDbType.Jsonb, new JsonArray(hero.DeepClone()).ToJsonString()); await player.ExecuteNonQueryAsync();
@@ -90,7 +90,7 @@ internal static class CombatVerification
             await Reject<InvalidDataException>(async () => { await store.Commit(replayKey, loaded.Revision, state, charge with { Amount = 6 }); }, "Operation identity cannot be reused for different contents");
             var epBooster = WorldContent.Default.RewardBoosters.First(p => (p.Value?["EXPERIENCE_POINTS"]?.GetValue<decimal>() ?? 0) > 0);
             var honourBooster = WorldContent.Default.RewardBoosters.First(p => (p.Value?["HONOUR_POINTS"]?.GetValue<decimal>() ?? 0) > 0);
-            await Execute($"INSERT INTO {q}.owned_ships VALUES(900103,900103,'ship_g-surgeon'); UPDATE {q}.players SET profile=jsonb_set(profile,ARRAY['shipId'],'900103'::jsonb,true) WHERE id=900103");
+            await Execute($"INSERT INTO {q}.owned_ships(id,player_id,loot_id) VALUES(900103,900103,'ship_g-surgeon'); UPDATE {q}.players SET active_ship_id=900103,profile=jsonb_set(profile,ARRAY['shipId'],'900103'::jsonb,true) WHERE id=900103");
             foreach (var boost in new[] { epBooster, honourBooster })
             {
                 await using var command = source.CreateCommand($"INSERT INTO {q}.active_boosters VALUES(900103,$1,$2)"); command.Parameters.AddWithValue(boost.Key); command.Parameters.AddWithValue(DateTimeOffset.UtcNow.AddMinutes(5).ToUnixTimeMilliseconds()); await command.ExecuteNonQueryAsync();
@@ -102,6 +102,13 @@ internal static class CombatVerification
             await Execute($"UPDATE {q}.active_boosters SET expires_at=0 WHERE player_id=900103"); await Ready(900103);
             var expired = await store.Commit(replayKey, bonus.Revision, new JsonObject { ["test"] = 3 }, Debit(900103) with { Claim = "qa-expired-booster", Reward = new(100, 4, 100, 20) });
             Check(expired.Wallet!.Ep == bonus.Wallet.Ep + 106 && expired.Wallet.Honour == bonus.Wallet.Honour + 21, "Expired boosters cannot keep rewarding from a frozen profile");
+            await Execute($"UPDATE {q}.owned_ships SET loot_id='ship_g-veteran' WHERE id=900103; UPDATE {q}.player_economy SET level=15 WHERE player_id=900103; INSERT INTO {q}.inventory_items(id,player_id,loot_id,amount,upgrade_level) VALUES(90010399,900103,'equipment_shipupgrade_spc-xp02',1,0); INSERT INTO {q}.equipment_mounts VALUES(900103,900103,1,'ship',0,NULL,'ship_upgrade',0,90010399)");
+            await Ready(900103);
+            var moduleBonus = await store.Commit(replayKey, expired.Revision, new JsonObject { ["test"] = 4 }, Debit(900103, 1) with { Claim = "qa-module-under-cap", Reward = new(100, 4, 100, 20) });
+            Check(moduleBonus.Wallet!.Ep == expired.Wallet.Ep + 125, "Live hull and compatible EP module add before original rounding at an eligible player level");
+            await Execute($"UPDATE {q}.player_economy SET level=17 WHERE player_id=900103"); await Ready(900103);
+            var cappedModule = await store.Commit(replayKey, moduleBonus.Revision, new JsonObject { ["test"] = 5 }, Debit(900103, 1) with { Claim = "qa-module-over-cap", Reward = new(100, 4, 100, 20) });
+            Check(cappedModule.Wallet!.Ep == moduleBonus.Wallet.Ep + 110, "EP module player-level restriction is checked in the payout transaction, not from frozen stats");
             await Execute($"UPDATE {q}.players SET connection_owner='replacement',connection_fence=2 WHERE id=900103");
             await Reject<AuthenticationException>(async () => { await store.Commit(replayKey, loaded.Revision, state, charge); }, "Old connection cannot replay or spend after replacement");
             await Execute($"UPDATE {q}.world_authority SET expires_at=clock_timestamp()-interval '1 second' WHERE server_id=1");
