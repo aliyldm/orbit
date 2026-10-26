@@ -1,50 +1,22 @@
-# Orbit
+# Orbit — ayrı istemci, sunucu ve veri servisleri
 
-Qt/Flash DarkOrbit istemcisi, çalışan yerel Node/SQLite oyun sunucusu ve .NET10/PostgreSQL/Redis çok oyunculu geçişi.
+- `client`: Qt/Flash istemcisi, oyun görselleri/sesleri ve Localer bağlantı köprüsü. Oyuncu bilgisayarında PostgreSQL veya Redis çalıştırmaz.
+- `server`: .NET10 oyun/HTTP sunucusunun kaynakları ve ayrı yayımlanan çalışma zamanı. Oyun durumu sunucu bilgisayarındadır.
+- `db`: yalnız sunucuda çalışacak PostgreSQL/Redis servis tanımları. Veritabanı portları loopback'e bağlıdır; Localer oyuncularına açılmaz.
+- `MIGRATION.md`: tamamlanan ve kalan geçiş işleri.
 
-**Güncel durum:** yerel oyun korunuyor. Yeni .NET sunucusunda giriş/hareket/normal portal ile klasik outgoing lazer/RSB ateşi dokuz TCP istemcisiyle test edildi. Normal NPC checkpoint'i, cephane ve tek ölüm ödülü PG'de atomik kaydedilir. NPC karşı ateşi, modern mekanikler, canlı ekipman/stat depoları ve web portalı tamamlanmadığından `/ready` **503**. İndirilen ZIP hâlâ yerel önizlemedir; ortak oynanabilir sürüm değildir. Gerçek 500–1000 oyuncu kapasitesi ölçülmedi. [Eski sunucu ile özellik karşılaştırması](DarkOrbit/multiplayer-server/LEGACY-PARITY.md), [kalan geçiş işleri](DarkOrbit/multiplayer-server/MIGRATION-TODO.md).
+**Klasör ayrımı hazırdır; .NET oyun geçişi henüz tamamlanmış değildir.** `/ready`503 kalır. İstemci, eksik sunucuya girmek için bu kontrolü kapatmaz. Klan, açık artırma, sıralama ve bütün eski oyun mekaniklerinin portu doğrulanmadan ortak oynanabilir sürüm olarak sunulmaz.
 
-## İndirip yerel oynamak
+## Oyuncu
 
-Depodaki **Releases** bölümünden `Orbit-Local-Preview-Windows.zip` paketini indir, normal bir klasöre çıkar ve **`Orbit Baslat.cmd`** dosyasını aç. Paket mevcut Qt/Flash istemcisini, oyun varlıklarını, Node çalışma zamanını ve sunucu kaynaklarını içerir. Node/.NET/Docker kurmak yerel önizleme için gerekmez. İlk girişte yeni hesap oluşur; bu pakette geliştiricinin hesapları, şifreleri veya ilerlemesi yoktur.
+Tam Windows paketi Qt/Flash/Node çalışma zamanını ve oyun varlıklarını içerir. Kaynak Git indirmesi bu büyük çalışma zamanı dosyalarını içermez; tam paket sürüm dosyası olarak paylaşılır. `client/connection.example.json` dosyasını `client/connection.json` adıyla kopyala; sunucu bilgisayarının güncel Localer IPv4 adresini ve portlarını yaz. Sonra `client/Oyunu Ac.cmd` dosyasını çalıştır.
 
-İstemci açılmıyorsa paketteki `DarkOrbit/dependencies/vc_redist.x86.exe` bileşenini kurmak gerekebilir. Paket Windows x64 içindir; Qt/Flash istemcisi x86 çalışır. Sunucu yerel oturumun ardından arka planda kalır; tekrar açılışta aynı sunucu kullanılır. **`Orbit Sunucuyu Kapat.cmd`** bu paketin sunucusunu kayıt alarak güvenli kapatır.
+Örnek IP gerçek sunucu adresi değildir. İki bilgisayar Localer üzerinden erişebilmeli; oda kurucusu otomatik oyun sunucusu değildir. İstemci köprüsü mevcut Qt'nin localhost8095/8096 adreslerini gerçek sunucuya taşır.
 
-Bu paket **şimdilik kendi bilgisayarında çalışan yerel önizlemedir**. Ortak sunucuya bağlanma, aşağıdaki ağ ayarı ve tamamlanacak çok oyunculu sunucu içindir. Eksik yeni sunucuya kullanıcı sokmak için hazır olma kontrolü atlanmaz.
+## Sunucu geliştirme
 
-## Sanal ağ / proxy bağlantısı
+.NET10 SDK ve sunucu servis betikleri için PowerShell7 ile `server/Derle.ps1` sunucuyu yayımlar. `db/Servisleri Baslat.ps1` yalnız bu dağıtımın ayrı servislerini başlatır; mevcut PostgreSQL5432 ve eski geliştirme55432/56379 değiştirilmez. Bu paketin yeni portları55433/56380'dir.
 
-`connection.json` ilk açılışta örnekten oluşturulur. Ortak sunucu hazır olduğunda:
+Kaynak eski proje ve REA/decompiled analizleri bu pakete alınmadı. Gerektiğinde geliştiricinin mevcut `latestversion` klasörü referans olarak kullanılabilir; mutlak yerel yol ve özel hesap verileri Git'e gönderilmez. Canlı hesap aktarımı son, doğrulanmış geçişte yapılır; eski snapshot ile mevcut ilerleme ezilmez.
 
-```json
-{
-  "mode": "remote",
-  "portalUrl": "http://10.113.47.2:8095",
-  "gameHost": "10.113.47.2",
-  "gamePort": 8096,
-  "requireMultiplayerReady": true
-}
-```
-
-Buradaki adres örnektir; Localer odasının sunucu bilgisayarına verdiği güncel adresle değiştirilir. Localer gerçek sanal IPv4 ağı sağlar; özel oyun SDK'sı gerekmez. Oda kurucusu otomatik oyun sunucusu değildir. Proxy kullanılıyorsa web ve TCP için farklı adres/port verilebilir. Bağlantı katmanı localhost8095/8096 üzerinden mevcut Qt istemcisini değiştirmeden yönlendirir. Parola/oturum veya oyun paketleri kaydedilmez. Sunucunun `/ready` yanıtı `200 {"ready":true}` olmadan uzak oyun açılmaz. PostgreSQL ve Redis oyuncuların bilgisayarında çalışmaz ve sanal ağa açılmaz. [Localer kurulum ve test yönergesi](distribution/NETWORK.md).
-
-## Kaynak kodla geliştirme
-
-- `DarkOrbit/local-server`: mevcut oyun; Node26+. `node server.js`.
-- `DarkOrbit/multiplayer-server`: .NET10 çözümü ve gelişim kaydı. [Açıklama](DarkOrbit/multiplayer-server/README.md), [geçiş durumu](DarkOrbit/multiplayer-server/migration-state.json).
-- `distribution`: paylaşım başlatıcısı, HTTP/TCP bağlantı köprüsü ve paketleme araçları.
-
-Değiştirilen istemci SWF'leri, XML/JS/CSS tanımları ve kaynak kod Git'te tutulur. Büyük grafik/ses varlıkları ve yerel çalışma zamanları sürüm paketindedir. Kaynak ZIP/clone ile geliştirenler sürüm paketindeki `DarkOrbit/local-server/client` klasörünü aynı konuma kopyalamalıdır. .NET çözümünü derlemek için gerekli iki giriş görseli kaynakta ayrıca bulunur. Eski sunucunun tam istemci artefakt testleri sürüm paketindeki `decompiled` referanslarını da kullanır.
-
-```powershell
-cd DarkOrbit/multiplayer-server
-dotnet build DarkOrbit.Multiplayer.slnx
-node tools/generate-contract-fixtures.js
-dotnet run --project tools/DarkOrbit.Verify --no-build
-./tools/start-development.ps1
-./tools/verify-storage.ps1
-```
-
-Yeni ağ katmanı testi: kök dizinde `node --test distribution/client-bridge.test.js`.
-
-Depo özeldir; kaynak ve sürüm paketlerini indirecek kişiye depo erişimi verilmelidir. Mevcut Qt bileşenlerinin lisans dosyaları `DarkOrbit/Licenses` içinde korunur. Her sürüm paketinin SHA256 özeti yayınlanır.
+Kurulum dosyaları, analiz çıktıları, eski Node/SQLite oyun sunucusu, kişisel veritabanları, parola/oturum/capture dosyaları ve yedekler bu dağıtımın parçası değildir. Oyun içindeki gerekli SWF ve protokol/katalog JSON dosyaları çalışma zamanı bağımlılığıdır ve korunur. Qt lisansları istemciyle birlikte kalır.

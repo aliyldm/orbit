@@ -1,9 +1,0 @@
-<Solution>
-  <Folder Name="/src/">
-    <Project Path="src/DarkOrbit.Server/DarkOrbit.Server.csproj" />
-    <Project Path="src/DarkOrbit.Host/DarkOrbit.Host.csproj" />
-  </Folder>
-  <Folder Name="/tools/">
-    <Project Path="tools/DarkOrbit.Verify/DarkOrbit.Verify.csproj" />
-  </Folder>
-</Solution>

@@ -1,0 +1,7 @@
+{
+  "mode": "remote",
+  "portalUrl": "http://10.113.47.2:18095",
+  "gameHost": "10.113.47.2",
+  "gamePort": 18096,
+  "requireMultiplayerReady": true
+}

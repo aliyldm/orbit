@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup><ProjectReference Include="../DarkOrbit.Server/DarkOrbit.Server.csproj" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="../../assets/bootstrap/login.html" LogicalName="NativeLogin.html" /></ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../../assets/bootstrap/mini-jquery.js" LogicalName="MiniJquery.js" />
+    <EmbeddedResource Include="../../assets/bootstrap/bg_standard_mmo.jpg" LogicalName="LoginBackground.jpg" />
+    <EmbeddedResource Include="../../assets/bootstrap/gamelogo.png" LogicalName="LoginLogo.png" />
+  </ItemGroup>
+</Project>

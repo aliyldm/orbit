@@ -1,4 +1,0 @@
-'use strict';
-const fs=require('fs'),maze=require('../game/pirate-maze'),paths={};
-for(const mapId of [91,93]){const seen=new Set(),nodes=[];for(const r of maze.walls(mapId))for(const x of [r[0]-35,r[2]+35])for(const y of [r[1]-35,r[3]+35]){const key=x+','+y;if(x<30||y<30||x>41970||y>26170||seen.has(key)||maze.contains(mapId,{x,y}))continue;seen.add(key);nodes.push({x,y});}const edges=nodes.map(()=>[]);for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){const q=maze.clip(mapId,nodes[i],nodes[j]);if(Math.hypot(q.x-nodes[j].x,q.y-nodes[j].y)>2)continue;const d=Math.hypot(nodes[i].x-nodes[j].x,nodes[i].y-nodes[j].y);edges[i].push([j,d]);edges[j].push([i,d]);}paths[mapId]={nodes,edges};console.log(mapId,nodes.length,'routing nodes',edges.reduce((n,e)=>n+e.length,0)/2,'edges');}
-fs.writeFileSync('game/data/pirate-maze-paths.json',JSON.stringify(paths)+'\n');

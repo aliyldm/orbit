@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DarkOrbit.Server/DarkOrbit.Server.csproj" />
+    <Project Path="src/DarkOrbit.Host/DarkOrbit.Host.csproj" />
+  </Folder>
+</Solution>
